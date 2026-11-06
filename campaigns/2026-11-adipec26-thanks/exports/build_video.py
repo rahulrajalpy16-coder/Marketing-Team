@@ -73,10 +73,10 @@ def fit_blur(im):
     return bg
 
 
-def cell(im, cw, ch):
+def cell(im, cw, ch, crop_top=0.5):
     s = max(cw / im.width, ch / im.height)
     im = im.resize((round(im.width * s), round(im.height * s)), Image.LANCZOS)
-    x, y = (im.width - cw) // 2, (im.height - ch) // 2
+    x, y = (im.width - cw) // 2, round((im.height - ch) * crop_top)
     return im.crop((x, y, x + cw, y + ch))
 
 
@@ -93,18 +93,19 @@ def photo_layer(jpg, it):
         bg = cover(ims[0]).filter(ImageFilter.GaussianBlur(38))
         bg = Image.blend(bg, Image.new("RGB", (W, H), NAVY), 0.55)
         stack = 2 * ch + gap
-        top = max((SAFE - stack) // 2, 30) if ASPECT == "9x16" else 30
-        bg.paste(cell(ims[0], W, ch), (0, top))
+        top = max((SAFE - stack) // 2, 30) if ASPECT == "9x16" else 60
+        bg.paste(cell(ims[0], W, ch, crop_top=0.0), (0, top))  # keep headroom in the top photo
         bg.paste(cell(ims[1], W, ch), (0, top + ch + gap))
         return bg
-    if mode == "fith" and ASPECT == "4x5":
-        # tall photo shown at full frame height with soft side bands, so nothing (for example a logo) is cropped
+    if mode == "fith":
+        # tall photo shown whole (nothing cropped, for example a logo) with soft bands, kept well above the caption
+        fh = 1250 if ASPECT == "4x5" else SAFE - 120
         bg = cover(ims[0]).filter(ImageFilter.GaussianBlur(38))
         bg = Image.blend(bg, Image.new("RGB", (W, H), NAVY), 0.45)
-        fg = ims[0].resize((round(ims[0].width * H / ims[0].height), H), Image.LANCZOS)
+        fg = ims[0].resize((round(ims[0].width * fh / ims[0].height), fh), Image.LANCZOS)
         bg.paste(fg, ((W - fg.width) // 2, 0))
         return bg
-    if ASPECT == "9x16" or mode in ("fit", "fith"):
+    if ASPECT == "9x16" or mode == "fit":
         return fit_blur(ims[0])
     return cover(ims[0], crop_top=it.get("crop_top", 0.78))
 
