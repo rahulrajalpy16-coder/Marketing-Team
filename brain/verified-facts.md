@@ -24,6 +24,6 @@ Do not store commercial terms, client confidential data or personal data.
 | Photos show a "NAVIS Engineering" branded console, a Marine Technologies (MT) branded display and wall panel, and a Sonardyne SPRINT-Nav unit on Sinor's stand | ADIPEC 2026 stand photos IMG_4413, IMG_4188, IMG_4255, IMG_4432 | 2026-11-06 |
 | Stand panel figures "15+ years DP engineering, 100+ projects, 40+ countries": Rahul confirmed they may be used publicly | Rahul, chat reply | 2026-11-06 |
 | Rahul supplied official partner logos in chat for this post (Sonardyne, Fugro, Navis Engineering, Marine Technologies MT oval, Guidance Marine) and asked for full spelling: write Sonardyne, Fugro, Navis Engineering, Marine Technologies, Guidance Marine | Rahul, chat message with 6 images, saved in assets/brand/partners/ | 2026-11-06 |
-| USER-SUPPLIED: the woman in photo a07555b5 (with a colleague in front of the Sinor panel) represents Guidance Marine; the group-of-four photo 0f44943b is Rahul's "full Sinor Marine team photo" (read from his words, he may mean another) | Rahul, chat message | 2026-11-06 |
+| USER-SUPPLIED: the woman in photo a07555b5 (with a colleague in front of the Sinor panel) represents Guidance Marine; CORRECTED 2026-11-06: Rahul's "full Sinor Marine team photo" is the 10-person photo s8_2 (sent in chat), NOT the group of four 0f44943b | Rahul, chat message | 2026-11-06 |
 
 Products, partners, services, project names and terminology: none verified yet. To be supplied.

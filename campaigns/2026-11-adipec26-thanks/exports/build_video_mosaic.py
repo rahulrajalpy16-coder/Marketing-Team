@@ -182,8 +182,10 @@ class Beat:
             self.plate = None
         else:
             card = make_end_card()
-            sc = 0.84 if ASPECT == "4x5" else (SAFE - 80) / H
-            self.src = card.resize((int(W * sc), int(H * sc)), Image.LANCZOS)
+            if ASPECT != "4x5":
+                card = card.crop((0, 0, W, SAFE))  # drop the empty bottom safe zone so the content fills the plate
+            sc = 0.84 if ASPECT == "4x5" else (SAFE - 80) / card.height
+            self.src = card.resize((int(card.width * sc), int(card.height * sc)), Image.LANCZOS)
             self.hw, self.hh = self.src.size
             self.cx, self.cy = W / 2, (0.45 * H if ASPECT == "4x5" else (SAFE - 30) / 2)
             self.shadow = Image.new("RGBA", (self.hw + 160, self.hh + 160), (0, 0, 0, 0))
