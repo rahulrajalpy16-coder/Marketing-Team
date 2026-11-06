@@ -1,0 +1,34 @@
+# Media and large binaries must never be committed (Part 16)
+*.mp4
+*.mov
+*.m4v
+*.avi
+*.mkv
+*.mxf
+*.webm
+*.mp3
+*.wav
+*.aac
+*.m4a
+*.flac
+*.zip
+*.7z
+*.psd
+*.heic
+*.HEIC
+*.cr2
+*.nef
+*.arw
+*.dng
+
+# Working areas
+tmp/
+campaigns/*/working/media/
+campaigns/*/working/renders/
+__pycache__/
+*.pyc
+.DS_Store
+
+# Local-only subagent memory (project scope is committed on purpose)
+.claude/agent-memory-local/
+.claude/settings.local.json
