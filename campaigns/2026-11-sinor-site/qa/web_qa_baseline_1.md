@@ -41,3 +41,8 @@ Copy accuracy and claims (ISO 9001, partners, product names such as "Bridge Mate
 3. Add width and height to images; fix heading order; enlarge breadcrumb tap targets.
 4. Fix the 2.5 to 1 contrast on the contact notice.
 5. Lighten the home first load (fewer or lazier film frames, poster first).
+
+## Corrections and confirmation (same day)
+- The FAIL was checked by eye and by pixels: the notice is grey-blue (#4A5B6E) on dark navy (#071A33), 2.50 to 1. Real defect. Cause: `.note{color:var(--muted)}` applies inside a dark section. Proposed fix `.dark .note{color:#B9CCE0}` gives 10.61 to 1 (computed). Not applied.
+- Correction: the grouped results had 11 distinct WARN types (plus 1 FAIL and 2 NOTE types, 14 rule types in all). An earlier summary said "14 distinct warnings", which was wrong.
+- Preview artifact (private): https://claude.ai/artifact/8HAdwQNy1ygne2koV5tkP1
