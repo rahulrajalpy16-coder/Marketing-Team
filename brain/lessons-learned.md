@@ -9,4 +9,7 @@ Format: date | scope (one-off, this platform, this account, always) | status (pr
 - 2026-11-06 | always | provisional | `gh auth status` can say the token is invalid while REST calls work. Judge capability by a real call, not by auth status. | Capability check.
 - 2026-11-06 | always | provisional | Check repository visibility (gh api repos/<owner>/<repo> --jq .visibility) at the start of any delivery job. The repo was found public although described as private. | Capability check.
 
+- 2026-11-06 | always | provisional | Google Drive downloads work for originals: save-to-file then decode base64 with python. Do not Read the saved file. Use `parentId = '<id>'` to list a folder. | Second-run test.
+- 2026-11-06 | always | provisional | Rahul's earlier repos hold approved brand material (logo, company profile, style preferences). Look there before asking him for brand files. | Rahul: "you might can retrieve from any of our previous chats or previous repos".
+
 (No Rahul corrections yet.)
