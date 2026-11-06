@@ -38,3 +38,8 @@ Two video revisions (v1 to v2 to v3), the maximum of three QA cycles. One captio
 - Rahul confirmed partners, chose the company page, added Guidance Marine, approved HEIC tooling, the file-name photo and the panel figures. Folder grew to 21 photos while I worked (5 HEIC arrived mid-job).
 - v6/v7: 8 beats, 29.8 s, 11 photos, split-screen pairs, five-partner end card. Independent QA (video v6, v7; company caption) all pass; defects found and fixed: 9x16 NAVIS caption over the logo, pair headroom.
 - Still open: Rahul to play both files once; optional "Navis Engineering" spelling and partner order; Fugro and Guidance Marine have no photo yet.
+
+## v8 to v10 (logos, Rahul's sequence feedback)
+- Rahul supplied five partner logos and asked for full spelling: end card rebuilt with white logo tiles and full names (v8). Rahul then asked for the team photo first, then the thank-you title, and sharper captions, and said the woman in one photo represents Guidance Marine (v10). Independent QA passed v8 and v10 (both ratios).
+- Correction of my own claim: I said trimming the logos' empty margins made them larger. QA showed the source files have no empty margin, so the end card did not change; the Fugro mark is simply small because its shape is wide. Lesson: check a claimed visual change by diffing before reporting it.
+- Interpretation to confirm with Rahul: the "full Sinor Marine team photo" was read as the group of four at the stand.

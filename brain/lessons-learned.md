@@ -26,4 +26,6 @@ Format: date | scope (one-off, this platform, this account, always) | status (pr
 
 - 2026-11-06 | this campaign | provisional | Rahul wants a video to OPEN with the team photo and then the thank-you title; captions should be specific, not generic ("At the stand" was rejected as weak); when a partner representative is identified by Rahul, caption the photo with the partner name. Rahul: "Start with full sinor marine team photo, then start tanks, welcome to our stand change to conversations at our stand. At the stand change to better caption. Thanks for stopping by change as the girl in the photo represents guidance marine". | Rahul feedback after v9.
 
+- 2026-11-06 | always | provisional | Before telling Rahul a visual change happened, diff the output against the previous version. I claimed the Fugro logo got larger after trimming margins; QA showed nothing changed. | QA v10 finding V10-1.
+
 (Rahul corrections so far: 2, see above.)
