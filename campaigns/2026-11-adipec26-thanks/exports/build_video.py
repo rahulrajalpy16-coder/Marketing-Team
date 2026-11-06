@@ -121,7 +121,7 @@ def end_card():
     for y in range(H):
         c = tuple(int(NAVY[i] + (BLUE[i] - NAVY[i]) * (y / H) * 0.9) for i in range(3))
         d.line([(0, y), (W, y)], fill=c)
-    o = (SAFE - 1200) // 2  # centre the block above the safe margin
+    o = (SAFE - 1200) // 2 - 14  # centre the block above the safe margin, with a little air
     img = img.convert("RGBA")
     card = logo_card_rgba(560)
     img.alpha_composite(card, ((W - card.width) // 2, 80 + o))
@@ -139,6 +139,23 @@ def end_card():
         y += 72
     d.text((cx, y + 20), "Sinor Marine Services Middle East FZCO", font=font("Medium", 34), fill=LIGHT + (255,), anchor="mt")
     return img.convert("RGB")
+
+
+def make_clip(photo, n, zoom_in, amt, path):
+    """Render n frames of a smooth push-in (or pull-out) with sub-pixel bicubic sampling.
+    ffmpeg zoompan rounds its crop to whole pixels, which shows as stepped judder, so the
+    motion is rendered here and piped to ffmpeg as raw frames (near-lossless intermediate)."""
+    ff = subprocess.Popen(
+        ["ffmpeg", "-v", "error", "-y", "-f", "rawvideo", "-pix_fmt", "rgb24", "-s", f"{W}x{H}", "-r", str(FPS),
+         "-i", "-", "-c:v", "libx264", "-preset", "veryfast", "-crf", "10", "-pix_fmt", "yuv420p", str(path)],
+        stdin=subprocess.PIPE)
+    for k in range(n):
+        t = k / (n - 1)
+        z = 1 + amt * t if zoom_in else 1 + amt * (1 - t)
+        cx, cy = W / 2 - (W / 2) / z, H / 2 - (H / 2) / z
+        ff.stdin.write(photo.transform((W, H), Image.AFFINE, (1 / z, 0, cx, 0, 1 / z, cy), resample=Image.BICUBIC).tobytes())
+    ff.stdin.close()
+    ff.wait()
 
 
 def main():
@@ -160,12 +177,11 @@ def main():
             Image.alpha_composite(photo.convert("RGBA"), ov).convert("RGB").save(
                 out / f"adipec26-thanks_cover_{ASPECT}_v{ver}.jpg", quality=90)
         n = int((dur + XFADE) * FPS)
-        zin = i % 2 == 0
-        z = f"1+{0.06 if i == 0 else 0.075}*on/{n}" if zin else f"1.075-0.075*on/{n}"
-        cmd += ["-i", str(pp), "-loop", "1", "-framerate", str(FPS), "-t", f"{dur + XFADE:.3f}", "-i", str(op)]
+        clip = out / f"clip_{i:02d}.mp4"
+        make_clip(photo, n, i % 2 == 0, 0.06 if i == 0 else 0.075, clip)
+        cmd += ["-i", str(clip), "-loop", "1", "-framerate", str(FPS), "-t", f"{dur + XFADE:.3f}", "-i", str(op)]
         parts.append(
-            f"[{idx}:v]scale={W * 2}:{H * 2}:flags=lanczos,zoompan=z='{z}':x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':"
-            f"d={n}:s={W}x{H}:fps={FPS},format=yuv420p[p{i}];"
+            f"[{idx}:v]fps={FPS},format=yuv420p[p{i}];"
             f"[{idx + 1}:v]format=rgba[o{i}];[p{i}][o{i}]overlay=0:0:format=auto,format=yuv420p,setsar=1[v{i}]")
         tags.append(f"v{i}")
         durs.append(dur)
