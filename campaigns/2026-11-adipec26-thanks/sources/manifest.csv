@@ -1,0 +1,17 @@
+file,drive_id,type,drive_size_bytes,dimensions_after_orient,subject,quality,selection,reason
+f9c048ec-90dc-4dc4-8465-8f2b79cb9064.jpg,1DP2jtMjA7i-sJhYVs7fBlJxNwRQf0GQf,jpg,156424,960x1280,Two people (one woman one man) in front of the Sinor Marine Services panel with a DP display,good,backup,Near-duplicate of a07555b5; lower resolution
+cf677e0a-bf65-4e06-8a7a-9a40f904137c.jpg,1B2uBArZNWRe-aVaN_q4zne2LHCqVwb3I,jpg,337468,1536x2048,Two men at the stand in front of SPRINT-Nav,good,selected,Distinct scene; clean portrait at the stand
+72c998bc-8a64-44f8-b68a-92c3f60a34f8.jpg,1-QkBX4hktd07QvuWMEGdkF8QZxVFfgZV,jpg,445315,1536x2048,Group of four at the stand with Sonardyne SPRINT-Nav,sharpest of the three,backup,Near-duplicate; the second man looks away from camera
+0f44943b-22e6-4381-aac3-66a9dfc31218.jpg,17O1u742h1wybZY9HHS3e_cceYlo-2KZB,jpg,407107,1536x2048,Group of four at the stand with Sonardyne SPRINT-Nav,good,selected,Everyone faces the camera; strongest of three near-duplicates
+0c488f3f-105e-4144-a978-f1b8ee615882.jpg,1l2KYU--bwxS4uUDwrZ5eNlOLXxPERlL0,jpg,401853,1536x2048,Group of four at the stand,good,excluded,Near-duplicate of 0f44943b
+0CDC96B1-3817-4C16-B71D-B9108ECD8AD4.jpg,1Zhf4LPA1oonXj2reTYp0a3DVLnxzcrI0,jpg,369025,1206x1451,Stacked collage of two photos: Sonardyne SPRINT-Nav in foreground with a meeting behind,softer (lowest sharpness score),selected,Shows a client conversation at the Sonardyne display; each half cropped separately would be small so used as supplied
+b8be5c13-b4d7-4ce3-a2c2-c8981e3074d4.jpg,1xtgp4NKR0x8gfzSFJmcIQDG3XP8iYNBa,jpg,249492,1600x1200,Two men at the DP console panel,good,excluded,Tighter crop of the same moment as 0bc7989f
+0bc7989f-ffd8-4930-b538-267cc2414e4e.jpg,1wA0ISnomk79_5pvq0-eRLb3OYI5WvNsE,jpg,228828,1600x1200,Two men at the DP console under the HOLD POSITION panel,good,selected,Shows the DP console and panel; wider framing
+a07555b5-23b3-4497-92aa-a3613e384bc5.jpg,1ld11vtwEt9lPp_meOxrZhpGsEUlcy8Pj,jpg,159904,1280x960,Woman and man in front of the Sinor Marine Services panel,good,selected,Wider framing shows the panel and stand
+IMG_4435.HEIC,1WH3N-eFf4fk8mHDQUEKjduZecv2KbsEw,heic,798502,not decoded,unknown,not inspected,not inspected,Could not decode: ImageMagick depth-map error; ffmpeg cannot read HEIC. Needs pillow-heif (approval requested)
+IMG_4434.HEIC,1-PtxB6ALqAEgvnP65Ph06FQKQSv75Wc0,heic,1048999,not decoded,unknown,not inspected,not inspected,same reason
+IMG_4255.HEIC,1yyxuj8SRaQRxoqZMgICKUSZWTd7Dv1qg,heic,1137511,not decoded,unknown,not inspected,not inspected,same reason
+IMG_4158.HEIC,13SUURyJ8hq2P2BGj4qhGH97SHsJxJ_Jz,heic,1034769,not decoded,unknown,not inspected,not inspected,same reason
+IMG_4412.HEIC,17wH9DiENjkTcJDogm7PAFSLs3idAq5-D,heic,980904,not decoded,unknown,not inspected,not inspected,same reason
+IMG_4413.HEIC,1KjQkUzsMug2pkU-uE_dn5iJjhojvEDRl,heic,1190734,not decoded,unknown,not inspected,not inspected,same reason
+IMG_4432.HEIC,1nvyT_E9BnNzjUsF8BsREz-5yBWhssJQE,heic,664944,not decoded,unknown,not inspected,not inspected,same reason

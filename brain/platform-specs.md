@@ -4,7 +4,7 @@ ALL ENTRIES BELOW ARE UNVERIFIED STARTING POINTS from the first-run prompt (Part
 
 | Platform | Placement | Format starting point | Status | Last verified | Source URL |
 |----------|-----------|-----------------------|--------|---------------|------------|
-| LinkedIn | Feed video | MP4, H.264, AAC. 16:9 1920x1080, 1:1 1080x1080, 4:5 1080x1350, 9:16 1080x1920. Choose ratio from footage and story. Burn in concise subtitles (often watched muted). Check whether photos and video can be mixed in one post before promising it. | unverified | never | to be filled |
+| LinkedIn | Feed video | MP4, H.264, AAC. 16:9 1920x1080, 1:1 1080x1080, 4:5 1080x1350, 9:16 1080x1920. Choose ratio from footage and story. Burn in concise subtitles (often watched muted). Check whether photos and video can be mixed in one post before promising it. PARTLY VERIFIED 2026-11-06 for VIDEO ADS only (LinkedIn Marketing Solutions spec page): MP4; ratios 4:5, 9:16, 16:9, 1:1; 4:5 max 1080x1350; file 75 KB to 500 MB; help page says H.264 or VP8 and frame rate under 30 fps for ads. Organic post limits (reported 5 GB, 10 min for a Page, 10 to 60 fps) come only from third-party blogs: UNVERIFIED. | partly verified (ads) | 2026-11-06 | https://business.linkedin.com/advertise/ads/sponsored-content/video-ads/specs ; https://www.linkedin.com/help/lms/answer/a424737 |
 | Instagram | Reels and Stories | 9:16, 1080x1920 | unverified | never | to be filled |
 | Instagram | Feed | 4:5 or 1:1 | unverified | never | to be filled |
 | YouTube | Standard | 16:9, 1920x1080 or higher | unverified | never | to be filled |
