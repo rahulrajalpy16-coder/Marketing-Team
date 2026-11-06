@@ -6,7 +6,7 @@ set -eu
 name=$(printf '%s' "$1" | tr 'A-Z' 'a-z' | tr -cs 'a-z0-9' '-' | sed 's/^-//;s/-$//')
 root="campaigns/$(TZ=Asia/Dubai date +%Y-%m)-$name"
 [ -e "$root" ] && { echo "Exists already: $root (nothing changed)"; exit 1; }
-mkdir -p "$root"/{brief,inputs,references,research,design,copy,site/assets,qa,exports}
+mkdir -p "$root"/{brief,inputs,references,research,design,copy,site/assets,sources,qa,exports}
 cat > "$root/brief/brief.md" <<T
 # Brief: $name
 Date: $(TZ=Asia/Dubai date +%F)

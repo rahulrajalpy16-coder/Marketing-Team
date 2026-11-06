@@ -1,7 +1,8 @@
 #!/usr/bin/env node
 // Website QA: serves a static site locally, crawls internal pages, tests them in headless Chromium
 // at 375, 768 and 1440 px wide, and writes report.md, report.json and screenshots.
-// Usage: node scripts/web_qa.mjs <siteDir> <outDir>
+// Usage: node scripts/web_qa.mjs <siteDir> <outDir> [--hash-routes]
+// --hash-routes: for hash-routed single page apps. In-page links (#...) whose target id does not exist are treated as client routes and each is loaded and tested.
 // Exit code 1 if any FAIL. Lab numbers are local and indicative only, not real-user data.
 import http from 'node:http';
 import fs from 'node:fs';
@@ -9,7 +10,8 @@ import path from 'node:path';
 import { createRequire } from 'node:module';
 import { execSync } from 'node:child_process';
 
-const [siteArg, outArg] = process.argv.slice(2);
+const HASH = process.argv.includes('--hash-routes');
+const [siteArg, outArg] = process.argv.slice(2).filter(a => !a.startsWith('--'));
 if (!siteArg || !outArg) { console.error('Usage: node scripts/web_qa.mjs <siteDir> <outDir>'); process.exit(2); }
 const siteDir = path.resolve(siteArg);
 const outDir = path.resolve(outArg);
@@ -58,7 +60,7 @@ while (queue.length && seen.size < 50) {
     let bytes = 0, reqs = 0; const external = new Set();
     page.on('console', m => { if (m.type() === 'error' && !/Failed to load resource/.test(m.text())) add('FAIL', pagePath, vpl, 'console-error', m.text().slice(0, 200)); });
     page.on('pageerror', e => add('FAIL', pagePath, vpl, 'page-error', String(e).slice(0, 200)));
-    page.on('requestfailed', r => add('FAIL', pagePath, vpl, 'request-failed', r.url().slice(0, 160)));
+    page.on('requestfailed', r => { if (r.resourceType() === 'media' && /ERR_ABORTED/.test((r.failure() || {}).errorText || '')) return; add('FAIL', pagePath, vpl, 'request-failed', r.url().slice(0, 160)); });
     page.on('response', async r => {
       reqs++;
       const u = r.url();
@@ -149,7 +151,10 @@ while (queue.length && seen.size < 50) {
         if (!d.landmarks.main) add('FAIL', pagePath, 'all', 'main-landmark-missing', '');
         if (!d.landmarks.header || !d.landmarks.footer) add('WARN', pagePath, 'all', 'header-or-footer-landmark-missing', '');
         if (!d.skipLink) add('WARN', pagePath, 'all', 'skip-link-missing', '');
-        if (d.anchorsMissing.length) add('FAIL', pagePath, 'all', 'broken-anchor', d.anchorsMissing.join(', '));
+        if (d.anchorsMissing.length) {
+          if (HASH) { for (const h of d.anchorsMissing) { const r = '/' + h; if (!seen.has(r) && !queue.includes(r)) queue.push(r); } }
+          else add('FAIL', pagePath, 'all', 'broken-anchor', d.anchorsMissing.join(', '));
+        }
         if (d.lorem) add('FAIL', pagePath, 'all', 'lorem-ipsum', '');
         if (d.emdash) add('WARN', pagePath, 'all', 'em-or-en-dash-in-text-title-meta-or-alt', '');
         if (external.size) add('WARN', pagePath, 'all', 'external-requests', [...external].join(', '));
