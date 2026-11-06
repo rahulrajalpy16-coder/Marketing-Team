@@ -27,12 +27,12 @@ SLIDES = [
     ("0f44943b-22e6-4381-aac3-66a9dfc31218.jpg", "cover", 4.5, "TITLE"),
     ("0bc7989f-ffd8-4930-b538-267cc2414e4e.jpg", "fit", 3.8, "DP console on the stand"),
     ("0CDC96B1-3817-4C16-B71D-B9108ECD8AD4.jpg", "fit", 3.8, "Conversations at the stand"),
-    ("cf677e0a-bf65-4e06-8a7a-9a40f904137c.jpg", "cover", 3.8, "At the stand"),
+    # cf677e0a (two men at the stand) is held back: a media file name is readable on the stand TV behind them. Ask Rahul.
     ("a07555b5-23b3-4497-92aa-a3613e384bc5.jpg", "fit", 3.8, "Thank you for stopping by"),
 ]
 END_DUR, XFADE = 6.0, 0.5
 # The supplied collage stacks two photos with a white seam near row 714 to 725; use only the sharp top photo.
-CROPS = {"0CDC96B1-3817-4C16-B71D-B9108ECD8AD4.jpg": (0, 0, 1206, 710)}
+CROPS = {"0CDC96B1-3817-4C16-B71D-B9108ECD8AD4.jpg": (0, 14, 1206, 710)}
 LIGHT = (196, 218, 240)  # small text on dark backgrounds (higher contrast than STEEL)
 # ------------------------------------------------------------------------------------------------
 
@@ -97,18 +97,18 @@ def slide_photo(path, mode, caption, idx):
         im = im.crop(CROPS[Path(path).name])
     img = fit_blur(im) if mode == "fit" else cover(im, crop_top=0.78)
     if caption == "TITLE":
-        img = bottom_gradient(img, 760, 245)
+        img = bottom_gradient(img, 700, 245)
         d = ImageDraw.Draw(img)
-        d.rectangle([64, 978, 64 + 96, 978 + 8], fill=LIGHT)
-        d.text((64, 1008), "Thank you.", font=font("ExtraBold", 132), fill=(255, 255, 255))
-        d.text((64, 1164), EVENT_LINE, font=font("SemiBold", 42), fill=(255, 255, 255))
-        d.text((64, 1220), DATE_LINE, font=font("Medium", 40), fill=LIGHT)
+        d.rectangle([64, 880, 64 + 96, 880 + 8], fill=LIGHT)
+        d.text((64, 910), "Thank you.", font=font("ExtraBold", 132), fill=(255, 255, 255))
+        d.text((64, 1066), EVENT_LINE, font=font("SemiBold", 42), fill=(255, 255, 255))
+        d.text((64, 1122), DATE_LINE, font=font("Medium", 40), fill=LIGHT)
         logo_card(img, 250, (48, 48))
     else:
-        img = bottom_gradient(img, 1000, 230)
+        img = bottom_gradient(img, 930, 230)
         d = ImageDraw.Draw(img)
-        d.rectangle([64, 1186, 64 + 72, 1186 + 7], fill=LIGHT)
-        d.text((64, 1208), caption, font=font("SemiBold", 48), fill=(255, 255, 255))
+        d.rectangle([64, 1096, 64 + 72, 1096 + 7], fill=LIGHT)
+        d.text((64, 1118), caption, font=font("SemiBold", 48), fill=(255, 255, 255))
     return img
 
 
@@ -119,18 +119,18 @@ def slide_end():
         t = y / H
         c = tuple(int(NAVY[i] + (BLUE[i] - NAVY[i]) * t * 0.9) for i in range(3))
         d.line([(0, y), (W, y)], fill=c)
-    cw, ch = logo_card(img, 560, ((W - 596) // 2, 110))
-    d.text((W // 2, 430), "Thank you", font=font("ExtraBold", 120), fill=(255, 255, 255), anchor="mt")
-    d.rectangle([W // 2 - 48, 590, W // 2 + 48, 598], fill=STEEL)
-    d.text((W // 2, 640), "To every client and visitor", font=font("SemiBold", 44), fill=(255, 255, 255), anchor="mt")
-    d.text((W // 2, 698), "who stopped by our stand.", font=font("SemiBold", 44), fill=(255, 255, 255), anchor="mt")
-    d.text((W // 2, 800), "And to our technology partners", font=font("Medium", 40), fill=LIGHT, anchor="mt")
-    d.text((W // 2, 850), "for their support:", font=font("Medium", 40), fill=LIGHT, anchor="mt")
-    y = 935
+    cw, ch = logo_card(img, 560, ((W - 596) // 2, 80))
+    d.text((W // 2, 360), "Thank you", font=font("ExtraBold", 120), fill=(255, 255, 255), anchor="mt")
+    d.rectangle([W // 2 - 48, 515, W // 2 + 48, 523], fill=STEEL)
+    d.text((W // 2, 560), "To every client and visitor", font=font("SemiBold", 44), fill=(255, 255, 255), anchor="mt")
+    d.text((W // 2, 618), "who stopped by our stand.", font=font("SemiBold", 44), fill=(255, 255, 255), anchor="mt")
+    d.text((W // 2, 710), "And to our technology partners", font=font("Medium", 40), fill=LIGHT, anchor="mt")
+    d.text((W // 2, 760), "for their support:", font=font("Medium", 40), fill=LIGHT, anchor="mt")
+    y = 845
     for p in PARTNERS:
         d.text((W // 2, y), p, font=font("Bold", 52), fill=(255, 255, 255), anchor="mt")
-        y += 76
-    d.text((W // 2, 1236), "Sinor Marine Services Middle East FZCO", font=font("Medium", 34), fill=LIGHT, anchor="mt")
+        y += 72
+    d.text((W // 2, 1140), "Sinor Marine Services Middle East FZCO", font=font("Medium", 34), fill=LIGHT, anchor="mt")
     return img
 
 
