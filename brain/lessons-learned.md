@@ -18,3 +18,9 @@ Format: date | scope (one-off, this platform, this account, always) | status (pr
 - 2026-11-06 | always | provisional | Inspect photos for incidental on-screen text (media file names, badges, other brands) before using them; list them for Rahul. A file name was visible on the stand video wall in one photo. | Video QA cycle 2 prompt.
 
 (No Rahul corrections yet.)
+
+- 2026-11-06 | always | provisional | Instagram reels: Firecrawl scrape refuses instagram.com, but TinyFish fetch_content returns the public caption, date and comments (not the video). State plainly that the video was not watched. | Web team setup job.
+- 2026-11-06 | always | provisional | When a shared link turns out to be about something different from the request (reel was about video editing, request was a web team), say so and state the interpretation as an assumption. | Web team setup job.
+- 2026-11-06 | always | provisional | A QA script that tests one viewport hides mobile-only controls. Run visibility-dependent checks at every key viewport and prove it with a fixture. | qa_report_team_1 D6, fixed and proven.
+- 2026-11-06 | always | provisional | When two agents can both draft the same field (page title, meta description), name one owner in the pipeline. | qa_report_team_1 D2.
+- 2026-11-06 | always | provisional | Agent files added mid-session cannot be launched until the next session. Say so and do not claim the new agents ran. | Web team setup job.

@@ -17,3 +17,13 @@ Format: ID | target file | before | after | reason | date proposed.
 - Before: no guidance for photo-only slideshows.
 - After: add "Photo-only video: use 4:5 1080x1350, cover-crop portrait photos (trim the ceiling, keep feet), fit landscape photos on a blurred copy, keep captions and titles above the bottom 150 px, hold each photo 3.5 to 4.5 s, 0.5 s crossfades, one end card thanking people and partners."
 - Reason: this layout worked for the ADIPEC post and is reproducible via campaigns/2026-11-adipec26-thanks/exports/build_video.py.
+
+## P-004 | CLAUDE.md | proposed 2026-11-06
+- Before: Pointers section lists 4 skills and says specialists are in .claude/agents/ (10 files). No mention of the website team.
+- After: add one line under Pointers: "Website team (7 agents, 3 website-* skills): see docs/web-team-playbook.md. Scaffold with scripts/web_new_project.sh, test with scripts/web_qa.mjs." and change "(10 files)" to "(17 files)".
+- Reason: so every future session knows the website team exists without reading the docs folder. CLAUDE.md edits need approval.
+
+## P-005 | CLAUDE.md | proposed 2026-11-06
+- Before: Platform and quality rules cover video and LinkedIn only.
+- After: add "Website: build with the website-build-standards skill; independent QA with web-qa-reviewer; never publish, connect forms, add trackers or share a preview link without approval."
+- Reason: makes the website approval limits permanent rules, not only agent text.

@@ -16,3 +16,13 @@ ALL ENTRIES BELOW ARE UNVERIFIED STARTING POINTS from the first-run prompt (Part
 Still to determine per platform when verifying: maximum duration, maximum file size, caption length, safe zones, subtitle rules, cover image size.
 
 General: keep titles and faces inside interface-safe zones, keep text readable at phone size, match source frame rate unless the platform requires otherwise. Target length, hook timing and posting time are hypotheses to test, not rules.
+
+## Website (verified 2026-11-06)
+| Item | Value | Status | Last verified | Source URL |
+|------|-------|--------|---------------|------------|
+| LCP good | 2.5 s or less | verified | 2026-11-06 | https://web.dev/articles/vitals |
+| INP good | 200 ms or less | verified | 2026-11-06 | https://web.dev/articles/vitals |
+| CLS good | 0.1 or less | verified | 2026-11-06 | https://web.dev/articles/cls |
+| Text contrast (WCAG 2.2 SC 1.4.3, AA) | 4.5:1 normal text, 3:1 large text | verified | 2026-11-06 | https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html |
+| Pointer target size (WCAG 2.2 SC 2.5.8, AA) | at least 24 by 24 CSS px | verified | 2026-11-06 | https://www.w3.org/TR/WCAG22/ |
+Notes: search excerpts were read, not the full pages. Web.dev frames the Core Web Vitals as real-user field metrics. Title length (50 to 60) and meta description length (120 to 155) used in agent files are working guidelines, not verified standards. Re-verify after 2027-02-04.

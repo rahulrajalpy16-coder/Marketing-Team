@@ -1,0 +1,15 @@
+path,type,note
+.claude/agents/web-strategist.md,agent,new
+.claude/agents/ux-architect.md,agent,new
+.claude/agents/ui-designer.md,agent,new
+.claude/agents/web-copywriter.md,agent,new
+.claude/agents/frontend-developer.md,agent,new
+.claude/agents/seo-a11y-specialist.md,agent,new
+.claude/agents/web-qa-reviewer.md,agent,new (no memory field by design)
+.claude/skills/website-build-standards/SKILL.md,skill,new
+.claude/skills/website-style-learning/SKILL.md,skill,new
+.claude/skills/website-qa-checklist/SKILL.md,skill,new
+scripts/web_setup_check.sh,script,new
+scripts/web_new_project.sh,script,new
+scripts/web_qa.mjs,script,new; tested on clean broken and mobile-only fixtures
+docs/web-team-playbook.md,doc,new
