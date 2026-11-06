@@ -30,3 +30,6 @@ The repo may be public. Keep personal phone numbers, emails, tax numbers and ban
 - Default look: premium marine and offshore corporate; navy, marine blue, white, steel blue.
 - Fonts: Helvetica or Arial in company documents (earlier-repo note). Social fonts TO BE CONFIRMED.
 - Formal brand guideline document: none found yet. TO BE SUPPLIED if one exists.
+
+## Logo on dark backgrounds (checked 2026-11-06)
+assets/brand/sinor-logo.png has pure white corner pixels (255,255,255 at all four corners, checked by script): the background is opaque white. On a dark page it shows as a white rectangle. Use a deliberate white plate behind it, or get the white variant from Drive (not yet inspected). Brand navy #0D4A85 is about 2 to 1 against near-black navy, so never use it as text on dark.

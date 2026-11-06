@@ -24,3 +24,8 @@ Format: date | scope (one-off, this platform, this account, always) | status (pr
 - 2026-11-06 | always | provisional | A QA script that tests one viewport hides mobile-only controls. Run visibility-dependent checks at every key viewport and prove it with a fixture. | qa_report_team_1 D6, fixed and proven.
 - 2026-11-06 | always | provisional | When two agents can both draft the same field (page title, meta description), name one owner in the pipeline. | qa_report_team_1 D2.
 - 2026-11-06 | always | provisional | Agent files added mid-session cannot be launched until the next session. Say so and do not claim the new agents ran. | Web team setup job.
+
+- 2026-11-06 | always | provisional | Pinterest short links (pin.it) resolve through TinyFish fetch_content to pin metadata and a preview image (i.pinimg.com), which can be downloaded and viewed. Pin text is login-gated. Source sites named in the pin metadata can then be fetched. | Style study job.
+- 2026-11-06 | always | provisional | Style studies from still frames cannot describe motion. Keep OBSERVED and INFERRED separate and list what was not seen. | ui-designer candidate lesson.
+- 2026-11-06 | always | provisional | /usr/bin/google-chrome exists (headless works) even where an agent could not resolve Playwright. scripts/web_qa.mjs finds Playwright through the global npm root. State which browser tool was used. | ui-designer candidate lesson, Director check.
+- 2026-11-06 | this account | provisional | Ask Rahul before any 3D, WebGL or animation library (GSAP, Lenis, three.js); default is CSS-only scroll effects with a static fallback and reduced-motion support. | Style study conflict with build standards.

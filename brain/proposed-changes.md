@@ -27,3 +27,8 @@ Format: ID | target file | before | after | reason | date proposed.
 - Before: Platform and quality rules cover video and LinkedIn only.
 - After: add "Website: build with the website-build-standards skill; independent QA with web-qa-reviewer; never publish, connect forms, add trackers or share a preview link without approval."
 - Reason: makes the website approval limits permanent rules, not only agent text.
+
+## P-006 | .claude/skills/website-build-standards/SKILL.md | proposed 2026-11-06
+- Before: no rule on 3D, WebGL or animation libraries.
+- After: add "3D, WebGL canvas and animation libraries (GSAP, Lenis, three.js) need Rahul's approval. Default is CSS scroll-driven effects with a static fallback and a prefers-reduced-motion path. Hero visual under 300 KB."
+- Reason: the three cinematic references rely on those libraries; the default stack and 1.5 MB budget forbid them silently.
