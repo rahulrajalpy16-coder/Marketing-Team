@@ -32,4 +32,6 @@ Format: date | scope (one-off, this platform, this account, always) | status (pr
 
 - 2026-11-06 | this campaign | provisional | Rahul asked for the same content in several template-inspired styles. Workflow that worked: resolve each Pinterest short link to the pin id, read the video URL from the pidgets endpoint, download the 720p preview, build a contact sheet, name the style traits, then rebuild the style from scratch with the event photos (never reuse template assets). Keep captions factual across all styles: QA flagged "The team at our stand" and "Discussions at the Sonardyne display" as over-claims, now "Together at our stand" and "Sonardyne SPRINT-Nav on the stand". | Rahul message with two more pins.
 
+- 2026-11-06 | always | provisional | Heavy renders plus frame extraction plus montage in one command got the worker killed (exit 137, memory). Run video renders one at a time in the background with a log, and check each output with ffprobe before using it; a killed render can leave a truncated MP4. | Worker restart during the style renders.
+
 (Rahul corrections so far: 2, see above.)
