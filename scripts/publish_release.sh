@@ -9,7 +9,12 @@ if [ "$#" -lt 4 ]; then sed -n '2,6p' "$0"; exit 2; fi
 FILE="$1"; TAG="$2"; SUMMARY="$3"; META="$4"
 [ -f "$FILE" ] || { echo "File not found: $FILE"; exit 1; }
 command -v gh >/dev/null || { echo "gh not installed"; exit 1; }
-gh auth status >/dev/null 2>&1 || { echo "gh is not authenticated. Ask Rahul to connect GitHub in the Claude app settings. Do not request a token in chat."; exit 1; }
+# Note: `gh auth status` can report an invalid token in cloud sessions even when REST calls work,
+# so it is not used as a gate. If release creation fails (for example HTTP 403 "not permitted for
+# this session type"), report the exact error, use the fallback in brain/capabilities.md, and never
+# ask Rahul to paste a token in chat.
+VIS=$(gh api "repos/$(git config --get remote.origin.url | sed -E 's#.*github.com[/:]##; s#\.git$##')" --jq .visibility 2>/dev/null || echo unknown)
+if [ "$VIS" != "private" ]; then echo "WARNING: repository visibility is '$VIS', not private. Ask Rahul before uploading a deliverable here."; [ "${ALLOW_NONPRIVATE:-0}" = "1" ] || exit 1; fi
 
 SIZE=$(wc -c < "$FILE")
 MAX=$((2 * 1024 * 1024 * 1024))
