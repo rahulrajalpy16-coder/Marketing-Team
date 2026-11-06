@@ -26,11 +26,14 @@ PARTNERS = ["Sonardyne", "Fugro", "NAVIS", "Marine Technologies"]
 SLIDES = [
     ("0f44943b-22e6-4381-aac3-66a9dfc31218.jpg", "cover", 4.5, "TITLE"),
     ("0bc7989f-ffd8-4930-b538-267cc2414e4e.jpg", "fit", 3.8, "DP console on the stand"),
-    ("0CDC96B1-3817-4C16-B71D-B9108ECD8AD4.jpg", "cover", 3.8, "Technical discussions at the stand"),
-    ("cf677e0a-bf65-4e06-8a7a-9a40f904137c.jpg", "cover", 3.8, "Meeting visitors at the stand"),
+    ("0CDC96B1-3817-4C16-B71D-B9108ECD8AD4.jpg", "fit", 3.8, "Conversations at the stand"),
+    ("cf677e0a-bf65-4e06-8a7a-9a40f904137c.jpg", "cover", 3.8, "At the stand"),
     ("a07555b5-23b3-4497-92aa-a3613e384bc5.jpg", "fit", 3.8, "Thank you for stopping by"),
 ]
 END_DUR, XFADE = 6.0, 0.5
+# The supplied collage stacks two photos with a white seam near row 714 to 725; use only the sharp top photo.
+CROPS = {"0CDC96B1-3817-4C16-B71D-B9108ECD8AD4.jpg": (0, 0, 1206, 710)}
+LIGHT = (196, 218, 240)  # small text on dark backgrounds (higher contrast than STEEL)
 # ------------------------------------------------------------------------------------------------
 
 
@@ -90,21 +93,22 @@ def logo_card(img, width, xy):
 
 def slide_photo(path, mode, caption, idx):
     im = Image.open(path).convert("RGB")
+    if Path(path).name in CROPS:
+        im = im.crop(CROPS[Path(path).name])
     img = fit_blur(im) if mode == "fit" else cover(im, crop_top=0.78)
     if caption == "TITLE":
         img = bottom_gradient(img, 760, 245)
         d = ImageDraw.Draw(img)
-        d.rectangle([64, 1018, 64 + 96, 1018 + 8], fill=STEEL)
-        d.text((64, 1048), "Thank you.", font=font("ExtraBold", 132), fill=(255, 255, 255))
-        d.text((64, 1204), EVENT_LINE, font=font("SemiBold", 40), fill=(255, 255, 255))
-        d.text((64, 1258), DATE_LINE, font=font("Medium", 36), fill=STEEL)
+        d.rectangle([64, 978, 64 + 96, 978 + 8], fill=LIGHT)
+        d.text((64, 1008), "Thank you.", font=font("ExtraBold", 132), fill=(255, 255, 255))
+        d.text((64, 1164), EVENT_LINE, font=font("SemiBold", 42), fill=(255, 255, 255))
+        d.text((64, 1220), DATE_LINE, font=font("Medium", 40), fill=LIGHT)
         logo_card(img, 250, (48, 48))
     else:
-        img = bottom_gradient(img, 1040, 225)
+        img = bottom_gradient(img, 1000, 230)
         d = ImageDraw.Draw(img)
-        d.rectangle([64, 1226, 64 + 72, 1226 + 7], fill=STEEL)
-        d.text((64, 1248), caption, font=font("SemiBold", 46), fill=(255, 255, 255))
-        pill(img, "ADIPEC 2026", (W - 64 - 220, 56))
+        d.rectangle([64, 1186, 64 + 72, 1186 + 7], fill=LIGHT)
+        d.text((64, 1208), caption, font=font("SemiBold", 48), fill=(255, 255, 255))
     return img
 
 
@@ -120,13 +124,13 @@ def slide_end():
     d.rectangle([W // 2 - 48, 590, W // 2 + 48, 598], fill=STEEL)
     d.text((W // 2, 640), "To every client and visitor", font=font("SemiBold", 44), fill=(255, 255, 255), anchor="mt")
     d.text((W // 2, 698), "who stopped by our stand.", font=font("SemiBold", 44), fill=(255, 255, 255), anchor="mt")
-    d.text((W // 2, 800), "And to our technology partners", font=font("Medium", 38), fill=STEEL, anchor="mt")
-    d.text((W // 2, 850), "for their support:", font=font("Medium", 38), fill=STEEL, anchor="mt")
+    d.text((W // 2, 800), "And to our technology partners", font=font("Medium", 40), fill=LIGHT, anchor="mt")
+    d.text((W // 2, 850), "for their support:", font=font("Medium", 40), fill=LIGHT, anchor="mt")
     y = 935
     for p in PARTNERS:
         d.text((W // 2, y), p, font=font("Bold", 52), fill=(255, 255, 255), anchor="mt")
         y += 76
-    d.text((W // 2, 1262), "Sinor Marine Services Middle East FZCO", font=font("Medium", 30), fill=STEEL, anchor="mt")
+    d.text((W // 2, 1236), "Sinor Marine Services Middle East FZCO", font=font("Medium", 34), fill=LIGHT, anchor="mt")
     return img
 
 
