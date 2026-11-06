@@ -39,14 +39,18 @@ PARTNER_DIR = Path(__file__).resolve().parents[3] / "assets/brand/partners"
 # Each beat: files (1 file, or 2 for a stacked split-screen pair), mode (cover | fit | pair),
 # dur seconds, cap (caption; "TITLE" = opening title), optional crop_top for portrait cover crops.
 SLIDES = [
-    dict(files=["0f44943b-22e6-4381-aac3-66a9dfc31218.jpg"], mode="cover", dur=4.0, cap="TITLE"),
+    # Rahul 2026-11-06: start with the full Sinor Marine team photo (read as the group of four at the stand), then the thank-you title.
+    dict(files=["0f44943b-22e6-4381-aac3-66a9dfc31218.jpg"], mode="cover", dur=2.8, cap="TEAM"),
+    dict(files=["0f44943b-22e6-4381-aac3-66a9dfc31218.jpg"], mode="titlebg", dur=2.6, cap="TITLE"),
     dict(files=["IMG_4413.jpg"], mode="fith", dur=2.8, cap="NAVIS console"),
     dict(files=["IMG_4432.jpg"], mode="cover", dur=2.8, cap="Sonardyne SPRINT-Nav on the stand", crop_top=0.6),
-    dict(files=["IMG_4464.jpg", "0bc7989f-ffd8-4930-b538-267cc2414e4e.jpg"], mode="pair", dur=3.2, cap="Conversations at the stand"),
+    dict(files=["IMG_4464.jpg", "0bc7989f-ffd8-4930-b538-267cc2414e4e.jpg"], mode="pair", dur=3.2, cap="Technology on show at our stand"),
     dict(files=["IMG_4188.jpg", "IMG_4255.jpg"], mode="pair", dur=3.2, cap="Marine Technologies on the stand"),
-    dict(files=["IMG_4403.jpg", "IMG_4156.jpg"], mode="pair", dur=3.2, cap="Welcome to our stand"),
-    dict(files=["cf677e0a-bf65-4e06-8a7a-9a40f904137c.jpg"], mode="cover", dur=2.8, cap="At the stand", crop_top=0.78),
-    dict(files=["a07555b5-23b3-4497-92aa-a3613e384bc5.jpg"], mode="fit", dur=2.8, cap="Thank you for stopping by"),
+    dict(files=["IMG_4403.jpg", "IMG_4156.jpg"], mode="pair", dur=3.2, cap="Conversations at our stand"),
+    # cf677e0a: media file name readable on the stand TV; Rahul approved using it as is.
+    dict(files=["cf677e0a-bf65-4e06-8a7a-9a40f904137c.jpg"], mode="cover", dur=2.8, cap="Good to see you at the stand", crop_top=0.78),
+    # a07555b5: Rahul says the woman in this photo represents Guidance Marine.
+    dict(files=["a07555b5-23b3-4497-92aa-a3613e384bc5.jpg"], mode="fit", dur=2.8, cap="Guidance Marine at our stand"),
 ]
 END_DUR, XFADE = 5.5, 0.45
 # The supplied collage stacks two photos with a white seam near rows 714 to 725: use only the
@@ -100,6 +104,9 @@ def photo_layer(jpg, it):
         bg.paste(cell(ims[0], W, ch, crop_top=0.0), (0, top))  # keep headroom in the top photo
         bg.paste(cell(ims[1], W, ch), (0, top + ch + gap))
         return bg
+    if mode == "titlebg":
+        bg = cover(ims[0]).filter(ImageFilter.GaussianBlur(26))
+        return Image.blend(bg, Image.new("RGB", (W, H), NAVY), 0.62)
     if mode == "fith":
         # tall photo shown whole (nothing cropped, for example a logo) with soft bands, kept well above the caption
         fh = 1250 if ASPECT == "4x5" else SAFE - 120
@@ -135,24 +142,31 @@ def logo_card_rgba(width):
 
 
 def overlay_layer(caption):
-    layer = gradient_layer(SAFE - (500 if caption == "TITLE" else 270), 245 if caption == "TITLE" else 230)
     t = Image.new("RGBA", (W, H), (0, 0, 0, 0))
     d = ImageDraw.Draw(t)
     if caption == "TITLE":
-        d.rectangle([64, SAFE - 320, 64 + 96, SAFE - 312], fill=LIGHT + (255,))
-        d.text((64, SAFE - 290), "Thank you.", font=font("ExtraBold", 132), fill=WHITE + (255,))
-        d.text((64, SAFE - 134), EVENT_LINE, font=font("SemiBold", 42), fill=WHITE + (255,))
-        d.text((64, SAFE - 78), DATE_LINE, font=font("Medium", 40), fill=LIGHT + (255,))
+        cy = SAFE // 2 - 190
+        d.rectangle([(W - 96) // 2, cy, (W + 96) // 2, cy + 8], fill=LIGHT + (255,))
+        d.text((W // 2, cy + 40), "Thank you.", font=font("ExtraBold", 158), fill=WHITE + (255,), anchor="mt")
+        d.text((W // 2, cy + 250), EVENT_LINE, font=font("SemiBold", 46), fill=WHITE + (255,), anchor="mt")
+        d.text((W // 2, cy + 316), DATE_LINE, font=font("Medium", 42), fill=LIGHT + (255,), anchor="mt")
+        t.alpha_composite(logo_card_rgba(300), ((W - 336) // 2, cy - 190))
+        return t
+    layer = gradient_layer(SAFE - (330 if caption == "TEAM" else 270), 235 if caption == "TEAM" else 230)
+    text = "The Sinor Marine team at ADIPEC 2026" if caption == "TEAM" else caption
+    d.rectangle([64, SAFE - 104, 64 + 72, SAFE - 97], fill=LIGHT + (255,))
+    d.text((64, SAFE - 82), text, font=font("SemiBold", 48), fill=WHITE + (255,))
+    if caption == "TEAM":
         t.alpha_composite(logo_card_rgba(250), (48, 48 if ASPECT == "4x5" else 130))
-    else:
-        d.rectangle([64, SAFE - 104, 64 + 72, SAFE - 97], fill=LIGHT + (255,))
-        d.text((64, SAFE - 82), caption, font=font("SemiBold", 48), fill=WHITE + (255,))
     return Image.alpha_composite(layer, t)
 
 
 def partner_tile(logo_file, tw, th):
     """White rounded tile with the supplied logo scaled to fit (never distorted or recoloured)."""
     lg = Image.open(PARTNER_DIR / logo_file).convert("RGBA")
+    bbox = lg.getchannel("A").getbbox()  # trim empty transparent margins only (the logo itself is untouched)
+    if bbox:
+        lg = lg.crop(bbox)
     box_w, box_h = tw - 44, th - 26
     sc = min(box_w / lg.width, box_h / lg.height)
     lg = lg.resize((max(1, round(lg.width * sc)), max(1, round(lg.height * sc))), Image.LANCZOS)

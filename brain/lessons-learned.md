@@ -24,4 +24,6 @@ Format: date | scope (one-off, this platform, this account, always) | status (pr
 
 - 2026-11-06 | always | provisional | When Rahul supplies partner logos, use them on thank-you end cards with the full company name in text beside them (MT logo shows only "MT"). Always write full company names ("Navis Engineering", not "NAVIS"). Rahul: "Spelling use full." | Rahul message with 6 logo images.
 
-(Rahul corrections so far: 1, see above.)
+- 2026-11-06 | this campaign | provisional | Rahul wants a video to OPEN with the team photo and then the thank-you title; captions should be specific, not generic ("At the stand" was rejected as weak); when a partner representative is identified by Rahul, caption the photo with the partner name. Rahul: "Start with full sinor marine team photo, then start tanks, welcome to our stand change to conversations at our stand. At the stand change to better caption. Thanks for stopping by change as the girl in the photo represents guidance marine". | Rahul feedback after v9.
+
+(Rahul corrections so far: 2, see above.)

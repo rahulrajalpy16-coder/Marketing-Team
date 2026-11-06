@@ -8,3 +8,4 @@ Dated record of every approved change to the system, and any note of brain-file 
 - 2026-11-06 | Campaign 2026-11-adipec26-thanks run: verified-facts, platform-specs (LinkedIn ads spec), lessons (4 provisional) and 3 proposals (P-001 to P-003) recorded. No agent, skill or CLAUDE.md file changed.
 - 2026-11-06 | pillow-heif installed (isolated venv, approved by Rahul); scripts/heic_to_jpg.py added; capabilities, verified-facts, lessons updated after Rahul's answers (company page, Guidance Marine added, panel figures approved).
 - 2026-11-06 | Partner logos supplied by Rahul saved to assets/brand/partners/ with README; end card now uses them; captions use full name Navis Engineering. No agent, skill or CLAUDE.md change.
+- 2026-11-06 | ADIPEC video v10: Rahul's sequence and caption changes applied (team photo first, then thank-you title; specific captions; Guidance Marine caption). Logo padding trimmed on the end card. No agent, skill or CLAUDE.md change.
