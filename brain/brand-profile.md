@@ -33,3 +33,6 @@ The repo may be public. Keep personal phone numbers, emails, tax numbers and ban
 
 ## Logo on dark backgrounds (checked 2026-11-06)
 assets/brand/sinor-logo.png has pure white corner pixels (255,255,255 at all four corners, checked by script): the background is opaque white. On a dark page it shows as a white rectangle. Use a deliberate white plate behind it, or get the white variant from Drive (not yet inspected). Brand navy #0D4A85 is about 2 to 1 against near-black navy, so never use it as text on dark.
+
+## Logos found in Rahul's Sinor Marine Technologies artifact (2026-11-06, FOUND, not confirmed approved)
+logo-mark.png 554x251, logo-mark-white.png 554x251, logo-full.png 1000x327: all RGBA with transparent corners (checked by script). logo-mark-white.png is a transparent white variant, which would avoid the white-box problem on dark backgrounds. They differ from assets/brand/sinor-logo.png (opaque white). Confirm with Rahul before use. The same artifact brands the company "Sinor Marine Technologies" with a Singapore base; the profile above says Sinor Marine Services Middle East FZCO, UAE. UNRESOLVED, asked Rahul.

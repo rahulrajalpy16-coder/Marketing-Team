@@ -11,3 +11,6 @@ Adipec26 contents on 2026-11-06 (listing complete, 16 files): 9 JPG (about 0.16 
 Earlier Rahul repos (read-only reference, cloned shallow this session): Claude-Agent-Team-SMS (private; company profile, approved logo and templates), ADIPEC-Layout-design (public; Amphicos ADIPEC 2026 stand layout and partner logo textures, not yet reviewed for marketing facts). Other repos seen, not opened: Sinor-Sales-Estimation-Team, Sinor-marine-Demo-, amphicos-offshore-platform, -Sinor-marine-VR, dp-Jarvis, sms-expense-tracker, Livebridge-translator, aevora-business, aevora-docs.
 
 iCloud cannot be read. Copy files into the Drive Inbox first.
+
+## Sinor Marine Technologies website (added 2026-11-06)
+Source of record: private Claude artifact https://claude.ai/artifact/BVhPxiEWMXaLsPQCdHigNy (owned by Rahul, 178 files, version 1793908002-e915). Working copy only in /tmp/work during a session. Metadata manifest: campaigns/2026-11-sinor-site/sources/manifest.csv. Media (9 MP4, 135 webp frames, 29 JPG, 3 PNG logos) is NOT in the repo.
