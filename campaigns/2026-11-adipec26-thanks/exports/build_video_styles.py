@@ -50,7 +50,7 @@ BEATS = [
     dict(kind="hero", src="IMG_4464.jpg", cap="Sonardyne SPRINT-Nav on the stand", word="DISCUSSIONS", chip="TECHNOLOGY"),
     dict(kind="hero", src="IMG_4188.jpg", cap="Marine Technologies on the stand", word="PARTNERS", chip="PARTNERS"),
     dict(kind="hero", src="a07555b5-23b3-4497-92aa-a3613e384bc5.jpg", cap="With Guidance Marine at our stand", word="WELCOME", chip="PARTNERS"),
-    dict(kind="hero", src="s2_2.jpg", cap="Together at our stand", word="TEAMWORK", chip="TEAM"),
+    dict(kind="hero", src="s2_2.jpg", cap="Together at our stand", word="TOGETHER", chip="STAND"),
     dict(kind="end"),
 ]
 HERO_D, TITLE_D, END_D = 2.95, 2.7, 6.0
@@ -166,6 +166,12 @@ def wrap(text, f, max_w):
             lines.append(cur)
             cur = w_
     lines.append(cur)
+    if len(lines) == 2:  # balance both lines: no orphan word on the second line
+        ws = text.split()
+        best = min(range(1, len(ws)), key=lambda k: max(tw(" ".join(ws[:k]), f), tw(" ".join(ws[k:]), f)))
+        cand = [" ".join(ws[:best]), " ".join(ws[best:])]
+        if max(tw(c, f) for c in cand) <= max_w:
+            lines = cand
     return lines
 
 
@@ -202,9 +208,9 @@ class KBeat:
         yy = y
         ci = 0
         for p in parts:
-            x0 = (W - tw(p, f)) / 2
+            x0 = (W - (sum(f.getlength(c) for c in p) + (len(p) - 1) * size * 0.012)) / 2
             for k, ch in enumerate(p):
-                xk = x0 + f.getlength(p[:k])
+                xk = x0 + sum(f.getlength(c) for c in p[:k]) + k * size * 0.012
                 delay = 0.03 * ci
                 e = eo((t - delay) / 0.38)
                 ci += 1
@@ -280,7 +286,6 @@ class KBeat:
 
     def draw_end(self, img, t):
         d = ImageDraw.Draw(img)
-        d.rectangle([0, 0, W, int(H * 0.0)], fill=BLUE)
         tw_, th_, gx, pitch = 470, 124, 20, 184
         rows = (len(PARTNERS) + 1) // 2
         block = 560 + (rows - 1) * pitch + th_ + 42
@@ -349,7 +354,7 @@ class PBeat:
             chip.putalpha(chip.getchannel("A").point(lambda v: int(v * ec)))
             img.paste(chip, (self.hx - 12 - int((1 - ec) * 60), self.hy + self.hh - 12), chip)
             idx = [k for k, b in enumerate([bb for bb in BEATS if bb["kind"] == "hero"]) if b is self.spec][0] + 1
-            d.text((self.hx + self.hw + 12, self.hy - 44), f"{idx:02d} / {n_hero:02d}", font=font("Bold", 24), fill=AQUA + (255,), anchor="ra")
+            d.text((self.hx + self.hw + 12, self.hy - 44), f"{idx:02d} / {n_hero:02d}", font=font("Bold", 28), fill=AQUA + (255,), anchor="ra")
             # big caption + outlined info box
             ct = eo((t - 0.25) / 0.5)
             f1 = font("ExtraBold", 58)
@@ -361,11 +366,11 @@ class PBeat:
                 ld.text((self.hx - 12, k * 68), ln, font=f1, fill=WHITE + (int(255 * ct),))
             img.paste(lay, (0, int(y + (1 - ct) * 30)), lay)
             by = int(y + len(lines[:2]) * 68 + 26 + (1 - ct) * 30)
-            box = Image.new("RGBA", (int(0.52 * W), 112), (0, 0, 0, 0))
+            box = Image.new("RGBA", (int(0.62 * W), 120), (0, 0, 0, 0))
             bd = ImageDraw.Draw(box)
             bd.rectangle([0, 0, box.width - 2, box.height - 2], outline=AQUA + (int(255 * ct),), width=2)
-            bd.text((20, 14), "ADIPEC 2026", font=font("Bold", 26), fill=WHITE + (int(255 * ct),))
-            bd.text((20, 52), "ABU DHABI  ·  2-5 NOV 2026", font=font("Medium", 24), fill=LIGHT + (int(255 * ct),))
+            bd.text((20, 14), "ADIPEC 2026", font=font("Bold", 30), fill=WHITE + (int(255 * ct),))
+            bd.text((20, 56), "ABU DHABI  ·  2-5 NOV 2026", font=font("Medium", 28), fill=LIGHT + (int(255 * ct),))
             img.paste(box, (self.hx - 12, by), box)
             if self.spec.get("logo"):
                 lc = logo_card(220, 14, 16)
@@ -466,7 +471,7 @@ def directional_blur(img, px):
         return img
     a = np.asarray(img).astype(np.float32)
     acc = np.zeros_like(a)
-    n = 5
+    n = 11
     for k in range(n):
         acc += np.roll(a, int((k - (n - 1) / 2) * px / (n - 1)), axis=1)
     return Image.fromarray((acc / n).astype(np.uint8), "RGB")

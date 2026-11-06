@@ -249,7 +249,7 @@ def make_end_card():
     for y in range(H):
         c = tuple(int(NAVY[i] + (BLUE[i] - NAVY[i]) * (y / H) * 0.9) for i in range(3))
         d.line([(0, y), (W, y)], fill=c)
-    tw, th, gx, pitch = 470, 124, 20, 184
+    tw, th, gx, pitch = (470, 124, 20, 184) if ASPECT == "4x5" else (470, 150, 20, 236)
     rows = (len(PARTNERS) + 1) // 2
     block = 600 + (rows - 1) * pitch + th + 42
     o = (SAFE - block) // 2 - 6
