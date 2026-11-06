@@ -9,3 +9,4 @@ Dated record of every approved change to the system, and any note of brain-file 
 - 2026-11-06 | pillow-heif installed (isolated venv, approved by Rahul); scripts/heic_to_jpg.py added; capabilities, verified-facts, lessons updated after Rahul's answers (company page, Guidance Marine added, panel figures approved).
 - 2026-11-06 | Partner logos supplied by Rahul saved to assets/brand/partners/ with README; end card now uses them; captions use full name Navis Engineering. No agent, skill or CLAUDE.md change.
 - 2026-11-06 | ADIPEC video v10: Rahul's sequence and caption changes applied (team photo first, then thank-you title; specific captions; Guidance Marine caption). Logo padding trimmed on the end card. No agent, skill or CLAUDE.md change.
+- 2026-11-06 | New mosaic design (v11) inspired by Rahul's reference template; build_video_mosaic.py added; photos from chat sheets recorded in the manifest. No agent, skill or CLAUDE.md change.

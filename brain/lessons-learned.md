@@ -28,4 +28,6 @@ Format: date | scope (one-off, this platform, this account, always) | status (pr
 
 - 2026-11-06 | always | provisional | Before telling Rahul a visual change happened, diff the output against the previous version. I claimed the Fugro logo got larger after trimming margins; QA showed nothing changed. | QA v10 finding V10-1.
 
+- 2026-11-06 | this campaign | provisional | Rahul wants the video in the style of a reference template he supplied (a Pinterest pin of a corporate "clean design" template preview). The pin video URL can be read through the public pidgets endpoint (widgets.pinterest.com/v3/pidgets/pins/info/?pin_ids=<id>) when the scraper tool refuses Pinterest. Photos he sends as stacked sheets in chat are split by finding the strongest row-to-row change near equal thirds. Rahul's "full Sinor Marine team photo" was the 10-person photo in a chat sheet, NOT the group of four I assumed: ask when a named photo is not in Drive. | Rahul message with 8 sheets and the pin link.
+
 (Rahul corrections so far: 2, see above.)
