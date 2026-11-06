@@ -17,4 +17,6 @@ Format: date | scope (one-off, this platform, this account, always) | status (pr
 - 2026-11-06 | always | provisional | Dictated partner names need a check against Rahul's own repos first (README resolved Fugro and SMT context), then the web. Do not expand acronyms (ADIPEC, MT, SMT) in public copy without a source. | fact-reviewer candidate lessons.
 - 2026-11-06 | always | provisional | Inspect photos for incidental on-screen text (media file names, badges, other brands) before using them; list them for Rahul. A file name was visible on the stand video wall in one photo. | Video QA cycle 2 prompt.
 
-(No Rahul corrections yet.)
+- 2026-11-06 | always | approved | I skipped the Part 10 trend and template research on the ADIPEC job because I scaled effort down. Rahul corrected this. Never skip it for a video or visual deliverable, even for a quick post. | Rahul: "U didnt check the trending video format or templates? ..." (first correction).
+
+(Rahul corrections so far: 1, see above.)

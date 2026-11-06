@@ -17,3 +17,9 @@ Format: ID | target file | before | after | reason | date proposed.
 - Before: no guidance for photo-only slideshows.
 - After: add "Photo-only video: use 4:5 1080x1350, cover-crop portrait photos (trim the ceiling, keep feet), fit landscape photos on a blurred copy, keep captions and titles above the bottom 150 px, hold each photo 3.5 to 4.5 s, 0.5 s crossfades, one end card thanking people and partners."
 - Reason: this layout worked for the ADIPEC post and is reproducible via campaigns/2026-11-adipec26-thanks/exports/build_video.py.
+
+## P-004 | CLAUDE.md and .claude/skills/platform-video-specs/SKILL.md | proposed 2026-11-06
+- Before: research is "when it would improve the result"; the skill covers specs only.
+- After: CLAUDE.md platform rules gain "Every video or visual job starts with research of current trending formats, comparable posts and template styles on the target platform (campaigns/<name>/research/research.md). Never skipped for small jobs." The skill gains a "Trend and template scan" step with the same content. Already applied as a working rule through brain/preferences.md; this formalises it.
+- Reason: Rahul's explicit instruction, 2026-11-06.
+
