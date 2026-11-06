@@ -32,7 +32,10 @@ LOGO = Path(__file__).resolve().parents[3] / "assets/brand/sinor-logo.png"
 # ---- content (edit here, then rebuild) ---------------------------------------------------------
 EVENT_LINE = "ADIPEC 2026  ·  ABU DHABI"
 DATE_LINE = "2-5 November 2026"
-PARTNERS = ["Sonardyne", "Fugro", "NAVIS", "Marine Technologies", "Guidance Marine"]  # confirmed by Rahul 2026-11-06
+# (full name written under the tile, supplied logo file). Names confirmed by Rahul 2026-11-06; "use full spelling".
+PARTNERS = [("Sonardyne", "sonardyne.png"), ("Fugro", "fugro.png"), ("Navis Engineering", "navis-engineering.png"),
+            ("Marine Technologies", "marine-technologies-mt.png"), ("Guidance Marine", "guidance-marine.png")]
+PARTNER_DIR = Path(__file__).resolve().parents[3] / "assets/brand/partners"
 # Each beat: files (1 file, or 2 for a stacked split-screen pair), mode (cover | fit | pair),
 # dur seconds, cap (caption; "TITLE" = opening title), optional crop_top for portrait cover crops.
 SLIDES = [
@@ -45,7 +48,7 @@ SLIDES = [
     dict(files=["cf677e0a-bf65-4e06-8a7a-9a40f904137c.jpg"], mode="cover", dur=2.8, cap="At the stand", crop_top=0.78),
     dict(files=["a07555b5-23b3-4497-92aa-a3613e384bc5.jpg"], mode="fit", dur=2.8, cap="Thank you for stopping by"),
 ]
-END_DUR, XFADE = 5.0, 0.45
+END_DUR, XFADE = 5.5, 0.45
 # The supplied collage stacks two photos with a white seam near rows 714 to 725: use only the
 # sharp top photo, starting at row 14 to drop the white border.
 CROPS = {"0CDC96B1-3817-4C16-B71D-B9108ECD8AD4.jpg": (0, 14, 1206, 710)}
@@ -147,32 +150,47 @@ def overlay_layer(caption):
     return Image.alpha_composite(layer, t)
 
 
+def partner_tile(logo_file, tw, th):
+    """White rounded tile with the supplied logo scaled to fit (never distorted or recoloured)."""
+    lg = Image.open(PARTNER_DIR / logo_file).convert("RGBA")
+    box_w, box_h = tw - 44, th - 26
+    sc = min(box_w / lg.width, box_h / lg.height)
+    lg = lg.resize((max(1, round(lg.width * sc)), max(1, round(lg.height * sc))), Image.LANCZOS)
+    tile = Image.new("RGBA", (tw, th), (255, 255, 255, 255))
+    tile.alpha_composite(lg, ((tw - lg.width) // 2, (th - lg.height) // 2))
+    mask = Image.new("L", (tw, th), 0)
+    ImageDraw.Draw(mask).rounded_rectangle([0, 0, tw, th], radius=18, fill=255)
+    tile.putalpha(mask)
+    return tile
+
+
 def end_card():
     img = Image.new("RGB", (W, H), NAVY)
     d = ImageDraw.Draw(img)
     for y in range(H):
         c = tuple(int(NAVY[i] + (BLUE[i] - NAVY[i]) * (y / H) * 0.9) for i in range(3))
         d.line([(0, y), (W, y)], fill=c)
-    n = len(PARTNERS)
-    step = 62
-    block = 770 + n * step + 70  # y of the footer's bottom edge for o = 0
-    o = (SAFE - block) // 2  # centre the whole block above the safe margin
+    tw, th, gx, pitch = 470, 124, 20, 184
+    rows = (len(PARTNERS) + 1) // 2
+    block = 600 + (rows - 1) * pitch + th + 42  # y of the bottom edge of the last caption for o = 0
+    o = (SAFE - block) // 2 - 6
     img = img.convert("RGBA")
-    card = logo_card_rgba(480)
-    img.alpha_composite(card, ((W - card.width) // 2, 70 + o))
+    card = logo_card_rgba(420)
+    img.alpha_composite(card, ((W - card.width) // 2, 60 + o))
     d = ImageDraw.Draw(img)
     cx = W // 2
-    d.text((cx, 320 + o), "Thank you", font=font("ExtraBold", 120), fill=WHITE + (255,), anchor="mt")
-    d.rectangle([cx - 48, 470 + o, cx + 48, 478 + o], fill=LIGHT + (255,))
-    d.text((cx, 510 + o), "To every client and visitor", font=font("SemiBold", 44), fill=WHITE + (255,), anchor="mt")
-    d.text((cx, 566 + o), "who stopped by our stand.", font=font("SemiBold", 44), fill=WHITE + (255,), anchor="mt")
-    d.text((cx, 650 + o), "And to our technology partners", font=font("Medium", 40), fill=LIGHT + (255,), anchor="mt")
-    d.text((cx, 700 + o), "for their support:", font=font("Medium", 40), fill=LIGHT + (255,), anchor="mt")
-    y = 770 + o
-    for p in PARTNERS:
-        d.text((cx, y), p, font=font("Bold", 50), fill=WHITE + (255,), anchor="mt")
-        y += step
-    d.text((cx, y + 18), "Sinor Marine Services Middle East FZCO", font=font("Medium", 34), fill=LIGHT + (255,), anchor="mt")
+    d.text((cx, 290 + o), "Thank you", font=font("ExtraBold", 112), fill=WHITE + (255,), anchor="mt")
+    d.rectangle([cx - 48, 428 + o, cx + 48, 436 + o], fill=LIGHT + (255,))
+    d.text((cx, 462 + o), "To every client and visitor who stopped by our stand.", font=font("SemiBold", 36), fill=WHITE + (255,), anchor="mt")
+    d.text((cx, 530 + o), "And to our technology partners for their support:", font=font("Medium", 35), fill=LIGHT + (255,), anchor="mt")
+    y0 = 600 + o
+    for k, (name, logo) in enumerate(PARTNERS):
+        r, c = divmod(k, 2)
+        last_alone = (k == len(PARTNERS) - 1) and (len(PARTNERS) % 2 == 1)
+        x = (W - tw) // 2 if last_alone else (W - (2 * tw + gx)) // 2 + c * (tw + gx)
+        y = y0 + r * pitch
+        img.alpha_composite(partner_tile(logo, tw, th), (x, y))
+        d.text((x + tw // 2, y + th + 8), name, font=font("SemiBold", 32), fill=WHITE + (255,), anchor="mt")
     return img.convert("RGB")
 
 

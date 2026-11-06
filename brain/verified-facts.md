@@ -23,5 +23,6 @@ Do not store commercial terms, client confidential data or personal data.
 | Guidance Marine: write "Guidance Marine" (no "Limited"; legal name unverified). Self-description: trusted position reference sensors and positioning technology for offshore and maritime operations. LinkedIn page published on its own site: linkedin.com/company/guidance-marine-limited | https://www.guidancemarine.com/ | 2026-11-06 |
 | Photos show a "NAVIS Engineering" branded console, a Marine Technologies (MT) branded display and wall panel, and a Sonardyne SPRINT-Nav unit on Sinor's stand | ADIPEC 2026 stand photos IMG_4413, IMG_4188, IMG_4255, IMG_4432 | 2026-11-06 |
 | Stand panel figures "15+ years DP engineering, 100+ projects, 40+ countries": Rahul confirmed they may be used publicly | Rahul, chat reply | 2026-11-06 |
+| Rahul supplied official partner logos in chat for this post (Sonardyne, Fugro, Navis Engineering, Marine Technologies MT oval, Guidance Marine) and asked for full spelling: write Sonardyne, Fugro, Navis Engineering, Marine Technologies, Guidance Marine | Rahul, chat message with 6 images, saved in assets/brand/partners/ | 2026-11-06 |
 
 Products, partners, services, project names and terminology: none verified yet. To be supplied.

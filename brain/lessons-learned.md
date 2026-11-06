@@ -22,4 +22,6 @@ Format: date | scope (one-off, this platform, this account, always) | status (pr
 - 2026-11-06 | this campaign (ADIPEC 2026) | provisional | Rahul chose the COMPANY page as publisher, confirmed the partner list (added Guidance Marine), approved HEIC tooling, approved the photo with a visible file name and the panel figures. Rahul's words: "Guidance is the partner need to add, 1 I confirm, 2 compny page, 4 use all, remining all yes". Not yet known if "company page" is his lasting default: ask once. | Rahul reply.
 - 2026-11-06 | always | provisional | Ask for tool-install approval at the start of a job when a known gap (HEIC) will block half the media, and re-list the Drive folder at the start of each job because uploads continue (5 new files arrived while I worked). | ADIPEC job.
 
+- 2026-11-06 | always | provisional | When Rahul supplies partner logos, use them on thank-you end cards with the full company name in text beside them (MT logo shows only "MT"). Always write full company names ("Navis Engineering", not "NAVIS"). Rahul: "Spelling use full." | Rahul message with 6 logo images.
+
 (Rahul corrections so far: 1, see above.)
