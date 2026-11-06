@@ -33,3 +33,8 @@ Two video revisions (v1 to v2 to v3), the maximum of three QA cycles. One captio
 - Photos inspected: 9 of 16 (the 9 JPGs). 7 HEIC not inspected.
 - The video was reviewed through sampled frames and full-file ffprobe, black and freeze detection. Nobody listened to the audio (it is silent by design) and it was not played on a phone.
 - Comparable LinkedIn post research (Part 10) was NOT done for this job; effort scaled to a quick thank-you post.
+
+## Update after Rahul's answers (company page, Guidance Marine, all photos)
+- Rahul confirmed partners, chose the company page, added Guidance Marine, approved HEIC tooling, the file-name photo and the panel figures. Folder grew to 21 photos while I worked (5 HEIC arrived mid-job).
+- v6/v7: 8 beats, 29.8 s, 11 photos, split-screen pairs, five-partner end card. Independent QA (video v6, v7; company caption) all pass; defects found and fixed: 9x16 NAVIS caption over the logo, pair headroom.
+- Still open: Rahul to play both files once; optional "Navis Engineering" spelling and partner order; Fugro and Guidance Marine have no photo yet.
