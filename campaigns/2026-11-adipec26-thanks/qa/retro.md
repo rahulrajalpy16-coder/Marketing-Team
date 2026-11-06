@@ -13,6 +13,9 @@ Nothing yet.
 - Video QA cycle 2 (independent): new medium defect, a media file name readable on the stand TV in one photo (that photo held back), plus a collage border and text inside the bottom 150 px. Fixed in v3.
 - Video QA cycle 3 (independent): technically PASS, D5, D9, D10 fixed; only the unconfirmed partner names remain (needs Rahul).
 
+## After Rahul's correction (trend and template research)
+Rahul pointed out that trending formats and templates were not checked. Research was run (research/research.md), then the video was rebuilt: v4 added slow motion on photos, tighter pacing, a 9:16 alternative and story-first opening. Independent QA caught stepped judder from ffmpeg zoompan (integer pixel rounding); v5 renders the motion with sub-pixel sampling. Measured frame-to-frame change became uniform. v5 passes technically in both ratios; only the unconfirmed partner names block publishing.
+
 ## Extra revision cycles
 Two video revisions (v1 to v2 to v3), the maximum of three QA cycles. One caption wording fix after copy QA (checked by script by the Director, not re-reviewed by a separate reviewer).
 
@@ -21,6 +24,7 @@ Two video revisions (v1 to v2 to v3), the maximum of three QA cycles. One captio
 - Partner names were dictated roughly and needed a fact check.
 
 ## What worked
+- Independent QA found a real motion defect that a contact sheet could not show; measuring it (phase correlation) was the right fix check.
 - Drive connector downloads of originals (byte-exact, 16 of 16).
 - Rahul's earlier repos supplied the approved logo and context for partner names.
 - Building the video from a script (build_video.py) so v2 was a quick rebuild.
