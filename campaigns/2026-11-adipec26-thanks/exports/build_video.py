@@ -32,14 +32,18 @@ LOGO = Path(__file__).resolve().parents[3] / "assets/brand/sinor-logo.png"
 # ---- content (edit here, then rebuild) ---------------------------------------------------------
 EVENT_LINE = "ADIPEC 2026  ·  ABU DHABI"
 DATE_LINE = "2-5 November 2026"
-PARTNERS = ["Sonardyne", "Fugro", "NAVIS", "Marine Technologies"]  # names pending Rahul's confirmation
-# (file, mode, duration_s, caption)  mode: cover | fit.  First slide carries the title.
+PARTNERS = ["Sonardyne", "Fugro", "NAVIS", "Marine Technologies", "Guidance Marine"]  # confirmed by Rahul 2026-11-06
+# Each beat: files (1 file, or 2 for a stacked split-screen pair), mode (cover | fit | pair),
+# dur seconds, cap (caption; "TITLE" = opening title), optional crop_top for portrait cover crops.
 SLIDES = [
-    ("0f44943b-22e6-4381-aac3-66a9dfc31218.jpg", "cover", 4.0, "TITLE"),
-    ("0bc7989f-ffd8-4930-b538-267cc2414e4e.jpg", "fit", 3.4, "DP console on the stand"),
-    ("0CDC96B1-3817-4C16-B71D-B9108ECD8AD4.jpg", "fit", 3.4, "Conversations at the stand"),
-    # cf677e0a (two men at the stand) held back: a media file name is readable on the stand TV.
-    ("a07555b5-23b3-4497-92aa-a3613e384bc5.jpg", "fit", 3.4, "Thank you for stopping by"),
+    dict(files=["0f44943b-22e6-4381-aac3-66a9dfc31218.jpg"], mode="cover", dur=4.0, cap="TITLE"),
+    dict(files=["IMG_4413.jpg"], mode="fith", dur=2.8, cap="NAVIS console"),
+    dict(files=["IMG_4432.jpg"], mode="cover", dur=2.8, cap="Sonardyne SPRINT-Nav on the stand", crop_top=0.6),
+    dict(files=["IMG_4464.jpg", "0bc7989f-ffd8-4930-b538-267cc2414e4e.jpg"], mode="pair", dur=3.2, cap="Conversations at the stand"),
+    dict(files=["IMG_4188.jpg", "IMG_4255.jpg"], mode="pair", dur=3.2, cap="Marine Technologies on the stand"),
+    dict(files=["IMG_4403.jpg", "IMG_4156.jpg"], mode="pair", dur=3.2, cap="Welcome to our stand"),
+    dict(files=["cf677e0a-bf65-4e06-8a7a-9a40f904137c.jpg"], mode="cover", dur=2.8, cap="At the stand", crop_top=0.78),
+    dict(files=["a07555b5-23b3-4497-92aa-a3613e384bc5.jpg"], mode="fit", dur=2.8, cap="Thank you for stopping by"),
 ]
 END_DUR, XFADE = 5.0, 0.45
 # The supplied collage stacks two photos with a white seam near rows 714 to 725: use only the
@@ -69,13 +73,40 @@ def fit_blur(im):
     return bg
 
 
-def photo_layer(path, mode):
-    im = Image.open(path).convert("RGB")
-    if Path(path).name in CROPS:
-        im = im.crop(CROPS[Path(path).name])
-    if ASPECT == "9x16" or mode == "fit":
-        return fit_blur(im)
-    return cover(im, crop_top=0.78)  # trim ceiling, keep shoes
+def cell(im, cw, ch):
+    s = max(cw / im.width, ch / im.height)
+    im = im.resize((round(im.width * s), round(im.height * s)), Image.LANCZOS)
+    x, y = (im.width - cw) // 2, (im.height - ch) // 2
+    return im.crop((x, y, x + cw, y + ch))
+
+
+def photo_layer(jpg, it):
+    ims = []
+    for f in it["files"]:
+        im = Image.open(jpg / f).convert("RGB")
+        if f in CROPS:
+            im = im.crop(CROPS[f])
+        ims.append(im)
+    mode = it["mode"]
+    if mode == "pair":
+        ch, gap = (600, 10) if ASPECT == "4x5" else (700, 10)
+        bg = cover(ims[0]).filter(ImageFilter.GaussianBlur(38))
+        bg = Image.blend(bg, Image.new("RGB", (W, H), NAVY), 0.55)
+        stack = 2 * ch + gap
+        top = max((SAFE - stack) // 2, 30) if ASPECT == "9x16" else 30
+        bg.paste(cell(ims[0], W, ch), (0, top))
+        bg.paste(cell(ims[1], W, ch), (0, top + ch + gap))
+        return bg
+    if mode == "fith" and ASPECT == "4x5":
+        # tall photo shown at full frame height with soft side bands, so nothing (for example a logo) is cropped
+        bg = cover(ims[0]).filter(ImageFilter.GaussianBlur(38))
+        bg = Image.blend(bg, Image.new("RGB", (W, H), NAVY), 0.45)
+        fg = ims[0].resize((round(ims[0].width * H / ims[0].height), H), Image.LANCZOS)
+        bg.paste(fg, ((W - fg.width) // 2, 0))
+        return bg
+    if ASPECT == "9x16" or mode in ("fit", "fith"):
+        return fit_blur(ims[0])
+    return cover(ims[0], crop_top=it.get("crop_top", 0.78))
 
 
 def gradient_layer(start, strength):
@@ -121,23 +152,26 @@ def end_card():
     for y in range(H):
         c = tuple(int(NAVY[i] + (BLUE[i] - NAVY[i]) * (y / H) * 0.9) for i in range(3))
         d.line([(0, y), (W, y)], fill=c)
-    o = (SAFE - 1200) // 2 - 14  # centre the block above the safe margin, with a little air
+    n = len(PARTNERS)
+    step = 62
+    block = 770 + n * step + 70  # y of the footer's bottom edge for o = 0
+    o = (SAFE - block) // 2  # centre the whole block above the safe margin
     img = img.convert("RGBA")
-    card = logo_card_rgba(560)
-    img.alpha_composite(card, ((W - card.width) // 2, 80 + o))
+    card = logo_card_rgba(480)
+    img.alpha_composite(card, ((W - card.width) // 2, 70 + o))
     d = ImageDraw.Draw(img)
     cx = W // 2
-    d.text((cx, 380 + o), "Thank you", font=font("ExtraBold", 120), fill=WHITE + (255,), anchor="mt")
-    d.rectangle([cx - 48, 530 + o, cx + 48, 538 + o], fill=LIGHT + (255,))
-    d.text((cx, 575 + o), "To every client and visitor", font=font("SemiBold", 44), fill=WHITE + (255,), anchor="mt")
-    d.text((cx, 633 + o), "who stopped by our stand.", font=font("SemiBold", 44), fill=WHITE + (255,), anchor="mt")
-    d.text((cx, 725 + o), "And to our technology partners", font=font("Medium", 40), fill=LIGHT + (255,), anchor="mt")
-    d.text((cx, 775 + o), "for their support:", font=font("Medium", 40), fill=LIGHT + (255,), anchor="mt")
-    y = 860 + o
+    d.text((cx, 320 + o), "Thank you", font=font("ExtraBold", 120), fill=WHITE + (255,), anchor="mt")
+    d.rectangle([cx - 48, 470 + o, cx + 48, 478 + o], fill=LIGHT + (255,))
+    d.text((cx, 510 + o), "To every client and visitor", font=font("SemiBold", 44), fill=WHITE + (255,), anchor="mt")
+    d.text((cx, 566 + o), "who stopped by our stand.", font=font("SemiBold", 44), fill=WHITE + (255,), anchor="mt")
+    d.text((cx, 650 + o), "And to our technology partners", font=font("Medium", 40), fill=LIGHT + (255,), anchor="mt")
+    d.text((cx, 700 + o), "for their support:", font=font("Medium", 40), fill=LIGHT + (255,), anchor="mt")
+    y = 770 + o
     for p in PARTNERS:
-        d.text((cx, y), p, font=font("Bold", 52), fill=WHITE + (255,), anchor="mt")
-        y += 72
-    d.text((cx, y + 20), "Sinor Marine Services Middle East FZCO", font=font("Medium", 34), fill=LIGHT + (255,), anchor="mt")
+        d.text((cx, y), p, font=font("Bold", 50), fill=WHITE + (255,), anchor="mt")
+        y += step
+    d.text((cx, y + 18), "Sinor Marine Services Middle East FZCO", font=font("Medium", 34), fill=LIGHT + (255,), anchor="mt")
     return img.convert("RGB")
 
 
@@ -167,8 +201,9 @@ def main():
     cmd = ["ffmpeg", "-v", "error", "-y"]
     parts, tags, durs = [], [], []
     idx = 0
-    for i, (f, mode, dur, cap) in enumerate(SLIDES):
-        photo = photo_layer(jpg / f, mode)
+    for i, it in enumerate(SLIDES):
+        dur, cap = it["dur"], it["cap"]
+        photo = photo_layer(jpg, it)
         ov = overlay_layer(cap)
         pp, op = out / f"photo_{i:02d}.png", out / f"overlay_{i:02d}.png"
         photo.save(pp)
