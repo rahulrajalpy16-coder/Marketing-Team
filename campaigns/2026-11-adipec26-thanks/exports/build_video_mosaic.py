@@ -45,10 +45,10 @@ BEATS = [
     dict(kind="hero", src="s7_1.jpg", cap="Conversations at our stand"),
     dict(kind="hero", src="s3_1.jpg", cap="Visitors at our stand"),
     dict(kind="hero", src="IMG_4413.jpg", cap="NAVIS console"),
-    dict(kind="hero", src="IMG_4464.jpg", cap="Discussions at the Sonardyne display"),
+    dict(kind="hero", src="IMG_4464.jpg", cap="Sonardyne SPRINT-Nav on the stand"),
     dict(kind="hero", src="IMG_4188.jpg", cap="Marine Technologies on the stand"),
-    dict(kind="hero", src="a07555b5-23b3-4497-92aa-a3613e384bc5.jpg", cap="Guidance Marine at our stand"),
-    dict(kind="hero", src="s2_2.jpg", cap="The team at our stand"),
+    dict(kind="hero", src="a07555b5-23b3-4497-92aa-a3613e384bc5.jpg", cap="With Guidance Marine at our stand"),
+    dict(kind="hero", src="s2_2.jpg", cap="Together at our stand"),
     dict(kind="end"),
 ]
 HERO_D, TITLE_D, END_D = 3.0, 2.9, 6.4
@@ -182,10 +182,10 @@ class Beat:
             self.plate = None
         else:
             card = make_end_card()
-            sc = 0.86 if ASPECT == "4x5" else (SAFE - 80) / H
+            sc = 0.84 if ASPECT == "4x5" else (SAFE - 80) / H
             self.src = card.resize((int(W * sc), int(H * sc)), Image.LANCZOS)
             self.hw, self.hh = self.src.size
-            self.cx, self.cy = W / 2, (0.43 * H if ASPECT == "4x5" else (SAFE - 30) / 2)
+            self.cx, self.cy = W / 2, (0.45 * H if ASPECT == "4x5" else (SAFE - 30) / 2)
             self.shadow = Image.new("RGBA", (self.hw + 160, self.hh + 160), (0, 0, 0, 0))
             ImageDraw.Draw(self.shadow).rectangle([80, 90, 80 + self.hw, 90 + self.hh], fill=(10, 20, 40, 140))
             self.shadow = self.shadow.filter(ImageFilter.GaussianBlur(26))
