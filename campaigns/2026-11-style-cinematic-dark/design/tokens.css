@@ -1,0 +1,66 @@
+/* Cinematic dark style tokens. PROPOSAL pending Rahul's approval of the dark direction.
+   Contrast ratios computed with WCAG 2.2 relative luminance (python, 2026-11-06). System fonts only. */
+:root {
+  /* Surfaces (dark stage) */
+  --c-abyss: #050A12;
+  --c-deep: #0A1626;
+  --c-surface: #101F33;
+  --c-raise: #16293F;
+  /* Text on dark. Ratios against abyss / deep / surface / raise in design-system.md */
+  --c-text: #F2F6FA;      /* 18.27 / 16.73 / 15.28 / 13.59 */
+  --c-muted: #A9B8C9;     /* 9.81 / 8.99 / 8.21 / 7.30 */
+  --c-faint: #8497AD;     /* 6.62 / 6.07 / 5.54 / 4.93 (use 16 px or larger) */
+  /* Accents */
+  --c-accent: #5BA4E0;    /* 7.40 on abyss, 6.78 on deep, 6.19 on surface */
+  --c-accent-hi: #8CC4F2; /* 10.67 on abyss, 9.77 on deep */
+  --c-steel: #7F9BB8;     /* 6.88 on abyss, 6.30 on deep */
+  --c-glow: #F2A65A;      /* warm light, 9.80 on abyss; use sparingly, optional */
+  /* Brand (approximate, from logo; confirm) */
+  --c-brand-navy: #0D4A85; /* 8.99 on white, 2.02 on deep: never as text on dark */
+  --c-white: #FFFFFF;
+  /* Lines and controls */
+  --c-line: #2A4260;      /* decorative hairline only, 1.77 on deep */
+  --c-control-border: #6A86A5; /* 4.82 on deep, 4.40 on surface (needs 3:1) */
+  --c-disabled-text: #6B7C90;  /* 4.25 on deep; disabled is exempt, never use for live text */
+  --c-focus: #8CC4F2;     /* 9.77 on deep */
+  --c-scrim: linear-gradient(to bottom, rgba(5,10,18,0) 0%, rgba(5,10,18,.78) 60%, rgba(5,10,18,.92) 100%);
+
+  /* Type: system stacks, no font CDN */
+  --font-display: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, "Times New Roman", serif;
+  --font-body: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  --fs-0: clamp(1rem, 0.96rem + 0.2vw, 1.125rem);   /* body */
+  --fs-1: clamp(1.125rem, 1.05rem + 0.4vw, 1.375rem);
+  --fs-2: clamp(1.375rem, 1.2rem + 0.9vw, 1.875rem);
+  --fs-3: clamp(1.875rem, 1.5rem + 1.9vw, 3rem);
+  --fs-4: clamp(2.5rem, 1.7rem + 4vw, 5rem);
+  --fs-hero: clamp(2.75rem, 1.4rem + 6.8vw, 7.5rem);
+  --fs-label: 0.8125rem;   /* 13 px uppercase labels, bold or 600, never body */
+  --lh-tight: 1.02; --lh-head: 1.12; --lh-body: 1.6;
+  --ls-label: 0.14em; --ls-hero: -0.025em;
+
+  /* Spacing (4 px base) */
+  --s-1: 4px; --s-2: 8px; --s-3: 12px; --s-4: 16px; --s-5: 24px;
+  --s-6: 32px; --s-7: 48px; --s-8: 64px; --s-9: 96px; --s-10: 144px;
+  --section-pad: clamp(64px, 12vw, 144px);
+  --max-w: 1200px; --max-w-text: 62ch; --gutter: clamp(20px, 5vw, 48px);
+
+  /* Radii and shadows */
+  --r-sm: 8px; --r-md: 14px; --r-lg: 24px; --r-pill: 999px;
+  --sh-card: 0 1px 0 rgba(255,255,255,.04) inset, 0 12px 32px rgba(0,0,0,.45);
+  --sh-pill: 0 6px 20px rgba(0,0,0,.4);
+  --sh-glow: 0 0 80px rgba(91,164,224,.25);
+
+  /* Motion */
+  --dur-fast: 150ms; --dur: 300ms; --dur-slow: 700ms;
+  --ease: cubic-bezier(.2,.7,.2,1);
+
+  /* Breakpoints (for reference; custom properties cannot be used inside @media) */
+  --bp-sm: 480px; --bp-md: 768px; --bp-lg: 1024px; --bp-xl: 1440px;
+
+  /* Minimum target sizes */
+  --target-min: 44px;
+}
+@media (prefers-reduced-motion: reduce) {
+  :root { --dur-fast: 0.01ms; --dur: 0.01ms; --dur-slow: 0.01ms; }
+}
