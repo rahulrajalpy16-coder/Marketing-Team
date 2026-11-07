@@ -1,11 +1,11 @@
 # Copy: Contact (contact.html)
 
-Author: web-copywriter. Date: 2026-11-07. Status: draft, revised after Rahul's entity correction (Sinor Marine Technologies). Shared header, footer and skip link text are defined in copy/home.md. The header pill is not shown on this page.
+Author: web-copywriter. Date: 2026-11-07. Status: draft, correction pass 2 applied (fact_check.md). Titles and meta are owned by design/seo-spec.md and were not changed. Shared header, footer and skip link text are in copy/home.md. The header pill is not shown on this page.
 Marker rule: CLAIM TO VERIFY = depends on the STATED industry focus (given by Rahul for his employer; confirm for Sinor Marine Technologies). The form is NOT connected to anything. No email, phone, address, hours, response time or "thank you" is written. No reply promise appears anywhere.
 
 ## Title and meta
 - Title: Contact Sinor Marine Technologies | Send an Enquiry (51 characters, counted by hand)
-- Meta description: Send an enquiry to Sinor Marine Technologies about Dynamic Positioning, automation, thrusters or support. The form is not connected yet; see other routes. (154 characters, counted by hand)
+- Meta description: Send an enquiry to Sinor Marine Technologies about Dynamic Positioning, automation, thrusters or support. The form is not connected yet; see other routes. (153 characters, counted by hand)
 - CLAIM TO VERIFY: topics listed come from the STATED scope. Remove the "not connected" sentence from the meta once Rahul connects the form.
 
 ## 6.1 Page intro
@@ -84,8 +84,9 @@ Definition list
 - Phone: SLOT S02 | NEEDED FROM RAHUL | Public phone number.
 - Address: SLOT S03 | NEEDED FROM RAHUL | Public address.
 - Hours: SLOT S04 | NEEDED FROM RAHUL | Opening hours and time zone.
-- LinkedIn: SLOT S31 | NEEDED FROM RAHUL | Sinor Marine Technologies LinkedIn page address. Link text "LinkedIn page" with visible text "opens linkedin.com" once supplied. The Sinor Marine Services page must NOT be used.
-Collapse text if slots are removed at publish: Use the form.
+- LinkedIn: SLOT S31 | NEEDED FROM RAHUL | Sinor Marine Technologies LinkedIn page address. Link text "LinkedIn page" with visible text "opens linkedin.com" once provided. The other company's page must NOT be used.
+Fallback text if slots S01 to S04 are removed at publish: The form is not connected yet. Contact details will be added (slots S01 to S04).
+- Do not say "Use the form" while it sends nothing (fact_check E).
 
 ## Alt text on this page
 No images. Any decorative icon beside the notice: aria-hidden="true", no alt text. The notice never relies on the icon or on colour.

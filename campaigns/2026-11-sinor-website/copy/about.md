@@ -1,13 +1,13 @@
 # Copy: About (about.html)
 
-Author: web-copywriter. Date: 2026-11-07. Status: draft, revised after Rahul's entity correction. Shared header, footer and skip link text are defined in copy/home.md.
-Company: Sinor Marine Technologies (STATED by Rahul 2026-11-07). Legal entity and base are UNKNOWN, so they are slots. No "FZCO", "Middle East" or "UAE" appears. No text from any private artifact is used.
+Author: web-copywriter. Date: 2026-11-07. Status: draft, correction pass 2 applied (fact_check.md). Titles and meta are owned by design/seo-spec.md and were not changed. Shared header, footer and skip link text are in copy/home.md.
+Company: Sinor Marine Technologies (STATED by Rahul 2026-11-07). Legal entity and base are UNKNOWN, so they are slots. No text from any private artifact is used.
 Marker rule: CLAIM TO VERIFY = depends on the STATED industry focus, which Rahul gave for his employer; confirm it applies to Sinor Marine Technologies.
 
 ## Title and meta
 - Title: About Sinor Marine Technologies | What the Company Does (55 characters, counted by hand)
 - Meta description: Sinor Marine Technologies works in marine and offshore technology. See what the company does and how the work flows from discovery to support. (142 characters, counted by hand)
-- CLAIM TO VERIFY: sector is STATED for Rahul's employer; confirm for Sinor Marine Technologies. The "discovery to support" flow is a proposal, not stated (see 5.3).
+- CLAIM TO VERIFY: sector is STATED for Rahul's employer; confirm for Sinor Marine Technologies. The "discovery to support" flow is PROPOSED, NOT STATED (fact_check C4). The SEO pass owns this field; reviewer's neutral alternative: "See what the company does: marine and offshore technology, from Dynamic Positioning to service."
 
 ## 5.1 Page intro
 
@@ -19,30 +19,31 @@ Intro line: Sinor Marine Technologies works in marine and offshore technology.
 
 H2: The company
 Label: Industry focus as stated by the company
+- CLAIM TO VERIFY: the label attributes the focus to the company; Rahul gave it for his employer (fact_check C8).
 Text: Sinor Marine Technologies. Its work covers Dynamic Positioning, reference systems, marine electrical and automation, propulsion and thruster controls, integration, upgrades, commissioning, service and technical support.
-- CLAIM TO VERIFY: the second sentence is the STATED scope line, given by Rahul for his employer and not independently verified. Confirm it applies to Sinor Marine Technologies. The label shows visitors the source.
+- CLAIM TO VERIFY: the second sentence is the STATED scope line, not independently verified. Confirm it applies to Sinor Marine Technologies.
 SLOT S30 | NEEDED FROM RAHUL | Legal entity name and registration for Sinor Marine Technologies.
 SLOT S23 | NEEDED FROM RAHUL | Base and offices.
 SLOT S24 | NEEDED FROM RAHUL | Year founded, only if Rahul confirms.
 SLOT S25 | NEEDED FROM RAHUL | Regions served.
 
-## 5.3 How the company works
+## 5.3 What the work includes
 
-H2: How the company works
-Intro line: Work follows the system through its life on board, not only to delivery.
-Steps (ordered list, h3 each, no numerals printed)
-1. Discover: Understand the vessel, the system and what the operator needs. Questions come before any proposal.
-2. Design: Plan the solution and how it fits the systems already on board. The plan covers how new equipment connects to existing systems.
-3. Install and commission: Fit the equipment and bring it into service on the vessel. Commissioning checks that the system works as intended.
-4. Support: Keep the system working after handover. Service and technical support continue once the vessel is operating.
-- CLAIM TO VERIFY: commissioning, service and technical support are STATED. "Discover" and "Design", their order, and the extra sentences ("Questions come before any proposal", "The plan covers how new equipment connects...") are proposals NOT stated by Rahul. Confirm how Sinor Marine Technologies works, or cut to the stated words.
+H2: What the work includes
+Intro line: Work includes commissioning, service and technical support.
+- CLAIM TO VERIFY: STATED words, confirm for Sinor Marine Technologies.
+Steps (ordered list, h3 each, no numerals printed). PROPOSED, NOT STATED: the step names and their order were not given by Rahul (fact_check C1, C2, Q4). Keep only if he confirms; otherwise use Integration, Commissioning, Service, Technical support with no order.
+1. Discover: Understand the system and what the operator needs.
+2. Design: Plan the solution and how it fits the systems already on board.
+3. Install and commission: Commissioning is the testing and bringing into service of a newly installed or upgraded system.
+4. Support: Provide service and technical support after handover.
 Text link: Service and support (service.html)
 
 ## 5.4 Certifications and partners (slots only)
 
 H2: Certifications and partners
 Line shown in draft: Nothing appears here until each item is confirmed.
-SLOT S08 | NEEDED FROM RAHUL | Certifications: certificate numbers and issuing body, for Sinor Marine Technologies. ISO text from another company's invoice footer is NOT used.
+SLOT S08 | NEEDED FROM RAHUL | Certifications: certificate numbers and issuing body, for Sinor Marine Technologies. Certification text from another company's records is NOT used.
 SLOT S09 | NEEDED FROM RAHUL | Partners and authorisations: each name with written approval to display it. No dealership is claimed.
 
 ## 5.5 Team (one full-width slot)
@@ -54,9 +55,9 @@ SLOT S26 | NEEDED FROM RAHUL | Team members: names, roles, photos and consent to
 
 H2: Photos
 SLOT S12 | NEEDED FROM RAHUL | Real company or workshop photo, rights confirmed, optimised copy.
-Photo alt text when supplied: NEEDED FROM RAHUL, describe what the photo actually shows.
+Photo alt text when provided: NEEDED FROM RAHUL, describe what the photo actually shows.
 
 ## 5.7 Closing enquiry band
 Line: Questions about the company or its work? Contact the team.
 Primary pill: Contact the team (contact.html#enquiry)
-Secondary text link: SLOT S31 | NEEDED FROM RAHUL | Sinor Marine Technologies LinkedIn page; link text "LinkedIn page" once supplied. Omit until then.
+Secondary text link: SLOT S31 | NEEDED FROM RAHUL | Sinor Marine Technologies LinkedIn page; link text "LinkedIn page" once provided. Omit until then.

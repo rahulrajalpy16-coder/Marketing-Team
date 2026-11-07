@@ -12,3 +12,6 @@ Settles the issues raised by the accessibility specialist and the earlier briefs
 8. No external requests at all. No fonts, scripts, analytics or images from other hosts. No og:image.
 9. The canvas is decorative (aria-hidden) with all real text in the DOM. Static SVG fallback for no JavaScript and for prefers-reduced-motion.
 10. Forms are not connected. The notice is visible text at 4.5 to 1 or better and says so in plain words.
+11. 404.html uses root-absolute paths for its CSS, JS and links (a static host serves it at any URL depth). The five real pages stay flat at the root and use plain relative links. Decided 2026-11-07 by the Director.
+12. Pre-launch build ships noindex and a robots.txt Disallow until Rahul approves publishing; the launch values are listed in design/seo-spec.md.
+13. Titles and descriptions: design/seo-spec.md wins (the About description was shortened by the SEO pass; copy/about.md should be read for body text only).

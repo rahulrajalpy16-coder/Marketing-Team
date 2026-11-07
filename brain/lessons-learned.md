@@ -36,3 +36,7 @@ Format: date | scope (one-off, this platform, this account, always) | status (pr
 - 2026-11-06 | always | provisional | The Artifact tool read with paths saves every published file locally and prints sha256 hashes; the full html is also saved under tool-results. Use that, not a re-fetch. | Sinor site import.
 
 - 2026-11-07 | this account | provisional | Sinor Marine Services Middle East FZCO (repo logo, entity line, LinkedIn page) and Sinor Marine Technologies (the website) are different names. Check which entity a deliverable is for before using any logo, entity line or social link, and keep identifiers from the other name out. | Rahul: "This is for sinor marine technologies. Not services."
+
+- 2026-11-07 | always | provisional | When Rahul asks for "the data collected" from a site, build a single private data pack (summary, decisions, tables, full text) and keep it out of the public repo. Separate what a page says from what is verified, and mark partner-owned claims (a partner's ISO 9001 is not the company's). | Sinor old site data pack.
+- 2026-11-07 | always | provisional | Check the old site's own outbound links before trusting its content: it linked a GitHub page named "Sinor-marine-Demo-", so its facts are unverified until the owner confirms. | Sinor old site data pack.
+- 2026-11-07 | always | provisional | Agents without a shell cannot run grep or character counts. Run the banned-word, dash and length checks myself after every specialist report. | Copywriter, SEO and fact-check runs.
