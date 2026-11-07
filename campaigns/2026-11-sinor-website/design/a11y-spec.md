@@ -58,9 +58,9 @@ Computed by hand with the WCAG 2.2 formula (linearise each channel c/255: c/12.9
 | Pair | Ratio (hand computed, NEW) | Result |
 |---|---|---|
 | #FF8A80 on abyss #050A12 | 8.69 | pass |
-| #FF8A80 on deep #0A1626 | 7.97 | pass for text and 3:1 border |
+| #FF8A80 on deep #0A1626 | 7.96 | pass for text and 3:1 border |
 | #FF8A80 on surface #101F33 | 7.27 | pass |
-| #FF8A80 on raise #16293F | 6.47 | pass |
+| #FF8A80 on raise #16293F | 6.46 | pass |
 
 Luminances used: #FF8A80 = 0.4101; deep 0.00776; surface 0.01330; raise 0.02116; abyss 0.00293.
 Use: error text, the "Error:" prefix, the invalid field border (2 px), the error summary heading. Error summary body and links stay text token. An error is never red alone.
@@ -194,7 +194,7 @@ Static path is the default state of the HTML and CSS; motion is the enhancement.
 - Autocomplete (SC 1.3.5): Name autocomplete="name"; Organisation autocomplete="organization" (the token is spelled in American English); Email "email"; Phone "tel". Email type="email", phone type="tel". Text 16 px or more, controls 48 px high.
 - Topic select: first option equals the default from ?topic= or General enquiry. Changing it must not submit or change focus (SC 3.2.2).
 - Message counter appears at 1800 characters or more. No per-keystroke announcements: a polite live region is updated only when 1800 is crossed and at the limit (2000).
-- Control state colours: border #6A86A5 on deep (4.82), focus ring, error border #FF8A80 2 px (7.97).
+- Control state colours: border #6A86A5 on deep (4.82), focus ring, error border #FF8A80 2 px (7.96).
 
 ### 7.3 Validation, errors, focus management
 - Form has novalidate; HTML required, type and minlength stay in the markup.
@@ -306,7 +306,14 @@ These cannot be proven by the script. QA reports each as tested by hand, or as n
 2. Contact error summary and status panel: focus move without role="alert" or role="status" (wireframes.md allows both). Confirm.
 3. Hero scrim covers the bottom, but text is at the top (section 2.3). The ui-designer or frontend-developer must change the layer or the gradient direction.
 4. New token --c-error #FF8A80 for the ui-designer to add to the project tokens; confirm after QA runs the script in 2.4.
-5. wireframes.md and sitemap.md still reference the repo logo file, the old entity line and a LinkedIn link; this spec overrides them, so the on-disk files should be corrected so frontend-developer is not misled.
+5. RESOLVED 2026-11-07 by the Director: sitemap.md and wireframes.md now use the text wordmark, slots S29 (official logo), S30 (legal entity) and S31 (LinkedIn page), and no repo logo. Original note: wireframes.md and sitemap.md referred to the repo logo file, the old entity line and a LinkedIn link.
 6. Short viewport rule (static path below 560 px height) is new and affects the hero design.
 7. Logo is a slot; the wordmark is text until a logo arrives.
 8. Footer "Find us" had the LinkedIn link as the only real item; with none to show, Find us is slots only.
+
+
+## Director addendum, 2026-11-07
+- Slot IDs added after this spec was written: S29 official Sinor Marine Technologies logo (text wordmark until supplied), S30 legal entity name and registration, S31 Sinor Marine Technologies LinkedIn page. They behave like every other slot: plain announced text, no external link until supplied.
+- Wordmark text: write "Sinor Marine Technologies" in sentence case in the HTML and apply capitals with CSS text-transform, so the accessible name stays the same. Letter-spaced capitals stay at 14 px or larger.
+- Error red #FF8A80 contrast recomputed by script: 8.69 abyss, 7.96 deep, 7.27 surface, 6.46 raise (the spec's section 2.4 script is still for QA to run).
+- The scrim, sticky stage height, Menu label and error focus decisions are settled in design/build-decisions.md.
