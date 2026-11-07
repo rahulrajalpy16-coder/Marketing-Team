@@ -36,4 +36,6 @@ Format: date | scope (one-off, this platform, this account, always) | status (pr
 
 - 2026-11-07 | always | provisional | When Rahul asks for "the same template", say plainly that paid After Effects projects cannot be used here, study the reference frame by frame, and recreate its native format (the templates were 16:9) and signature moves; do not stop at a loose "inspired" version. Full-bleed word overlays must avoid faces; text over a partner logo is a defect; check caption plates for narrow portrait photos. | Rahul: "I want the same template edited videos like all the links I gave".
 
+- 2026-11-07 | always | provisional | iCloud shared-album links give only a cover thumbnail here. Ask for the media in Google Drive straight away instead of spending time reverse-engineering iCloud. Captions need speech-to-text (not installed): ask approval for faster-whisper at the start of a captioning job. Music: I cannot license tracks; offer an original generated bed or a track Rahul has rights to. | Rahul sent an iCloud album link for a captions and audio job.
+
 (Rahul corrections so far: 3, see above.)
