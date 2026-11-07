@@ -17,3 +17,10 @@ Partner and product names, people's bios and the claims on the old site carry ov
 A. Applied: logo asset, brand-profile, verified-facts, build script.
 B. Lessons added (provisional): old site as truth source, single-file packing, colour-to-alpha logo.
 C. Proposed: none new.
+
+## Revision 2 and 3 (2026-11-07)
+Producer: Director with own 3D module. Independent reviewer: web-qa-reviewer, report web_qa_report_3.md (reviewed the v2 build, before the MRU additions).
+Reviewer found: D1 FAIL (phone, big console covered a heading while gliding), D2 WARN (tiny object floating between sections), D3 WARN (no visible Illustration label), D4 WARN (still fallback said "turning as you scroll"), D5 NOTE (wrong data-side on every fourth slot), D6 NOTE (old DP architecture copy mentions several operator stations next to a single-station model).
+Fixed by Director and re-tested by screenshots on phone and desktop, plus the 25 route offline run (0 errors, 0 requests leaving the file): D1 (narrow mobile window, zoom capped at 1 on phone), D2 (objects hidden below 22% weight), D3 (visible Illustration chip on every slot and on the hero), D4, D5. D6 left as is: the copy is from the old site and brochure about DP2 and DP3. The v3 build (MRU page, thruster station) was NOT re-reviewed independently: it is "self-reviewed" for those additions.
+Not tested by anyone: real devices, Safari, Firefox, screen readers, contrast over the rendered object.
+Lesson candidates (provisional, in lessons-learned): count rendered frames, not draw calls, to prove a loop is stopped.

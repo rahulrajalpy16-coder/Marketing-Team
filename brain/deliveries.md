@@ -14,3 +14,4 @@ Sinor Website Draft: https://claude.ai/artifact/1QJrnuKeQdh7V2eqUJ9Nz6 (private,
 
 ## 2026-11-07 | campaign 2026-11-sinor-single-file | single-file website (sent in chat, not a Release)
 Sinor-Marine-Technologies-Website.html, 13133166 bytes, sha256 97ff8817dca39e08ada8cfad3441feff70f2748ff1cd2c40ba0eb53179ab773d. 24 pages, offline, opens by double-click. Also sent: Sinor-Website-source-for-editing.zip (9.25 MB) and three transparent logo PNGs. Not in this public repo (media, people details). Not published anywhere. Open items listed in campaigns/2026-11-sinor-single-file/qa/retro.md.
+- 2026-11-07 | Sinor Marine Technologies website v3 (single HTML, 2741389 bytes, sha256 17e52dfa4c48d6de9940cf8c7bf9d732de4846ccafeec872a97df9432c3a7a43) plus source zip, sent to Rahul in chat via file transfer. Not hosted, not published. Contact form still unconnected.
