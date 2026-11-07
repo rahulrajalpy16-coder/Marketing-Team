@@ -274,9 +274,9 @@ Job: say who the company is, honestly, with slots for everything unconfirmed.
 
 ### 5.2 Company line
 - Purpose: state the legal entity and what the company does.
-- Content needed: the legal entity line "Sinor Marine Services Middle East FZCO, UAE" (STATED, shared with the footer, one source), the STATED scope line as a sentence, and the label "Industry focus as stated by the company".
+- Content needed: the company name "Sinor Marine Technologies" (STATED 2026-11-07, shared with the footer, one source), the legal entity as slot S30, the scope line as a sentence marked CLAIM TO VERIFY (the list was given for Rahul's employer; confirm it applies to Sinor Marine Technologies), and the label "Industry focus as stated by the company".
 - Layout 375 px: one column of text at 62ch maximum, large text size. 768 px: heading left, text right. 1440 px: same with wider gap.
-- Slots: S23 Base and offices (the name conflict UAE versus Singapore is unresolved), S24 Year founded (only if Rahul confirms), S25 Regions served.
+- Slots: S23 Base and offices (UAE versus Singapore is unresolved), S30 Legal entity and registration, S24 Year founded (only if Rahul confirms), S25 Regions served.
 
 ### 5.3 How the company works
 - Purpose: reuse the four-step lifecycle with a few extra sentences for people checking credibility. Content needed: the same four step names as Home, one generic sentence each (copy). No numbers.
@@ -362,7 +362,7 @@ Hint lines under controls (in text, not placeholder only): Email "We reply to th
 
 ### 6.6 Contact details (slots)
 - Purpose: let the visitor reach a person by another route while the form is not live.
-- Content needed: S01 Email, S02 Phone, S03 Address, S04 Hours and time zone. Plus the LinkedIn link (real, STATED), shown as "Company LinkedIn page" with the text "opens linkedin.com" visible.
+- Content needed: S01 Email, S02 Phone, S03 Address, S04 Hours and time zone. Plus slot S31 for the Sinor Marine Technologies LinkedIn page (the earlier sinor-marine-services page is the Services company and is not used).
 - Layout 375 px: below the form, a definition list; each value a slot box except LinkedIn. Rows are links once real (mailto and tel links need 44 px minimum height). 768 px: contact details move to a right column beside the form (form 7 of 12, details 5 of 12), notice stays above both. 1440 px: same, with the notice spanning both columns.
 - If a visitor needs contact details first on a phone, the page could put details above the form; PROPOSAL rejected because the form is the main conversion and the details are currently all slots. Revisit once S01 and S02 are filled.
 - P: Send enquiry. S: Company LinkedIn page.
@@ -428,12 +428,15 @@ After a failed submit, focus is on the error summary, then Tab goes to its links
 | S20 | Emergency route | Service | Remove |
 | S21 | Coverage | Service | Remove |
 | S22 | Response commitment (only if approved) | Service | Remove |
-| S23 | Base and offices (name conflict UAE versus Singapore unresolved) | About | Remove |
+| S23 | Base and offices (UAE versus Singapore unresolved) | About | Remove |
 | S24 | Year founded (only if confirmed) | About | Remove |
 | S25 | Regions served | About | Remove |
 | S26 | Team (names, roles, photos, consent) | About | Remove |
 | S27 | Form endpoint or mailto address and who receives enquiries | Contact (not visible, build note) | Required to remove the not-connected notice |
 | S28 | Differentiator line | Home, below the area list | Remove |
+| S29 | Official Sinor Marine Technologies logo (header, footer; text wordmark until supplied) | Header, footer | Remove |
+| S30 | Legal entity name and registration | About, footer | Remove |
+| S31 | Sinor Marine Technologies LinkedIn page | Footer, Contact | Remove |
 
 S28 position: a single slot box under the area list on Home (section 2.2), after S06. Count: 28 distinct slot IDs (S01 to S28). Some are repeated across pages, so the number of boxes on screen across the whole site can be higher than 28. (Director correction of the architect's footnote, 2026-11-07.)
 

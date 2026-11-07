@@ -21,3 +21,4 @@ Do not store commercial terms, client confidential data or personal data.
 | Stand panel prints "15+ years DP engineering, 100+ projects, 40+ countries": company-printed claims, NOT yet confirmed by Rahul for public use | photo 0bc7989f | 2026-11-06 |
 
 Products, partners, services, project names and terminology: none verified yet. To be supplied.
+| Website project entity name is Sinor Marine Technologies, not Sinor Marine Services (STATED by Rahul, not independently verified; base, legal entity, logo and LinkedIn page unknown) | Rahul chat message | 2026-11-07 |

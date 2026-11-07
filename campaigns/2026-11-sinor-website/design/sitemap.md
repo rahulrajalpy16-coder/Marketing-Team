@@ -24,7 +24,7 @@ Domain, canonical URLs and hosting are placeholders (DECISION 10). Use root-rela
 ## 2. Navigation
 
 Header (all pages, identical markup except the current-page marker):
-- Left: Sinor logo on a white plate (assets/brand/sinor-logo.png, DECISION 7), links to index.html. The logo link has an accessible name ("Sinor Marine, home"; final wording from copy).
+- Left: text wordmark "SINOR MARINE TECHNOLOGIES" and slot S29 for the official logo (DECISION 7; the repo logo is the Services company logo and is not used), links to index.html. Accessible name "Sinor Marine Technologies, home".
 - Links in order: Home, Solutions, Service and support, About, Contact.
 - One pill call to action, "Send an enquiry", pointing to contact.html. At 1024 px and wider it sits right of the links. Below 1024 px it sits inside the menu panel, last row, so the header stays tiny.
 - Current page: aria-current="page" on its link, plus the visual marker from the design system (text colour plus underline).
@@ -47,10 +47,10 @@ Skip link: first focusable element on every page, text "Skip to main content", v
 Breadcrumbs: none. Five flat pages, one level deep, the nav is always visible. Breadcrumbs would only repeat the nav. Reconsider if a News or Partners section with sub-pages is added.
 
 Footer (all pages, identical):
-1. Logo on white plate.
-2. Legal entity line: "Sinor Marine Services Middle East FZCO, UAE" (STATED), kept in one place so it can change (DECISION 4).
+1. Text wordmark and logo slot S29 (a supplied logo with an opaque white background sits on a white plate).
+2. Company name "Sinor Marine Technologies" (STATED 2026-11-07), kept in one place (DECISION 4). Legal entity and registration: slot S30.
 3. Links column "Pages": Home, Solutions, Service and support, About, Contact.
-4. Links column "Find us": Company LinkedIn page (https://www.linkedin.com/company/sinor-marine-services/, STATED, opens in the same tab, with visible external-link wording), then contact slots (see wireframes, slot register): email, phone, address, hours, all NEEDED FROM RAHUL.
+4. Links column "Find us": Company LinkedIn page: slot S31 (NEEDED FROM RAHUL; the sinor-marine-services page is the Services company and is not used), then contact slots (see wireframes, slot register): email, phone, address, hours, all NEEDED FROM RAHUL.
 5. Legal row: privacy, cookies and terms are not built. Visible slot "Legal pages: NEEDED FROM RAHUL" until a decision. Copyright year and company line: year is generated or fixed by the builder, no founding year shown.
 6. Small line (readable, 14 px or larger): "Industry focus as stated by the company, not independently verified." Final wording from copy, but the line itself is required by the brief.
 

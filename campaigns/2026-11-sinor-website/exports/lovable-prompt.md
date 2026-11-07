@@ -1,19 +1,20 @@
 # Lovable prompt: Sinor marine website, cinematic dark (v1)
 
-How to use: open a new Lovable project, attach the logo file (assets/brand/sinor-logo.png from the repo) and screenshots of the three reference pins if you can, then paste everything inside the box below as the first message. The copy in it is DRAFT built only from facts Rahul stated. It will be replaced by the reviewed copy from the website team. Nothing here has been published.
+How to use: open a new Lovable project, attach the Sinor Marine Technologies logo if you have it (do NOT attach assets/brand/sinor-logo.png from the repo: that one reads Sinor Marine Services Middle East FZCO) and screenshots of the three reference pins if you can, then paste everything inside the box below as the first message. The copy in it is DRAFT built only from facts Rahul stated. It will be replaced by the reviewed copy from the website team. Nothing here has been published.
 
 ```
 Build a complete 5-page marketing website for a marine and offshore technology company. Follow every rule below exactly. Do not add anything I did not ask for.
 
 COMPANY (use only this)
-- Name: Sinor Marine Services Middle East FZCO, based in the UAE. Keep the company name in ONE constant in the code so I can change it later.
-- What the company does (as stated by the owner, not independently verified): marine and offshore technology, Dynamic Positioning, reference systems, marine electrical and automation, propulsion and thruster controls, integration, upgrades, commissioning, service, technical support.
-- LinkedIn page (link in footer and contact page): https://www.linkedin.com/company/sinor-marine-services/
-- Logo: use the logo file I attach. It has an opaque white background, so ALWAYS place it on a white rounded plate (radius 8px, padding 6px 10px) on dark pages. Never recolor, stretch or redraw it. Until I attach it, show a white plate with the text "LOGO".
+- Name: Sinor Marine Technologies. This is the only company name to use. Keep it in ONE constant in the code so I can change it later. Do not write "Services", "FZCO" or "Middle East" anywhere.
+- Base location and legal entity are NOT known yet: do not state a country or city anywhere. Show them as slot boxes.
+- What the company does (as stated by the owner, to be confirmed for this company): marine and offshore technology, Dynamic Positioning, reference systems, marine electrical and automation, propulsion and thruster controls, integration, upgrades, commissioning, service, technical support.
+- No LinkedIn or other social links yet: show a slot box.
+- Logo: until I attach the official Sinor Marine Technologies logo, show a text wordmark "SINOR MARINE TECHNOLOGIES" (uppercase, 13px, letter spacing 0.14em, weight 700, colour #F2F6FA) next to a small dashed slot square labelled LOGO. When I attach a logo: if it has an opaque white background, ALWAYS place it on a white rounded plate (radius 8px, padding 6px 10px); if it is transparent, check it is readable on #0A1626 first. Never recolor, stretch or redraw it. Never use any other company's logo.
 
 HARD CONTENT RULES (important, you tend to break these)
 - Do NOT invent anything: no partner or client names, no certifications or ISO numbers, no statistics, no years in business, no project names, no testimonials, no awards, no team members, no phone numbers, no email addresses, no street address, no product trademarks, no stock claims like "trusted by" or "industry leading".
-- Where real content is missing, show a visible dashed-border slot box with the label "NEEDED FROM OWNER" and one line saying what goes there. Slots needed: contact email, phone, address, opening hours, partners, certifications, projects, team, company story, photos.
+- Where real content is missing, show a visible dashed-border slot box with the label "NEEDED FROM OWNER" and one line saying what goes there. Slots needed: official logo, legal entity name and registration, base and offices, LinkedIn page, contact email, phone, address, opening hours, partners, certifications, projects, team, company story, photos.
 - No lorem ipsum. No emoji. No em dashes or en dashes anywhere in the text; use commas or full stops.
 - Use exactly the draft copy below. Do not rewrite it.
 
@@ -43,7 +44,7 @@ Design tokens (use these exact values as CSS variables):
 - Primary pill button: height 48px, padding 0 28px, background #F2F6FA, text #050A12, 13px uppercase, tracking 0.12em, weight 600. Hover: background #FFFFFF and lift 1px. Secondary: transparent with 1px #6A86A5 border and #F2F6FA text.
 - Cards: background #101F33, radius 14, padding 24, soft shadow, body text muted.
 - Header: 64px, uppercase 13px links in muted colour, active link underlined, one pill "Contact" on the right. Transparent over the hero with a dark gradient behind, solid #0A1626 after scrolling 40px. On screens under 1024px the links collapse into a "Menu" button that toggles a full-width panel (aria-expanded, 44px rows, Escape closes and returns focus).
-- Footer: background #050A12, logo plate, links, LinkedIn link, line "Sinor Marine Services Middle East FZCO, UAE".
+- Footer: background #050A12, text wordmark or logo, links, a slot box for the LinkedIn page and legal entity, line "Sinor Marine Technologies".
 
 HOME HERO (the one cinematic moment)
 - A tall scroll runway (400vh) with a sticky full-viewport stage. Inside it, a canvas that redraws from scroll progress p (0 to 1). Headline and buttons are real HTML text over the canvas, never drawn on it.
@@ -68,7 +69,7 @@ HOME
   6. Service and technical support: Help for systems that are already in operation.
 - Section "How a project runs": four steps with only these words: Discover. Design. Install and commission. Support. One short generic line each, no durations and no numbers.
 - Service strip: "Already in operation? Request service or technical support." button to /contact?topic=service-support.
-- About teaser: "Sinor Marine Services Middle East FZCO is a marine and offshore technology company based in the UAE." plus a slot box for the company story, and a link "About us".
+- About teaser: "Sinor Marine Technologies is a marine and offshore technology company." plus a slot box for the company story and base, and a link "About us".
 - Closing band: "Tell us about your vessel or project." button "Start an enquiry".
 
 SOLUTIONS
@@ -80,14 +81,14 @@ SERVICE AND SUPPORT
 - Slot boxes: hours, emergency route, coverage area, response commitment (all NEEDED FROM OWNER). Button "Request support" to /contact?topic=service.
 
 ABOUT
-- H1: About. Text: "Sinor Marine Services Middle East FZCO is a marine and offshore technology company based in the UAE. Its work covers Dynamic Positioning, reference systems, marine electrical and automation, propulsion and thruster controls, integration, upgrades, commissioning, service and technical support."
-- Slot boxes: company story, year founded, team, certifications, partners, regions served. Button "Contact the team".
+- H1: About. Text: "Sinor Marine Technologies is a marine and offshore technology company. Its work covers Dynamic Positioning, reference systems, marine electrical and automation, propulsion and thruster controls, integration, upgrades, commissioning, service and technical support."
+- Slot boxes: company story, legal entity, base and offices, year founded, team, certifications, partners, regions served. Button "Contact the team".
 
 CONTACT
 - H1: Contact. Intro: "Tell us what you are working on."
 - Form fields with visible labels and ids: Full name, Company, Email, Topic (select: Dynamic Positioning, Reference systems, Marine electrical and automation, Propulsion and thruster controls, Integration upgrades and commissioning, Service and technical support, General enquiry; preselect from the ?topic= query value), Vessel or project (optional), Message. Required: name, email, message. Inline error text under each field in a readable light red (check 4.5:1 on #0A1626). Submit button "Send enquiry".
 - Directly under the button, always visible, in muted #A9B8C9 at 15px or larger: "This form is not connected yet. Nothing you type is sent anywhere." After a valid submit show: "Your enquiry is ready, but nothing has been sent because this form is not connected yet."
-- Slot boxes: email, phone, address, opening hours (NEEDED FROM OWNER). LinkedIn link.
+- Slot boxes: email, phone, address, opening hours, LinkedIn page (NEEDED FROM OWNER).
 
 ACCESSIBILITY AND QUALITY
 - Semantic landmarks (header, nav, main, footer), one h1 per page, no skipped heading levels, a skip-to-content link, visible focus, all tap targets at least 44px, every image or canvas has an accessible name or aria-hidden, set a unique document title and meta description per page (plain descriptive text from the copy above).
@@ -99,7 +100,7 @@ When done, list anything you could not do and any rule you had to bend.
 ```
 
 ## What to attach in Lovable
-1. The logo: assets/brand/sinor-logo.png.
+1. The official Sinor Marine Technologies logo, if you have it. Not assets/brand/sinor-logo.png (that is the Services company logo). Without it, the site shows a text wordmark.
 2. Optional: screenshots of the three Pinterest pins (open each link, save the image). They are the mood only.
 
 ## Known differences from the team's own build

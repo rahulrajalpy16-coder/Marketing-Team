@@ -34,3 +34,5 @@ Format: date | scope (one-off, this platform, this account, always) | status (pr
 - 2026-11-06 | always | provisional | Hash-routed single page apps need scripts/web_qa.mjs --hash-routes, otherwise only the home view is tested and in-page links show as false broken anchors. Check one screenshot by eye to confirm routes render. | Sinor site baseline.
 - 2026-11-06 | always | provisional | Group QA findings by rule before reporting: 203 WARN lines were 14 distinct issues repeated per page. | Sinor site full run.
 - 2026-11-06 | always | provisional | The Artifact tool read with paths saves every published file locally and prints sha256 hashes; the full html is also saved under tool-results. Use that, not a re-fetch. | Sinor site import.
+
+- 2026-11-07 | this account | provisional | Sinor Marine Services Middle East FZCO (repo logo, entity line, LinkedIn page) and Sinor Marine Technologies (the website) are different names. Check which entity a deliverable is for before using any logo, entity line or social link, and keep identifiers from the other name out. | Rahul: "This is for sinor marine technologies. Not services."

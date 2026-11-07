@@ -32,7 +32,7 @@ Supporting actions:
 - From Service and support, start a support request (same form, topic "Service and support").
 - From About, read the company line and then enquire.
 - Direct contact by email or phone once Rahul supplies them (NEEDED FROM RAHUL).
-- Visit the company LinkedIn page: https://www.linkedin.com/company/sinor-marine-services/ (STATED by Rahul 2026-11-06, pages not opened).
+- Visit the company LinkedIn page: slot S31, NEEDED FROM RAHUL (the earlier URL belongs to the Services company and is not used; corrected 2026-11-07).
 Constraint: per the brief the form is not connected to anything and says so in readable text. Until Rahul supplies a real endpoint or a mailto address, the main conversion cannot actually complete. This is the largest delivery gap and is listed as a risk.
 
 ## 5. Positioning and tone
@@ -47,14 +47,14 @@ Rules: no hype words (boost, revolutionary, world class, leading, cutting edge, 
 | Home | State in one short headline and one line what Sinor does; show the six stated capability areas as a quick map; establish credibility honestly (real slots, no fake proof); route to Solutions or Contact. Holds the single cinematic scroll scene. | "Send an enquiry" (secondary: "See solutions") |
 | Solutions | Let an engineer find their system fast. One section per STATED area: Dynamic Positioning, reference systems, marine electrical and automation, propulsion and thruster controls, integration. Describe what Sinor does at the level Rahul confirms. No product trademarks, no partner names. | "Discuss this system" (links to Contact with topic set) |
 | Service and support | Show the lifecycle after supply: upgrades, commissioning, service, technical support. Say how to reach support. Response times, hours and coverage stay as NEEDED FROM RAHUL slots. | "Request support" (to Contact, topic Service and support) |
-| About | Who the company is: legal entity line (STATED: Sinor Marine Services Middle East FZCO, UAE), what it does, how it works. Team, history, certifications and partners are slots only. | "Contact the team" |
+| About | Who the company is: company name (STATED 2026-11-07: Sinor Marine Technologies; legal entity is slot S30), what it does, how it works. Team, history, certifications and partners are slots only. | "Contact the team" |
 | Contact | Complete the one conversion. Form (not connected, said plainly), placeholders for email, phone, address, hours, and the LinkedIn link. Lists what to include in an enquiry (vessel type, system, location, urgency) as a convenience, not a requirement. | Submit the enquiry (disabled or clearly labelled as not live until an endpoint is approved) |
 Not built (DECISION): Training, Simulator, News, Team, Partners. The sitemap notes where they would go once content is confirmed.
 Shared: header with white logo plate, footer with legal entity line, nav of five items, skip link, legal pages are NOT in scope (see open questions).
 
 ## 7. Content that must come from Rahul
 NEEDED FROM RAHUL (each appears on the site as a visible, honest slot until supplied):
-1. Final company name and base (the "Sinor Marine Services Middle East FZCO, UAE" versus "Sinor Marine Technologies, Singapore" conflict is UNRESOLVED).
+1. Base and legal entity of Sinor Marine Technologies (UAE versus Singapore is UNRESOLVED; the company name is now STATED, 2026-11-07).
 2. Public contact details: email, phone, address, opening hours, time zone for support. None are allowed now.
 3. A real form endpoint or a mailto address, and who receives enquiries.
 4. Description of each solution area at the depth he approves: scope, what is delivered, vessel and system types served.
@@ -64,7 +64,7 @@ NEEDED FROM RAHUL (each appears on the site as a visible, honest slot until supp
 8. Company facts: year founded, team size, regions served, 15+ years, 100+ projects, 40+ countries (printed on a stand panel, not confirmed for public use). Confirm each or leave out.
 9. Service and support details: hours, emergency route, coverage, response commitments.
 10. Photography of real vessels, consoles, thrusters or workshop, with rights confirmed, as optimised copies. Otherwise the abstract SVG and canvas scene is used.
-11. Logo decision: keep assets/brand/sinor-logo.png on a white plate, or approve a transparent variant (the Drive white variant and the artifact logos are unconfirmed).
+11. Logo: the repo logo is the Services company logo and is NOT used. Rahul supplies the Sinor Marine Technologies logo (slot S29); the Drive white variant and the artifact logos are unconfirmed.
 12. Brand colour values or guideline, if one exists (navy #0D4A85 is approximate).
 13. Domain (www.sinormarine.com is FOUND, not confirmed), hosting, and publish approval.
 14. Legal text: privacy, cookies, terms, or a decision to launch without them.
@@ -111,7 +111,7 @@ Confirm the brief: plain HTML, CSS and vanilla JS, multi-page with real URLs, sh
 11. Audience is a hypothesis; the page order and emphasis may need to change once Rahul describes real buyers.
 
 ## 12. Open questions for Rahul (bundle in one message)
-1. Company name for the site: "Sinor Marine Services Middle East FZCO" or "Sinor Marine Technologies"? Which base: UAE or Singapore, or both?
+1. Company name is resolved: Sinor Marine Technologies (2026-11-07). Still open: which base, UAE or Singapore or both? Legal entity name and registration?
 2. Is www.sinormarine.com the right domain, and who hosts it? May anything be published or shared?
 3. Who are the real visitors and buyers (vessel owners, shipyards, integrators, others)? Confirms or corrects section 2.
 4. Which enquiry route: email address, a form endpoint, WhatsApp or phone? Who answers and what response time may be stated?
