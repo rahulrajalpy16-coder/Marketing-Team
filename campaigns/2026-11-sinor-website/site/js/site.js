@@ -92,10 +92,19 @@
     return msg;
   }
 
+  /* While a pointer is pressed on Send enquiry, blur and change checks are skipped so the layout cannot move
+     between mouse down and mouse up (a moved button loses the click). The submit itself still validates everything. */
+  var pressing = false;
+  var release = function () { pressing = false; };
+  submit.addEventListener('pointerdown', function () { pressing = true; });
+  submit.addEventListener('mousedown', function () { pressing = true; });
+  document.addEventListener('pointerup', release);
+  document.addEventListener('pointercancel', release);
+  document.addEventListener('mouseup', release);
   order.forEach(function (key) {
     var el = form.elements[key];
-    el.addEventListener('blur', function () { if (submitted) check(key); });
-    el.addEventListener('change', function () { if (submitted) check(key); });
+    el.addEventListener('blur', function () { if (submitted && !pressing) check(key); });
+    el.addEventListener('change', function () { if (submitted && !pressing) check(key); });
   });
 
   /* Counter: visible from 1800 characters. The live region only speaks when 1800 is crossed and at the limit. */

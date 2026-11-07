@@ -42,3 +42,11 @@ NOT tested: screen readers, real devices, Safari, Firefox, forced colours, hero 
 - A hero with inline head classes avoids layout shift but needs a script-failure path; test it.
 - Blur validation that removes messages can swallow the next click; test with a real pointer.
 - Strict QA contrast checks skip background images: keep text on flat colours where possible.
+
+## Fix pass 1 (after web_qa_report_1)
+- W1: blur and change checks are skipped while a pointer is pressed on Send enquiry, so nothing can move between mouse down and mouse up. Playwright (real mouse down and up, fail, fix, one click) at 1440 and 375: button moved 0 px, "Not sent" panel shown, focus on it.
+- W2: page-intro buttons are content width (service.html and every other pill checked at 1440 and 375; none stretch outside bands and hero rows). .actions no longer stretches items.
+- Home "After the system is in service": the three outlined boxes are now a plain bullet list (nothing non-interactive looks clickable).
+- Contact: two columns only from 1024 px, with a larger gap and a 300 px minimum right column, so "Other ways to reach the team" wraps cleanly.
+- New draft slots (dashed box, label "DRAFT, NEEDS RAHUL TO CONFIRM"): S32 "Project steps are a proposal, not confirmed" (Home and About, after the step list); S33 "Confirm these areas apply to Sinor Marine Technologies" (Home and About beside the "Industry focus as stated by the company" label; Solutions above the jump list). Step and area text unchanged. Slot list is now S01 to S26, S28 to S33 visible (S27 and S07 are build-note only).
+- web_qa: 0 FAIL, 0 WARN, 6 NOTE (favicon). Greps clean.

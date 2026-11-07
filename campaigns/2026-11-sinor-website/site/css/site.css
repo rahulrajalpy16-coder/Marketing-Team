@@ -76,7 +76,7 @@ h3 { font-size: var(--fs-1); margin-bottom: var(--s-3); }
   text-decoration: underline; text-underline-offset: 4px;
 }
 .text-link:hover { color: var(--c-accent-hi); }
-.actions { display: flex; flex-direction: column; gap: var(--s-3); align-items: stretch; }
+.actions { display: flex; flex-direction: column; gap: var(--s-3); align-items: flex-start; }
 @media (min-width: 480px) { .actions { flex-direction: row; flex-wrap: wrap; align-items: center; } }
 
 /* Header */
@@ -158,6 +158,9 @@ h3 { font-size: var(--fs-1); margin-bottom: var(--s-3); }
 .page-intro { background: var(--c-surface); padding-block: var(--pad); border-bottom: 1px solid var(--c-line); }
 .page-intro .container { display: grid; gap: var(--s-6); align-items: center; }
 .page-intro .lede { margin-bottom: var(--s-5); }
+.page-intro .btn { justify-self: start; align-self: start; width: auto; }
+.slot + p { margin-top: var(--s-4); }
+.steps + .slot { margin-bottom: var(--s-4); }
 .page-intro .motif { display: none; color: var(--c-steel); }
 @media (min-width: 768px) {
   .page-intro .container.has-motif { grid-template-columns: 8fr 4fr; }
@@ -267,7 +270,7 @@ h3 { font-size: var(--fs-1); margin-bottom: var(--s-3); }
 .notice p { margin: 0; font-size: 1rem; font-weight: 400; color: var(--c-text); max-width: none; }
 .notice .notice-label { font-weight: 700; font-size: var(--fs-1); margin-bottom: var(--s-2); }
 .contact-grid { display: grid; gap: var(--s-8); }
-@media (min-width: 768px) { .contact-grid { grid-template-columns: 7fr 5fr; gap: var(--s-8); align-items: start; } }
+@media (min-width: 1024px) { .contact-grid { grid-template-columns: minmax(0, 7fr) minmax(300px, 5fr); gap: var(--s-9); align-items: start; } }
 .field { margin-bottom: var(--s-5); }
 .field label { display: block; font-weight: 600; margin-bottom: var(--s-2); color: var(--c-text); }
 .hint { margin: 0 0 var(--s-2); color: var(--c-muted); font-size: 1rem; }
@@ -287,6 +290,7 @@ textarea.control { min-height: 140px; resize: vertical; }
 .status-panel { border: 2px solid var(--c-control-border); }
 .error-summary[hidden], .status-panel[hidden] { display: none; }
 .error-summary h2 { color: var(--c-error); font-size: var(--fs-2); margin-bottom: var(--s-3); }
+.status-panel { margin-top: var(--s-5); }
 .status-panel h2 { font-size: var(--fs-2); margin-bottom: var(--s-3); }
 .error-summary ul { margin: 0; padding-left: 1.25rem; }
 .error-summary li { margin-bottom: var(--s-2); }
