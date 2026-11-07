@@ -48,7 +48,7 @@ BEATS = [
     dict(kind="title"),
     dict(kind="hero", src="s7_1.jpg", cap="Conversations at our stand", word="CONVERSATIONS", chip="VISITORS", lay="full", lay_p="speaker"),
     dict(kind="hero", src="s3_1.jpg", cap="Visitors at our stand", word="VISITORS", chip="VISITORS", lay="card"),
-    dict(kind="hero", src="IMG_4413.jpg", cap="NAVIS console", word="TECHNOLOGY", chip="TECHNOLOGY", lay="card"),
+    dict(kind="hero", src="IMG_4413.jpg", cap="NAVIS console", word="TECHNOLOGY", chip="TECHNOLOGY", lay="card", wyf=-0.30),
     dict(kind="hero", src="IMG_4464.jpg", cap="Sonardyne SPRINT-Nav on the stand", word="DISCUSSIONS", chip="TECHNOLOGY", lay="full"),
     dict(kind="hero", src="IMG_4188.jpg", cap="Marine Technologies on the stand", word="PARTNERS", chip="PARTNERS", lay="card"),
     dict(kind="hero", src="a07555b5-23b3-4497-92aa-a3613e384bc5.jpg", cap="With Guidance Marine at our stand", word="WELCOME", chip="PARTNERS", lay="card"),
@@ -530,7 +530,7 @@ class DynBeat:
             # the word runs ACROSS the card in white (like the template's STYLSH card)
             word = self.spec["word"]
             size = min(fit_size(word, "ExtraBold", 0.60 * W, 230), 230)
-            wy = cyy + self.ch * 0.27
+            wy = cyy + self.ch * self.spec.get("wyf", 0.27)
             out_col = CREAM if pal["bg"] in (NAVY, BLUE) else NAVY
             lay_in = self.letters(t, word, size, cxx, wy, (255, 255, 255), outline_idx={0})
             lay_out = self.letters(t, word, size, cxx, wy, out_col, outline_idx={0})
