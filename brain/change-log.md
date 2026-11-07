@@ -13,3 +13,4 @@ Dated record of every approved change to the system, and any note of brain-file 
 - 2026-11-06 | Two more template-inspired designs added (build_video_styles.py: kinetic v12, promo v12) with the same content; mosaic captions made more careful after QA v11. No agent, skill or CLAUDE.md change.
 - 2026-11-07 | 16:9 template recreations added (build_video_templates16x9.py: clean, dynamic, promo) after Rahul asked for the same template look; limits recorded in the retro. No agent, skill or CLAUDE.md change.
 - 2026-11-07 | Photo-wall v3/v4: transparent Sinor logo asset added (assets/brand/sinor-logo-transparent.png), partner logos on captions, new hero photos, music bed upgraded. No agent, skill or CLAUDE.md change.
+- 2026-11-07 | Photo-wall v7/v8: builder now supports 4x5 and 9x16, extended Visitors section, BT.709-tagged capped-bitrate encode; platform-specs LinkedIn row updated with reported organic specs. No agent, skill or CLAUDE.md change.

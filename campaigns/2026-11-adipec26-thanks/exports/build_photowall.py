@@ -8,7 +8,7 @@ and a virtual camera (smooth cubic path) crops and zooms it per frame with sub-p
 Modern type captions (glass panel, animated lines), an opening title and a closing thank-you card with the five
 partner logos are drawn on top. Audio is made separately (make_music_bed.py) and muxed in.
 
-Usage: python3 build_photowall.py <jpg_dir> <extra_dir> <out_dir> <version> <v1|v2> [audio.wav]
+Usage: python3 build_photowall.py <jpg_dir> <extra_dir> <out_dir> <version> <v1|v2> [audio.wav|-] [9x16|4x5]
 Needs Pillow, numpy, ffmpeg. All drawing is per frame; frames are piped to ffmpeg (libx264, yuv420p, AAC).
 """
 import math
@@ -21,7 +21,25 @@ import numpy as np
 from PIL import Image, ImageDraw, ImageFilter, ImageFont
 
 W, H, FPS = 1080, 1920, 30
-SAFE = H - 300
+FORMATS = {
+    # 9:16 full-screen vertical (reels-style safe area at the bottom)
+    "9x16": dict(H=1920, safe_bottom=336, zf=0.54, ky=0.115, cy0=560, logo_y=92,
+                 open=dict(logo_y=330, logo_w=700, words=(690, 920), bar_y=1215, date_y=1250),
+                 close=dict(logo_y=240, logo_w=440, ty=470, tf=190, bar=700, l1=740, l2=796, l3=880, l4=932,
+                            f1=42, f2=40, rows=(1010, 1210, 1410), th=120, fn=32)),
+    # 4:5 portrait: the LinkedIn feed format (fills most of a phone feed, no overlay UI at the bottom)
+    "4x5": dict(H=1350, safe_bottom=48, zf=0.65, ky=0.085, cy0=400, logo_y=64,
+                open=dict(logo_y=140, logo_w=620, words=(430, 660), bar_y=960, date_y=995),
+                close=dict(logo_y=80, logo_w=380, ty=250, tf=160, bar=440, l1=490, l2=540, l3=615, l4=662,
+                           f1=38, f2=36, rows=(745, 905, 1065), th=100, fn=30)),
+}
+FMT = FORMATS["9x16"]
+
+
+def use_format(name):
+    global H, FMT
+    FMT = FORMATS[name]
+    H = FMT["H"]
 S = 2.0                      # wall resolution factor (wall pixels per base unit)
 COLS, CW, GAP = 5, 252, 18   # masonry columns, column width, gutter (base units)
 NAVY, BLUE, LIGHT, WHITE = (10, 42, 74), (13, 74, 133), (196, 218, 240), (255, 255, 255)
@@ -48,13 +66,17 @@ HEROES = {
            ("IMG_4413.jpg", "Navis Engineering", "console on the stand", "navis-engineering.png"),
            ("IMG_4188.jpg", "Marine Technologies", "on the stand", "marine-technologies-mt.png"),
            ("a07555b5-23b3-4497-92aa-a3613e384bc5.jpg", "With Guidance Marine", "at our stand", "guidance-marine.png", "n5_guidance_four.jpg"),
-           ("n3_visitors.jpg", "Visitors", "at our stand", None)],
+           ("n3_visitors.jpg", "Visitors", "at our stand", None),
+           ("s3_1.jpg", "Visitors", "who stopped by", None, "s7_3.jpg"),
+           ("IMG_4158.jpg", "Visitors", "at ADIPEC 2026", None, "IMG_4163.jpg")],
     "v2": [("s8_2.jpg", "The Sinor Marine team", "at ADIPEC 2026", "SINOR"),
            ("n2_sprintnav.jpg", "Sonardyne SPRINT-Nav", "on the stand", "sonardyne.png", "n4_sonardyne_group_hr.jpg"),
            ("IMG_4413.jpg", "Navis Engineering", "console on the stand", "navis-engineering.png"),
            ("IMG_4188.jpg", "Marine Technologies", "on the stand", "marine-technologies-mt.png"),
            ("a07555b5-23b3-4497-92aa-a3613e384bc5.jpg", "With Guidance Marine", "at our stand", "guidance-marine.png", "n5_guidance_four.jpg"),
-           ("n3_visitors.jpg", "Visitors", "at our stand", None)],
+           ("n3_visitors.jpg", "Visitors", "at our stand", None),
+           ("s3_1.jpg", "Visitors", "who stopped by", None, "s7_3.jpg"),
+           ("IMG_4158.jpg", "Visitors", "at ADIPEC 2026", None, "IMG_4163.jpg")],
 }
 # Photos that show Sinor Marine staff: they fill the wall around the opening title (top of the wall).
 OPEN_TEAM = ["s8_2.jpg", "s8_1.jpg", "s2_2.jpg", "s5_1.jpg", "s2_1.jpg", "0f44943b-22e6-4381-aac3-66a9dfc31218.jpg",
@@ -65,7 +87,6 @@ PIN_FOR = None   # the Sonardyne group photo is now shown beside the SPRINT-Nav 
 BEAT = 0.6                 # seconds per beat (100 BPM)
 HERO_D = 4 * BEAT          # 2.4 s
 OPEN_D = 4 * BEAT
-TOTAL = {"v1": 24.6, "v2": 22.2}
 # ------------------------------------------------------------------------------------------------------
 
 
@@ -152,10 +173,18 @@ def build_wall(heroes, jpg, extra, seed):
                 else:
                     heights[col] = y
         hw = 2 * CW + GAP
-        if pair:  # two portrait tiles side by side, both in the focal area
-            hh = int(round(CW / 0.75))
-            placed.append(dict(path=hp, x=cols_x[c1], y=y, w=CW, h=hh, hero=True))
-            placed.append(dict(path=pair, x=cols_x[c2], y=y, w=CW, h=hh, hero=True))
+        if pair:
+            ia, ib = Image.open(find(hp, jpg, extra)), Image.open(find(pair, jpg, extra))
+            ara, arb = ia.width / ia.height, ib.width / ib.height
+            if ara > 1.2 and arb > 1.2:  # two landscape photos: stack them, full width
+                h1, h2 = int(round(hw / min(ara, 1.78))), int(round(hw / min(arb, 1.78)))
+                placed.append(dict(path=hp, x=cols_x[c1], y=y, w=hw, h=h1, hero=True))
+                placed.append(dict(path=pair, x=cols_x[c1], y=y + h1 + GAP, w=hw, h=h2, hero=True))
+                hh = h1 + GAP + h2
+            else:  # portrait photos: two portrait tiles side by side, both in the focal area
+                hh = int(round(CW / 0.75))
+                placed.append(dict(path=hp, x=cols_x[c1], y=y, w=CW, h=hh, hero=True))
+                placed.append(dict(path=pair, x=cols_x[c2], y=y, w=CW, h=hh, hero=True))
         else:
             im = Image.open(find(hp, jpg, extra))
             ar = min(max(im.width / im.height, 0.58), 1.8)
@@ -165,7 +194,7 @@ def build_wall(heroes, jpg, extra, seed):
         heights[c1] = heights[c2] = y + hh + GAP
         avoid_near = hset
     # tail fill below the last hero, then level every column
-    for _ in range(14):
+    for _ in range(34):  # enough wall below the last hero so the camera is never clamped against the bottom edge
         col = heights.index(min(heights))
         add(col, CW, rng.choice([210, 270, 330, 390]), pick(avoid_near))
     wall_h = max(heights)
@@ -235,14 +264,14 @@ def hermite(keys, t):
 
 def build_camera(hero_rects, wall_w, wall_h, total):
     kx, ky, kz = [], [], []
-    cx0, cy0 = wall_w / 2, 560
+    cx0, cy0 = wall_w / 2, FMT["cy0"]
     kx.append((0.0, cx0, 1)), ky.append((0.0, cy0, 1)), kz.append((0.0, math.log(1.5), 1))
     prev = (cx0, cy0)
     for i, (hx, hy, hw, hh) in enumerate(hero_rects):
         s = OPEN_D + i * HERO_D
-        z = min(0.90 * W / hw, 0.54 * H / hh)
+        z = min(0.90 * W / hw, FMT["zf"] * H / hh)
         hcx, hcy = hx + hw / 2, hy + hh / 2
-        view_cy = hcy + 0.115 * H / z  # hero sits above the caption panel
+        view_cy = hcy + FMT["ky"] * H / z  # hero sits above the caption panel
         mid = ((prev[0] + hcx) / 2, (prev[1] + hcy) / 2)
         kx.append((s, mid[0], 1)), ky.append((s, mid[1], 1)), kz.append((s, math.log(1.18), 1))
         kx.append((s + 0.95, hcx, 0)), ky.append((s + 0.95, view_cy, 0)), kz.append((s + 0.95, math.log(z), 0))
@@ -343,7 +372,7 @@ class Overlays:
         a = min(e_in, e_out)
         if a <= 0.01:
             return frame
-        x0, x1, y1 = 48, W - 48, SAFE - 36
+        x0, x1, y1 = 48, W - 48, H - FMT["safe_bottom"]
         y0 = y1 - 300
         off = int((1 - e_in) * 34)
         box = (x0, y0 + off, x1, y1 + off)
@@ -390,7 +419,7 @@ class Overlays:
         k = a * (1 - oa)
         if k > 0.01:
             frame.paste(self.scrim_img, (0, 0), self.scrim.point(lambda v: int(v * k)))
-        x, y = 48 - self.logo_pad, 92 - self.logo_pad
+        x, y = 48 - self.logo_pad, FMT["logo_y"] - self.logo_pad
         for img, k in ((self.logo_blue, 1 - oa),):
             if a * k > 0.01:
                 lc = scale_alpha(img, a * k)
@@ -407,7 +436,8 @@ class Overlays:
         frame = Image.blend(frame, veil, 0.74 * a)
         lay = Image.new("RGBA", (W, H), (0, 0, 0, 0))
         d = ImageDraw.Draw(lay)
-        for k, (word, y) in enumerate((("ADIPEC", 690), ("2026", 920))):
+        O = FMT["open"]
+        for k, (word, y) in enumerate((("ADIPEC", O["words"][0]), ("2026", O["words"][1]))):
             e = eo((T + 0.30 - 0.10 - 0.16 * k) / 0.55)
             if e > 0.01:
                 tmp = Image.new("RGBA", (W, 300), (0, 0, 0, 0))
@@ -415,39 +445,40 @@ class Overlays:
                 tmp = tmp.crop((0, 0, W, 300))
                 lay.alpha_composite(tmp, (0, y))
         eL = eo((T + 0.30 - 0.05) / 0.6)
-        big = fit(trimmed(LOGO), 700, 999)
+        big = fit(trimmed(LOGO), O["logo_w"], 999)
         wl = Image.new("RGBA", big.size, (255, 255, 255, 255))
         wl.putalpha(big.getchannel("A"))
-        lay.alpha_composite(scale_alpha(wl, eL), (60, 330 + int((1 - eL) * 40)))
+        lay.alpha_composite(scale_alpha(wl, eL), (60, O["logo_y"] + int((1 - eL) * 40)))
         e3 = eo((T + 0.30 - 0.65) / 0.5)
-        tracked(d, (66, 1250), "ABU DHABI   ·   2-5 NOVEMBER 2026", font("Inter-Bold", 34), (255, 255, 255, int(255 * e3)), 4.0)
-        d.rectangle([66, 1215, 66 + 120 * e3, 1221], fill=(53, 214, 197, 255))
+        tracked(d, (66, O["date_y"]), "ABU DHABI   ·   2-5 NOVEMBER 2026", font("Inter-Bold", 34), (255, 255, 255, int(255 * e3)), 4.0)
+        d.rectangle([66, O["bar_y"], 66 + 120 * e3, O["bar_y"] + 6], fill=(53, 214, 197, 255))
         lay.putalpha(lay.getchannel("A").point(lambda v: int(v * a)))
         frame = frame.convert("RGBA")
         frame.alpha_composite(lay)
         return frame.convert("RGB")
 
     def make_closing(self):
+        C = FMT["close"]
         lay = Image.new("RGBA", (W, H), (0, 0, 0, 0))
         d = ImageDraw.Draw(lay)
-        lg = fit(trimmed(LOGO), 440, 999)
-        lay.alpha_composite(lg, ((W - lg.width) // 2, 240))
-        d.text((W // 2, 470), "Thank you.", font=self.f_mid, fill=INK + (255,), anchor="mt")
-        d.rectangle([W // 2 - 56, 700, W // 2 + 56, 708], fill=TEAL + (255,))
-        f1, f2 = font("InterDisplay-SemiBold", 42), font("InterDisplay-Medium", 40)
-        d.text((W // 2, 740), "To every client and visitor", font=f1, fill=INK + (255,), anchor="mt")
-        d.text((W // 2, 796), "who stopped by our stand.", font=f1, fill=INK + (255,), anchor="mt")
-        d.text((W // 2, 880), "And to our technology partners", font=f2, fill=TEAL + (255,), anchor="mt")
-        d.text((W // 2, 932), "for their support:", font=f2, fill=TEAL + (255,), anchor="mt")
-        tw_, th_, gx = 440, 120, 24
-        ys = [1010, 1210, 1410]
+        lg = fit(trimmed(LOGO), C["logo_w"], 999)
+        lay.alpha_composite(lg, ((W - lg.width) // 2, C["logo_y"]))
+        d.text((W // 2, C["ty"]), "Thank you.", font=font("InterDisplay-Black", C["tf"]), fill=INK + (255,), anchor="mt")
+        d.rectangle([W // 2 - 56, C["bar"], W // 2 + 56, C["bar"] + 8], fill=TEAL + (255,))
+        f1, f2 = font("InterDisplay-SemiBold", C["f1"]), font("InterDisplay-Medium", C["f2"])
+        d.text((W // 2, C["l1"]), "To every client and visitor", font=f1, fill=INK + (255,), anchor="mt")
+        d.text((W // 2, C["l2"]), "who stopped by our stand.", font=f1, fill=INK + (255,), anchor="mt")
+        d.text((W // 2, C["l3"]), "And to our technology partners", font=f2, fill=TEAL + (255,), anchor="mt")
+        d.text((W // 2, C["l4"]), "for their support:", font=f2, fill=TEAL + (255,), anchor="mt")
+        tw_, th_, gx = 440, C["th"], 24
+        ys = C["rows"]
         for k, (name, logo) in enumerate(PARTNERS):
             r, c = divmod(k, 2)
             alone = (k == len(PARTNERS) - 1) and (len(PARTNERS) % 2 == 1)
             x = (W - tw_) // 2 if alone else (W - (2 * tw_ + gx)) // 2 + c * (tw_ + gx)
             pl = fit(trimmed(PARTNER_DIR / logo), tw_ - 60, th_ - 20)
             lay.alpha_composite(pl, (x + (tw_ - pl.width) // 2, ys[r] + (th_ - pl.height) // 2))
-            d.text((x + tw_ // 2, ys[r] + th_ + 8), name, font=font("InterDisplay-SemiBold", 32), fill=SLATE + (255,), anchor="mt")
+            d.text((x + tw_ // 2, ys[r] + th_ + 8), name, font=font("InterDisplay-SemiBold", C["fn"]), fill=SLATE + (255,), anchor="mt")
         return lay
 
     def closing_overlay(self, frame, T, total):
@@ -470,10 +501,13 @@ def main():
         print(__doc__)
         return 2
     jpg, extra, out, ver, which = Path(sys.argv[1]), Path(sys.argv[2]), Path(sys.argv[3]), sys.argv[4], sys.argv[5]
-    audio = sys.argv[6] if len(sys.argv) > 6 else None
+    audio = sys.argv[6] if len(sys.argv) > 6 and sys.argv[6] != '-' else None
+    fmt = sys.argv[7] if len(sys.argv) > 7 else '9x16'
+    use_format(fmt)
     out.mkdir(parents=True, exist_ok=True)
     heroes = HEROES[which]
-    total = TOTAL[which]
+    total = OPEN_D + len(heroes) * HERO_D + 5.4
+    print('format', fmt, W, 'x', H, 'duration', total, flush=True)
     placed, hero_rects, wall_w, wall_h = build_wall(heroes, jpg, extra, seed=11 if which == "v1" else 29)
     print("wall", wall_w, "x", wall_h, "base units;", len(placed), "tiles", flush=True)
     wall = render_wall(placed, wall_w, wall_h, jpg, extra)
@@ -481,14 +515,18 @@ def main():
     cam = build_camera(hero_rects, wall_w, wall_h, total)
     ov = Overlays(heroes)
     n_frames = int(round(total * FPS))
-    name = f"adipec26-thanks_linkedin_photowall_{which}_9x16_v{ver}.mp4"
+    name = f"adipec26-thanks_linkedin_photowall_{which}_{fmt}_v{ver}.mp4"
     cmd = ["ffmpeg", "-v", "error", "-y", "-f", "rawvideo", "-pix_fmt", "rgb24", "-s", f"{W}x{H}", "-r", str(FPS), "-i", "-"]
     if audio:
         cmd += ["-i", audio]
     else:
         cmd += ["-f", "lavfi", "-i", "anullsrc=channel_layout=stereo:sample_rate=48000"]
-    cmd += ["-t", f"{total:.3f}", "-c:v", "libx264", "-preset", "slow", "-crf", "17", "-pix_fmt", "yuv420p", "-profile:v", "high",
-            "-r", str(FPS), "-c:a", "aac", "-b:a", "192k", "-ar", "48000", "-ac", "2", "-movflags", "+faststart", str(out / name)]
+    # LinkedIn-friendly encode: H.264 High, yuv420p, constant 30 fps, BT.709 tagged, bitrate capped well inside LinkedIn's range,
+    # AAC-LC 48 kHz stereo, moov atom first (faststart).
+    cmd += ["-t", f"{total:.3f}", "-vf", "scale=out_color_matrix=bt709:out_range=tv:flags=lanczos,format=yuv420p",
+            "-c:v", "libx264", "-preset", "slow", "-crf", "17", "-maxrate", "14M", "-bufsize", "28M", "-profile:v", "high", "-g", "60",
+            "-colorspace", "bt709", "-color_primaries", "bt709", "-color_trc", "bt709", "-color_range", "tv",
+            "-r", str(FPS), "-fps_mode", "cfr", "-c:a", "aac", "-b:a", "192k", "-ar", "48000", "-ac", "2", "-movflags", "+faststart", str(out / name)]
     ff = subprocess.Popen(cmd, stdin=subprocess.PIPE)
     for fi in range(n_frames):
         T = fi / FPS
@@ -503,7 +541,7 @@ def main():
         frame = ov.top_brand(frame, T, total)
         frame = ov.closing_overlay(frame, T, total)
         if fi == int(1.4 * FPS):
-            frame.save(out / f"adipec26-thanks_cover_photowall_{which}_v{ver}.jpg", quality=92)
+            frame.save(out / f"adipec26-thanks_cover_photowall_{which}_{fmt}_v{ver}.jpg", quality=92)
         ff.stdin.write(frame.convert("RGB").tobytes())
         if fi % 150 == 0:
             print("frame", fi, "/", n_frames, flush=True)
