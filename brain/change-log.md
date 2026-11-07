@@ -11,3 +11,4 @@ Dated record of every approved change to the system, and any note of brain-file 
 - 2026-11-06 | ADIPEC video v10: Rahul's sequence and caption changes applied (team photo first, then thank-you title; specific captions; Guidance Marine caption). Logo padding trimmed on the end card. No agent, skill or CLAUDE.md change.
 - 2026-11-06 | New mosaic design (v11) inspired by Rahul's reference template; build_video_mosaic.py added; photos from chat sheets recorded in the manifest. No agent, skill or CLAUDE.md change.
 - 2026-11-06 | Two more template-inspired designs added (build_video_styles.py: kinetic v12, promo v12) with the same content; mosaic captions made more careful after QA v11. No agent, skill or CLAUDE.md change.
+- 2026-11-07 | 16:9 template recreations added (build_video_templates16x9.py: clean, dynamic, promo) after Rahul asked for the same template look; limits recorded in the retro. No agent, skill or CLAUDE.md change.

@@ -34,4 +34,6 @@ Format: date | scope (one-off, this platform, this account, always) | status (pr
 
 - 2026-11-06 | always | provisional | Heavy renders plus frame extraction plus montage in one command got the worker killed (exit 137, memory). Run video renders one at a time in the background with a log, and check each output with ffprobe before using it; a killed render can leave a truncated MP4. | Worker restart during the style renders.
 
-(Rahul corrections so far: 2, see above.)
+- 2026-11-07 | always | provisional | When Rahul asks for "the same template", say plainly that paid After Effects projects cannot be used here, study the reference frame by frame, and recreate its native format (the templates were 16:9) and signature moves; do not stop at a loose "inspired" version. Full-bleed word overlays must avoid faces; text over a partner logo is a defect; check caption plates for narrow portrait photos. | Rahul: "I want the same template edited videos like all the links I gave".
+
+(Rahul corrections so far: 3, see above.)
