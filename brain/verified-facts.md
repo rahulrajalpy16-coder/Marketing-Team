@@ -22,3 +22,4 @@ Do not store commercial terms, client confidential data or personal data.
 
 Products, partners, services, project names and terminology: none verified yet. To be supplied.
 | Website project entity name is Sinor Marine Technologies, not Sinor Marine Services (STATED by Rahul, not independently verified; base, legal entity, logo and LinkedIn page unknown) | Rahul chat message | 2026-11-07 |
+| Sinor Marine Technologies is an independent Singapore company, completely different from Sinor Marine Services; the old website content is the truth source and its public details may be reused (STATED by Rahul, not independently verified) | Rahul chat message | 2026-11-07 |
