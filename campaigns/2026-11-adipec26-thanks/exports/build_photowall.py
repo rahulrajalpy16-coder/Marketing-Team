@@ -42,14 +42,14 @@ POOL = ["0f44943b-22e6-4381-aac3-66a9dfc31218.jpg", "0bc7989f-ffd8-4930-b538-267
 
 # Hero beats: photo, title line, small line. Each hero beat lasts 4 beats at 100 BPM (2.4 s).
 HEROES = {
-    "v1": [("s8_2.jpg", "The Sinor Marine team", "at ADIPEC 2026", None),
+    "v1": [("s8_2.jpg", "The Sinor Marine team", "at ADIPEC 2026", "SINOR"),
            ("s7_1.jpg", "Conversations", "at our stand", None),
            ("n2_sprintnav.jpg", "Sonardyne SPRINT-Nav", "on the stand", "sonardyne.png"),
            ("IMG_4413.jpg", "Navis Engineering", "console on the stand", "navis-engineering.png"),
            ("IMG_4188.jpg", "Marine Technologies", "on the stand", "marine-technologies-mt.png"),
            ("a07555b5-23b3-4497-92aa-a3613e384bc5.jpg", "With Guidance Marine", "at our stand", "guidance-marine.png"),
            ("n3_visitors.jpg", "Visitors", "at our stand", None)],
-    "v2": [("s8_2.jpg", "The Sinor Marine team", "at ADIPEC 2026", None),
+    "v2": [("s8_2.jpg", "The Sinor Marine team", "at ADIPEC 2026", "SINOR"),
            ("n2_sprintnav.jpg", "Sonardyne SPRINT-Nav", "on the stand", "sonardyne.png"),
            ("IMG_4413.jpg", "Navis Engineering", "console on the stand", "navis-engineering.png"),
            ("IMG_4188.jpg", "Marine Technologies", "on the stand", "marine-technologies-mt.png"),
@@ -323,7 +323,7 @@ class Overlays:
         self.plogos = {}
         for _, _, _, lg in heroes:
             if lg and lg not in self.plogos:
-                self.plogos[lg] = fit(trimmed(PARTNER_DIR / lg), 330, 70)
+                self.plogos[lg] = fit(trimmed(LOGO), 330, 78) if lg == "SINOR" else fit(trimmed(PARTNER_DIR / lg), 330, 70)
         self.closing = self.make_closing()
 
     # ---- frosted light caption panel for hero beat i at local time t (seconds since beat start)
@@ -383,7 +383,7 @@ class Overlays:
         if k > 0.01:
             frame.paste(self.scrim_img, (0, 0), self.scrim.point(lambda v: int(v * k)))
         x, y = 48 - self.logo_pad, 92 - self.logo_pad
-        for img, k in ((self.logo_white, oa), (self.logo_blue, 1 - oa)):
+        for img, k in ((self.logo_blue, 1 - oa),):
             if a * k > 0.01:
                 lc = scale_alpha(img, a * k)
                 frame.paste(lc, (x, y), lc)
@@ -406,6 +406,11 @@ class Overlays:
                 ImageDraw.Draw(tmp).text((60, 0 + (1 - e) * 120), word, font=self.f_big, fill=WHITE + (int(255 * min(1, e * 1.4)),))
                 tmp = tmp.crop((0, 0, W, 300))
                 lay.alpha_composite(tmp, (0, y))
+        eL = eo((T + 0.30 - 0.05) / 0.6)
+        big = fit(trimmed(LOGO), 700, 999)
+        wl = Image.new("RGBA", big.size, (255, 255, 255, 255))
+        wl.putalpha(big.getchannel("A"))
+        lay.alpha_composite(scale_alpha(wl, eL), (60, 330 + int((1 - eL) * 40)))
         e3 = eo((T + 0.30 - 0.65) / 0.5)
         tracked(d, (66, 1250), "ABU DHABI   ·   2-5 NOVEMBER 2026", font("Inter-Bold", 34), (255, 255, 255, int(255 * e3)), 4.0)
         d.rectangle([66, 1215, 66 + 120 * e3, 1221], fill=(53, 214, 197, 255))
