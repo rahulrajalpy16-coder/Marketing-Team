@@ -40,3 +40,4 @@ Format: date | scope (one-off, this platform, this account, always) | status (pr
 
 (Rahul corrections so far: 3, see above.)
 - 2026-11-07 | this campaign | provisional | Rahul's compressed reference clips were 9:16 photo-wall reels with licensed loud audio. Recreate from original photos with a strong veil under the opening title; replace audio with an original generated bed at -14 LUFS; I cannot listen, so he must. | Rahul: "Recreate it with hight quality visuals amd best modern type captions".
+- 2026-11-07 | always | provisional | Measure true peak on the final MP4 (after AAC encode); loudnorm TP -1.5 on the WAV still produced 0.0 dBTP. Use TP -3 plus alimiter. A halo behind a text block looks like a box: use a soft gradient scrim. Cutting a transparent logo out of a white JPG needs an alpha noise threshold. | QA v3 blockers D-01 and D-02.

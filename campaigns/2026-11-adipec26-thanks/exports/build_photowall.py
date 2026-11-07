@@ -188,7 +188,7 @@ def render_wall(placed, wall_w, wall_h, jpg, extra):
             if len(cache) > 8:
                 cache.pop(next(iter(cache)))
         src = cache[t["path"]]
-        focus = (0.5, 0.42)
+        focus = (0.5, 0.10) if t["path"] == PIN else (0.5, 0.42)
         tile = cover_to(src, w, h, focus)
         x, y = int(t["x"] * S), int(t["y"] * S)
         sh = Image.new("RGBA", (w + 60, h + 60), (0, 0, 0, 0))
@@ -281,7 +281,6 @@ def logo_variants(width):
     base = Image.new("RGBA", (lg.width + 2 * pad, lg.height + 2 * pad), (0, 0, 0, 0))
     halo = Image.new("RGBA", lg.size, (255, 255, 255, 255))
     halo.putalpha(halo_a)
-    base.alpha_composite(halo, (pad, pad))
     base.alpha_composite(blue, (pad, pad))
     white = Image.new("RGBA", lg.size, (255, 255, 255, 255))
     white.putalpha(al)
@@ -312,7 +311,10 @@ class Overlays:
     def __init__(self, heroes):
         self.heroes = heroes
         self.n = len(heroes)
-        self.logo_blue, self.logo_white, self.logo_pad = logo_variants(210)
+        self.logo_blue, self.logo_white, self.logo_pad = logo_variants(250)
+        g = np.linspace(1.0, 0.0, 380) ** 1.6 * 0.62  # soft light scrim under the logo, fades out downwards (no box edges)
+        self.scrim = Image.fromarray(np.repeat(np.round(g * 255).astype(np.uint8)[:, None], W, axis=1), "L")
+        self.scrim_img = Image.new("RGB", (W, 380), PAPER)
         self.f_chip = font("Inter-SemiBold", 24)
         self.f_title = font("InterDisplay-ExtraBold", 76)
         self.f_sub = font("InterDisplay-Medium", 42)
@@ -373,10 +375,13 @@ class Overlays:
         return 0.0 if T > OPEN_D + 0.1 else 1 - smooth((T - 1.85) / 0.55)
 
     def top_brand(self, frame, T, total):
-        a = eo(T / 0.6) * (1 - smooth((T - (total - 5.4)) / 0.5))
+        a = eo((T + 0.3) / 0.6) * (1 - smooth((T - (total - 5.4)) / 0.5))
         if a <= 0.01:
             return frame
         oa = self.open_alpha(T)
+        k = a * (1 - oa)
+        if k > 0.01:
+            frame.paste(self.scrim_img, (0, 0), self.scrim.point(lambda v: int(v * k)))
         x, y = 48 - self.logo_pad, 92 - self.logo_pad
         for img, k in ((self.logo_white, oa), (self.logo_blue, 1 - oa)):
             if a * k > 0.01:
@@ -395,13 +400,13 @@ class Overlays:
         lay = Image.new("RGBA", (W, H), (0, 0, 0, 0))
         d = ImageDraw.Draw(lay)
         for k, (word, y) in enumerate((("ADIPEC", 690), ("2026", 920))):
-            e = eo((T - 0.10 - 0.16 * k) / 0.55)
+            e = eo((T + 0.30 - 0.10 - 0.16 * k) / 0.55)
             if e > 0.01:
                 tmp = Image.new("RGBA", (W, 300), (0, 0, 0, 0))
                 ImageDraw.Draw(tmp).text((60, 0 + (1 - e) * 120), word, font=self.f_big, fill=WHITE + (int(255 * min(1, e * 1.4)),))
                 tmp = tmp.crop((0, 0, W, 300))
                 lay.alpha_composite(tmp, (0, y))
-        e3 = eo((T - 0.65) / 0.5)
+        e3 = eo((T + 0.30 - 0.65) / 0.5)
         tracked(d, (66, 1250), "ABU DHABI   ·   2-5 NOVEMBER 2026", font("Inter-Bold", 34), (255, 255, 255, int(255 * e3)), 4.0)
         d.rectangle([66, 1215, 66 + 120 * e3, 1221], fill=(53, 214, 197, 255))
         lay.putalpha(lay.getchannel("A").point(lambda v: int(v * a)))

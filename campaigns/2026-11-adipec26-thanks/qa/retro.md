@@ -62,3 +62,9 @@ Two video revisions (v1 to v2 to v3), the maximum of three QA cycles. One captio
 - Independent QA (qa_photowall_v2.md): technical gate passed; majors D-01 title over faces, D-02 low-contrast subtitle, D-05 over-claiming caption. Fixed; re-check was mine only.
 - Open minor items: "The Sinor Marine team" caption shows while the team tile is not featured; "Visitors"/"Together" are vague; Sinor logo chip near top 150 px; neighbouring-stand brands visible; 9:16 used though the original brief said 4:5 (Rahul's clips are 9:16).
 - Learning: B) a full-bleed opening title needs a strong veil (about 0.7) to protect faces and contrast; captions must not name a team over an unverified photo.
+
+## Photo-wall v3/v4 final corrections (2026-11-07)
+- Rahul's list: transparent logo, staff photos in the opening, supplied SPRINT-Nav close-up and Sonardyne group photo, partner logos on captions, "Together" changed to "Visitors" with supplied group photo, more professional look, LinkedIn-ready.
+- QA v3 blockers: logo box (halo looked like a rectangle) and true peak 0.0 dBTP (AAC overs after loudnorm). Fixed (scrim instead of halo; loudnorm TP -3 plus alimiter, final -1.9 dBTP). Independent re-check passed.
+- Lessons (B, provisional): a halo behind a block of text reads as a box, use a gradient scrim; check true peak AFTER the AAC encode, not on the WAV; transparent logo from a white-background JPG needs a noise threshold on alpha.
+- Open: group photo above SPRINT-Nav hero cropped (minor), logo contrast on dark tiles, Visitors identity, audio not listened to by me.
