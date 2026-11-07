@@ -437,6 +437,8 @@ After a failed submit, focus is on the error summary, then Tab goes to its links
 | S29 | Official Sinor Marine Technologies logo (header, footer; text wordmark until supplied) | Header, footer | Remove |
 | S30 | Legal entity name and registration | About, footer | Remove |
 | S31 | Sinor Marine Technologies LinkedIn page | Footer, Contact | Remove |
+| S32 | DRAFT marker: project steps are a proposal, not confirmed | Home, About | Remove with the steps or after Rahul confirms |
+| S33 | DRAFT marker: confirm the focus areas apply to Sinor Marine Technologies | Home, Solutions, About | Remove after Rahul confirms |
 
 S28 position: a single slot box under the area list on Home (section 2.2), after S06. Count: 28 distinct slot IDs (S01 to S28). Some are repeated across pages, so the number of boxes on screen across the whole site can be higher than 28. (Director correction of the architect's footnote, 2026-11-07.)
 

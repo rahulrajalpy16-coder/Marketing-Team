@@ -40,3 +40,9 @@ Format: date | scope (one-off, this platform, this account, always) | status (pr
 - 2026-11-07 | always | provisional | When Rahul asks for "the data collected" from a site, build a single private data pack (summary, decisions, tables, full text) and keep it out of the public repo. Separate what a page says from what is verified, and mark partner-owned claims (a partner's ISO 9001 is not the company's). | Sinor old site data pack.
 - 2026-11-07 | always | provisional | Check the old site's own outbound links before trusting its content: it linked a GitHub page named "Sinor-marine-Demo-", so its facts are unverified until the owner confirms. | Sinor old site data pack.
 - 2026-11-07 | always | provisional | Agents without a shell cannot run grep or character counts. Run the banned-word, dash and length checks myself after every specialist report. | Copywriter, SEO and fact-check runs.
+
+- 2026-11-07 | always | provisional | Prove a regression test can fail before trusting it: QA switched the fix off and reproduced the old bug (minus 37 px at 1440), so the passing result means something. | QA cycle 2.
+- 2026-11-07 | always | provisional | A visible DRAFT marker is not a fix for unconfirmed content: it keeps the publish blocker visible. Count slot boxes with the data-slot attribute at launch, not by searching words. | QA cycle 2 R2-N3.
+- 2026-11-07 | always | provisional | Settle the company name and entity before any copy is written. The late Services to Technologies correction made the repo logo unusable and forced copy rewrites. | Sinor website job.
+- 2026-11-07 | always | provisional | Freeze the slot register IDs before spec work starts so specs can cite them; late S29 to S33 left specs stale. | Accessibility spec hand-back.
+- 2026-11-07 | always | provisional | Blur validation that removes an error message can swallow the next click. Reserve the message height or skip validation while the pointer is pressed on the submit button. | QA W1.

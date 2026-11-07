@@ -66,7 +66,7 @@ Common to every page (head):
 - Robots: index, follow (launch). og:url: https://DOMAIN.example/
 - Twitter and OG texts: same as title and description above.
 - JSON-LD: the Organization block in section 4, on this page only.
-- Heading outline to verify: h1 "Hold position at sea" (exactly one). h2 "What Sinor Marine Technologies does". h2 "How work flows" with four h3 (Discover, Design, Install and commission, Support). h2 "After the system is in service". h2 "Credentials and references" (slots only, removed at publish if empty). h2 "About the company". Footer group headings "Pages" and "Find us" are small h2 or labelled nav landmarks (wireframes 8); prefer labelled nav landmarks so the outline stays clean. No heading level skipped. Four beat captions are list items, not headings.
+- Heading outline to verify: h1 "Dynamic Positioning and marine control" (exactly one; the earlier "Hold position at sea" was rejected by the fact check as overstated). h2 "Areas of work". h2 "What the work includes" with four h3 (Discover, Design, Install and commission, Support). h2 "After the system is in service". h2 "Credentials and references" (slots only, removed at publish if empty). h2 "About the company". Footer group headings "Pages" and "Find us" are small h2 or labelled nav landmarks (wireframes 8); prefer labelled nav landmarks so the outline stays clean. No heading level skipped. Four beat captions are list items, not headings.
 - CLAIM TO VERIFY: description states scope.
 
 ### 3.2 Solutions: solutions.html

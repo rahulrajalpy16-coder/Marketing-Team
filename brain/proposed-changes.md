@@ -32,3 +32,13 @@ Format: ID | target file | before | after | reason | date proposed.
 - Before: no rule on 3D, WebGL or animation libraries.
 - After: add "3D, WebGL canvas and animation libraries (GSAP, Lenis, three.js) need Rahul's approval. Default is CSS scroll-driven effects with a static fallback and a prefers-reduced-motion path. Hero visual under 300 KB."
 - Reason: the three cinematic references rely on those libraries; the default stack and 1.5 MB budget forbid them silently.
+
+## P-007 | .claude/agents/web-copywriter.md, seo-a11y-specialist.md, web-strategist.md, ux-architect.md, fact-reviewer.md | proposed 2026-11-07
+- Before: these agents have no shell or Grep tool, so they cannot run dash scans, banned-word greps or character counts; three of them said so in their reports and counted lengths by hand.
+- After: give web-copywriter and seo-a11y-specialist Bash and Grep (and seo-a11y-specialist Edit) so they can count characters, grep their own files and patch their own specs.
+- Reason: the Director had to re-run every check after each report. Hand counts were right but unproven.
+
+## P-008 | .claude/skills/website-build-standards/SKILL.md | proposed 2026-11-07
+- Before: no rule for launch readiness of slot boxes or unconfirmed content.
+- After: add "Every unfilled slot is a box with a data-slot attribute. Before launch count [data-slot] boxes and fill or remove each. DRAFT markers mark unconfirmed content and also count. Pre-launch builds ship noindex and a robots.txt Disallow."
+- Reason: QA found 98 boxes with two different labels; a text search would have missed the DRAFT ones.

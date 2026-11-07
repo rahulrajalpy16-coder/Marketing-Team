@@ -50,3 +50,7 @@ NOT tested: screen readers, real devices, Safari, Firefox, forced colours, hero 
 - Contact: two columns only from 1024 px, with a larger gap and a 300 px minimum right column, so "Other ways to reach the team" wraps cleanly.
 - New draft slots (dashed box, label "DRAFT, NEEDS RAHUL TO CONFIRM"): S32 "Project steps are a proposal, not confirmed" (Home and About, after the step list); S33 "Confirm these areas apply to Sinor Marine Technologies" (Home and About beside the "Industry focus as stated by the company" label; Solutions above the jump list). Step and area text unchanged. Slot list is now S01 to S26, S28 to S33 visible (S27 and S07 are build-note only).
 - web_qa: 0 FAIL, 0 WARN, 6 NOTE (favicon). Greps clean.
+
+## Director tweaks after QA cycle 2 (2026-11-07)
+- site/css/site.css: added text-wrap: balance on h1, h2 and h3 (fixes the orphaned word in the Contact right-column heading at 1440, QA note R2-N1).
+- design/wireframes.md slot register: S32 and S33 added. design/seo-spec.md heading outline for Home corrected to the built headings.

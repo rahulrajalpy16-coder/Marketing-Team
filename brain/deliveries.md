@@ -8,3 +8,6 @@ One line per delivered final file. Never delete a Release or asset without Rahul
 
 ## 2026-11-06 | campaign 2026-11-sinor-site | private preview artifact (not a Release)
 Sinor Site Screenshots: https://claude.ai/artifact/8HAdwQNy1ygne2koV5tkP1 (private, owner only, 8 files, about 0.5 MB). Shows phone, tablet and desktop views of the home page and the Bridge Mate DP Chair page, the confirmed Service page contrast failure, and the suggested fix list. Source files are in the session working folder only; images are crops of the 2026-11-06 test screenshots of Rahul's private site and are NOT in the repo. Not shared with anyone. The site itself is unchanged.
+
+## 2026-11-07 | campaign 2026-11-sinor-website | private preview artifact (not a Release)
+Sinor Website Draft: https://claude.ai/artifact/1QJrnuKeQdh7V2eqUJ9Nz6 (private, owner only, 19 files, about 1.2 MB). Screenshots of the six built pages at desktop and phone width and the hero in four beats, plus open decisions. Site source: campaigns/2026-11-sinor-website/site (152 KB, in the repo; no media). Also private: Sinor Old Site Data https://claude.ai/artifact/KUAfrTRJxBhi5pNucADxQc (names, contacts, claims from the old site; deliberately not in the repo). Nothing published or shared.

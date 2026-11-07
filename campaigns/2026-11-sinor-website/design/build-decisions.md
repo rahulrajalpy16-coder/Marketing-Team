@@ -15,3 +15,4 @@ Settles the issues raised by the accessibility specialist and the earlier briefs
 11. 404.html uses root-absolute paths for its CSS, JS and links (a static host serves it at any URL depth). The five real pages stay flat at the root and use plain relative links. Decided 2026-11-07 by the Director.
 12. Pre-launch build ships noindex and a robots.txt Disallow until Rahul approves publishing; the launch values are listed in design/seo-spec.md.
 13. Titles and descriptions: design/seo-spec.md wins (the About description was shortened by the SEO pass; copy/about.md should be read for body text only).
+14. Launch check: count slot boxes with the data-slot attribute (not by searching for the words NEEDED FROM RAHUL), because the DRAFT markers S32 and S33 use a different label. All data-slot boxes must be filled or removed before launch.

@@ -396,3 +396,6 @@ textarea.control { min-height: 140px; resize: vertical; }
   .site-header, .skip-link { position: static; }
   body { background: #fff; color: #000; }
 }
+
+/* Director tweak 2026-11-07 (QA note R2-N1): balance headings so no single word is orphaned */
+h1, h2, h3 { text-wrap: balance; }
