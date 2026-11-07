@@ -283,6 +283,7 @@ class CleanBeat:
             self.bg = Image.blend(base, g, 0.38)
             self.make_tiles(rng, im)
             self.shadow, self.spad = shadow_for(self.hw, self.hh, 28, 130, (0, 20), 80)
+            self.portrait = self.hw < 600
             self.cap_layer = self.make_caption(spec["cap"])
         elif self.kind == "title":
             self.hw, self.hh = int(0.56 * W), int(0.62 * H)
@@ -332,6 +333,15 @@ class CleanBeat:
         self.tokens = [("26", rng.choice([(0.08, 0.08), (0.74, 0.70)])), ("AD", rng.choice([(0.74, 0.07), (0.07, 0.72)]))]
 
     def make_caption(self, cap):
+        if self.portrait:  # narrow photo: a navy plate under the frame so nothing covers the picture
+            f1, f2 = font("SemiBold", 22), font("ExtraBold", 46)
+            w = int(max(tlen(cap, f2), tlen("ADIPEC 2026  \u00b7  ABU DHABI", f1)) + 64)
+            plate = Image.new("RGBA", (w, 112), NAVY + (245,))
+            pd = ImageDraw.Draw(plate)
+            pd.rectangle([0, 0, 8, 112], fill=LIGHT + (255,))
+            pd.text((30, 14), "ADIPEC 2026  \u00b7  ABU DHABI", font=f1, fill=LIGHT + (255,))
+            pd.text((30, 48), cap, font=f2, fill=WHITE + (255,))
+            return plate
         w, h = self.hw, self.hh
         lay = Image.new("RGBA", (w, h), (0, 0, 0, 0))
         g = ImageDraw.Draw(lay)
@@ -353,9 +363,9 @@ class CleanBeat:
         lc = logo_card(340, 20, 20)
         r.alpha_composite(lc, ((w - lc.width) // 2, 50))
         d = ImageDraw.Draw(r)
-        d.text((w // 2, 50 + lc.height + 26), "Thank you.", font=font("ExtraBold", 190), fill=WHITE + (255,), anchor="mt")
-        d.text((w // 2, 50 + lc.height + 250), EVENT_LINE, font=font("SemiBold", 48), fill=WHITE + (255,), anchor="mt")
-        d.text((w // 2, 50 + lc.height + 316), DATE_LINE, font=font("Medium", 42), fill=LIGHT + (255,), anchor="mt")
+        d.text((w // 2, 50 + lc.height + 30), "Thank you.", font=font("ExtraBold", 168), fill=WHITE + (255,), anchor="mt")
+        d.text((w // 2, 50 + lc.height + 236), EVENT_LINE, font=font("SemiBold", 48), fill=WHITE + (255,), anchor="mt")
+        d.text((w // 2, 50 + lc.height + 300), DATE_LINE, font=font("Medium", 42), fill=LIGHT + (255,), anchor="mt")
         return r.convert("RGB")
 
     def draw(self, t):
@@ -404,7 +414,7 @@ class CleanBeat:
         img.paste(hero, (hx, hy), hero)
         if self.kind == "hero":
             cap = fade(self.cap_layer, eo((t - 0.2) / 0.5))
-            img.paste(cap, (hx, hy), cap)
+            img.paste(cap, (hx - 12, hy + self.hh + 16) if self.portrait else (hx, hy), cap)
             if self.spec.get("logo"):
                 lc = logo_card(200, 14, 16)
                 img.paste(lc, (hx - 12, hy - 12 - lc.height - 14), lc)
@@ -435,7 +445,12 @@ class DynBeat:
                 self.shadow, self.spad = shadow_for(self.cw, self.ch, 26, 120, (0, 20), 80)
         elif self.kind == "title":
             self.pal = dict(bg=CREAM, text=NAVY, a=BLUE)
-            self.photo = cover(Image.open(find("s8_2.jpg", jpg, extra)).convert("RGB"), int(W * 1.1), int(H * 1.1))
+            _im = Image.open(find("s8_2.jpg", jpg, extra)).convert("RGB")
+            _base = cover(_im, int(W * 1.1), int(H * 1.1)).filter(ImageFilter.GaussianBlur(40))
+            _fw = int(W * 1.08)
+            _fg = _im.resize((_fw, int(_im.height * _fw / _im.width)), Image.LANCZOS)
+            _base.paste(_fg, ((_base.width - _fw) // 2, int(0.17 * H)))
+            self.photo = _base
         elif self.kind == "end":
             self.pal = dict(bg=CREAM, text=NAVY, a=BLUE)
             self.endimg = end_card(dict(bg=CREAM, text=NAVY, accent=BLUE, sub=BLUE))
@@ -514,10 +529,11 @@ class DynBeat:
             img.paste(xf, (int(cxx - big.width / 2), int(cyy - big.height / 2)), xf)
             # the word runs ACROSS the card in white (like the template's STYLSH card)
             word = self.spec["word"]
-            size = min(fit_size(word, "ExtraBold", 0.60 * W, 250), 250)
+            size = min(fit_size(word, "ExtraBold", 0.60 * W, 230), 230)
+            wy = cyy + self.ch * 0.27
             out_col = CREAM if pal["bg"] in (NAVY, BLUE) else NAVY
-            lay_in = self.letters(t, word, size, cxx, cyy, (255, 255, 255), outline_idx={0})
-            lay_out = self.letters(t, word, size, cxx, cyy, out_col, outline_idx={0})
+            lay_in = self.letters(t, word, size, cxx, wy, (255, 255, 255), outline_idx={0})
+            lay_out = self.letters(t, word, size, cxx, wy, out_col, outline_idx={0})
             clip = Image.new("L", (W, H), 0)
             ImageDraw.Draw(clip).rectangle([int(cxx - self.cw / 2 + 14), int(cyy - self.ch / 2 + 14), int(cxx + self.cw / 2 - 14), int(cyy + self.ch / 2 - 14)], fill=255)
             lay_in.putalpha(ImageChops.multiply(lay_in.getchannel("A"), clip))
@@ -662,18 +678,21 @@ class PromoBeat:
         chip = fade(chip, ec)
         img.paste(chip, (left - int((1 - ec) * 50), top), chip) if img.mode == "RGBA" else img.paste(chip, (left - int((1 - ec) * 50), top), chip)
         ct = eo((t - 0.22) / 0.5)
-        f1 = font("ExtraBold", 92)
-        lines = wrap(self.spec["cap"], f1, width)
+        for fs in (92, 84, 76, 68, 60):
+            f1 = font("ExtraBold", fs)
+            lines = wrap(self.spec["cap"], f1, width)
+            if len(lines) <= 2:
+                break
         lay = Image.new("RGBA", (W, 330), (0, 0, 0, 0))
         ld = ImageDraw.Draw(lay)
         for k, ln in enumerate(lines[:3]):
-            ld.text((left, k * 100), ln, font=f1, fill=WHITE + (int(255 * ct),))
+            ld.text((left, k * int(fs * 1.08)), ln, font=f1, fill=WHITE + (int(255 * ct),))
         y = top + 84 + (1 - ct) * 30
         if img.mode == "RGBA":
             img.alpha_composite(lay, (0, int(y)))
         else:
             img.paste(lay, (0, int(y)), lay)
-        self.info(ct, left, int(y + len(lines[:3]) * 100 + 28), img)
+        self.info(ct, left, int(y + len(lines[:3]) * int(fs * 1.08) + 28), img)
 
     @staticmethod
     def build_wall(pool):
