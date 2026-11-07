@@ -38,22 +38,22 @@ POOL = ["0f44943b-22e6-4381-aac3-66a9dfc31218.jpg", "0bc7989f-ffd8-4930-b538-267
         "cf677e0a-bf65-4e06-8a7a-9a40f904137c.jpg", "IMG_4156.jpg", "IMG_4158.jpg", "IMG_4163.jpg", "IMG_4188.jpg", "IMG_4255.jpg",
         "IMG_4403.jpg", "IMG_4413.jpg", "IMG_4432.jpg", "IMG_4464.jpg",
         "s2_1.jpg", "s2_2.jpg", "s3_1.jpg", "s3_2.jpg", "s3_3.jpg", "s4_1.jpg", "s4_3.jpg", "s5_1.jpg", "s6_1.jpg", "s7_1.jpg",
-        "s7_3.jpg", "s8_1.jpg", "s8_2.jpg", "IMG_4434.jpg", "IMG_4435.jpg", "n1_sonardyne_group.jpg"]
+        "s7_3.jpg", "s8_1.jpg", "s8_2.jpg", "IMG_4434.jpg", "IMG_4435.jpg"] 
 
 # Hero beats: photo, title line, small line. Each hero beat lasts 4 beats at 100 BPM (2.4 s).
 HEROES = {
     "v1": [("s8_2.jpg", "The Sinor Marine team", "at ADIPEC 2026", "SINOR"),
            ("s7_1.jpg", "Conversations", "at our stand", None),
-           ("n2_sprintnav.jpg", "Sonardyne SPRINT-Nav", "on the stand", "sonardyne.png"),
+           ("n2_sprintnav.jpg", "Sonardyne SPRINT-Nav", "on the stand", "sonardyne.png", "n4_sonardyne_group_hr.jpg"),
            ("IMG_4413.jpg", "Navis Engineering", "console on the stand", "navis-engineering.png"),
            ("IMG_4188.jpg", "Marine Technologies", "on the stand", "marine-technologies-mt.png"),
-           ("a07555b5-23b3-4497-92aa-a3613e384bc5.jpg", "With Guidance Marine", "at our stand", "guidance-marine.png"),
+           ("a07555b5-23b3-4497-92aa-a3613e384bc5.jpg", "With Guidance Marine", "at our stand", "guidance-marine.png", "n5_guidance_four.jpg"),
            ("n3_visitors.jpg", "Visitors", "at our stand", None)],
     "v2": [("s8_2.jpg", "The Sinor Marine team", "at ADIPEC 2026", "SINOR"),
-           ("n2_sprintnav.jpg", "Sonardyne SPRINT-Nav", "on the stand", "sonardyne.png"),
+           ("n2_sprintnav.jpg", "Sonardyne SPRINT-Nav", "on the stand", "sonardyne.png", "n4_sonardyne_group_hr.jpg"),
            ("IMG_4413.jpg", "Navis Engineering", "console on the stand", "navis-engineering.png"),
            ("IMG_4188.jpg", "Marine Technologies", "on the stand", "marine-technologies-mt.png"),
-           ("a07555b5-23b3-4497-92aa-a3613e384bc5.jpg", "With Guidance Marine", "at our stand", "guidance-marine.png"),
+           ("a07555b5-23b3-4497-92aa-a3613e384bc5.jpg", "With Guidance Marine", "at our stand", "guidance-marine.png", "n5_guidance_four.jpg"),
            ("n3_visitors.jpg", "Visitors", "at our stand", None)],
 }
 # Photos that show Sinor Marine staff: they fill the wall around the opening title (top of the wall).
@@ -61,7 +61,7 @@ OPEN_TEAM = ["s8_2.jpg", "s8_1.jpg", "s2_2.jpg", "s5_1.jpg", "s2_1.jpg", "0f4494
              "cf677e0a-bf65-4e06-8a7a-9a40f904137c.jpg", "s8_3.jpg"]
 OPEN_ZONE = 1250           # wall y (base units) below which fillers are team photos
 PIN = "n1_sonardyne_group.jpg"   # Sonardyne team + SPRINT-Nav group photo, pinned beside the SPRINT-Nav hero
-PIN_FOR = "n2_sprintnav.jpg"
+PIN_FOR = None   # the Sonardyne group photo is now shown beside the SPRINT-Nav close-up as a paired hero
 BEAT = 0.6                 # seconds per beat (100 BPM)
 HERO_D = 4 * BEAT          # 2.4 s
 OPEN_D = 4 * BEAT
@@ -132,30 +132,38 @@ def build_wall(heroes, jpg, extra, seed):
 
     hero_rects, hero_pairs = [], [(1, 2), (2, 3), (0, 1), (2, 3), (1, 2), (3, 4), (0, 1), (2, 3)]
     avoid_near = set()
-    for j, (hp, _, _, _) in enumerate(heroes):
+    for j, hero in enumerate(heroes):
+        hp = hero[0]
+        pair = hero[4] if len(hero) > 4 else None
+        hset = {hp} | ({pair} if pair else set())
         c1, c2 = hero_pairs[j % len(hero_pairs)]
         target = 330 + j * 640
         while min(heights[c1], heights[c2]) < target:
             col = c1 if heights[c1] <= heights[c2] else c2
-            add(col, CW, rng.choice([210, 270, 330, 390, 450]), pick({hp} | avoid_near, heights[col]))
-        if hp == PIN_FOR:  # Sonardyne group photo directly above the SPRINT-Nav hero tile
+            add(col, CW, rng.choice([210, 270, 330, 390, 450]), pick(hset | avoid_near, heights[col]))
+        if PIN_FOR and hp == PIN_FOR:  # Sonardyne group photo directly above the SPRINT-Nav hero tile
             add(c1, CW, 390, PIN)
         y = max(heights[c1], heights[c2])
         for col in (c1, c2):  # level the shorter column so the wide hero tile has no hole beside it
             gap = y - heights[col]
             if gap > 0:
                 if gap - GAP >= 70:
-                    add(col, CW, gap - GAP, pick({hp} | avoid_near, heights[col]))
+                    add(col, CW, gap - GAP, pick(hset | avoid_near, heights[col]))
                 else:
                     heights[col] = y
-        im = Image.open(find(hp, jpg, extra))
-        ar = min(max(im.width / im.height, 0.58), 1.8)
         hw = 2 * CW + GAP
-        hh = int(round(hw / ar))
-        placed.append(dict(path=hp, x=cols_x[c1], y=y, w=hw, h=hh, hero=True))
+        if pair:  # two portrait tiles side by side, both in the focal area
+            hh = int(round(CW / 0.75))
+            placed.append(dict(path=hp, x=cols_x[c1], y=y, w=CW, h=hh, hero=True))
+            placed.append(dict(path=pair, x=cols_x[c2], y=y, w=CW, h=hh, hero=True))
+        else:
+            im = Image.open(find(hp, jpg, extra))
+            ar = min(max(im.width / im.height, 0.58), 1.8)
+            hh = int(round(hw / ar))
+            placed.append(dict(path=hp, x=cols_x[c1], y=y, w=hw, h=hh, hero=True))
         hero_rects.append((cols_x[c1], y, hw, hh))
         heights[c1] = heights[c2] = y + hh + GAP
-        avoid_near = {hp}
+        avoid_near = hset
     # tail fill below the last hero, then level every column
     for _ in range(14):
         col = heights.index(min(heights))
@@ -321,7 +329,7 @@ class Overlays:
         self.f_big = font("InterDisplay-Black", 262)
         self.f_mid = font("InterDisplay-Black", 190)
         self.plogos = {}
-        for _, _, _, lg in heroes:
+        for lg in [h[3] for h in heroes]:
             if lg and lg not in self.plogos:
                 self.plogos[lg] = fit(trimmed(LOGO), 330, 78) if lg == "SINOR" else fit(trimmed(PARTNER_DIR / lg), 330, 70)
         self.closing = self.make_closing()
@@ -351,7 +359,7 @@ class Overlays:
         frame.paste(region, (box[0], box[1]), mask)
         lay = Image.new("RGBA", (pw, ph), (0, 0, 0, 0))
         d = ImageDraw.Draw(lay)
-        _, title, sub, plogo = self.heroes[i]
+        title, sub, plogo = self.heroes[i][1:4]
         chip = f"{i + 1:02d} / {self.n:02d}  ·  ADIPEC 2026"
         cw_ = tracked_len(chip, self.f_chip, 2.6)
         if plogo:
