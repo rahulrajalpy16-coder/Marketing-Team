@@ -50,7 +50,7 @@ HEROES = {
            ("a07555b5-23b3-4497-92aa-a3613e384bc5.jpg", "With Guidance Marine", "at our stand"),
            ("s3_1.jpg", "Visitors", "at our stand"),
            ("s2_2.jpg", "Together", "at our stand")],
-    "v2": [("s2_1.jpg", "Our team", "on the stand"),
+    "v2": [("s2_1.jpg", "ADIPEC 2026", "Abu Dhabi, 2-5 November"),
            ("IMG_4464.jpg", "Sonardyne SPRINT-Nav", "on the stand"),
            ("IMG_4413.jpg", "Navis Engineering", "console on the stand"),
            ("a07555b5-23b3-4497-92aa-a3613e384bc5.jpg", "With Guidance Marine", "at our stand"),
@@ -336,7 +336,7 @@ class Overlays:
         if a <= 0.01:
             return frame
         veil = Image.new("RGB", (W, H), NAVY)
-        frame = Image.blend(frame, veil, 0.42 * a)
+        frame = Image.blend(frame, veil, 0.74 * a)
         lay = Image.new("RGBA", (W, H), (0, 0, 0, 0))
         d = ImageDraw.Draw(lay)
         for k, (word, y) in enumerate((("ADIPEC", 690), ("2026", 920))):
@@ -347,7 +347,7 @@ class Overlays:
                 tmp = tmp.crop((0, 0, W, 300))
                 lay.alpha_composite(tmp, (0, y))
         e3 = eo((T - 0.65) / 0.5)
-        tracked(d, (66, 1250), "ABU DHABI   ·   2-5 NOVEMBER 2026", font("Inter-SemiBold", 30), (196, 218, 240, int(255 * e3)), 4.0)
+        tracked(d, (66, 1250), "ABU DHABI   ·   2-5 NOVEMBER 2026", font("Inter-Bold", 34), (255, 255, 255, int(255 * e3)), 4.0)
         d.rectangle([66, 1215, 66 + 120 * e3, 1221], fill=(53, 214, 197, 255))
         lay.putalpha(lay.getchannel("A").point(lambda v: int(v * a)))
         frame = frame.convert("RGBA")
@@ -364,8 +364,8 @@ class Overlays:
         f1, f2 = font("InterDisplay-SemiBold", 42), font("InterDisplay-Medium", 40)
         d.text((W // 2, 740), "To every client and visitor", font=f1, fill=WHITE + (255,), anchor="mt")
         d.text((W // 2, 796), "who stopped by our stand.", font=f1, fill=WHITE + (255,), anchor="mt")
-        d.text((W // 2, 880), "And to our technology partners", font=f2, fill=(53, 214, 197, 255), anchor="mt")
-        d.text((W // 2, 932), "for their support:", font=f2, fill=(53, 214, 197, 255), anchor="mt")
+        d.text((W // 2, 880), "And to our technology partners", font=f2, fill=(150, 240, 228, 255), anchor="mt")
+        d.text((W // 2, 932), "for their support:", font=f2, fill=(150, 240, 228, 255), anchor="mt")
         tw_, th_, gx = 440, 120, 24
         ys = [1010, 1210, 1410]
         for k, (name, logo) in enumerate(PARTNERS):

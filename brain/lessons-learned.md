@@ -39,3 +39,4 @@ Format: date | scope (one-off, this platform, this account, always) | status (pr
 - 2026-11-07 | always | provisional | iCloud shared-album links give only a cover thumbnail here. Ask for the media in Google Drive straight away instead of spending time reverse-engineering iCloud. Captions need speech-to-text (not installed): ask approval for faster-whisper at the start of a captioning job. Music: I cannot license tracks; offer an original generated bed or a track Rahul has rights to. | Rahul sent an iCloud album link for a captions and audio job.
 
 (Rahul corrections so far: 3, see above.)
+- 2026-11-07 | this campaign | provisional | Rahul's compressed reference clips were 9:16 photo-wall reels with licensed loud audio. Recreate from original photos with a strong veil under the opening title; replace audio with an original generated bed at -14 LUFS; I cannot listen, so he must. | Rahul: "Recreate it with hight quality visuals amd best modern type captions".

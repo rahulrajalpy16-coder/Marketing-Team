@@ -55,3 +55,10 @@ Two video revisions (v1 to v2 to v3), the maximum of three QA cycles. One captio
 - HONEST LIMITS: the originals are paid After Effects projects that cannot be used or run here, so these are recreations, not the templates. QA fidelity ranking: clean (closest), promo, dynamic (weakest: the template's multi-colour palette was replaced by brand navy/cream, so it feels much less colourful; no 3D depth, aerial footage or light leaks).
 - QA found and I fixed: NAVIS caption cut and covering the logo (clean), giant words covering faces (dynamic), orphan caption words (promo), end-card heading touching tiles, dark window-title photo. Independent re-check passed all three. One later change (dynamic NAVIS word moved off the logo) was verified by me with a frame check, not re-reviewed independently.
 - Open: neighbouring-stand brands, visitor faces and partly legible badges are visible in all three (Rahul to decide); soft full-bleed crops because source photos are about 1200 px wide (higher-resolution originals would help).
+
+## Photo-wall reels v1/v2 (2026-11-07)
+- Request: recreate Rahul's two compressed clips in high quality with modern captions and LinkedIn-suitable audio.
+- Built from original photos (not upscaled); audio is an original generated bed (cannot be listened to by me).
+- Independent QA (qa_photowall_v2.md): technical gate passed; majors D-01 title over faces, D-02 low-contrast subtitle, D-05 over-claiming caption. Fixed; re-check was mine only.
+- Open minor items: "The Sinor Marine team" caption shows while the team tile is not featured; "Visitors"/"Together" are vague; Sinor logo chip near top 150 px; neighbouring-stand brands visible; 9:16 used though the original brief said 4:5 (Rahul's clips are 9:16).
+- Learning: B) a full-bleed opening title needs a strong veil (about 0.7) to protect faces and contrast; captions must not name a team over an unverified photo.
