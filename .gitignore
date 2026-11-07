@@ -32,3 +32,8 @@ __pycache__/
 # Local-only subagent memory (project scope is committed on purpose)
 .claude/agent-memory-local/
 .claude/settings.local.json
+
+# QA contact sheets and frame grabs show real people (visitors, staff): keep them out of this public repo
+campaigns/*/qa/*sheet*.jpg
+campaigns/*/qa/*frames*.jpg
+campaigns/*/qa/*frame*.png
