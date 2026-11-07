@@ -1,12 +1,12 @@
 # Copy: Service and support (service.html)
 
-Author: web-copywriter. Date: 2026-11-07. Status: draft. Shared header, footer and skip link text are defined in copy/home.md.
-Marker rule: CLAIM TO VERIFY = depends on Rahul's STATED industry focus (not independently verified). No hours, response times, coverage or commitments are written anywhere on this page.
+Author: web-copywriter. Date: 2026-11-07. Status: draft, revised after Rahul's entity correction (Sinor Marine Technologies). Shared header, footer and skip link text are defined in copy/home.md.
+Marker rule: CLAIM TO VERIFY = depends on the STATED industry focus, which Rahul gave for his employer; confirm it applies to Sinor Marine Technologies. No hours, response times, coverage or commitments are written anywhere on this page.
 
 ## Title and meta
-- Title: Marine Service and Technical Support | Sinor Marine (51 characters, counted by hand)
-- Meta description: Commissioning, service and technical support for marine and offshore systems, with a route to request support from the Sinor team. (130 characters, counted by hand)
-- CLAIM TO VERIFY: commissioning, service and technical support are STATED scope.
+- Title: Service and Technical Support | Sinor Marine Technologies (57 characters, counted by hand)
+- Meta description: Commissioning, service and technical support for marine and offshore systems from Sinor Marine Technologies, with a route to request support. (141 characters, counted by hand)
+- CLAIM TO VERIFY: commissioning, service and technical support are STATED scope; confirm for Sinor Marine Technologies.
 
 ## 4.1 Page intro
 
@@ -51,7 +51,7 @@ Terms and values
 - Email: SLOT S01 | NEEDED FROM RAHUL | Public email address.
 - Phone: SLOT S02 | NEEDED FROM RAHUL | Public phone number.
 Primary pill (repeat): Request support
-Secondary text link: Company LinkedIn page (opens linkedin.com)
+Secondary text link: SLOT S31 | NEEDED FROM RAHUL | Sinor Marine Technologies LinkedIn page; link text "LinkedIn page" once supplied. Omit until then.
 Collapse text if slots S19 to S22 are removed at publish: Use the Contact page to request support. (link text: Contact page, to contact.html?topic=service-support#enquiry)
 
 ## 4.4 What to include in a support request

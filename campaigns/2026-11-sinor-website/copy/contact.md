@@ -1,22 +1,22 @@
 # Copy: Contact (contact.html)
 
-Author: web-copywriter. Date: 2026-11-07. Status: draft. Shared header, footer and skip link text are defined in copy/home.md. The header pill is not shown on this page.
-Marker rule: CLAIM TO VERIFY = depends on Rahul's STATED facts. The form is NOT connected to anything. No email, phone, address, hours, response time or "thank you" is written. No reply promise appears anywhere.
+Author: web-copywriter. Date: 2026-11-07. Status: draft, revised after Rahul's entity correction (Sinor Marine Technologies). Shared header, footer and skip link text are defined in copy/home.md. The header pill is not shown on this page.
+Marker rule: CLAIM TO VERIFY = depends on the STATED industry focus (given by Rahul for his employer; confirm for Sinor Marine Technologies). The form is NOT connected to anything. No email, phone, address, hours, response time or "thank you" is written. No reply promise appears anywhere.
 
 ## Title and meta
-- Title: Contact Sinor Marine | Send an Enquiry or Support Request (57 characters, counted by hand)
-- Meta description: Send an enquiry to Sinor Marine about Dynamic Positioning, automation, thrusters or support. The form is not connected yet; see other routes. (141 characters, counted by hand)
+- Title: Contact Sinor Marine Technologies | Send an Enquiry (51 characters, counted by hand)
+- Meta description: Send an enquiry to Sinor Marine Technologies about Dynamic Positioning, automation, thrusters or support. The form is not connected yet; see other routes. (154 characters, counted by hand)
 - CLAIM TO VERIFY: topics listed come from the STATED scope. Remove the "not connected" sentence from the meta once Rahul connects the form.
 
 ## 6.1 Page intro
 
-H1 (3 words): Contact Sinor Marine
+H1 (4 words): Contact Sinor Marine Technologies
 Intro line: Tell the team what you need. Read the notice below first, because the form does not send yet.
 
 ## 6.2 Not-connected notice (above the form heading, always visible, not dismissible)
 
 Bold label: Not connected yet
-Text: This form does not send messages yet. Anything you type stays on this page and goes nowhere. To reach the team now, use the contact routes below or the Company LinkedIn page.
+Text: This form does not send messages yet. Anything you type stays on this page and goes nowhere. To reach the team now, use the contact routes below.
 Note: the notice is removed in the same change that connects the handler (slot S27).
 SLOT S27 | NEEDED FROM RAHUL | Form endpoint or mailto address, and who receives enquiries. Build note only, not visible to visitors. Success and failure wording is written once this is known.
 
@@ -66,7 +66,7 @@ Field messages (each starts with the word "Error:")
 
 Valid form, with JavaScript (role="status", focus moves here, shown above the button)
 - Heading: Not sent
-- Text: Your message was not sent. This form is not connected yet, so nothing has left this page. Your text is still in the form. Copy it, then use the contact routes below or the Company LinkedIn page.
+- Text: Your message was not sent. This form is not connected yet, so nothing has left this page. Your text is still in the form. Copy it, then use the contact routes below.
 - Do not write "thank you", "success" or "we will reply".
 
 No JavaScript state
@@ -84,7 +84,7 @@ Definition list
 - Phone: SLOT S02 | NEEDED FROM RAHUL | Public phone number.
 - Address: SLOT S03 | NEEDED FROM RAHUL | Public address.
 - Hours: SLOT S04 | NEEDED FROM RAHUL | Opening hours and time zone.
-- LinkedIn: Company LinkedIn page (opens linkedin.com). URL: https://www.linkedin.com/company/sinor-marine-services/ . STATED by Rahul 2026-11-06, page not opened.
+- LinkedIn: SLOT S31 | NEEDED FROM RAHUL | Sinor Marine Technologies LinkedIn page address. Link text "LinkedIn page" with visible text "opens linkedin.com" once supplied. The Sinor Marine Services page must NOT be used.
 Collapse text if slots are removed at publish: Use the form.
 
 ## Alt text on this page

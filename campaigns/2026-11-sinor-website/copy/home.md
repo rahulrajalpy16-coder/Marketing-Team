@@ -38,7 +38,7 @@ Footer
 - Copyright line: the builder adds the year. No founding year is shown.
 
 404 draft (utility file, Director to confirm it is wanted)
-- Title: Page not found | Sinor Marine Technologies (48 characters, utility page, just under the 50 target)
+- Title: Page not found | Sinor Marine Technologies (42 characters, utility page, below the 50 target by design)
 - H1: Page not found
 - Line: The page you asked for does not exist or has moved.
 - Primary button: Back to home
