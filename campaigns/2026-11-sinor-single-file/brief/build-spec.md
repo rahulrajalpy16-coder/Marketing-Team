@@ -34,3 +34,9 @@ home, products, products-marine-technologies, mt-dynamic-positioning, mt-integra
 - File layout: src/index.html (shell, loads css/site.css and scripts in this order: js/assets.js, js/three.min.js, js/hero3d.js, js/scenes.js, js/app.js), src/css/site.css, src/js/*.js. Reference files by relative paths exactly like that so the build script can inline them. Include a <noscript> message saying the site needs JavaScript.
 - No em dashes or en dashes in any visible text. No lorem ipsum. Test by loading file:///tmp/work/sinor-v2/src/index.html directly in Playwright (global npm root: createRequire(execSync('npm root -g')+'/x.js')('playwright')), with args ['--no-sandbox'] and, for WebGL in headless, '--use-angle=swiftshader','--enable-unsafe-swiftshader','--ignore-gpu-blocklist'. Never write test files inside src/; use /tmp/work/sinor-v2/tmp/<your-name>/ .
 - Do not install packages or software. Do not touch /home/user/Marketing-Team (the git repo) at all. Do not publish or share anything.
+
+## Revision 2 (2026-11-07): travelling companion, simulator removed
+- Simulator is not a product. All simulator media removed. Visuals are now (a) renders of our own 3D models, (b) the original drawn canvas scenes.
+- One fixed canvas (#companion). Slots (elements with data-co, data-pose, data-side) declare where the object docks. Weight by distance from screen centre, dock pose blend, spin with scroll offset. Hero has four docks along the runway, home has six systems each with its own object, product pages show the matching object in the head and every second chapter.
+- Fallbacks: reduced motion or no WebGL shows rendered stills in the slots and the stacked hero.
+- Reference only (not embedded): Marine Technologies data sheets MT-SAL-0002 (Bridge Mate DP), MT-SAL-0005 (JX and DP 0).
