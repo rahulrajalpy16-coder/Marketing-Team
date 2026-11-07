@@ -11,3 +11,6 @@ Sinor Site Screenshots: https://claude.ai/artifact/8HAdwQNy1ygne2koV5tkP1 (priva
 
 ## 2026-11-07 | campaign 2026-11-sinor-website | private preview artifact (not a Release)
 Sinor Website Draft: https://claude.ai/artifact/1QJrnuKeQdh7V2eqUJ9Nz6 (private, owner only, 19 files, about 1.2 MB). Screenshots of the six built pages at desktop and phone width and the hero in four beats, plus open decisions. Site source: campaigns/2026-11-sinor-website/site (152 KB, in the repo; no media). Also private: Sinor Old Site Data https://claude.ai/artifact/KUAfrTRJxBhi5pNucADxQc (names, contacts, claims from the old site; deliberately not in the repo). Nothing published or shared.
+
+## 2026-11-07 | campaign 2026-11-sinor-single-file | single-file website (sent in chat, not a Release)
+Sinor-Marine-Technologies-Website.html, 13133166 bytes, sha256 97ff8817dca39e08ada8cfad3441feff70f2748ff1cd2c40ba0eb53179ab773d. 24 pages, offline, opens by double-click. Also sent: Sinor-Website-source-for-editing.zip (9.25 MB) and three transparent logo PNGs. Not in this public repo (media, people details). Not published anywhere. Open items listed in campaigns/2026-11-sinor-single-file/qa/retro.md.
