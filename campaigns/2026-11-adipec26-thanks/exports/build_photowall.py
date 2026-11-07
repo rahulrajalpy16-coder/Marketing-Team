@@ -28,7 +28,7 @@ NAVY, BLUE, LIGHT, WHITE = (10, 42, 74), (13, 74, 133), (196, 218, 240), (255, 2
 BG = (222, 217, 211)
 FONT_DIR = "/usr/share/fonts/opentype/inter/"
 REPO = Path(__file__).resolve().parents[3]
-LOGO = REPO / "assets/brand/sinor-logo.png"
+LOGO = REPO / "assets/brand/sinor-logo-transparent.png"
 PARTNER_DIR = REPO / "assets/brand/partners"
 PARTNERS = [("Sonardyne", "sonardyne.png"), ("Fugro", "fugro.png"), ("Navis Engineering", "navis-engineering.png"),
             ("Marine Technologies", "marine-technologies-mt.png"), ("Guidance Marine", "guidance-marine.png")]
@@ -38,29 +38,34 @@ POOL = ["0f44943b-22e6-4381-aac3-66a9dfc31218.jpg", "0bc7989f-ffd8-4930-b538-267
         "cf677e0a-bf65-4e06-8a7a-9a40f904137c.jpg", "IMG_4156.jpg", "IMG_4158.jpg", "IMG_4163.jpg", "IMG_4188.jpg", "IMG_4255.jpg",
         "IMG_4403.jpg", "IMG_4413.jpg", "IMG_4432.jpg", "IMG_4464.jpg",
         "s2_1.jpg", "s2_2.jpg", "s3_1.jpg", "s3_2.jpg", "s3_3.jpg", "s4_1.jpg", "s4_3.jpg", "s5_1.jpg", "s6_1.jpg", "s7_1.jpg",
-        "s7_3.jpg", "s8_1.jpg", "s8_2.jpg"]
+        "s7_3.jpg", "s8_1.jpg", "s8_2.jpg", "IMG_4434.jpg", "IMG_4435.jpg", "n1_sonardyne_group.jpg"]
 
 # Hero beats: photo, title line, small line. Each hero beat lasts 4 beats at 100 BPM (2.4 s).
 HEROES = {
-    "v1": [("s8_2.jpg", "The Sinor Marine team", "at ADIPEC 2026"),
-           ("s7_1.jpg", "Conversations", "at our stand"),
-           ("IMG_4432.jpg", "Sonardyne SPRINT-Nav", "on the stand"),
-           ("IMG_4413.jpg", "Navis Engineering", "console on the stand"),
-           ("IMG_4188.jpg", "Marine Technologies", "on the stand"),
-           ("a07555b5-23b3-4497-92aa-a3613e384bc5.jpg", "With Guidance Marine", "at our stand"),
-           ("s3_1.jpg", "Visitors", "at our stand"),
-           ("s2_2.jpg", "Together", "at our stand")],
-    "v2": [("s2_1.jpg", "ADIPEC 2026", "Abu Dhabi, 2-5 November"),
-           ("IMG_4464.jpg", "Sonardyne SPRINT-Nav", "on the stand"),
-           ("IMG_4413.jpg", "Navis Engineering", "console on the stand"),
-           ("a07555b5-23b3-4497-92aa-a3613e384bc5.jpg", "With Guidance Marine", "at our stand"),
-           ("IMG_4188.jpg", "Marine Technologies", "on the stand"),
-           ("s8_2.jpg", "The Sinor Marine team", "at ADIPEC 2026")],
+    "v1": [("s8_2.jpg", "The Sinor Marine team", "at ADIPEC 2026", None),
+           ("s7_1.jpg", "Conversations", "at our stand", None),
+           ("n2_sprintnav.jpg", "Sonardyne SPRINT-Nav", "on the stand", "sonardyne.png"),
+           ("IMG_4413.jpg", "Navis Engineering", "console on the stand", "navis-engineering.png"),
+           ("IMG_4188.jpg", "Marine Technologies", "on the stand", "marine-technologies-mt.png"),
+           ("a07555b5-23b3-4497-92aa-a3613e384bc5.jpg", "With Guidance Marine", "at our stand", "guidance-marine.png"),
+           ("n3_visitors.jpg", "Visitors", "at our stand", None)],
+    "v2": [("s8_2.jpg", "The Sinor Marine team", "at ADIPEC 2026", None),
+           ("n2_sprintnav.jpg", "Sonardyne SPRINT-Nav", "on the stand", "sonardyne.png"),
+           ("IMG_4413.jpg", "Navis Engineering", "console on the stand", "navis-engineering.png"),
+           ("IMG_4188.jpg", "Marine Technologies", "on the stand", "marine-technologies-mt.png"),
+           ("a07555b5-23b3-4497-92aa-a3613e384bc5.jpg", "With Guidance Marine", "at our stand", "guidance-marine.png"),
+           ("n3_visitors.jpg", "Visitors", "at our stand", None)],
 }
+# Photos that show Sinor Marine staff: they fill the wall around the opening title (top of the wall).
+OPEN_TEAM = ["s8_2.jpg", "s8_1.jpg", "s2_2.jpg", "s5_1.jpg", "s2_1.jpg", "0f44943b-22e6-4381-aac3-66a9dfc31218.jpg",
+             "cf677e0a-bf65-4e06-8a7a-9a40f904137c.jpg", "s8_3.jpg"]
+OPEN_ZONE = 1250           # wall y (base units) below which fillers are team photos
+PIN = "n1_sonardyne_group.jpg"   # Sonardyne team + SPRINT-Nav group photo, pinned beside the SPRINT-Nav hero
+PIN_FOR = "n2_sprintnav.jpg"
 BEAT = 0.6                 # seconds per beat (100 BPM)
 HERO_D = 4 * BEAT          # 2.4 s
 OPEN_D = 4 * BEAT
-TOTAL = {"v1": 28.6, "v2": 23.0}
+TOTAL = {"v1": 24.6, "v2": 22.2}
 # ------------------------------------------------------------------------------------------------------
 
 
@@ -108,10 +113,14 @@ def build_wall(heroes, jpg, extra, seed):
     placed = []
     last = {}
 
-    def pick(avoid):
+    def pick(avoid, y=None):
         cands = [p for p in POOL if p not in avoid]
+        if y is not None and y < OPEN_ZONE:
+            team = [p for p in OPEN_TEAM if p not in avoid]
+            if team:
+                cands = team
         cands.sort(key=lambda p: last.get(p, -999))
-        top = cands[:max(4, len(cands) // 3)]
+        top = cands[:max(4, len(cands) // 3)] if len(cands) > 8 else cands[:2]
         p = rng.choice(top)
         last[p] = len(placed)
         return p
@@ -123,18 +132,20 @@ def build_wall(heroes, jpg, extra, seed):
 
     hero_rects, hero_pairs = [], [(1, 2), (2, 3), (0, 1), (2, 3), (1, 2), (3, 4), (0, 1), (2, 3)]
     avoid_near = set()
-    for j, (hp, _, _) in enumerate(heroes):
+    for j, (hp, _, _, _) in enumerate(heroes):
         c1, c2 = hero_pairs[j % len(hero_pairs)]
         target = 330 + j * 640
         while min(heights[c1], heights[c2]) < target:
             col = c1 if heights[c1] <= heights[c2] else c2
-            add(col, CW, rng.choice([210, 270, 330, 390, 450]), pick({hp} | avoid_near))
+            add(col, CW, rng.choice([210, 270, 330, 390, 450]), pick({hp} | avoid_near, heights[col]))
+        if hp == PIN_FOR:  # Sonardyne group photo directly above the SPRINT-Nav hero tile
+            add(c1, CW, 390, PIN)
         y = max(heights[c1], heights[c2])
         for col in (c1, c2):  # level the shorter column so the wide hero tile has no hole beside it
             gap = y - heights[col]
             if gap > 0:
                 if gap - GAP >= 70:
-                    add(col, CW, gap - GAP, pick({hp} | avoid_near))
+                    add(col, CW, gap - GAP, pick({hp} | avoid_near, heights[col]))
                 else:
                     heights[col] = y
         im = Image.open(find(hp, jpg, extra))
@@ -221,7 +232,7 @@ def build_camera(hero_rects, wall_w, wall_h, total):
     prev = (cx0, cy0)
     for i, (hx, hy, hw, hh) in enumerate(hero_rects):
         s = OPEN_D + i * HERO_D
-        z = min(0.90 * W / hw, 0.60 * H / hh)
+        z = min(0.90 * W / hw, 0.54 * H / hh)
         hcx, hcy = hx + hw / 2, hy + hh / 2
         view_cy = hcy + 0.115 * H / z  # hero sits above the caption panel
         mid = ((prev[0] + hcx) / 2, (prev[1] + hcy) / 2)
@@ -245,26 +256,38 @@ def build_camera(hero_rects, wall_w, wall_h, total):
 
 
 # =================================================================================================== overlays
-def logo_card(width, pad=14, radius=18):
-    lg = Image.open(LOGO).convert("RGB")
-    lg = lg.resize((width, round(lg.height * width / lg.width)), Image.LANCZOS)
-    c = Image.new("RGBA", (lg.width + 2 * pad, lg.height + 2 * pad), (255, 255, 255, 255))
-    c.paste(lg, (pad, pad))
-    c.putalpha(rounded_mask(c.width, c.height, radius))
-    return c
+INK, SLATE, TEAL = (10, 42, 74), (62, 88, 120), (0, 150, 140)
+PAPER = (244, 247, 250)
 
 
-def partner_tile(logo, w, h):
-    lg = Image.open(PARTNER_DIR / logo).convert("RGBA")
-    bb = lg.getchannel("A").getbbox()
-    if bb:
-        lg = lg.crop(bb)
-    sc = min((w - 44) / lg.width, (h - 26) / lg.height)
-    lg = lg.resize((max(1, round(lg.width * sc)), max(1, round(lg.height * sc))), Image.LANCZOS)
-    t = Image.new("RGBA", (w, h), (255, 255, 255, 255))
-    t.alpha_composite(lg, ((w - lg.width) // 2, (h - lg.height) // 2))
-    t.putalpha(rounded_mask(w, h, 20))
-    return t
+def trimmed(path):
+    lg = Image.open(path).convert("RGBA")
+    bb = lg.getchannel("A").point(lambda v: 255 if v > 8 else 0).getbbox()
+    return lg.crop(bb) if bb else lg
+
+
+def fit(lg, w, h):
+    sc = min(w / lg.width, h / lg.height)
+    return lg.resize((max(1, round(lg.width * sc)), max(1, round(lg.height * sc))), Image.LANCZOS)
+
+
+def logo_variants(width):
+    """Sinor logo with transparent background: original blue (+ soft light halo for photos) and an all-white knockout."""
+    lg = fit(trimmed(LOGO), width, 999)
+    al = lg.getchannel("A")
+    blue = lg
+    halo_a = al.filter(ImageFilter.MaxFilter(7)).filter(ImageFilter.GaussianBlur(11)).point(lambda v: int(min(255, v * 0.95)))
+    pad = 40
+    base = Image.new("RGBA", (lg.width + 2 * pad, lg.height + 2 * pad), (0, 0, 0, 0))
+    halo = Image.new("RGBA", lg.size, (255, 255, 255, 255))
+    halo.putalpha(halo_a)
+    base.alpha_composite(halo, (pad, pad))
+    base.alpha_composite(blue, (pad, pad))
+    white = Image.new("RGBA", lg.size, (255, 255, 255, 255))
+    white.putalpha(al)
+    wbase = Image.new("RGBA", base.size, (0, 0, 0, 0))
+    wbase.alpha_composite(white, (pad, pad))
+    return base, wbase, pad
 
 
 def tracked(draw, xy, text, f, fill, track):
@@ -275,19 +298,33 @@ def tracked(draw, xy, text, f, fill, track):
     return x
 
 
+def tracked_len(text, f, track):
+    return sum(f.getlength(ch) + track for ch in text) - track
+
+
+def scale_alpha(im, a):
+    im = im.copy()
+    im.putalpha(im.getchannel("A").point(lambda v: int(v * a)))
+    return im
+
+
 class Overlays:
     def __init__(self, heroes):
         self.heroes = heroes
         self.n = len(heroes)
-        self.logo = logo_card(150, 12, 16)
+        self.logo_blue, self.logo_white, self.logo_pad = logo_variants(210)
         self.f_chip = font("Inter-SemiBold", 24)
-        self.f_title = font("InterDisplay-ExtraBold", 80)
-        self.f_sub = font("InterDisplay-Medium", 46)
+        self.f_title = font("InterDisplay-ExtraBold", 76)
+        self.f_sub = font("InterDisplay-Medium", 42)
         self.f_big = font("InterDisplay-Black", 262)
         self.f_mid = font("InterDisplay-Black", 190)
+        self.plogos = {}
+        for _, _, _, lg in heroes:
+            if lg and lg not in self.plogos:
+                self.plogos[lg] = fit(trimmed(PARTNER_DIR / lg), 330, 70)
         self.closing = self.make_closing()
 
-    # ---- glass caption panel for hero beat i at local time t (seconds since beat start)
+    # ---- frosted light caption panel for hero beat i at local time t (seconds since beat start)
     def caption(self, frame, i, t):
         if t < 0.62 or t > HERO_D + 0.05:
             return frame
@@ -297,42 +334,60 @@ class Overlays:
         if a <= 0.01:
             return frame
         x0, x1, y1 = 48, W - 48, SAFE - 36
-        y0 = y1 - 250
+        y0 = y1 - 300
         off = int((1 - e_in) * 34)
         box = (x0, y0 + off, x1, y1 + off)
-        region = frame.crop(box).filter(ImageFilter.GaussianBlur(16))
-        veil = Image.new("RGB", region.size, NAVY)
-        region = Image.blend(region, veil, 0.60 * a)
-        mask = rounded_mask(region.size[0], region.size[1], 40).point(lambda v: int(v * a))
+        pw, ph = box[2] - box[0], box[3] - box[1]
+        # soft drop shadow for lift
+        sh = Image.new("RGBA", (pw + 120, ph + 120), (0, 0, 0, 0))
+        ImageDraw.Draw(sh).rounded_rectangle([60, 74, 60 + pw, 74 + ph], radius=40, fill=(8, 24, 48, int(95 * a)))
+        sh = sh.filter(ImageFilter.GaussianBlur(22))
+        frame.paste(sh, (box[0] - 60, box[1] - 60), sh)
+        region = frame.crop(box).filter(ImageFilter.GaussianBlur(18))
+        region = Image.blend(region, Image.new("RGB", region.size, PAPER), 0.86 * a)
+        mask = rounded_mask(pw, ph, 40).point(lambda v: int(v * a))
         frame.paste(region, (box[0], box[1]), mask)
-        lay = Image.new("RGBA", (x1 - x0, y1 - y0), (0, 0, 0, 0))
+        lay = Image.new("RGBA", (pw, ph), (0, 0, 0, 0))
         d = ImageDraw.Draw(lay)
-        _, title, sub = self.heroes[i]
-        tracked(d, (44, 30), f"{i + 1:02d}  /  {self.n:02d}   ·   ADIPEC 2026", self.f_chip, (170, 215, 245, int(235 * a)), 3.2)
-        # lines reveal with a short stagger
-        for k, (txt, f, y, col) in enumerate(((title, self.f_title, 66, WHITE), (sub, self.f_sub, 156, (196, 218, 240)))):
+        _, title, sub, plogo = self.heroes[i]
+        chip = f"{i + 1:02d} / {self.n:02d}  ·  ADIPEC 2026"
+        cw_ = tracked_len(chip, self.f_chip, 2.6)
+        if plogo:
+            lg = self.plogos[plogo]
+            lay.alpha_composite(scale_alpha(lg, e_in), (44, 22 + (70 - lg.height) // 2))
+            tracked(d, (pw - 44 - cw_, 40), chip, self.f_chip, SLATE + (int(255 * a),), 2.6)
+        else:
+            tracked(d, (44, 40), chip, self.f_chip, SLATE + (int(255 * a),), 2.6)
+        for k, (txt, f, y, col) in enumerate(((title, self.f_title, 100, INK), (sub, self.f_sub, 190, SLATE))):
             ek = eo((t - 0.72 - 0.10 * k) / 0.5) * e_out
             if ek > 0.01:
                 tmp = Image.new("RGBA", lay.size, (0, 0, 0, 0))
                 ImageDraw.Draw(tmp).text((44, y + (1 - ek) * 38), txt, font=f, fill=col + (int(255 * ek),))
                 lay.alpha_composite(tmp)
-        d.rectangle([44, 236 - 6, 44 + 110 * e_in, 236 - 2], fill=(53, 214, 197, int(255 * a)))
+        d.rectangle([44, 274, 44 + 110 * e_in, 279], fill=TEAL + (int(255 * a),))
         frame.paste(lay, (box[0], box[1]), lay)
         return frame
+
+    @staticmethod
+    def open_alpha(T):
+        return 0.0 if T > OPEN_D + 0.1 else 1 - smooth((T - 1.85) / 0.55)
 
     def top_brand(self, frame, T, total):
         a = eo(T / 0.6) * (1 - smooth((T - (total - 5.4)) / 0.5))
         if a <= 0.01:
             return frame
-        lc = self.logo.copy()
-        lc.putalpha(lc.getchannel("A").point(lambda v: int(v * a)))
-        frame.paste(lc, (48, 92), lc)
+        oa = self.open_alpha(T)
+        x, y = 48 - self.logo_pad, 92 - self.logo_pad
+        for img, k in ((self.logo_white, oa), (self.logo_blue, 1 - oa)):
+            if a * k > 0.01:
+                lc = scale_alpha(img, a * k)
+                frame.paste(lc, (x, y), lc)
         return frame
 
     def opening(self, frame, T):
         if T > OPEN_D + 0.1:
             return frame
-        a = 1 - smooth((T - 1.85) / 0.55)
+        a = self.open_alpha(T)
         if a <= 0.01:
             return frame
         veil = Image.new("RGB", (W, H), NAVY)
@@ -357,23 +412,24 @@ class Overlays:
     def make_closing(self):
         lay = Image.new("RGBA", (W, H), (0, 0, 0, 0))
         d = ImageDraw.Draw(lay)
-        lc = logo_card(420, 18, 22)
-        lay.alpha_composite(lc, ((W - lc.width) // 2, 240))
-        d.text((W // 2, 470), "Thank you.", font=self.f_mid, fill=WHITE + (255,), anchor="mt")
-        d.rectangle([W // 2 - 56, 700, W // 2 + 56, 708], fill=(53, 214, 197, 255))
+        lg = fit(trimmed(LOGO), 440, 999)
+        lay.alpha_composite(lg, ((W - lg.width) // 2, 240))
+        d.text((W // 2, 470), "Thank you.", font=self.f_mid, fill=INK + (255,), anchor="mt")
+        d.rectangle([W // 2 - 56, 700, W // 2 + 56, 708], fill=TEAL + (255,))
         f1, f2 = font("InterDisplay-SemiBold", 42), font("InterDisplay-Medium", 40)
-        d.text((W // 2, 740), "To every client and visitor", font=f1, fill=WHITE + (255,), anchor="mt")
-        d.text((W // 2, 796), "who stopped by our stand.", font=f1, fill=WHITE + (255,), anchor="mt")
-        d.text((W // 2, 880), "And to our technology partners", font=f2, fill=(150, 240, 228, 255), anchor="mt")
-        d.text((W // 2, 932), "for their support:", font=f2, fill=(150, 240, 228, 255), anchor="mt")
+        d.text((W // 2, 740), "To every client and visitor", font=f1, fill=INK + (255,), anchor="mt")
+        d.text((W // 2, 796), "who stopped by our stand.", font=f1, fill=INK + (255,), anchor="mt")
+        d.text((W // 2, 880), "And to our technology partners", font=f2, fill=TEAL + (255,), anchor="mt")
+        d.text((W // 2, 932), "for their support:", font=f2, fill=TEAL + (255,), anchor="mt")
         tw_, th_, gx = 440, 120, 24
         ys = [1010, 1210, 1410]
         for k, (name, logo) in enumerate(PARTNERS):
             r, c = divmod(k, 2)
             alone = (k == len(PARTNERS) - 1) and (len(PARTNERS) % 2 == 1)
             x = (W - tw_) // 2 if alone else (W - (2 * tw_ + gx)) // 2 + c * (tw_ + gx)
-            lay.alpha_composite(partner_tile(logo, tw_, th_), (x, ys[r]))
-            d.text((x + tw_ // 2, ys[r] + th_ + 8), name, font=font("InterDisplay-SemiBold", 32), fill=WHITE + (255,), anchor="mt")
+            pl = fit(trimmed(PARTNER_DIR / logo), tw_ - 60, th_ - 20)
+            lay.alpha_composite(pl, (x + (tw_ - pl.width) // 2, ys[r] + (th_ - pl.height) // 2))
+            d.text((x + tw_ // 2, ys[r] + th_ + 8), name, font=font("InterDisplay-SemiBold", 32), fill=SLATE + (255,), anchor="mt")
         return lay
 
     def closing_overlay(self, frame, T, total):
@@ -381,8 +437,8 @@ class Overlays:
         if T < s:
             return frame
         a = smooth((T - s) / 0.7)
-        veil = Image.new("RGB", (W, H), NAVY)
-        frame = Image.blend(frame, veil, 0.66 * a)
+        soft = frame.filter(ImageFilter.GaussianBlur(16))
+        frame = Image.blend(frame, Image.blend(soft, Image.new("RGB", (W, H), PAPER), 0.90), a)
         lay = self.closing.copy()
         lay.putalpha(lay.getchannel("A").point(lambda v: int(v * a)))
         frame = frame.convert("RGBA")
@@ -425,8 +481,8 @@ def main():
         bi = int((T - OPEN_D) // HERO_D) if T >= OPEN_D else -1
         if 0 <= bi < len(heroes):
             frame = ov.caption(frame, bi, T - (OPEN_D + bi * HERO_D))
-        frame = ov.top_brand(frame, T, total)
         frame = ov.opening(frame, T)
+        frame = ov.top_brand(frame, T, total)
         frame = ov.closing_overlay(frame, T, total)
         if fi == int(1.4 * FPS):
             frame.save(out / f"adipec26-thanks_cover_photowall_{which}_v{ver}.jpg", quality=92)

@@ -38,6 +38,8 @@ def main():
     bass = np.zeros(n, np.float32)
     kick = np.zeros(n, np.float32)
     hats = np.zeros(n, np.float32)
+    clap = np.zeros(n, np.float32)
+    riser = np.zeros(n, np.float32)
     chords = [(57, 60, 64, 45), (53, 57, 60, 41), (60, 64, 67, 48), (55, 59, 62, 43)]  # Am F C G (3 notes + bass root)
     n_bars = int(dur / bar) + 2
 
@@ -77,7 +79,7 @@ def main():
             add(arp_l, t0 + k * beat / 2, (w * (1 - pan)).astype(np.float32))
             add(arp_r, t0 + k * beat / 2, (w * pan).astype(np.float32))
         # ---- drums from bar 3 (4.8 s at 100 BPM): kick on every beat, hats on the off-beat
-        if b >= 2:
+        if b >= 1:
             for q in range(4):
                 tk = np.arange(int(0.30 * SR)) / SR
                 f = 48 + 100 * np.exp(-tk / 0.035)
@@ -88,7 +90,23 @@ def main():
                 hp = np.diff(noise, prepend=0)
                 hp = np.diff(hp, prepend=0)
                 add(hats, t0 + q * beat + beat / 2, (hp * np.exp(-th / 0.016) * 0.045).astype(np.float32))
+            if b >= 2:  # clap on beats 2 and 4
+                for q in (1, 3):
+                    tc = np.arange(int(0.20 * SR)) / SR
+                    nz = rng.normal(0, 1, len(tc)).astype(np.float32)
+                    nz = np.diff(nz, prepend=0)
+                    burst = (np.exp(-tc / 0.045) + 0.6 * np.exp(-((tc - 0.012) ** 2) / 0.00002)) * nz * 0.10
+                    add(clap, t0 + q * beat, burst.astype(np.float32))
 
+    # ---- riser over the first bar (opening title) into the first beat drop
+    rl = int(bar * SR)
+    rn = rng.normal(0, 1, rl).astype(np.float32)
+    rn = np.diff(rn, prepend=0)
+    swell = (np.arange(rl) / rl) ** 2.2
+    rf = 220 + 900 * (np.arange(rl) / rl) ** 2
+    tone = np.sin(2 * np.pi * np.cumsum(rf) / SR).astype(np.float32)
+    riser[:rl] = (rn * 0.05 + tone * 0.04) * swell
+    riser[:rl] *= np.clip((rl - np.arange(rl)) / (0.02 * SR), 0, 1)
     # ---- sidechain pump: duck pad/arp/bass under the kick
     duck = np.ones(n, np.float32)
     kick_env = np.abs(kick)
@@ -119,8 +137,20 @@ def main():
             else:
                 el[sh:] += arp_l[: n - sh] * g
                 er[sh:] += arp_r[: n - sh] * g * 0.6
-    L = (pad_l + el + bass) * duck + kick + hats
-    R = (pad_r + er + bass) * duck + kick + hats
+    # ---- plate-style reverb (synthetic decaying-noise impulse response) on pad, arp and claps
+    ir_n = int(1.7 * SR)
+    ti = np.arange(ir_n) / SR
+    size = 1 << int(np.ceil(np.log2(n + ir_n)))
+    def reverb(x, seed):
+        g = np.random.default_rng(seed)
+        ir = g.normal(0, 1, ir_n).astype(np.float32) * np.exp(-ti / 0.42)
+        ir = np.diff(ir, prepend=0)  # lighter low end
+        ir /= np.abs(ir).sum() ** 0.5 * 18
+        return np.fft.irfft(np.fft.rfft(x, size) * np.fft.rfft(ir, size), size)[:n].astype(np.float32)
+    wet_l = reverb(el + pad_l + clap + riser, 7)
+    wet_r = reverb(er + pad_r + clap + riser, 8)
+    L = (pad_l + el + bass) * duck + kick + hats + clap + riser + 0.9 * wet_l
+    R = (pad_r + er + bass) * duck + kick + hats + clap + riser + 0.9 * wet_r
     # intro swell and end fade
     fade_in = np.clip(t / 1.2, 0, 1)
     fade_out = np.clip((dur - t) / 2.2, 0, 1)
