@@ -234,7 +234,7 @@ def end_card(theme):
     img.alpha_composite(sh, (140 - sp, 150 - sp))
     img.alpha_composite(lc, (140, 150))
     d = ImageDraw.Draw(img)
-    d.text((140, 390), "Thank you", font=font("ExtraBold", 170), fill=theme["text"] + (255,))
+    d.text((140, 400), "Thank you", font=font("ExtraBold", fit_size("Thank you", "ExtraBold", 800, 170)), fill=theme["text"] + (255,))
     d.rectangle([146, 590, 146 + 120, 599], fill=theme["accent"] + (255,))
     f1, f2 = font("SemiBold", 40), font("Medium", 38)
     y = 636
@@ -515,12 +515,19 @@ class DynBeat:
             # the word runs ACROSS the card in white (like the template's STYLSH card)
             word = self.spec["word"]
             size = min(fit_size(word, "ExtraBold", 0.60 * W, 250), 250)
-            lay = self.letters(t, word, size, cxx, cyy, (255, 255, 255), outline_idx={0})
-            sh2 = lay.filter(ImageFilter.GaussianBlur(8))
+            out_col = CREAM if pal["bg"] in (NAVY, BLUE) else NAVY
+            lay_in = self.letters(t, word, size, cxx, cyy, (255, 255, 255), outline_idx={0})
+            lay_out = self.letters(t, word, size, cxx, cyy, out_col, outline_idx={0})
+            clip = Image.new("L", (W, H), 0)
+            ImageDraw.Draw(clip).rectangle([int(cxx - self.cw / 2 + 14), int(cyy - self.ch / 2 + 14), int(cxx + self.cw / 2 - 14), int(cyy + self.ch / 2 - 14)], fill=255)
+            lay_in.putalpha(ImageChops.multiply(lay_in.getchannel("A"), clip))
+            lay_out.putalpha(ImageChops.multiply(lay_out.getchannel("A"), ImageChops.invert(clip)))
+            sh2 = lay_in.filter(ImageFilter.GaussianBlur(8))
             sh2.putalpha(sh2.getchannel("A").point(lambda v: int(v * 0.4)))
             img = img.convert("RGBA")
             img.alpha_composite(sh2, (0, 6))
-            img.alpha_composite(lay)
+            img.alpha_composite(lay_out)
+            img.alpha_composite(lay_in)
             self.caption(img, t, light=(pal["text"] in (CREAM, WHITE)))
             return img.convert("RGB")
         if self.kind == "title":
