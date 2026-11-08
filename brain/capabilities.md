@@ -29,3 +29,10 @@ GitHub API reports repo rahulrajalpy16-coder/Marketing-Team as PUBLIC (visibilit
 1. Keep finals in /tmp/work/<campaign> during the session and offer Drive Outputs upload (create_file) only if the upload test passes and Rahul approves; large files may not fit through the base64 tool.
 2. Ask Rahul to run the job from a session type that allows Releases, or tell him the exact limit hit.
 3. Never split a video without telling him. Never commit media.
+
+## SEO and analytics tooling check (2026-11-08, digital marketing and SEO plan job)
+- Firecrawl scrape and search: work for public site audits (live fetch with maxAge 0 returned page text, metadata and links).
+- curl to the public website works through the proxy (robots, sitemaps, headers, redirect chains).
+- Google PageSpeed Insights API without a key: HTTP 429 (shared daily quota exceeded). Core Web Vitals NOT MEASURED. Use Search Console data or Rahul's own PSI key.
+- Ahrefs, Similarweb, Supermetrics, Canva, HubSpot, Klaviyo connectors: need Rahul to authorise them in Claude connector settings (HubSpot failed to connect). No keyword volume, backlink or competitor traffic data is available until then.
+- No access to Search Console, GA4, LinkedIn analytics or Google Business Profile.
