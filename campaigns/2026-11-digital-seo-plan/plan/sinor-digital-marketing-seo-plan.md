@@ -12,9 +12,9 @@ Sinor sells high-value, technical, trust-driven work (DP systems, reference syst
 
 Three conclusions from the audit:
 
-1. **The website is a decent shell but a thin proof engine.** It is clean WordPress with correct canonical redirects and a sitemap. But it has 1 blog post, 3 project entries with generic names, a broken main button, mislinked service cards, no structured data and no analytics found in the served code. Search engines and buyers get little proof of expertise.
-2. **The claims on the site contradict each other** (50+ vs 100+ projects, 15+ vs 20+ years, "from 2024", an unsourced 98% satisfaction figure). In a safety-critical industry whose own leader says "accuracy creates credibility", this is the first thing to fix, before any marketing spend.
-3. **Sinor's strongest asset is real expertise plus technology partners plus a live LinkedIn presence.** The plan therefore leans on expert-led content, partner co-marketing and LinkedIn (where this buyer group is reachable), supported by SEO that captures people already searching. Paid ads are a small, measured test, not the engine.
+1. **The website is a decent shell but a thin proof engine.** It is clean WordPress with correct canonical redirects and a sitemap. But it has 1 blog post, 3 project entries with generic URLs, a broken main button, mislinked service cards, no structured data and no analytics found in the served code. Search engines and buyers get little proof of expertise.
+2. **The claims on the site contradict each other** (50+ vs 100+ projects, 15+ vs 20+ years, "from 2024", an unsourced 98% satisfaction figure). The About page itself says "Accuracy creates credibility. Credibility creates Trust" (GM message, read 2026-11-08), so inconsistent numbers undercut Sinor's own stated principle. This is the first thing to fix, before any marketing spend.
+3. **Sinor's strongest asset is real expertise plus technology partners plus a live LinkedIn presence.** The plan therefore leans on expert-led content, partner co-marketing and LinkedIn (PROPOSAL: where this buyer group is likely reachable, UNVERIFIED for Sinor), supported by SEO that captures people already searching. Paid ads are a small, measured test, not the engine.
 
 Recommended order: **fix trust and measurement (weeks 1 to 4), build proof content (weeks 5 to 8), then scale what the data shows works (weeks 9 to 12).**
 
@@ -29,7 +29,7 @@ All VERIFIED 2026-11-08 unless marked. Evidence IDs refer to the audit file.
 - Yoast sitemap and robots.txt in place, nothing blocked (A3).
 - Brand queries return Sinor first (home, LinkedIn page, DP page). In one generic DP retrofit query the DP page also appeared first, but that is a single run (section C of the audit), not a ranking study.
 - Clear service structure: DP, automation, electrical, navigation, thruster control, frequency converter (A13).
-- Real, current LinkedIn activity, including an ADIPEC 2026 announcement and a DP upgrade proof post (search results).
+- Search snippets show recent company LinkedIn activity, including an ADIPEC 2026 exhibiting announcement and a DP upgrade proof post (audit section C). The pages were not opened on LinkedIn, so treat this as UNVERIFIED.
 - Your own ADIPEC 2026 thank-you assets and a verified partner list already exist in this repo.
 
 ### 2.2 Problems, ranked by impact
@@ -38,16 +38,16 @@ All VERIFIED 2026-11-08 unless marked. Evidence IDs refer to the audit file.
 | 1 | Conflicting company claims | Audit section B | Buyers and class-conscious clients notice. Also a legal and reputational risk if a number cannot be backed. |
 | 2 | Main DP page CTA goes to a 404 | A7 | The best-ranking service page loses its enquiry button. |
 | 3 | Mislinked service cards (Navigation, Electrical) | A8 | Visitors miss dedicated pages that exist. |
-| 4 | Almost no proof content | A5 | One post, three vague project entries. Weak E-E-A-T and nothing to rank for beyond service pages. |
+| 4 | Almost no proof content | A5 | One post, three project entries with generic URLs. Weak E-E-A-T and nothing to rank for beyond service pages. |
 | 5 | No analytics or conversion tracking seen | A12 (UNVERIFIED, confirm in browser) | Without it, no baseline, no ROI, no learning. |
 | 6 | Weak titles and descriptions | A9, A10 | Home title is 118 characters (will be cut off). DP page title is "DP system - Sinor Marine Services". |
 | 7 | No structured data seen | A11 | Misses rich results and clearer entity signals for search and AI answers. |
 | 8 | Thank-you page in the sitemap | A6 | Invites indexing of a conversion page and muddies reporting. |
-| 9 | Legacy brand wording and old domain | A10, A15 | "Sinor Marine Technology" wording and a live sinor-marine.com site split brand signals. Relationship UNVERIFIED. |
+| 9 | Legacy brand wording and an older domain | A10, A15 | sinor-marine.com is reachable, and on 2026-11-08 its home page showed raw PHP warnings that expose server file paths. A 2021 "Sinor Marine Technologies" brochure exists on it. Older "Sinor Marine Technology" wording appeared in the DP page text in one scrape (not reproduced by the reviewer, recheck in a browser). Relationship to Sinor UNVERIFIED. Whoever hosts that site should look at the errors. |
 | 10 | Empty image alt text on most images | A11 | Lost image search and accessibility value. |
 | 11 | "Fuel Monitoring" offered in the form, no page | A13 | Demand signal with no landing page, or an offer that is not real. |
-| 12 | Core Web Vitals unknown | Audit section D | Possibly heavy images (several hero images have file names like WhatsApp-Image and ChatGPT-Image, which suggests unprocessed phone photos and generated art). NOT MEASURED. |
-| 13 | Single person's mobile and email on the home CTA | A14 | Enquiries depend on one inbox. Use the shared sales address plus a form. |
+| 12 | Core Web Vitals unknown | Audit section D | Possibly heavy images. Several image URLs on the home page contain "WhatsApp-Image" or "ChatGPT-Image" (audit A16), which suggests unprocessed images, but this is an inference. NOT MEASURED. |
+| 13 | A named person's mobile and email on the home CTA | A14 | Enquiries depend on one inbox. Use the shared sales address plus a form. |
 
 ---
 
@@ -55,11 +55,12 @@ All VERIFIED 2026-11-08 unless marked. Evidence IDs refer to the audit file.
 
 I proceeded with assumptions so none of these block the plan.
 
-1. **One official set of claims.** Which numbers are true and provable today: projects completed (50+, 100+, other), years of DP experience (15+, 20+), team size (50+), and is "98% client satisfaction" backed by a survey or should it come off? Also: are "24/7 support", "class-approved service provider" and "OEM-certified technicians" accurate? Until answered, my plan treats all of them as UNVERIFIED and does not use them in new copy.
+1. **One official set of claims.** You confirmed on 2026-11-06 that 100+ projects, 15+ years of DP engineering and 40+ countries may be used publicly. The website still shows 50+ projects and, on the About page, 20+ years, so please say which the site should carry. Still open: team size (50+ on About), "98% client satisfaction" (backed by a survey, or remove?), "from 2024" on the About page, and whether "24/7 support", "class-approved service provider" and "OEM-certified technicians" are accurate. Until answered, my plan treats the open ones as UNVERIFIED and does not use them in new copy.
 2. **Is sinor-marine.com (Sinor Marine Technologies, 2021 brochure) yours?** If yes, we redirect or consolidate. If no, we add brand disambiguation.
 3. **Priority services and markets.** My assumption (PROPOSAL): DP upgrades and retrofits, reference systems (supply, installation, commissioning), thruster control and service support, for UAE first, then GCC, then Indian Ocean and Far East operators working in the Gulf.
 4. **Budget for paid tests.** Amount unknown. The plan gives percentage splits, not figures.
 5. **Who edits the website** (you, a web person, an agency)? I draft; someone with login publishes after your approval.
+6. **Posting voices.** The About page names Naveen Thandarath as General Manager. Is he happy to post on LinkedIn and be named as an author? Which engineers may be named? I wrote "Naveen" into the plan as a proposed second voice only.
 
 ---
 
@@ -68,7 +69,7 @@ I proceeded with assumptions so none of these block the plan.
 ### 4.1 Positioning (PROPOSAL, for your edit)
 "DP and marine control specialists for offshore vessels: retrofit, reference systems, commissioning and service, from Dubai."
 
-Proof pillars (use only once confirmed): engineering depth (your confirmed 15+ years DP engineering figure, subject to decision 1), technology partners who support Sinor (Sonardyne, Fugro, Navis Engineering, Marine Technologies, Guidance Marine, per your 2026-11-06 confirmation, wording "supported us", no dealership claims), hands-on delivery, and responsiveness.
+Proof pillars: engineering depth (15+ years DP engineering, confirmed by you 2026-11-06 for public use; the site must be aligned to it, see decision 1), technology partners who support Sinor (Sonardyne, Fugro, Navis Engineering, Marine Technologies, Guidance Marine, per your 2026-11-06 confirmation, wording "supported us", no dealership claims), hands-on delivery, and responsiveness.
 
 Tone follows brain/brand-profile.md: company account confident and accurate, personal account modest and relationship-led. No "proud", "thrilled" or "delighted" openers.
 
@@ -93,19 +94,19 @@ Buyer behaviour is UNVERIFIED for Sinor specifically. First-party evidence from 
 - Content must be **experience-based** (what Sinor engineers actually do), which is also what search engines and AI answer tools reward.
 - Keyword volumes are UNKNOWN here. Authorise Ahrefs, Similarweb or Supermetrics, or export from Google Search Console, and I will add volumes and difficulty.
 
-### 5.2 Phase 1: technical fixes (weeks 1 to 3, mostly small web tasks)
+### 5.2 Phase 1: technical fixes (weeks 1 to 4, mostly small web tasks)
 | Task | Detail |
 |------|--------|
 | Fix 404 CTA | Point the DP page button (and any other /services/contact.html links) to /contact/. |
 | Fix service card links | Navigation card to /services/navigation-systems/, Electrical card to /services/electrical-solutions/. |
-| Rewrite titles and descriptions | Titles up to about 60 characters, descriptions up to about 155. Example home title (PROPOSAL): "DP Systems, Retrofit and Marine Automation, Dubai | Sinor Marine". |
+| Rewrite titles and descriptions | Titles up to about 60 characters, descriptions up to about 155. Example home title (PROPOSAL, 54 characters): "DP Systems and Marine Automation, Dubai | Sinor Marine". |
 | Thank-you page | Set to noindex, remove from sitemap, use it as the conversion event. |
 | Structured data | Add Organization, ProfessionalService with the Hamariya Port address, Service for each service page, FAQPage where FAQs exist, Article for posts. Validate in Google's Rich Results Test. |
 | Image alt text and weight | Descriptive alt text on informative images. Prefer real project photography or clean graphics over generated art, compressed, WebP where possible. Check the largest images first. |
 | Measure speed | Run PageSpeed Insights or Search Console Core Web Vitals (my attempt hit a quota limit). Fix the worst offenders. |
 | Analytics | Install GA4 and Google Search Console, verify the domain, submit the sitemap. Confirm whether tracking already exists. |
 | Shared enquiry path | Contact form with fields that qualify the lead (see 8.2), sales@ shared inbox, click-to-call and WhatsApp click tracking. |
-| Legacy domain | If sinor-marine.com is yours, 301 to the right pages. Remove "Sinor Marine Technology" wording from page text. |
+| Legacy domain | If sinor-marine.com is yours, fix its server errors and 301 it to the right pages. Remove "Sinor Marine Technology" wording from page text if it is present. |
 | Resolve "Fuel Monitoring" | Build a page if it is a real offer, otherwise remove it from the form. |
 
 ### 5.3 Phase 2: on-page rebuild of money pages (weeks 3 to 8)
@@ -115,8 +116,8 @@ Pages to build or expand (PROPOSAL; confirm each is a real Sinor offer first):
 | Page | Primary intent |
 |------|----------------|
 | DP system upgrade and retrofit | "dp retrofit", "dp system upgrade", "dp2 retrofit" (volumes UNKNOWN) |
-| DP reference systems: supply, installation, commissioning | "dp reference system installation", USBL, inertial-aided DVL and radar-based reference options |
-| Thruster control (Z-Thrust) and manoeuvring control | "thruster control retrofit" |
+| DP reference systems: supply, installation, commissioning | "dp reference system installation", USBL, inertial-aided DVL and radar-based reference options (examples only, confirm which Sinor offers) |
+| Thruster control and manoeuvring control ("Z-Thrust" is the product name shown on the site, ownership UNVERIFIED) | "thruster control retrofit" |
 | Marine automation and electrical | "vessel automation upgrade Dubai" |
 | Commissioning, sea trials and service support | "dp commissioning", "marine service engineers Dubai" |
 | Technology partners hub | Navis Engineering, Marine Technologies, Sonardyne, Guidance Marine, Fugro (each with partner approval and without dealership claims) |
@@ -130,26 +131,26 @@ Cadence PROPOSAL: 2 articles a month plus 1 case study a quarter. Each article i
 
 Starter topics (informational and buyer-guide intent). Technical content to be written by the marine-technical-engineer agent and verified by research-verification against OEM and class documents before it goes live:
 1. What to check before a DP system retrofit (decision checklist for superintendents).
-2. DP reference systems explained in plain language: when acoustic, inertial or radar-based references make sense. Use only OEM-verified statements (for example, the EQUIPMENT_SCOPE_CATALOGUE shows Sinor's own proposals repeat Sonardyne's guidance that SPRINT-Nav suits shallow water and Ranger 2 USBL suits deeper or ROV and diver tracking use cases; re-verify against current datasheets before publishing).
+2. DP reference systems explained in plain language: when acoustic, inertial or radar-based references make sense. Use only OEM-verified statements (for example, Sinor's own earlier proposals, summarised in the other repo's EQUIPMENT_SCOPE_CATALOGUE, repeat Sonardyne's guidance that SPRINT-Nav suits shallow water and Ranger 2 USBL suits deeper water or ROV and diver tracking. That statement is UNVERIFIED here and must be re-verified against current Sonardyne datasheets before publishing).
 3. DP retrofit versus replacement: how to frame the decision.
 4. What happens during DP commissioning and trials (timeline, who does what).
 5. Thruster control upgrades: symptoms that mean it is time.
 6. Lessons from a DP upgrade (anonymised, your own project, with client permission).
-7. ADIPEC 2026 takeaways for DP and automation (timely: the event ran 2 to 5 November 2026).
+7. ADIPEC 2026 takeaways for DP and automation (the event ran 2 to 5 November 2026, so publish this first, in weeks 3 to 4).
 8. Lead times and mobilisation: what operators in the Gulf should plan for (only with figures Sinor confirms; quotation lead times are historical and must be re-confirmed).
 
 Each article: author byline of a named Sinor engineer (with consent), date, last-reviewed date, sources cited, and an explicit "talk to an engineer" call to action.
 
 ### 5.5 Authority and local
 - **Google Business Profile** for Hamariya Port, Dubai (verify as a service business, correct categories, photos, services). Add Bing Places and Apple Business Connect.
-- **Consistent business details everywhere** (name, address, phone), using the confirmed address 601, Al Nokitha Building, Hamariya Port, Dubai, as in the company profile.
+- **Consistent business details everywhere** (name, address, phone), using the address shown on the sinormarine.com home page (601, Al Nokitha Building, Hamariya Port, Dubai), which you confirmed to the earlier team on 2026-10-20. It is not yet in this repo's verified-facts.
 - **Partner links:** ask each technology partner about a listing or news mention on their site (their decision, not ours).
-- **Industry mentions:** one expert quote or guest article a quarter in marine and offshore trade media. Candidate titles seen in search: Offshore Engineer magazine (OE Digital). Build the full target list from verified sources before pitching.
+- **Industry mentions:** one expert quote or guest article a quarter in marine and offshore trade media. Candidate title seen in search results (audit section C): Offshore Engineer magazine (OE Digital). Build the full target list from verified sources before pitching.
 - **Event pages:** a short page per event attended (ADIPEC 2026 first) with photos, which also feeds backlinks from organiser and partner sites.
 - No paid link schemes, no bulk directory spam.
 
 ### 5.6 Visibility in AI answer tools
-Buyers increasingly ask AI tools technical questions. Same discipline helps: plain definitions, FAQ sections, named expert authors, dated and sourced pages, structured data, consistent company details, and presence on LinkedIn and partner sites. No tricks. This is UNVERIFIED as a measurable channel for Sinor, so track it manually: ask five buyer-style questions each month and log whether Sinor appears.
+Buyers may increasingly ask AI tools technical questions (PROPOSAL assumption, UNVERIFIED for this market). The same discipline helps either way: plain definitions, FAQ sections, named expert authors, dated and sourced pages, structured data, consistent company details, and presence on LinkedIn and partner sites. No tricks. This is UNVERIFIED as a measurable channel for Sinor, so track it manually: ask five buyer-style questions each month and log whether Sinor appears.
 
 ---
 
@@ -170,7 +171,7 @@ Buyers increasingly ask AI tools technical questions. Same discipline helps: pla
 
 ### 6.2 LinkedIn (the main organic engine)
 - **Cadence (PROPOSAL):** company page 3 posts a week, Rahul 2, Naveen 1, engineers occasionally as guest authors. Employees share company posts.
-- **Mix:** 40% proof (projects, installs, commissioning), 25% technical teaching, 15% partners, 10% people and culture, 10% direct offers.
+- **Mix (PROPOSAL):** 40% proof (projects, installs, commissioning), 25% technical teaching, 15% partners, 10% people and culture, 10% direct offers.
 - **Rules from the brain files:** company voice confident and accurate, personal voice modest. Bold uses scripts/unicode_bold.py with a plain-text version supplied. Partner names written in full. No claims about equipment ownership unless confirmed (lesson from the ADIPEC job).
 - **Per post checklist:** one idea, one proof point, one invitation (comment, message or enquire). Facts checked by fact-reviewer before publishing.
 - **Company page hygiene:** banner and tagline matching the site, services section, featured post, link to the contact page with UTM tags, "Showcase" content for partners.
@@ -220,13 +221,14 @@ Start date assumed: week of 2026-11-09. Owners: R = Rahul, N = Naveen, W = web e
 | Google Business Profile, Bing Places, Apple Business Connect | R or W |
 | Page speed measurement and fixes | W |
 | First two cornerstone pages drafted (DP retrofit, reference systems) | M, E reviews |
+| ADIPEC 2026 takeaways article (topic 7), while the event is fresh | M, E reviews, W |
 | LinkedIn calendar for 8 weeks drafted and approved | M, R |
 
 ### Weeks 5 to 8 (7 December to 3 January): proof and content
 | Task | Owner |
 |------|-------|
 | Publish cornerstone pages and partner hub (with partner approval) | W |
-| Publish 3 articles (topics 1, 2, 7 in 5.4) | M, E, W |
+| Publish 2 more articles (topics 1 and 2 in 5.4) | M, E, W |
 | One anonymised case study with client permission | E, M |
 | Partner outreach for co-marketing and listings | R |
 | Email sequence 1 and 2 drafted, contact permission confirmed | M, R |

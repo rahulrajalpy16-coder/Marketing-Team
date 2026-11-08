@@ -27,3 +27,8 @@ Do not store commercial terms, client confidential data or personal data.
 | USER-SUPPLIED: the woman in photo a07555b5 (with a colleague in front of the Sinor panel) represents Guidance Marine; CORRECTED 2026-11-06: Rahul's "full Sinor Marine team photo" is the 10-person photo s8_2 (sent in chat), NOT the group of four 0f44943b | Rahul, chat message | 2026-11-06 |
 
 Products, partners, services, project names and terminology: none verified yet. To be supplied.
+| sinormarine.com (WordPress, Elementor, Yoast): page sitemap lists 16 URLs, blog has 1 post, 3 project entries with generic URLs | https://sinormarine.com/page-sitemap.xml ; /post-sitemap.xml ; /sms-project-sitemap.xml | 2026-11-08 |
+| sinormarine.com DP page "Schedule Consultation" button points to /services/contact.html, which returns HTTP 404 | https://sinormarine.com/services/dp-system/ | 2026-11-08 |
+| Website's own claims (accuracy unverified): 50+ projects, 40+ countries, 98% client satisfaction, 15+ years DP experience on Home; 20+ years, 50+ team members and "from 2024" on About. They conflict with the stand panel and each other, see campaigns/2026-11-digital-seo-plan/research/site-audit-2026-11-08.md | https://sinormarine.com/ ; /about/ | 2026-11-08 |
+| About page names Naveen Thandarath as General Manager | https://sinormarine.com/about/ | 2026-11-08 |
+| Company address shown on the home page: 601, Al Nokitha Building, Hamariya Port, Dubai, UAE (also confirmed by Rahul to the earlier team on 2026-10-20) | https://sinormarine.com/ ; earlier repo company profile | 2026-11-08 |

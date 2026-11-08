@@ -14,25 +14,30 @@ Collected 2026-11-08 from public pages only (Firecrawl scrape with maxAge 0, cur
 | A7 | DP page "Schedule Consultation" button links to /services/contact.html, which returns HTTP 404. | curl -L |
 | A8 | Home page service card "Navigation Systems" links to /contact although /services/navigation-systems/ exists. Card "Electrical Solutions" links to /services/marine-automation/ although /services/electrical-solutions/ exists. | Home links list vs sitemap |
 | A9 | Home title tag is 118 characters: "Sinor Marine Services Middle East FZCO | DP System & Dynamic Positioning System Services Dubai - Sinor Marine Services". Meta description is 171 characters. | Metadata, python len() |
-| A10 | DP page title tag is "DP system - Sinor Marine Services". Its meta description is the first paragraph of the page. Page body text begins "DP Systems | Sinor Marine Technology" (older brand wording). | Scrape metadata and markdown |
+| A10 | DP page title tag is "DP system - Sinor Marine Services". Its meta description is the first paragraph of the page. The scrape text began "DP Systems | Sinor Marine Technology" (older brand wording); the reviewer's fetch did not reproduce this, so recheck in a browser. | Scrape metadata and markdown |
 | A11 | No JSON-LD structured data found in the served home HTML (count of application/ld+json = 0). One H1. 31 img tags, 24 with empty alt text (some may be decorative). | grep on fetched HTML |
 | A12 | No Google Analytics, Tag Manager, Meta pixel or Clarity signature found in the served home HTML. This may load another way, so treat as UNVERIFIED until checked in a browser or Tag Assistant. | grep on fetched HTML |
 | A13 | Home page services form lists "Fuel Monitoring" but no fuel monitoring page exists in the sitemap. Service list on home: DP Systems, Marine Automation, Electrical Solutions, Navigation Systems, Thruster Control System (Z-Thrust, PLC based), Frequency Power Converter. | Home markdown, sitemap |
 | A14 | Contact block on home shows sales@, service@, support@ addresses, +971 4 665 7162, and a separate CTA to a named person's email and mobile. | Home markdown |
-| A15 | An older domain https://www.sinor-marine.com returns HTTP 200 and serves a PDF titled "SINOR MARINE TECHNOLOGIES" brochure (July 2021). Relationship to Sinor Marine Services is UNVERIFIED (stand files mention "Sinor Marine Technologies" as SMT, USER-SUPPLIED). | Search result URL, curl -I |
+| A15 | An older domain https://www.sinor-marine.com returns HTTP 200, but on 2026-11-08 its home page output raw PHP warnings (a WordPress install, file paths exposed) instead of a normal page. A "SINOR MARINE TECHNOLOGIES" brochure PDF (July 2021) on that domain also returned HTTP 200. Relationship to Sinor Marine Services is UNVERIFIED (stand files mention "Sinor Marine Technologies" as SMT, USER-SUPPLIED). Reviewer fetch confirmed the PHP errors. | curl, search result URL, reviewer WebFetch |
+| A16 | Home page image URLs include names such as WhatsApp-Image-2026-02-04-at-19.09.38 and ChatGPT-Image-Feb-4-2026, used as service card images. | Home scrape markdown |
+| A17 | About page GM message quotes "Accuracy creates credibility. Credibility creates Trust" and names Naveen Thandarath, General Manager. About says "from 2024". | About scrape |
+| A18 | Company address on the home page: P.O.Box 95842, 601, Al Nokitha Building, Hamariya Port, Dubai, UAE. | Home scrape |
 
 ## B. Claims on the site (VERIFIED as written, accuracy UNVERIFIED)
-| Claim | Where | Conflict |
+| Claim | Where (corrected after review) | Conflict |
 |-------|-------|----------|
-| "50+ Projects Completed" | Home, About, DP page | Stand panel said "100+ projects" (Rahul confirmed use 2026-11-06). Public LinkedIn post says "8+ Dynamic Positioning (DP) upgrade projects" (different scope). |
-| "15+ Years of DP Engineering Experience" | Home | About says "20+ Years Experience" and title "Engineering Reliable Marine Automation Solutions from 2024". |
+| "50+ Projects Completed" | Home, About, DP page | Stand panel said "100+ projects" (Rahul confirmed public use 2026-11-06). Public LinkedIn post says "8+ Dynamic Positioning (DP) upgrade projects" (different scope). |
+| "15+ Years of DP Engineering Experience" | Home (Rahul confirmed 15+ for public use 2026-11-06) | About says "20+ Years Experience" and title "Engineering Reliable Marine Automation Solutions from 2024". |
 | "40+ countries served" | Home, About, DP page | Consistent. |
 | "50+ Team Members" | About | Not seen elsewhere. |
 | "98% Client Satisfaction" | Home, DP page | No source seen. |
 | "Compliant with DNV, ABS and Lloyd's Register DP requirements" and "type-approved DP systems across all classes" | DP page | No certificate or approval basis seen. Likely OEM level claims. |
-| "Class-approved service providers", "OEM-certified technicians", "Certified Engineers", "24/7 Support", "Quality Assured" | Home, About | Not evidenced in this repo. ISO certificates also not seen (company's own invoice footer only). |
+| "24/7 Support", "Quality Assured", "Certified Engineers", "class-approved" DP solutions | Home. "Class-approved service providers" and "OEM-certified technicians": About | Not evidenced in this repo. ISO certificates also not seen (company's own invoice footer only). |
 
 ## C. Search results seen (2026-11-08, one session, location not set)
+- LinkedIn snippets in the same search: company page text "will be exhibiting at ADIPEC 2026"; a post snippet "8+ Dynamic Positioning (DP) upgrade projects". Pages not opened on LinkedIn.
+- Offshore Engineer magazine (oedigital.com/dynamic-positioning) appeared as a result in the first search.
 - Query "Sinor Marine Services Middle East FZCO Dubai Dynamic Positioning": Sinor home page was result 1, company LinkedIn page 2, DP page 3. Brand queries are expected to favour the brand, so this proves little about non-brand ranking.
 - Query "DP system upgrade retrofit UAE Dubai marine automation thruster control service company": Sinor DP page was result 1 in this one run. Others seen: Subsea Connect, Thrustmaster of Texas, Marine Technologies (OEM), Navis Engineering (OEM), ABS guide PDF, market-report sites. Single run, not a ranking study.
 - UAE dynamic positioning market size: two sources disagree (USD 244.8 million for 2025 vs USD 470 million for 2025). NOT used in the plan.
