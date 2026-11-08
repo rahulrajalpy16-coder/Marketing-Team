@@ -1,0 +1,77 @@
+[
+ {
+  "path": "/",
+  "title": "DP Systems and Marine Automation, Dubai | Sinor Marine",
+  "desc": "Dubai-based specialists in dynamic positioning, thruster control and marine automation for offshore vessels: upgrades, commissioning and service."
+ },
+ {
+  "path": "/about/",
+  "title": "About Sinor Marine Services | DP and Automation, Dubai",
+  "desc": "Sinor Marine Services Middle East FZCO is a Dubai marine technology company for DP, automation and electrical systems and vessel technical support."
+ },
+ {
+  "path": "/services/",
+  "title": "Marine Engineering Services | Sinor Marine, Dubai",
+  "desc": "DP systems, marine automation, electrical solutions, navigation systems, thruster control and frequency power converters from Sinor Marine Services, Dubai."
+ },
+ {
+  "path": "/services/dp-system/",
+  "title": "Dynamic Positioning Systems, Dubai | Sinor Marine",
+  "desc": "DP and joystick control systems, integration, upgrades, retrofits, commissioning and after-sales support for offshore vessels, from Dubai."
+ },
+ {
+  "path": "/services/marine-automation/",
+  "title": "Marine Automation and Alarm Monitoring | Sinor Marine",
+  "desc": "Vessel automation, alarm monitoring and control systems, integrated, upgraded and commissioned by Sinor Marine Services in Dubai."
+ },
+ {
+  "path": "/services/electrical-solutions/",
+  "title": "Marine Electrical and Power Systems | Sinor Marine",
+  "desc": "Marine electrical systems, power management and switchboard installations for vessels, from Sinor Marine Services in Dubai."
+ },
+ {
+  "path": "/services/navigation-systems/",
+  "title": "Marine Navigation Systems: ECDIS, Radar | Sinor Marine",
+  "desc": "ECDIS, radar and integrated bridge systems for precise maritime navigation, from Sinor Marine Services in Dubai."
+ },
+ {
+  "path": "/services/thruster-control/",
+  "title": "Thruster Control Systems (Z-Thrust) | Sinor Marine",
+  "desc": "Z-Thrust: a PLC-based independent control solution for vessel propulsion and steering systems, offered by Sinor Marine Services in Dubai."
+ },
+ {
+  "path": "/services/frequency-power-converter/",
+  "title": "Frequency Power Converters, Shore Power | Sinor Marine",
+  "desc": "Frequency power converters for shore-to-ship power: MV/LV installation, 50/60 Hz output and ship connections, from Sinor Marine Services in Dubai."
+ },
+ {
+  "path": "/navis/",
+  "title": "Navis Engineering DP Technology | Sinor Marine Services",
+  "desc": "DP and joystick control technology from Navis Engineering, supported by Sinor Marine Services in Dubai."
+ },
+ {
+  "path": "/mt/",
+  "title": "Marine Technologies DP and Bridge Systems | Sinor Marine",
+  "desc": "Integrated bridge and DP technology from Marine Technologies, supported by Sinor Marine Services in Dubai."
+ },
+ {
+  "path": "/products/",
+  "title": "DP Reference Systems and Navigation Instruments | Sinor",
+  "desc": "DP position reference systems and marine navigation instruments supported by Sinor Marine Services, Dubai. Ask our engineers for the right option."
+ },
+ {
+  "path": "/projects/",
+  "title": "Projects: DP Upgrades and Marine Automation | Sinor Marine",
+  "desc": "Selected DP, automation and electrical projects by Sinor Marine Services. Contact our engineers to discuss a similar scope on your vessel."
+ },
+ {
+  "path": "/blog/",
+  "title": "Marine and DP Insights | Sinor Marine Services",
+  "desc": "Technical insights and updates on dynamic positioning, marine automation and offshore vessel systems from the Sinor Marine Services team."
+ },
+ {
+  "path": "/contact/",
+  "title": "Contact Sinor Marine Services | Hamariya Port, Dubai",
+  "desc": "Contact Sinor Marine Services at Hamariya Port, Dubai for DP, automation and electrical enquiries. Call +971 4 665 7162 or send us a message."
+ }
+]

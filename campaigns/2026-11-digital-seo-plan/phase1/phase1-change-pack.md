@@ -1,6 +1,22 @@
 # Phase 1 change pack: for your approval (nothing is published)
 
-Prepared 2026-11-08 for Rahul Raj. Status: **AWAITING YOUR APPROVAL**. Nothing on sinormarine.com has been changed. I have no access to Hostinger or WordPress and I will never ask for your login. You apply the approved items, then I re-run the audit to prove each one worked.
+Prepared 2026-11-08 for Rahul Raj. Status: **APPROVED by Rahul on 2026-11-08 ("Approve all")**. Not yet applied. Nothing on sinormarine.com has been changed by me.
+
+## Approval record and how I read it
+- Approved: items 1 to 11. Decisions not answered individually, so my stated defaults apply: D1 use 100+ projects and 15+ years, remove 98% satisfaction, remove 50+ team, drop "from 2024". D2 remove "Fuel Monitoring" from the dropdown. D5 use the neutral "supported by Sinor Marine Services" wording on the Navis Engineering and Marine Technologies pages. D6 switch the home email link to sales@sinormarine.com, keep the phone.
+- NOT changed, still open: D3 (the partner logo strip, 12 logos) and D4 (what "SMT" is). They were questions, not numbered items, so I treat "approve all" as leaving the strip exactly as it is.
+- Still unverified and untouched: "24/7 Support", "class-approved", "OEM-certified technicians", DNV, ABS and Lloyd's Register wording.
+
+## Apply order (suggested)
+1. Backup.
+2. Items 1, 2, 10, 11 (Elementor link and form edits).
+3. Item 9 (claims text on Home and About).
+4. Items 3 and 4 (Yoast titles, descriptions, thank-you noindex).
+5. Item 6 (alt text), then item 7 (upload the compressed images and re-point the two cards).
+6. Item 5 (JSON-LD) and item 8 (Site Kit, click snippet) via a code snippets plugin.
+7. Purge the site cache (your server is LiteSpeed, so use the LiteSpeed Cache purge if that plugin is installed). Otherwise the checker may see old pages.
+8. Tell me "done". I run `python3 -I verify_phase1.py` (read-only, in this folder) and report PASS or FAIL for each of the 17 checks. Baseline before any change: 0 of 17 pass.
+ I have no access to Hostinger or WordPress and I will never ask for your login. You apply the approved items, then I re-run the audit to prove each one worked.
 
 How to approve: reply with "approve all", or list the item numbers you approve and any changes. Items marked DECISION need your answer first.
 
