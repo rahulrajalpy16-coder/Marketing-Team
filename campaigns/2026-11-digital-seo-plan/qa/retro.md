@@ -8,3 +8,6 @@ Open: Rahul's six decisions (plan section 3). No outcome targets until a 60-day 
 A. Applied now: verified-facts rows for the website audit (public site facts), capabilities row for SEO tooling.
 B. Provisional lessons added to brain/lessons-learned.md (3).
 C. Proposed changes: none.
+
+## Phase 1 pack (2026-11-08, later in the same session)
+Produced phase1/ (change pack, phone-width preview, JSON-LD, click snippet). Checks run: title and description lengths by script, JSON validity, click snippet tested in a browser with a stand-in tracker, preview checked at 390 px with no sideways scroll, counts recomputed from data (one error found and fixed: 12 not 11 pages without descriptions). Reviewed by the Director only (no separate reviewer), so labelled self-reviewed. Nothing published. Awaiting Rahul's approval and answers D1 to D6.

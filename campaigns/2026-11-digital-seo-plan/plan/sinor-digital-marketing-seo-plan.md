@@ -1,6 +1,6 @@
 # Sinor Marine Services: Digital Marketing and SEO Plan
 
-Prepared 2026-11-08 for Rahul Raj. Status: DRAFT for your decisions. Nothing has been published, sent or changed on the website.
+Prepared 2026-11-08 for Rahul Raj. Status: DRAFT for your decisions. Phase 1 execution pack: phase1/phase1-change-pack.md. Nothing has been published, sent or changed on the website.
 
 Tags: VERIFIED (read this session, see research/site-audit-2026-11-08.md), USER-SUPPLIED, UNVERIFIED, PROPOSAL (my recommendation, not a fact).
 
@@ -43,8 +43,8 @@ All VERIFIED 2026-11-08 unless marked. Evidence IDs refer to the audit file.
 | 6 | Weak titles and descriptions | A9, A10 | Home title is 118 characters (will be cut off). DP page title is "DP system - Sinor Marine Services". |
 | 7 | No structured data seen | A11 | Misses rich results and clearer entity signals for search and AI answers. |
 | 8 | Thank-you page in the sitemap | A6 | Invites indexing of a conversion page and muddies reporting. |
-| 9 | Legacy brand wording and an older domain | A10, A15 | sinor-marine.com is reachable, and on 2026-11-08 its home page showed raw PHP warnings that expose server file paths. A 2021 "Sinor Marine Technologies" brochure exists on it. Older "Sinor Marine Technology" wording appeared in the DP page text in one scrape (not reproduced by the reviewer, recheck in a browser). Relationship to Sinor UNVERIFIED. Whoever hosts that site should look at the errors. |
-| 10 | Empty image alt text on most images | A11 | Lost image search and accessibility value. |
+| 9 | Wording of an unrelated company on Sinor's site | A10, A15 | Rahul confirmed 2026-11-08 that sinor-marine.com ("Sinor Marine Technologies") is a separate entity with no connection to sinormarine.com. Yet the DP page meta description begins "DP Systems \| Sinor Marine Technology" (verified in raw HTML, 2026-11-08), and the two names are easily confused in search. |
+| 10 | Missing image alt text: 29 of 31 images on the home page, 1 on /products/ | A11, section F | Lost image search and accessibility value. |
 | 11 | "Fuel Monitoring" offered in the form, no page | A13 | Demand signal with no landing page, or an offer that is not real. |
 | 12 | Core Web Vitals unknown | Audit section D | Possibly heavy images. Several image URLs on the home page contain "WhatsApp-Image" or "ChatGPT-Image" (audit A16), which suggests unprocessed images, but this is an inference. NOT MEASURED. |
 | 13 | A named person's mobile and email on the home CTA | A14 | Enquiries depend on one inbox. Use the shared sales address plus a form. |
@@ -56,11 +56,11 @@ All VERIFIED 2026-11-08 unless marked. Evidence IDs refer to the audit file.
 I proceeded with assumptions so none of these block the plan.
 
 1. **One official set of claims.** You confirmed on 2026-11-06 that 100+ projects, 15+ years of DP engineering and 40+ countries may be used publicly. The website still shows 50+ projects and, on the About page, 20+ years, so please say which the site should carry. Still open: team size (50+ on About), "98% client satisfaction" (backed by a survey, or remove?), "from 2024" on the About page, and whether "24/7 support", "class-approved service provider" and "OEM-certified technicians" are accurate. Until answered, my plan treats the open ones as UNVERIFIED and does not use them in new copy.
-2. **Is sinor-marine.com (Sinor Marine Technologies, 2021 brochure) yours?** If yes, we redirect or consolidate. If no, we add brand disambiguation.
+2. ~~Is sinor-marine.com yours?~~ ANSWERED 2026-11-08: separate entity, no connection. Plan: no redirect. Remove its name from our pages and add brand disambiguation (full legal name in structured data and profiles). Still open: what is the "SMT" logo on the home page partner strip (see Phase 1 change pack, D4).
 3. **Priority services and markets.** My assumption (PROPOSAL): DP upgrades and retrofits, reference systems (supply, installation, commissioning), thruster control and service support, for UAE first, then GCC, then Indian Ocean and Far East operators working in the Gulf.
 4. **Budget for paid tests.** Amount unknown. The plan gives percentage splits, not figures.
 5. **Who edits the website** (you, a web person, an agency)? I draft; someone with login publishes after your approval.
-6. **Posting voices.** The About page names Naveen Thandarath as General Manager. Is he happy to post on LinkedIn and be named as an author? Which engineers may be named? I wrote "Naveen" into the plan as a proposed second voice only.
+6. ~~Posting voices~~ ANSWERED 2026-11-08: Naveen Thandarath stays named as General Manager but will not post on social media. Rahul posts, including on his behalf where needed. Open: which engineers may be named as article authors.
 
 ---
 
@@ -106,7 +106,7 @@ Buyer behaviour is UNVERIFIED for Sinor specifically. First-party evidence from 
 | Measure speed | Run PageSpeed Insights or Search Console Core Web Vitals (my attempt hit a quota limit). Fix the worst offenders. |
 | Analytics | Install GA4 and Google Search Console, verify the domain, submit the sitemap. Confirm whether tracking already exists. |
 | Shared enquiry path | Contact form with fields that qualify the lead (see 8.2), sales@ shared inbox, click-to-call and WhatsApp click tracking. |
-| Legacy domain | If sinor-marine.com is yours, fix its server errors and 301 it to the right pages. Remove "Sinor Marine Technology" wording from page text if it is present. |
+| Brand disambiguation | sinor-marine.com is a separate company (Rahul, 2026-11-08), so no redirect. Replace the DP page description that begins "Sinor Marine Technology", and use the full legal name in structured data and profiles. |
 | Resolve "Fuel Monitoring" | Build a page if it is a real offer, otherwise remove it from the form. |
 
 ### 5.3 Phase 2: on-page rebuild of money pages (weeks 3 to 8)
@@ -160,7 +160,7 @@ Buyers may increasingly ask AI tools technical questions (PROPOSAL assumption, U
 | Channel | Role | Priority | Notes |
 |---------|------|----------|-------|
 | Website and SEO | Capture and convert intent, host proof | 1 | Sections 5 and 8 |
-| LinkedIn (company page, Rahul, Naveen, engineers) | Reach and trust with the buyer group | 1 | Section 6.2 |
+| LinkedIn (company page, Rahul, engineers) | Reach and trust with the buyer group | 1 | Section 6.2 |
 | Email (permission based) | Nurture existing contacts and quote follow-up | 2 | Section 6.3 |
 | Partner co-marketing | Borrowed credibility and reach | 2 | With partner approval |
 | Events (follow-up engine) | Turn meetings into pipeline | 2 | Section 6.4 |
@@ -170,7 +170,7 @@ Buyers may increasingly ask AI tools technical questions (PROPOSAL assumption, U
 | WhatsApp Business | Fast enquiry channel common in the region | 3 | Click-to-chat tracked |
 
 ### 6.2 LinkedIn (the main organic engine)
-- **Cadence (PROPOSAL):** company page 3 posts a week, Rahul 2, Naveen 1, engineers occasionally as guest authors. Employees share company posts.
+- **Cadence (PROPOSAL):** company page 3 posts a week, Rahul 3 (including GM-level messages he posts on Naveen's behalf, with Naveen's approval), engineers occasionally as guest authors. Employees share company posts.
 - **Mix (PROPOSAL):** 40% proof (projects, installs, commissioning), 25% technical teaching, 15% partners, 10% people and culture, 10% direct offers.
 - **Rules from the brain files:** company voice confident and accurate, personal voice modest. Bold uses scripts/unicode_bold.py with a plain-text version supplied. Partner names written in full. No claims about equipment ownership unless confirmed (lesson from the ADIPEC job).
 - **Per post checklist:** one idea, one proof point, one invitation (comment, message or enquire). Facts checked by fact-reviewer before publishing.
@@ -200,7 +200,7 @@ Buyers may increasingly ask AI tools technical questions (PROPOSAL assumption, U
 
 ## 7. 90-day roadmap
 
-Start date assumed: week of 2026-11-09. Owners: R = Rahul, N = Naveen, W = web editor, E = Sinor engineer, M = marketing team (me and specialist agents).
+Start date assumed: week of 2026-11-09. Owners: R = Rahul, N = Naveen (approvals only, no posting), W = web editor, E = Sinor engineer, M = marketing team (me and specialist agents).
 
 ### Weeks 1 to 2 (9 to 22 November): decide, fix, measure
 | Task | Owner |

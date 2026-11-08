@@ -1,0 +1,37 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://sinormarine.com/#website",
+      "url": "https://sinormarine.com/",
+      "name": "Sinor Marine Services",
+      "publisher": {
+        "@id": "https://sinormarine.com/#organization"
+      },
+      "inLanguage": "en"
+    },
+    {
+      "@type": "ProfessionalService",
+      "@id": "https://sinormarine.com/#organization",
+      "name": "Sinor Marine Services Middle East FZCO",
+      "alternateName": "Sinor Marine Services",
+      "url": "https://sinormarine.com/",
+      "logo": "https://sinormarine.com/wp-content/uploads/2026/02/cropped-Untitled-design-28.png",
+      "image": "https://sinormarine.com/wp-content/uploads/2026/02/cropped-Untitled-design-28.png",
+      "description": "Dubai-based marine technology company for dynamic positioning, marine automation and electrical systems.",
+      "telephone": "+97146657162",
+      "email": "sales@sinormarine.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "601, Al Nokitha Building, Hamariya Port",
+        "addressLocality": "Dubai",
+        "addressCountry": "AE",
+        "postOfficeBoxNumber": "95842"
+      },
+      "sameAs": [
+        "https://www.linkedin.com/company/sinor-marine-services/"
+      ]
+    }
+  ]
+}

@@ -32,3 +32,5 @@ Products, partners, services, project names and terminology: none verified yet. 
 | Website's own claims (accuracy unverified): 50+ projects, 40+ countries, 98% client satisfaction, 15+ years DP experience on Home; 20+ years, 50+ team members and "from 2024" on About. They conflict with the stand panel and each other, see campaigns/2026-11-digital-seo-plan/research/site-audit-2026-11-08.md | https://sinormarine.com/ ; /about/ | 2026-11-08 |
 | About page names Naveen Thandarath as General Manager | https://sinormarine.com/about/ | 2026-11-08 |
 | Company address shown on the home page: 601, Al Nokitha Building, Hamariya Port, Dubai, UAE (also confirmed by Rahul to the earlier team on 2026-10-20) | https://sinormarine.com/ ; earlier repo company profile | 2026-11-08 |
+| USER-SUPPLIED: sinor-marine.com (Sinor Marine Technologies) is a separate entity with no connection to sinormarine.com. Open: what the "SMT" logo on the home page and stand represents | Rahul, chat | 2026-11-08 |
+| USER-SUPPLIED: Naveen Thandarath stays named as General Manager but does not use social media directly. Rahul posts, including on his behalf | Rahul, chat | 2026-11-08 |
