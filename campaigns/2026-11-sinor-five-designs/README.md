@@ -6,3 +6,8 @@ Designs: 1 Bridge Instrument (dark HUD), 2 Chart Room (light cartographic), 3 Bl
 Review status: self-reviewed by the builders and the Director, no independent web-qa-reviewer run.
 Files (HTML with embedded photos, about 3 to 8 MB each) are not in this repo by rule. They were sent to Rahul in chat.
 Open points for Rahul: choose a favourite; partner figures differ between the home page stats (1,589+ davits, 1,545+ Servogear, 883+ Scantrol) and the partner pages (more than 1,800, 1,750, 1,000), designs use the second set labelled as partner figures; permission to use partner photos was given in chat (no per-photo licences checked); Scantrol has almost no real photos and Matre few.
+
+## Premium round (2026-11-09)
+Rahul said round 1 was basic and asked for premium, animated, visually beautiful sites. Five fresh builders rebuilt all five directions with a premium brief (intro sequences, WebGL shaders, real 3D equipment models through the inlined three.js and companion3d.js, kinetic type, masked photo reveals, custom cursors, scroll-pure choreography). Director reviewed phone screenshots, sent fixes back to every builder, and ran a final audit of all five at 390 and 1440 wide: 0 console errors, 0 external requests, no horizontal overflow, scroll reaches the end, one h1.
+Lengths on a phone (screens): P1 14.3, P2 16.0, P3 23.1, P4 19.6, P5 14.9.
+Review status: builders and Director only, no independent web-qa-reviewer. Not tested: real iPhone, Safari, real GPU, intro sequences seen at real speed (software rendering only).

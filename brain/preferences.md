@@ -14,3 +14,4 @@ Each line: preference | date | what triggered it. Add lines only when approved o
 - 2026-11-08 | Rahul wants 3D items to hold exactly where he pauses, enter and leave slowly, and the site to look like final production work (his words: very dynamic, very professional, very controlled). Provisional.
 - 2026-11-08 | Rahul: scrolling and animation speed should feel like normal reading speed on PC and phone; phone layout needs proper borders and layout. Tied to scroll distance per change: give each message more scroll, turn models slowly, dissolve between objects. Provisional.
 - 2026-11-08 | Rahul allowed use of all photos including partner and maker photos for the Sinor website (his words: all photo you can use). Provisional.
+- 2026-11-09 | Rahul: first-round designs were basic, wants premium animated visually beautiful sites. Standard for future design work: intros, WebGL, real 3D, kinetic type, masked reveals, but scroll-pure with no drift. Provisional.
