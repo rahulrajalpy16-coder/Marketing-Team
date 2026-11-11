@@ -20,7 +20,7 @@ SECTIONS = {
     'DP': ('DP Systems', 'Dynamic Positioning systems keep a ship exactly where it needs to be. Here are the two systems we supply, with everything that comes with them.'),
     'PR': ('Position Reference Systems', 'These systems tell the DP system where the ship is. Each page shows the system and the equipment that comes with it, so you can see at a glance what you are buying and what we can support.'),
     'SN': ('Position Reference Sensors', 'Sensors that feed the DP system: motion, heading, wind and satellite antennas. They can be added to any system.'),
-    'CA': ('Control, HMI and automation', 'Screens, joysticks, controllers, drives and networking equipment around the DP and automation systems.'),
+    'CA': ('Control, screens and automation', 'Operator screens, joysticks, controllers, drives and networking equipment around the DP and automation systems.'),
     'SP': ('Power, spares and service kits', 'Service kits, power supplies, protection devices, cables and computers kept ready as spares.'),
 }
 ORDER = ['DP', 'PR', 'SN', 'CA', 'SP']
@@ -60,7 +60,7 @@ def leaf(l):
         vis = f'<div class="lp ph2"><img src="{b64(p)}"></div>'
     else:
         vis = f'<div class="lp ic">{icon(ic)}</div>'
-    pn_html = f'<div class="lno">Part no. {e(pno)}</div>' if pno else ''
+    pn_html = (f'<div class="lno">{e(pno[1:])}</div>' if pno.startswith('~') else f'<div class="lno">Part no. {e(pno)}</div>') if pno else ''
     return f'<div class="leaf"><div class="lh">{vis}<b>{e(clean(nm))}</b></div><span class="ln">{e(clean(note))}</span>{pn_html}</div>'
 
 
@@ -77,22 +77,38 @@ def tree(s, big=False, cfg=''):
 {cfg}
 <div class="root"><span>{e(clean(s['name']))}: complete system</span></div>
 <div class="groups" style="--n:{n}">{cols}</div>
-<div class="sup"><b>With every system we can support you with</b>{sup}</div></div>'''
+<div class="sup"><b>Depending on the system, we can support you with</b>{sup}</div></div>'''
+
+
+GL_HTML = '<div><b>Dynamic Positioning (DP)</b><span>Keeps a ship in one place, or moves it exactly where you want, by controlling the thrusters automatically.</span></div><div><b>DP class 1, 2 and 3</b><span>How much backup a DP system has. Higher classes can keep working after a failure; class 3 also separates parts physically, for example against fire.</span></div><div><b>Position reference system</b><span>Equipment that tells the DP system where the ship is: radar, laser, underwater sound, a wire to the seabed, or satellites.</span></div><div><b>Responder, transponder, reflector</b><span>A small coded beacon, or a set of mirror-like reflectors, placed on a platform or tool. The ship equipment looks for it and measures distance and direction.</span></div><div><b>Interrogator</b><span>The ship-side unit that asks transponders for their position and measures distance and direction (used in the RADius system).</span></div><div><b>USBL</b><span>An underwater positioning method. A unit under the hull uses sound to find transponders in the water.</span></div><div><b>ROV</b><span>Remotely operated underwater vehicle, a small robot submarine used for inspection and work below the surface.</span></div><div><b>GNSS and DGPS</b><span>Satellite positioning (GPS and similar systems). DGPS adds correction signals for better accuracy.</span></div><div><b>MRU (motion reference unit)</b><span>Measures how the ship moves: heave (up and down), roll (side to side tilt) and pitch (front to back tilt).</span></div><div><b>Gyro compass</b><span>A compass that finds true north without using magnetism, so it is not affected by the ship steel.</span></div><div><b>Taut wire</b><span>A weight on a wire is lowered to the seabed. The angle of the wire shows how the ship has moved.</span></div><div><b>IJ or IJS (independent joystick)</b><span>A separate backup joystick system with its own computer.</span></div><div><b>UPS</b><span>A battery backup that keeps equipment running if the power drops.</span></div><div><b>PLC and I/O</b><span>A programmable controller and its input and output cards, which read signals from sensors and switch equipment on and off.</span></div><div><b>HMI</b><span>The screen and controls a person uses to operate a system.</span></div><div><b>FMEA</b><span>A structured test of what happens if each part fails. It is used to prove a DP system to the class society.</span></div><div><b>Set-up and sea trial</b><span>Set-up means installing, configuring and testing equipment. A sea trial is a test with the ship at sea.</span></div><div><b>Spares and service kits</b><span>Parts that wear out, such as belts and seals, or that you keep on board in case of failure.</span></div>'
+
+ICON_FOR = {'B05': 'beacon', 'B17': 'beacon', 'B15': 'compass', 'C04': 'monitor', 'C05': 'mouse', 'C08': 'joystick', 'C23': 'joystick',
+            'C07': 'card', 'C09': 'card', 'C10': 'computer', 'C11': 'card', 'C13': 'computer', 'C17': 'power', 'D01': 'box', 'D02': 'box', 'D07': 'power'}
+
+
+def photo3(i):
+    p = f'{W}/img_ready/{i["old_id"]}.jpg'
+    if os.path.exists(p):
+        return f'<div class="ph"><img src="{b64(p)}"></div>'
+    return f'<div class="ph icp">{icon(ICON_FOR.get(i["old_id"], "box"))}</div>'
 
 
 def card3(i):
     pl = pn.PLAIN.get(i['old_id'], '')
-    return f'''<div class="card">{v2.photo(i)}{v2.meta(i)}<h3>{e(clean(i["name_show"]))}</h3>
+    return f'''<div class="card">{photo3(i)}{v2.meta(i)}<h3>{e(clean(i["name_show"]))}</h3>
 <p class="pl">{e(pl)}</p><p>{e(short(i.get("description"), 160))}</p>{v2.specs_html(i, 2)}
 <div class="models"><b>Supplied models</b> {e(short(clean(i.get("model_hint", "")), 100))}</div></div>'''
 
 
 CSS3 = v2.CSS + '''
+.ph.icp{background:#0c2038;border:.2mm solid var(--line)}.ph.icp svg{width:17mm;height:17mm}
+.gl{display:grid;grid-template-columns:1fr 1fr;gap:3mm;margin-top:5mm}.gl div{background:var(--card);border:.2mm solid var(--line);border-radius:1.8mm;padding:2.4mm 3mm}.gl b{display:block;font-size:9pt;color:#fff}.gl span{display:block;font-size:7.8pt;line-height:1.4;color:#bcd2e4;margin-top:.8mm}
+.id{font-size:6.6pt}.brand{font-size:6.8pt}.grp{font-size:6.2pt}.legt{font-size:6.2pt}.models{font-size:6.7pt}.disc{font-size:6.8pt}.what b{font-size:6.8pt}.card p{font-size:7.4pt;color:#bcd2e4}.card .pl{font-size:7.9pt}.sech{padding-top:2.5mm}.ft{font-size:6.8pt}
 .opener .g2{margin-top:7mm}.opener .g2 h4{font-size:7.4pt;letter-spacing:.18em;text-transform:uppercase;color:var(--cy);font-weight:600;border-bottom:.2mm solid var(--line);padding-bottom:1.2mm;margin-bottom:1.2mm}
 .tree{background:var(--card);border:.2mm solid var(--line);border-radius:2.4mm;padding:3mm;position:relative}
 .thalf{margin-top:3.5mm;min-height:116mm}.tbig{margin-top:2mm}
-.thead{display:flex;gap:4mm}.hero{height:40mm;width:54mm;flex:none}.hero.big{height:62mm;width:80mm}
-.tinfo h2{font-size:13pt;color:#fff;margin-top:1.2mm;line-height:1.15}.tbig .tinfo h2{font-size:17pt}
+.thead{display:flex;gap:4mm}.hero{height:40mm;width:54mm;flex:none}.hero.big{height:48mm;width:64mm}
+.tinfo h2{font-size:13pt;color:#fff;margin-top:1.2mm;line-height:1.15}.tbig .tinfo h2{font-size:16pt}
 .what{font-size:8pt;line-height:1.4;color:var(--tx);margin-top:1.4mm}.what b{color:var(--cy);font-size:6.2pt;letter-spacing:.1em;text-transform:uppercase;margin-right:1.2mm}
 .tbig .what{font-size:9pt}
 .plainx{font-size:7.6pt;line-height:1.4;color:var(--mu);margin-top:1.2mm}.tbig .plainx{font-size:8.4pt}
@@ -104,16 +120,15 @@ CSS3 = v2.CSS + '''
 .g:before{content:"";position:absolute;top:-3mm;left:50%;height:3mm;border-left:.4mm solid #2a6ea6}
 .gt{font-size:7.2pt;font-weight:700;color:#fff;background:#0c2a4a;border:.25mm solid #2a6ea6;border-radius:1.4mm;text-align:center;padding:1mm 1mm;line-height:1.2}
 .leaves{margin:1.4mm 0 0 2mm;padding-left:2mm;border-left:.4mm solid #2a6ea6}
-.leaf{position:relative;margin:0 0 2.2mm 0}.lh{display:flex;gap:1.6mm;align-items:center}.lh b{font-size:7.2pt;color:#fff;line-height:1.2;min-width:0;hyphens:auto;overflow-wrap:anywhere}.ln{display:block;font-size:6.5pt;color:var(--mu);line-height:1.3;margin-top:.7mm}
+.leaf{position:relative;margin:0 0 2.2mm 0}.lh{display:block;overflow:hidden;line-height:1.15;font-size:7pt}.lh .lp{float:left;margin-right:1.6mm}.lh b{font-size:7.8pt;color:#fff;line-height:1.2;overflow-wrap:break-word}.ln{display:block;clear:both;font-size:7.2pt;color:#bcd2e4;line-height:1.3;margin-top:.8mm}
 .leaf:before{content:"";position:absolute;left:-2mm;top:4.2mm;width:2mm;border-top:.4mm solid #2a6ea6}
 .lp{width:9.4mm;height:9.4mm;flex:none;border-radius:1.2mm;display:flex;align-items:center;justify-content:center;overflow:hidden}
 .lp.ic{background:#0c2038;border:.2mm solid var(--line);padding:1.1mm}.lp.ic svg{width:100%;height:100%}
 .lp.ph2{background:#fff}.lp.ph2 img{max-width:100%;max-height:100%;object-fit:contain}
 
-.lno{font-size:6pt;color:var(--cy);margin-top:.4mm}.tbig .lp{width:11mm;height:11mm}.tbig .lh b{font-size:8.2pt}.tbig .ln{font-size:7.4pt}.tbig .lno{font-size:6.8pt}.tbig .gt{font-size:8.2pt;padding:1.6mm 1mm}.tbig .leaf{margin-bottom:3.4mm}.tbig .leaf:before{top:5.4mm}.tbig .groups{gap:3mm}
+.lno{font-size:6.5pt;color:var(--cy);margin-top:.4mm}.tbig .lp{width:9mm;height:9mm}.tbig .lh .lp{margin-right:1.2mm}.tbig .lh b{font-size:7.7pt}.tbig .ln{font-size:7.5pt}.tbig .lno{font-size:6.8pt}.tbig .gt{font-size:8.2pt;padding:1.6mm 1mm}.tbig .leaf{margin-bottom:2.4mm}.tbig .leaf:before{top:4.4mm}.tbig .groups{gap:3mm}
 .sup{position:static;margin-top:4mm;display:flex;flex-wrap:wrap;gap:1.4mm;align-items:center;border-top:.2mm solid var(--line);padding-top:2.2mm}
-.thalf .sup{display:none}
-.sup b{font-size:6.4pt;color:var(--cy);letter-spacing:.08em;text-transform:uppercase;margin-right:1mm}.sup .chip{font-size:6.8pt}
+.sup b{font-size:6.8pt;color:var(--cy);letter-spacing:.08em;text-transform:uppercase;margin-right:1mm}.chip{font-size:7pt;border:.25mm solid #2a6ea6;color:#e8f1f8;border-radius:5mm;padding:.6mm 2.4mm;background:#0c2038}.thalf .sup{margin-top:3mm}
 .cfg{display:grid;grid-template-columns:repeat(3,1fr);gap:3mm;margin-top:3mm}.cfg div{background:#0a1c33;border:.2mm solid var(--line);border-radius:1.6mm;padding:2mm}.cfg b{font-size:7.6pt;color:#fff}.cfg p{font-size:6.6pt;line-height:1.35;color:var(--mu);margin-top:.8mm}
 .cfgl{font-size:6.2pt;letter-spacing:.14em;text-transform:uppercase;color:var(--cy);margin-top:3mm}
 .card .pl{font-size:7.6pt;color:#fff;font-weight:600;line-height:1.3;margin-top:1.1mm}
@@ -170,7 +185,7 @@ def layout():
 
 def build():
     pgs = layout()
-    first = 3
+    first = 4
     pageno = {}; secpage = {}
     for n_, (kind, sec, pl) in enumerate(pgs):
         no = first + n_
@@ -199,8 +214,9 @@ def build():
         rows += f'<div class="row2"><div class="n">{k}</div><div class="t"><b>{e(SECTIONS[sec][0])}</b><span>{e(SECTIONS[sec][1])} ({desc})</span></div><div class="p">p. {secpage[sec]:02d}</div></div>'
     rows += f'<div class="row2"><div class="n">i</div><div class="t"><b>Item index</b><span>Every reference with its page number.</span></div><div class="p">p. {idx_no:02d}</div></div>'
     toc = f'''<div class="sechead"><div class="lab" style="font-size:7pt;letter-spacing:.2em;text-transform:uppercase;color:var(--cy)">Contents</div><h1>How to read this catalogue</h1>
-<p>Each system page shows the system at the top and, underneath it like the branches of a tree, everything that comes with it: the main unit, screens and controls, targets, cables, and the spares and service kits that keep it running. Every part can also be ordered on its own. Quote the reference (for example PR-01) in your enquiry and we will quote exactly what you need. Photos and descriptions are drawn from manufacturer and distributor published information; photos are for identification and the delivered item may differ in detail.</p></div><div class="toc">{rows}</div>'''
+<p>If a word is new to you, see the Plain words guide on the next page. Each system page shows the system at the top and, underneath it like the branches of a tree, everything that comes with it: the main unit, screens and controls, targets, cables, and the spares and service kits that keep it running. Every part can also be ordered on its own. Quote the reference (for example PR-01) in your enquiry and we will quote exactly what you need. Photos and descriptions are drawn from manufacturer and distributor published information; photos are for identification and the delivered item may differ in detail.</p></div><div class="toc">{rows}</div>'''
     out.append(page(toc, 'Contents', 2))
+    out.append(page('<div class="sechead"><div class="lab" style="font-size:7pt;letter-spacing:.2em;text-transform:uppercase;color:var(--cy)">Plain words guide</div><h1>What the words mean</h1><p>A short guide to the terms used in this catalogue. If a word is new to you, it is probably here.</p></div><div class="gl">' + GL_HTML + '</div>', 'Plain words guide', 3))
     for n_, (kind, sec, pl) in enumerate(pgs):
         no = first + n_
         title, blurb = SECTIONS[sec]; k = ORDER.index(sec) + 1

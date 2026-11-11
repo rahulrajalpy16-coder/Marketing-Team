@@ -3,7 +3,7 @@ W='/tmp/work/products-brochure'
 F={o['id']:o for o in json.load(open(f'{W}/catalogue_final.json'))}
 F.update(json.load(open(f'{W}/extra_items.json')))
 spec=importlib.util.spec_from_file_location('sy',f'{W}/systems_v3.py'); sy=importlib.util.module_from_spec(spec); spec.loader.exec_module(sy)
-CARDS=[('PR','Parts for position reference systems',['B05','B03','B06','B08','B09','B17']),
+CARDS=[('PR','Parts and targets',['B05','B03','B06','B08','B09','B17']),
  ('SN','Motion reference units',['NEW1','NEW2','B11']),('SN','Heading',['B15']),('SN','Wind',['B12','B13','B14']),('SN','GNSS antenna',['B16']),
  ('CA','Operator stations and displays',['C03','C04','C05','C06','C08','C23']),
  ('CA','Controllers, PLC and I/O',['C07','C09','C10','C11','C12','C13','C14','C15','C16','C21','C22']),

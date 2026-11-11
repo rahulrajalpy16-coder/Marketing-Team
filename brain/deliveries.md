@@ -34,3 +34,5 @@ One line per delivered final file. Never delete a Release or asset without Rahul
 - 2026-11-11 | campaign 2026-11-sinor-products-brochure | draft v1 (23 pages, 3.6 MB) | sent to Rahul in chat with SendUserFile, not a GitHub Release, not published | file kept in /tmp/work only (media rule). Draft: 36 cards await photos.
 
 - 2026-11-11 | campaign 2026-11-sinor-products-brochure | draft v2 (25 pages, 4.3 MB) | sent to Rahul in chat with SendUserFile, not published, no GitHub Release | file kept in /tmp/work only. 48 of 64 cards have photos; 16 need photos from Rahul.
+
+- 2026-11-11 | campaign 2026-11-sinor-products-brochure | draft v3, system trees (30 pages, 4.4 MB) | sent to Rahul in chat with SendUserFile, not published, no GitHub Release | file kept in /tmp/work only. 16 cards and 123 of 151 branch items show icons instead of photos.

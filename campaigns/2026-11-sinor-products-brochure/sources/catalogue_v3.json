@@ -11,15 +11,15 @@
    "name": "NAVIS NavDP 4000 DP System",
    "brand": "NAVIS Engineering",
    "img": "A11",
-   "what": "The \"autopilot for holding position\". A Dynamic Positioning (DP) system keeps a ship in one place, or moves it exactly where you want, by controlling the thrusters automatically.",
-   "plain": "Built for DP class 1 to 3. Supplied as a new system or as an upgrade of an installed NAVIS system.",
+   "what": "Like cruise control, but for staying in one spot. A Dynamic Positioning (DP) system holds a ship in one place, or moves it exactly where you want, by controlling the thrusters automatically.",
+   "plain": "We supply it as a new system or as an upgrade of an installed NAVIS system.",
    "groups": [
     [
      "Operator station",
      [
       [
        "DP display",
-       "The screen the DP operator watches",
+       "The screen the DP operator watches (Hatteland shown)",
        "C03",
        "monitor",
        ""
@@ -52,7 +52,7 @@
       ],
       [
        "Control computer HT CO3",
-       "Newer computer used in upgrades",
+       "A control computer used in upgrades",
        null,
        "computer",
        ""
@@ -78,8 +78,8 @@
      [
       [
        "Position references",
-       "Radar, laser, acoustic, taut wire and GPS systems",
-       "A01",
+       "Radar, laser, underwater sound, wire and satellite systems",
+       null,
        "sensor",
        ""
       ],
@@ -157,8 +157,15 @@
        ""
       ],
       [
-       "Trials and FMEA support",
-       "Testing with the vessel and class",
+       "Installation and set-up",
+       "Our engineers fit and test it on board",
+       null,
+       "tool",
+       ""
+      ],
+      [
+       "Sea trials and FMEA support",
+       "Failure-mode testing with the vessel and class",
        null,
        "tool",
        ""
@@ -182,7 +189,7 @@
    "name": "Marine Technologies Bridge Mate DP System",
    "brand": "Marine Technologies",
    "img": "A12",
-   "what": "The \"autopilot for holding position\". Bridge Mate keeps a ship in one place, or moves it where you want, by controlling the thrusters automatically. Choose DP 1, DP 2 or DP 3 depending on how much backup you need.",
+   "what": "Like cruise control, but for staying in one spot. A Dynamic Positioning (DP) system holds a ship in one place, or moves it where you want, by controlling the thrusters automatically. Choose DP 1, DP 2 or DP 3 depending on how much backup you need.",
    "plain": "More backup computers and screens as the class goes up. Upgrading from DP 1 to DP 2 uses the same building blocks.",
    "groups": [
     [
@@ -314,8 +321,15 @@
        ""
       ],
       [
+       "Installation and set-up",
+       "Our engineers fit and test it on board",
+       null,
+       "tool",
+       ""
+      ],
+      [
        "Sea trials and FMEA support",
-       "Testing with the vessel and class",
+       "Failure-mode testing with the vessel and class",
        null,
        "tool",
        ""
@@ -476,7 +490,7 @@
    "brand": "Guidance Marine",
    "img": "A02",
    "what": "A laser that measures distance and direction to special reflectors fixed on a platform or vessel. It lets the ship hold its place very accurately close to the structure.",
-   "plain": "The Absolute Signature (AS) version recognises its own reflectors, so it ignores false reflections. We also supply refurbished CyScan Mk4 units.",
+   "plain": "The Absolute Signature (AS) version recognises its own reflectors, which helps it find and track the right target. We also supply refurbished CyScan Mk4 units.",
    "groups": [
     [
      "The main unit",
@@ -498,7 +512,7 @@
       [
        "Refurbished CyScan Mk4",
        "A renewed unit",
-       "B02",
+       null,
        "sensor",
        ""
       ]
@@ -766,7 +780,7 @@
       ],
       [
        "Main build assembly (antenna and beacon)",
-       "The mobile station on the vessel",
+       "The second station of the pair",
        null,
        "sensor",
        ""
@@ -804,9 +818,28 @@
       ],
       [
        "Operating tablet (Ex) with software",
-       "Safe-area tablet for the operator",
+       "Tablet for the operator, rated for hazardous areas",
        null,
        "monitor",
+       ""
+      ]
+     ]
+    ],
+    [
+     "Cables and installation",
+     [
+      [
+       "Deck, power and Ethernet cables",
+       "Everything needed to connect the system",
+       null,
+       "cable",
+       ""
+      ],
+      [
+       "Installation and set-up",
+       "Fixed and mobile station fitted and tested",
+       null,
+       "tool",
        ""
       ]
      ]
@@ -935,7 +968,7 @@
       [
        "RADius 2000 interrogator",
        "The unit on the ship (single or dual)",
-       "A06",
+       null,
        "sensor",
        ""
       ],
@@ -994,7 +1027,7 @@
       [
        "RADius 550X transponder",
        "Smaller transponder",
-       "B06",
+       null,
        "beacon",
        ""
       ],
@@ -1022,6 +1055,13 @@
        "Holds the unit in place",
        null,
        "tool",
+       ""
+      ],
+      [
+       "Trackerball mouse and compact keyboard",
+       "Pointer and small keyboard",
+       null,
+       "mouse",
        ""
       ]
      ]
@@ -1109,11 +1149,11 @@
        ""
       ],
       [
-       "Gate valve with actuator (DN 500)",
-       "Seals the hull opening",
+       "Hull valve with actuator",
+       "Seals the hull opening when the unit is raised",
        null,
        "tool",
-       ""
+       "~DN 500 gate valve"
       ]
      ]
     ],
@@ -1125,14 +1165,7 @@
        "Small unit fitted on the ROV or tool being tracked",
        "B09",
        "beacon",
-       "1K MF omni"
-      ],
-      [
-       "Motion sensor (MRU B2)",
-       "Corrects for ship movement",
-       "B11",
-       "sensor",
-       ""
+       "~1K MF omni"
       ]
      ]
     ],
@@ -1158,6 +1191,13 @@
        "Operator panel on the bridge",
        null,
        "keyboard",
+       ""
+      ],
+      [
+       "Motion sensor (MRU B2)",
+       "Corrects for the ship's own movement",
+       "B11",
+       "sensor",
        ""
       ]
      ]
@@ -1323,10 +1363,10 @@
       ],
       [
        "Signal outputs",
-       "RS422, 4-20 mA, 0-10 V or no-volt contact",
+       "Connects to the ship control system",
        null,
        "card",
-       ""
+       "~RS422, 4-20 mA, 0-10 V or contact"
       ]
      ]
     ],
@@ -1480,6 +1520,20 @@
        "Ready to connect",
        null,
        "cable",
+       ""
+      ],
+      [
+       "Signal converter",
+       "Adapts the signal for the ship system",
+       null,
+       "card",
+       ""
+      ],
+      [
+       "Power supply module",
+       "Powers the receiver",
+       null,
+       "power",
        ""
       ],
       [
@@ -1656,7 +1710,7 @@
   "legacy": false,
   "kind": "card",
   "ref": "PR-15",
-  "group": "Parts for position reference systems",
+  "group": "Parts and targets",
   "old_id": "B05",
   "name_show": "Series 4 Rechargeable Responder",
   "brand_show": "Guidance Marine"
@@ -1690,7 +1744,7 @@
   "legacy": false,
   "kind": "card",
   "ref": "PR-16",
-  "group": "Parts for position reference systems",
+  "group": "Parts and targets",
   "old_id": "B03",
   "name_show": "Eight-Prism Reflector Cluster",
   "brand_show": "Laser reflector prisms"
@@ -1737,7 +1791,7 @@
   "legacy": false,
   "kind": "card",
   "ref": "PR-17",
-  "group": "Parts for position reference systems",
+  "group": "Parts and targets",
   "old_id": "B06",
   "name_show": "RADius 700X Transponder",
   "brand_show": "Kongsberg Maritime"
@@ -1793,7 +1847,7 @@
   "legacy": false,
   "kind": "card",
   "ref": "PR-18",
-  "group": "Parts for position reference systems",
+  "group": "Parts and targets",
   "old_id": "B08",
   "name_show": "HPT 5000 USBL Transceiver",
   "brand_show": "Sonardyne"
@@ -1849,7 +1903,7 @@
   "legacy": false,
   "kind": "card",
   "ref": "PR-19",
-  "group": "Parts for position reference systems",
+  "group": "Parts and targets",
   "old_id": "B09",
   "name_show": "WSM 6+ Wideband Sub-Mini Transponder",
   "brand_show": "Sonardyne"
@@ -1905,7 +1959,7 @@
   "legacy": false,
   "kind": "card",
   "ref": "PR-20",
-  "group": "Parts for position reference systems",
+  "group": "Parts and targets",
   "old_id": "B17",
   "name_show": "cNODE Micro Transponder",
   "brand_show": "Kongsberg Maritime"
