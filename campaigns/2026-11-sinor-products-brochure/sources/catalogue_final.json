@@ -46,7 +46,8 @@
   "notes": "",
   "has_image": true,
   "display_name": "RadaScan View System",
-  "display_brand": "Guidance Marine"
+  "display_brand": "Guidance Marine",
+  "legacy": false
  },
  {
   "id": "A02",
@@ -95,7 +96,8 @@
   "notes": "",
   "has_image": true,
   "display_name": "CyScan Laser Reference System (AS and Mk4)",
-  "display_brand": "Guidance Marine"
+  "display_brand": "Guidance Marine",
+  "legacy": false
  },
  {
   "id": "A03",
@@ -144,7 +146,8 @@
   "notes": "No OEM-site image of the mini sensor found within budget; Guidance website has no dedicated Mini RadaScan page in the pages read.",
   "has_image": false,
   "display_name": "Mini RadaScan System",
-  "display_brand": "Guidance Marine"
+  "display_brand": "Guidance Marine",
+  "legacy": false
  },
  {
   "id": "A04",
@@ -189,7 +192,8 @@
   "notes": "",
   "has_image": true,
   "display_name": "SceneScan System",
-  "display_brand": "Guidance Marine"
+  "display_brand": "Guidance Marine",
+  "legacy": false
  },
  {
   "id": "A05",
@@ -234,7 +238,8 @@
   "notes": "",
   "has_image": true,
   "display_name": "Artemis 6S Microwave Reference",
-  "display_brand": "Guidance Marine"
+  "display_brand": "Guidance Marine",
+  "legacy": false
  },
  {
   "id": "A06",
@@ -278,7 +283,8 @@
   "notes": "",
   "has_image": false,
   "display_name": "RADius Relative Positioning System",
-  "display_brand": "Kongsberg Maritime"
+  "display_brand": "Kongsberg Maritime",
+  "legacy": false
  },
  {
   "id": "A07",
@@ -323,7 +329,8 @@
   "notes": "Images were not viewed (cannot download); picks are by page context. Reviewer should eyeball.",
   "has_image": true,
   "display_name": "Fanbeam 5 Laser Reference System",
-  "display_brand": "Fanbeam"
+  "display_brand": "Fanbeam",
+  "legacy": false
  },
  {
   "id": "A08",
@@ -372,7 +379,8 @@
   "notes": "Image contents are not described in alt text; check visually before use. Description from search excerpts of the OEM pages (full page not separately scraped).",
   "has_image": true,
   "display_name": "Ranger 2 USBL System",
-  "display_brand": "Sonardyne"
+  "display_brand": "Sonardyne",
+  "legacy": false
  },
  {
   "id": "A09",
@@ -421,7 +429,8 @@
   "notes": "Discrepancies: web page says altitude 0.4/230 m and heading bullet 0.04 deg, datasheet (01/2026) says 0.4/200 m and 0.05 deg; power on web page is 15 W nominal/35 W max versus datasheet 18/30 W. Datasheet used for specs. Brochure should avoid the altitude figure or cite the datasheet.",
   "has_image": true,
   "display_name": "SPRINT-Nav DP",
-  "display_brand": "Sonardyne"
+  "display_brand": "Sonardyne",
+  "legacy": false
  },
  {
   "id": "A10",
@@ -470,21 +479,22 @@
   "notes": "Page scraped in full.",
   "has_image": true,
   "display_name": "Navigation Sensor Hub (NSH)",
-  "display_brand": "Sonardyne"
+  "display_brand": "Sonardyne",
+  "legacy": false
  },
  {
   "id": "A11",
   "section": "Package systems",
   "name": "NAVIS NavDP Dynamic Positioning System",
   "brand": "NAVIS Engineering",
-  "model_hint": "NavDP 4000 series DP1/DP2, DP upgrade and critical spares, control computer HT CO3",
+  "model_hint": "NavDP 4000 series DP1/DP2, DP upgrade and critical spares",
   "register_rows": 324,
   "search_hints": [
    "NAVIS Engineering NavDP 4000 dynamic positioning system"
   ],
   "official_name": "NavDP 4000 Series Dynamic Positioning Systems",
   "brand_shown": "NAVIS Engineering",
-  "description": "The Navis NavDP 4000 Series is a modular dynamic positioning system supplied as a stand-alone or integrated solution for newbuilds and retrofits. Configurations are offered to meet IMO, DNV, BV, LRS, CCS, IRS and RMRS requirements for DP classes 1 to 3. It includes a built-in simulator mode and a DNV type-approved autopilot, and Navis states it supplies class approval, commissioning and crew training.",
+  "description": "The NAVIS NavDP 4000 Series is a modular dynamic positioning system supplied as a stand-alone or integrated solution for newbuilds and retrofits. Configurations are offered to meet IMO, DNV, BV, LRS, CCS, IRS and RMRS requirements for DP classes 1 to 3. It includes a built-in simulator mode and a DNV type-approved autopilot, and NAVIS states it supplies class approval, commissioning and crew training.",
   "features": [
    "Configurations for DP class 1 to 3",
    "Touch-screen display and compact control panel",
@@ -514,7 +524,8 @@
   "notes": "No clean OEM product shot found. The Navis_DP.pdf brochure on navisincontrol.com has screenshots and diagrams that could be extracted by a human with image access.",
   "has_image": false,
   "display_name": "NavDP 4000 Series DP System",
-  "display_brand": "NAVIS Engineering"
+  "display_brand": "NAVIS Engineering",
+  "legacy": false
  },
  {
   "id": "A12",
@@ -532,7 +543,7 @@
   "features": [
    "DP and joystick systems per IMO MSC/Circ. 645",
    "Distributed architecture with redundancy and segregation",
-   "Type-approved DP in all classes",
+   "Marine Technologies states type-approved DP in all classes",
    "Integrates with Bridge Mate thruster control, autopilot and IBS",
    "Remote access and monitoring support service"
   ],
@@ -542,7 +553,8 @@
   "notes": "No numeric specs on the pages read. The OEM brochure PDF (https://www.marine-technologies.com/downloads/brochures/bridge-mate-dp-brochure.pdf) appeared in search but was not read.",
   "has_image": true,
   "display_name": "Bridge Mate DP Systems",
-  "display_brand": "Marine Technologies"
+  "display_brand": "Marine Technologies",
+  "legacy": false
  },
  {
   "id": "A13",
@@ -591,7 +603,8 @@
   "notes": "The third image URL has no file extension (as shown by the tool). MK1 Z model is TW-1.0 with a 460 kg depressor on a reseller page, so do not mix MK1 and MK2 figures.",
   "has_image": true,
   "display_name": "Z-Range Electric Taut Wire",
-  "display_brand": "SMT Specialist Marine Technologies"
+  "display_brand": "SMT",
+  "legacy": false
  },
  {
   "id": "A14",
@@ -639,8 +652,9 @@
   "brand_note": "Ronav R1 confirmed on the Ronav data sheet (ronav.ae, a UAE marine positioning brand). No clean product photo of the R1 receiver or display was found; the only official image is the RX45 GNSS antenna that ships in the R1 system.",
   "notes": "Receiver and display images exist only inside the datasheet PDF (not extractable as URLs here). Request a photo from Ronav if the receiver itself must be shown.",
   "has_image": false,
-  "display_name": "Ronav R1 GNSS/DGPS Receiver System",
-  "display_brand": "Ronav"
+  "display_name": "Ronav R1 GNSS/DGPS System (receiver and RX45 antenna)",
+  "display_brand": "Ronav",
+  "legacy": false
  },
  {
   "id": "A15",
@@ -681,7 +695,8 @@
   "notes": "Numeric specs not on the pages read. A search snippet of the brochure (scribd copy, not read in full) mentions 10 cm accuracy; not used as a spec. Kit contents (antenna etc.) not verified.",
   "has_image": true,
   "display_name": "Seastar 9410-AUT GNSS Receiver",
-  "display_brand": "Fugro"
+  "display_brand": "Fugro",
+  "legacy": false
  },
  {
   "id": "A16",
@@ -730,21 +745,22 @@
   "notes": "Register says 'LD900 (set)'; set contents not verified.",
   "has_image": false,
   "display_name": "LD900 Quad-Band GNSS Receiver",
-  "display_brand": "Veripos"
+  "display_brand": "Veripos",
+  "legacy": false
  },
  {
   "id": "A17",
   "section": "Package systems",
   "name": "Clear-Com Intercom System",
   "brand": "Clear-Com",
-  "model_hint": "Master station, Encore 800 speaker stations (slave units)",
+  "model_hint": "Encore analog partyline intercom: main station and speaker stations (model names to be confirmed per order)",
   "register_rows": 17,
   "search_hints": [
    "Clear-Com Encore master station intercom"
   ],
   "official_name": "Clear-Com Encore analog partyline system (main station and speaker stations)",
   "brand_shown": "Clear-Com",
-  "description": "Encore is Clear-Com's analog partyline intercom family. A two- or four-channel main station supplies intercom and power to connected beltpacks, wall stations and remote or speaker stations over standard two-conductor shielded cable. Systems are full-duplex and can be expanded or tied to other partyline systems.",
+  "description": "Encore is Clear-Com's analog partyline intercom family. Systems are full-duplex and can be expanded or tied to other partyline systems.",
   "features": [
    "MS-702 2-channel 1RU and MS-704 4-channel 2RU main stations, both with built-in speaker",
    "Full-duplex hands-free communication",
@@ -760,10 +776,6 @@
    {
     "k": "MS-704",
     "v": "4-channel, 2RU main station"
-   },
-   {
-    "k": "MS-702 capacity (retailer)",
-    "v": "up to 55 beltpacks or 10 speaker stations"
    }
   ],
   "status": "FOUND",
@@ -771,14 +783,15 @@
   "notes": "The 55 beltpacks / 10 speaker stations figure came from a retailer snippet (soundpro.com), not read in full; do not print without checking.",
   "has_image": true,
   "display_name": "Encore Intercom System",
-  "display_brand": "Clear-Com"
+  "display_brand": "Clear-Com",
+  "legacy": false
  },
  {
   "id": "A18",
   "section": "Package systems",
   "name": "HLD-900 X-Band Radar (24 in, 10 kW / 25 kW)",
   "brand": "Highlander",
-  "model_hint": "HLD-900 24in X-band radar, black box version",
+  "model_hint": "HLD-900 X-band radar, black box version (10 kW / 25 kW)",
   "register_rows": 4,
   "search_hints": [
    "Highlander HLD-900 X-band radar"
@@ -820,7 +833,8 @@
   "notes": "No OEM image of the exact 900 X-band black box found; the OEM image listed is the 900S variant, shown only as a style fallback. Distributor photos are usable but not OEM.",
   "has_image": false,
   "display_name": "HLD-900 X-Band Radar",
-  "display_brand": "Highlander"
+  "display_brand": "Highlander",
+  "legacy": false
  },
  {
   "id": "B01",
@@ -865,7 +879,8 @@
   "notes": "",
   "has_image": true,
   "display_name": "RadaScan View Sensor",
-  "display_brand": "Guidance Marine"
+  "display_brand": "Guidance Marine",
+  "legacy": false
  },
  {
   "id": "B02",
@@ -910,7 +925,8 @@
   "notes": "",
   "has_image": true,
   "display_name": "CyScan AS Laser Sensor",
-  "display_brand": "Guidance Marine"
+  "display_brand": "Guidance Marine",
+  "legacy": false
  },
  {
   "id": "B03",
@@ -937,7 +953,8 @@
   "notes": "Kongsberg image is small (333 px); no specs read (datasheet PDF not opened).",
   "has_image": false,
   "display_name": "Eight-Prism Reflector Cluster",
-  "display_brand": "Kongsberg SpotTrack"
+  "display_brand": "Laser reflector prisms",
+  "legacy": false
  },
  {
   "id": "B04",
@@ -977,7 +994,8 @@
   "notes": "",
   "has_image": true,
   "display_name": "SceneScan Sensor",
-  "display_brand": "Guidance Marine"
+  "display_brand": "Guidance Marine",
+  "legacy": false
  },
  {
   "id": "B05",
@@ -1014,7 +1032,8 @@
   "notes": "No product photo of the responder from an OEM page; Series 4 detail from search snippets only.",
   "has_image": false,
   "display_name": "Series 4 Rechargeable Responder",
-  "display_brand": "Guidance Marine"
+  "display_brand": "Guidance Marine",
+  "legacy": false
  },
  {
   "id": "B06",
@@ -1054,7 +1073,8 @@
   "notes": "",
   "has_image": false,
   "display_name": "RADius 700X Transponder",
-  "display_brand": "Kongsberg Maritime"
+  "display_brand": "Kongsberg Maritime",
+  "legacy": false
  },
  {
   "id": "B07",
@@ -1094,7 +1114,8 @@
   "notes": "",
   "has_image": false,
   "display_name": "RADius 2000 Interrogator",
-  "display_brand": "Kongsberg Maritime"
+  "display_brand": "Kongsberg Maritime",
+  "legacy": false
  },
  {
   "id": "B08",
@@ -1143,7 +1164,8 @@
   "notes": "Page scraped in full. Check images visually.",
   "has_image": true,
   "display_name": "HPT 5000 USBL Transceiver",
-  "display_brand": "Sonardyne"
+  "display_brand": "Sonardyne",
+  "legacy": false
  },
  {
   "id": "B09",
@@ -1192,14 +1214,15 @@
   "notes": "Page scraped in full. Widths and heights marked 0 were not reported by the tools.",
   "has_image": false,
   "display_name": "WSM 6+ Wideband Sub-Mini Transponder",
-  "display_brand": "Sonardyne"
+  "display_brand": "Sonardyne",
+  "legacy": false
  },
  {
   "id": "B11",
   "section": "Position reference and sensors",
   "name": "Inertial Labs MRU B1 / B2 Motion Reference Unit",
   "brand": "Inertial Labs (verify)",
-  "model_hint": "MRU B1 (roll and pitch), MRU B2 (with heave for HPR)",
+  "model_hint": "MRU-B2 (with heave for HPR)",
   "register_rows": 176,
   "search_hints": [
    "Inertial Labs MRU B2 motion reference unit"
@@ -1241,7 +1264,8 @@
   "notes": "Image pixel sizes not reported in tool output (set to 0). The B1 / B1.1 output mapping comes from a markdown-flattened table; re-check against the datasheet (inertiallabs.com/mru-datasheet) before printing.",
   "has_image": true,
   "display_name": "MRU-B2 Motion Reference Unit",
-  "display_brand": "Inertial Labs"
+  "display_brand": "Inertial Labs",
+  "legacy": false
  },
  {
   "id": "B12",
@@ -1290,7 +1314,8 @@
   "notes": "Page also shows a price; not recorded here.",
   "has_image": true,
   "display_name": "86106 Ultrasonic Wind Sensor",
-  "display_brand": "R.M. Young"
+  "display_brand": "R.M. Young",
+  "legacy": false
  },
  {
   "id": "B13",
@@ -1335,7 +1360,8 @@
   "notes": "Datasheet PDF link on the page (Datasheet-OMC-118-V20210805.pdf) not opened.",
   "has_image": true,
   "display_name": "OMC-118 Ultrasonic Wind Sensor",
-  "display_brand": "Observator"
+  "display_brand": "Observator",
+  "legacy": false
  },
  {
   "id": "B14",
@@ -1380,7 +1406,8 @@
   "notes": "WSS 550 facts (IP66, DNV GL approved, heating) come from the card on the WSS 750 page; separate WSS 550 page not read.",
   "has_image": true,
   "display_name": "WSS 750 / 550 Ultrasonic Wind Sensor",
-  "display_brand": "DEIF"
+  "display_brand": "DEIF",
+  "legacy": false
  },
  {
   "id": "B15",
@@ -1429,7 +1456,8 @@
   "notes": "OEM image is of the NX; distributor image is of the original Std 22. Pick according to which model Sinor supplies.",
   "has_image": false,
   "display_name": "Standard 22 Gyro Compass",
-  "display_brand": "Raytheon Ansch\u00fctz"
+  "display_brand": "Raytheon Ansch\u00fctz",
+  "legacy": false
  },
  {
   "id": "B16",
@@ -1470,14 +1498,15 @@
   "notes": "Primary image URL is AVIF format (fm=avif); may need conversion.",
   "has_image": true,
   "display_name": "GA830 GNSS Antenna",
-  "display_brand": "Trimble"
+  "display_brand": "Trimble",
+  "legacy": false
  },
  {
   "id": "B17",
   "section": "Position reference and sensors",
   "name": "Kongsberg cNode Transponder",
   "brand": "Kongsberg Maritime",
-  "model_hint": "cNode Micro 31-180; cNode Minis 34-180",
+  "model_hint": "cNODE Micro; cNODE MiniS",
   "register_rows": 20,
   "search_hints": [
    "Kongsberg cNode Micro transponder"
@@ -1519,7 +1548,8 @@
   "notes": "Image sizes are small tiles. The MiniS page did not list a frequency band or dimensions.",
   "has_image": false,
   "display_name": "cNODE Micro Transponder",
-  "display_brand": "Kongsberg Maritime"
+  "display_brand": "Kongsberg Maritime",
+  "legacy": false
  },
  {
   "id": "B18",
@@ -1560,7 +1590,8 @@
   "notes": "Whether the photos show the MK15B specifically is not stated. The page appears to be generic to the lightweight Taut Wire. Pneumatic servo element means it needs an air supply, unlike the SMT electric unit.",
   "has_image": true,
   "display_name": "Lightweight Taut Wire",
-  "display_brand": "Bandak"
+  "display_brand": "Bandak",
+  "legacy": false
  },
  {
   "id": "C03",
@@ -1609,7 +1640,8 @@
   "notes": "Third image URL was seen in the product list page; dimensions not reported.",
   "has_image": true,
   "display_name": "JH 19T27 MMD 19 in Marine Monitor",
-  "display_brand": "Hatteland Display"
+  "display_brand": "Hatteland Display",
+  "legacy": false
  },
  {
   "id": "C04",
@@ -1630,26 +1662,14 @@
    "Type approved IEC 60945",
    "Bracket and cable kit per register (not verified)"
   ],
-  "specs": [
-   {
-    "k": "Example resolution",
-    "v": "1280 x 1024"
-   },
-   {
-    "k": "Example power",
-    "v": "23 W typical (JH 19T27 MMD)"
-   },
-   {
-    "k": "Example protection",
-    "v": "IP66 front"
-   }
-  ],
+  "specs": [],
   "status": "PARTIAL",
   "brand_note": "Guidance Marine is the CyScan DP sensor maker; its part list (copy hosted by smtssg.com) shows a 'Marine integrated PC + touch screen monitor - Hatteland' (24-0259-4) and Hatteland mounting brackets, but does not list 20-0310 or MB-15H-TRS-24VDC. So the Hatteland link for the 19 in touch monitor is plausible but unverified. The 15 in MB-15H-TRS-24VDC was not identified.",
   "notes": "Image is generic, label it as such. Ask Guidance Marine for the datasheet of 20-0310 to confirm maker and model.",
   "has_image": false,
   "display_name": "19 in Marine Touch Screen Monitor",
-  "display_brand": "Guidance Marine"
+  "display_brand": "Guidance Marine",
+  "legacy": false
  },
  {
   "id": "C05",
@@ -1679,7 +1699,8 @@
   "notes": "All images generic and must be labelled so. Ask Guidance Marine for the datasheets of 38-0037-4 and 38-0038-4.",
   "has_image": false,
   "display_name": "Trackerball Mouse and Compact Keyboard",
-  "display_brand": "Guidance Marine"
+  "display_brand": "Guidance Marine",
+  "legacy": false
  },
  {
   "id": "C06",
@@ -1728,7 +1749,8 @@
   "notes": "Operating temperature 0-38 C is narrower than other marine kit; relevant for installation advice.",
   "has_image": true,
   "display_name": "ST-C5VRS-600 VGA Extender",
-  "display_brand": "NTI"
+  "display_brand": "NTI",
+  "legacy": false
  },
  {
   "id": "C07",
@@ -1767,7 +1789,8 @@
   "notes": "Image 1 is a Dubai/India reseller photo of the exact model. Image 2 is a marketplace image, use only if image 1 is rejected. Search snippets from other resellers describe the RMP201-8 as part of Kongsberg's RIO200 distributed I/O system but that was seen only as a search excerpt, not on a page read, so it is not used as a fact.",
   "has_image": false,
   "display_name": "RMP201-8 Remote I/O Module",
-  "display_brand": "Kongsberg Maritime"
+  "display_brand": "Kongsberg Maritime",
+  "legacy": false
  },
  {
   "id": "C08",
@@ -1815,7 +1838,8 @@
   "notes": "Prota Marine is a Dubai/Singapore spares dealer, so this is a distributor image, not Kongsberg's. Surge/sway/yaw wording comes from a Scribd operator manual search excerpt, not a page fully read. Search excerpt for part 339881 mentions a 6.5 inch colour display and heading wheel, which may be the newer cJoy generation; not used on this card because not verified.",
   "has_image": false,
   "display_name": "cJoy Joystick Operator Terminal",
-  "display_brand": "Kongsberg Maritime"
+  "display_brand": "Kongsberg Maritime",
+  "legacy": false
  },
  {
   "id": "C09",
@@ -1837,7 +1861,8 @@
   "notes": "Weak sourcing. The only page fully read is a Chinese reseller page whose technical claims (IP40, -40 to 125 C, TTL/CMOS) look generic and were NOT used. Channel counts rely on model names and reseller titles. Recommend Sinor treat this card as a family card and confirm specs from the Rolls-Royce manual. Image 1 shows three modules in one picture, which fits the family card.",
   "has_image": false,
   "display_name": "RRAIO16 / RRDIO15 / RRRLY8 I/O Modules",
-  "display_brand": "Rolls-Royce"
+  "display_brand": "Rolls-Royce",
+  "legacy": false
  },
  {
   "id": "C10",
@@ -1851,7 +1876,7 @@
   ],
   "official_name": "GE Fanuc Series 90-30 CPU 374 (IC693CPU374)",
   "brand_shown": "GE Fanuc (now Emerson)",
-  "description": "The IC693CPU374 is a single-slot CPU for the Series 90-30 PLC with an embedded Ethernet controller. It runs at 133 MHz with 240 KB of user memory and supports Modbus/TCP, SRTP and Ethernet Global Data. It is a long-established legacy PLC part.",
+  "description": "The IC693CPU374 is a single-slot CPU for the Series 90-30 PLC with an embedded Ethernet controller. It runs at 133 MHz with 240 KB of user memory and supports Modbus/TCP, SRTP and Ethernet Global Data.",
   "features": [
    "Single-slot CPU with embedded Ethernet",
    "Auto-sensing 10/100 Mbps Ethernet",
@@ -1886,7 +1911,7 @@
   "has_image": false,
   "display_name": "Series 90-30 CPU IC693CPU374",
   "display_brand": "GE Fanuc",
-  "legacy": true
+  "legacy": false
  },
  {
   "id": "C11",
@@ -1936,7 +1961,7 @@
   "has_image": false,
   "display_name": "VersaMax IC200ALG240 Analog Input",
   "display_brand": "GE Fanuc",
-  "legacy": true
+  "legacy": false
  },
  {
   "id": "C12",
@@ -1970,7 +1995,7 @@
   "has_image": false,
   "display_name": "Advanced Micro Controller (AMC)",
   "display_brand": "Converteam",
-  "legacy": true
+  "legacy": false
  },
  {
   "id": "C13",
@@ -2068,7 +2093,8 @@
   "notes": "Image 1 URL appears on the page markdown; its pixel size was not reported, so width and height are 0. Image 2 is a verified 300 px version.",
   "has_image": true,
   "display_name": "SIMATIC S7-1200 CPU 1214C",
-  "display_brand": "Siemens"
+  "display_brand": "Siemens",
+  "legacy": false
  },
  {
   "id": "C15",
@@ -2109,7 +2135,8 @@
   "notes": "No woodward.com page was read. Image 1 is the P1 shot (8440-2085), size not reported.",
   "has_image": false,
   "display_name": "easYgen-3500XT-P1 Genset Controller",
-  "display_brand": "Woodward"
+  "display_brand": "Woodward",
+  "legacy": false
  },
  {
   "id": "C16",
@@ -2193,7 +2220,7 @@
   "has_image": false,
   "display_name": "VACON NXP and VLT Drives",
   "display_brand": "Danfoss",
-  "legacy": true
+  "legacy": false
  },
  {
   "id": "C18",
@@ -2242,7 +2269,8 @@
   "notes": "Image URLs contain parentheses, so encode them if the downloader needs it.",
   "has_image": true,
   "display_name": "EDS-205A Ethernet Switch",
-  "display_brand": "Moxa"
+  "display_brand": "Moxa",
+  "legacy": false
  },
  {
   "id": "C19",
@@ -2291,7 +2319,8 @@
   "notes": "Eaton facts come from a search excerpt of the Eaton SKU page and datasheet listing, not a full read. Suggest splitting APC and Eaton into two cards if the layout allows.",
   "has_image": false,
   "display_name": "Smart-UPS SRT and 9SX UPS",
-  "display_brand": "APC and Eaton"
+  "display_brand": "APC and Eaton",
+  "legacy": false
  },
  {
   "id": "C20",
@@ -2340,7 +2369,8 @@
   "notes": "Image 2 is larger and preferred. The page showed it out of stock, price omitted on purpose.",
   "has_image": true,
   "display_name": "PRO-NDC-1E2K NMEA Multiplexer",
-  "display_brand": "Actisense"
+  "display_brand": "Actisense",
+  "legacy": false
  },
  {
   "id": "C21",
@@ -2389,7 +2419,8 @@
   "notes": "Image is from resellers, no Rexroth image of this exact card was seen. The earlier datasheet I scraped (RE 29743, VT 11021) was a different amplifier and is not used.",
   "has_image": false,
   "display_name": "VT-VRRA1-537-20 Valve Amplifier",
-  "display_brand": "Bosch Rexroth"
+  "display_brand": "Bosch Rexroth",
+  "legacy": false
  },
  {
   "id": "C22",
@@ -2434,7 +2465,8 @@
   "notes": "The page's conversion time value (4000 ms/unit) looks like a unit error, so it is left out.",
   "has_image": true,
   "display_name": "CJ1W-MAD42 Analog I/O Unit",
-  "display_brand": "Omron"
+  "display_brand": "Omron",
+  "legacy": false
  },
  {
   "id": "C23",
@@ -2460,7 +2492,8 @@
   "notes": "PARTIAL: only variant images from resellers and no Caldaro product page for the exact model. Descriptions come from search excerpts and Caldaro's home page. Confirm Sinor's exact suffix before using any image.",
   "has_image": false,
   "display_name": "S50JAK-ZU Joystick",
-  "display_brand": "Caldaro"
+  "display_brand": "Caldaro",
+  "legacy": false
  },
  {
   "id": "C24",
@@ -2509,7 +2542,8 @@
   "notes": "Image 2 is the USB-controlled sibling, use only as a fallback; its page shows a bigger render. Ex-proof tower light still needs its own research pass.",
   "has_image": false,
   "display_name": "ST56L LED Tower Light",
-  "display_brand": "Qlight"
+  "display_brand": "Qlight",
+  "legacy": false
  },
  {
   "id": "D01",
@@ -2531,7 +2565,8 @@
   "notes": "Image is a reseller photo, not Guidance Marine artwork; view it before use and consider a plain flat-lay or text-only card. Sinor's register lists no radome seal or tilt belt for CyScan, matching this kit. Reseller page shows a placeholder price which was ignored.",
   "has_image": false,
   "display_name": "CyScan MK4 Service Kit",
-  "display_brand": "Guidance Marine"
+  "display_brand": "Guidance Marine",
+  "legacy": false
  },
  {
   "id": "D02",
@@ -2553,7 +2588,8 @@
   "notes": "No kit image exists in what I found, so the card should use a sensor image or text-only. Features and specs marked as parent sensor are from the RadaScan View page, not the kit. Ask Guidance Marine or a service partner for the official kit part number and contents list.",
   "has_image": false,
   "display_name": "RadaScan Service Kit",
-  "display_brand": "Guidance Marine"
+  "display_brand": "Guidance Marine",
+  "legacy": false
  },
  {
   "id": "D03",
@@ -2602,7 +2638,8 @@
   "notes": "No Mean Well-hosted image URL surfaced (datasheet PDF gave none; product search page scrape returned no images). Digikey image is first choice. Datasheet text was read in full.",
   "has_image": true,
   "display_name": "NDR-480-24 DIN-Rail Power Supply",
-  "display_brand": "Mean Well"
+  "display_brand": "Mean Well",
+  "legacy": false
  },
  {
   "id": "D04",
@@ -2651,7 +2688,8 @@
   "notes": "Images are sizes up to 1500 px (image URL says b1500). Confirm with Sinor whether supplied units are Gen 3 (2866763) or QUINT4.",
   "has_image": true,
   "display_name": "QUINT POWER 24 V / 10 A",
-  "display_brand": "Phoenix Contact"
+  "display_brand": "Phoenix Contact",
+  "legacy": false
  },
  {
   "id": "D05",
@@ -2750,7 +2788,8 @@
   "notes": "Width 1024 is read from the file name prefix, height unknown. The WAGO URLs carry a long context token and must be used verbatim. Order of images: EN first, DE second.",
   "has_image": false,
   "display_name": "750-400 Digital Input Module",
-  "display_brand": "WAGO"
+  "display_brand": "WAGO",
+  "legacy": false
  },
  {
   "id": "D07",
@@ -2778,7 +2817,8 @@
   "notes": "IMAGE SHOWS: Schneider Electric Acti9 iC60N 2P 2A C curve, A9F74202. Image is small (369 px). A 64 px gif rendition also exists. Verify the HK page is acceptable; the same image ID likely serves other se.com country pages.",
   "has_image": false,
   "display_name": "Acti9 iC60N Circuit Breaker",
-  "display_brand": "Schneider Electric"
+  "display_brand": "Schneider Electric",
+  "legacy": false
  },
  {
   "id": "D08",
@@ -2827,7 +2867,8 @@
   "notes": "IMAGE SHOWS: Pasternack PE3C0105 LMR-400 N-male to N-male assembly. Pasternack is the assembly maker, not Sinor's actual supplier. Image is 500 px wide, small for print. Do not imply this is a marine-grade cable.",
   "has_image": true,
   "display_name": "LMR-400 Cable Assemblies",
-  "display_brand": "Pasternack and Times Microwave"
+  "display_brand": "Pasternack and Times Microwave",
+  "legacy": false
  },
  {
   "id": "D09",

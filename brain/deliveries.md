@@ -32,3 +32,5 @@ One line per delivered final file. Never delete a Release or asset without Rahul
 | 2026-11-07 | 2026-11-adipec26-thanks | adipec26-thanks_linkedin_photowall_v2_9x16_v7.mp4 (27.0 s, 1080x1920, -15.0 LUFS, TP -1.8) | 40164090 | b52787525976493d72b6796d5d77f5a1062dad709aad4054ad7533a2c24d89fc | Sent via SendUserFile | QA v7 passed (lower-resolution review) |
 
 - 2026-11-11 | campaign 2026-11-sinor-products-brochure | draft v1 (23 pages, 3.6 MB) | sent to Rahul in chat with SendUserFile, not a GitHub Release, not published | file kept in /tmp/work only (media rule). Draft: 36 cards await photos.
+
+- 2026-11-11 | campaign 2026-11-sinor-products-brochure | draft v2 (25 pages, 4.3 MB) | sent to Rahul in chat with SendUserFile, not published, no GitHub Release | file kept in /tmp/work only. 48 of 64 cards have photos; 16 need photos from Rahul.

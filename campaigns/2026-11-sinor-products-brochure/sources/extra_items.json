@@ -18,7 +18,7 @@
   "specs": [
    {
     "k": "Outputs",
-    "v": "Heave, with heave velocity and acceleration"
+    "v": "Heave, with velocity and acceleration (datasheet); the website table also lists surge and sway"
    },
    {
     "k": "Heave accuracy",
@@ -70,24 +70,5 @@
    }
   ],
   "model_hint": "MRU-B1.1 (pitch and roll sensor)"
- },
- "C01": {
-  "section": "",
-  "legacy": false,
-  "status": "FOUND",
-  "register_rows": 0,
-  "search_hints": [],
-  "brand_note": "",
-  "notes": "",
-  "has_image": true,
-  "id": "C01",
-  "name": "NAVIS Main Control Panel with Joystick",
-  "display_name": "Main Control Panel with Joystick",
-  "brand": "NAVIS Engineering",
-  "display_brand": "NAVIS Engineering",
-  "description": "The main control panel (MCP) with joystick is the operator control point at a NAVIS DP station. Each NavDP control station combines the panel with a control computer, an LCD display, a communication box, a control unit and a power unit.",
-  "features": [],
-  "specs": [],
-  "model_hint": "MCP-06 / MCP-C06 with joystick; MCP-B with joystick (DP operator station)"
  }
 }

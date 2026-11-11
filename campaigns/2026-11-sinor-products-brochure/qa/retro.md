@@ -18,3 +18,8 @@ C (proposed, need approval): P-005 new skill product-catalogue-brochure; P-006 g
 
 ## Open questions for Rahul
 See handoff message: authorised-partner wording, installation wording, maker/model confirmations, photos for 36 cards, whether to keep the allowed image hosts in the environment.
+
+## Update: draft v2 (same day)
+Rahul restructured the brochure (DP Systems, Position Reference Systems, Position Reference Sensors incl. MRU B1 and B2, then the rest) and asked for more photos. Done: new section order and DP pages, MRU-B1, B1.1, B2 cards, 35 new photo candidates fetched after 3 more host approvals, 48 of 64 cards now carry a photo. Independent QA v2 found 6 majors, all fixed or removed (fixes_v2_1.md).
+Mistakes worth keeping: (1) my download script used hostnames as agents reported them, so www hosts were skipped and a maker photo of the wrong radar variant was used; (2) a first reseller photo carried a competitor watermark; (3) Firecrawl credits ran out so round 2 search depth was thin; (4) I wrote "SMT = Specialist Marine Technologies" from a web page against Rahul's own stated meaning in verified-facts.md: check verified-facts before printing a maker name.
+Learning loop: lessons added (hostnames, credits, restructure wording). Proposed P-005 and P-006 stand; add to P-005 "use urlparse hostnames and check verified-facts for maker names".

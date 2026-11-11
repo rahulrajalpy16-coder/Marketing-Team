@@ -53,7 +53,7 @@ def photo(i, cls='ph'):
     p = f'{W}/img_ready/{i["old_id"]}.jpg'
     if os.path.exists(p):
         return f'<div class="{cls}"><img src="{b64(p)}"></div>'
-    return f'<div class="{cls} missing"><span>Product photo<br>to be supplied</span></div>'
+    return f'<div class="{cls} missing"><span>Photo<br>to follow</span></div>'
 
 
 def has_photo(i):
