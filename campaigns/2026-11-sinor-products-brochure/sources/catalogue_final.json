@@ -647,7 +647,7 @@
   "section": "Package systems",
   "name": "Fugro SeaStar 9410-AUT Receiver Kit",
   "brand": "Fugro",
-  "model_hint": "SeaStar 9410-AUT; 9410 receiver",
+  "model_hint": "Seastar 9410-AUT; 9410 receiver",
   "register_rows": 53,
   "search_hints": [
    "Fugro SeaStar 9410 receiver"
@@ -1394,7 +1394,7 @@
   ],
   "official_name": "Anschutz Standard 22 gyro compass (current model: Standard 22 NX)",
   "brand_shown": "Raytheon Anschutz (Anschutz)",
-  "description": "The Anschutz Standard 22 is a modular gyro compass system that can run up to three gyro compasses with an operator unit and distribution unit, forming a heading management system. It uses patented slip-ring-free data transmission and is IMO approved as a gyro compass and rate-of-turn gyro. Offshore supply vessels, tankers and cruise ships are named as typical users.",
+  "description": "The Ansch\u00fctz Standard 22 is a modular gyro compass system that can run up to three gyro compasses with an operator unit and distribution unit, forming a heading management system. It uses patented slip-ring-free data transmission and is IMO approved as a gyro compass and rate-of-turn gyro. Offshore supply vessels, tankers and cruise ships are named as typical users.",
   "features": [
    "Up to three gyro compasses plus magnetic or GNSS compass in one system",
    "Automatic speed and latitude error correction",
@@ -1429,7 +1429,7 @@
   "notes": "OEM image is of the NX; distributor image is of the original Std 22. Pick according to which model Sinor supplies.",
   "has_image": false,
   "display_name": "Standard 22 Gyro Compass",
-  "display_brand": "Raytheon Anschutz"
+  "display_brand": "Raytheon Ansch\u00fctz"
  },
  {
   "id": "B16",
@@ -1829,12 +1829,8 @@
   ],
   "official_name": "Rolls-Royce marine I/O alarm modules RRAIO16 (analogue), RRDIO15 (digital) and RRRLY8 (relay)",
   "brand_shown": "Rolls-Royce (modules carry Weidmuller type names RRAIO16, RRDIO15, RRRLY8)",
-  "description": "RRAIO16, RRDIO15 and RRRLY8 are rack-mounted I/O alarm modules supplied for Rolls-Royce marine control and alarm systems, covering analogue, digital and relay channels. RRDIO15 is the 15-channel digital input/output module.",
-  "features": [
-   "RRAIO16: analogue I/O alarm module, 16 channel",
-   "RRDIO15: 15-channel digital I/O alarm module",
-   "Rack modules for Rolls-Royce marine systems"
-  ],
+  "description": "I/O and alarm modules supplied for Rolls-Royce marine control and alarm systems, covering analogue, digital and relay signals. Type names RRAIO16, RRDIO15 and RRRLY8 are the modules Sinor supplies; confirm the exact module and revision with Sinor before ordering.",
+  "features": [],
   "specs": [],
   "status": "FOUND",
   "brand_note": "Resellers list these as 'Rolls-Royce Weidmuller' I/O alarm modules. Maker is Rolls-Royce Marine per listings, but no Rolls-Royce page confirms this. RRVIO8 was not found at all. The catalogue name 'Marine Controller' is not supported, these are I/O and alarm modules.",
@@ -1889,7 +1885,8 @@
   "notes": "Specs come from a reseller page (PLC DCS Pro), not GE/Emerson. The page lists 'two ports' for Ethernet, so port count is left out of the card. Second image URL is verbatim from search output (http scheme). Keep 'Series 90-30' wording, the PWR331 power supply and BEM331 bus module were not researched.",
   "has_image": false,
   "display_name": "Series 90-30 CPU IC693CPU374",
-  "display_brand": "GE Fanuc"
+  "display_brand": "GE Fanuc",
+  "legacy": true
  },
  {
   "id": "C11",
@@ -1938,7 +1935,8 @@
   "notes": "Facts read from Qualitrol, a GE-authorized repair centre, citing the GE datasheet. Qualitrol's own image file is named ic200alg230_1.jpg so it may show a sibling module and is NOT offered. Image hosts were not opened, only seen in search results.",
   "has_image": false,
   "display_name": "VersaMax IC200ALG240 Analog Input",
-  "display_brand": "GE Fanuc"
+  "display_brand": "GE Fanuc",
+  "legacy": true
  },
  {
   "id": "C12",
@@ -1971,7 +1969,8 @@
   "notes": "PARTIAL: no Converteam/GE page found, the description rests on a search excerpt from a reseller page and one reseller photo of P111-6052. Image 2 is a different AMC part (P110-6152). Not suitable for specs.",
   "has_image": false,
   "display_name": "Advanced Micro Controller (AMC)",
-  "display_brand": "Converteam"
+  "display_brand": "Converteam",
+  "legacy": true
  },
  {
   "id": "C13",
@@ -2019,7 +2018,8 @@
   "notes": "OEM image is small (369 px). A larger Schneider rendition for another Premium CPU (TSXP57203M) is rendition_1500 but is a different model so not offered.",
   "has_image": false,
   "display_name": "Modicon Premium TSX P57 4634M",
-  "display_brand": "Schneider Electric"
+  "display_brand": "Schneider Electric",
+  "legacy": true
  },
  {
   "id": "C14",
@@ -2146,7 +2146,8 @@
   "notes": "Feature bullets come from the DEIF datasheet search excerpt and an overview excerpt, not a full read. The DEIF page itself says almost nothing technical. Image content not inspected, only the URL and page title.",
   "has_image": true,
   "display_name": "Delomatic 3 Power Management",
-  "display_brand": "DEIF"
+  "display_brand": "DEIF",
+  "legacy": true
  },
  {
   "id": "C17",
@@ -2191,7 +2192,8 @@
   "notes": "Image 2 shows the VLT 5000 family, not a single frame size. Specs refer to NXP Air Cooled only. Image 2 width/height from search result.",
   "has_image": false,
   "display_name": "VACON NXP and VLT Drives",
-  "display_brand": "Danfoss"
+  "display_brand": "Danfoss",
+  "legacy": true
  },
  {
   "id": "C18",
@@ -2522,35 +2524,8 @@
   "official_name": "CyScan Radar MK4 Service Kit, P/N 31-0362-4",
   "brand_shown": "Guidance Marine (CyScan MK4 service kit, P/N 31-0362-4, as listed by a reseller)",
   "description": "Planned-maintenance kit for the CyScan MK4 laser sensor, bundling the wear items an engineer replaces during a service: drive belts, the slipring assembly, enclosure seals and consumables.",
-  "features": [
-   "Base drive belt 455 mm (P/N 50-0019-3) and 450 mm (P/N 50-0018-3)",
-   "Rotor belt (P/N 50-0017-3)",
-   "Slipring assembly (P/N 39-0042-2)",
-   "Gland plate seal (53-0024-3) and access cover seal (53-0022-2)",
-   "DC4 silicone compound (98-0025-4) plus 50 g and 5 g silica gel bags"
-  ],
-  "specs": [
-   {
-    "k": "Part number",
-    "v": "31-0362-4"
-   },
-   {
-    "k": "Fits",
-    "v": "CyScan MK4"
-   },
-   {
-    "k": "Belts",
-    "v": "455 mm, 450 mm base drive; rotor belt"
-   },
-   {
-    "k": "Seals",
-    "v": "Gland plate, access cover"
-   },
-   {
-    "k": "Consumables",
-    "v": "DC4 silicone compound, silica gel 50 g and 5 g"
-   }
-  ],
+  "features": [],
+  "specs": [],
   "status": "FOUND",
   "brand_note": "Guidance Marine's own site has no service kit page; its Services page only offers CyScan MK3/MK4 Spares as a selection in a request form. Kit contents were read from a Singapore marine reseller (Swift Marine Tech Services) listing, not from Guidance Marine. Kit applies to CyScan MK4 specifically; MK3 kit not checked.",
   "notes": "Image is a reseller photo, not Guidance Marine artwork; view it before use and consider a plain flat-lay or text-only card. Sinor's register lists no radome seal or tilt belt for CyScan, matching this kit. Reseller page shows a placeholder price which was ignored.",
@@ -2570,32 +2545,9 @@
   ],
   "official_name": "RadaScan / Mini RadaScan Service Kit (Guidance Marine)",
   "brand_shown": "Guidance Marine (RadaScan / Mini RadaScan family)",
-  "description": "RadaScan sensors measure range and bearing to responders for DP position and heading, so scheduled servicing keeps the 360 degree scanner reliable.",
-  "features": [
-   "Radome seal and tilt optics belt (Sinor register)",
-   "Slip rings, motor and encoder PCB spares (Sinor register)",
-   "For RadaScan and Mini RadaScan sensors",
-   "Parent product: 360 degree scanning, IP66, EN60945 certified (RadaScan View page)",
-   "Guidance Marine warranty: 3 years on DP sensors (RadaScan View page)"
-  ],
-  "specs": [
-   {
-    "k": "Parent sensor",
-    "v": "RadaScan View"
-   },
-   {
-    "k": "Operating range",
-    "v": "up to 600 m"
-   },
-   {
-    "k": "Close range",
-    "v": "from 10 m"
-   },
-   {
-    "k": "Enclosure",
-    "v": "IP66, EN60945"
-   }
-  ],
+  "description": "Planned-maintenance and spares kit for Guidance Marine RadaScan and Mini RadaScan sensors, supplied by Sinor. Kit contents are listed below and can be quoted per sensor model.",
+  "features": [],
+  "specs": [],
   "status": "PARTIAL",
   "brand_note": "No RadaScan service kit page found at Guidance Marine or any reseller within budget. Guidance Services page lists 'RadaScan Spares' only as a form option. Sinor's kit contents (radome seal, tilt optics belt, slip rings, motor, encoder PCB) are USER-SUPPLIED and UNVERIFIED against an OEM kit list.",
   "notes": "No kit image exists in what I found, so the card should use a sensor image or text-only. Features and specs marked as parent sensor are from the RadaScan View page, not the kit. Ask Guidance Marine or a service partner for the official kit part number and contents list.",
@@ -2748,7 +2700,8 @@
   "notes": "Image dimensions unknown (not downloadable); Siemens og:image. Datasheet link on the page: mall.industry.siemens.com/teddatasheet/?format=PDF&mlfbs=6EP1337-3BA00 (not read), so efficiency and dimensions are not stated.",
   "has_image": true,
   "display_name": "SITOP PSU100M 6EP1337-3BA00",
-  "display_brand": "Siemens"
+  "display_brand": "Siemens",
+  "legacy": true
  },
  {
   "id": "D06",
@@ -2804,7 +2757,7 @@
   "section": "Power, spares and service kits",
   "name": "Circuit Breakers, Contactors and Relays",
   "brand": "Schneider Electric / ABB / Siemens",
-  "model_hint": "MCB 2P 6A / 10A; EZC100H; LC1D09; 4-change-over relays",
+  "model_hint": "MCB 2P 6 A / 10 A; EZC100H; LC1D09; 4-change-over relays",
   "register_rows": 78,
   "search_hints": [
    "Schneider Electric Acti9 iC60N MCB 2P"
@@ -2819,28 +2772,7 @@
    "Suitable for AC and DC networks",
    "Vigi iC60 residual current add-on compatible"
   ],
-  "specs": [
-   {
-    "k": "Rated current",
-    "v": "2 A (this part)"
-   },
-   {
-    "k": "Poles",
-    "v": "2P"
-   },
-   {
-    "k": "Breaking capacity",
-    "v": "50 kA Icu at 220-240 V AC (IEC/EN 60947-2)"
-   },
-   {
-    "k": "Width",
-    "v": "36 mm"
-   },
-   {
-    "k": "Mechanical durability",
-    "v": "20000 cycles"
-   }
-  ],
+  "specs": [],
   "status": "FOUND",
   "brand_note": "Catalogue brand 'Schneider Electric / ABB / Siemens' is a mix. Representative image and facts are Schneider Electric Acti9 iC60N 2P A9F74202 (2 A, C curve). Sinor's 6 A and 10 A 2-pole MCBs are the same family but other ratings; EZC100H (Schneider ComPact EZC) and LC1D09 (Schneider TeSys D contactor) were not researched.",
   "notes": "IMAGE SHOWS: Schneider Electric Acti9 iC60N 2P 2A C curve, A9F74202. Image is small (369 px). A 64 px gif rendition also exists. Verify the HK page is acceptable; the same image ID likely serves other se.com country pages.",
@@ -2924,6 +2856,7 @@
   "notes": "Reseller photos are surplus-unit photos with possible labels or watermarks; review before use. Recommend asking Sinor for its own photo of the unit or using a generic icon. Product is discontinued per WAGO 410.",
   "has_image": false,
   "display_name": "I/O-IPC 758-873",
-  "display_brand": "WAGO"
+  "display_brand": "WAGO",
+  "legacy": true
  }
 ]

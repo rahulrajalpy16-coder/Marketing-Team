@@ -16,7 +16,7 @@ for _i in items:
 byid = {i['id']: i for i in items}
 
 SECTIONS = [
-    ('A', 'Package systems', 'Complete systems supplied, installed and supported as one scope.'),
+    ('A', 'Package systems', 'Complete systems supplied and supported as one scope.'),
     ('B', 'Position reference and sensors', 'Position reference sensors, transponders, motion, wind, heading and GNSS equipment.'),
     ('C', 'DP control, HMI and automation', 'Operator stations, displays, controllers, PLC and I/O, drives and networking.'),
     ('D', 'Power, spares and service kits', 'Service kits, power supplies, protection devices, cables and computers.'),
@@ -45,6 +45,10 @@ def b64(path):
 
 
 LOGO_URI = b64(LOGO)
+
+
+def LEG(i):
+    return '<span class="legt">Legacy spare</span>' if i.get('legacy') else ''
 
 
 def photo(i, cls='ph'):
@@ -89,7 +93,7 @@ def card(i):
     models = clean(i.get('model_hint', ''))
     return f'''<div class="card">
   {photo(i)}
-  <div class="meta"><span class="id">{i["id"]}</span><span class="brand">{e(clean(i.get("brand_shown") or i["brand"]))}</span></div>
+  <div class="meta"><span class="id">{i["id"]}</span><span class="brand">{e(clean(i.get("brand_shown") or i["brand"]))}</span>{LEG(i)}</div>
   <h3>{e(clean(i.get("official_name") or i["name"]))}</h3>
   <p>{e(short(i.get("description") or "", 230))}</p>
   {specs_html(i, 3)}
@@ -105,7 +109,7 @@ def package(i):
     return f'''<div class="pkg">
   {photo(i, 'ph big')}
   <div class="pbody">
-    <div class="meta"><span class="id">{i["id"]}</span><span class="brand">{e(clean(i.get("brand_shown") or i["brand"]))}</span></div>
+    <div class="meta"><span class="id">{i["id"]}</span><span class="brand">{e(clean(i.get("brand_shown") or i["brand"]))}</span>{LEG(i)}</div>
     <h2>{e(clean(i.get("official_name") or i["name"]))}</h2>
     <p>{e(short(i.get("description") or "", 330))}</p>
     {('<ul class="fe">' + feats + '</ul>') if feats else ''}
@@ -126,7 +130,7 @@ html{font-family:Inter,'Helvetica Neue',Arial,sans-serif;color:var(--tx)}
 .page:before{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(91,192,235,.045) 1px,transparent 1px),linear-gradient(90deg,rgba(91,192,235,.045) 1px,transparent 1px);background-size:8mm 8mm;pointer-events:none}
 .hd{position:absolute;left:13mm;right:13mm;top:7mm;display:flex;justify-content:space-between;align-items:center;font-size:6.6pt;letter-spacing:.14em;text-transform:uppercase;color:var(--cy)}
 .hd .lg{background:#fff;border-radius:2mm;padding:.7mm 2mm;display:flex;align-items:center}.hd .lg img{height:6.2mm}
-.ft{position:absolute;left:13mm;right:13mm;bottom:6mm;display:flex;justify-content:space-between;font-size:6.2pt;color:var(--mu);border-top:.2mm solid var(--line);padding-top:2mm}
+.ft{position:absolute;left:13mm;right:13mm;bottom:6mm;display:flex;justify-content:space-between;font-size:6.6pt;color:var(--mu);border-top:.2mm solid var(--line);padding-top:2mm}
 h1,h2,h3{font-weight:650;letter-spacing:-.01em}
 .grid{display:grid;grid-template-columns:1fr 1fr;gap:5mm;margin-top:4mm}
 .card{background:var(--card);border:.2mm solid var(--line);border-radius:2.2mm;padding:2.6mm;height:81mm;overflow:hidden;display:flex;flex-direction:column}
@@ -136,13 +140,14 @@ h1,h2,h3{font-weight:650;letter-spacing:-.01em}
 .ph.missing{background:repeating-linear-gradient(45deg,#0d2036,#0d2036 3mm,#0a1a2f 3mm,#0a1a2f 6mm);color:var(--mu);font-size:7pt;text-align:center;letter-spacing:.06em;text-transform:uppercase;border:.2mm dashed var(--line)}
 .meta{display:flex;gap:2mm;align-items:center;margin-top:2.2mm}
 .id{font-size:6pt;font-weight:700;color:#06111f;background:var(--cy);border-radius:.9mm;padding:.3mm 1.3mm}
+.legt{font-size:5.6pt;border:.2mm solid #f0b84a;color:#f0b84a;border-radius:.9mm;padding:.2mm 1.2mm;letter-spacing:.08em;text-transform:uppercase}
 .brand{font-size:6.4pt;color:var(--cy);letter-spacing:.08em;text-transform:uppercase}
 .card h3{font-size:9pt;line-height:1.15;margin-top:1mm;color:#fff}
-.card p{font-size:7pt;line-height:1.32;color:var(--mu);margin-top:1mm}
+.card p{font-size:7.3pt;line-height:1.32;color:var(--mu);margin-top:1mm}
 .sp{list-style:none;margin-top:1.1mm}.sp li{font-size:6.5pt;color:var(--tx);line-height:1.3;padding-left:2mm;position:relative}
 .sp li:before{content:"";position:absolute;left:0;top:1.1mm;width:.9mm;height:.9mm;background:var(--cy);border-radius:50%}
 .sp b{color:var(--cy);font-weight:600}
-.models{margin-top:auto;font-size:6pt;color:var(--mu);border-top:.2mm solid var(--line);padding-top:1.2mm;line-height:1.3}.models b{color:var(--cy);letter-spacing:.06em;text-transform:uppercase;margin-right:1mm}
+.models{margin-top:auto;font-size:6.3pt;color:var(--mu);border-top:.2mm solid var(--line);padding-top:1.2mm;line-height:1.3}.models b{color:var(--cy);letter-spacing:.06em;text-transform:uppercase;margin-right:1mm}
 .sech{margin-top:2mm}.sech .lab{font-size:7pt;letter-spacing:.2em;text-transform:uppercase;color:var(--cy)}.sech h1{font-size:19pt;margin-top:1mm;color:#fff}.sech p{font-size:8pt;color:var(--mu);margin-top:1mm;max-width:130mm}
 .pkg{display:flex;gap:5mm;background:var(--card);border:.2mm solid var(--line);border-radius:2.4mm;padding:3mm;height:81mm;margin-top:3.5mm;overflow:hidden}
 .pbody{flex:1;display:flex;flex-direction:column;min-width:0}
@@ -213,7 +218,7 @@ def build():
 <div class="lg"><img src="{LOGO_URI}"></div><div class="tag">Edition 2026</div>
 <div class="ct"><div class="lab">Sinor Marine Services Middle East FZCO</div>
 <div class="big">Products<br><em>Catalogue</em></div>
-<div class="sub">Package systems, equipment and spares for dynamic positioning, position reference, marine automation and electrical systems. Supplied, installed and supported from Dubai.</div></div>
+<div class="sub">Package systems, equipment and spares for dynamic positioning, position reference, marine automation and electrical systems. Supplied and supported from Dubai.</div></div>
 <div class="mont">{mont}</div>
 <div class="bar"><div>Head office<b>Dubai, UAE</b></div><div>Sales<b>sales@sinormarine.com</b></div><div>Phone<b>+971 4 665 7162</b></div><div>Web<b>sinormarine.com</b></div></div>
 </section>''')
@@ -224,7 +229,7 @@ def build():
         if n_items:
             rows += f'<div class="row"><div class="n">{letter}</div><div class="t"><b>{e(title)}</b><span>{e(blurb)} ({n_items} items)</span></div><div class="p">p. {secstart[letter]:02d}</div></div>'
     toc = f'''<div class="sech"><div class="lab">Contents</div><h1>How to use this catalogue</h1>
-<p>Section A shows complete package systems. Sections B, C and D show the individual items, so any component or spare can be ordered on its own. Every card carries a reference (for example B02) that you can quote in an enquiry. Photos and descriptions are drawn from the manufacturers' published information; the supplied models line lists the variants Sinor handles.</p></div>
+<p>Section A shows complete package systems. Sections B, C and D show the individual items, so any component or spare can be ordered on its own. Every card carries a reference (for example B02) that you can quote in an enquiry. Photos and descriptions are drawn from manufacturer and distributor published information; the supplied models line lists the variants Sinor handles.</p></div>
 <div class="toc">{rows}<div class="row"><div class="n">i</div><div class="t"><b>Item index</b><span>Every reference with its page number.</span></div><div class="p">p. {idx_no:02d}</div></div></div>'''
     out.append(page(toc, 'Contents', 2))
     for n, (kind, pl) in enumerate(seq):
@@ -246,7 +251,7 @@ def build():
     out.append(page(f'<div class="sech"><div class="lab">Index</div><h1>Item index</h1></div><div class="idx">{idx}</div>', 'Index', idx_no))
     # back
     disc = ('Product names, logos and trademarks belong to their respective owners and are used here only to identify the products supplied. '
-            'Descriptions and specifications are taken from manufacturers\' published information and may change; confirm current data with Sinor before ordering. '
+            'Descriptions and specifications are taken from manufacturer and distributor published information and may change; confirm current data with Sinor before ordering. '
             'Sinor Marine Services Middle East FZCO supplies and supports the products listed as an independent company unless a specific authorisation is stated in writing. '
             'Availability, lead times and prices are quoted per enquiry.')
     out.append(f'''<section class="page back"><div class="hd"><span class="lg"><img src="{LOGO_URI}"></span><span>Get in touch</span></div>
