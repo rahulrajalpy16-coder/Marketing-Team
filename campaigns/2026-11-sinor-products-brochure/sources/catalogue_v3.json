@@ -1,0 +1,3910 @@
+[
+ {
+  "kind": "tree",
+  "ref": "DP-01",
+  "section": "DP",
+  "group": "Systems and everything that comes with them",
+  "old_id": "A11",
+  "sysdata": {
+   "size": "full",
+   "old": "A11",
+   "name": "NAVIS NavDP 4000 DP System",
+   "brand": "NAVIS Engineering",
+   "img": "A11",
+   "what": "The \"autopilot for holding position\". A Dynamic Positioning (DP) system keeps a ship in one place, or moves it exactly where you want, by controlling the thrusters automatically.",
+   "plain": "Built for DP class 1 to 3. Supplied as a new system or as an upgrade of an installed NAVIS system.",
+   "groups": [
+    [
+     "Operator station",
+     [
+      [
+       "DP display",
+       "The screen the DP operator watches",
+       "C03",
+       "monitor",
+       ""
+      ],
+      [
+       "Main control panel with joystick",
+       "Buttons and joystick to steer by hand or by computer",
+       null,
+       "joystick",
+       ""
+      ],
+      [
+       "Independent joystick (IJ) unit",
+       "A separate backup joystick",
+       null,
+       "joystick",
+       ""
+      ]
+     ]
+    ],
+    [
+     "Computers",
+     [
+      [
+       "DP control computers (A and B)",
+       "Do the calculations and send commands to the thrusters",
+       null,
+       "computer",
+       ""
+      ],
+      [
+       "Control computer HT CO3",
+       "Newer computer used in upgrades",
+       null,
+       "computer",
+       ""
+      ],
+      [
+       "Sensor interface cards",
+       "Let the computer talk to sensors",
+       null,
+       "card",
+       ""
+      ],
+      [
+       "Software upgrade",
+       "Latest NAVIS software for existing computers",
+       null,
+       "software",
+       ""
+      ]
+     ]
+    ],
+    [
+     "Sensors it listens to",
+     [
+      [
+       "Position references",
+       "Radar, laser, acoustic, taut wire and GPS systems",
+       "A01",
+       "sensor",
+       ""
+      ],
+      [
+       "Gyro compass",
+       "Tells the system which way the ship points",
+       null,
+       "compass",
+       ""
+      ],
+      [
+       "Motion sensor (MRU)",
+       "Measures roll, pitch and heave",
+       "B11",
+       "sensor",
+       ""
+      ],
+      [
+       "Wind sensor",
+       "Lets the system push against the wind in advance",
+       "B12",
+       "wind",
+       ""
+      ]
+     ]
+    ],
+    [
+     "Power and records",
+     [
+      [
+       "UPS (battery backup)",
+       "Keeps DP running if power blinks",
+       "C19",
+       "power",
+       ""
+      ],
+      [
+       "Alarm printer",
+       "Prints alarms and events",
+       null,
+       "document",
+       ""
+      ],
+      [
+       "Power unit",
+       "Clean supply for the DP equipment",
+       null,
+       "power",
+       ""
+      ]
+     ]
+    ],
+    [
+     "Upgrade and support",
+     [
+      [
+       "Hardware and software upgrade",
+       "Brings an older system up to date",
+       null,
+       "tool",
+       ""
+      ],
+      [
+       "Third gyro interface",
+       "Adds a third heading reference",
+       null,
+       "compass",
+       ""
+      ],
+      [
+       "Critical spares set",
+       "Parts to keep on board",
+       null,
+       "box",
+       ""
+      ],
+      [
+       "Trials and FMEA support",
+       "Testing with the vessel and class",
+       null,
+       "tool",
+       ""
+      ]
+     ]
+    ]
+   ]
+  },
+  "name_show": "NAVIS NavDP 4000 DP System",
+  "brand_show": "NAVIS Engineering"
+ },
+ {
+  "kind": "tree",
+  "ref": "DP-02",
+  "section": "DP",
+  "group": "Systems and everything that comes with them",
+  "old_id": "A12",
+  "sysdata": {
+   "size": "full",
+   "old": "A12",
+   "name": "Marine Technologies Bridge Mate DP System",
+   "brand": "Marine Technologies",
+   "img": "A12",
+   "what": "The \"autopilot for holding position\". Bridge Mate keeps a ship in one place, or moves it where you want, by controlling the thrusters automatically. Choose DP 1, DP 2 or DP 3 depending on how much backup you need.",
+   "plain": "More backup computers and screens as the class goes up. Upgrading from DP 1 to DP 2 uses the same building blocks.",
+   "groups": [
+    [
+     "Operator station",
+     [
+      [
+       "DP operator computer",
+       "The computer the operator works on",
+       null,
+       "computer",
+       ""
+      ],
+      [
+       "DP displays",
+       "The screens (two for DP 2)",
+       "C03",
+       "monitor",
+       ""
+      ],
+      [
+       "Independent joystick (IJS)",
+       "Backup joystick with its own computer",
+       null,
+       "joystick",
+       ""
+      ]
+     ]
+    ],
+    [
+     "Brains and network",
+     [
+      [
+       "DP control computers",
+       "Three computers vote, so one failure does not matter (DP 2)",
+       null,
+       "computer",
+       ""
+      ],
+      [
+       "Network switches",
+       "Link every unit together",
+       null,
+       "network",
+       ""
+      ],
+      [
+       "Switch for the joystick",
+       "Powered network for the joystick unit",
+       null,
+       "network",
+       ""
+      ]
+     ]
+    ],
+    [
+     "Connection to thrusters",
+     [
+      [
+       "Thruster I/O boards",
+       "Carry commands to each thruster",
+       null,
+       "card",
+       ""
+      ],
+      [
+       "Thruster central card",
+       "Collects thruster signals in one place",
+       null,
+       "card",
+       ""
+      ],
+      [
+       "Isolation amplifier",
+       "Protects signals from interference",
+       null,
+       "card",
+       ""
+      ]
+     ]
+    ],
+    [
+     "Power and sensors",
+     [
+      [
+       "UPS (battery backup)",
+       "Keeps DP running if power blinks",
+       "C19",
+       "power",
+       ""
+      ],
+      [
+       "Motion sensor (MRU)",
+       "Measures roll, pitch and heave",
+       "B11",
+       "sensor",
+       ""
+      ],
+      [
+       "Wind sensor",
+       "Lets the system push against the wind in advance",
+       "B12",
+       "wind",
+       ""
+      ]
+     ]
+    ],
+    [
+     "Upgrade and support",
+     [
+      [
+       "DP 1 to DP 2 upgrade",
+       "Add computers and screens to gain backup",
+       null,
+       "tool",
+       ""
+      ],
+      [
+       "Mid-life upgrade",
+       "Refresh an older system",
+       null,
+       "tool",
+       ""
+      ],
+      [
+       "Critical spares set",
+       "Parts to keep on board",
+       null,
+       "box",
+       ""
+      ],
+      [
+       "Sea trials and FMEA support",
+       "Testing with the vessel and class",
+       null,
+       "tool",
+       ""
+      ]
+     ]
+    ]
+   ]
+  },
+  "name_show": "Marine Technologies Bridge Mate DP System",
+  "brand_show": "Marine Technologies"
+ },
+ {
+  "kind": "tree",
+  "ref": "PR-01",
+  "section": "PR",
+  "group": "Systems and everything that comes with them",
+  "old_id": "A01",
+  "sysdata": {
+   "size": "full",
+   "old": "A01",
+   "name": "RadaScan View System",
+   "brand": "Guidance Marine",
+   "img": "A01",
+   "what": "A radar that finds small coded beacons (responders) placed on a platform or another vessel. It tells the ship exactly how far away and in which direction they are, in any weather.",
+   "plain": "A radar-style picture on the screen also helps the crew see what is around them. Sold as a full system or as separate parts.",
+   "groups": [
+    [
+     "The main unit",
+     [
+      [
+       "RadaScan View sensor",
+       "The white radar dome on the mast",
+       "B01",
+       "sensor",
+       ""
+      ],
+      [
+       "Type 4 marine processor",
+       "The computer that runs the radar",
+       null,
+       "computer",
+       ""
+      ]
+     ]
+    ],
+    [
+     "Screens and controls",
+     [
+      [
+       "19 inch touch screen monitor",
+       "The screen, with bracket and cables",
+       null,
+       "monitor",
+       "20-0310"
+      ],
+      [
+       "Trackerball mouse",
+       "Easy-to-use pointer for ships",
+       null,
+       "mouse",
+       "38-0037-4"
+      ],
+      [
+       "Compact keyboard",
+       "Small marine keyboard",
+       null,
+       "keyboard",
+       "38-0038-4"
+      ]
+     ]
+    ],
+    [
+     "Targets (responders)",
+     [
+      [
+       "Series 4 rechargeable responder (blue)",
+       "The coded beacon the radar looks for",
+       null,
+       "beacon",
+       "20-0276-BLU"
+      ],
+      [
+       "Responder auxiliary kit (Series 3 and 4)",
+       "Charger and accessories for the responders",
+       null,
+       "box",
+       ""
+      ],
+      [
+       "Spare responders",
+       "Series 3 and 4 units on request",
+       null,
+       "beacon",
+       ""
+      ]
+     ]
+    ],
+    [
+     "Cables and installation",
+     [
+      [
+       "Power, control and Ethernet cables",
+       "Everything needed to connect the system",
+       null,
+       "cable",
+       ""
+      ],
+      [
+       "Installation and set-up",
+       "Our engineers fit and test it on board",
+       null,
+       "tool",
+       ""
+      ]
+     ]
+    ],
+    [
+     "Spares and service",
+     [
+      [
+       "RadaScan service kit",
+       "Drive belts, slipring, seals and silicone compound",
+       null,
+       "box",
+       ""
+      ],
+      [
+       "Motor and encoder board",
+       "Spare parts for the rotating scanner",
+       null,
+       "card",
+       ""
+      ],
+      [
+       "Repair and remote support",
+       "Help from our team when needed",
+       null,
+       "support",
+       ""
+      ]
+     ]
+    ]
+   ]
+  },
+  "name_show": "RadaScan View System",
+  "brand_show": "Guidance Marine"
+ },
+ {
+  "kind": "tree",
+  "ref": "PR-02",
+  "section": "PR",
+  "group": "Systems and everything that comes with them",
+  "old_id": "A02",
+  "sysdata": {
+   "size": "full",
+   "old": "A02",
+   "name": "CyScan Laser Reference System",
+   "brand": "Guidance Marine",
+   "img": "A02",
+   "what": "A laser that measures distance and direction to special reflectors fixed on a platform or vessel. It lets the ship hold its place very accurately close to the structure.",
+   "plain": "The Absolute Signature (AS) version recognises its own reflectors, so it ignores false reflections. We also supply refurbished CyScan Mk4 units.",
+   "groups": [
+    [
+     "The main unit",
+     [
+      [
+       "CyScan AS sensor",
+       "The laser scanner on the ship",
+       "B02",
+       "sensor",
+       "20-0252"
+      ],
+      [
+       "Type 4 marine processor (CyScan)",
+       "The computer that runs the laser",
+       null,
+       "computer",
+       "20-0306"
+      ],
+      [
+       "Refurbished CyScan Mk4",
+       "A renewed unit",
+       "B02",
+       "sensor",
+       ""
+      ]
+     ]
+    ],
+    [
+     "Screens and controls",
+     [
+      [
+       "19 inch touch screen monitor",
+       "The screen, with bracket and cables",
+       null,
+       "monitor",
+       "20-0310"
+      ],
+      [
+       "Trackerball mouse",
+       "Easy-to-use pointer for ships",
+       null,
+       "mouse",
+       "38-0037-4"
+      ],
+      [
+       "Compact keyboard",
+       "Small marine keyboard",
+       null,
+       "keyboard",
+       "38-0038-4"
+      ]
+     ]
+    ],
+    [
+     "Targets (reflectors)",
+     [
+      [
+       "8-way prism cluster",
+       "Mirror-like reflectors fixed on the target",
+       "B03",
+       "prism",
+       ""
+      ]
+     ]
+    ],
+    [
+     "Cables and installation",
+     [
+      [
+       "Required marine cables",
+       "Everything needed to connect the system",
+       null,
+       "cable",
+       ""
+      ],
+      [
+       "Installation and set-up",
+       "Our engineers fit and test it on board",
+       null,
+       "tool",
+       ""
+      ]
+     ]
+    ],
+    [
+     "Spares and service",
+     [
+      [
+       "CyScan Mk4 service kit",
+       "Drive belts, rotor belt, slipring, seals and compound",
+       null,
+       "box",
+       ""
+      ],
+      [
+       "Encoder board",
+       "Spare part for the rotating scanner",
+       null,
+       "card",
+       ""
+      ],
+      [
+       "Repair and remote support",
+       "Help from our team when needed",
+       null,
+       "support",
+       ""
+      ]
+     ]
+    ]
+   ]
+  },
+  "name_show": "CyScan Laser Reference System",
+  "brand_show": "Guidance Marine"
+ },
+ {
+  "kind": "tree",
+  "ref": "PR-03",
+  "section": "PR",
+  "group": "Systems and everything that comes with them",
+  "old_id": "A04",
+  "sysdata": {
+   "size": "half",
+   "old": "A04",
+   "name": "SceneScan System",
+   "brand": "Guidance Marine",
+   "img": "A04",
+   "what": "A laser that needs no reflectors. It recognises the shape of the platform, turbine or structure and keeps the ship in place next to it.",
+   "plain": "Good where fitting reflectors is not practical.",
+   "groups": [
+    [
+     "The main unit",
+     [
+      [
+       "SceneScan sensor",
+       "The laser scanner",
+       "B04",
+       "sensor",
+       "20-0253"
+      ],
+      [
+       "Type 5 marine processor",
+       "The computer that runs it",
+       null,
+       "computer",
+       "20-0337"
+      ]
+     ]
+    ],
+    [
+     "Screens and controls",
+     [
+      [
+       "19 inch touch screen monitor",
+       "Screen with bracket and cables",
+       null,
+       "monitor",
+       "20-0310"
+      ],
+      [
+       "Trackerball mouse and keyboard",
+       "Pointer and small keyboard",
+       null,
+       "mouse",
+       "38-0037-4 / 38-0038-4"
+      ]
+     ]
+    ],
+    [
+     "Cables and installation",
+     [
+      [
+       "40 m deck cable set",
+       "Ethernet cable to the sensor",
+       null,
+       "cable",
+       "33-0365-3"
+      ],
+      [
+       "Installation supervision",
+       "Our engineer guides fitting and testing",
+       null,
+       "tool",
+       ""
+      ]
+     ]
+    ]
+   ]
+  },
+  "name_show": "SceneScan System",
+  "brand_show": "Guidance Marine"
+ },
+ {
+  "kind": "tree",
+  "ref": "PR-04",
+  "section": "PR",
+  "group": "Systems and everything that comes with them",
+  "old_id": "A03",
+  "sysdata": {
+   "size": "half",
+   "old": "A03",
+   "name": "Mini RadaScan System",
+   "brand": "Guidance Marine",
+   "img": "A03",
+   "what": "A compact radar position finder for DP. It tracks coded responders in all weather and ignores clutter from the platform.",
+   "plain": "Same idea as RadaScan View in a smaller unit. Refurbished systems are available.",
+   "groups": [
+    [
+     "The main unit",
+     [
+      [
+       "Mini RadaScan sensor",
+       "The compact radar unit",
+       "A03",
+       "sensor",
+       ""
+      ]
+     ]
+    ],
+    [
+     "Targets (responders)",
+     [
+      [
+       "Mini target series 2 responder",
+       "The coded beacon",
+       null,
+       "beacon",
+       ""
+      ],
+      [
+       "Responder charger",
+       "Recharges the responder",
+       null,
+       "power",
+       ""
+      ]
+     ]
+    ],
+    [
+     "Spares and service",
+     [
+      [
+       "Mini RadaScan service kit",
+       "Routine maintenance parts",
+       null,
+       "box",
+       ""
+      ],
+      [
+       "Encoder board",
+       "Spare part",
+       null,
+       "card",
+       ""
+      ]
+     ]
+    ]
+   ]
+  },
+  "name_show": "Mini RadaScan System",
+  "brand_show": "Guidance Marine"
+ },
+ {
+  "kind": "tree",
+  "ref": "PR-05",
+  "section": "PR",
+  "group": "Systems and everything that comes with them",
+  "old_id": "A05",
+  "sysdata": {
+   "size": "half",
+   "old": "A05",
+   "name": "Artemis 6S Microwave Reference",
+   "brand": "Guidance Marine",
+   "img": "A05",
+   "what": "A long-range link between two stations, one fixed and one on the ship, that gives distance and direction. Often used when a shuttle tanker loads from a floating platform.",
+   "plain": "Works at long range in all weather.",
+   "groups": [
+    [
+     "The main unit",
+     [
+      [
+       "Artemis sensor and beacon (fixed station)",
+       "The station on the platform",
+       "A05",
+       "sensor",
+       ""
+      ],
+      [
+       "Main build assembly (antenna and beacon)",
+       "The mobile station on the vessel",
+       null,
+       "sensor",
+       ""
+      ]
+     ]
+    ],
+    [
+     "Antennas",
+     [
+      [
+       "Semi-omni beacon antenna",
+       "Sends and receives in all directions",
+       null,
+       "antenna",
+       ""
+      ],
+      [
+       "Monopulse antenna Mk2",
+       "Gives accurate direction",
+       null,
+       "antenna",
+       ""
+      ]
+     ]
+    ],
+    [
+     "Computer and controls",
+     [
+      [
+       "Type 3 marine processor (Artemis)",
+       "The computer that runs it",
+       null,
+       "computer",
+       ""
+      ],
+      [
+       "Operating tablet (Ex) with software",
+       "Safe-area tablet for the operator",
+       null,
+       "monitor",
+       ""
+      ]
+     ]
+    ]
+   ]
+  },
+  "name_show": "Artemis 6S Microwave Reference",
+  "brand_show": "Guidance Marine"
+ },
+ {
+  "kind": "tree",
+  "ref": "PR-06",
+  "section": "PR",
+  "group": "Systems and everything that comes with them",
+  "old_id": "A07",
+  "sysdata": {
+   "size": "half",
+   "old": "A07",
+   "name": "Fanbeam 5 Laser Reference System",
+   "brand": "Fanbeam",
+   "img": "A07",
+   "what": "A laser that measures the ship position against reflectors on rigs, installations or other vessels and passes it to the DP system.",
+   "plain": "Supplied new or refurbished, with everything needed to run it.",
+   "groups": [
+    [
+     "The main unit",
+     [
+      [
+       "Fanbeam 5 head unit",
+       "The laser scanner",
+       "A07",
+       "sensor",
+       ""
+      ],
+      [
+       "Control computer with power supply",
+       "Runs the system",
+       null,
+       "computer",
+       ""
+      ],
+      [
+       "Keypad controller with cable",
+       "Operator controls",
+       null,
+       "keyboard",
+       ""
+      ]
+     ]
+    ],
+    [
+     "Power and cables",
+     [
+      [
+       "28 V DC power supply",
+       "Powers the unit",
+       null,
+       "power",
+       ""
+      ],
+      [
+       "Current loop interface box",
+       "Connects to the DP system",
+       null,
+       "card",
+       ""
+      ],
+      [
+       "Deck, power and data cables",
+       "50 m, 20 m and 2 m",
+       null,
+       "cable",
+       ""
+      ]
+     ]
+    ],
+    [
+     "Targets and kits",
+     [
+      [
+       "8-way prism cluster",
+       "Reflectors for the target",
+       "B03",
+       "prism",
+       ""
+      ],
+      [
+       "Flight case, manual, calibration certificate",
+       "Delivered ready to use",
+       null,
+       "box",
+       ""
+      ],
+      [
+       "Spares and installation kit",
+       "Parts for fitting and upkeep",
+       null,
+       "box",
+       ""
+      ]
+     ]
+    ]
+   ]
+  },
+  "name_show": "Fanbeam 5 Laser Reference System",
+  "brand_show": "Fanbeam"
+ },
+ {
+  "kind": "tree",
+  "ref": "PR-07",
+  "section": "PR",
+  "group": "Systems and everything that comes with them",
+  "old_id": "A06",
+  "sysdata": {
+   "size": "full",
+   "old": "A06",
+   "name": "RADius Relative Positioning System",
+   "brand": "Kongsberg Maritime",
+   "img": "A06",
+   "what": "A short-range radar-based system. The ship measures distance and direction to transponders fixed on a platform, and several vessels can use the same transponders.",
+   "plain": "We supply new and refurbished RADius units and the transponders, batteries and spares that go with them.",
+   "groups": [
+    [
+     "The main unit",
+     [
+      [
+       "RADius 2000 interrogator",
+       "The unit on the ship (single or dual)",
+       "A06",
+       "sensor",
+       ""
+      ],
+      [
+       "Processing unit 2U",
+       "The computer box in the rack",
+       null,
+       "computer",
+       ""
+      ],
+      [
+       "Refurbished RADius 1000 / 1002",
+       "Renewed older models",
+       null,
+       "sensor",
+       ""
+      ]
+     ]
+    ],
+    [
+     "Connections",
+     [
+      [
+       "Junction box",
+       "Where the cables meet",
+       null,
+       "card",
+       ""
+      ],
+      [
+       "Power supply unit",
+       "Powers the interrogator",
+       null,
+       "power",
+       ""
+      ],
+      [
+       "Mains and data distribution unit",
+       "Shares power and data",
+       null,
+       "network",
+       ""
+      ]
+     ]
+    ],
+    [
+     "Targets (transponders)",
+     [
+      [
+       "RADius 700X transponder",
+       "The beacon on the platform, battery powered",
+       "B06",
+       "beacon",
+       ""
+      ],
+      [
+       "RADius 550X transponder",
+       "Smaller transponder",
+       "B06",
+       "beacon",
+       ""
+      ],
+      [
+       "Replacement battery",
+       "For the 700X transponder",
+       null,
+       "power",
+       ""
+      ]
+     ]
+    ],
+    [
+     "Screens and mounting",
+     [
+      [
+       "19 inch display with mariner kit",
+       "The operator screen",
+       null,
+       "monitor",
+       ""
+      ],
+      [
+       "Mounting bracket",
+       "Holds the unit in place",
+       null,
+       "tool",
+       ""
+      ]
+     ]
+    ],
+    [
+     "Manuals and support",
+     [
+      [
+       "Installation and operator manuals",
+       "Written guides",
+       null,
+       "document",
+       ""
+      ],
+      [
+       "Installation and set-up",
+       "Our engineers fit and test it",
+       null,
+       "tool",
+       ""
+      ],
+      [
+       "Repair and remote support",
+       "Help from our team when needed",
+       null,
+       "support",
+       ""
+      ]
+     ]
+    ]
+   ]
+  },
+  "name_show": "RADius Relative Positioning System",
+  "brand_show": "Kongsberg Maritime"
+ },
+ {
+  "kind": "tree",
+  "ref": "PR-08",
+  "section": "PR",
+  "group": "Systems and everything that comes with them",
+  "old_id": "A08",
+  "sysdata": {
+   "size": "full",
+   "old": "A08",
+   "name": "Ranger 2 USBL Underwater Positioning System",
+   "brand": "Sonardyne",
+   "img": "A08",
+   "what": "An underwater \"GPS\". A unit under the hull talks by sound to transponders in the water, so the crew can track ROVs and tools below the surface and the ship can use it to hold position.",
+   "plain": "Sold as a full system including the hardware that lowers the unit through the hull.",
+   "groups": [
+    [
+     "Under the ship",
+     [
+      [
+       "HPT 5000 USBL transceiver",
+       "The unit that sends and hears the sound signals",
+       "B08",
+       "sensor",
+       "Type 8142"
+      ],
+      [
+       "Transceiver installation kit",
+       "Fitting parts",
+       null,
+       "box",
+       ""
+      ]
+     ]
+    ],
+    [
+     "Lowering equipment",
+     [
+      [
+       "Hydraulic deployment machine",
+       "Lowers and raises the unit through the hull",
+       null,
+       "tool",
+       "Type 8223"
+      ],
+      [
+       "Hydraulic power pack",
+       "Powers the machine",
+       null,
+       "power",
+       ""
+      ],
+      [
+       "Gate valve with actuator (DN 500)",
+       "Seals the hull opening",
+       null,
+       "tool",
+       ""
+      ]
+     ]
+    ],
+    [
+     "Underwater targets",
+     [
+      [
+       "WSM 6+ transponder",
+       "Small unit fitted on the ROV or tool being tracked",
+       "B09",
+       "beacon",
+       "1K MF omni"
+      ],
+      [
+       "Motion sensor (MRU B2)",
+       "Corrects for ship movement",
+       "B11",
+       "sensor",
+       ""
+      ]
+     ]
+    ],
+    [
+     "Topside equipment",
+     [
+      [
+       "Navigation Sensor Hub (NSH)",
+       "Brings all the signals together",
+       "A10",
+       "computer",
+       ""
+      ],
+      [
+       "Navigation computer",
+       "Runs the Ranger 2 software",
+       null,
+       "computer",
+       ""
+      ],
+      [
+       "Bridge control panel",
+       "Operator panel on the bridge",
+       null,
+       "keyboard",
+       ""
+      ]
+     ]
+    ],
+    [
+     "Cables and installation",
+     [
+      [
+       "Marine approved cables",
+       "Everything needed to connect the system",
+       null,
+       "cable",
+       ""
+      ],
+      [
+       "Installation, set-up and sea trial",
+       "Our engineers fit and test it",
+       null,
+       "tool",
+       ""
+      ],
+      [
+       "Critical spares",
+       "Parts to keep on board",
+       null,
+       "box",
+       ""
+      ]
+     ]
+    ]
+   ]
+  },
+  "name_show": "Ranger 2 USBL Underwater Positioning System",
+  "brand_show": "Sonardyne"
+ },
+ {
+  "kind": "tree",
+  "ref": "PR-09",
+  "section": "PR",
+  "group": "Systems and everything that comes with them",
+  "old_id": "A09",
+  "sysdata": {
+   "size": "half",
+   "old": "A09",
+   "name": "SPRINT-Nav DP System",
+   "brand": "Sonardyne",
+   "img": "A09",
+   "what": "A shallow-water position reference in one titanium unit. It combines motion sensors, a seabed-speed sensor and a depth sensor, and keeps working if the satellite signal is lost.",
+   "plain": "Delivered as a kit with the topside computer and cables.",
+   "groups": [
+    [
+     "The main unit",
+     [
+      [
+       "SPRINT-Nav DP titanium unit",
+       "The sensor under the hull",
+       "A09",
+       "sensor",
+       "603-0230"
+      ],
+      [
+       "Sideways deployment machine",
+       "Lowers it through the side of the hull",
+       null,
+       "tool",
+       ""
+      ]
+     ]
+    ],
+    [
+     "Topside",
+     [
+      [
+       "Surface Interface Hub",
+       "Connects the unit to the ship network",
+       null,
+       "network",
+       "620-0770"
+      ],
+      [
+       "Marine computer (rack mount)",
+       "Runs the software",
+       null,
+       "computer",
+       "603-0181"
+      ]
+     ]
+    ],
+    [
+     "Cables and installation",
+     [
+      [
+       "Unit and interface cables",
+       "30 m unit cable, 5 m and 2 m cables",
+       null,
+       "cable",
+       ""
+      ],
+      [
+       "Installation, set-up and sea trial",
+       "Our engineers fit and test it",
+       null,
+       "tool",
+       ""
+      ]
+     ]
+    ]
+   ]
+  },
+  "name_show": "SPRINT-Nav DP System",
+  "brand_show": "Sonardyne"
+ },
+ {
+  "kind": "tree",
+  "ref": "PR-10",
+  "section": "PR",
+  "group": "Systems and everything that comes with them",
+  "old_id": "A13",
+  "sysdata": {
+   "size": "half",
+   "old": "A13",
+   "name": "SMT Z-Range Electric Taut Wire",
+   "brand": "SMT",
+   "img": "A13",
+   "what": "A mechanical position reference. A weight on a wire is lowered to the seabed and the angle of the wire shows how the ship has moved.",
+   "plain": "Simple, proven and independent of satellites.",
+   "groups": [
+    [
+     "The main unit",
+     [
+      [
+       "Electric taut wire winch",
+       "With 700 m of wire on the drum",
+       "A13",
+       "sensor",
+       ""
+      ],
+      [
+       "Depressor weight",
+       "The weight that rests on the seabed",
+       null,
+       "box",
+       ""
+      ]
+     ]
+    ],
+    [
+     "Controls",
+     [
+      [
+       "Bridge control station",
+       "Screen and steel back plate for the console",
+       null,
+       "monitor",
+       ""
+      ],
+      [
+       "Emergency stop button",
+       "Fitted on the bridge",
+       null,
+       "tool",
+       ""
+      ],
+      [
+       "Signal outputs",
+       "RS422, 4-20 mA, 0-10 V or no-volt contact",
+       null,
+       "card",
+       ""
+      ]
+     ]
+    ],
+    [
+     "Cables and installation",
+     [
+      [
+       "Marine approved cables",
+       "Power and control",
+       null,
+       "cable",
+       ""
+      ],
+      [
+       "Installation and set-up",
+       "Includes loop testing",
+       null,
+       "tool",
+       ""
+      ]
+     ]
+    ]
+   ]
+  },
+  "name_show": "SMT Z-Range Electric Taut Wire",
+  "brand_show": "SMT"
+ },
+ {
+  "kind": "tree",
+  "ref": "PR-11",
+  "section": "PR",
+  "group": "Systems and everything that comes with them",
+  "old_id": "B18",
+  "sysdata": {
+   "size": "half",
+   "old": "B18",
+   "name": "Bandak Lightweight Taut Wire",
+   "brand": "Bandak",
+   "img": "B18",
+   "what": "A taut wire position reference for deck-mounted positions on surface vessels.",
+   "plain": "We support installed Bandak systems with spares, overhaul and calibration.",
+   "groups": [
+    [
+     "The main unit",
+     [
+      [
+       "Bandak lightweight taut wire",
+       "Winch with wire and weight",
+       "B18",
+       "sensor",
+       ""
+      ]
+     ]
+    ],
+    [
+     "Spare parts",
+     [
+      [
+       "Control PLC",
+       "Spare controller",
+       null,
+       "card",
+       ""
+      ],
+      [
+       "Compact display",
+       "Spare operator display",
+       null,
+       "monitor",
+       ""
+      ]
+     ]
+    ],
+    [
+     "Service",
+     [
+      [
+       "Overhaul and calibration",
+       "Full check and recalibration",
+       null,
+       "tool",
+       ""
+      ],
+      [
+       "Additional cable supply",
+       "Extra cable on request",
+       null,
+       "cable",
+       ""
+      ]
+     ]
+    ]
+   ]
+  },
+  "name_show": "Bandak Lightweight Taut Wire",
+  "brand_show": "Bandak"
+ },
+ {
+  "kind": "tree",
+  "ref": "PR-12",
+  "section": "PR",
+  "group": "Systems and everything that comes with them",
+  "old_id": "A14",
+  "sysdata": {
+   "size": "half",
+   "old": "A14",
+   "name": "Ronav R1 GNSS and DGPS System",
+   "brand": "Ronav",
+   "img": "A14",
+   "what": "A satellite receiver that gives the ship its position, using correction signals for better accuracy.",
+   "plain": "Supplied with its antenna, display and cables.",
+   "groups": [
+    [
+     "The main unit",
+     [
+      [
+       "Ronav R1 receiver",
+       "Reads the satellite signals",
+       null,
+       "computer",
+       ""
+      ],
+      [
+       "RX45 antenna",
+       "Receives the signals",
+       "A14",
+       "antenna",
+       ""
+      ],
+      [
+       "Display",
+       "Shows position and status",
+       null,
+       "monitor",
+       ""
+      ]
+     ]
+    ],
+    [
+     "Extras",
+     [
+      [
+       "Anti-jamming antenna",
+       "Protects against interference",
+       null,
+       "antenna",
+       ""
+      ],
+      [
+       "Cables with pigtail",
+       "Ready to connect",
+       null,
+       "cable",
+       ""
+      ],
+      [
+       "Correction subscription",
+       "Annual or short-term service",
+       null,
+       "document",
+       ""
+      ]
+     ]
+    ]
+   ]
+  },
+  "name_show": "Ronav R1 GNSS and DGPS System",
+  "brand_show": "Ronav"
+ },
+ {
+  "kind": "tree",
+  "ref": "PR-13",
+  "section": "PR",
+  "group": "Systems and everything that comes with them",
+  "old_id": "A15",
+  "sysdata": {
+   "size": "half",
+   "old": "A15",
+   "name": "Seastar 9410-AUT GNSS Receiver",
+   "brand": "Fugro",
+   "img": "A15",
+   "what": "Fugro satellite receiver for DP use. It works with all satellite systems and Fugro correction services.",
+   "plain": "Supplied as a kit with antenna and cables.",
+   "groups": [
+    [
+     "The main unit",
+     [
+      [
+       "Seastar 9410-AUT receiver",
+       "Reads the satellite signals",
+       "A15",
+       "computer",
+       ""
+      ]
+     ]
+    ],
+    [
+     "Antenna and cables",
+     [
+      [
+       "GA830 GNSS antenna kit",
+       "Antenna with bracket",
+       "B16",
+       "antenna",
+       ""
+      ],
+      [
+       "RG223 and LMR-400 cables",
+       "Made up with connectors",
+       null,
+       "cable",
+       ""
+      ]
+     ]
+    ],
+    [
+     "Service",
+     [
+      [
+       "Correction subscription",
+       "Primary and secondary",
+       null,
+       "document",
+       ""
+      ],
+      [
+       "Installation and set-up",
+       "Our engineers fit and test it",
+       null,
+       "tool",
+       ""
+      ]
+     ]
+    ]
+   ]
+  },
+  "name_show": "Seastar 9410-AUT GNSS Receiver",
+  "brand_show": "Fugro"
+ },
+ {
+  "kind": "tree",
+  "ref": "PR-14",
+  "section": "PR",
+  "group": "Systems and everything that comes with them",
+  "old_id": "A16",
+  "sysdata": {
+   "size": "half",
+   "old": "A16",
+   "name": "Veripos LD900 GNSS Receiver",
+   "brand": "Veripos",
+   "img": "A16",
+   "what": "A satellite receiver for critical work such as DP, offshore construction and survey. It keeps working through multiple satellite systems.",
+   "plain": "Supplied as a set.",
+   "groups": [
+    [
+     "The main unit",
+     [
+      [
+       "LD900 receiver",
+       "Reads the satellite signals",
+       "A16",
+       "computer",
+       ""
+      ]
+     ]
+    ],
+    [
+     "Service",
+     [
+      [
+       "Correction subscription",
+       "On request",
+       null,
+       "document",
+       ""
+      ],
+      [
+       "Installation and set-up",
+       "Our engineers fit and test it",
+       null,
+       "tool",
+       ""
+      ]
+     ]
+    ]
+   ]
+  },
+  "name_show": "Veripos LD900 GNSS Receiver",
+  "brand_show": "Veripos"
+ },
+ {
+  "id": "B05",
+  "section": "PR",
+  "name": "Series 4 Rechargeable Responder (Blue)",
+  "brand": "Guidance Marine",
+  "model_hint": "20-0276-BLU; Series 3 + 4 auxiliary kit",
+  "register_rows": 97,
+  "search_hints": [
+   "Guidance Marine Series 4 rechargeable responder"
+  ],
+  "official_name": "Series 4 Rechargeable Responder (RadaScan family)",
+  "brand_shown": "Guidance Marine (Wartsila Guidance Marine on older documents)",
+  "description": "Responders are coded microwave targets that RadaScan sensors track. The rechargeable version needs no battery-pack maintenance and suits keeping on the vessel for handover to platforms, while PCP and mains versions suit permanent installation. They are ATEX and CSA certified with a unique coded ID.",
+  "features": [
+   "Unique coded ID with auto target detection",
+   "ATEX and CSA certified",
+   "360 degree navigation off one responder",
+   "Universal swivel bracket for all power and mounting options",
+   "No maintenance on the rechargeable unit"
+  ],
+  "specs": [
+   {
+    "k": "Power options",
+    "v": "mains, primary cell pack, self-contained battery"
+   },
+   {
+    "k": "PCP life",
+    "v": "nominal 12 months 24/7"
+   }
+  ],
+  "status": "PARTIAL",
+  "brand_note": "Maker confirmed. Series 4 rechargeable responder is mentioned in a Guidance Marine/FCC manual listing; the colour 'Blue' and part 20-0276-BLU not verified. Guidance's page describes rechargeable responders generally, not a Series 4 product page.",
+  "notes": "No product photo of the responder from an OEM page; Series 4 detail from search snippets only.",
+  "has_image": false,
+  "display_name": "Series 4 Rechargeable Responder",
+  "display_brand": "Guidance Marine",
+  "legacy": false,
+  "kind": "card",
+  "ref": "PR-15",
+  "group": "Parts for position reference systems",
+  "old_id": "B05",
+  "name_show": "Series 4 Rechargeable Responder",
+  "brand_show": "Guidance Marine"
+ },
+ {
+  "id": "B03",
+  "section": "PR",
+  "name": "CyScan 8-Way Prism Cluster",
+  "brand": "Guidance Marine / Kongsberg SpotTrack",
+  "model_hint": "8-way prism",
+  "register_rows": 177,
+  "search_hints": [
+   "CyScan 8-way prism reflector"
+  ],
+  "official_name": "SpotTrack eight-prism cluster (Kongsberg)",
+  "brand_shown": "Kongsberg (SpotTrack eight-prism cluster); generic prism clusters also sold by others",
+  "description": "A prism cluster mounts several glass retro-reflector prisms together so a laser DP sensor can see the target over a wider angle and at longer range. Kongsberg offers an eight-prism cluster in sealed canisters among its SpotTrack reflective targets, alongside single-prism options.",
+  "features": [
+   "Eight prisms in one cluster for wider angle of visibility",
+   "Sealed canisters, industry-standard prisms",
+   "Single prism and magnetic-mount variants also offered",
+   "Glass prisms extend range beyond the 500 m zone (per Guidance)"
+  ],
+  "specs": [],
+  "status": "FOUND",
+  "brand_note": "Kongsberg lists an eight-prism cluster among SpotTrack Prisms. Guidance Marine sells its own prisms (AS Prism) and says glass prisms work with DP sensors of any manufacturer. Maker of Sinor's 8-way cluster is therefore not settled: Kongsberg SpotTrack, Guidance, or other. Compatibility with CyScan comes from a distributor snippet only.",
+  "notes": "Kongsberg image is small (333 px); no specs read (datasheet PDF not opened).",
+  "has_image": false,
+  "display_name": "Eight-Prism Reflector Cluster",
+  "display_brand": "Laser reflector prisms",
+  "legacy": false,
+  "kind": "card",
+  "ref": "PR-16",
+  "group": "Parts for position reference systems",
+  "old_id": "B03",
+  "name_show": "Eight-Prism Reflector Cluster",
+  "brand_show": "Laser reflector prisms"
+ },
+ {
+  "id": "B06",
+  "section": "PR",
+  "name": "RADius 700x Transponder",
+  "brand": "Kongsberg Maritime (verify)",
+  "model_hint": "RADius 700x / 550x transponder, replacement battery",
+  "register_rows": 77,
+  "search_hints": [
+   "Kongsberg RADius 700x transponder"
+  ],
+  "official_name": "RADius 700X transponder",
+  "brand_shown": "Kongsberg Maritime",
+  "description": "The RADius 700X is an intrinsically safe, battery-powered transponder for the RADius relative positioning system, intended for large installations such as platforms and FPSOs where ATEX certification is required. Each unit carries a unique ID set by dip switches, and several interrogators can use the same transponder.",
+  "features": [
+   "Intrinsically safe encapsulated battery, no wired connection",
+   "Unique ID set by dip switches",
+   "Multi-user: several interrogators per transponder",
+   "Suitable for hazardous zones 1 and 2"
+  ],
+  "specs": [
+   {
+    "k": "ATEX",
+    "v": "category 2, gas groups IIB/IIA"
+   },
+   {
+    "k": "IECEx",
+    "v": "Ex ib IIB T4 Gb"
+   },
+   {
+    "k": "Simultaneous tracking",
+    "v": "up to 5 transponders per interrogator"
+   }
+  ],
+  "status": "FOUND",
+  "brand_note": "Confirmed for 700X on kongsberg.com. 550X listed separately by Kongsberg. Replacement battery: a 'RADius EX Battery' is listed by Kongsberg.",
+  "notes": "",
+  "has_image": false,
+  "display_name": "RADius 700X Transponder",
+  "display_brand": "Kongsberg Maritime",
+  "legacy": false,
+  "kind": "card",
+  "ref": "PR-17",
+  "group": "Parts for position reference systems",
+  "old_id": "B06",
+  "name_show": "RADius 700X Transponder",
+  "brand_show": "Kongsberg Maritime"
+ },
+ {
+  "id": "B08",
+  "section": "PR",
+  "name": "Sonardyne HPT 5000 USBL Transceiver",
+  "brand": "Sonardyne",
+  "model_hint": "Type 8142 / 620-7181 HPT 5000 MF USBL transceiver",
+  "register_rows": 46,
+  "search_hints": [
+   "Sonardyne HPT 5000 transceiver"
+  ],
+  "official_name": "HPT 5000 USBL transceiver (Type 8142-001)",
+  "brand_shown": "Sonardyne",
+  "description": "The HPT 5000 is a High Performance Transceiver for Ranger 2 and Marksman systems with full hemispherical acoustic coverage, making it a popular choice for tracking several targets over varied depths. Built in aluminium bronze, it can be fitted over the side, through a tube or through the hull.",
+  "features": [
+   "Full hemispherical acoustic coverage",
+   "6G platform with multi-element processing",
+   "Telemetry up to 9,000 bps",
+   "Over-the-side, through-tube or through-hull fitting",
+   "Gyro USBL configuration available"
+  ],
+  "specs": [
+   {
+    "k": "Operating range",
+    "v": "Up to 7,000 m"
+   },
+   {
+    "k": "Frequency",
+    "v": "MF, 20-34 kHz"
+   },
+   {
+    "k": "Range precision",
+    "v": "Better than 15 mm"
+   },
+   {
+    "k": "Dimensions / weight in air",
+    "v": "322 x 225 mm / 26.7 kg"
+   },
+   {
+    "k": "Power",
+    "v": "48 V dc, typical 15 W, max 120 W"
+   }
+  ],
+  "status": "FOUND",
+  "brand_note": "HPT 5000 is Type 8142-001 (MF, 20-34 kHz). Part number 620-7181 from the hint is not on the page (UNVERIFIED). Type 8142-002 is the deepwater optimised unit, i.e. the HPT 7000 variant, so confirm Sinor's unit is -001.",
+  "notes": "Page scraped in full. Check images visually.",
+  "has_image": true,
+  "display_name": "HPT 5000 USBL Transceiver",
+  "display_brand": "Sonardyne",
+  "legacy": false,
+  "kind": "card",
+  "ref": "PR-18",
+  "group": "Parts for position reference systems",
+  "old_id": "B08",
+  "name_show": "HPT 5000 USBL Transceiver",
+  "brand_show": "Sonardyne"
+ },
+ {
+  "id": "B09",
+  "section": "PR",
+  "name": "Sonardyne Wideband Sub-Mini 6+ (WSM 6+) Transponder",
+  "brand": "Sonardyne",
+  "model_hint": "WSM6+ 1K MF omni; WSM6+ directional",
+  "register_rows": 29,
+  "search_hints": [
+   "Sonardyne WSM 6+ wideband sub-mini transponder"
+  ],
+  "official_name": "Wideband Sub-Mini 6+ (WSM 6+) Transponder/Responder",
+  "brand_shown": "Sonardyne",
+  "description": "WSM 6+ is a small, rugged, rechargeable USBL transponder for tracking ROVs, towfish, crane wires and other mobile underwater targets. It uses two-way Wideband 2 signals, with legacy Wideband 1 and HPR 400 support, and works with all Ranger 2 USBL systems. It runs in transponder or responder mode and has a depth sensor and external on/off switch as standard.",
+  "features": [
+   "Omni-directional (1,000 m and 4,000 m) or directional (4,000 m) versions",
+   "Responder mode for faster position updates",
+   "Depth sensor fitted as standard",
+   "Configurable by serial link or acoustically via iWand",
+   "Options for acoustic release output lines"
+  ],
+  "specs": [
+   {
+    "k": "Type 8370-1111",
+    "v": "1,000 m, omni, 420 x 75 mm, 3.2 kg air"
+   },
+   {
+    "k": "Type 8370-4112",
+    "v": "4,000 m, directional, 429 x 96.5 mm, 5.5 kg air"
+   },
+   {
+    "k": "Frequency",
+    "v": "MF 20-34 kHz"
+   },
+   {
+    "k": "Update rate",
+    "v": "More than 2 Hz maximum"
+   },
+   {
+    "k": "Operating life",
+    "v": "More than 6 days (8370-1111), more than 3 days (8370-4112)"
+   }
+  ],
+  "status": "FOUND",
+  "brand_note": "WSM 6+ confirmed. Hint 'WSM6+ 1K MF omni' matches Type 8370-1111 (1,000 m, omni); 'WSM6+ directional' matches Type 8370-4112 (4,000 m, directional). Name 'Wideband Sub-Mini 6+' confirmed on the OEM datasheet.",
+  "notes": "Page scraped in full. Widths and heights marked 0 were not reported by the tools.",
+  "has_image": false,
+  "display_name": "WSM 6+ Wideband Sub-Mini Transponder",
+  "display_brand": "Sonardyne",
+  "legacy": false,
+  "kind": "card",
+  "ref": "PR-19",
+  "group": "Parts for position reference systems",
+  "old_id": "B09",
+  "name_show": "WSM 6+ Wideband Sub-Mini Transponder",
+  "brand_show": "Sonardyne"
+ },
+ {
+  "id": "B17",
+  "section": "PR",
+  "name": "Kongsberg cNode Transponder",
+  "brand": "Kongsberg Maritime",
+  "model_hint": "cNODE Micro; cNODE MiniS",
+  "register_rows": 20,
+  "search_hints": [
+   "Kongsberg cNode Micro transponder"
+  ],
+  "official_name": "cNODE Micro Transponder (and cNODE MiniS Transponder)",
+  "brand_shown": "Kongsberg Maritime",
+  "description": "The cNODE Micro is the smallest cNODE transponder, rated to 600 m and light enough for divers and shallow water ROVs. It uses Kongsberg Cymbal digital acoustic protocols with SSBL and LBL positioning, and works with Kongsberg positioning systems from uPAP to HiPAP. The larger cNODE MiniS comes in 4,000 m and 7,000 m housings with 500+ Cymbal channels and a responder mode.",
+  "features": [
+   "Micro: SSBL and LBL, range accuracy better than 2 cm",
+   "Micro: 180 degree omnidirectional beam, internal tilt sensor",
+   "Micro: rechargeable Li-Ion battery, external on/off",
+   "MiniS: 4,000 m or 7,000 m depth rating, responder mode",
+   "MiniS: compatible with HiPAP, uPAP and cPAP"
+  ],
+  "specs": [
+   {
+    "k": "Micro depth rating",
+    "v": "600 m"
+   },
+   {
+    "k": "Micro frequency band",
+    "v": "21-31 kHz"
+   },
+   {
+    "k": "Micro tilt sensor",
+    "v": "+/- 90 deg"
+   },
+   {
+    "k": "Micro Cymbal channels",
+    "v": "500+"
+   },
+   {
+    "k": "MiniS depth rating",
+    "v": "4,000 m / 7,000 m"
+   }
+  ],
+  "status": "FOUND",
+  "brand_note": "cNODE Micro and cNODE MiniS (spelled 'MiniS' by Kongsberg) confirmed on kongsberg.com. Type numbers 31-180 and 34-180 were not on the product pages; '34-180' appears in the title of a Kongsberg cNODE Maxi manual (34-180-Si3), so the mapping of 34-180 to Minis is UNVERIFIED and may be wrong. Kongsberg pages now carry the Kongsberg Discovery name.",
+  "notes": "Image sizes are small tiles. The MiniS page did not list a frequency band or dimensions.",
+  "has_image": false,
+  "display_name": "cNODE Micro Transponder",
+  "display_brand": "Kongsberg Maritime",
+  "legacy": false,
+  "kind": "card",
+  "ref": "PR-20",
+  "group": "Parts for position reference systems",
+  "old_id": "B17",
+  "name_show": "cNODE Micro Transponder",
+  "brand_show": "Kongsberg Maritime"
+ },
+ {
+  "section": "SN",
+  "legacy": false,
+  "status": "FOUND",
+  "register_rows": 0,
+  "search_hints": [],
+  "brand_note": "",
+  "notes": "",
+  "has_image": true,
+  "id": "NEW1",
+  "name": "MRU-B1 Heave Sensor",
+  "display_name": "MRU-B1 Heave Sensor",
+  "brand": "Inertial Labs",
+  "display_brand": "Inertial Labs",
+  "description": "MRU-B1 is the heave model of the Inertial Labs Basic (B) motion reference units. It uses solid-state MEMS gyroscopes, accelerometers and a barometric sensor in a small IP67 housing, and outputs in Inertial Labs binary, NMEA 0183, TSS1 and Kongsberg Seatex formats.",
+  "features": [],
+  "specs": [
+   {
+    "k": "Outputs",
+    "v": "Heave, with velocity and acceleration (datasheet); the website table also lists surge and sway"
+   },
+   {
+    "k": "Heave accuracy",
+    "v": "5% or 5 cm RMS"
+   },
+   {
+    "k": "Housing",
+    "v": "IP67, 120 x 50 x 53 mm, 220 g"
+   },
+   {
+    "k": "Supply",
+    "v": "9 to 36 VDC, 1 W"
+   }
+  ],
+  "model_hint": "MRU-B1 (heave sensor)",
+  "kind": "card",
+  "ref": "SN-01",
+  "group": "Motion reference units",
+  "old_id": "NEW1",
+  "name_show": "MRU-B1 Heave Sensor",
+  "brand_show": "Inertial Labs"
+ },
+ {
+  "section": "SN",
+  "legacy": false,
+  "status": "FOUND",
+  "register_rows": 0,
+  "search_hints": [],
+  "brand_note": "",
+  "notes": "",
+  "has_image": true,
+  "id": "NEW2",
+  "name": "MRU-B1.1 Pitch and Roll Sensor",
+  "display_name": "MRU-B1.1 Pitch and Roll Sensor",
+  "brand": "Inertial Labs",
+  "display_brand": "Inertial Labs",
+  "description": "MRU-B1.1 is the pitch and roll model of the Inertial Labs Basic (B) motion reference units. It shares the compact IP67 MEMS housing of the MRU-B1 and carries an ABS design assessment.",
+  "features": [],
+  "specs": [
+   {
+    "k": "Outputs",
+    "v": "Pitch and roll"
+   },
+   {
+    "k": "Pitch and roll accuracy",
+    "v": "0.02 deg RMS dynamic"
+   },
+   {
+    "k": "Housing",
+    "v": "IP67, 120 x 50 x 53 mm, 220 g"
+   },
+   {
+    "k": "Supply",
+    "v": "9 to 36 VDC, 1 W"
+   }
+  ],
+  "model_hint": "MRU-B1.1 (pitch and roll sensor)",
+  "kind": "card",
+  "ref": "SN-02",
+  "group": "Motion reference units",
+  "old_id": "NEW2",
+  "name_show": "MRU-B1.1 Pitch and Roll Sensor",
+  "brand_show": "Inertial Labs"
+ },
+ {
+  "id": "B11",
+  "section": "SN",
+  "name": "Inertial Labs MRU B1 / B2 Motion Reference Unit",
+  "brand": "Inertial Labs (verify)",
+  "model_hint": "MRU-B2 (with heave for HPR)",
+  "register_rows": 176,
+  "search_hints": [
+   "Inertial Labs MRU B2 motion reference unit"
+  ],
+  "official_name": "Inertial Labs MRU-B2 Motion Reference Unit (family: MRU-B1, B1.1, B2)",
+  "brand_shown": "Inertial Labs",
+  "description": "Inertial Labs' MRU-B2 is a compact strap-down MEMS motion sensor that outputs heave, surge, sway, pitch and roll. It can emit Kongsberg Seatex and Teledyne TSS data formats so it can replace older MRUs, and the range carries an ABS design assessment certificate. Subsea (1000 m) versions are listed for the B-series.",
+  "features": [
+   "MRU-B2: heave, surge, sway, pitch and roll",
+   "MRU-B1: heave, surge, sway; MRU-B1.1: pitch and roll (per Inertial Labs table)",
+   "Seatex and TSS-1 compatible output formats",
+   "ABS design assessment certificate 19-HS1851412-PDA",
+   "IP67 or subsea enclosed options"
+  ],
+  "specs": [
+   {
+    "k": "Heave accuracy",
+    "v": "5% or 5 cm (RMS)"
+   },
+   {
+    "k": "Pitch and roll accuracy",
+    "v": "0.02 deg (RMS)"
+   },
+   {
+    "k": "Size",
+    "v": "120 x 50 x 53 mm"
+   },
+   {
+    "k": "Weight",
+    "v": "220 g"
+   },
+   {
+    "k": "Subsea depth rating",
+    "v": "1000 m (subsea versions)"
+   }
+  ],
+  "status": "FOUND",
+  "brand_note": "CONFIRMED: Inertial Labs (inertiallabs.com) makes MRU-B1, MRU-B1.1, MRU-B2 (plus E, P, PD and subsea versions); MRU-B2 is also sold as a rental unit by Norwegian Offshore Rental and by Ocean Science Technology. Caution: Inertial Labs' table lists B1 as heave/surge/sway only and B1.1 as pitch and roll, whereas the register says 'B1 (roll and pitch)'. The register B1 may actually be the MRU-B1.1; Kongsberg also makes unrelated 'MRU' units. Verify the exact model on delivered units.",
+  "notes": "Image pixel sizes not reported in tool output (set to 0). The B1 / B1.1 output mapping comes from a markdown-flattened table; re-check against the datasheet (inertiallabs.com/mru-datasheet) before printing.",
+  "has_image": true,
+  "display_name": "MRU-B2 Motion Reference Unit",
+  "display_brand": "Inertial Labs",
+  "legacy": false,
+  "kind": "card",
+  "ref": "SN-03",
+  "group": "Motion reference units",
+  "old_id": "B11",
+  "name_show": "MRU-B2 Motion Reference Unit",
+  "brand_show": "Inertial Labs"
+ },
+ {
+  "id": "B15",
+  "section": "SN",
+  "name": "Anschutz Standard 22 Gyro Compass",
+  "brand": "Raytheon Anschutz",
+  "model_hint": "Std 22 gyro compass",
+  "register_rows": 48,
+  "search_hints": [
+   "Raytheon Anschutz Standard 22 gyro compass"
+  ],
+  "official_name": "Anschutz Standard 22 gyro compass (current model: Standard 22 NX)",
+  "brand_shown": "Raytheon Anschutz (Anschutz)",
+  "description": "The Ansch\u00fctz Standard 22 is a modular gyro compass system that can run up to three gyro compasses with an operator unit and distribution unit, forming a heading management system. It uses patented slip-ring-free data transmission and is IMO approved as a gyro compass and rate-of-turn gyro. Offshore supply vessels, tankers and cruise ships are named as typical users.",
+  "features": [
+   "Up to three gyro compasses plus magnetic or GNSS compass in one system",
+   "Automatic speed and latitude error correction",
+   "Bridge alert management compliant",
+   "Quick settling mode to 1 hour (option)",
+   "12 RS-422 outputs via distribution unit"
+  ],
+  "specs": [
+   {
+    "k": "Static error",
+    "v": "0.1 deg sec Lat. RMS"
+   },
+   {
+    "k": "Dynamic error",
+    "v": "0.4 deg sec Lat. RMS"
+   },
+   {
+    "k": "Supply",
+    "v": "24 VDC (18-36 VDC)"
+   },
+   {
+    "k": "Operating temperature",
+    "v": "-10 to +55 C"
+   },
+   {
+    "k": "Settling time",
+    "v": "1 h with quick settling option"
+   }
+  ],
+  "status": "FOUND",
+  "brand_note": "Confirmed. Standard 22 is the older name; the current product is Standard 22 NX. Anschutz brochure read is the 2018 Standard 22 brochure (type approved to IMO standards); NX data from anschuetz.com. Mackay lists the original Standard 22 as end of life.",
+  "notes": "OEM image is of the NX; distributor image is of the original Std 22. Pick according to which model Sinor supplies.",
+  "has_image": false,
+  "display_name": "Standard 22 Gyro Compass",
+  "display_brand": "Raytheon Ansch\u00fctz",
+  "legacy": false,
+  "kind": "card",
+  "ref": "SN-04",
+  "group": "Heading",
+  "old_id": "B15",
+  "name_show": "Standard 22 Gyro Compass",
+  "brand_show": "Raytheon Ansch\u00fctz"
+ },
+ {
+  "id": "B12",
+  "section": "SN",
+  "name": "R.M. Young 86106 Ultrasonic Wind Sensor",
+  "brand": "R.M. Young",
+  "model_hint": "86106 with wind display",
+  "register_rows": 69,
+  "search_hints": [
+   "R.M. Young 86106 ultrasonic anemometer"
+  ],
+  "official_name": "YOUNG 86106 Ultrasonic Anemometer (Marine)",
+  "brand_shown": "R.M. Young",
+  "description": "The YOUNG 86106 is a compact 2-axis ultrasonic anemometer with no moving parts, measuring horizontal wind speed and direction. The marine version is preconfigured for NMEA serial output (RS-485, 4800 baud), with analog and 4-20 mA outputs also available. It mounts on a standard 1 inch pipe.",
+  "features": [
+   "No moving parts, corrosion-resistant construction",
+   "Preconfigured NMEA output; RS-232, RS-485 and several formats available",
+   "Analog voltage and 4-20 mA outputs",
+   "Mounts on 1 inch IPS pipe with orientation ring",
+   "IP65 protection"
+  ],
+  "specs": [
+   {
+    "k": "Wind speed range",
+    "v": "0-75 m/s"
+   },
+   {
+    "k": "Accuracy",
+    "v": "+/-2% +/-0.1 m/s (30 m/s); direction +/-2 deg"
+   },
+   {
+    "k": "Power",
+    "v": "10-30 VDC, <20 mA typical"
+   },
+   {
+    "k": "Operating temperature",
+    "v": "-40 to 60 C"
+   },
+   {
+    "k": "Weight",
+    "v": "0.4 kg"
+   }
+  ],
+  "status": "FOUND",
+  "brand_note": "Confirmed: R.M. Young (YOUNG) Model 86106 Ultrasonic Anemometer - Marine. 'With wind display' is not part of the sensor; no display read.",
+  "notes": "Page also shows a price; not recorded here.",
+  "has_image": true,
+  "display_name": "86106 Ultrasonic Wind Sensor",
+  "display_brand": "R.M. Young",
+  "legacy": false,
+  "kind": "card",
+  "ref": "SN-05",
+  "group": "Wind",
+  "old_id": "B12",
+  "name_show": "86106 Ultrasonic Wind Sensor",
+  "brand_show": "R.M. Young"
+ },
+ {
+  "id": "B13",
+  "section": "SN",
+  "name": "Observator OMC-118 Ultrasonic Wind Sensor",
+  "brand": "Observator",
+  "model_hint": "OMC-118, OMC-122M bracket",
+  "register_rows": 22,
+  "search_hints": [
+   "Observator OMC-118 ultrasonic wind sensor"
+  ],
+  "official_name": "Observator OMC-118 Ultrasonic Wind Sensor",
+  "brand_shown": "Observator",
+  "description": "The OMC-118 is Observator's stainless-steel ultrasonic wind sensor, supplied to navies and used in marine, offshore and tunnel applications. It outputs NMEA or polar format and connects to Observator loggers, signal conditioning units and displays. The standard range is 0 to 65 m/s with 0 to 75 m/s optional.",
+  "features": [
+   "Enhanced anti-icing design",
+   "Analogue and NMEA outputs, user-selectable format",
+   "Sonic temperature output",
+   "Communication software included",
+   "Connects to the Observator display line"
+  ],
+  "specs": [
+   {
+    "k": "Standard range",
+    "v": "0-65 m/s"
+   },
+   {
+    "k": "Optional range",
+    "v": "0-75 m/s"
+   },
+   {
+    "k": "Housing",
+    "v": "Stainless steel"
+   },
+   {
+    "k": "Variants",
+    "v": "OMC-118M, OMC-118 I.S. (intrinsically safe)"
+   }
+  ],
+  "status": "FOUND",
+  "brand_note": "Confirmed. OMC-118 is Observator's stainless-steel ultrasonic wind sensor; Observator's manual and marinsat/nauticexpo datasheets describe it as based on the Gill WindObserver II (search excerpts only). OMC-122M bracket not researched.",
+  "notes": "Datasheet PDF link on the page (Datasheet-OMC-118-V20210805.pdf) not opened.",
+  "has_image": true,
+  "display_name": "OMC-118 Ultrasonic Wind Sensor",
+  "display_brand": "Observator",
+  "legacy": false,
+  "kind": "card",
+  "ref": "SN-06",
+  "group": "Wind",
+  "old_id": "B13",
+  "name_show": "OMC-118 Ultrasonic Wind Sensor",
+  "brand_show": "Observator"
+ },
+ {
+  "id": "B14",
+  "section": "SN",
+  "name": "DEIF WSS Ultrasonic Wind Sensor",
+  "brand": "DEIF",
+  "model_hint": "WSS 550 / WSS 750",
+  "register_rows": 5,
+  "search_hints": [
+   "DEIF WSS 750 wind sensor"
+  ],
+  "official_name": "DEIF WSS 750 Ultrasonic Wind Sensor (and WSS 550)",
+  "brand_shown": "DEIF",
+  "description": "The DEIF WSS 750 is a marine-approved ultrasonic wind sensor with no moving parts, stainless steel construction and a separately powered heater against icing. It is well suited to Dynamic Positioning systems and pairs with the DEIF XDi-N wind indicator. The WSS 550 is the related IP66 sensor with intelligent heating.",
+  "features": [
+   "Well suited for DP systems",
+   "All stainless steel, no moving parts",
+   "NMEA protocol output",
+   "Bayonet mount for simple installation",
+   "DNV GL approved"
+  ],
+  "specs": [
+   {
+    "k": "Wind speed",
+    "v": "up to 65 m/s (120 knots)"
+   },
+   {
+    "k": "Speed accuracy",
+    "v": "better than 3% (min +/-0.2 m/s)"
+   },
+   {
+    "k": "Direction accuracy",
+    "v": "better than +/-2 deg"
+   },
+   {
+    "k": "Protection",
+    "v": "IP66 and IP67"
+   }
+  ],
+  "status": "FOUND",
+  "brand_note": "Confirmed: DEIF Marine Instruments WSS 750 and WSS 550 (DEIF page names WSS 750 as suitable for DP systems). Register says 'WSS 550 / WSS 750'.",
+  "notes": "WSS 550 facts (IP66, DNV GL approved, heating) come from the card on the WSS 750 page; separate WSS 550 page not read.",
+  "has_image": true,
+  "display_name": "WSS 750 / 550 Ultrasonic Wind Sensor",
+  "display_brand": "DEIF",
+  "legacy": false,
+  "kind": "card",
+  "ref": "SN-07",
+  "group": "Wind",
+  "old_id": "B14",
+  "name_show": "WSS 750 / 550 Ultrasonic Wind Sensor",
+  "brand_show": "DEIF"
+ },
+ {
+  "id": "B16",
+  "section": "SN",
+  "name": "Trimble GA830 GNSS Antenna Kit",
+  "brand": "Trimble",
+  "model_hint": "GA830, bracket kit",
+  "register_rows": 39,
+  "search_hints": [
+   "Trimble GA830 antenna"
+  ],
+  "official_name": "Trimble GA830 GNSS Antenna",
+  "brand_shown": "Trimble",
+  "description": "The Trimble GA830 is a rugged GNSS antenna for land and marine use, built for centimetre-level positioning. It supports GPS, GLONASS, Galileo, BeiDou, QZSS, IRNSS, SBAS, MSS and MSK beacon, with Iridium filtering and low-elevation satellite tracking.",
+  "features": [
+   "Multi-constellation support including MSS and MSK beacon",
+   "Iridium filtering",
+   "Robust low-elevation satellite tracking",
+   "Rugged design for marine use",
+   "5/8 inch-11 thread or 3 x M8 surface mount"
+  ],
+  "specs": [
+   {
+    "k": "Weight",
+    "v": "820 g"
+   },
+   {
+    "k": "Size",
+    "v": "14.9 cm dia x 9.8 cm high"
+   },
+   {
+    "k": "Mount",
+    "v": "5/8 in-11 thread or 3 x M8"
+   }
+  ],
+  "status": "FOUND",
+  "brand_note": "Confirmed. Trimble GA830 is a marine and land GNSS antenna listed on Trimble OEM GNSS. 'Bracket kit' not verified.",
+  "notes": "Primary image URL is AVIF format (fm=avif); may need conversion.",
+  "has_image": true,
+  "display_name": "GA830 GNSS Antenna",
+  "display_brand": "Trimble",
+  "legacy": false,
+  "kind": "card",
+  "ref": "SN-08",
+  "group": "GNSS antenna",
+  "old_id": "B16",
+  "name_show": "GA830 GNSS Antenna",
+  "brand_show": "Trimble"
+ },
+ {
+  "id": "C03",
+  "section": "CA",
+  "name": "Hatteland Marine Display (DP Display)",
+  "brand": "Hatteland Display",
+  "model_hint": "19 in and 23 in DP displays, new or refurbished",
+  "register_rows": 24,
+  "search_hints": [
+   "Hatteland Display marine monitor 19 inch"
+  ],
+  "official_name": "HATTELAND Series 1 G3 JH 19T27 MMD 19 inch marine monitor",
+  "brand_shown": "Hatteland Display (Hatteland Technology)",
+  "description": "The JH 19T27 MMD is a 19 inch LED marine monitor from Hatteland's Series 1 G3 range, built to the same size and form as earlier Series 1 units so it can be fitted as a retrofit. It takes DisplayPort, HDMI, USB-C and VGA input and is type approved to IEC 60945 and IACS E10 with several class mutual recognitions.",
+  "features": [
+   "IP66 front, IP20 rear",
+   "Multi-power AC and 24 VDC",
+   "Optional resistive touch screen and optical bonding",
+   "Keypad or potmeter control with buzzer option",
+   "Type approved IEC 60945, IACS E10, DNV, ABS, BV and others"
+  ],
+  "specs": [
+   {
+    "k": "Native resolution",
+    "v": "1280 x 1024 (SXGA), 5:4"
+   },
+   {
+    "k": "Brightness / contrast",
+    "v": "350 cd/m2 / 1500:1 typical"
+   },
+   {
+    "k": "Power",
+    "v": "23 W typical, 33 W max"
+   },
+   {
+    "k": "Size and weight",
+    "v": "483 x 444 x 82 mm, about 8 kg"
+   },
+   {
+    "k": "Operating temperature",
+    "v": "-15 to +55 C"
+   }
+  ],
+  "status": "FOUND",
+  "brand_note": "Brand confirmed (hattelandtechnology.com). Register mentions 19 in and 23 in; Hatteland lists 19.0 in (e.g. JH 19T27 MMD) and 24.0 in widescreen (HD 24T27 MMD), no 23 in found in the pages read. Exact model Sinor supplies (new or refurbished) not stated, so the card is generic to the JH 19T27 MMD (Series 1 G3).",
+  "notes": "Third image URL was seen in the product list page; dimensions not reported.",
+  "has_image": true,
+  "display_name": "JH 19T27 MMD 19 in Marine Monitor",
+  "display_brand": "Hatteland Display",
+  "legacy": false,
+  "kind": "card",
+  "ref": "CA-01",
+  "group": "Operator stations and displays",
+  "old_id": "C03",
+  "name_show": "JH 19T27 MMD 19 in Marine Monitor",
+  "brand_show": "Hatteland Display"
+ },
+ {
+  "id": "C04",
+  "section": "CA",
+  "name": "Marine Touch Screen Monitor 19 in",
+  "brand": "Guidance Marine",
+  "model_hint": "20-0310 incl. bracket and cables; MB-15H-TRS-24VDC 15in touch display",
+  "register_rows": 122,
+  "search_hints": [
+   "Guidance Marine 19 inch marine touch screen monitor"
+  ],
+  "official_name": "Marine touch screen monitor 19 in (Guidance Marine 20-0310; generic image Hatteland JH 19T27 MMD with touch option)",
+  "brand_shown": "Guidance Marine (reseller / supplier); underlying monitor maker probably Hatteland but NOT confirmed for 20-0310",
+  "description": "Guidance Marine supplies marine touch screen displays with its DP position sensor packages.",
+  "features": [
+   "IP66 front protection",
+   "Multi-power AC and 24 VDC",
+   "Type approved IEC 60945",
+   "Bracket and cable kit per register (not verified)"
+  ],
+  "specs": [],
+  "status": "PARTIAL",
+  "brand_note": "Guidance Marine is the CyScan DP sensor maker; its part list (copy hosted by smtssg.com) shows a 'Marine integrated PC + touch screen monitor - Hatteland' (24-0259-4) and Hatteland mounting brackets, but does not list 20-0310 or MB-15H-TRS-24VDC. So the Hatteland link for the 19 in touch monitor is plausible but unverified. The 15 in MB-15H-TRS-24VDC was not identified.",
+  "notes": "Image is generic, label it as such. Ask Guidance Marine for the datasheet of 20-0310 to confirm maker and model.",
+  "has_image": false,
+  "display_name": "19 in Marine Touch Screen Monitor",
+  "display_brand": "Guidance Marine",
+  "legacy": false,
+  "kind": "card",
+  "ref": "CA-02",
+  "group": "Operator stations and displays",
+  "old_id": "C04",
+  "name_show": "19 in Marine Touch Screen Monitor",
+  "brand_show": "Guidance Marine"
+ },
+ {
+  "id": "C05",
+  "section": "CA",
+  "name": "Trackerball Mouse and Compact Keyboard",
+  "brand": "Guidance Marine",
+  "model_hint": "38-0037-4 / 38-0038-4",
+  "register_rows": 114,
+  "search_hints": [
+   "Guidance Marine trackerball mouse compact keyboard"
+  ],
+  "official_name": "Guidance Marine trackerball mouse and compact USB keyboard (38-0037-4 / 38-0038-4)",
+  "brand_shown": "Guidance Marine (part numbers on Guidance Marine list); manufacturer of the actual trackerball and keyboard not identified",
+  "description": "Guidance Marine lists a USB trackerball mouse and a compact USB keyboard as accessory items for its DP sensor workstations.",
+  "features": [
+   "Trackerball mouse with USB connector",
+   "Compact keyboard with USB connector"
+  ],
+  "specs": [
+   {
+    "k": "Interface",
+    "v": "USB (both items)"
+   }
+  ],
+  "status": "PARTIAL",
+  "brand_note": "The Guidance Marine part list (copy on smtssg.com) names 'Trackerball Mouse: track ball mouse with USB connector' and 'Compact Keyboard: compact keyboard with USB connector'. The text extraction is jumbled, so which of 38-0037-4 / 38-0038-4 is which is probable (0037 trackerball, 0038 keyboard) but not certain; the same list also associates 38-00xx numbers with Hatteland brackets. No maker given.",
+  "notes": "All images generic and must be labelled so. Ask Guidance Marine for the datasheets of 38-0037-4 and 38-0038-4.",
+  "has_image": false,
+  "display_name": "Trackerball Mouse and Compact Keyboard",
+  "display_brand": "Guidance Marine",
+  "legacy": false,
+  "kind": "card",
+  "ref": "CA-03",
+  "group": "Operator stations and displays",
+  "old_id": "C05",
+  "name_show": "Trackerball Mouse and Compact Keyboard",
+  "brand_show": "Guidance Marine"
+ },
+ {
+  "id": "C06",
+  "section": "CA",
+  "name": "VGA Extender over CATx",
+  "brand": "(verify)",
+  "model_hint": "ST-C5VRS-600 VGA extender with RS232",
+  "register_rows": 43,
+  "search_hints": [
+   "ST-C5VRS-600 VGA extender"
+  ],
+  "official_name": "NTI XTENDEX ST-C5VRS-600 VGA Extender with RS232 via CATx to 600 feet",
+  "brand_shown": "Network Technologies Inc (NTI), XTENDEX series",
+  "description": "The NTI XTENDEX ST-C5VRS-600 sends VGA video and RS232 (for example for a touch screen) up to 600 feet over CAT5/5e/6 cable. A local unit connects to the computer and also feeds a local monitor, and a remote unit connects to the remote monitor. It has built-in surge protection and a two year warranty.",
+  "features": [
+   "VGA plus RS232 over a single CATx cable",
+   "Supports local and remote monitors",
+   "Resolutions up to 1920x1440 (shorter range at higher resolution)",
+   "Built-in surge protection",
+   "RS232 supports touch screen monitors"
+  ],
+  "specs": [
+   {
+    "k": "Range on CAT5/5e UTP",
+    "v": "600 ft (183 m) at 1024x768; 400 ft at 1280x1024"
+   },
+   {
+    "k": "RS232",
+    "v": "up to 56000 baud"
+   },
+   {
+    "k": "Power",
+    "v": "100-240 VAC adapter, 10 W each unit"
+   },
+   {
+    "k": "Size and weight",
+    "v": "89 x 79 x 30 mm, 0.54 kg"
+   },
+   {
+    "k": "Operating temperature",
+    "v": "0 to 38 C"
+   }
+  ],
+  "status": "FOUND",
+  "brand_note": "Register leaves the brand blank. ST-C5VRS-600 is an NTI (Network Technologies Inc, Ohio USA) XTENDEX VGA extender with RS232.",
+  "notes": "Operating temperature 0-38 C is narrower than other marine kit; relevant for installation advice.",
+  "has_image": true,
+  "display_name": "ST-C5VRS-600 VGA Extender",
+  "display_brand": "NTI",
+  "legacy": false,
+  "kind": "card",
+  "ref": "CA-04",
+  "group": "Operator stations and displays",
+  "old_id": "C06",
+  "name_show": "ST-C5VRS-600 VGA Extender",
+  "brand_show": "NTI"
+ },
+ {
+  "id": "C08",
+  "section": "CA",
+  "name": "Kongsberg cJoy Operator Terminal",
+  "brand": "Kongsberg Maritime",
+  "model_hint": "cJoy independent joystick operator terminal",
+  "register_rows": 16,
+  "search_hints": [
+   "Kongsberg cJoy joystick"
+  ],
+  "official_name": "Kongsberg Compact Joystick Operator Terminal (cJoy), part 603201",
+  "brand_shown": "Kongsberg Maritime",
+  "description": "The cJoy is a compact joystick operator terminal from Kongsberg Maritime that gives the DP operator or helmsman direct manual control input to thrusters and propulsion within Kongsberg dynamic positioning and manoeuvring systems. It is built to be fitted into a bridge console.",
+  "features": [
+   "Joystick control in surge, sway and yaw (per operator manual excerpt)",
+   "Built into DP console or bridge console arrangements",
+   "Keyboard encoder software version 2, hardware Rev A",
+   "Marked compass safe distance 0.55 m"
+  ],
+  "specs": [
+   {
+    "k": "Part no.",
+    "v": "603201"
+   },
+   {
+    "k": "Hardware revision",
+    "v": "A"
+   },
+   {
+    "k": "Keyboard encoder SW",
+    "v": "2"
+   },
+   {
+    "k": "Compass safe distance",
+    "v": "0.55 m"
+   },
+   {
+    "k": "Origin",
+    "v": "Norway"
+   }
+  ],
+  "status": "FOUND",
+  "brand_note": "Confirmed: Kongsberg Maritime AS, Norway. Distributor page identifies the Compact Joystick Operator Terminal (cJoy) as part 603201, Rev A. A different cJoy listing (339881) also appears in search, so confirm which part number Sinor supplies.",
+  "notes": "Prota Marine is a Dubai/Singapore spares dealer, so this is a distributor image, not Kongsberg's. Surge/sway/yaw wording comes from a Scribd operator manual search excerpt, not a page fully read. Search excerpt for part 339881 mentions a 6.5 inch colour display and heading wheel, which may be the newer cJoy generation; not used on this card because not verified.",
+  "has_image": false,
+  "display_name": "cJoy Joystick Operator Terminal",
+  "display_brand": "Kongsberg Maritime",
+  "legacy": false,
+  "kind": "card",
+  "ref": "CA-05",
+  "group": "Operator stations and displays",
+  "old_id": "C08",
+  "name_show": "cJoy Joystick Operator Terminal",
+  "brand_show": "Kongsberg Maritime"
+ },
+ {
+  "id": "C23",
+  "section": "CA",
+  "name": "Caldaro Three-Axis Joystick",
+  "brand": "Caldaro",
+  "model_hint": "S50JAK-ZU",
+  "register_rows": 3,
+  "search_hints": [
+   "Caldaro S50JAK joystick"
+  ],
+  "official_name": "Caldaro S50JAK-ZU joystick (variants -30GP, -31R1G)",
+  "brand_shown": "Caldaro (Caldaro AB); joystick likely of Sakae origin",
+  "description": "The S50JAK-ZU is a Caldaro industrial joystick controller used on marine control stations. Caldaro itself describes its joysticks as customised to each customer.",
+  "features": [
+   "Industrial joystick controller",
+   "Variants -30GP and -31R1G listed",
+   "Caldaro supplies marine and off-shore controls"
+  ],
+  "specs": [],
+  "status": "PARTIAL",
+  "brand_note": "Caldaro confirmed as an OEM joystick and marine controls maker on caldaro.com. Listings show variants S50JAK-ZU-30GP and S50JAK-ZU-31R1G, both marked 'Caldaro Ab Sakae', made in Japan; the hint has no suffix. Three-axis wording is from the catalogue, not verified in any source.",
+  "notes": "PARTIAL: only variant images from resellers and no Caldaro product page for the exact model. Descriptions come from search excerpts and Caldaro's home page. Confirm Sinor's exact suffix before using any image.",
+  "has_image": false,
+  "display_name": "S50JAK-ZU Joystick",
+  "display_brand": "Caldaro",
+  "legacy": false,
+  "kind": "card",
+  "ref": "CA-06",
+  "group": "Operator stations and displays",
+  "old_id": "C23",
+  "name_show": "S50JAK-ZU Joystick",
+  "brand_show": "Caldaro"
+ },
+ {
+  "id": "C07",
+  "section": "CA",
+  "name": "Kongsberg RMP 200 / 201-8 Remote Multiplexer Module",
+  "brand": "Kongsberg Maritime",
+  "model_hint": "RMP200-8 603443; RMP201-8; RMP420 thruster control card",
+  "register_rows": 49,
+  "search_hints": [
+   "Kongsberg RMP 201-8 module"
+  ],
+  "official_name": "Kongsberg RMP201-8 Remote Multi-Purpose Input/Output Module (part 324400)",
+  "brand_shown": "Kongsberg Maritime",
+  "description": "The RMP201-8 is a Remote Multi-Purpose input/output module from Kongsberg Maritime, used as a distributed I/O node in marine automation and control systems.",
+  "features": [
+   "Remote multi-purpose I/O module",
+   "Kongsberg part no. 324400",
+   "Legacy part, supplied refurbished"
+  ],
+  "specs": [
+   {
+    "k": "Model",
+    "v": "RMP201-8"
+   },
+   {
+    "k": "Part no.",
+    "v": "324400"
+   },
+   {
+    "k": "Maker",
+    "v": "Kongsberg"
+   }
+  ],
+  "status": "FOUND",
+  "brand_note": "Maker confirmed as Kongsberg by the distributor listing for RMP201-8 (part 324400). Only RMP201-8 was covered; RMP200-8 603443 and RMP420 thruster control card were not found. No Kongsberg-owned page for these legacy modules was found.",
+  "notes": "Image 1 is a Dubai/India reseller photo of the exact model. Image 2 is a marketplace image, use only if image 1 is rejected. Search snippets from other resellers describe the RMP201-8 as part of Kongsberg's RIO200 distributed I/O system but that was seen only as a search excerpt, not on a page read, so it is not used as a fact.",
+  "has_image": false,
+  "display_name": "RMP201-8 Remote I/O Module",
+  "display_brand": "Kongsberg Maritime",
+  "legacy": false,
+  "kind": "card",
+  "ref": "CA-07",
+  "group": "Controllers, PLC and I/O",
+  "old_id": "C07",
+  "name_show": "RMP201-8 Remote I/O Module",
+  "brand_show": "Kongsberg Maritime"
+ },
+ {
+  "id": "C09",
+  "section": "CA",
+  "name": "Rolls-Royce Marine Controller and I/O Modules",
+  "brand": "Rolls-Royce",
+  "model_hint": "RRAIO16, RRDIO15, RRRLY8, RRVIO8",
+  "register_rows": 15,
+  "search_hints": [
+   "Rolls-Royce marine controller I/O module"
+  ],
+  "official_name": "Rolls-Royce marine I/O alarm modules RRAIO16 (analogue), RRDIO15 (digital) and RRRLY8 (relay)",
+  "brand_shown": "Rolls-Royce (modules carry Weidmuller type names RRAIO16, RRDIO15, RRRLY8)",
+  "description": "I/O and alarm modules supplied for Rolls-Royce marine control and alarm systems, covering analogue, digital and relay signals. Type names RRAIO16, RRDIO15 and RRRLY8 are the modules Sinor supplies; confirm the exact module and revision with Sinor before ordering.",
+  "features": [],
+  "specs": [],
+  "status": "FOUND",
+  "brand_note": "Resellers list these as 'Rolls-Royce Weidmuller' I/O alarm modules. Maker is Rolls-Royce Marine per listings, but no Rolls-Royce page confirms this. RRVIO8 was not found at all. The catalogue name 'Marine Controller' is not supported, these are I/O and alarm modules.",
+  "notes": "Weak sourcing. The only page fully read is a Chinese reseller page whose technical claims (IP40, -40 to 125 C, TTL/CMOS) look generic and were NOT used. Channel counts rely on model names and reseller titles. Recommend Sinor treat this card as a family card and confirm specs from the Rolls-Royce manual. Image 1 shows three modules in one picture, which fits the family card.",
+  "has_image": false,
+  "display_name": "RRAIO16 / RRDIO15 / RRRLY8 I/O Modules",
+  "display_brand": "Rolls-Royce",
+  "legacy": false,
+  "kind": "card",
+  "ref": "CA-08",
+  "group": "Controllers, PLC and I/O",
+  "old_id": "C09",
+  "name_show": "RRAIO16 / RRDIO15 / RRRLY8 I/O Modules",
+  "brand_show": "Rolls-Royce"
+ },
+ {
+  "id": "C10",
+  "section": "CA",
+  "name": "GE Fanuc Series 90-30 PLC Modules",
+  "brand": "GE Fanuc",
+  "model_hint": "IC693CPU374, IC693PWR331, IC693BEM331",
+  "register_rows": 11,
+  "search_hints": [
+   "GE Fanuc Series 90-30 PLC IC693CPU374"
+  ],
+  "official_name": "GE Fanuc Series 90-30 CPU 374 (IC693CPU374)",
+  "brand_shown": "GE Fanuc (now Emerson)",
+  "description": "The IC693CPU374 is a single-slot CPU for the Series 90-30 PLC with an embedded Ethernet controller. It runs at 133 MHz with 240 KB of user memory and supports Modbus/TCP, SRTP and Ethernet Global Data.",
+  "features": [
+   "Single-slot CPU with embedded Ethernet",
+   "Auto-sensing 10/100 Mbps Ethernet",
+   "Supports SRTP, Modbus/TCP and Ethernet Global Data",
+   "Supports up to 7 remote or expansion baseplates"
+  ],
+  "specs": [
+   {
+    "k": "Processor speed",
+    "v": "133 MHz"
+   },
+   {
+    "k": "User memory",
+    "v": "240 KB"
+   },
+   {
+    "k": "Discrete I/O points",
+    "v": "2048"
+   },
+   {
+    "k": "Operating temperature",
+    "v": "0 to 60 C"
+   },
+   {
+    "k": "Ethernet",
+    "v": "10/100 Mbps"
+   }
+  ],
+  "status": "FOUND",
+  "brand_note": "Series 90-30 is GE Fanuc, later GE Intelligent Platforms and now Emerson. Only IC693CPU374 was covered; IC693PWR331 and IC693BEM331 were not looked up (budget).",
+  "notes": "Specs come from a reseller page (PLC DCS Pro), not GE/Emerson. The page lists 'two ports' for Ethernet, so port count is left out of the card. Second image URL is verbatim from search output (http scheme). Keep 'Series 90-30' wording, the PWR331 power supply and BEM331 bus module were not researched.",
+  "has_image": false,
+  "display_name": "Series 90-30 CPU IC693CPU374",
+  "display_brand": "GE Fanuc",
+  "legacy": false,
+  "kind": "card",
+  "ref": "CA-09",
+  "group": "Controllers, PLC and I/O",
+  "old_id": "C10",
+  "name_show": "Series 90-30 CPU IC693CPU374",
+  "brand_show": "GE Fanuc"
+ },
+ {
+  "id": "C11",
+  "section": "CA",
+  "name": "GE Fanuc VersaMax I/O Modules",
+  "brand": "GE Fanuc",
+  "model_hint": "IC200ALG240, IC200MDL940, IC200GBI001",
+  "register_rows": 20,
+  "search_hints": [
+   "GE Fanuc VersaMax IC200ALG240"
+  ],
+  "official_name": "GE Fanuc VersaMax IC200ALG240 Analog Input Module",
+  "brand_shown": "GE Fanuc (now Emerson)",
+  "description": "The IC200ALG240 is a VersaMax analog input module that takes signals from up to 8 analog devices and gives 16-bit resolution. It provides 8 words of analog input data and has built-in diagnostics for open wire and over or under range. Each channel is isolated.",
+  "features": [
+   "8 isolated analog inputs",
+   "16-bit resolution",
+   "Diagnostics: open wire, over/under range, high/low limit, loss of field power",
+   "Module OK and field power LEDs",
+   "No thermal derating"
+  ],
+  "specs": [
+   {
+    "k": "Inputs",
+    "v": "8, isolated"
+   },
+   {
+    "k": "Resolution",
+    "v": "16 bit"
+   },
+   {
+    "k": "External supply",
+    "v": "+19.5 to +30 VDC"
+   },
+   {
+    "k": "Isolation",
+    "v": "250 VAC continuous, 1500 VAC for 1 min"
+   },
+   {
+    "k": "Backplane current",
+    "v": "5 V: 15 mA max, 3.3 V: 120 mA max"
+   }
+  ],
+  "status": "FOUND",
+  "brand_note": "VersaMax is GE Fanuc, now sold under Emerson (the reseller titles it GE-Emerson). Only IC200ALG240 was covered; IC200MDL940 and IC200GBI001 were not.",
+  "notes": "Facts read from Qualitrol, a GE-authorized repair centre, citing the GE datasheet. Qualitrol's own image file is named ic200alg230_1.jpg so it may show a sibling module and is NOT offered. Image hosts were not opened, only seen in search results.",
+  "has_image": false,
+  "display_name": "VersaMax IC200ALG240 Analog Input",
+  "display_brand": "GE Fanuc",
+  "legacy": false,
+  "kind": "card",
+  "ref": "CA-10",
+  "group": "Controllers, PLC and I/O",
+  "old_id": "C11",
+  "name_show": "VersaMax IC200ALG240 Analog Input",
+  "brand_show": "GE Fanuc"
+ },
+ {
+  "id": "C12",
+  "section": "CA",
+  "name": "Converteam Advanced Micro Controller (AMC)",
+  "brand": "Converteam / Power Conversion",
+  "model_hint": "AMC controller",
+  "register_rows": 21,
+  "search_hints": [
+   "Converteam Advanced Micro Controller AMC"
+  ],
+  "official_name": "Converteam Advanced Micro Controller (AMC / AMC2), e.g. P111-6052",
+  "brand_shown": "Converteam (later GE Power Conversion); exact current owner not verified",
+  "description": "The Advanced Micro Controller is a Converteam control unit used in marine automation and dynamic positioning, with variants named AMC-PLC, AMC-AU and AMC-DP. Its main controller box is a Converteam design built around an Arbor industrial controller board.",
+  "features": [
+   "Variants AMC-PLC, AMC-AU and AMC-DP"
+  ],
+  "specs": [
+   {
+    "k": "Example part nos.",
+    "v": "P110-6052, P111-6052, P112-6052"
+   },
+   {
+    "k": "Controller board",
+    "v": "Arbor EmE7x-i701 (excerpt)"
+   }
+  ],
+  "status": "PARTIAL",
+  "brand_note": "Catalogue gives only 'AMC controller'. Listings show several AMC part numbers (P110-6052, P111-6052, P112-6052 AMC-DP, P110-6152). Which one Sinor supplies must be confirmed. One listing title reads 'GE Energy Converteam Alstom', not verified.",
+  "notes": "PARTIAL: no Converteam/GE page found, the description rests on a search excerpt from a reseller page and one reseller photo of P111-6052. Image 2 is a different AMC part (P110-6152). Not suitable for specs.",
+  "has_image": false,
+  "display_name": "Advanced Micro Controller (AMC)",
+  "display_brand": "Converteam",
+  "legacy": false,
+  "kind": "card",
+  "ref": "CA-11",
+  "group": "Controllers, PLC and I/O",
+  "old_id": "C12",
+  "name_show": "Advanced Micro Controller (AMC)",
+  "brand_show": "Converteam"
+ },
+ {
+  "id": "C13",
+  "section": "CA",
+  "name": "Schneider Modicon PLC (Premium / M340)",
+  "brand": "Schneider Electric",
+  "model_hint": "TSX P57 4634M; M340 CPU and power supply",
+  "register_rows": 8,
+  "search_hints": [
+   "Schneider Modicon Premium TSX P57 4634M"
+  ],
+  "official_name": "TSXP574634M Unity processor, Modicon Premium, 440 kB data RAM",
+  "brand_shown": "Schneider Electric (Modicon)",
+  "description": "The TSX P57 4634M is a standard Modicon Premium processor with integrated Ethernet and Fipio, programmed with Unity Pro. It manages the whole PLC station and handles application-specific channels in the rack. Schneider lists it as discontinued since December 2020, with service only.",
+  "features": [
+   "Standard Premium processor with integrated Ethernet and Fipio",
+   "Unity Pro programming",
+   "RS485 serial link, Ethernet and USB ports",
+   "PCMCIA memory extension cards used"
+  ],
+  "specs": [
+   {
+    "k": "Discrete I/O capacity",
+    "v": "2040 I/O"
+   },
+   {
+    "k": "Analogue I/O capacity",
+    "v": "256 I/O"
+   },
+   {
+    "k": "Application-specific channels",
+    "v": "64"
+   },
+   {
+    "k": "Ethernet port",
+    "v": "10BASE-T/100BASE-TX"
+   },
+   {
+    "k": "Lifecycle",
+    "v": "Discontinued 2 Dec 2020, service only"
+   }
+  ],
+  "status": "FOUND",
+  "brand_note": "Confirmed on se.com. TSX P57 4634M is Modicon Premium, discontinued 2 Dec 2020 (service only). M340 CPU and power supply from the hint were not covered.",
+  "notes": "OEM image is small (369 px). A larger Schneider rendition for another Premium CPU (TSXP57203M) is rendition_1500 but is a different model so not offered.",
+  "has_image": false,
+  "display_name": "Modicon Premium TSX P57 4634M",
+  "display_brand": "Schneider Electric",
+  "legacy": true,
+  "kind": "card",
+  "ref": "CA-12",
+  "group": "Controllers, PLC and I/O",
+  "old_id": "C13",
+  "name_show": "Modicon Premium TSX P57 4634M",
+  "brand_show": "Schneider Electric"
+ },
+ {
+  "id": "C14",
+  "section": "CA",
+  "name": "Siemens SIMATIC S7-1200 PLC and I/O",
+  "brand": "Siemens",
+  "model_hint": "CPU 1214C, SM 1223, CM 1241",
+  "register_rows": 21,
+  "search_hints": [
+   "Siemens SIMATIC S7-1200 CPU 1214C"
+  ],
+  "official_name": "SIMATIC S7-1200 CPU 1214C compact CPU",
+  "brand_shown": "Siemens",
+  "description": "The CPU 1214C is a compact SIMATIC S7-1200 controller with 14 digital inputs, 10 digital outputs and 2 analogue inputs on board, and a built-in PROFINET Ethernet port. It can be expanded with one signal board, up to eight signal modules and up to three communication modules. It is available in DC/DC/DC, DC/DC/relay and AC/DC/relay versions.",
+  "features": [
+   "14 DI 24 V DC, 10 DO, 2 AI 0 to 10 V",
+   "Integrated PROFINET interface, OPC UA server, Modbus",
+   "Expandable with 1 SB, 8 SM and 3 CM",
+   "6 fast counters, 4 pulse outputs up to 100 kHz (DC/DC/DC)",
+   "Marine approval listed"
+  ],
+  "specs": [
+   {
+    "k": "Work memory",
+    "v": "150 kB"
+   },
+   {
+    "k": "Load memory",
+    "v": "4 MB"
+   },
+   {
+    "k": "Operating temperature",
+    "v": "-20 to 60 C"
+   },
+   {
+    "k": "Degree of protection",
+    "v": "IP20"
+   },
+   {
+    "k": "Size (W x H x D)",
+    "v": "110 x 100 x 75 mm"
+   }
+  ],
+  "status": "FOUND",
+  "brand_note": "Confirmed on Siemens SiePortal. Only CPU 1214C was read; SM 1223 and CM 1241 were not. Siemens now points to the S7-1200 G2 as successor.",
+  "notes": "Image 1 URL appears on the page markdown; its pixel size was not reported, so width and height are 0. Image 2 is a verified 300 px version.",
+  "has_image": true,
+  "display_name": "SIMATIC S7-1200 CPU 1214C",
+  "display_brand": "Siemens",
+  "legacy": false,
+  "kind": "card",
+  "ref": "CA-13",
+  "group": "Controllers, PLC and I/O",
+  "old_id": "C14",
+  "name_show": "SIMATIC S7-1200 CPU 1214C",
+  "brand_show": "Siemens"
+ },
+ {
+  "id": "C15",
+  "section": "CA",
+  "name": "Woodward easYgen-3500XT Generator Controller",
+  "brand": "Woodward",
+  "model_hint": "easYgen-3500XT-P1; EGCP-3",
+  "register_rows": 22,
+  "search_hints": [
+   "Woodward easYgen-3500XT-P1"
+  ],
+  "official_name": "Woodward easYgen-3500XT (P1) genset controller, 8440-2085",
+  "brand_shown": "Woodward",
+  "description": "The easYgen-3500XT is a Woodward genset controller for paralleling applications. Package P1 includes a display, synchronisation of generator and mains breakers, built-in AVR regulation and three flexible PID loops for speed and voltage bias. Load sharing runs over redundant Ethernet or CANopen.",
+  "features": [
+   "Synchronisation of GCB and MCB, with run-up synchronisation",
+   "Built-in AVR regulation, 690 VAC sensing support",
+   "3 x CAN bus, 1 x RS485, 3 x Ethernet (Modbus TCP)",
+   "3 flexible PIDs for speed and voltage bias",
+   "Load sharing via redundant Ethernet or CANopen"
+  ],
+  "specs": [
+   {
+    "k": "Package",
+    "v": "P1 (1A/5A), with display"
+   },
+   {
+    "k": "Part no.",
+    "v": "8440-2085"
+   },
+   {
+    "k": "Low-temp variant P1/LT",
+    "v": "-40 to 70 C (8440-2086)"
+   }
+  ],
+  "status": "FOUND",
+  "brand_note": "easYgen-3500XT-P1 is Woodward (part 8440-2085). EGCP-3 from the hint was not covered. The page read is woodward.store, a reseller (RB-Net), not woodward.com.",
+  "notes": "No woodward.com page was read. Image 1 is the P1 shot (8440-2085), size not reported.",
+  "has_image": false,
+  "display_name": "easYgen-3500XT-P1 Genset Controller",
+  "display_brand": "Woodward",
+  "legacy": false,
+  "kind": "card",
+  "ref": "CA-14",
+  "group": "Controllers, PLC and I/O",
+  "old_id": "C15",
+  "name_show": "easYgen-3500XT-P1 Genset Controller",
+  "brand_show": "Woodward"
+ },
+ {
+  "id": "C16",
+  "section": "CA",
+  "name": "DEIF Delomatic 3 Power Management",
+  "brand": "DEIF",
+  "model_hint": "Delomatic 3 full set",
+  "register_rows": 10,
+  "search_hints": [
+   "DEIF Delomatic 3"
+  ],
+  "official_name": "DEIF Delomatic 3 (DM-3) multi-function system",
+  "brand_shown": "DEIF",
+  "description": "Delomatic 3 is DEIF's marine power management system for generator sets. It combines three-phase measurements, the generator protections and user-configurable setpoints and timers. DEIF has phased it out in favour of the Delomatic 4 series.",
+  "features": [
+   "Power management system",
+   "Built-in 3-phase measurements of U, I, P",
+   "All necessary generator protections",
+   "User-configurable setpoints and timers",
+   "Generator unit (DGU) with control panels"
+  ],
+  "specs": [
+   {
+    "k": "Lifecycle",
+    "v": "End of life, replaced by DM-4"
+   },
+   {
+    "k": "Origin",
+    "v": "Made in Denmark (DEIF site)"
+   }
+  ],
+  "status": "FOUND",
+  "brand_note": "Confirmed: DEIF Delomatic 3 (DM-3) is phased out and replaced by the DM-4 series (marine, land, gas, hydro). 'Full set' in the hint means the DGU generator unit plus control panels (CP).",
+  "notes": "Feature bullets come from the DEIF datasheet search excerpt and an overview excerpt, not a full read. The DEIF page itself says almost nothing technical. Image content not inspected, only the URL and page title.",
+  "has_image": true,
+  "display_name": "Delomatic 3 Power Management",
+  "display_brand": "DEIF",
+  "legacy": true,
+  "kind": "card",
+  "ref": "CA-15",
+  "group": "Controllers, PLC and I/O",
+  "old_id": "C16",
+  "name_show": "Delomatic 3 Power Management",
+  "brand_show": "DEIF"
+ },
+ {
+  "id": "C21",
+  "section": "CA",
+  "name": "Rexroth Valve Amplifier Module VT-VRRA1-537-20",
+  "brand": "Bosch Rexroth",
+  "model_hint": "VT-VRRA1-537-20",
+  "register_rows": 8,
+  "search_hints": [
+   "Rexroth VT-VRRA1-537-20 amplifier"
+  ],
+  "official_name": "Rexroth VT-VRRA1-537-20/V0 analog valve amplifier card (0811405061)",
+  "brand_shown": "Bosch Rexroth",
+  "description": "The VT-VRRA1-537-20/V0 is an analog Euro-card amplifier for 19 inch racks that drives high-response proportional valves with electrical position feedback, here size 10 valves of type 4WRPH10...L-2X. It runs from 24 V, has an enable input and short-circuit-proof outputs, and offers PID position control with cable break detection. It is for control cabinet use only.",
+  "features": [
+   "Controls high-response valves with LVDT position feedback",
+   "PID position control and cable break detection on actual value",
+   "Enable input, short-circuit-proof outputs",
+   "Zero point trimming potentiometer, LED status",
+   "Europe card format with DIN 41612 F32 plug"
+  ],
+  "specs": [
+   {
+    "k": "Supply",
+    "v": "24 V DC nominal, 21 to 40 V"
+   },
+   {
+    "k": "Max solenoid current (size 10)",
+    "v": "3.7 A"
+   },
+   {
+    "k": "Card format",
+    "v": "100 x 160 mm, 7 TE front plate"
+   },
+   {
+    "k": "Ambient temperature",
+    "v": "0 to +70 C"
+   },
+   {
+    "k": "Weight",
+    "v": "0.37 kg"
+   }
+  ],
+  "status": "FOUND",
+  "brand_note": "Confirmed in Rexroth datasheet RE 30041: VT-VRRA1-537-20/V0, material no. 0811405061, for 4WRPH10...L-2X valves. The datasheet was read via a distributor-hosted copy (airlinehyd), not Rexroth's own server.",
+  "notes": "Image is from resellers, no Rexroth image of this exact card was seen. The earlier datasheet I scraped (RE 29743, VT 11021) was a different amplifier and is not used.",
+  "has_image": false,
+  "display_name": "VT-VRRA1-537-20 Valve Amplifier",
+  "display_brand": "Bosch Rexroth",
+  "legacy": false,
+  "kind": "card",
+  "ref": "CA-16",
+  "group": "Controllers, PLC and I/O",
+  "old_id": "C21",
+  "name_show": "VT-VRRA1-537-20 Valve Amplifier",
+  "brand_show": "Bosch Rexroth"
+ },
+ {
+  "id": "C22",
+  "section": "CA",
+  "name": "Omron CJ1W-MAD42 Analog I/O Module",
+  "brand": "Omron",
+  "model_hint": "CJ1W-MAD42",
+  "register_rows": 3,
+  "search_hints": [
+   "Omron CJ1W-MAD42"
+  ],
+  "official_name": "Omron CJ1W-MAD42 Analog I/O Unit",
+  "brand_shown": "Omron",
+  "description": "The CJ1W-MAD42 is an Omron CJ-series analog I/O unit with 4 analog inputs and 2 analog outputs, each selectable between voltage and current ranges. It mounts on the CJ I/O bus as a Special I/O Unit and connects through screw terminals.",
+  "features": [
+   "4 analog inputs, 2 analog outputs",
+   "Inputs and outputs: -10 to 10 V, 0 to 10 V, 0 to 5 V, 1 to 5 V, 4 to 20 mA",
+   "13-bit resolution, 1:4000 scalable to 1:8000",
+   "CJ I/O bus Special I/O Unit",
+   "Screw terminal connection"
+  ],
+  "specs": [
+   {
+    "k": "Inputs / outputs",
+    "v": "4 / 2"
+   },
+   {
+    "k": "Resolution",
+    "v": "13 bit"
+   },
+   {
+    "k": "Size (H x W x D)",
+    "v": "90 x 31 x 89 mm"
+   },
+   {
+    "k": "Weight",
+    "v": "171 g"
+   }
+  ],
+  "status": "FOUND",
+  "brand_note": "Confirmed on industrial.omron.eu. CJ1W-MAD42 is a CJ-series Special I/O analog unit.",
+  "notes": "The page's conversion time value (4000 ms/unit) looks like a unit error, so it is left out.",
+  "has_image": true,
+  "display_name": "CJ1W-MAD42 Analog I/O Unit",
+  "display_brand": "Omron",
+  "legacy": false,
+  "kind": "card",
+  "ref": "CA-17",
+  "group": "Controllers, PLC and I/O",
+  "old_id": "C22",
+  "name_show": "CJ1W-MAD42 Analog I/O Unit",
+  "brand_show": "Omron"
+ },
+ {
+  "id": "C17",
+  "section": "CA",
+  "name": "Danfoss VLT and Vacon NXP Drives",
+  "brand": "Danfoss / Vacon",
+  "model_hint": "VLT 5000; Vacon NXP frequency converter",
+  "register_rows": 15,
+  "search_hints": [
+   "Vacon NXP frequency converter"
+  ],
+  "official_name": "Danfoss VACON NXP Air Cooled drive and VLT 5000 (legacy)",
+  "brand_shown": "Danfoss (VLT and VACON brands)",
+  "description": "VACON NXP Air Cooled drives are Danfoss frequency converters for demanding applications, available as wall-mounted, enclosed standalone and IP00 modules up to 2 MW. They control induction and permanent magnet motors and have five built-in expansion slots for I/O, fieldbus and safety boards. The older VLT 5000 is discontinued and Danfoss points to iC7-Automation as successor.",
+  "features": [
+   "Power range up to 2 MW",
+   "Wall-mounted, enclosed standalone and IP00 module forms",
+   "Five built-in expansion slots",
+   "Open and closed loop vector control",
+   "Coated circuit boards against dust and moisture"
+  ],
+  "specs": [
+   {
+    "k": "Supply 380-500 V",
+    "v": "1.5 to 1200 kW"
+   },
+   {
+    "k": "Supply 525-690 V",
+    "v": "2.0 to 2000 kW"
+   },
+   {
+    "k": "Supply 208-240 V",
+    "v": "0.55 to 90 kW"
+   },
+   {
+    "k": "VLT 5000 status",
+    "v": "Inactive, discontinued"
+   }
+  ],
+  "status": "FOUND",
+  "brand_note": "Both are on danfoss.com. VLT 5000 is inactive and discontinued, with spare parts and service no longer available per Danfoss. VACON NXP is covered by the NXP Air Cooled page; the NXP Grid Converter and other variants exist.",
+  "notes": "Image 2 shows the VLT 5000 family, not a single frame size. Specs refer to NXP Air Cooled only. Image 2 width/height from search result.",
+  "has_image": false,
+  "display_name": "VACON NXP and VLT Drives",
+  "display_brand": "Danfoss",
+  "legacy": false,
+  "kind": "card",
+  "ref": "CA-18",
+  "group": "Drives, networking and power backup",
+  "old_id": "C17",
+  "name_show": "VACON NXP and VLT Drives",
+  "brand_show": "Danfoss"
+ },
+ {
+  "id": "C18",
+  "section": "CA",
+  "name": "Moxa Ethernet Switch and Serial Converter",
+  "brand": "Moxa",
+  "model_hint": "EDS-205A; EDS-518A; UPort 1150",
+  "register_rows": 12,
+  "search_hints": [
+   "Moxa EDS-205A switch"
+  ],
+  "official_name": "Moxa EDS-205A Series 5-port unmanaged Ethernet switch",
+  "brand_shown": "Moxa",
+  "description": "The EDS-205A is a compact 5-port unmanaged industrial Ethernet switch in an IP30 aluminium housing, with redundant 12/24/48 VDC power inputs. It is designed for harsh locations including maritime (DNV, LR, ABS, NK) and hazardous areas (Class I Div 2, ATEX Zone 2). Wide-temperature -T models work from -40 to 75 C.",
+  "features": [
+   "5 x 10/100BaseT(X), or 4 + 1 fibre port on -M/-S models",
+   "Redundant dual 12/24/48 VDC inputs",
+   "IP30 aluminium housing, DIN-rail mount",
+   "Maritime approvals: DNV, LR, ABS, NK",
+   "DIP switches for broadcast storm protection and QoS"
+  ],
+  "specs": [
+   {
+    "k": "Operating voltage",
+    "v": "9.6 to 60 VDC"
+   },
+   {
+    "k": "Temperature, standard",
+    "v": "-10 to 60 C"
+   },
+   {
+    "k": "Temperature, -T models",
+    "v": "-40 to 75 C"
+   },
+   {
+    "k": "Size",
+    "v": "30 x 115 x 70 mm"
+   },
+   {
+    "k": "Warranty",
+    "v": "5 years"
+   }
+  ],
+  "status": "FOUND",
+  "brand_note": "Confirmed on moxa.com. Only EDS-205A series was read; EDS-518A and UPort 1150 were not. Sinor's exact EDS-205A suffix (plain, -T, fibre) is unknown.",
+  "notes": "Image URLs contain parentheses, so encode them if the downloader needs it.",
+  "has_image": true,
+  "display_name": "EDS-205A Ethernet Switch",
+  "display_brand": "Moxa",
+  "legacy": false,
+  "kind": "card",
+  "ref": "CA-19",
+  "group": "Drives, networking and power backup",
+  "old_id": "C18",
+  "name_show": "EDS-205A Ethernet Switch",
+  "brand_show": "Moxa"
+ },
+ {
+  "id": "C19",
+  "section": "CA",
+  "name": "APC Smart-UPS and Eaton UPS",
+  "brand": "APC by Schneider Electric / Eaton",
+  "model_hint": "Smart-UPS SRT 1500VA; Smart-UPS C 1000VA; Eaton 9SX 3000i",
+  "register_rows": 10,
+  "search_hints": [
+   "APC Smart-UPS SRT 1500VA"
+  ],
+  "official_name": "APC Smart-UPS SRT 1500VA and Eaton 9SX 3000VA online UPS",
+  "brand_shown": "APC by Schneider Electric; Eaton",
+  "description": "The APC Smart-UPS SRT 1500VA is an online double-conversion rack UPS with a 230 V output, a SmartSlot for network cards and prioritised audible and visual alarms. The Eaton 9SX is an online double-conversion UPS family from 700 to 3000 VA, with the 9SX3000I as the 3 kVA tower model.",
+  "features": [
+   "APC SRT: 230 V AC single-phase output, IEC C14 input",
+   "APC SRT: 1 free SmartSlot, USB and serial connectivity",
+   "APC SRT: emergency power off, lead-acid battery",
+   "Eaton 9SX: on-line double conversion, 700 to 3000 VA range",
+   "Eaton 9SX3000I: tower, 3000 VA / 2700 W"
+  ],
+  "specs": [
+   {
+    "k": "APC SRT1500RMXLI size",
+    "v": "85 x 432 x 505 mm, 21 kg"
+   },
+   {
+    "k": "APC input frequency",
+    "v": "40 to 70 Hz auto-sensing"
+   },
+   {
+    "k": "APC warranty",
+    "v": "36 months UPS, 24 months battery"
+   },
+   {
+    "k": "Eaton 9SX3000",
+    "v": "3000 VA, 2700 W"
+   },
+   {
+    "k": "Eaton part no. (intl tower)",
+    "v": "9SX3000I"
+   }
+  ],
+  "status": "FOUND",
+  "brand_note": "Two makers in one card. APC page read is SRT1500RMXLI (Smart-UPS SRT 1500VA RM 230V). Eaton 9SX3000I (230 V tower) is in the Eaton family; the Eaton image is the 120 V 9SX3000 SKU, same family. Smart-UPS C 1000VA was not covered.",
+  "notes": "Eaton facts come from a search excerpt of the Eaton SKU page and datasheet listing, not a full read. Suggest splitting APC and Eaton into two cards if the layout allows.",
+  "has_image": false,
+  "display_name": "Smart-UPS SRT and 9SX UPS",
+  "display_brand": "APC and Eaton",
+  "legacy": false,
+  "kind": "card",
+  "ref": "CA-20",
+  "group": "Drives, networking and power backup",
+  "old_id": "C19",
+  "name_show": "Smart-UPS SRT and 9SX UPS",
+  "brand_show": "APC and Eaton"
+ },
+ {
+  "id": "C20",
+  "section": "CA",
+  "name": "Actisense NMEA Buffer / Gateway",
+  "brand": "Actisense",
+  "model_hint": "NMEA buffer; PRO-NDC-1E2K",
+  "register_rows": 4,
+  "search_hints": [
+   "Actisense NMEA 0183 buffer"
+  ],
+  "official_name": "Actisense PRO-NDC-1E2K NMEA 0183 multiplexer and NMEA 2000 gateway",
+  "brand_shown": "Actisense",
+  "description": "The PRO-NDC-1E2K is a type-approved NMEA 0183 multiplexer with NMEA 2000 conversion and Ethernet streaming. It has five isolated NMEA 0183 inputs, two isolated outputs and a bidirectional serial port, with auto-switching between inputs and sentence filtering. Setup is through a web browser.",
+  "features": [
+   "5 opto-isolated NMEA 0183 inputs, 2 ISO-Drive outputs, 1 serial port",
+   "NMEA 2000 conversion via M12 connector",
+   "NMEA 0183 and 2000 streaming over Ethernet",
+   "Auto-switching and sentence filtering, web configuration",
+   "RINA type approved, 316 stainless steel housing"
+  ],
+  "specs": [
+   {
+    "k": "Supply",
+    "v": "9 to 35 V DC"
+   },
+   {
+    "k": "NMEA 0183 baud",
+    "v": "4800 to 38400 bps"
+   },
+   {
+    "k": "Operating temperature",
+    "v": "-25 to +70 C"
+   },
+   {
+    "k": "Size (W x H x D)",
+    "v": "139 x 129 x 26.5 mm"
+   },
+   {
+    "k": "Protection / guarantee",
+    "v": "IP40, 5 years"
+   }
+  ],
+  "status": "FOUND",
+  "brand_note": "Confirmed on actisense.com. Hint 'NMEA buffer' is not a specific model; PRO-NDC-1E2K is the confirmed multiplexer/gateway. The page says RINA type approved but also lists NMEA 2000 certification as 'pending' in one table, wording differs inside the page.",
+  "notes": "Image 2 is larger and preferred. The page showed it out of stock, price omitted on purpose.",
+  "has_image": true,
+  "display_name": "PRO-NDC-1E2K NMEA Multiplexer",
+  "display_brand": "Actisense",
+  "legacy": false,
+  "kind": "card",
+  "ref": "CA-21",
+  "group": "Drives, networking and power backup",
+  "old_id": "C20",
+  "name_show": "PRO-NDC-1E2K NMEA Multiplexer",
+  "brand_show": "Actisense"
+ },
+ {
+  "id": "C24",
+  "section": "CA",
+  "name": "Qlight Tower Light and Buzzer",
+  "brand": "Qlight",
+  "model_hint": "ST56 stack light; ex-proof tower light",
+  "register_rows": 17,
+  "search_hints": [
+   "Qlight ST56 stack light"
+  ],
+  "official_name": "Qlight ST56L \u00d856 LED steady/flashing signal tower light",
+  "brand_shown": "Qlight",
+  "description": "The ST56L is a 56 mm pole-mount LED tower light in 1 to 5 stacked colour layers (red, amber, green, blue, white), with steady or flashing lamps and an optional built-in buzzer up to 90 dB. It is available in 12, 24, 110 and 220 V versions.",
+  "features": [
+   "1 to 5 layers, steady or flashing",
+   "Optional built-in buzzer or sound modes, max 90 dB at 1 m",
+   "LED life over 20,000 hours",
+   "Pole mount with a choice of brackets",
+   "CE compliant, UL listed 24 VDC model option"
+  ],
+  "specs": [
+   {
+    "k": "Diameter",
+    "v": "56 mm"
+   },
+   {
+    "k": "Voltage",
+    "v": "12 / 24 V AC/DC, 110 / 220 V AC"
+   },
+   {
+    "k": "Protection",
+    "v": "IP44 standard, IP23 with buzzer"
+   },
+   {
+    "k": "Operating temperature",
+    "v": "-30 to +60 C"
+   },
+   {
+    "k": "Flash rate",
+    "v": "60 to 80 per minute"
+   }
+  ],
+  "status": "FOUND",
+  "brand_note": "Confirmed on qlight.com. ST56L is the pole-mount 56 mm LED tower light. The hint also names an ex-proof tower light: Qlight lists QTEX, ST-Ex and QST50-Ex series, none was read.",
+  "notes": "Image 2 is the USB-controlled sibling, use only as a fallback; its page shows a bigger render. Ex-proof tower light still needs its own research pass.",
+  "has_image": false,
+  "display_name": "ST56L LED Tower Light",
+  "display_brand": "Qlight",
+  "legacy": false,
+  "kind": "card",
+  "ref": "CA-22",
+  "group": "Signals, communication and radar",
+  "old_id": "C24",
+  "name_show": "ST56L LED Tower Light",
+  "brand_show": "Qlight"
+ },
+ {
+  "id": "A17",
+  "section": "CA",
+  "name": "Clear-Com Intercom System",
+  "brand": "Clear-Com",
+  "model_hint": "Encore analog partyline intercom: main station and speaker stations (model names to be confirmed per order)",
+  "register_rows": 17,
+  "search_hints": [
+   "Clear-Com Encore master station intercom"
+  ],
+  "official_name": "Clear-Com Encore analog partyline system (main station and speaker stations)",
+  "brand_shown": "Clear-Com",
+  "description": "Encore is Clear-Com's analog partyline intercom family. Systems are full-duplex and can be expanded or tied to other partyline systems.",
+  "features": [
+   "MS-702 2-channel 1RU and MS-704 4-channel 2RU main stations, both with built-in speaker",
+   "Full-duplex hands-free communication",
+   "Runs on standard two-conductor shielded mic cable",
+   "Speaker stations for wall or desktop-enclosure mounting (KB-702 2-channel)",
+   "Expandable, with IP link to further beltpacks via LQ interfaces"
+  ],
+  "specs": [
+   {
+    "k": "MS-702",
+    "v": "2-channel, 1RU main station"
+   },
+   {
+    "k": "MS-704",
+    "v": "4-channel, 2RU main station"
+   }
+  ],
+  "status": "FOUND",
+  "brand_note": "Brand confirmed. 'Encore 800 speaker stations' not confirmed: the Encore range lists MS-702 (2-channel 1RU) and MS-704 (4-channel 2RU) main stations and KB-702 2-channel remote speaker station. No '800' model found; check the exact model on the register.",
+  "notes": "The 55 beltpacks / 10 speaker stations figure came from a retailer snippet (soundpro.com), not read in full; do not print without checking.",
+  "has_image": true,
+  "display_name": "Encore Intercom System",
+  "display_brand": "Clear-Com",
+  "legacy": false,
+  "kind": "card",
+  "ref": "CA-23",
+  "group": "Signals, communication and radar",
+  "old_id": "A17",
+  "name_show": "Encore Intercom System",
+  "brand_show": "Clear-Com"
+ },
+ {
+  "id": "A18",
+  "section": "CA",
+  "name": "HLD-900 X-Band Radar (24 in, 10 kW / 25 kW)",
+  "brand": "Highlander",
+  "model_hint": "HLD-900 X-band radar, black box version (10 kW / 25 kW)",
+  "register_rows": 4,
+  "search_hints": [
+   "Highlander HLD-900 X-band radar"
+  ],
+  "official_name": "Highlander HLD-RADAR 900 X-band ARPA black box radar (HLD-RD 900 BB series)",
+  "brand_shown": "Highlander",
+  "description": "The HLD-RADAR 900 is an IMO-type X/S-band ARPA navigation radar in black box form, driven from a separate monitor, keyboard with trackball and processor unit. It tracks up to 100 ARPA targets and displays up to 100 active AIS targets, with up to four radars networked over Ethernet.",
+  "features": [
+   "X-band 10 kW or 25 kW transceiver (S-band 30 kW variant exists)",
+   "ARPA: 100 acquired targets, 10,000 background",
+   "AIS: 100 active, 1000 sleeping targets",
+   "Up to 4 radar sensors interconnected over Ethernet",
+   "Dedicated keyboard with trackball and rotary knobs"
+  ],
+  "specs": [
+   {
+    "k": "X-band frequency",
+    "v": "9410 +/- 30 MHz"
+   },
+   {
+    "k": "Antenna",
+    "v": "6 ft or 8 ft (X-band)"
+   },
+   {
+    "k": "Range",
+    "v": "0.125 to 96 nm"
+   },
+   {
+    "k": "Monitor sizes",
+    "v": "19.0, 23.1, 24.0, 26.0 in"
+   },
+   {
+    "k": "Beam width",
+    "v": "1.3 / 1.0 deg horizontal, 24 deg vertical"
+   }
+  ],
+  "status": "PARTIAL",
+  "brand_note": "Highlander HLD-RADAR 900 series confirmed from a datasheet copy hosted by a distributor (pelig.hr); the maker's own site (highlander-global.com) was not read. Datasheet lists 10 kW and 25 kW X-band, 6 ft or 8 ft antenna, black box (BB) version. Register says '24 in' antenna, but the datasheet gives 6 ft / 8 ft; 24 in may refer to the monitor (24.0 in is a listed size). Verify.",
+  "notes": "No OEM image of the exact 900 X-band black box found; the OEM image listed is the 900S variant, shown only as a style fallback. Distributor photos are usable but not OEM.",
+  "has_image": false,
+  "display_name": "HLD-900 X-Band Radar",
+  "display_brand": "Highlander",
+  "legacy": false,
+  "kind": "card",
+  "ref": "CA-24",
+  "group": "Signals, communication and radar",
+  "old_id": "A18",
+  "name_show": "HLD-900 X-Band Radar",
+  "brand_show": "Highlander"
+ },
+ {
+  "id": "D01",
+  "section": "SP",
+  "name": "CyScan Service Kit",
+  "brand": "Guidance Marine",
+  "model_hint": "Base drive belt 455 mm / 450 mm, rotor belt, slipring assembly, gland plate seal, access cover seal, DC4 silicone compound",
+  "register_rows": 98,
+  "search_hints": [
+   "Guidance Marine CyScan service kit"
+  ],
+  "official_name": "CyScan Radar MK4 Service Kit, P/N 31-0362-4",
+  "brand_shown": "Guidance Marine (CyScan MK4 service kit, P/N 31-0362-4, as listed by a reseller)",
+  "description": "Planned-maintenance kit for the CyScan MK4 laser sensor, bundling the wear items an engineer replaces during a service: drive belts, the slipring assembly, enclosure seals and consumables.",
+  "features": [],
+  "specs": [],
+  "status": "FOUND",
+  "brand_note": "Guidance Marine's own site has no service kit page; its Services page only offers CyScan MK3/MK4 Spares as a selection in a request form. Kit contents were read from a Singapore marine reseller (Swift Marine Tech Services) listing, not from Guidance Marine. Kit applies to CyScan MK4 specifically; MK3 kit not checked.",
+  "notes": "Image is a reseller photo, not Guidance Marine artwork; view it before use and consider a plain flat-lay or text-only card. Sinor's register lists no radome seal or tilt belt for CyScan, matching this kit. Reseller page shows a placeholder price which was ignored.",
+  "has_image": false,
+  "display_name": "CyScan MK4 Service Kit",
+  "display_brand": "Guidance Marine",
+  "legacy": false,
+  "kind": "card",
+  "ref": "SP-01",
+  "group": "Service kits",
+  "old_id": "D01",
+  "name_show": "CyScan MK4 Service Kit",
+  "brand_show": "Guidance Marine"
+ },
+ {
+  "id": "D02",
+  "section": "SP",
+  "name": "RadaScan / miniRadaScan Service Kit",
+  "brand": "Guidance Marine",
+  "model_hint": "Service kit; radome seal; tilt optics belt; slip rings; motor; encoder PCB",
+  "register_rows": 44,
+  "search_hints": [
+   "Guidance Marine RadaScan service kit"
+  ],
+  "official_name": "RadaScan / Mini RadaScan Service Kit (Guidance Marine)",
+  "brand_shown": "Guidance Marine (RadaScan / Mini RadaScan family)",
+  "description": "Planned-maintenance and spares kit for Guidance Marine RadaScan and Mini RadaScan sensors, supplied by Sinor. Kit contents are listed below and can be quoted per sensor model.",
+  "features": [],
+  "specs": [],
+  "status": "PARTIAL",
+  "brand_note": "No RadaScan service kit page found at Guidance Marine or any reseller within budget. Guidance Services page lists 'RadaScan Spares' only as a form option. Sinor's kit contents (radome seal, tilt optics belt, slip rings, motor, encoder PCB) are USER-SUPPLIED and UNVERIFIED against an OEM kit list.",
+  "notes": "No kit image exists in what I found, so the card should use a sensor image or text-only. Features and specs marked as parent sensor are from the RadaScan View page, not the kit. Ask Guidance Marine or a service partner for the official kit part number and contents list.",
+  "has_image": false,
+  "display_name": "RadaScan Service Kit",
+  "display_brand": "Guidance Marine",
+  "legacy": false,
+  "kind": "card",
+  "ref": "SP-02",
+  "group": "Service kits",
+  "old_id": "D02",
+  "name_show": "RadaScan Service Kit",
+  "brand_show": "Guidance Marine"
+ },
+ {
+  "id": "D03",
+  "section": "SP",
+  "name": "Mean Well DIN-Rail Power Supply",
+  "brand": "Mean Well",
+  "model_hint": "NDR-480-24, NDR-240-24, XDR-120E-24, EDR-120-24, DRDN20-24 redundancy module",
+  "register_rows": 10,
+  "search_hints": [
+   "Mean Well NDR-480-24"
+  ],
+  "official_name": "Mean Well NDR-480-24 DIN Rail Power Supply (480 W, 24 V, 20 A)",
+  "brand_shown": "Mean Well",
+  "description": "Slim 480 W single-output DIN rail power supply with universal AC input and built-in active PFC, designed for industrial control and factory automation cabinets. It has a metal housing, runs on free air convection and fits TS-35/7.5 or TS-35/15 rail. Protection covers short circuit, overload, over voltage and over temperature.",
+  "features": [
+   "Universal 90 to 264 VAC input with active PFC",
+   "Metal case, free air convection cooling",
+   "Short circuit, overload, over voltage and over temperature protection",
+   "UL 508 approved, industrial immunity level EN 61000-6-2",
+   "3 year warranty"
+  ],
+  "specs": [
+   {
+    "k": "Output",
+    "v": "24 V DC, 20 A, 480 W"
+   },
+   {
+    "k": "Voltage adjust",
+    "v": "24 to 28 V"
+   },
+   {
+    "k": "Efficiency (typ.)",
+    "v": "92.5 %"
+   },
+   {
+    "k": "Operating temp",
+    "v": "-20 to +70 C (derating applies)"
+   },
+   {
+    "k": "Size",
+    "v": "85.5 x 125.2 x 128.5 mm (W x H x D)"
+   }
+  ],
+  "status": "FOUND",
+  "brand_note": "Brand matches. Only NDR-480-24 was read (official datasheet). NDR-240-24, XDR-120E-24, EDR-120-24 and DRDN20-24 were not read; brochure card should name NDR-480-24 as the representative.",
+  "notes": "No Mean Well-hosted image URL surfaced (datasheet PDF gave none; product search page scrape returned no images). Digikey image is first choice. Datasheet text was read in full.",
+  "has_image": true,
+  "display_name": "NDR-480-24 DIN-Rail Power Supply",
+  "display_brand": "Mean Well",
+  "legacy": false,
+  "kind": "card",
+  "ref": "SP-03",
+  "group": "Power supplies and protection",
+  "old_id": "D03",
+  "name_show": "NDR-480-24 DIN-Rail Power Supply",
+  "brand_show": "Mean Well"
+ },
+ {
+  "id": "D04",
+  "section": "SP",
+  "name": "Phoenix Contact QUINT Power Supply",
+  "brand": "Phoenix Contact",
+  "model_hint": "QUINT POWER 24 V DC 5 A / 10 A",
+  "register_rows": 18,
+  "search_hints": [
+   "Phoenix Contact QUINT POWER 24V 10A"
+  ],
+  "official_name": "Phoenix Contact QUINT POWER QUINT-PS/1AC/24DC/10 (2866763)",
+  "brand_shown": "Phoenix Contact",
+  "description": "Primary-switched DIN rail power supply from the QUINT POWER family, rated 24 V DC at 10 A with adjustable output. Its SFB technology trips standard miniature circuit breakers quickly, and POWER BOOST lets it start heavy loads. It carries multiple shipbuilding approvals and monitors its own function to flag critical states early.",
+  "features": [
+   "SFB technology: 60 A for 12 ms to trip standard MCBs selectively",
+   "Static POWER BOOST: 15 A permanent (-25 to 40 C)",
+   "Preventive function monitoring with DC OK signals",
+   "Parallel connection for redundancy or more capacity",
+   "Shipbuilding approvals: DNV GL, ABS, LR, RINA, NK, BV"
+  ],
+  "specs": [
+   {
+    "k": "Output",
+    "v": "24 V DC, 10 A (240 W)"
+   },
+   {
+    "k": "Output adjust",
+    "v": "18 to 29.5 V DC"
+   },
+   {
+    "k": "Input",
+    "v": "100 to 240 V AC, 45 to 65 Hz"
+   },
+   {
+    "k": "Temperature",
+    "v": "-25 to +70 C, derate above 60 C"
+   },
+   {
+    "k": "Size",
+    "v": "60 x 130 x 125 mm (W x H x D)"
+   }
+  ],
+  "status": "FOUND",
+  "brand_note": "Brand matches. Read QUINT-PS/1AC/24DC/10 (item 2866763, 24 V / 10 A). Phoenix marks it for existing designs and recommends QUINT4-PS/1AC/24DC/10 (2904601) for new projects. The 5 A model (2866750) was seen only as a link, not read.",
+  "notes": "Images are sizes up to 1500 px (image URL says b1500). Confirm with Sinor whether supplied units are Gen 3 (2866763) or QUINT4.",
+  "has_image": true,
+  "display_name": "QUINT POWER 24 V / 10 A",
+  "display_brand": "Phoenix Contact",
+  "legacy": false,
+  "kind": "card",
+  "ref": "SP-04",
+  "group": "Power supplies and protection",
+  "old_id": "D04",
+  "name_show": "QUINT POWER 24 V / 10 A",
+  "brand_show": "Phoenix Contact"
+ },
+ {
+  "id": "D05",
+  "section": "SP",
+  "name": "Siemens SITOP Power Supply",
+  "brand": "Siemens",
+  "model_hint": "6EP1337-3BA00; 6EP1334-3BA00",
+  "register_rows": 2,
+  "search_hints": [
+   "Siemens SITOP 6EP1337-3BA00"
+  ],
+  "official_name": "Siemens SITOP PSU100M 6EP1337-3BA00 (24 V DC / 40 A)",
+  "brand_shown": "Siemens (SITOP PSU100M)",
+  "description": "SITOP PSU100M is a stabilised modular power supply with 24 V DC output at 40 A, fed from 120/230 V AC. Siemens has phased this article out and names 6EP3337-8SB00-0AY0 as the successor, so it is mainly relevant as a like-for-like spare for installed systems. Full electrical data sits in the Siemens data sheet, which was not read.",
+  "features": [
+   "Stabilised 24 V DC output, 40 A",
+   "Input 120/230 V AC",
+   "Part of the SITOP modular 1-phase / 2-phase range",
+   "Siemens lifecycle status: Phase Out Announce",
+   "Successor article: 6EP3337-8SB00-0AY0"
+  ],
+  "specs": [
+   {
+    "k": "Output",
+    "v": "24 V DC / 40 A"
+   },
+   {
+    "k": "Input",
+    "v": "120/230 V AC"
+   },
+   {
+    "k": "Net weight",
+    "v": "2.9 kg"
+   },
+   {
+    "k": "Packaging",
+    "v": "28 x 15 x 15 cm"
+   },
+   {
+    "k": "Country of origin",
+    "v": "Romania"
+   }
+  ],
+  "status": "FOUND",
+  "brand_note": "6EP1337-3BA00 is SITOP PSU100M 40 A, 24 V DC. Siemens lists it as phased out since 06/2017 with successor 6EP3337-8SB00-0AY0, so the card should say legacy or replacement part. 6EP1334-3BA00 was not read.",
+  "notes": "Image dimensions unknown (not downloadable); Siemens og:image. Datasheet link on the page: mall.industry.siemens.com/teddatasheet/?format=PDF&mlfbs=6EP1337-3BA00 (not read), so efficiency and dimensions are not stated.",
+  "has_image": true,
+  "display_name": "SITOP PSU100M 6EP1337-3BA00",
+  "display_brand": "Siemens",
+  "legacy": true,
+  "kind": "card",
+  "ref": "SP-05",
+  "group": "Power supplies and protection",
+  "old_id": "D05",
+  "name_show": "SITOP PSU100M 6EP1337-3BA00",
+  "brand_show": "Siemens"
+ },
+ {
+  "id": "D06",
+  "section": "SP",
+  "name": "WAGO 750 Series I/O and Power Supply",
+  "brand": "WAGO",
+  "model_hint": "750-626, 750-610, 750-400, 750-457, 750-483, 750-552, 787-1112",
+  "register_rows": 7,
+  "search_hints": [
+   "WAGO 750 series I/O module"
+  ],
+  "official_name": "WAGO I/O System 750, item 750-400 (2-channel digital input, 24 VDC, 3 ms)",
+  "brand_shown": "WAGO",
+  "description": "WAGO 750-400 is a 12 mm wide I/O module for the 750 system that takes 24 V DC digital signals from two sensors. It plugs onto the DIN rail node, passes field power through power jumper contacts and shows input status on LEDs. WAGO lists marine-application EMC conformity for this module.",
+  "features": [
+   "2 digital inputs, 24 VDC, 3 ms input filter",
+   "2-, 3- or 4-wire sensor connection",
+   "CAGE CLAMP connection, 0.08 to 2.5 sq mm",
+   "Status LEDs per channel, 500 V system to field isolation",
+   "EMC per EN 61000-6-2 and 61000-6-4, marine applications"
+  ],
+  "specs": [
+   {
+    "k": "Channels",
+    "v": "2 x 24 VDC, 4.5 mA typ."
+   },
+   {
+    "k": "Width",
+    "v": "12 mm"
+   },
+   {
+    "k": "Operating temp",
+    "v": "0 to +55 C"
+   },
+   {
+    "k": "Protection",
+    "v": "IP20"
+   },
+   {
+    "k": "Weight",
+    "v": "45.8 g"
+   }
+  ],
+  "status": "FOUND",
+  "brand_note": "Brand matches. Only 750-400 (2-channel 24 V DC digital input) was read as the representative 750 module; 750-626, 750-610, 750-457, 750-483, 750-552 and 787-1112 were not read. The image shows a 750-400 module.",
+  "notes": "Width 1024 is read from the file name prefix, height unknown. The WAGO URLs carry a long context token and must be used verbatim. Order of images: EN first, DE second.",
+  "has_image": false,
+  "display_name": "750-400 Digital Input Module",
+  "display_brand": "WAGO",
+  "legacy": false,
+  "kind": "card",
+  "ref": "SP-06",
+  "group": "Power supplies and protection",
+  "old_id": "D06",
+  "name_show": "750-400 Digital Input Module",
+  "brand_show": "WAGO"
+ },
+ {
+  "id": "D07",
+  "section": "SP",
+  "name": "Circuit Breakers, Contactors and Relays",
+  "brand": "Schneider Electric / ABB / Siemens",
+  "model_hint": "MCB 2P 6 A / 10 A; EZC100H; LC1D09; 4-change-over relays",
+  "register_rows": 78,
+  "search_hints": [
+   "Schneider Electric Acti9 iC60N MCB 2P"
+  ],
+  "official_name": "Schneider Electric Acti9 iC60N miniature circuit breaker, 2P (A9F74202 shown)",
+  "brand_shown": "Schneider Electric (representative); ABB and Siemens not researched",
+  "description": "Acti9 iC60N is a two-pole thermal-magnetic miniature circuit breaker for AC and DC distribution, clipping onto a 35 mm DIN rail. Other current ratings share the same housing width.",
+  "features": [
+   "Thermal-magnetic trip unit, curve C",
+   "2 protected poles, clips on 35 mm DIN rail",
+   "Compatible with comb busbars, top or bottom",
+   "Suitable for AC and DC networks",
+   "Vigi iC60 residual current add-on compatible"
+  ],
+  "specs": [],
+  "status": "FOUND",
+  "brand_note": "Catalogue brand 'Schneider Electric / ABB / Siemens' is a mix. Representative image and facts are Schneider Electric Acti9 iC60N 2P A9F74202 (2 A, C curve). Sinor's 6 A and 10 A 2-pole MCBs are the same family but other ratings; EZC100H (Schneider ComPact EZC) and LC1D09 (Schneider TeSys D contactor) were not researched.",
+  "notes": "IMAGE SHOWS: Schneider Electric Acti9 iC60N 2P 2A C curve, A9F74202. Image is small (369 px). A 64 px gif rendition also exists. Verify the HK page is acceptable; the same image ID likely serves other se.com country pages.",
+  "has_image": false,
+  "display_name": "Acti9 iC60N Circuit Breaker",
+  "display_brand": "Schneider Electric",
+  "legacy": false,
+  "kind": "card",
+  "ref": "SP-07",
+  "group": "Power supplies and protection",
+  "old_id": "D07",
+  "name_show": "Acti9 iC60N Circuit Breaker",
+  "brand_show": "Schneider Electric"
+ },
+ {
+  "id": "D08",
+  "section": "SP",
+  "name": "Marine Cables and RF Assemblies",
+  "brand": "(various)",
+  "model_hint": "LMR-400 cable assemblies; RG223; Cat7; 3-core marine cable",
+  "register_rows": 66,
+  "search_hints": [
+   "LMR-400 cable assembly N male connector"
+  ],
+  "official_name": "Pasternack PE3C0105 N Male to N Male Cable Assembly, LMR-400 (Times Microwave connectors)",
+  "brand_shown": "Pasternack (assembly maker); LMR-400 is a Times Microwave cable",
+  "description": "Low-loss 50 ohm coaxial jumper with a type N male connector on each end, built on LMR-400 cable and Times Microwave connectors. It is offered in standard lengths from 12 to 60 inches or any custom length. Maximum VSWR is 1.4:1.",
+  "features": [
+   "50 ohm LMR-400 coax, N male both ends, straight",
+   "Times Microwave connectors",
+   "Maximum VSWR 1.4:1",
+   "Standard lengths 12 to 60 in, custom lengths available",
+   "Datasheet PE3C0105.pdf on the Pasternack page"
+  ],
+  "specs": [
+   {
+    "k": "Cable",
+    "v": "LMR-400, 50 ohm"
+   },
+   {
+    "k": "Connectors",
+    "v": "N male to N male, straight"
+   },
+   {
+    "k": "Max VSWR",
+    "v": "1.4:1"
+   },
+   {
+    "k": "Standard lengths",
+    "v": "12, 24, 36, 48, 60 in"
+   },
+   {
+    "k": "Part number",
+    "v": "PE3C0105"
+   }
+  ],
+  "status": "FOUND",
+  "brand_note": "Catalogue brand is '(various)'. Representative: Pasternack PE3C0105, N male to N male with LMR-400 coax and Times connectors. LMR is a Times Microwave trademark. RG223, Cat7 and 3-core marine cable were not researched. LMR-400 itself is not marine-rated on this page.",
+  "notes": "IMAGE SHOWS: Pasternack PE3C0105 LMR-400 N-male to N-male assembly. Pasternack is the assembly maker, not Sinor's actual supplier. Image is 500 px wide, small for print. Do not imply this is a marine-grade cable.",
+  "has_image": true,
+  "display_name": "LMR-400 Cable Assemblies",
+  "display_brand": "Pasternack and Times Microwave",
+  "legacy": false,
+  "kind": "card",
+  "ref": "SP-08",
+  "group": "Cables and computers",
+  "old_id": "D08",
+  "name_show": "LMR-400 Cable Assemblies",
+  "brand_show": "Pasternack and Times Microwave"
+ },
+ {
+  "id": "D09",
+  "section": "SP",
+  "name": "Marine Computers and Industrial PCs",
+  "brand": "(various)",
+  "model_hint": "Sonardyne marine computer kit; WAGO-I/O-IPC 758-873; marine rack computers",
+  "register_rows": 23,
+  "search_hints": [
+   "WAGO 758-873 IPC"
+  ],
+  "official_name": "WAGO I/O-IPC 758-873",
+  "brand_shown": "WAGO (I/O-IPC 758-873), via resellers only",
+  "description": "WAGO I/O-IPC 758-873 is a DIN-rail industrial PC from the WAGO I/O system 758 line, used as the controller head for 750-series I/O modules.",
+  "features": [
+   "WAGO 758 series family confirmed on WAGO documentation index"
+  ],
+  "specs": [
+   {
+    "k": "Model",
+    "v": "758-873"
+   }
+  ],
+  "status": "PARTIAL",
+  "brand_note": "WAGO's own product page for 758-873 returns 410 Gone (discontinued), so no OEM page or image was found. Description and image come from reseller pages (dcssaul.com, auto2mation.com, aeliyamarinetech.com), one of which has SEO-style text. Sonardyne marine computer kits and marine rack computers were not researched.",
+  "notes": "Reseller photos are surplus-unit photos with possible labels or watermarks; review before use. Recommend asking Sinor for its own photo of the unit or using a generic icon. Product is discontinued per WAGO 410.",
+  "has_image": false,
+  "display_name": "I/O-IPC 758-873",
+  "display_brand": "WAGO",
+  "legacy": true,
+  "kind": "card",
+  "ref": "SP-09",
+  "group": "Cables and computers",
+  "old_id": "D09",
+  "name_show": "I/O-IPC 758-873",
+  "brand_show": "WAGO"
+ }
+]
