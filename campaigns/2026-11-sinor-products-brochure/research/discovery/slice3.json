@@ -1,0 +1,883 @@
+[
+ {
+  "id": "A14",
+  "status": "PARTIAL",
+  "brand_confirmed": "Ronav",
+  "brand_note": "Ronav R1 confirmed on the Ronav data sheet (ronav.ae, a UAE marine positioning brand). No clean product photo of the R1 receiver or display was found; the only official image is the RX45 GNSS antenna that ships in the R1 system.",
+  "official_name": "Ronav R1 GNSS/DGPS receiver system (R1 receiver, RX45 antenna, Rovision display)",
+  "description": "The Ronav R1 is a quad-band GNSS receiver using GPS, GLONASS and BeiDou, with Galileo and QZSS ready, aimed at marine oil and gas positioning. It supports L-band corrections, SBAS and external RTCM or RTK inputs, and is paired with the RX45 antenna and an optional 12 inch Rovision touch display with Ronav Monitor software.",
+  "features": [
+   "Multi-constellation, multi-frequency GNSS with 780+ channels",
+   "L-band DGPS corrections down to 2 cm RMS quoted by Ronav",
+   "RTK baseline up to 50 km, accepts ROX, RTCM, CMR and CMR+",
+   "4 full-duplex serial ports, NMEA 0183 output",
+   "IEC 60945 / EN 60945 approval listed"
+  ],
+  "specs": [
+   {
+    "k": "Update rate",
+    "v": "1 Hz standard, 10 or 20 Hz optional"
+   },
+   {
+    "k": "Power input",
+    "v": "18-36 VDC, 2.4 W"
+   },
+   {
+    "k": "Size and weight",
+    "v": "210 x 190 x 70.5 mm, 1000 g"
+   },
+   {
+    "k": "Operating temperature",
+    "v": "-40 to +85 C"
+   },
+   {
+    "k": "Autonomous accuracy",
+    "v": "1.2 m horizontal RMS (SBAS 0.3 m)"
+   }
+  ],
+  "images": [
+   {
+    "image_url": "https://ronav.ae/wp-content/uploads/2024/07/RX45-removebg-preview.png",
+    "page_url": "https://ronav.ae/",
+    "width": 0,
+    "height": 0,
+    "host": "ronav.ae",
+    "shows": "RX45 GNSS antenna cut-out (the antenna of the R1 system, not the receiver)",
+    "source_type": "oem"
+   }
+  ],
+  "sources": [
+   "https://ronav.ae/uploads/RONAV_R1_Data_Sheet.pdf",
+   "https://ronav.ae/"
+  ],
+  "notes": "Receiver and display images exist only inside the datasheet PDF (not extractable as URLs here). Request a photo from Ronav if the receiver itself must be shown."
+ },
+ {
+  "id": "A15",
+  "status": "FOUND",
+  "brand_confirmed": "Fugro (Seastar)",
+  "brand_note": "Confirmed. The 9410-AUT is Fugro's combined position and correction receiver; the support site notes it shares a hardware platform with the Trimble MPS566.",
+  "official_name": "Fugro Seastar 9410-AUT GNSS receiver",
+  "description": "The Fugro Seastar 9410-AUT is Fugro's current combined GNSS position and correction receiver, successor to the 9205-GNSS, with enhancements for Dynamic Positioning use. It works with all GNSS constellations and supports Fugro's G4 augmentation and SatGuard NMA (Navigation Message Authentication) service.",
+  "features": [
+   "Combined receiver and demodulator for Fugro correction services",
+   "Compatible with all GNSS constellations",
+   "Supports G4 and SatGuard NMA service",
+   "Rack mount solution available",
+   "Same hardware platform as Trimble MPS566"
+  ],
+  "specs": [
+   {
+    "k": "Successor to",
+    "v": "Seastar 9205-GNSS"
+   },
+   {
+    "k": "Services",
+    "v": "G4, SatGuard NMA"
+   },
+   {
+    "k": "Brochure",
+    "v": "Fugro doc ref 23100600 ed. A2"
+   }
+  ],
+  "images": [
+   {
+    "image_url": "https://fsp.support/images/equipment-seastar-9410-aut-receiver-demodulator.png",
+    "page_url": "https://fsp.support/seastar/equipment.php?rec=9410",
+    "width": 1016,
+    "height": 553,
+    "host": "fsp.support",
+    "shows": "Seastar 9410-AUT combined receiver and demodulator",
+    "source_type": "oem"
+   }
+  ],
+  "sources": [
+   "https://fsp.support/seastar/equipment.php?rec=9410",
+   "https://www.fugro.com/expertise/satellite-positioning/seastar"
+  ],
+  "notes": "Numeric specs not on the pages read. A search snippet of the brochure (scribd copy, not read in full) mentions 10 cm accuracy; not used as a spec. Kit contents (antenna etc.) not verified."
+ },
+ {
+  "id": "A16",
+  "status": "FOUND",
+  "brand_confirmed": "Veripos (Hexagon)",
+  "brand_note": "Confirmed on veripos.com; Veripos is part of Hexagon.",
+  "official_name": "VERIPOS LD900 quad-band GNSS receiver",
+  "description": "The LD900 is a quad-band, multi-constellation GNSS receiver for critical marine work such as DP, offshore construction and survey. It has an independent L-band input for a dedicated correction antenna and keeps working through multipath and scintillation. It has a colour display and a 72-hour rolling data log.",
+  "features": [
+   "555 channels, all-constellation multi-frequency",
+   "Multi-channel L-band for Apex and Ultra PPP services",
+   "EN60945 certified, OGP 373-19 and IMCA SO15 QC compliant",
+   "Optional ALIGN heading and MSK beacon",
+   "Compatible with SPAN GNSS+INS and GRIT"
+  ],
+  "specs": [
+   {
+    "k": "Size",
+    "v": "300 x 200 x 80 mm"
+   },
+   {
+    "k": "Weight",
+    "v": "3.8 kg"
+   },
+   {
+    "k": "Input voltage",
+    "v": "+12 to +24 VDC, 13 W typical"
+   },
+   {
+    "k": "Ports",
+    "v": "3 RS-232/422, 3 expansion, 1 USB, 2 Ethernet, 1 PPS"
+   },
+   {
+    "k": "Operating temperature",
+    "v": "-15 to +55 C"
+   }
+  ],
+  "images": [
+   {
+    "image_url": "https://veripos.com/-/media/Images/Hexagon/Hexagon-Core/Veripos/Veripos-images/Products/LD900/Web_Marquee-Hexagon_AP_VERIPOS_LD900_Marquee-(1).ashx?la=en&h=885&w=1680&hash=79ADC2D4728A916DA231433DC4E51180",
+    "page_url": "https://veripos.com/products/ld900-receiver",
+    "width": 1680,
+    "height": 885,
+    "host": "veripos.com",
+    "shows": "LD900 receiver marquee image",
+    "source_type": "oem"
+   },
+   {
+    "image_url": "https://insidegnss.com/wp-content/uploads/2020/05/013120Novatel-Veripos-LD-900_straight-front_v1_screen.jpg",
+    "page_url": "https://insidegnss.com/new-marine-receiver-delivers-ultra-precise-position/",
+    "width": 870,
+    "height": 540,
+    "host": "insidegnss.com",
+    "shows": "LD900 straight front view (press release image)",
+    "source_type": "catalogue"
+   }
+  ],
+  "sources": [
+   "https://veripos.com/products/ld900-receiver"
+  ],
+  "notes": "Register says 'LD900 (set)'; set contents not verified."
+ },
+ {
+  "id": "A17",
+  "status": "FOUND",
+  "brand_confirmed": "Clear-Com",
+  "brand_note": "Brand confirmed. 'Encore 800 speaker stations' not confirmed: the Encore range lists MS-702 (2-channel 1RU) and MS-704 (4-channel 2RU) main stations and KB-702 2-channel remote speaker station. No '800' model found; check the exact model on the register.",
+  "official_name": "Clear-Com Encore analog partyline system (main station and speaker stations)",
+  "description": "Encore is Clear-Com's analog partyline intercom family. A two- or four-channel main station supplies intercom and power to connected beltpacks, wall stations and remote or speaker stations over standard two-conductor shielded cable. Systems are full-duplex and can be expanded or tied to other partyline systems.",
+  "features": [
+   "MS-702 2-channel 1RU and MS-704 4-channel 2RU main stations, both with built-in speaker",
+   "Full-duplex hands-free communication",
+   "Runs on standard two-conductor shielded mic cable",
+   "Speaker stations for wall or desktop-enclosure mounting (KB-702 2-channel)",
+   "Expandable, with IP link to further beltpacks via LQ interfaces"
+  ],
+  "specs": [
+   {
+    "k": "MS-702",
+    "v": "2-channel, 1RU main station"
+   },
+   {
+    "k": "MS-704",
+    "v": "4-channel, 2RU main station"
+   },
+   {
+    "k": "MS-702 capacity (retailer)",
+    "v": "up to 55 beltpacks or 10 speaker stations"
+   }
+  ],
+  "images": [
+   {
+    "image_url": "https://www.clearcom.com/Portals/0/EasyDNNNews/1560/images/MS-704_612x496-612-496-p-L-97.jpg",
+    "page_url": "https://www.clearcom.com/Products/Products-By-Name/Encore/category/main-stations-1",
+    "width": 612,
+    "height": 496,
+    "host": "clearcom.com",
+    "shows": "Encore MS-704 4-channel main station",
+    "source_type": "oem"
+   },
+   {
+    "image_url": "https://www.clearcom.com/Portals/0/EasyDNNNews/1571/images/MS-702_612x496-612-496-p-L-97.jpg",
+    "page_url": "https://www.clearcom.com/Products/Products-By-Name/Encore/category/main-stations-1",
+    "width": 612,
+    "height": 496,
+    "host": "clearcom.com",
+    "shows": "Encore MS-702 2-channel main station",
+    "source_type": "oem"
+   },
+   {
+    "image_url": "https://clearcom.com/Portals/0/EasyDNNnews/CategoryImages/1644/612496c1745EDNthumbEncore_Family_560x328.jpg",
+    "page_url": "https://clearcom.com/Products/Products-By-Name/Encore",
+    "width": 560,
+    "height": 328,
+    "host": "clearcom.com",
+    "shows": "Encore family overview",
+    "source_type": "oem"
+   }
+  ],
+  "sources": [
+   "https://www.clearcom.com/Products/Products-By-Name/Encore/category/main-stations-1",
+   "https://www.clearcom.com/Products/Products-By-Name/Encore/category/speaker-stations-1 (search excerpt only)"
+  ],
+  "notes": "The 55 beltpacks / 10 speaker stations figure came from a retailer snippet (soundpro.com), not read in full; do not print without checking."
+ },
+ {
+  "id": "A18",
+  "status": "PARTIAL",
+  "brand_confirmed": "Highlander",
+  "brand_note": "Highlander HLD-RADAR 900 series confirmed from a datasheet copy hosted by a distributor (pelig.hr); the maker's own site (highlander-global.com) was not read. Datasheet lists 10 kW and 25 kW X-band, 6 ft or 8 ft antenna, black box (BB) version. Register says '24 in' antenna, but the datasheet gives 6 ft / 8 ft; 24 in may refer to the monitor (24.0 in is a listed size). Verify.",
+  "official_name": "Highlander HLD-RADAR 900 X-band ARPA black box radar (HLD-RD 900 BB series)",
+  "description": "The HLD-RADAR 900 is an IMO-type X/S-band ARPA navigation radar in black box form, driven from a separate monitor, keyboard with trackball and processor unit. It tracks up to 100 ARPA targets and displays up to 100 active AIS targets, with up to four radars networked over Ethernet.",
+  "features": [
+   "X-band 10 kW or 25 kW transceiver (S-band 30 kW variant exists)",
+   "ARPA: 100 acquired targets, 10,000 background",
+   "AIS: 100 active, 1000 sleeping targets",
+   "Up to 4 radar sensors interconnected over Ethernet",
+   "Dedicated keyboard with trackball and rotary knobs"
+  ],
+  "specs": [
+   {
+    "k": "X-band frequency",
+    "v": "9410 +/- 30 MHz"
+   },
+   {
+    "k": "Antenna",
+    "v": "6 ft or 8 ft (X-band)"
+   },
+   {
+    "k": "Range",
+    "v": "0.125 to 96 nm"
+   },
+   {
+    "k": "Monitor sizes",
+    "v": "19.0, 23.1, 24.0, 26.0 in"
+   },
+   {
+    "k": "Beam width",
+    "v": "1.3 / 1.0 deg horizontal, 24 deg vertical"
+   }
+  ],
+  "images": [
+   {
+    "image_url": "https://www.malinsmarine.com/upload/7634/1-898765.jpg",
+    "page_url": "https://www.malinsmarine.com/highlander-hld-radar-900-x-arpa-radar.html",
+    "width": 750,
+    "height": 750,
+    "host": "malinsmarine.com",
+    "shows": "HLD-RADAR 900-X product photo (distributor)",
+    "source_type": "distributor"
+   },
+   {
+    "image_url": "https://www.malinsmarine.com/upload/7634/2-938615.jpg",
+    "page_url": "https://www.malinsmarine.com/highlander-hld-radar-900-x-arpa-radar.html",
+    "width": 750,
+    "height": 750,
+    "host": "malinsmarine.com",
+    "shows": "HLD-RADAR 900-X product photo (distributor)",
+    "source_type": "distributor"
+   },
+   {
+    "image_url": "https://www.highlander-global.com/uploads/images/2026/0709/fjWAR25Ld7bLr5atDnVwcesDfojTFPSFMmTX7J6b.png",
+    "page_url": "https://www.highlander-global.com/info/846.html",
+    "width": 928,
+    "height": 600,
+    "host": "highlander-global.com",
+    "shows": "OEM image of the HLD-RADAR 900S (solid state variant, NOT the magnetron 900 X-band)",
+    "source_type": "oem"
+   }
+  ],
+  "sources": [
+   "https://www.pelig.hr/wp-content/uploads/2020/08/RD-900-series-ARPA-Navigation-Radar.pdf"
+  ],
+  "notes": "No OEM image of the exact 900 X-band black box found; the OEM image listed is the 900S variant, shown only as a style fallback. Distributor photos are usable but not OEM."
+ },
+ {
+  "id": "B11",
+  "status": "FOUND",
+  "brand_confirmed": "Inertial Labs",
+  "brand_note": "CONFIRMED: Inertial Labs (inertiallabs.com) makes MRU-B1, MRU-B1.1, MRU-B2 (plus E, P, PD and subsea versions); MRU-B2 is also sold as a rental unit by Norwegian Offshore Rental and by Ocean Science Technology. Caution: Inertial Labs' table lists B1 as heave/surge/sway only and B1.1 as pitch and roll, whereas the register says 'B1 (roll and pitch)'. The register B1 may actually be the MRU-B1.1; Kongsberg also makes unrelated 'MRU' units. Verify the exact model on delivered units.",
+  "official_name": "Inertial Labs MRU-B2 Motion Reference Unit (family: MRU-B1, B1.1, B2)",
+  "description": "Inertial Labs' MRU-B2 is a compact strap-down MEMS motion sensor that outputs heave, surge, sway, pitch and roll. It can emit Kongsberg Seatex and Teledyne TSS data formats so it can replace older MRUs, and the range carries an ABS design assessment certificate. Subsea (1000 m) versions are listed for the B-series.",
+  "features": [
+   "MRU-B2: heave, surge, sway, pitch and roll",
+   "MRU-B1: heave, surge, sway; MRU-B1.1: pitch and roll (per Inertial Labs table)",
+   "Seatex and TSS-1 compatible output formats",
+   "ABS design assessment certificate 19-HS1851412-PDA",
+   "IP67 or subsea enclosed options"
+  ],
+  "specs": [
+   {
+    "k": "Heave accuracy",
+    "v": "5% or 5 cm (RMS)"
+   },
+   {
+    "k": "Pitch and roll accuracy",
+    "v": "0.02 deg (RMS)"
+   },
+   {
+    "k": "Size",
+    "v": "120 x 50 x 53 mm"
+   },
+   {
+    "k": "Weight",
+    "v": "220 g"
+   },
+   {
+    "k": "Subsea depth rating",
+    "v": "1000 m (subsea versions)"
+   }
+  ],
+  "images": [
+   {
+    "image_url": "https://inertiallabs.com/wp-content/uploads/2025/02/MRU-B2-2025.png",
+    "page_url": "https://inertiallabs.com/products/mru-ws-motion-reference-units-and-wave-sensors/",
+    "width": 0,
+    "height": 0,
+    "host": "inertiallabs.com",
+    "shows": "MRU-B2 unit",
+    "source_type": "oem"
+   },
+   {
+    "image_url": "https://inertiallabs.com/wp-content/uploads/2025/02/MRU-B1-2025.png",
+    "page_url": "https://inertiallabs.com/products/mru-ws-motion-reference-units-and-wave-sensors/",
+    "width": 0,
+    "height": 0,
+    "host": "inertiallabs.com",
+    "shows": "MRU-B1 unit",
+    "source_type": "oem"
+   },
+   {
+    "image_url": "https://inertiallabs.com/wp-content/uploads/2025/02/MRU-B1.1-2025.png",
+    "page_url": "https://inertiallabs.com/products/mru-ws-motion-reference-units-and-wave-sensors/",
+    "width": 0,
+    "height": 0,
+    "host": "inertiallabs.com",
+    "shows": "MRU-B1.1 unit",
+    "source_type": "oem"
+   }
+  ],
+  "sources": [
+   "https://inertiallabs.com/products/mru-ws-motion-reference-units-and-wave-sensors/"
+  ],
+  "notes": "Image pixel sizes not reported in tool output (set to 0). The B1 / B1.1 output mapping comes from a markdown-flattened table; re-check against the datasheet (inertiallabs.com/mru-datasheet) before printing."
+ },
+ {
+  "id": "B12",
+  "status": "FOUND",
+  "brand_confirmed": "R.M. Young",
+  "brand_note": "Confirmed: R.M. Young (YOUNG) Model 86106 Ultrasonic Anemometer - Marine. 'With wind display' is not part of the sensor; no display read.",
+  "official_name": "YOUNG 86106 Ultrasonic Anemometer (Marine)",
+  "description": "The YOUNG 86106 is a compact 2-axis ultrasonic anemometer with no moving parts, measuring horizontal wind speed and direction. The marine version is preconfigured for NMEA serial output (RS-485, 4800 baud), with analog and 4-20 mA outputs also available. It mounts on a standard 1 inch pipe.",
+  "features": [
+   "No moving parts, corrosion-resistant construction",
+   "Preconfigured NMEA output; RS-232, RS-485 and several formats available",
+   "Analog voltage and 4-20 mA outputs",
+   "Mounts on 1 inch IPS pipe with orientation ring",
+   "IP65 protection"
+  ],
+  "specs": [
+   {
+    "k": "Wind speed range",
+    "v": "0-75 m/s"
+   },
+   {
+    "k": "Accuracy",
+    "v": "+/-2% +/-0.1 m/s (30 m/s); direction +/-2 deg"
+   },
+   {
+    "k": "Power",
+    "v": "10-30 VDC, <20 mA typical"
+   },
+   {
+    "k": "Operating temperature",
+    "v": "-40 to 60 C"
+   },
+   {
+    "k": "Weight",
+    "v": "0.4 kg"
+   }
+  ],
+  "images": [
+   {
+    "image_url": "https://www.youngusa.com/wp-content/uploads/2014/11/86000-White-Background.jpg",
+    "page_url": "https://www.youngusa.com/product/ultrasonic-anemometer-5/",
+    "width": 762,
+    "height": 1200,
+    "host": "youngusa.com",
+    "shows": "86106 ultrasonic anemometer on white background",
+    "source_type": "oem"
+   }
+  ],
+  "sources": [
+   "https://www.youngusa.com/product/ultrasonic-anemometer-5/"
+  ],
+  "notes": "Page also shows a price; not recorded here."
+ },
+ {
+  "id": "B13",
+  "status": "FOUND",
+  "brand_confirmed": "Observator",
+  "brand_note": "Confirmed. OMC-118 is Observator's stainless-steel ultrasonic wind sensor; Observator's manual and marinsat/nauticexpo datasheets describe it as based on the Gill WindObserver II (search excerpts only). OMC-122M bracket not researched.",
+  "official_name": "Observator OMC-118 Ultrasonic Wind Sensor",
+  "description": "The OMC-118 is Observator's stainless-steel ultrasonic wind sensor, supplied to navies and used in marine, offshore and tunnel applications. It outputs NMEA or polar format and connects to Observator loggers, signal conditioning units and displays. The standard range is 0 to 65 m/s with 0 to 75 m/s optional.",
+  "features": [
+   "Enhanced anti-icing design",
+   "Analogue and NMEA outputs, user-selectable format",
+   "Sonic temperature output",
+   "Communication software included",
+   "Connects to the Observator display line"
+  ],
+  "specs": [
+   {
+    "k": "Standard range",
+    "v": "0-65 m/s"
+   },
+   {
+    "k": "Optional range",
+    "v": "0-75 m/s"
+   },
+   {
+    "k": "Housing",
+    "v": "Stainless steel"
+   },
+   {
+    "k": "Variants",
+    "v": "OMC-118M, OMC-118 I.S. (intrinsically safe)"
+   }
+  ],
+  "images": [
+   {
+    "image_url": "https://observator.com/wp-content/uploads/2019/07/OMC-118M-scaled-scaled-1350x1350.jpg",
+    "page_url": "https://observator.com/products/omc-118-ultrasonic-wind-sensor/",
+    "width": 1350,
+    "height": 1350,
+    "host": "observator.com",
+    "shows": "OMC-118M wind sensor",
+    "source_type": "oem"
+   },
+   {
+    "image_url": "https://observator.com/wp-content/uploads/2019/07/OMC-118_Foto2-intrinsically-safe-anemometer-2.jpg",
+    "page_url": "https://observator.com/products/omc-118-i-s-ultrasonic-intrinsically-safe-wind-sensor/",
+    "width": 1312,
+    "height": 1312,
+    "host": "observator.com",
+    "shows": "OMC-118 I.S. intrinsically safe variant",
+    "source_type": "oem"
+   }
+  ],
+  "sources": [
+   "https://observator.com/products/omc-118-ultrasonic-wind-sensor/"
+  ],
+  "notes": "Datasheet PDF link on the page (Datasheet-OMC-118-V20210805.pdf) not opened."
+ },
+ {
+  "id": "B14",
+  "status": "FOUND",
+  "brand_confirmed": "DEIF",
+  "brand_note": "Confirmed: DEIF Marine Instruments WSS 750 and WSS 550 (DEIF page names WSS 750 as suitable for DP systems). Register says 'WSS 550 / WSS 750'.",
+  "official_name": "DEIF WSS 750 Ultrasonic Wind Sensor (and WSS 550)",
+  "description": "The DEIF WSS 750 is a marine-approved ultrasonic wind sensor with no moving parts, stainless steel construction and a separately powered heater against icing. It is well suited to Dynamic Positioning systems and pairs with the DEIF XDi-N wind indicator. The WSS 550 is the related IP66 sensor with intelligent heating.",
+  "features": [
+   "Well suited for DP systems",
+   "All stainless steel, no moving parts",
+   "NMEA protocol output",
+   "Bayonet mount for simple installation",
+   "DNV GL approved"
+  ],
+  "specs": [
+   {
+    "k": "Wind speed",
+    "v": "up to 65 m/s (120 knots)"
+   },
+   {
+    "k": "Speed accuracy",
+    "v": "better than 3% (min +/-0.2 m/s)"
+   },
+   {
+    "k": "Direction accuracy",
+    "v": "better than +/-2 deg"
+   },
+   {
+    "k": "Protection",
+    "v": "IP66 and IP67"
+   }
+  ],
+  "images": [
+   {
+    "image_url": "https://www.deifmarineinstruments.com/media/cnmh54ks/wss-750.png",
+    "page_url": "https://www.deifmarineinstruments.com/product-overview/products/wss-750/",
+    "width": 1920,
+    "height": 1080,
+    "host": "deifmarineinstruments.com",
+    "shows": "WSS 750 wind sensor",
+    "source_type": "oem"
+   },
+   {
+    "image_url": "https://deifmarineinstruments-cdn-umbraco-gycff5f5hqdnc0bw.a03.azurefd.net/media/yn5nlun4/wss-500.png?width=200&v=1da9141422f0350&v=9",
+    "page_url": "https://www.deifmarineinstruments.com/product-overview/products/wss-750/",
+    "width": 200,
+    "height": 0,
+    "host": "deifmarineinstruments.com",
+    "shows": "WSS 550 wind sensor (200 px wide thumbnail)",
+    "source_type": "oem"
+   }
+  ],
+  "sources": [
+   "https://www.deifmarineinstruments.com/product-overview/products/wss-750/"
+  ],
+  "notes": "WSS 550 facts (IP66, DNV GL approved, heating) come from the card on the WSS 750 page; separate WSS 550 page not read."
+ },
+ {
+  "id": "B15",
+  "status": "FOUND",
+  "brand_confirmed": "Raytheon Anschutz (Anschutz)",
+  "brand_note": "Confirmed. Standard 22 is the older name; the current product is Standard 22 NX. Anschutz brochure read is the 2018 Standard 22 brochure (type approved to IMO standards); NX data from anschuetz.com. Mackay lists the original Standard 22 as end of life.",
+  "official_name": "Anschutz Standard 22 gyro compass (current model: Standard 22 NX)",
+  "description": "The Anschutz Standard 22 is a modular gyro compass system that can run up to three gyro compasses with an operator unit and distribution unit, forming a heading management system. It uses patented slip-ring-free data transmission and is IMO approved as a gyro compass and rate-of-turn gyro. Offshore supply vessels, tankers and cruise ships are named as typical users.",
+  "features": [
+   "Up to three gyro compasses plus magnetic or GNSS compass in one system",
+   "Automatic speed and latitude error correction",
+   "Bridge alert management compliant",
+   "Quick settling mode to 1 hour (option)",
+   "12 RS-422 outputs via distribution unit"
+  ],
+  "specs": [
+   {
+    "k": "Static error",
+    "v": "0.1 deg sec Lat. RMS"
+   },
+   {
+    "k": "Dynamic error",
+    "v": "0.4 deg sec Lat. RMS"
+   },
+   {
+    "k": "Supply",
+    "v": "24 VDC (18-36 VDC)"
+   },
+   {
+    "k": "Operating temperature",
+    "v": "-10 to +55 C"
+   },
+   {
+    "k": "Settling time",
+    "v": "1 h with quick settling option"
+   }
+  ],
+  "images": [
+   {
+    "image_url": "https://alphatronmarine.com/images/products/standard-22-gyro-compass.png?resolution=700x700&background=FFFFFF7F&",
+    "page_url": "https://alphatronmarine.com/en/product/standard-22-497/",
+    "width": 700,
+    "height": 700,
+    "host": "alphatronmarine.com",
+    "shows": "Standard 22 gyro compass (distributor, original Std 22)",
+    "source_type": "distributor"
+   },
+   {
+    "image_url": "https://www.anschuetz.com/fileadmin/_processed_/a/e/csm_Header_Std22_a437ede7a2.jpg",
+    "page_url": "https://www.anschuetz.com/products/gyro-compasses-and-repeaters/standard-22-nx",
+    "width": 0,
+    "height": 0,
+    "host": "anschuetz.com",
+    "shows": "Standard 22 NX header image (OEM, current NX model)",
+    "source_type": "oem"
+   },
+   {
+    "image_url": "https://images.marinelink.com/images/maritime/image-courtesy-3149.jpg",
+    "page_url": "https://www.marinelink.com/news/raytheon-standard-compass332465",
+    "width": 300,
+    "height": 333,
+    "host": "marinelink.com",
+    "shows": "Raytheon Standard 22 gyro compass press image",
+    "source_type": "catalogue"
+   }
+  ],
+  "sources": [
+   "https://www.marinsat.com/en/file/raytheon-anschutz-std22-gyrocompass-brochure",
+   "https://www.anschuetz.com/products/gyro-compasses-and-repeaters/standard-22-nx"
+  ],
+  "notes": "OEM image is of the NX; distributor image is of the original Std 22. Pick according to which model Sinor supplies."
+ },
+ {
+  "id": "B16",
+  "status": "FOUND",
+  "brand_confirmed": "Trimble",
+  "brand_note": "Confirmed. Trimble GA830 is a marine and land GNSS antenna listed on Trimble OEM GNSS. 'Bracket kit' not verified.",
+  "official_name": "Trimble GA830 GNSS Antenna",
+  "description": "The Trimble GA830 is a rugged GNSS antenna for land and marine use, built for centimetre-level positioning. It supports GPS, GLONASS, Galileo, BeiDou, QZSS, IRNSS, SBAS, MSS and MSK beacon, with Iridium filtering and low-elevation satellite tracking.",
+  "features": [
+   "Multi-constellation support including MSS and MSK beacon",
+   "Iridium filtering",
+   "Robust low-elevation satellite tracking",
+   "Rugged design for marine use",
+   "5/8 inch-11 thread or 3 x M8 surface mount"
+  ],
+  "specs": [
+   {
+    "k": "Weight",
+    "v": "820 g"
+   },
+   {
+    "k": "Size",
+    "v": "14.9 cm dia x 9.8 cm high"
+   },
+   {
+    "k": "Mount",
+    "v": "5/8 in-11 thread or 3 x M8"
+   }
+  ],
+  "images": [
+   {
+    "image_url": "https://images.ctfassets.net/9k5dj5b59lqq/66NVKliu0nApYTgpWHDF7a/a55abea0be8f47fc00532e0eba841fbc/ga830.png?fm=avif&q=90",
+    "page_url": "https://oemgnss.trimble.com/en/products/antennas/ga830",
+    "width": 0,
+    "height": 0,
+    "host": "oemgnss.trimble.com",
+    "shows": "GA830 antenna",
+    "source_type": "oem"
+   },
+   {
+    "image_url": "https://www.navtechgps.com/wp-content/uploads/GA830-1024x957.jpg",
+    "page_url": "https://www.navtechgps.com/ga830_gnss_antenna/",
+    "width": 1024,
+    "height": 957,
+    "host": "navtechgps.com",
+    "shows": "GA830 antenna (distributor)",
+    "source_type": "distributor"
+   }
+  ],
+  "sources": [
+   "https://oemgnss.trimble.com/en/products/antennas/ga830"
+  ],
+  "notes": "Primary image URL is AVIF format (fm=avif); may need conversion."
+ },
+ {
+  "id": "C03",
+  "status": "FOUND",
+  "brand_confirmed": "Hatteland Display (Hatteland Technology)",
+  "brand_note": "Brand confirmed (hattelandtechnology.com). Register mentions 19 in and 23 in; Hatteland lists 19.0 in (e.g. JH 19T27 MMD) and 24.0 in widescreen (HD 24T27 MMD), no 23 in found in the pages read. Exact model Sinor supplies (new or refurbished) not stated, so the card is generic to the JH 19T27 MMD (Series 1 G3).",
+  "official_name": "HATTELAND Series 1 G3 JH 19T27 MMD 19 inch marine monitor",
+  "description": "The JH 19T27 MMD is a 19 inch LED marine monitor from Hatteland's Series 1 G3 range, built to the same size and form as earlier Series 1 units so it can be fitted as a retrofit. It takes DisplayPort, HDMI, USB-C and VGA input and is type approved to IEC 60945 and IACS E10 with several class mutual recognitions.",
+  "features": [
+   "IP66 front, IP20 rear",
+   "Multi-power AC and 24 VDC",
+   "Optional resistive touch screen and optical bonding",
+   "Keypad or potmeter control with buzzer option",
+   "Type approved IEC 60945, IACS E10, DNV, ABS, BV and others"
+  ],
+  "specs": [
+   {
+    "k": "Native resolution",
+    "v": "1280 x 1024 (SXGA), 5:4"
+   },
+   {
+    "k": "Brightness / contrast",
+    "v": "350 cd/m2 / 1500:1 typical"
+   },
+   {
+    "k": "Power",
+    "v": "23 W typical, 33 W max"
+   },
+   {
+    "k": "Size and weight",
+    "v": "483 x 444 x 82 mm, about 8 kg"
+   },
+   {
+    "k": "Operating temperature",
+    "v": "-15 to +55 C"
+   }
+  ],
+  "images": [
+   {
+    "image_url": "https://www.hattelandtechnology.com/hubfs/HubDB-Product/high/jh19t27mmd-xrx__angfro.jpg?hsLang=en",
+    "page_url": "https://www.hattelandtechnology.com/view_product/jh-19t27-mmd_monitor_558",
+    "width": 2048,
+    "height": 1536,
+    "host": "hattelandtechnology.com",
+    "shows": "JH 19T27 MMD angled front view",
+    "source_type": "oem"
+   },
+   {
+    "image_url": "https://www.hattelandtechnology.com/hubfs/HubDB-Product/high/jh19t27mmd-xrx__01.jpg",
+    "page_url": "https://www.hattelandtechnology.com/view_product/jh-19t27-mmd_monitor_558",
+    "width": 0,
+    "height": 0,
+    "host": "hattelandtechnology.com",
+    "shows": "JH 19T27 MMD front view",
+    "source_type": "oem"
+   },
+   {
+    "image_url": "https://www.hattelandtechnology.com/hubfs/HubDB-Product/high/hd24t27mmd__01.jpg",
+    "page_url": "https://www.hattelandtechnology.com/products/marine-monitors",
+    "width": 0,
+    "height": 0,
+    "host": "hattelandtechnology.com",
+    "shows": "HD 24T27 MMD 24 inch widescreen (nearest to the 23 in size)",
+    "source_type": "oem"
+   }
+  ],
+  "sources": [
+   "https://www.hattelandtechnology.com/view_product/jh-19t27-mmd_monitor_558",
+   "https://www.hattelandtechnology.com/products/marine-monitors"
+  ],
+  "notes": "Third image URL was seen in the product list page; dimensions not reported."
+ },
+ {
+  "id": "C04",
+  "status": "PARTIAL",
+  "brand_confirmed": "Guidance Marine (reseller / supplier); underlying monitor maker probably Hatteland but NOT confirmed for 20-0310",
+  "brand_note": "Guidance Marine is the CyScan DP sensor maker; its part list (copy hosted by smtssg.com) shows a 'Marine integrated PC + touch screen monitor - Hatteland' (24-0259-4) and Hatteland mounting brackets, but does not list 20-0310 or MB-15H-TRS-24VDC. So the Hatteland link for the 19 in touch monitor is plausible but unverified. The 15 in MB-15H-TRS-24VDC was not identified.",
+  "official_name": "Marine touch screen monitor 19 in (Guidance Marine 20-0310; generic image Hatteland JH 19T27 MMD with touch option)",
+  "description": "Guidance Marine supplies marine touch screen displays with its DP position sensor packages. The image shown is a generic 19 inch marine monitor (Hatteland JH 19T27 MMD with the resistive touch option), not confirmed to be the exact 20-0310 unit. Hatteland states this model is IP66 at the front with a resistive touch option and 24 VDC multi-power input.",
+  "features": [
+   "Generic example: 19 inch LED marine monitor with optional resistive touch",
+   "IP66 front protection",
+   "Multi-power AC and 24 VDC",
+   "Type approved IEC 60945",
+   "Bracket and cable kit per register (not verified)"
+  ],
+  "specs": [
+   {
+    "k": "Example resolution",
+    "v": "1280 x 1024"
+   },
+   {
+    "k": "Example power",
+    "v": "23 W typical (JH 19T27 MMD)"
+   },
+   {
+    "k": "Example protection",
+    "v": "IP66 front"
+   }
+  ],
+  "images": [
+   {
+    "image_url": "https://www.hattelandtechnology.com/hubfs/HubDB-Product/high/jh19t27mmd-xrx__angcon_with_touch.jpg",
+    "page_url": "https://www.hattelandtechnology.com/view_product/jh-19t27-mmd_monitor_558",
+    "width": 0,
+    "height": 0,
+    "host": "hattelandtechnology.com",
+    "shows": "GENERIC: Hatteland JH 19T27 MMD with touch, rear connector view",
+    "source_type": "oem"
+   }
+  ],
+  "sources": [
+   "https://www.smtssg.com/wp-content/uploads/2020/02/Cyscan-MK4-Product-Informations.pdf",
+   "https://www.hattelandtechnology.com/view_product/jh-19t27-mmd_monitor_558"
+  ],
+  "notes": "Image is generic, label it as such. Ask Guidance Marine for the datasheet of 20-0310 to confirm maker and model."
+ },
+ {
+  "id": "C05",
+  "status": "PARTIAL",
+  "brand_confirmed": "Guidance Marine (part numbers on Guidance Marine list); manufacturer of the actual trackerball and keyboard not identified",
+  "brand_note": "The Guidance Marine part list (copy on smtssg.com) names 'Trackerball Mouse: track ball mouse with USB connector' and 'Compact Keyboard: compact keyboard with USB connector'. The text extraction is jumbled, so which of 38-0037-4 / 38-0038-4 is which is probable (0037 trackerball, 0038 keyboard) but not certain; the same list also associates 38-00xx numbers with Hatteland brackets. No maker given.",
+  "official_name": "Guidance Marine trackerball mouse and compact USB keyboard (38-0037-4 / 38-0038-4)",
+  "description": "Guidance Marine lists a USB trackerball mouse and a compact USB keyboard as accessory items for its DP sensor workstations. The images shown are generic marine keyboards and trackballs of the same type, not the Guidance Marine items themselves.",
+  "features": [
+   "Trackerball mouse with USB connector",
+   "Compact keyboard with USB connector",
+   "Generic examples shown are marine-rated"
+  ],
+  "specs": [
+   {
+    "k": "Interface",
+    "v": "USB (both items)"
+   }
+  ],
+  "images": [
+   {
+    "image_url": "https://img.nauticexpo.com/images_ne/projects/images-g/marine-keyboards-trackballs-most-demanding-jobs-new-full-travel-rubber-keyboards-ergonomical-trackballs-17239-9893352.jpg",
+    "page_url": "https://trends.nauticexpo.com/nsi/project-31428-317239.html",
+    "width": 900,
+    "height": 656,
+    "host": "nauticexpo.com",
+    "shows": "GENERIC: NSI marine keyboards and trackballs",
+    "source_type": "catalogue"
+   },
+   {
+    "image_url": "https://rugged.co.uk/wp-content/uploads/E38-Desktop-Cursor-Controls-Trackball.png",
+    "page_url": "https://rugged.co.uk/trackballs-for-marine-applications/",
+    "width": 1000,
+    "height": 1000,
+    "host": "rugged.co.uk",
+    "shows": "GENERIC: marine desktop trackball",
+    "source_type": "catalogue"
+   },
+   {
+    "image_url": "https://seatronx.com/wp-content/uploads/2025/01/KSMX106B_backlit_waterproof_keyboard-1024x443.jpg",
+    "page_url": "https://seatronx.com/products/keyboards/marine-keyboards/keyboard-with-ergonomic-trackball/",
+    "width": 1024,
+    "height": 443,
+    "host": "seatronx.com",
+    "shows": "GENERIC: marine keyboard with ergonomic trackball",
+    "source_type": "catalogue"
+   }
+  ],
+  "sources": [
+   "https://www.smtssg.com/wp-content/uploads/2020/02/Cyscan-MK4-Product-Informations.pdf"
+  ],
+  "notes": "All images generic and must be labelled so. Ask Guidance Marine for the datasheets of 38-0037-4 and 38-0038-4."
+ },
+ {
+  "id": "C06",
+  "status": "FOUND",
+  "brand_confirmed": "Network Technologies Inc (NTI), XTENDEX series",
+  "brand_note": "Register leaves the brand blank. ST-C5VRS-600 is an NTI (Network Technologies Inc, Ohio USA) XTENDEX VGA extender with RS232.",
+  "official_name": "NTI XTENDEX ST-C5VRS-600 VGA Extender with RS232 via CATx to 600 feet",
+  "description": "The NTI XTENDEX ST-C5VRS-600 sends VGA video and RS232 (for example for a touch screen) up to 600 feet over CAT5/5e/6 cable. A local unit connects to the computer and also feeds a local monitor, and a remote unit connects to the remote monitor. It has built-in surge protection and a two year warranty.",
+  "features": [
+   "VGA plus RS232 over a single CATx cable",
+   "Supports local and remote monitors",
+   "Resolutions up to 1920x1440 (shorter range at higher resolution)",
+   "Built-in surge protection",
+   "RS232 supports touch screen monitors"
+  ],
+  "specs": [
+   {
+    "k": "Range on CAT5/5e UTP",
+    "v": "600 ft (183 m) at 1024x768; 400 ft at 1280x1024"
+   },
+   {
+    "k": "RS232",
+    "v": "up to 56000 baud"
+   },
+   {
+    "k": "Power",
+    "v": "100-240 VAC adapter, 10 W each unit"
+   },
+   {
+    "k": "Size and weight",
+    "v": "89 x 79 x 30 mm, 0.54 kg"
+   },
+   {
+    "k": "Operating temperature",
+    "v": "0 to 38 C"
+   }
+  ],
+  "images": [
+   {
+    "image_url": "https://www.networktechinc.com/images/additional/st-c5vrs-600.jpg",
+    "page_url": "https://www.networktechinc.com/cat5-vga.html",
+    "width": 0,
+    "height": 0,
+    "host": "networktechinc.com",
+    "shows": "ST-C5VRS-600 extender unit (VGA + RS232)",
+    "source_type": "oem"
+   },
+   {
+    "image_url": "https://www.networktechinc.com/images/xtendex-st-c5v-600.jpg",
+    "page_url": "https://www.networktechinc.com/cat5-vga.html",
+    "width": 0,
+    "height": 0,
+    "host": "networktechinc.com",
+    "shows": "XTENDEX ST-C5V-600 local and remote unit (video-only sibling)",
+    "source_type": "oem"
+   }
+  ],
+  "sources": [
+   "https://www.networktechinc.com/cat5-vga.html"
+  ],
+  "notes": "Operating temperature 0-38 C is narrower than other marine kit; relevant for installation advice."
+ }
+]

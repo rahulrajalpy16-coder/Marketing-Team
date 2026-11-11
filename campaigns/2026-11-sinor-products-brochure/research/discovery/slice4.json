@@ -1,0 +1,1036 @@
+[
+ {
+  "id": "C07",
+  "status": "FOUND",
+  "brand_confirmed": "Kongsberg Maritime",
+  "brand_note": "Maker confirmed as Kongsberg by the distributor listing for RMP201-8 (part 324400). Only RMP201-8 was covered; RMP200-8 603443 and RMP420 thruster control card were not found. No Kongsberg-owned page for these legacy modules was found.",
+  "official_name": "Kongsberg RMP201-8 Remote Multi-Purpose Input/Output Module (part 324400)",
+  "description": "The RMP201-8 is a Remote Multi-Purpose input/output module from Kongsberg Maritime, used as a distributed I/O node in marine automation and control systems. The unit shown is a refurbished module with part number 324400. Facts on this card are limited to what the distributor listing states, as no maker datasheet was found for this legacy part.",
+  "features": [
+   "Remote multi-purpose I/O module",
+   "Kongsberg part no. 324400",
+   "Legacy part, supplied refurbished"
+  ],
+  "specs": [
+   {
+    "k": "Model",
+    "v": "RMP201-8"
+   },
+   {
+    "k": "Part no.",
+    "v": "324400"
+   },
+   {
+    "k": "Maker",
+    "v": "Kongsberg"
+   }
+  ],
+  "images": [
+   {
+    "image_url": "https://elektromarine.com/wp-content/uploads/2023/11/RMP-201-8-1.jpg.webp",
+    "page_url": "https://elektromarine.com/product/kongsberg-rmp201-8-324400/",
+    "width": 1000,
+    "height": 1000,
+    "host": "elektromarine.com",
+    "shows": "RMP201-8 module, product photo (alt: kongsberg rmp201 8 324400)",
+    "source_type": "distributor"
+   },
+   {
+    "image_url": "https://i.ebayimg.com/images/g/0FYAAOSwI49nKzm9/s-l400.jpg",
+    "page_url": "https://www.ebay.com/p/18055392546",
+    "width": 400,
+    "height": 300,
+    "host": "i.ebayimg.com",
+    "shows": "Black Kongsberg RMP201-8 module with labelled ports (marketplace, fallback only)",
+    "source_type": "distributor"
+   }
+  ],
+  "sources": [
+   "https://elektromarine.com/product/kongsberg-rmp201-8-324400/"
+  ],
+  "notes": "Image 1 is a Dubai/India reseller photo of the exact model. Image 2 is a marketplace image, use only if image 1 is rejected. Search snippets from other resellers describe the RMP201-8 as part of Kongsberg's RIO200 distributed I/O system but that was seen only as a search excerpt, not on a page read, so it is not used as a fact."
+ },
+ {
+  "id": "C08",
+  "status": "FOUND",
+  "brand_confirmed": "Kongsberg Maritime",
+  "brand_note": "Confirmed: Kongsberg Maritime AS, Norway. Distributor page identifies the Compact Joystick Operator Terminal (cJoy) as part 603201, Rev A. A different cJoy listing (339881) also appears in search, so confirm which part number Sinor supplies.",
+  "official_name": "Kongsberg Compact Joystick Operator Terminal (cJoy), part 603201",
+  "description": "The cJoy is a compact joystick operator terminal from Kongsberg Maritime that gives the DP operator or helmsman direct manual control input to thrusters and propulsion within Kongsberg dynamic positioning and manoeuvring systems. It is built to be fitted into a bridge console. The listing quotes a compass safe distance of 0.55 m for this unit.",
+  "features": [
+   "Joystick control in surge, sway and yaw (per operator manual excerpt)",
+   "Built into DP console or bridge console arrangements",
+   "Keyboard encoder software version 2, hardware Rev A",
+   "Marked compass safe distance 0.55 m"
+  ],
+  "specs": [
+   {
+    "k": "Part no.",
+    "v": "603201"
+   },
+   {
+    "k": "Hardware revision",
+    "v": "A"
+   },
+   {
+    "k": "Keyboard encoder SW",
+    "v": "2"
+   },
+   {
+    "k": "Compass safe distance",
+    "v": "0.55 m"
+   },
+   {
+    "k": "Origin",
+    "v": "Norway"
+   }
+  ],
+  "images": [
+   {
+    "image_url": "https://www.protamarine.com/wp-content/uploads/2025/02/33.webp",
+    "page_url": "https://www.protamarine.com/product/kongsberg-603201-compact-joystick-operator-terminal-rev-a/",
+    "width": 1595,
+    "height": 1186,
+    "host": "protamarine.com",
+    "shows": "Kongsberg 603201 compact joystick operator terminal (cJoy)",
+    "source_type": "distributor"
+   },
+   {
+    "image_url": "https://www.protamarine.com/wp-content/uploads/2025/02/36.webp",
+    "page_url": "https://www.protamarine.com/product/kongsberg-603201-compact-joystick-operator-terminal-rev-a/",
+    "width": 1490,
+    "height": 1600,
+    "host": "protamarine.com",
+    "shows": "Second view of the 603201 terminal",
+    "source_type": "distributor"
+   },
+   {
+    "image_url": "https://i.ebayimg.com/images/g/WqkAAOSwaRhgUJS1/s-l1200.jpg",
+    "page_url": "https://www.ebay.com/itm/125665350416",
+    "width": 1200,
+    "height": 900,
+    "host": "i.ebayimg.com",
+    "shows": "603201 cJoy Rev B (marketplace, fallback)",
+    "source_type": "distributor"
+   }
+  ],
+  "sources": [
+   "https://www.protamarine.com/product/kongsberg-603201-compact-joystick-operator-terminal-rev-a/"
+  ],
+  "notes": "Prota Marine is a Dubai/Singapore spares dealer, so this is a distributor image, not Kongsberg's. Surge/sway/yaw wording comes from a Scribd operator manual search excerpt, not a page fully read. Search excerpt for part 339881 mentions a 6.5 inch colour display and heading wheel, which may be the newer cJoy generation; not used on this card because not verified."
+ },
+ {
+  "id": "C09",
+  "status": "FOUND",
+  "brand_confirmed": "Rolls-Royce (modules carry Weidmuller type names RRAIO16, RRDIO15, RRRLY8)",
+  "brand_note": "Resellers list these as 'Rolls-Royce Weidmuller' I/O alarm modules. Maker is Rolls-Royce Marine per listings, but no Rolls-Royce page confirms this. RRVIO8 was not found at all. The catalogue name 'Marine Controller' is not supported, these are I/O and alarm modules.",
+  "official_name": "Rolls-Royce marine I/O alarm modules RRAIO16 (analogue), RRDIO15 (digital) and RRRLY8 (relay)",
+  "description": "RRAIO16, RRDIO15 and RRRLY8 are rack-mounted I/O alarm modules supplied for Rolls-Royce marine control and alarm systems, covering analogue, digital and relay channels. RRDIO15 is the 15-channel digital input/output module. The maker has discontinued the RRDIO15, so these are legacy spares.",
+  "features": [
+   "RRAIO16: analogue I/O alarm module, 16 channel",
+   "RRDIO15: 15-channel digital I/O alarm module",
+   "RRRLY8: relay module (name indicates 8 relays, unverified)",
+   "Rack modules for Rolls-Royce marine systems"
+  ],
+  "specs": [
+   {
+    "k": "RRDIO15 channels",
+    "v": "15 (per reseller listing)"
+   },
+   {
+    "k": "RRAIO16 channels",
+    "v": "16 (per reseller listing)"
+   },
+   {
+    "k": "Lifecycle",
+    "v": "RRDIO15 listed as discontinued by manufacturer (reseller statement)"
+   }
+  ],
+  "images": [
+   {
+    "image_url": "https://i.ebayimg.com/images/g/DzcAAOSwlVllbcFp/s-l1200.jpg",
+    "page_url": "https://www.ebay.com/itm/235328890159",
+    "width": 900,
+    "height": 1200,
+    "host": "i.ebayimg.com",
+    "shows": "Rolls-Royce RRDIO15, RRRLY8 and RRAIO16 rack modules together (marketplace)",
+    "source_type": "distributor"
+   },
+   {
+    "image_url": "https://www.dcssaul.com/wp-content/uploads/2026/05/969ab20fa8b8a5684a31.jpg",
+    "page_url": "https://www.dcssaul.com/products/rolls-royce/rraio16/",
+    "width": 1500,
+    "height": 2007,
+    "host": "dcssaul.com",
+    "shows": "RRAIO16 module (reseller, check for watermark)",
+    "source_type": "distributor"
+   },
+   {
+    "image_url": "https://www.marineshipstores.com/wp-content/uploads/2024/04/ROLLS-ROYCE-RRAIO16-ANALOG-IO-MODULE-16-CHANNEL.jpg",
+    "page_url": "https://www.marineshipstores.com/product/rolls-royce-rraio16-analog-io-module-16-channel/",
+    "width": 801,
+    "height": 800,
+    "host": "marineshipstores.com",
+    "shows": "RRAIO16 analog I/O module 16 channel",
+    "source_type": "distributor"
+   }
+  ],
+  "sources": [
+   "https://www.abb-sis.com/manual/RRDIO15-ROLLS-ROYCE.html?_l=en"
+  ],
+  "notes": "Weak sourcing. The only page fully read is a Chinese reseller page whose technical claims (IP40, -40 to 125 C, TTL/CMOS) look generic and were NOT used. Channel counts rely on model names and reseller titles. Recommend Sinor treat this card as a family card and confirm specs from the Rolls-Royce manual. Image 1 shows three modules in one picture, which fits the family card."
+ },
+ {
+  "id": "C10",
+  "status": "FOUND",
+  "brand_confirmed": "GE Fanuc (now Emerson)",
+  "brand_note": "Series 90-30 is GE Fanuc, later GE Intelligent Platforms and now Emerson. Only IC693CPU374 was covered; IC693PWR331 and IC693BEM331 were not looked up (budget).",
+  "official_name": "GE Fanuc Series 90-30 CPU 374 (IC693CPU374)",
+  "description": "The IC693CPU374 is a single-slot CPU for the Series 90-30 PLC with an embedded Ethernet controller. It runs at 133 MHz with 240 KB of user memory and supports Modbus/TCP, SRTP and Ethernet Global Data. It is a long-established legacy PLC part.",
+  "features": [
+   "Single-slot CPU with embedded Ethernet",
+   "Auto-sensing 10/100 Mbps Ethernet",
+   "Supports SRTP, Modbus/TCP and Ethernet Global Data",
+   "Supports up to 7 remote or expansion baseplates"
+  ],
+  "specs": [
+   {
+    "k": "Processor speed",
+    "v": "133 MHz"
+   },
+   {
+    "k": "User memory",
+    "v": "240 KB"
+   },
+   {
+    "k": "Discrete I/O points",
+    "v": "2048"
+   },
+   {
+    "k": "Operating temperature",
+    "v": "0 to 60 C"
+   },
+   {
+    "k": "Ethernet",
+    "v": "10/100 Mbps"
+   }
+  ],
+  "images": [
+   {
+    "image_url": "https://www.plcdcspro.com/cdn/shop/files/IC693CPU374.png?v=1741329280&width=1946",
+    "page_url": "https://www.plcdcspro.com/products/fanuc-ic693cpu374-series-90-30-cpu-module-ge-series-90-30",
+    "width": 800,
+    "height": 800,
+    "host": "plcdcspro.com",
+    "shows": "IC693CPU374 CPU module",
+    "source_type": "distributor"
+   },
+   {
+    "image_url": "http://iqelectro.com/cdn/shop/files/IC693CPU374.webp?v=1703249492",
+    "page_url": "https://iqelectro.com/products/ic693cpu374-ge-fanuc-series-90-30",
+    "width": 440,
+    "height": 477,
+    "host": "iqelectro.com",
+    "shows": "IC693CPU374 processor module",
+    "source_type": "distributor"
+   }
+  ],
+  "sources": [
+   "https://www.plcdcspro.com/products/fanuc-ic693cpu374-series-90-30-cpu-module-ge-series-90-30"
+  ],
+  "notes": "Specs come from a reseller page (PLC DCS Pro), not GE/Emerson. The page lists 'two ports' for Ethernet, so port count is left out of the card. Second image URL is verbatim from search output (http scheme). Keep 'Series 90-30' wording, the PWR331 power supply and BEM331 bus module were not researched."
+ },
+ {
+  "id": "C11",
+  "status": "FOUND",
+  "brand_confirmed": "GE Fanuc (now Emerson)",
+  "brand_note": "VersaMax is GE Fanuc, now sold under Emerson (the reseller titles it GE-Emerson). Only IC200ALG240 was covered; IC200MDL940 and IC200GBI001 were not.",
+  "official_name": "GE Fanuc VersaMax IC200ALG240 Analog Input Module",
+  "description": "The IC200ALG240 is a VersaMax analog input module that takes signals from up to 8 analog devices and gives 16-bit resolution. It provides 8 words of analog input data and has built-in diagnostics for open wire and over or under range. Each channel is isolated.",
+  "features": [
+   "8 isolated analog inputs",
+   "16-bit resolution",
+   "Diagnostics: open wire, over/under range, high/low limit, loss of field power",
+   "Module OK and field power LEDs",
+   "No thermal derating"
+  ],
+  "specs": [
+   {
+    "k": "Inputs",
+    "v": "8, isolated"
+   },
+   {
+    "k": "Resolution",
+    "v": "16 bit"
+   },
+   {
+    "k": "External supply",
+    "v": "+19.5 to +30 VDC"
+   },
+   {
+    "k": "Isolation",
+    "v": "250 VAC continuous, 1500 VAC for 1 min"
+   },
+   {
+    "k": "Backplane current",
+    "v": "5 V: 15 mA max, 3.3 V: 120 mA max"
+   }
+  ],
+  "images": [
+   {
+    "image_url": "https://www.nexinstrument.com/assets/images/IC200ALG240.jpg",
+    "page_url": "https://www.nexinstrument.com/ic200alg240",
+    "width": 1053,
+    "height": 940,
+    "host": "nexinstrument.com",
+    "shows": "IC200ALG240 module",
+    "source_type": "distributor"
+   },
+   {
+    "image_url": "https://res.cloudinary.com/dhuybxcsw/image/private/s--DgN4J_k5--/w_1600,h_1600,f_auto,q_auto/dosupply/listings/rich/IC200ALG240_JE/T_3_330_veownc",
+    "page_url": "https://www.dosupply.com/automation/ge-fanuc/versamax/IC200ALG240",
+    "width": 1600,
+    "height": 1600,
+    "host": "res.cloudinary.com",
+    "shows": "IC200ALG240 module (DO Supply, signed URL may expire)",
+    "source_type": "distributor"
+   },
+   {
+    "image_url": "https://www.pdfsupply.com/images/large/ic200alg240.jpg",
+    "page_url": "https://www.pdfsupply.com/automation/ge-fanuc/versamax/IC200ALG240",
+    "width": 400,
+    "height": 268,
+    "host": "pdfsupply.com",
+    "shows": "IC200ALG240 module",
+    "source_type": "distributor"
+   }
+  ],
+  "sources": [
+   "https://www.qualitrol.com/products/60262/ge-emerson-ic200alg240-versamax-analog-input-module-remanufactured"
+  ],
+  "notes": "Facts read from Qualitrol, a GE-authorized repair centre, citing the GE datasheet. Qualitrol's own image file is named ic200alg230_1.jpg so it may show a sibling module and is NOT offered. Image hosts were not opened, only seen in search results."
+ },
+ {
+  "id": "C12",
+  "status": "PARTIAL",
+  "brand_confirmed": "Converteam (later GE Power Conversion); exact current owner not verified",
+  "brand_note": "Catalogue gives only 'AMC controller'. Listings show several AMC part numbers (P110-6052, P111-6052, P112-6052 AMC-DP, P110-6152). Which one Sinor supplies must be confirmed. One listing title reads 'GE Energy Converteam Alstom', not verified.",
+  "official_name": "Converteam Advanced Micro Controller (AMC / AMC2), e.g. P111-6052",
+  "description": "The Advanced Micro Controller is a Converteam control unit used in marine automation and dynamic positioning, with variants named AMC-PLC, AMC-AU and AMC-DP. Its main controller box is a Converteam design built around an Arbor industrial controller board. It is a legacy part with no maker product page found.",
+  "features": [
+   "Variants AMC-PLC, AMC-AU and AMC-DP",
+   "Converteam-designed controller box supplied by Eltech (search excerpt)",
+   "Built on an Arbor EmE7x-i701 controller board (search excerpt)"
+  ],
+  "specs": [
+   {
+    "k": "Example part nos.",
+    "v": "P110-6052, P111-6052, P112-6052"
+   },
+   {
+    "k": "Controller board",
+    "v": "Arbor EmE7x-i701 (excerpt)"
+   }
+  ],
+  "images": [
+   {
+    "image_url": "https://www.smtssg.com/wp-content/uploads/2021/03/AMC2.jpeg",
+    "page_url": "https://www.smtssg.com/product/advanced-micro-controller-converteam-p111-6052/",
+    "width": 1024,
+    "height": 679,
+    "host": "smtssg.com",
+    "shows": "Converteam P111-6052 Advanced Micro Controller",
+    "source_type": "distributor"
+   },
+   {
+    "image_url": "https://atlasshipcare.com/cdn/shop/products/CONVERTEAM-P110-6152-ISS-B-ADVANCED-MICRO-CONTROLLER-2.jpg?v=1709947591",
+    "page_url": "https://atlasshipcare.com/products/converteam-p110-6152-iss-b-advanced-micro-controller-ab359",
+    "width": 1734,
+    "height": 2312,
+    "host": "atlasshipcare.com",
+    "shows": "Converteam P110-6152 ISS B AMC (different part number)",
+    "source_type": "distributor"
+   }
+  ],
+  "sources": [
+   "https://www.smtssg.com/product/advanced-micro-controller-converteam-p111-6052/",
+   "https://www.abb-sis.com/manual/P111-6052.html?_l=en (search excerpt only)"
+  ],
+  "notes": "PARTIAL: no Converteam/GE page found, the description rests on a search excerpt from a reseller page and one reseller photo of P111-6052. Image 2 is a different AMC part (P110-6152). Not suitable for specs."
+ },
+ {
+  "id": "C13",
+  "status": "FOUND",
+  "brand_confirmed": "Schneider Electric (Modicon)",
+  "brand_note": "Confirmed on se.com. TSX P57 4634M is Modicon Premium, discontinued 2 Dec 2020 (service only). M340 CPU and power supply from the hint were not covered.",
+  "official_name": "TSXP574634M Unity processor, Modicon Premium, 440 kB data RAM",
+  "description": "The TSX P57 4634M is a standard Modicon Premium processor with integrated Ethernet and Fipio, programmed with Unity Pro. It manages the whole PLC station and handles application-specific channels in the rack. Schneider lists it as discontinued since December 2020, with service only.",
+  "features": [
+   "Standard Premium processor with integrated Ethernet and Fipio",
+   "Unity Pro programming",
+   "RS485 serial link, Ethernet and USB ports",
+   "PCMCIA memory extension cards used"
+  ],
+  "specs": [
+   {
+    "k": "Discrete I/O capacity",
+    "v": "2040 I/O"
+   },
+   {
+    "k": "Analogue I/O capacity",
+    "v": "256 I/O"
+   },
+   {
+    "k": "Application-specific channels",
+    "v": "64"
+   },
+   {
+    "k": "Ethernet port",
+    "v": "10BASE-T/100BASE-TX"
+   },
+   {
+    "k": "Lifecycle",
+    "v": "Discontinued 2 Dec 2020, service only"
+   }
+  ],
+  "images": [
+   {
+    "image_url": "https://download.se.com/files?p_Doc_Ref=104467&p_File_Type=rendition_369_jpg&default_image=DefaultProductImage.png",
+    "page_url": "https://www.se.com/us/en/product/TSXP574634M/unity-processor-modicon-premium-internal-ram-440kb-data-unity-pro/",
+    "width": 369,
+    "height": 369,
+    "host": "download.se.com",
+    "shows": "TSXP574634M Modicon Premium processor, Schneider product shot",
+    "source_type": "oem"
+   }
+  ],
+  "sources": [
+   "https://www.se.com/us/en/product/TSXP574634M/unity-processor-modicon-premium-internal-ram-440kb-data-unity-pro/"
+  ],
+  "notes": "OEM image is small (369 px). A larger Schneider rendition for another Premium CPU (TSXP57203M) is rendition_1500 but is a different model so not offered."
+ },
+ {
+  "id": "C14",
+  "status": "FOUND",
+  "brand_confirmed": "Siemens",
+  "brand_note": "Confirmed on Siemens SiePortal. Only CPU 1214C was read; SM 1223 and CM 1241 were not. Siemens now points to the S7-1200 G2 as successor.",
+  "official_name": "SIMATIC S7-1200 CPU 1214C compact CPU",
+  "description": "The CPU 1214C is a compact SIMATIC S7-1200 controller with 14 digital inputs, 10 digital outputs and 2 analogue inputs on board, and a built-in PROFINET Ethernet port. It can be expanded with one signal board, up to eight signal modules and up to three communication modules. It is available in DC/DC/DC, DC/DC/relay and AC/DC/relay versions.",
+  "features": [
+   "14 DI 24 V DC, 10 DO, 2 AI 0 to 10 V",
+   "Integrated PROFINET interface, OPC UA server, Modbus",
+   "Expandable with 1 SB, 8 SM and 3 CM",
+   "6 fast counters, 4 pulse outputs up to 100 kHz (DC/DC/DC)",
+   "Marine approval listed"
+  ],
+  "specs": [
+   {
+    "k": "Work memory",
+    "v": "150 kB"
+   },
+   {
+    "k": "Load memory",
+    "v": "4 MB"
+   },
+   {
+    "k": "Operating temperature",
+    "v": "-20 to 60 C"
+   },
+   {
+    "k": "Degree of protection",
+    "v": "IP20"
+   },
+   {
+    "k": "Size (W x H x D)",
+    "v": "110 x 100 x 75 mm"
+   }
+  ],
+  "images": [
+   {
+    "image_url": "https://mall.industry.siemens.com/mall/collaterals/files/207/JPG/01/75/P_ST70_XX_04491j.JPG",
+    "page_url": "https://sieportal.siemens.com/en-ww/products-services/10045652?tree=CatalogTree",
+    "width": 0,
+    "height": 0,
+    "host": "mall.industry.siemens.com",
+    "shows": "SIMATIC S7-1200 CPU 1214C product photo (larger variant, size not stated)",
+    "source_type": "oem"
+   },
+   {
+    "image_url": "https://mall.industry.siemens.com/mall/collaterals/files/207/jpg/01/75/P_ST70_XX_04491i.jpg",
+    "page_url": "https://sieportal.siemens.com/en-ww/products-services/10045652?tree=CatalogTree",
+    "width": 300,
+    "height": 300,
+    "host": "mall.industry.siemens.com",
+    "shows": "CPU 1214C, 300 px version",
+    "source_type": "oem"
+   }
+  ],
+  "sources": [
+   "https://sieportal.siemens.com/en-ww/products-services/10045652?tree=CatalogTree"
+  ],
+  "notes": "Image 1 URL appears on the page markdown; its pixel size was not reported, so width and height are 0. Image 2 is a verified 300 px version."
+ },
+ {
+  "id": "C15",
+  "status": "FOUND",
+  "brand_confirmed": "Woodward",
+  "brand_note": "easYgen-3500XT-P1 is Woodward (part 8440-2085). EGCP-3 from the hint was not covered. The page read is woodward.store, a reseller (RB-Net), not woodward.com.",
+  "official_name": "Woodward easYgen-3500XT (P1) genset controller, 8440-2085",
+  "description": "The easYgen-3500XT is a Woodward genset controller for paralleling applications. Package P1 includes a display, synchronisation of generator and mains breakers, built-in AVR regulation and three flexible PID loops for speed and voltage bias. Load sharing runs over redundant Ethernet or CANopen.",
+  "features": [
+   "Synchronisation of GCB and MCB, with run-up synchronisation",
+   "Built-in AVR regulation, 690 VAC sensing support",
+   "3 x CAN bus, 1 x RS485, 3 x Ethernet (Modbus TCP)",
+   "3 flexible PIDs for speed and voltage bias",
+   "Load sharing via redundant Ethernet or CANopen"
+  ],
+  "specs": [
+   {
+    "k": "Package",
+    "v": "P1 (1A/5A), with display"
+   },
+   {
+    "k": "Part no.",
+    "v": "8440-2085"
+   },
+   {
+    "k": "Low-temp variant P1/LT",
+    "v": "-40 to 70 C (8440-2086)"
+   }
+  ],
+  "images": [
+   {
+    "image_url": "https://woodward.store/media/e1/ff/7c/1718784614/IMG_8440-2085-1.jpg?ts=1718784614",
+    "page_url": "https://woodward.store/en/easygen-3000xt/easygen-3500xt",
+    "width": 0,
+    "height": 0,
+    "host": "woodward.store",
+    "shows": "easYgen-3500XT P1 controller, product shot (size not stated)",
+    "source_type": "distributor"
+   },
+   {
+    "image_url": "https://woodward.store/media/c5/27/db/1727097245/IMG_8440-2086-1.jpg?ts=1727097245",
+    "page_url": "https://woodward.store/en/woodward-easygen-3500xt-p1-lt",
+    "width": 480,
+    "height": 360,
+    "host": "woodward.store",
+    "shows": "easYgen-3500XT P1/LT",
+    "source_type": "distributor"
+   }
+  ],
+  "sources": [
+   "https://woodward.store/en/easygen-3000xt/easygen-3500xt"
+  ],
+  "notes": "No woodward.com page was read. Image 1 is the P1 shot (8440-2085), size not reported."
+ },
+ {
+  "id": "C16",
+  "status": "FOUND",
+  "brand_confirmed": "DEIF",
+  "brand_note": "Confirmed: DEIF Delomatic 3 (DM-3) is phased out and replaced by the DM-4 series (marine, land, gas, hydro). 'Full set' in the hint means the DGU generator unit plus control panels (CP).",
+  "official_name": "DEIF Delomatic 3 (DM-3) multi-function system",
+  "description": "Delomatic 3 is DEIF's marine power management system for generator sets. It combines three-phase measurements, the generator protections and user-configurable setpoints and timers. DEIF has phased it out in favour of the Delomatic 4 series.",
+  "features": [
+   "Power management system",
+   "Built-in 3-phase measurements of U, I, P",
+   "All necessary generator protections",
+   "User-configurable setpoints and timers",
+   "Generator unit (DGU) with control panels"
+  ],
+  "specs": [
+   {
+    "k": "Lifecycle",
+    "v": "End of life, replaced by DM-4"
+   },
+   {
+    "k": "Origin",
+    "v": "Made in Denmark (DEIF site)"
+   }
+  ],
+  "images": [
+   {
+    "image_url": "https://deif-cdn-umbraco.azureedge.net/media/jmkbreb4/dm-3.png?width=740&height=400&v=1da91413f1937d0&v=9",
+    "page_url": "https://www.deif.com/products/dm-3/",
+    "width": 740,
+    "height": 400,
+    "host": "deif-cdn-umbraco.azureedge.net",
+    "shows": "DM-3 Delomatic 3, DEIF product image",
+    "source_type": "oem"
+   },
+   {
+    "image_url": "https://deif-cdn-umbraco.azureedge.net/media/jmkbreb4/dm-3.png?width=1200&height=630&v=1da91413f1937d0&v=9",
+    "page_url": "https://www.deif.com/products/dm-3/",
+    "width": 1200,
+    "height": 630,
+    "host": "deif-cdn-umbraco.azureedge.net",
+    "shows": "DM-3 larger social crop",
+    "source_type": "oem"
+   }
+  ],
+  "sources": [
+   "https://www.deif.com/products/dm-3/",
+   "https://www.deif.com/media/v4vf4uny/delomatic-3-data-sheet-4921240164-uk.pdf (search excerpt)"
+  ],
+  "notes": "Feature bullets come from the DEIF datasheet search excerpt and an overview excerpt, not a full read. The DEIF page itself says almost nothing technical. Image content not inspected, only the URL and page title."
+ },
+ {
+  "id": "C17",
+  "status": "FOUND",
+  "brand_confirmed": "Danfoss (VLT and VACON brands)",
+  "brand_note": "Both are on danfoss.com. VLT 5000 is inactive and discontinued, with spare parts and service no longer available per Danfoss. VACON NXP is covered by the NXP Air Cooled page; the NXP Grid Converter and other variants exist.",
+  "official_name": "Danfoss VACON NXP Air Cooled drive and VLT 5000 (legacy)",
+  "description": "VACON NXP Air Cooled drives are Danfoss frequency converters for demanding applications, available as wall-mounted, enclosed standalone and IP00 modules up to 2 MW. They control induction and permanent magnet motors and have five built-in expansion slots for I/O, fieldbus and safety boards. The older VLT 5000 is discontinued and Danfoss points to iC7-Automation as successor.",
+  "features": [
+   "Power range up to 2 MW",
+   "Wall-mounted, enclosed standalone and IP00 module forms",
+   "Five built-in expansion slots",
+   "Open and closed loop vector control",
+   "Coated circuit boards against dust and moisture"
+  ],
+  "specs": [
+   {
+    "k": "Supply 380-500 V",
+    "v": "1.5 to 1200 kW"
+   },
+   {
+    "k": "Supply 525-690 V",
+    "v": "2.0 to 2000 kW"
+   },
+   {
+    "k": "Supply 208-240 V",
+    "v": "0.55 to 90 kW"
+   },
+   {
+    "k": "VLT 5000 status",
+    "v": "Inactive, discontinued"
+   }
+  ],
+  "images": [
+   {
+    "image_url": "https://www.danfoss.com/media/1nqjbmxz/vacon-nxp-air-cooled.jpg?v=1d8abbcb6023930&width=1220",
+    "page_url": "https://www.danfoss.com/en/products/dds/low-voltage-drives/vacon-drives/vacon-nxp-air-cooled/",
+    "width": 1220,
+    "height": 813,
+    "host": "danfoss.com",
+    "shows": "VACON NXP Air Cooled drive",
+    "source_type": "oem"
+   },
+   {
+    "image_url": "https://www.danfoss.com/media/6375/vlt_5000_5000flux_5000crane.jpg",
+    "page_url": "https://www.danfoss.com/en/products/dds/low-voltage-drives/vlt-and-vacon-legacy-drives/vlt-5000/",
+    "width": 1120,
+    "height": 747,
+    "host": "danfoss.com",
+    "shows": "VLT 5000 family (5000, FLUX, Crane)",
+    "source_type": "oem"
+   }
+  ],
+  "sources": [
+   "https://www.danfoss.com/en/products/dds/low-voltage-drives/vacon-drives/vacon-nxp-air-cooled/",
+   "https://www.danfoss.com/en/products/dds/low-voltage-drives/vlt-and-vacon-legacy-drives/vlt-5000/"
+  ],
+  "notes": "Image 2 shows the VLT 5000 family, not a single frame size. Specs refer to NXP Air Cooled only. Image 2 width/height from search result."
+ },
+ {
+  "id": "C18",
+  "status": "FOUND",
+  "brand_confirmed": "Moxa",
+  "brand_note": "Confirmed on moxa.com. Only EDS-205A series was read; EDS-518A and UPort 1150 were not. Sinor's exact EDS-205A suffix (plain, -T, fibre) is unknown.",
+  "official_name": "Moxa EDS-205A Series 5-port unmanaged Ethernet switch",
+  "description": "The EDS-205A is a compact 5-port unmanaged industrial Ethernet switch in an IP30 aluminium housing, with redundant 12/24/48 VDC power inputs. It is designed for harsh locations including maritime (DNV, LR, ABS, NK) and hazardous areas (Class I Div 2, ATEX Zone 2). Wide-temperature -T models work from -40 to 75 C.",
+  "features": [
+   "5 x 10/100BaseT(X), or 4 + 1 fibre port on -M/-S models",
+   "Redundant dual 12/24/48 VDC inputs",
+   "IP30 aluminium housing, DIN-rail mount",
+   "Maritime approvals: DNV, LR, ABS, NK",
+   "DIP switches for broadcast storm protection and QoS"
+  ],
+  "specs": [
+   {
+    "k": "Operating voltage",
+    "v": "9.6 to 60 VDC"
+   },
+   {
+    "k": "Temperature, standard",
+    "v": "-10 to 60 C"
+   },
+   {
+    "k": "Temperature, -T models",
+    "v": "-40 to 75 C"
+   },
+   {
+    "k": "Size",
+    "v": "30 x 115 x 70 mm"
+   },
+   {
+    "k": "Warranty",
+    "v": "5 years"
+   }
+  ],
+  "images": [
+   {
+    "image_url": "https://cdn-cms-frontdoor-dfc8ebanh6bkb3hs.a02.azurefd.net/en/getattachment/Products/INDUSTRIAL-NETWORK-INFRASTRUCTURE/Ethernet-Switches/Unmanaged-Switches/EDS-205A-Series/moxa-eds-205a-series-image-3-(2).jpg",
+    "page_url": "https://www.moxa.com/en/products/industrial-network-infrastructure/ethernet-switches/unmanaged-switches/eds-205a-series",
+    "width": 2000,
+    "height": 2000,
+    "host": "cdn-cms-frontdoor-dfc8ebanh6bkb3hs.a02.azurefd.net",
+    "shows": "EDS-205A series switch, Moxa product image",
+    "source_type": "oem"
+   },
+   {
+    "image_url": "https://cdn-cms-frontdoor-dfc8ebanh6bkb3hs.a02.azurefd.net/en/getattachment/Products/INDUSTRIAL-NETWORK-INFRASTRUCTURE/Ethernet-Switches/Unmanaged-Switches/EDS-205A-Series/EDS-205A/moxa-eds-205a-image.jpg",
+    "page_url": "https://www.moxa.com/en/products/industrial-network-infrastructure/ethernet-switches/unmanaged-switches/eds-205a-series",
+    "width": 0,
+    "height": 0,
+    "host": "cdn-cms-frontdoor-dfc8ebanh6bkb3hs.a02.azurefd.net",
+    "shows": "EDS-205A model image (size not stated)",
+    "source_type": "oem"
+   }
+  ],
+  "sources": [
+   "https://www.moxa.com/en/products/industrial-network-infrastructure/ethernet-switches/unmanaged-switches/eds-205a-series"
+  ],
+  "notes": "Image URLs contain parentheses, so encode them if the downloader needs it."
+ },
+ {
+  "id": "C19",
+  "status": "FOUND",
+  "brand_confirmed": "APC by Schneider Electric; Eaton",
+  "brand_note": "Two makers in one card. APC page read is SRT1500RMXLI (Smart-UPS SRT 1500VA RM 230V). Eaton 9SX3000I (230 V tower) is in the Eaton family; the Eaton image is the 120 V 9SX3000 SKU, same family. Smart-UPS C 1000VA was not covered.",
+  "official_name": "APC Smart-UPS SRT 1500VA and Eaton 9SX 3000VA online UPS",
+  "description": "The APC Smart-UPS SRT 1500VA is an online double-conversion rack UPS with a 230 V output, a SmartSlot for network cards and prioritised audible and visual alarms. The Eaton 9SX is an online double-conversion UPS family from 700 to 3000 VA, with the 9SX3000I as the 3 kVA tower model.",
+  "features": [
+   "APC SRT: 230 V AC single-phase output, IEC C14 input",
+   "APC SRT: 1 free SmartSlot, USB and serial connectivity",
+   "APC SRT: emergency power off, lead-acid battery",
+   "Eaton 9SX: on-line double conversion, 700 to 3000 VA range",
+   "Eaton 9SX3000I: tower, 3000 VA / 2700 W"
+  ],
+  "specs": [
+   {
+    "k": "APC SRT1500RMXLI size",
+    "v": "85 x 432 x 505 mm, 21 kg"
+   },
+   {
+    "k": "APC input frequency",
+    "v": "40 to 70 Hz auto-sensing"
+   },
+   {
+    "k": "APC warranty",
+    "v": "36 months UPS, 24 months battery"
+   },
+   {
+    "k": "Eaton 9SX3000",
+    "v": "3000 VA, 2700 W"
+   },
+   {
+    "k": "Eaton part no. (intl tower)",
+    "v": "9SX3000I"
+   }
+  ],
+  "images": [
+   {
+    "image_url": "https://download.se.com/files?p_Doc_Ref=SPD_JVAN-B8GPM8_B_V&p_File_Type=rendition_1500_jpg",
+    "page_url": "https://www.se.com/il/en/product/SRT1500RMXLI/apc-smartups-srt-1500va-rm-230v/",
+    "width": 1500,
+    "height": 1500,
+    "host": "download.se.com",
+    "shows": "APC Smart-UPS SRT 1500VA RM product shot (og:image of the page)",
+    "source_type": "oem"
+   },
+   {
+    "image_url": "https://www.eaton.com/mdmfiles/PDM25110013/9SX3000_C/1000x1000_300dpi",
+    "page_url": "https://www.eaton.com/us/en-us/skuPage.9SX3000.html",
+    "width": 1000,
+    "height": 1000,
+    "host": "www.eaton.com",
+    "shows": "Eaton 9SX3000 UPS (120 V SKU, same family as 9SX3000I)",
+    "source_type": "oem"
+   }
+  ],
+  "sources": [
+   "https://www.se.com/il/en/product/SRT1500RMXLI/apc-smartups-srt-1500va-rm-230v/",
+   "https://www.eaton.com/us/en-us/skuPage.9SX3000.html (search excerpt)"
+  ],
+  "notes": "Eaton facts come from a search excerpt of the Eaton SKU page and datasheet listing, not a full read. Suggest splitting APC and Eaton into two cards if the layout allows."
+ },
+ {
+  "id": "C20",
+  "status": "FOUND",
+  "brand_confirmed": "Actisense",
+  "brand_note": "Confirmed on actisense.com. Hint 'NMEA buffer' is not a specific model; PRO-NDC-1E2K is the confirmed multiplexer/gateway. The page says RINA type approved but also lists NMEA 2000 certification as 'pending' in one table, wording differs inside the page.",
+  "official_name": "Actisense PRO-NDC-1E2K NMEA 0183 multiplexer and NMEA 2000 gateway",
+  "description": "The PRO-NDC-1E2K is a type-approved NMEA 0183 multiplexer with NMEA 2000 conversion and Ethernet streaming. It has five isolated NMEA 0183 inputs, two isolated outputs and a bidirectional serial port, with auto-switching between inputs and sentence filtering. Setup is through a web browser.",
+  "features": [
+   "5 opto-isolated NMEA 0183 inputs, 2 ISO-Drive outputs, 1 serial port",
+   "NMEA 2000 conversion via M12 connector",
+   "NMEA 0183 and 2000 streaming over Ethernet",
+   "Auto-switching and sentence filtering, web configuration",
+   "RINA type approved, 316 stainless steel housing"
+  ],
+  "specs": [
+   {
+    "k": "Supply",
+    "v": "9 to 35 V DC"
+   },
+   {
+    "k": "NMEA 0183 baud",
+    "v": "4800 to 38400 bps"
+   },
+   {
+    "k": "Operating temperature",
+    "v": "-25 to +70 C"
+   },
+   {
+    "k": "Size (W x H x D)",
+    "v": "139 x 129 x 26.5 mm"
+   },
+   {
+    "k": "Protection / guarantee",
+    "v": "IP40, 5 years"
+   }
+  ],
+  "images": [
+   {
+    "image_url": "https://actisense.com/wp-content/uploads/2025/01/PRO-NDC-1E2K-with-mirror-300x300.png",
+    "page_url": "https://actisense.com/products/pro-ndc-1e2k/",
+    "width": 300,
+    "height": 300,
+    "host": "actisense.com",
+    "shows": "PRO-NDC-1E2K with mirror reflection",
+    "source_type": "oem"
+   },
+   {
+    "image_url": "https://actisense.com/wp-content/uploads/2026/07/PRO-NDC-1E2K-Off-White.png",
+    "page_url": "https://actisense.com/products/pro-ndc-1e2k/",
+    "width": 2100,
+    "height": 1182,
+    "host": "actisense.com",
+    "shows": "PRO-NDC-1E2K on off-white background (page og:image)",
+    "source_type": "oem"
+   }
+  ],
+  "sources": [
+   "https://actisense.com/products/pro-ndc-1e2k/"
+  ],
+  "notes": "Image 2 is larger and preferred. The page showed it out of stock, price omitted on purpose."
+ },
+ {
+  "id": "C21",
+  "status": "FOUND",
+  "brand_confirmed": "Bosch Rexroth",
+  "brand_note": "Confirmed in Rexroth datasheet RE 30041: VT-VRRA1-537-20/V0, material no. 0811405061, for 4WRPH10...L-2X valves. The datasheet was read via a distributor-hosted copy (airlinehyd), not Rexroth's own server.",
+  "official_name": "Rexroth VT-VRRA1-537-20/V0 analog valve amplifier card (0811405061)",
+  "description": "The VT-VRRA1-537-20/V0 is an analog Euro-card amplifier for 19 inch racks that drives high-response proportional valves with electrical position feedback, here size 10 valves of type 4WRPH10...L-2X. It runs from 24 V, has an enable input and short-circuit-proof outputs, and offers PID position control with cable break detection. It is for control cabinet use only.",
+  "features": [
+   "Controls high-response valves with LVDT position feedback",
+   "PID position control and cable break detection on actual value",
+   "Enable input, short-circuit-proof outputs",
+   "Zero point trimming potentiometer, LED status",
+   "Europe card format with DIN 41612 F32 plug"
+  ],
+  "specs": [
+   {
+    "k": "Supply",
+    "v": "24 V DC nominal, 21 to 40 V"
+   },
+   {
+    "k": "Max solenoid current (size 10)",
+    "v": "3.7 A"
+   },
+   {
+    "k": "Card format",
+    "v": "100 x 160 mm, 7 TE front plate"
+   },
+   {
+    "k": "Ambient temperature",
+    "v": "0 to +70 C"
+   },
+   {
+    "k": "Weight",
+    "v": "0.37 kg"
+   }
+  ],
+  "images": [
+   {
+    "image_url": "https://rexroth-parts.com/27343-large_default/vt-vrra-1-537-20-v0-1-1.jpg",
+    "page_url": "https://rexroth-parts.com/en/valve-amplifiers-1/vt-vrra-1-537-20-v0-1-1",
+    "width": 800,
+    "height": 800,
+    "host": "rexroth-parts.com",
+    "shows": "VT-VRRA 1-537-20/V0 amplifier card",
+    "source_type": "distributor"
+   },
+   {
+    "image_url": "http://www.automodulexpert.com/cdn/shop/files/VT-VRRA_1-537-20V02_774f7bfa-06dc-4110-9e06-cccbbaff5694.jpg?v=1764576673",
+    "page_url": "https://www.automodulexpert.com/ar/products/rexroth-vt-vrra-1-537-20-v0-proportional-valve-amplifier",
+    "width": 800,
+    "height": 800,
+    "host": "automodulexpert.com",
+    "shows": "VT-VRRA 1-537-20/V0 amplifier",
+    "source_type": "distributor"
+   }
+  ],
+  "sources": [
+   "https://airlinemedia.airlinehyd.com/Literature/Manufacturer_Catalogs/Bosch%20Rexroth/Electric_Amplifiers_VT-VRRA1-5_RE30041_2012-02.pdf"
+  ],
+  "notes": "Image is from resellers, no Rexroth image of this exact card was seen. The earlier datasheet I scraped (RE 29743, VT 11021) was a different amplifier and is not used."
+ },
+ {
+  "id": "C22",
+  "status": "FOUND",
+  "brand_confirmed": "Omron",
+  "brand_note": "Confirmed on industrial.omron.eu. CJ1W-MAD42 is a CJ-series Special I/O analog unit.",
+  "official_name": "Omron CJ1W-MAD42 Analog I/O Unit",
+  "description": "The CJ1W-MAD42 is an Omron CJ-series analog I/O unit with 4 analog inputs and 2 analog outputs, each selectable between voltage and current ranges. It mounts on the CJ I/O bus as a Special I/O Unit and connects through screw terminals.",
+  "features": [
+   "4 analog inputs, 2 analog outputs",
+   "Inputs and outputs: -10 to 10 V, 0 to 10 V, 0 to 5 V, 1 to 5 V, 4 to 20 mA",
+   "13-bit resolution, 1:4000 scalable to 1:8000",
+   "CJ I/O bus Special I/O Unit",
+   "Screw terminal connection"
+  ],
+  "specs": [
+   {
+    "k": "Inputs / outputs",
+    "v": "4 / 2"
+   },
+   {
+    "k": "Resolution",
+    "v": "13 bit"
+   },
+   {
+    "k": "Size (H x W x D)",
+    "v": "90 x 31 x 89 mm"
+   },
+   {
+    "k": "Weight",
+    "v": "171 g"
+   }
+  ],
+  "images": [
+   {
+    "image_url": "https://8z1xg04k.tinifycdn.com/images/CJ1W-MAD42.jpg?resize.method=scale&resize.width=1003",
+    "page_url": "https://industrial.omron.eu/en/products/CJ1W-MAD42",
+    "width": 1003,
+    "height": 1003,
+    "host": "8z1xg04k.tinifycdn.com",
+    "shows": "CJ1W-MAD42 analog I/O unit, Omron Europe product image",
+    "source_type": "oem"
+   }
+  ],
+  "sources": [
+   "https://industrial.omron.eu/en/products/CJ1W-MAD42"
+  ],
+  "notes": "The page's conversion time value (4000 ms/unit) looks like a unit error, so it is left out."
+ },
+ {
+  "id": "C23",
+  "status": "PARTIAL",
+  "brand_confirmed": "Caldaro (Caldaro AB); joystick likely of Sakae origin",
+  "brand_note": "Caldaro confirmed as an OEM joystick and marine controls maker on caldaro.com. Listings show variants S50JAK-ZU-30GP and S50JAK-ZU-31R1G, both marked 'Caldaro Ab Sakae', made in Japan; the hint has no suffix. Three-axis wording is from the catalogue, not verified in any source.",
+  "official_name": "Caldaro S50JAK-ZU joystick (variants -30GP, -31R1G)",
+  "description": "The S50JAK-ZU is a Caldaro industrial joystick controller used on marine control stations. Reseller listings mark it as Caldaro AB / Sakae, made in Japan, and weight about 550 g for the -31R1G variant. Caldaro itself describes its joysticks as customised to each customer.",
+  "features": [
+   "Industrial joystick controller",
+   "Variants -30GP and -31R1G listed",
+   "Caldaro supplies marine and off-shore controls"
+  ],
+  "specs": [
+   {
+    "k": "Weight (-31R1G)",
+    "v": "about 550 g (reseller)"
+   },
+   {
+    "k": "Origin",
+    "v": "Made in Japan (reseller)"
+   }
+  ],
+  "images": [
+   {
+    "image_url": "https://cdn11.bigcommerce.com/s-o0ql33eyfo/images/stencil/1280x1280/products/65647/1981674/caldaro_s50jak-zu-31r1g-74083_7__45815.1766210081.jpg?c=1",
+    "page_url": "https://auto2mation.com/caldaro-s50jak-zu-31r1g-joystick-controller.html",
+    "width": 1020,
+    "height": 765,
+    "host": "cdn11.bigcommerce.com",
+    "shows": "Caldaro S50JAK-ZU-31R1G joystick (variant)",
+    "source_type": "distributor"
+   },
+   {
+    "image_url": "https://i.ebayimg.com/images/g/LuoAAOSwav9k7DyB/s-l1200.jpg",
+    "page_url": "https://www.ebay.com/itm/336256911316",
+    "width": 1200,
+    "height": 900,
+    "host": "i.ebayimg.com",
+    "shows": "Caldaro S50JAK-ZU-30GP joystick (variant, marketplace)",
+    "source_type": "distributor"
+   }
+  ],
+  "sources": [
+   "https://caldaro.com/"
+  ],
+  "notes": "PARTIAL: only variant images from resellers and no Caldaro product page for the exact model. Descriptions come from search excerpts and Caldaro's home page. Confirm Sinor's exact suffix before using any image."
+ },
+ {
+  "id": "C24",
+  "status": "FOUND",
+  "brand_confirmed": "Qlight",
+  "brand_note": "Confirmed on qlight.com. ST56L is the pole-mount 56 mm LED tower light. The hint also names an ex-proof tower light: Qlight lists QTEX, ST-Ex and QST50-Ex series, none was read.",
+  "official_name": "Qlight ST56L Ø56 LED steady/flashing signal tower light",
+  "description": "The ST56L is a 56 mm pole-mount LED tower light in 1 to 5 stacked colour layers (red, amber, green, blue, white), with steady or flashing lamps and an optional built-in buzzer up to 90 dB. The LED source is rated for over 20,000 hours. It is available in 12, 24, 110 and 220 V versions.",
+  "features": [
+   "1 to 5 layers, steady or flashing",
+   "Optional built-in buzzer or sound modes, max 90 dB at 1 m",
+   "LED life over 20,000 hours",
+   "Pole mount with a choice of brackets",
+   "CE compliant, UL listed 24 VDC model option"
+  ],
+  "specs": [
+   {
+    "k": "Diameter",
+    "v": "56 mm"
+   },
+   {
+    "k": "Voltage",
+    "v": "12 / 24 V AC/DC, 110 / 220 V AC"
+   },
+   {
+    "k": "Protection",
+    "v": "IP44 standard, IP23 with buzzer"
+   },
+   {
+    "k": "Operating temperature",
+    "v": "-30 to +60 C"
+   },
+   {
+    "k": "Flash rate",
+    "v": "60 to 80 per minute"
+   }
+  ],
+  "images": [
+   {
+    "image_url": "https://www.qlight.com/productdata/productfiles/162/images/img_detail_1_default_162.png?v=p_202611-5",
+    "page_url": "https://www.qlight.com/en/products/?qpcateid=9&prodidx=162",
+    "width": 500,
+    "height": 500,
+    "host": "www.qlight.com",
+    "shows": "ST56L tower light, Qlight product image",
+    "source_type": "oem"
+   },
+   {
+    "image_url": "https://www.qlight.com/productdata/productfiles/227/images/img_detail_1_big_227.png",
+    "page_url": "https://www.qlight.com/en/products/?qpcateid=13&prodidx=227&prodcode=ST56MEL-USB",
+    "width": 1000,
+    "height": 1000,
+    "host": "www.qlight.com",
+    "shows": "ST56MEL-USB (different variant, USB controlled)",
+    "source_type": "oem"
+   }
+  ],
+  "sources": [
+   "https://www.qlight.com/en/products/?qpcateid=9&prodidx=162",
+   "https://www.qlight.com/en/products/?qpcateid=9&prodidx=165&prodcode=ST56ML (search excerpt)"
+  ],
+  "notes": "Image 2 is the USB-controlled sibling, use only as a fallback; its page shows a bigger render. Ex-proof tower light still needs its own research pass."
+ }
+]

@@ -1,0 +1,761 @@
+[
+ {
+  "id": "A01",
+  "section": "Package systems",
+  "name": "RadaScan View System",
+  "brand": "Guidance Marine",
+  "model_hint": "RadaScan View; Marine Processor and Monitor 10-0183; sensor, Type 4 processor, 19in touch monitor, trackerball, keyboard",
+  "register_rows": 135,
+  "search_hints": [
+   "Guidance Marine RadaScan View system"
+  ]
+ },
+ {
+  "id": "A02",
+  "section": "Package systems",
+  "name": "CyScan Absolute Signature (AS) System / CyScan Mk4",
+  "brand": "Guidance Marine",
+  "model_hint": "CyScan AS; sensor 20-0252; Type 4 processor CyScan AS configured 20-0306",
+  "register_rows": 420,
+  "search_hints": [
+   "Guidance Marine CyScan Absolute Signature laser sensor"
+  ]
+ },
+ {
+  "id": "A03",
+  "section": "Package systems",
+  "name": "miniRadaScan-S System",
+  "brand": "Guidance Marine",
+  "model_hint": "miniRadaScan-S; mini target series 2 transponder",
+  "register_rows": 18,
+  "search_hints": [
+   "Guidance Marine miniRadaScan"
+  ]
+ },
+ {
+  "id": "A04",
+  "section": "Package systems",
+  "name": "SceneScan System",
+  "brand": "Guidance Marine",
+  "model_hint": "SceneScan system 10-0187; sensor 20-0253; Type 5 processor 20-0337",
+  "register_rows": 18,
+  "search_hints": [
+   "Guidance Marine SceneScan"
+  ]
+ },
+ {
+  "id": "A05",
+  "section": "Package systems",
+  "name": "Artemis Mk6 System",
+  "brand": "Guidance Marine (verify)",
+  "model_hint": "Artemis Mk6 sensor, beacon fixed station, Type 3 processor Artemis configured, Artemis monopulse antenna",
+  "register_rows": 6,
+  "search_hints": [
+   "Artemis Mk6 position reference system"
+  ]
+ },
+ {
+  "id": "A06",
+  "section": "Package systems",
+  "name": "RADius Radar Reference System (RADius 1000 / 2000)",
+  "brand": "Kongsberg Maritime (verify)",
+  "model_hint": "RADius 2000 interrogator, RADius 1000 processing unit, RADius 700x / 550x transponders",
+  "register_rows": 201,
+  "search_hints": [
+   "Kongsberg RADius radar position reference system"
+  ]
+ },
+ {
+  "id": "A07",
+  "section": "Package systems",
+  "name": "Fanbeam 5 Laser Reference System",
+  "brand": "MDL",
+  "model_hint": "Fanbeam 5 sensor (refurbished full set)",
+  "register_rows": 97,
+  "search_hints": [
+   "MDL Fanbeam laser position reference sensor"
+  ]
+ },
+ {
+  "id": "A08",
+  "section": "Package systems",
+  "name": "Ranger 2 USBL System",
+  "brand": "Sonardyne",
+  "model_hint": "Ranger 2; HPT 5000 transceiver Type 8142; WSM 6+; Mini and Micro Ranger 2; gate valve, hydraulic deployment machine",
+  "register_rows": 79,
+  "search_hints": [
+   "Sonardyne Ranger 2 USBL system"
+  ]
+ },
+ {
+  "id": "A09",
+  "section": "Package systems",
+  "name": "SPRINT-Nav DP System",
+  "brand": "Sonardyne",
+  "model_hint": "SPRINT-Nav DP system kit 603-0230; SPRINT-Nav 500",
+  "register_rows": 103,
+  "search_hints": [
+   "Sonardyne SPRINT-Nav DP"
+  ]
+ },
+ {
+  "id": "A10",
+  "section": "Package systems",
+  "name": "Navigation Sensor Hub (NSH) Kit",
+  "brand": "Sonardyne",
+  "model_hint": "NSH chassis, dual Ethernet, transceiver, RS232, RS485, trigger/responder modules",
+  "register_rows": 12,
+  "search_hints": [
+   "Sonardyne Navigation Sensor Hub NSH"
+  ]
+ },
+ {
+  "id": "A11",
+  "section": "Package systems",
+  "name": "NAVIS NavDP Dynamic Positioning System",
+  "brand": "NAVIS Engineering",
+  "model_hint": "NavDP 4000 series DP1/DP2, DP upgrade and critical spares, control computer HT CO3",
+  "register_rows": 324,
+  "search_hints": [
+   "NAVIS Engineering NavDP 4000 dynamic positioning system"
+  ]
+ },
+ {
+  "id": "A12",
+  "section": "Package systems",
+  "name": "Marine Technologies DP-2 System with IJS, UPS and Console",
+  "brand": "Marine Technologies",
+  "model_hint": "MT Bridge Mate DP; DP-2 with IJS, UPS, DP console; critical spares",
+  "register_rows": 129,
+  "search_hints": [
+   "Marine Technologies Bridge Mate dynamic positioning"
+  ]
+ },
+ {
+  "id": "A13",
+  "section": "Package systems",
+  "name": "Electric Taut Wire System (Z-range)",
+  "brand": "SMT",
+  "model_hint": "SMT Z-range 2.1 electric taut wire, 700 m wire on drum, depressor weight",
+  "register_rows": 75,
+  "search_hints": [
+   "SMT electric taut wire Z range"
+  ]
+ },
+ {
+  "id": "A14",
+  "section": "Package systems",
+  "name": "Ronav R1 DGPS System",
+  "brand": "Ronav",
+  "model_hint": "R1 DGPS receiver, antenna, display and cables",
+  "register_rows": 122,
+  "search_hints": [
+   "Ronav R1 DGPS receiver"
+  ]
+ },
+ {
+  "id": "A15",
+  "section": "Package systems",
+  "name": "Fugro SeaStar 9410-AUT Receiver Kit",
+  "brand": "Fugro",
+  "model_hint": "SeaStar 9410-AUT; 9410 receiver",
+  "register_rows": 53,
+  "search_hints": [
+   "Fugro SeaStar 9410 receiver"
+  ]
+ },
+ {
+  "id": "A16",
+  "section": "Package systems",
+  "name": "Veripos LD900 GNSS Receiver",
+  "brand": "Veripos",
+  "model_hint": "LD900 (set)",
+  "register_rows": 7,
+  "search_hints": [
+   "Veripos LD900 receiver"
+  ]
+ },
+ {
+  "id": "A17",
+  "section": "Package systems",
+  "name": "Clear-Com Intercom System",
+  "brand": "Clear-Com",
+  "model_hint": "Master station, Encore 800 speaker stations (slave units)",
+  "register_rows": 17,
+  "search_hints": [
+   "Clear-Com Encore master station intercom"
+  ]
+ },
+ {
+  "id": "A18",
+  "section": "Package systems",
+  "name": "HLD-900 X-Band Radar (24 in, 10 kW / 25 kW)",
+  "brand": "Highlander",
+  "model_hint": "HLD-900 24in X-band radar, black box version",
+  "register_rows": 4,
+  "search_hints": [
+   "Highlander HLD-900 X-band radar"
+  ]
+ },
+ {
+  "id": "B01",
+  "section": "Position reference and sensors",
+  "name": "RadaScan View Sensor",
+  "brand": "Guidance Marine",
+  "model_hint": "20-0226-1 (inventory serial family)",
+  "register_rows": 64,
+  "search_hints": [
+   "RadaScan View sensor"
+  ]
+ },
+ {
+  "id": "B02",
+  "section": "Position reference and sensors",
+  "name": "CyScan Mk4 Absolute Signature Sensor",
+  "brand": "Guidance Marine",
+  "model_hint": "20-0252",
+  "register_rows": 210,
+  "search_hints": [
+   "CyScan Mk4 sensor"
+  ]
+ },
+ {
+  "id": "B03",
+  "section": "Position reference and sensors",
+  "name": "CyScan 8-Way Prism Cluster",
+  "brand": "Guidance Marine / Kongsberg SpotTrack",
+  "model_hint": "8-way prism",
+  "register_rows": 177,
+  "search_hints": [
+   "CyScan 8-way prism reflector"
+  ]
+ },
+ {
+  "id": "B04",
+  "section": "Position reference and sensors",
+  "name": "SceneScan Sensor",
+  "brand": "Guidance Marine",
+  "model_hint": "20-0253",
+  "register_rows": 12,
+  "search_hints": [
+   "SceneScan sensor Guidance"
+  ]
+ },
+ {
+  "id": "B05",
+  "section": "Position reference and sensors",
+  "name": "Series 4 Rechargeable Responder (Blue)",
+  "brand": "Guidance Marine",
+  "model_hint": "20-0276-BLU; Series 3 + 4 auxiliary kit",
+  "register_rows": 97,
+  "search_hints": [
+   "Guidance Marine Series 4 rechargeable responder"
+  ]
+ },
+ {
+  "id": "B06",
+  "section": "Position reference and sensors",
+  "name": "RADius 700x Transponder",
+  "brand": "Kongsberg Maritime (verify)",
+  "model_hint": "RADius 700x / 550x transponder, replacement battery",
+  "register_rows": 77,
+  "search_hints": [
+   "Kongsberg RADius 700x transponder"
+  ]
+ },
+ {
+  "id": "B07",
+  "section": "Position reference and sensors",
+  "name": "RADius 2000 Interrogator Unit",
+  "brand": "Kongsberg Maritime (verify)",
+  "model_hint": "RADius 2000 dual interrogator unit",
+  "register_rows": 57,
+  "search_hints": [
+   "Kongsberg RADius 2000 interrogator"
+  ]
+ },
+ {
+  "id": "B08",
+  "section": "Position reference and sensors",
+  "name": "Sonardyne HPT 5000 USBL Transceiver",
+  "brand": "Sonardyne",
+  "model_hint": "Type 8142 / 620-7181 HPT 5000 MF USBL transceiver",
+  "register_rows": 46,
+  "search_hints": [
+   "Sonardyne HPT 5000 transceiver"
+  ]
+ },
+ {
+  "id": "B09",
+  "section": "Position reference and sensors",
+  "name": "Sonardyne Wideband Sub-Mini 6+ (WSM 6+) Transponder",
+  "brand": "Sonardyne",
+  "model_hint": "WSM6+ 1K MF omni; WSM6+ directional",
+  "register_rows": 29,
+  "search_hints": [
+   "Sonardyne WSM 6+ wideband sub-mini transponder"
+  ]
+ },
+ {
+  "id": "B10",
+  "section": "Position reference and sensors",
+  "name": "Sonardyne SPRINT-Nav DP Surface Interface Hub and Marine Computer",
+  "brand": "Sonardyne",
+  "model_hint": "620-0770 Surface Interface Hub; Marine Computer Kit 603-0181",
+  "register_rows": 12,
+  "search_hints": [
+   "Sonardyne Surface Interface Hub 620-0770"
+  ]
+ },
+ {
+  "id": "B11",
+  "section": "Position reference and sensors",
+  "name": "Inertial Labs MRU B1 / B2 Motion Reference Unit",
+  "brand": "Inertial Labs (verify)",
+  "model_hint": "MRU B1 (roll and pitch), MRU B2 (with heave for HPR)",
+  "register_rows": 176,
+  "search_hints": [
+   "Inertial Labs MRU B2 motion reference unit"
+  ]
+ },
+ {
+  "id": "B12",
+  "section": "Position reference and sensors",
+  "name": "R.M. Young 86106 Ultrasonic Wind Sensor",
+  "brand": "R.M. Young",
+  "model_hint": "86106 with wind display",
+  "register_rows": 69,
+  "search_hints": [
+   "R.M. Young 86106 ultrasonic anemometer"
+  ]
+ },
+ {
+  "id": "B13",
+  "section": "Position reference and sensors",
+  "name": "Observator OMC-118 Ultrasonic Wind Sensor",
+  "brand": "Observator",
+  "model_hint": "OMC-118, OMC-122M bracket",
+  "register_rows": 22,
+  "search_hints": [
+   "Observator OMC-118 ultrasonic wind sensor"
+  ]
+ },
+ {
+  "id": "B14",
+  "section": "Position reference and sensors",
+  "name": "DEIF WSS Ultrasonic Wind Sensor",
+  "brand": "DEIF",
+  "model_hint": "WSS 550 / WSS 750",
+  "register_rows": 5,
+  "search_hints": [
+   "DEIF WSS 750 wind sensor"
+  ]
+ },
+ {
+  "id": "B15",
+  "section": "Position reference and sensors",
+  "name": "Anschutz Standard 22 Gyro Compass",
+  "brand": "Raytheon Anschutz",
+  "model_hint": "Std 22 gyro compass",
+  "register_rows": 48,
+  "search_hints": [
+   "Raytheon Anschutz Standard 22 gyro compass"
+  ]
+ },
+ {
+  "id": "B16",
+  "section": "Position reference and sensors",
+  "name": "Trimble GA830 GNSS Antenna Kit",
+  "brand": "Trimble",
+  "model_hint": "GA830, bracket kit",
+  "register_rows": 39,
+  "search_hints": [
+   "Trimble GA830 antenna"
+  ]
+ },
+ {
+  "id": "B17",
+  "section": "Position reference and sensors",
+  "name": "Kongsberg cNode Transponder",
+  "brand": "Kongsberg Maritime",
+  "model_hint": "cNode Micro 31-180; cNode Minis 34-180",
+  "register_rows": 20,
+  "search_hints": [
+   "Kongsberg cNode Micro transponder"
+  ]
+ },
+ {
+  "id": "B18",
+  "section": "Position reference and sensors",
+  "name": "Bandak LTW Taut Wire",
+  "brand": "Bandak (Kongsberg)",
+  "model_hint": "LTW 16B, MK15B",
+  "register_rows": 15,
+  "search_hints": [
+   "Bandak MK15B taut wire"
+  ]
+ },
+ {
+  "id": "C01",
+  "section": "DP control, HMI and automation",
+  "name": "NAVIS Main Control Panel (MCP) with Joystick",
+  "brand": "NAVIS Engineering",
+  "model_hint": "MCP-06 / MCP-C06 with 2-axis joystick",
+  "register_rows": 21,
+  "search_hints": [
+   "NAVIS Engineering MCP DP operator panel joystick"
+  ]
+ },
+ {
+  "id": "C02",
+  "section": "DP control, HMI and automation",
+  "name": "NAVIS Control Computer HT CO3",
+  "brand": "NAVIS Engineering",
+  "model_hint": "HT CO3; 4x RS422 PCI Express card CP114",
+  "register_rows": 16,
+  "search_hints": [
+   "NAVIS Engineering control computer HT CO3"
+  ]
+ },
+ {
+  "id": "C03",
+  "section": "DP control, HMI and automation",
+  "name": "Hatteland Marine Display (DP Display)",
+  "brand": "Hatteland Display",
+  "model_hint": "19 in and 23 in DP displays, new or refurbished",
+  "register_rows": 24,
+  "search_hints": [
+   "Hatteland Display marine monitor 19 inch"
+  ]
+ },
+ {
+  "id": "C04",
+  "section": "DP control, HMI and automation",
+  "name": "Marine Touch Screen Monitor 19 in",
+  "brand": "Guidance Marine",
+  "model_hint": "20-0310 incl. bracket and cables; MB-15H-TRS-24VDC 15in touch display",
+  "register_rows": 122,
+  "search_hints": [
+   "Guidance Marine 19 inch marine touch screen monitor"
+  ]
+ },
+ {
+  "id": "C05",
+  "section": "DP control, HMI and automation",
+  "name": "Trackerball Mouse and Compact Keyboard",
+  "brand": "Guidance Marine",
+  "model_hint": "38-0037-4 / 38-0038-4",
+  "register_rows": 114,
+  "search_hints": [
+   "Guidance Marine trackerball mouse compact keyboard"
+  ]
+ },
+ {
+  "id": "C06",
+  "section": "DP control, HMI and automation",
+  "name": "VGA Extender over CATx",
+  "brand": "(verify)",
+  "model_hint": "ST-C5VRS-600 VGA extender with RS232",
+  "register_rows": 43,
+  "search_hints": [
+   "ST-C5VRS-600 VGA extender"
+  ]
+ },
+ {
+  "id": "C07",
+  "section": "DP control, HMI and automation",
+  "name": "Kongsberg RMP 200 / 201-8 Remote Multiplexer Module",
+  "brand": "Kongsberg Maritime",
+  "model_hint": "RMP200-8 603443; RMP201-8; RMP420 thruster control card",
+  "register_rows": 49,
+  "search_hints": [
+   "Kongsberg RMP 201-8 module"
+  ]
+ },
+ {
+  "id": "C08",
+  "section": "DP control, HMI and automation",
+  "name": "Kongsberg cJoy Operator Terminal",
+  "brand": "Kongsberg Maritime",
+  "model_hint": "cJoy independent joystick operator terminal",
+  "register_rows": 16,
+  "search_hints": [
+   "Kongsberg cJoy joystick"
+  ]
+ },
+ {
+  "id": "C09",
+  "section": "DP control, HMI and automation",
+  "name": "Rolls-Royce Marine Controller and I/O Modules",
+  "brand": "Rolls-Royce",
+  "model_hint": "RRAIO16, RRDIO15, RRRLY8, RRVIO8",
+  "register_rows": 15,
+  "search_hints": [
+   "Rolls-Royce marine controller I/O module"
+  ]
+ },
+ {
+  "id": "C10",
+  "section": "DP control, HMI and automation",
+  "name": "GE Fanuc Series 90-30 PLC Modules",
+  "brand": "GE Fanuc",
+  "model_hint": "IC693CPU374, IC693PWR331, IC693BEM331",
+  "register_rows": 11,
+  "search_hints": [
+   "GE Fanuc Series 90-30 PLC IC693CPU374"
+  ]
+ },
+ {
+  "id": "C11",
+  "section": "DP control, HMI and automation",
+  "name": "GE Fanuc VersaMax I/O Modules",
+  "brand": "GE Fanuc",
+  "model_hint": "IC200ALG240, IC200MDL940, IC200GBI001",
+  "register_rows": 20,
+  "search_hints": [
+   "GE Fanuc VersaMax IC200ALG240"
+  ]
+ },
+ {
+  "id": "C12",
+  "section": "DP control, HMI and automation",
+  "name": "Converteam Advanced Micro Controller (AMC)",
+  "brand": "Converteam / Power Conversion",
+  "model_hint": "AMC controller",
+  "register_rows": 21,
+  "search_hints": [
+   "Converteam Advanced Micro Controller AMC"
+  ]
+ },
+ {
+  "id": "C13",
+  "section": "DP control, HMI and automation",
+  "name": "Schneider Modicon PLC (Premium / M340)",
+  "brand": "Schneider Electric",
+  "model_hint": "TSX P57 4634M; M340 CPU and power supply",
+  "register_rows": 8,
+  "search_hints": [
+   "Schneider Modicon Premium TSX P57 4634M"
+  ]
+ },
+ {
+  "id": "C14",
+  "section": "DP control, HMI and automation",
+  "name": "Siemens SIMATIC S7-1200 PLC and I/O",
+  "brand": "Siemens",
+  "model_hint": "CPU 1214C, SM 1223, CM 1241",
+  "register_rows": 21,
+  "search_hints": [
+   "Siemens SIMATIC S7-1200 CPU 1214C"
+  ]
+ },
+ {
+  "id": "C15",
+  "section": "DP control, HMI and automation",
+  "name": "Woodward easYgen-3500XT Generator Controller",
+  "brand": "Woodward",
+  "model_hint": "easYgen-3500XT-P1; EGCP-3",
+  "register_rows": 22,
+  "search_hints": [
+   "Woodward easYgen-3500XT-P1"
+  ]
+ },
+ {
+  "id": "C16",
+  "section": "DP control, HMI and automation",
+  "name": "DEIF Delomatic 3 Power Management",
+  "brand": "DEIF",
+  "model_hint": "Delomatic 3 full set",
+  "register_rows": 10,
+  "search_hints": [
+   "DEIF Delomatic 3"
+  ]
+ },
+ {
+  "id": "C17",
+  "section": "DP control, HMI and automation",
+  "name": "Danfoss VLT and Vacon NXP Drives",
+  "brand": "Danfoss / Vacon",
+  "model_hint": "VLT 5000; Vacon NXP frequency converter",
+  "register_rows": 15,
+  "search_hints": [
+   "Vacon NXP frequency converter"
+  ]
+ },
+ {
+  "id": "C18",
+  "section": "DP control, HMI and automation",
+  "name": "Moxa Ethernet Switch and Serial Converter",
+  "brand": "Moxa",
+  "model_hint": "EDS-205A; EDS-518A; UPort 1150",
+  "register_rows": 12,
+  "search_hints": [
+   "Moxa EDS-205A switch"
+  ]
+ },
+ {
+  "id": "C19",
+  "section": "DP control, HMI and automation",
+  "name": "APC Smart-UPS and Eaton UPS",
+  "brand": "APC by Schneider Electric / Eaton",
+  "model_hint": "Smart-UPS SRT 1500VA; Smart-UPS C 1000VA; Eaton 9SX 3000i",
+  "register_rows": 10,
+  "search_hints": [
+   "APC Smart-UPS SRT 1500VA"
+  ]
+ },
+ {
+  "id": "C20",
+  "section": "DP control, HMI and automation",
+  "name": "Actisense NMEA Buffer / Gateway",
+  "brand": "Actisense",
+  "model_hint": "NMEA buffer; PRO-NDC-1E2K",
+  "register_rows": 4,
+  "search_hints": [
+   "Actisense NMEA 0183 buffer"
+  ]
+ },
+ {
+  "id": "C21",
+  "section": "DP control, HMI and automation",
+  "name": "Rexroth Valve Amplifier Module VT-VRRA1-537-20",
+  "brand": "Bosch Rexroth",
+  "model_hint": "VT-VRRA1-537-20",
+  "register_rows": 8,
+  "search_hints": [
+   "Rexroth VT-VRRA1-537-20 amplifier"
+  ]
+ },
+ {
+  "id": "C22",
+  "section": "DP control, HMI and automation",
+  "name": "Omron CJ1W-MAD42 Analog I/O Module",
+  "brand": "Omron",
+  "model_hint": "CJ1W-MAD42",
+  "register_rows": 3,
+  "search_hints": [
+   "Omron CJ1W-MAD42"
+  ]
+ },
+ {
+  "id": "C23",
+  "section": "DP control, HMI and automation",
+  "name": "Caldaro Three-Axis Joystick",
+  "brand": "Caldaro",
+  "model_hint": "S50JAK-ZU",
+  "register_rows": 3,
+  "search_hints": [
+   "Caldaro S50JAK joystick"
+  ]
+ },
+ {
+  "id": "C24",
+  "section": "DP control, HMI and automation",
+  "name": "Qlight Tower Light and Buzzer",
+  "brand": "Qlight",
+  "model_hint": "ST56 stack light; ex-proof tower light",
+  "register_rows": 17,
+  "search_hints": [
+   "Qlight ST56 stack light"
+  ]
+ },
+ {
+  "id": "D01",
+  "section": "Power, spares and service kits",
+  "name": "CyScan Service Kit",
+  "brand": "Guidance Marine",
+  "model_hint": "Base drive belt 455 mm / 450 mm, rotor belt, slipring assembly, gland plate seal, access cover seal, DC4 silicone compound",
+  "register_rows": 98,
+  "search_hints": [
+   "Guidance Marine CyScan service kit"
+  ]
+ },
+ {
+  "id": "D02",
+  "section": "Power, spares and service kits",
+  "name": "RadaScan / miniRadaScan Service Kit",
+  "brand": "Guidance Marine",
+  "model_hint": "Service kit; radome seal; tilt optics belt; slip rings; motor; encoder PCB",
+  "register_rows": 44,
+  "search_hints": [
+   "Guidance Marine RadaScan service kit"
+  ]
+ },
+ {
+  "id": "D03",
+  "section": "Power, spares and service kits",
+  "name": "Mean Well DIN-Rail Power Supply",
+  "brand": "Mean Well",
+  "model_hint": "NDR-480-24, NDR-240-24, XDR-120E-24, EDR-120-24, DRDN20-24 redundancy module",
+  "register_rows": 10,
+  "search_hints": [
+   "Mean Well NDR-480-24"
+  ]
+ },
+ {
+  "id": "D04",
+  "section": "Power, spares and service kits",
+  "name": "Phoenix Contact QUINT Power Supply",
+  "brand": "Phoenix Contact",
+  "model_hint": "QUINT POWER 24 V DC 5 A / 10 A",
+  "register_rows": 18,
+  "search_hints": [
+   "Phoenix Contact QUINT POWER 24V 10A"
+  ]
+ },
+ {
+  "id": "D05",
+  "section": "Power, spares and service kits",
+  "name": "Siemens SITOP Power Supply",
+  "brand": "Siemens",
+  "model_hint": "6EP1337-3BA00; 6EP1334-3BA00",
+  "register_rows": 2,
+  "search_hints": [
+   "Siemens SITOP 6EP1337-3BA00"
+  ]
+ },
+ {
+  "id": "D06",
+  "section": "Power, spares and service kits",
+  "name": "WAGO 750 Series I/O and Power Supply",
+  "brand": "WAGO",
+  "model_hint": "750-626, 750-610, 750-400, 750-457, 750-483, 750-552, 787-1112",
+  "register_rows": 7,
+  "search_hints": [
+   "WAGO 750 series I/O module"
+  ]
+ },
+ {
+  "id": "D07",
+  "section": "Power, spares and service kits",
+  "name": "Circuit Breakers, Contactors and Relays",
+  "brand": "Schneider Electric / ABB / Siemens",
+  "model_hint": "MCB 2P 6A / 10A; EZC100H; LC1D09; 4-change-over relays",
+  "register_rows": 78,
+  "search_hints": [
+   "Schneider Electric Acti9 iC60N MCB 2P"
+  ]
+ },
+ {
+  "id": "D08",
+  "section": "Power, spares and service kits",
+  "name": "Marine Cables and RF Assemblies",
+  "brand": "(various)",
+  "model_hint": "LMR-400 cable assemblies; RG223; Cat7; 3-core marine cable",
+  "register_rows": 66,
+  "search_hints": [
+   "LMR-400 cable assembly N male connector"
+  ]
+ },
+ {
+  "id": "D09",
+  "section": "Power, spares and service kits",
+  "name": "Marine Computers and Industrial PCs",
+  "brand": "(various)",
+  "model_hint": "Sonardyne marine computer kit; WAGO-I/O-IPC 758-873; marine rack computers",
+  "register_rows": 23,
+  "search_hints": [
+   "WAGO 758-873 IPC"
+  ]
+ }
+]

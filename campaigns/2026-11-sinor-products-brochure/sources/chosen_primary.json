@@ -1,0 +1,599 @@
+{
+ "A01": {
+  "image_url": "https://cdn.prod.website-files.com/689473f3705477db4090f32d/693fec6b2a2ee577fd651994_Untitled%20Project%20(11)%20(2).png",
+  "page_url": "https://www.guidancemarine.com/product/radascan-r-view",
+  "width": 2700,
+  "height": 2160,
+  "host": "cdn.prod.website-files.com (Guidance Marine site CDN)",
+  "shows": "RadaScan View product render, page title image",
+  "source_type": "oem"
+ },
+ "A02": {
+  "image_url": "https://cdn.prod.website-files.com/689473f3705477db4090f32d/69774c8900748437cb7fdebf_Untitled%20(10).png",
+  "page_url": "https://www.guidancemarine.com/product/cyscan-r-as",
+  "width": 2795,
+  "height": 2160,
+  "host": "cdn.prod.website-files.com (Guidance Marine site CDN)",
+  "shows": "CyScan AS sensor product render",
+  "source_type": "oem"
+ },
+ "A03": {
+  "image_url": "https://dvzpv6x5302g1.cloudfront.net/AcuCustom/Sitename/DAM/181/GM_mini_RadaScan_and_CyScanwebzhgf1_Main.png",
+  "page_url": "https://www.rivieramm.com/news-content-hub/news-content-hub/owners-focus-on-technical-development-corporate-growth-86152",
+  "width": 1200,
+  "height": 675,
+  "host": "dvzpv6x5302g1.cloudfront.net (Riviera Maritime Media)",
+  "shows": "Mini RadaScan and CyScan product photo in trade press article; third party, may carry credit",
+  "source_type": "catalogue"
+ },
+ "A04": {
+  "image_url": "https://cdn.prod.website-files.com/689473f3705477db4090f32d/6a3116ad4d8173409050cd66_SceneScan%201.png",
+  "page_url": "https://www.guidancemarine.com/product/scenescan",
+  "width": 2795,
+  "height": 2160,
+  "host": "cdn.prod.website-files.com (Guidance Marine site CDN)",
+  "shows": "SceneScan sensor product render (named SceneScan 1.png)",
+  "source_type": "oem"
+ },
+ "A05": {
+  "image_url": "https://cdn.prod.website-files.com/689473f3705477db4090f32d/69774c2ae07008ba8c5175de_Untitled-2%20(3).png",
+  "page_url": "https://www.guidancemarine.com/product/artemis",
+  "width": 1044,
+  "height": 1024,
+  "host": "cdn.prod.website-files.com (Guidance Marine site CDN)",
+  "shows": "Artemis 6S sensor card image",
+  "source_type": "oem"
+ },
+ "A06": {
+  "image_url": "https://www.kongsberg.com/globalassets/kongsberg/1.-what-we-do/2.-ocean-space/6.-navigation--positioning/radius/heroimg_radius_1440x900.jpg?width=1440&height=864&quality=99&rxy=0.51",
+  "page_url": "https://www.kongsberg.com/what-we-do/ocean-space/navigation-positioning/radius-product-range/radius-2000/",
+  "width": 1440,
+  "height": 864,
+  "host": "www.kongsberg.com",
+  "shows": "RADius page hero image (content not verified)",
+  "source_type": "oem"
+ },
+ "A07": {
+  "image_url": "https://www.fanbeam.com/wp-content/uploads/2019/08/Techmak-Fanbeam-Dynamic-Positioning-Sensor-Services-Sales-Repair-Calibration-Rental-Support-45-600.jpeg",
+  "page_url": "https://www.fanbeam.com/fanbeam/new-systems-upgrades/",
+  "width": 600,
+  "height": 400,
+  "host": "www.fanbeam.com",
+  "shows": "New systems/upgrades page photo (alt text only names the page; contents unverified)",
+  "source_type": "oem"
+ },
+ "A08": {
+  "image_url": "https://www.sonardyne.com/wp-content/uploads/2024/11/Overview-block-image-Ranger-2-new.jpg",
+  "page_url": "https://www.sonardyne.com/product/ranger-2-usbl/",
+  "width": 887,
+  "height": 624,
+  "host": "www.sonardyne.com",
+  "shows": "Ranger 2 USBL overview block image from the OEM product page",
+  "source_type": "oem"
+ },
+ "A09": {
+  "image_url": "https://www.sonardyne.com/wp-content/uploads/2025/01/SPRINT-Nav-DP-overview-new.jpg",
+  "page_url": "https://www.sonardyne.com/product/sprint-nav-dp/",
+  "width": 887,
+  "height": 624,
+  "host": "www.sonardyne.com",
+  "shows": "Silver cylindrical SPRINT-Nav DP unit with blue label and four oval openings at the bottom (alt text)",
+  "source_type": "oem"
+ },
+ "A10": {
+  "image_url": "https://www.sonardyne.com/wp-content/uploads/2024/08/NSH-Hero.jpg",
+  "page_url": "https://www.sonardyne.com/product/nsh/",
+  "width": 2400,
+  "height": 900,
+  "host": "www.sonardyne.com",
+  "shows": "NSH hero image from OEM page",
+  "source_type": "oem"
+ },
+ "A11": {
+  "image_url": "https://navisincontrol.com/wp-content/uploads/2025/07/SWIFT-scaled.jpg",
+  "page_url": "https://navisincontrol.com/news/navdp-4000-dp2-control-system-successfully-installed-and-commissioned-on-mpsv-swift-of-camgsa/",
+  "width": 2560,
+  "height": 1440,
+  "host": "navisincontrol.com",
+  "shows": "OEM news photo of MPSV SWIFT where NavDP 4000 DP2 was installed (vessel photo, not a product shot)",
+  "source_type": "oem"
+ },
+ "A12": {
+  "image_url": "https://www.marine-technologies.com/images/card-dp.jpg",
+  "page_url": "https://www.marine-technologies.com/",
+  "width": 0,
+  "height": 0,
+  "host": "www.marine-technologies.com",
+  "shows": "Dynamic Positioning product card image on OEM homepage (alt text: Dynamic Positioning)",
+  "source_type": "oem"
+ },
+ "A13": {
+  "image_url": "https://images.squarespace-cdn.com/content/v1/681dcd0a56c844614f767133/7c0624c9-0053-4219-a748-00c8f035ae18/SMT+TW+Isometric+%5BYellow%5D.png",
+  "page_url": "https://www.smt-ab.com/home-1-2",
+  "width": 1049,
+  "height": 1131,
+  "host": "images.squarespace-cdn.com",
+  "shows": "Isometric view of the SMT Taut Wire MK2 Z unit (listed under the MK2 Z heading)",
+  "source_type": "oem"
+ },
+ "A14": {
+  "image_url": "https://ronav.ae/wp-content/uploads/2024/07/RX45-removebg-preview.png",
+  "page_url": "https://ronav.ae/",
+  "width": 0,
+  "height": 0,
+  "host": "ronav.ae",
+  "shows": "RX45 GNSS antenna cut-out (the antenna of the R1 system, not the receiver)",
+  "source_type": "oem"
+ },
+ "A15": {
+  "image_url": "https://fsp.support/images/equipment-seastar-9410-aut-receiver-demodulator.png",
+  "page_url": "https://fsp.support/seastar/equipment.php?rec=9410",
+  "width": 1016,
+  "height": 553,
+  "host": "fsp.support",
+  "shows": "Seastar 9410-AUT combined receiver and demodulator",
+  "source_type": "oem"
+ },
+ "A16": {
+  "image_url": "https://veripos.com/-/media/Images/Hexagon/Hexagon-Core/Veripos/Veripos-images/Products/LD900/Web_Marquee-Hexagon_AP_VERIPOS_LD900_Marquee-(1).ashx?la=en&h=885&w=1680&hash=79ADC2D4728A916DA231433DC4E51180",
+  "page_url": "https://veripos.com/products/ld900-receiver",
+  "width": 1680,
+  "height": 885,
+  "host": "veripos.com",
+  "shows": "LD900 receiver marquee image",
+  "source_type": "oem"
+ },
+ "A17": {
+  "image_url": "https://www.clearcom.com/Portals/0/EasyDNNNews/1560/images/MS-704_612x496-612-496-p-L-97.jpg",
+  "page_url": "https://www.clearcom.com/Products/Products-By-Name/Encore/category/main-stations-1",
+  "width": 612,
+  "height": 496,
+  "host": "clearcom.com",
+  "shows": "Encore MS-704 4-channel main station",
+  "source_type": "oem"
+ },
+ "A18": {
+  "image_url": "https://www.highlander-global.com/uploads/images/2026/0709/fjWAR25Ld7bLr5atDnVwcesDfojTFPSFMmTX7J6b.png",
+  "page_url": "https://www.highlander-global.com/info/846.html",
+  "width": 928,
+  "height": 600,
+  "host": "highlander-global.com",
+  "shows": "OEM image of the HLD-RADAR 900S (solid state variant, NOT the magnetron 900 X-band)",
+  "source_type": "oem"
+ },
+ "B01": {
+  "image_url": "https://cdn.prod.website-files.com/689473f3705477db4090f32d/693fec6b2a2ee577fd651994_Untitled%20Project%20(11)%20(2).png",
+  "page_url": "https://www.guidancemarine.com/product/radascan-r-view",
+  "width": 2700,
+  "height": 2160,
+  "host": "cdn.prod.website-files.com (Guidance Marine site CDN)",
+  "shows": "RadaScan View product render, page title image",
+  "source_type": "oem"
+ },
+ "B02": {
+  "image_url": "https://cdn.prod.website-files.com/689473f3705477db4090f32d/69774c8900748437cb7fdebf_Untitled%20(10).png",
+  "page_url": "https://www.guidancemarine.com/product/cyscan-r-as",
+  "width": 2795,
+  "height": 2160,
+  "host": "cdn.prod.website-files.com (Guidance Marine site CDN)",
+  "shows": "CyScan AS sensor product render",
+  "source_type": "oem"
+ },
+ "B03": {
+  "image_url": "https://www.kongsberg.com/globalassets/kongsberg/1.-what-we-do/2.-ocean-space/6.-navigation--positioning/spottrack/spottrack_prisms_333x333.png?width=333",
+  "page_url": "https://www.kongsberg.com/what-we-do/ocean-space/navigation-positioning/spottrack-prisms/",
+  "width": 333,
+  "height": 333,
+  "host": "www.kongsberg.com",
+  "shows": "SpotTrack prisms product tile",
+  "source_type": "oem"
+ },
+ "B04": {
+  "image_url": "https://cdn.prod.website-files.com/689473f3705477db4090f32d/6a3116ad4d8173409050cd66_SceneScan%201.png",
+  "page_url": "https://www.guidancemarine.com/product/scenescan",
+  "width": 2795,
+  "height": 2160,
+  "host": "cdn.prod.website-files.com (Guidance Marine site CDN)",
+  "shows": "SceneScan sensor product render (named SceneScan 1.png)",
+  "source_type": "oem"
+ },
+ "B05": {
+  "image_url": "https://img.nauticexpo.com/pdf/repository_ne/32289/responders-57331_1mg.jpg",
+  "page_url": "https://pdf.nauticexpo.com/pdf/guidance-navigation-limited/responders/32289-57331.html",
+  "width": 353,
+  "height": 500,
+  "host": "img.nauticexpo.com",
+  "shows": "Cover of Guidance Responders brochure (low res)",
+  "source_type": "catalogue"
+ },
+ "B06": {
+  "image_url": "https://www.kongsberg.com/globalassets/kongsberg/1.-what-we-do/2.-ocean-space/6.-navigation--positioning/radius/radius_700x_333x333.png?width=333",
+  "page_url": "https://www.kongsberg.com/what-we-do/ocean-space/navigation-positioning/radius-product-range/radius-2000/",
+  "width": 333,
+  "height": 333,
+  "host": "www.kongsberg.com",
+  "shows": "RADius 700X tile",
+  "source_type": "oem"
+ },
+ "B07": {
+  "image_url": "https://www.kongsberg.com/globalassets/kongsberg/1.-what-we-do/2.-ocean-space/6.-navigation--positioning/radius/radius_2000_333x333.png?width=333",
+  "page_url": "https://www.kongsberg.com/what-we-do/ocean-space/navigation-positioning/radius-product-range/radius-700x/",
+  "width": 333,
+  "height": 333,
+  "host": "www.kongsberg.com",
+  "shows": "RADius 2000 tile",
+  "source_type": "oem"
+ },
+ "B08": {
+  "image_url": "https://www.sonardyne.com/wp-content/uploads/2024/08/HPT_5000_7000_overview_block-new.jpg",
+  "page_url": "https://www.sonardyne.com/product/hpt-5000-7000/",
+  "width": 887,
+  "height": 624,
+  "host": "www.sonardyne.com",
+  "shows": "HPT 5000/7000 overview block image",
+  "source_type": "oem"
+ },
+ "B09": {
+  "image_url": "https://www.sonardyne.com/wp-content/uploads/2024/07/WSM-6_hero-image.jpg",
+  "page_url": "https://www.sonardyne.com/product/wsm-6-plus/",
+  "width": 1384,
+  "height": 544,
+  "host": "www.sonardyne.com",
+  "shows": "WSM 6+ hero banner image",
+  "source_type": "oem"
+ },
+ "B10": null,
+ "B11": {
+  "image_url": "https://inertiallabs.com/wp-content/uploads/2025/02/MRU-B2-2025.png",
+  "page_url": "https://inertiallabs.com/products/mru-ws-motion-reference-units-and-wave-sensors/",
+  "width": 0,
+  "height": 0,
+  "host": "inertiallabs.com",
+  "shows": "MRU-B2 unit",
+  "source_type": "oem"
+ },
+ "B12": {
+  "image_url": "https://www.youngusa.com/wp-content/uploads/2014/11/86000-White-Background.jpg",
+  "page_url": "https://www.youngusa.com/product/ultrasonic-anemometer-5/",
+  "width": 762,
+  "height": 1200,
+  "host": "youngusa.com",
+  "shows": "86106 ultrasonic anemometer on white background",
+  "source_type": "oem"
+ },
+ "B13": {
+  "image_url": "https://observator.com/wp-content/uploads/2019/07/OMC-118M-scaled-scaled-1350x1350.jpg",
+  "page_url": "https://observator.com/products/omc-118-ultrasonic-wind-sensor/",
+  "width": 1350,
+  "height": 1350,
+  "host": "observator.com",
+  "shows": "OMC-118M wind sensor",
+  "source_type": "oem"
+ },
+ "B14": {
+  "image_url": "https://www.deifmarineinstruments.com/media/cnmh54ks/wss-750.png",
+  "page_url": "https://www.deifmarineinstruments.com/product-overview/products/wss-750/",
+  "width": 1920,
+  "height": 1080,
+  "host": "deifmarineinstruments.com",
+  "shows": "WSS 750 wind sensor",
+  "source_type": "oem"
+ },
+ "B15": {
+  "image_url": "https://www.anschuetz.com/fileadmin/_processed_/a/e/csm_Header_Std22_a437ede7a2.jpg",
+  "page_url": "https://www.anschuetz.com/products/gyro-compasses-and-repeaters/standard-22-nx",
+  "width": 0,
+  "height": 0,
+  "host": "anschuetz.com",
+  "shows": "Standard 22 NX header image (OEM, current NX model)",
+  "source_type": "oem"
+ },
+ "B16": {
+  "image_url": "https://images.ctfassets.net/9k5dj5b59lqq/66NVKliu0nApYTgpWHDF7a/a55abea0be8f47fc00532e0eba841fbc/ga830.png?fm=avif&q=90",
+  "page_url": "https://oemgnss.trimble.com/en/products/antennas/ga830",
+  "width": 0,
+  "height": 0,
+  "host": "oemgnss.trimble.com",
+  "shows": "GA830 antenna",
+  "source_type": "oem"
+ },
+ "B17": {
+  "image_url": "https://www.kongsberg.com/globalassets/kongsberg/1.-what-we-do/2.-ocean-space/6.-navigation--positioning/cnode/cnode_micro_transponder_333x333.png?width=333",
+  "page_url": "https://www.kongsberg.com/what-we-do/ocean-space/navigation-positioning/cnode-transponder/cnode-micro/",
+  "width": 333,
+  "height": 333,
+  "host": "www.kongsberg.com",
+  "shows": "cNODE Micro transponder product tile on OEM page (small; the base file may be larger without the width parameter, not verified)",
+  "source_type": "oem"
+ },
+ "B18": {
+  "image_url": "https://bandak.no/wp-content/uploads/2016/11/DSC_3176-scaled.jpg",
+  "page_url": "https://bandak.no/what-we-do/taut-wire/",
+  "width": 2560,
+  "height": 1704,
+  "host": "bandak.no",
+  "shows": "Bandak taut wire photo on OEM page",
+  "source_type": "oem"
+ },
+ "C01": null,
+ "C02": null,
+ "C03": {
+  "image_url": "https://www.hattelandtechnology.com/hubfs/HubDB-Product/high/jh19t27mmd-xrx__angfro.jpg?hsLang=en",
+  "page_url": "https://www.hattelandtechnology.com/view_product/jh-19t27-mmd_monitor_558",
+  "width": 2048,
+  "height": 1536,
+  "host": "hattelandtechnology.com",
+  "shows": "JH 19T27 MMD angled front view",
+  "source_type": "oem"
+ },
+ "C04": {
+  "image_url": "https://www.hattelandtechnology.com/hubfs/HubDB-Product/high/jh19t27mmd-xrx__angcon_with_touch.jpg",
+  "page_url": "https://www.hattelandtechnology.com/view_product/jh-19t27-mmd_monitor_558",
+  "width": 0,
+  "height": 0,
+  "host": "hattelandtechnology.com",
+  "shows": "GENERIC: Hatteland JH 19T27 MMD with touch, rear connector view",
+  "source_type": "oem"
+ },
+ "C05": {
+  "image_url": "https://img.nauticexpo.com/images_ne/projects/images-g/marine-keyboards-trackballs-most-demanding-jobs-new-full-travel-rubber-keyboards-ergonomical-trackballs-17239-9893352.jpg",
+  "page_url": "https://trends.nauticexpo.com/nsi/project-31428-317239.html",
+  "width": 900,
+  "height": 656,
+  "host": "nauticexpo.com",
+  "shows": "GENERIC: NSI marine keyboards and trackballs",
+  "source_type": "catalogue"
+ },
+ "C06": {
+  "image_url": "https://www.networktechinc.com/images/additional/st-c5vrs-600.jpg",
+  "page_url": "https://www.networktechinc.com/cat5-vga.html",
+  "width": 0,
+  "height": 0,
+  "host": "networktechinc.com",
+  "shows": "ST-C5VRS-600 extender unit (VGA + RS232)",
+  "source_type": "oem"
+ },
+ "C07": {
+  "image_url": "https://elektromarine.com/wp-content/uploads/2023/11/RMP-201-8-1.jpg.webp",
+  "page_url": "https://elektromarine.com/product/kongsberg-rmp201-8-324400/",
+  "width": 1000,
+  "height": 1000,
+  "host": "elektromarine.com",
+  "shows": "RMP201-8 module, product photo (alt: kongsberg rmp201 8 324400)",
+  "source_type": "distributor"
+ },
+ "C08": {
+  "image_url": "https://www.protamarine.com/wp-content/uploads/2025/02/33.webp",
+  "page_url": "https://www.protamarine.com/product/kongsberg-603201-compact-joystick-operator-terminal-rev-a/",
+  "width": 1595,
+  "height": 1186,
+  "host": "protamarine.com",
+  "shows": "Kongsberg 603201 compact joystick operator terminal (cJoy)",
+  "source_type": "distributor"
+ },
+ "C09": {
+  "image_url": "https://i.ebayimg.com/images/g/DzcAAOSwlVllbcFp/s-l1200.jpg",
+  "page_url": "https://www.ebay.com/itm/235328890159",
+  "width": 900,
+  "height": 1200,
+  "host": "i.ebayimg.com",
+  "shows": "Rolls-Royce RRDIO15, RRRLY8 and RRAIO16 rack modules together (marketplace)",
+  "source_type": "distributor"
+ },
+ "C10": {
+  "image_url": "https://www.plcdcspro.com/cdn/shop/files/IC693CPU374.png?v=1741329280&width=1946",
+  "page_url": "https://www.plcdcspro.com/products/fanuc-ic693cpu374-series-90-30-cpu-module-ge-series-90-30",
+  "width": 800,
+  "height": 800,
+  "host": "plcdcspro.com",
+  "shows": "IC693CPU374 CPU module",
+  "source_type": "distributor"
+ },
+ "C11": {
+  "image_url": "https://www.nexinstrument.com/assets/images/IC200ALG240.jpg",
+  "page_url": "https://www.nexinstrument.com/ic200alg240",
+  "width": 1053,
+  "height": 940,
+  "host": "nexinstrument.com",
+  "shows": "IC200ALG240 module",
+  "source_type": "distributor"
+ },
+ "C12": {
+  "image_url": "https://www.smtssg.com/wp-content/uploads/2021/03/AMC2.jpeg",
+  "page_url": "https://www.smtssg.com/product/advanced-micro-controller-converteam-p111-6052/",
+  "width": 1024,
+  "height": 679,
+  "host": "smtssg.com",
+  "shows": "Converteam P111-6052 Advanced Micro Controller",
+  "source_type": "distributor"
+ },
+ "C13": {
+  "image_url": "https://download.se.com/files?p_Doc_Ref=104467&p_File_Type=rendition_369_jpg&default_image=DefaultProductImage.png",
+  "page_url": "https://www.se.com/us/en/product/TSXP574634M/unity-processor-modicon-premium-internal-ram-440kb-data-unity-pro/",
+  "width": 369,
+  "height": 369,
+  "host": "download.se.com",
+  "shows": "TSXP574634M Modicon Premium processor, Schneider product shot",
+  "source_type": "oem"
+ },
+ "C14": {
+  "image_url": "https://mall.industry.siemens.com/mall/collaterals/files/207/JPG/01/75/P_ST70_XX_04491j.JPG",
+  "page_url": "https://sieportal.siemens.com/en-ww/products-services/10045652?tree=CatalogTree",
+  "width": 0,
+  "height": 0,
+  "host": "mall.industry.siemens.com",
+  "shows": "SIMATIC S7-1200 CPU 1214C product photo (larger variant, size not stated)",
+  "source_type": "oem"
+ },
+ "C15": {
+  "image_url": "https://woodward.store/media/e1/ff/7c/1718784614/IMG_8440-2085-1.jpg?ts=1718784614",
+  "page_url": "https://woodward.store/en/easygen-3000xt/easygen-3500xt",
+  "width": 0,
+  "height": 0,
+  "host": "woodward.store",
+  "shows": "easYgen-3500XT P1 controller, product shot (size not stated)",
+  "source_type": "distributor"
+ },
+ "C16": {
+  "image_url": "https://deif-cdn-umbraco.azureedge.net/media/jmkbreb4/dm-3.png?width=740&height=400&v=1da91413f1937d0&v=9",
+  "page_url": "https://www.deif.com/products/dm-3/",
+  "width": 740,
+  "height": 400,
+  "host": "deif-cdn-umbraco.azureedge.net",
+  "shows": "DM-3 Delomatic 3, DEIF product image",
+  "source_type": "oem"
+ },
+ "C17": {
+  "image_url": "https://www.danfoss.com/media/1nqjbmxz/vacon-nxp-air-cooled.jpg?v=1d8abbcb6023930&width=1220",
+  "page_url": "https://www.danfoss.com/en/products/dds/low-voltage-drives/vacon-drives/vacon-nxp-air-cooled/",
+  "width": 1220,
+  "height": 813,
+  "host": "danfoss.com",
+  "shows": "VACON NXP Air Cooled drive",
+  "source_type": "oem"
+ },
+ "C18": {
+  "image_url": "https://cdn-cms-frontdoor-dfc8ebanh6bkb3hs.a02.azurefd.net/en/getattachment/Products/INDUSTRIAL-NETWORK-INFRASTRUCTURE/Ethernet-Switches/Unmanaged-Switches/EDS-205A-Series/moxa-eds-205a-series-image-3-(2).jpg",
+  "page_url": "https://www.moxa.com/en/products/industrial-network-infrastructure/ethernet-switches/unmanaged-switches/eds-205a-series",
+  "width": 2000,
+  "height": 2000,
+  "host": "cdn-cms-frontdoor-dfc8ebanh6bkb3hs.a02.azurefd.net",
+  "shows": "EDS-205A series switch, Moxa product image",
+  "source_type": "oem"
+ },
+ "C19": {
+  "image_url": "https://download.se.com/files?p_Doc_Ref=SPD_JVAN-B8GPM8_B_V&p_File_Type=rendition_1500_jpg",
+  "page_url": "https://www.se.com/il/en/product/SRT1500RMXLI/apc-smartups-srt-1500va-rm-230v/",
+  "width": 1500,
+  "height": 1500,
+  "host": "download.se.com",
+  "shows": "APC Smart-UPS SRT 1500VA RM product shot (og:image of the page)",
+  "source_type": "oem"
+ },
+ "C20": {
+  "image_url": "https://actisense.com/wp-content/uploads/2025/01/PRO-NDC-1E2K-with-mirror-300x300.png",
+  "page_url": "https://actisense.com/products/pro-ndc-1e2k/",
+  "width": 300,
+  "height": 300,
+  "host": "actisense.com",
+  "shows": "PRO-NDC-1E2K with mirror reflection",
+  "source_type": "oem"
+ },
+ "C21": {
+  "image_url": "https://rexroth-parts.com/27343-large_default/vt-vrra-1-537-20-v0-1-1.jpg",
+  "page_url": "https://rexroth-parts.com/en/valve-amplifiers-1/vt-vrra-1-537-20-v0-1-1",
+  "width": 800,
+  "height": 800,
+  "host": "rexroth-parts.com",
+  "shows": "VT-VRRA 1-537-20/V0 amplifier card",
+  "source_type": "distributor"
+ },
+ "C22": {
+  "image_url": "https://8z1xg04k.tinifycdn.com/images/CJ1W-MAD42.jpg?resize.method=scale&resize.width=1003",
+  "page_url": "https://industrial.omron.eu/en/products/CJ1W-MAD42",
+  "width": 1003,
+  "height": 1003,
+  "host": "8z1xg04k.tinifycdn.com",
+  "shows": "CJ1W-MAD42 analog I/O unit, Omron Europe product image",
+  "source_type": "oem"
+ },
+ "C23": {
+  "image_url": "https://cdn11.bigcommerce.com/s-o0ql33eyfo/images/stencil/1280x1280/products/65647/1981674/caldaro_s50jak-zu-31r1g-74083_7__45815.1766210081.jpg?c=1",
+  "page_url": "https://auto2mation.com/caldaro-s50jak-zu-31r1g-joystick-controller.html",
+  "width": 1020,
+  "height": 765,
+  "host": "cdn11.bigcommerce.com",
+  "shows": "Caldaro S50JAK-ZU-31R1G joystick (variant)",
+  "source_type": "distributor"
+ },
+ "C24": {
+  "image_url": "https://www.qlight.com/productdata/productfiles/162/images/img_detail_1_default_162.png?v=p_202611-5",
+  "page_url": "https://www.qlight.com/en/products/?qpcateid=9&prodidx=162",
+  "width": 500,
+  "height": 500,
+  "host": "www.qlight.com",
+  "shows": "ST56L tower light, Qlight product image",
+  "source_type": "oem"
+ },
+ "D01": {
+  "image_url": "https://www.smtssg.com/wp-content/uploads/2021/12/Cyscan-1.jpeg",
+  "page_url": "https://www.smtssg.com/product/cyscan-radar-mk4-service-kit-p-n-31-0362-4/",
+  "width": 639,
+  "height": 1024,
+  "host": "smtssg.com",
+  "shows": "Photo of the CyScan MK4 service kit (product title alt text); content not visually checked",
+  "source_type": "distributor"
+ },
+ "D02": {
+  "image_url": "https://cdn.prod.website-files.com/689473f3705477db4090f32d/693fec6b2a2ee577fd651994_Untitled%20Project%20(11)%20(2).png",
+  "page_url": "https://www.guidancemarine.com/product/radascan-r-view",
+  "width": 2700,
+  "height": 2160,
+  "host": "cdn.prod.website-files.com",
+  "shows": "Guidance Marine hero image on the RadaScan View page (page has no alt text; likely the sensor, not visually checked). Shows parent sensor, not the kit",
+  "source_type": "oem"
+ },
+ "D03": {
+  "image_url": "https://mm.digikey.com/Volume0/opasdata/d220001/medias/images/2540/MFG_NDR-480.jpg",
+  "page_url": "https://www.digikey.com/en/products/detail/mean-well-usa-inc/NDR-480-24/7705224",
+  "width": 640,
+  "height": 640,
+  "host": "mm.digikey.com",
+  "shows": "Manufacturer-supplied (MFG_ prefix) product photo of NDR-480 per search result title NDR-480-24",
+  "source_type": "distributor"
+ },
+ "D04": {
+  "image_url": "https://caas.phoenixcontact.com/caas/v1/stable/media/113376/full/b1500?format=jpg",
+  "page_url": "https://www.phoenixcontact.com/en-us/products/power-supply-quint-ps1ac24dc10-2866763",
+  "width": 1500,
+  "height": 1500,
+  "host": "caas.phoenixcontact.com",
+  "shows": "Product photo, power supply QUINT-PS/1AC/24DC/10",
+  "source_type": "oem"
+ },
+ "D05": {
+  "image_url": "https://mall.industry.siemens.com/mall/collaterals/files/207/jpg/06/89/P_KT01_XX_01193i.jpg",
+  "page_url": "https://sieportal.siemens.com/en-za/products-services/detail/6EP1337-3BA00?tree=CatalogTree",
+  "width": 0,
+  "height": 0,
+  "host": "mall.industry.siemens.com",
+  "shows": "Siemens catalogue product image for 6EP1337-3BA00 (image alt text is the article number)",
+  "source_type": "oem"
+ },
+ "D06": {
+  "image_url": "https://www.wago.com/medias/1024-020000010000ef05000100b6-EN.jpg?context=bWFzdGVyfGltYWdlc3w1MjcwNnxpbWFnZS9qcGVnfGFHSmxMMmhrTVM4eE5qVTNNalUwT0RnME1UVXdNaTh4TURJMFh6QXlNREF3TURBeE1EQXdNR1ZtTURVd01EQXhNREJpTmw5RlRpNXFjR2N8NDgzOWE3MDdkYzk1YWVmZjdjZDVkZWZkODkyNDZkNWFhNThkY2VhMmYwZWY5MmQwZjJlMGMyYjQ1OGQzMmE2Yw",
+  "page_url": "https://www.wago.com/us/controllers-bus-couplers-i-o/2-channel-digital-input/p/750-400",
+  "width": 1024,
+  "height": 0,
+  "host": "www.wago.com",
+  "shows": "Image of 2-channel digital input 750-400 (alt text), EN variant",
+  "source_type": "oem"
+ },
+ "D07": {
+  "image_url": "https://download.se.com/files?p_Doc_Ref=A9F74202_Image&p_File_Type=rendition_369_jpg&default_image=DefaultProductImage.png",
+  "page_url": "https://www.se.com/hk/en/product/A9F74202/miniature-circuit-breaker-mcb-acti9-ic60n-2p-2a-c-curve-6000a-iec-en-608981-50ka-iec-en-609472/",
+  "width": 369,
+  "height": 369,
+  "host": "download.se.com",
+  "shows": "Schneider product image of A9F74202 Acti9 iC60N 2P 2A (file name is the part number)",
+  "source_type": "oem"
+ },
+ "D08": {
+  "image_url": "https://www.pasternack.com/images/Product/large/PE3C0105.jpg",
+  "page_url": "https://www.pasternack.com/n-male-n-male-lmr400-cable-assembly-pe3c0105-p.aspx",
+  "width": 500,
+  "height": 334,
+  "host": "www.pasternack.com",
+  "shows": "N Male to N Male cable using LMR-400 coax and Times connectors (alt text), PE3C0105",
+  "source_type": "oem"
+ },
+ "D09": {
+  "image_url": "https://cdn11.bigcommerce.com/s-o0ql33eyfo/images/stencil/1280x1280/products/4779/1894844/dsc_0225_8__74298.1766048210.jpg?c=1",
+  "page_url": "https://auto2mation.com/wago-i-o-ipc-758-873-system.html",
+  "width": 1280,
+  "height": 850,
+  "host": "cdn11.bigcommerce.com",
+  "shows": "Reseller photo titled Wago-i/o-ipc 758-873 system; not visually checked",
+  "source_type": "distributor"
+ }
+}

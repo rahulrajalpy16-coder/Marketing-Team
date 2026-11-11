@@ -23,3 +23,13 @@ Format: ID | target file | before | after | reason | date proposed.
 - After: CLAUDE.md platform rules gain "Every video or visual job starts with research of current trending formats, comparable posts and template styles on the target platform (campaigns/<name>/research/research.md). Never skipped for small jobs." The skill gains a "Trend and template scan" step with the same content. Already applied as a working rule through brain/preferences.md; this formalises it.
 - Reason: Rahul's explicit instruction, 2026-11-06.
 
+
+## P-005 | new skill .claude/skills/product-catalogue-brochure/SKILL.md | proposed 2026-11-11
+- Before: no written procedure for catalogue or brochure jobs.
+- After: add a skill with the workflow that worked: extract products from the job register by frequency, build a catalogue JSON with register evidence counts, split into slices for Firecrawl discovery agents (official image and description only, no downloads), batch-approve exact image hosts, download, build a labelled contact sheet and look at it, drop wrong or generic images and ASK Rahul for them, generate A4 HTML to PDF with Node Playwright, independent qa-reviewer pass, credit sheet per image.
+- Reason: the job took many steps and several wrong turns; the procedure is reusable for any future catalogue.
+
+## P-006 | .claude/agents/platform-researcher.md | proposed 2026-11-11
+- Before: tools are Read, Write, WebSearch, WebFetch.
+- After: add the Firecrawl search and scrape tools, and a rule "if a page fails to load because the host is not allowed, retry the same page through Firecrawl scrape before reporting it unread".
+- Reason: in the brochure job every WebFetch failed on blocked hosts and the catalogue-layout study was not done.

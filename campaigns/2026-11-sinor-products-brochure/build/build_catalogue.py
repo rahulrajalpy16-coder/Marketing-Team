@@ -1,0 +1,85 @@
+import json,re
+rows=[o[2].lower() for o in json.load(open('register_text.json'))]
+# id, section, name, brand, model/part hints, regex for register evidence, search hints
+C=[
+# ---- A. PACKAGE SYSTEMS
+("A01","Package systems","RadaScan View System","Guidance Marine","RadaScan View; Marine Processor and Monitor 10-0183; sensor, Type 4 processor, 19in touch monitor, trackerball, keyboard","radascan view",["Guidance Marine RadaScan View system"]),
+("A02","Package systems","CyScan Absolute Signature (AS) System / CyScan Mk4","Guidance Marine","CyScan AS; sensor 20-0252; Type 4 processor CyScan AS configured 20-0306","cyscan",["Guidance Marine CyScan Absolute Signature laser sensor"]),
+("A03","Package systems","miniRadaScan-S System","Guidance Marine","miniRadaScan-S; mini target series 2 transponder","mini ?radascan",["Guidance Marine miniRadaScan"]),
+("A04","Package systems","SceneScan System","Guidance Marine","SceneScan system 10-0187; sensor 20-0253; Type 5 processor 20-0337","scenescan",["Guidance Marine SceneScan"]),
+("A05","Package systems","Artemis Mk6 System","Guidance Marine (verify)","Artemis Mk6 sensor, beacon fixed station, Type 3 processor Artemis configured, Artemis monopulse antenna","artemis",["Artemis Mk6 position reference system"]),
+("A06","Package systems","RADius Radar Reference System (RADius 1000 / 2000)","Kongsberg Maritime (verify)","RADius 2000 interrogator, RADius 1000 processing unit, RADius 700x / 550x transponders","radius",["Kongsberg RADius radar position reference system"]),
+("A07","Package systems","Fanbeam 5 Laser Reference System","MDL","Fanbeam 5 sensor (refurbished full set)","fanbeam",["MDL Fanbeam laser position reference sensor"]),
+("A08","Package systems","Ranger 2 USBL System","Sonardyne","Ranger 2; HPT 5000 transceiver Type 8142; WSM 6+; Mini and Micro Ranger 2; gate valve, hydraulic deployment machine","ranger 2|hpt ?5000",["Sonardyne Ranger 2 USBL system"]),
+("A09","Package systems","SPRINT-Nav DP System","Sonardyne","SPRINT-Nav DP system kit 603-0230; SPRINT-Nav 500","sprint.?nav",["Sonardyne SPRINT-Nav DP"]),
+("A10","Package systems","Navigation Sensor Hub (NSH) Kit","Sonardyne","NSH chassis, dual Ethernet, transceiver, RS232, RS485, trigger/responder modules","\\bnsh\\b",["Sonardyne Navigation Sensor Hub NSH"]),
+("A11","Package systems","NAVIS NavDP Dynamic Positioning System","NAVIS Engineering","NavDP 4000 series DP1/DP2, DP upgrade and critical spares, control computer HT CO3","navis",["NAVIS Engineering NavDP 4000 dynamic positioning system"]),
+("A12","Package systems","Marine Technologies DP-2 System with IJS, UPS and Console","Marine Technologies","MT Bridge Mate DP; DP-2 with IJS, UPS, DP console; critical spares","\\bmt\\b dp|bridge mate|mt dp",["Marine Technologies Bridge Mate dynamic positioning"]),
+("A13","Package systems","Electric Taut Wire System (Z-range)","SMT","SMT Z-range 2.1 electric taut wire, 700 m wire on drum, depressor weight","taut ?wire",["SMT electric taut wire Z range"]),
+("A14","Package systems","Ronav R1 DGPS System","Ronav","R1 DGPS receiver, antenna, display and cables","ronav",["Ronav R1 DGPS receiver"]),
+("A15","Package systems","Fugro SeaStar 9410-AUT Receiver Kit","Fugro","SeaStar 9410-AUT; 9410 receiver","seastar|9410",["Fugro SeaStar 9410 receiver"]),
+("A16","Package systems","Veripos LD900 GNSS Receiver","Veripos","LD900 (set)","veripos|ld900",["Veripos LD900 receiver"]),
+("A17","Package systems","Clear-Com Intercom System","Clear-Com","Master station, Encore 800 speaker stations (slave units)","clear.?com",["Clear-Com Encore master station intercom"]),
+("A18","Package systems","HLD-900 X-Band Radar (24 in, 10 kW / 25 kW)","Highlander","HLD-900 24in X-band radar, black box version","highlander|hld-900",["Highlander HLD-900 X-band radar"]),
+# ---- B. POSITION REFERENCE & SENSORS
+("B01","Position reference and sensors","RadaScan View Sensor","Guidance Marine","20-0226-1 (inventory serial family)","radascan view sensor",["RadaScan View sensor"]),
+("B02","Position reference and sensors","CyScan Mk4 Absolute Signature Sensor","Guidance Marine","20-0252","cyscan (absolute|mk4)",["CyScan Mk4 sensor"]),
+("B03","Position reference and sensors","CyScan 8-Way Prism Cluster","Guidance Marine / Kongsberg SpotTrack","8-way prism","8-way|8 way prism",["CyScan 8-way prism reflector"]),
+("B04","Position reference and sensors","SceneScan Sensor","Guidance Marine","20-0253","scenescan sensor",["SceneScan sensor Guidance"]),
+("B05","Position reference and sensors","Series 4 Rechargeable Responder (Blue)","Guidance Marine","20-0276-BLU; Series 3 + 4 auxiliary kit","series 4|rechargeable responder|rechargable responder",["Guidance Marine Series 4 rechargeable responder"]),
+("B06","Position reference and sensors","RADius 700x Transponder","Kongsberg Maritime (verify)","RADius 700x / 550x transponder, replacement battery","radius 700x|radius 550x|transponder 700x",["Kongsberg RADius 700x transponder"]),
+("B07","Position reference and sensors","RADius 2000 Interrogator Unit","Kongsberg Maritime (verify)","RADius 2000 dual interrogator unit","radius 2000",["Kongsberg RADius 2000 interrogator"]),
+("B08","Position reference and sensors","Sonardyne HPT 5000 USBL Transceiver","Sonardyne","Type 8142 / 620-7181 HPT 5000 MF USBL transceiver","hpt ?5000",["Sonardyne HPT 5000 transceiver"]),
+("B09","Position reference and sensors","Sonardyne Wideband Sub-Mini 6+ (WSM 6+) Transponder","Sonardyne","WSM6+ 1K MF omni; WSM6+ directional","wsm",["Sonardyne WSM 6+ wideband sub-mini transponder"]),
+("B10","Position reference and sensors","Sonardyne SPRINT-Nav DP Surface Interface Hub and Marine Computer","Sonardyne","620-0770 Surface Interface Hub; Marine Computer Kit 603-0181","surface interface hub|marine computer kit",["Sonardyne Surface Interface Hub 620-0770"]),
+("B11","Position reference and sensors","Inertial Labs MRU B1 / B2 Motion Reference Unit","Inertial Labs (verify)","MRU B1 (roll and pitch), MRU B2 (with heave for HPR)","mru b[12]|inertial lab",["Inertial Labs MRU B2 motion reference unit"]),
+("B12","Position reference and sensors","R.M. Young 86106 Ultrasonic Wind Sensor","R.M. Young","86106 with wind display","86106|rm young",["R.M. Young 86106 ultrasonic anemometer"]),
+("B13","Position reference and sensors","Observator OMC-118 Ultrasonic Wind Sensor","Observator","OMC-118, OMC-122M bracket","omc-118|observator",["Observator OMC-118 ultrasonic wind sensor"]),
+("B14","Position reference and sensors","DEIF WSS Ultrasonic Wind Sensor","DEIF","WSS 550 / WSS 750","wss ?[57]50",["DEIF WSS 750 wind sensor"]),
+("B15","Position reference and sensors","Anschutz Standard 22 Gyro Compass","Raytheon Anschutz","Std 22 gyro compass","std ?22|standard 22",["Raytheon Anschutz Standard 22 gyro compass"]),
+("B16","Position reference and sensors","Trimble GA830 GNSS Antenna Kit","Trimble","GA830, bracket kit","ga830",["Trimble GA830 antenna"]),
+("B17","Position reference and sensors","Kongsberg cNode Transponder","Kongsberg Maritime","cNode Micro 31-180; cNode Minis 34-180","cnode",["Kongsberg cNode Micro transponder"]),
+("B18","Position reference and sensors","Bandak LTW Taut Wire","Bandak (Kongsberg)","LTW 16B, MK15B","bandak",["Bandak MK15B taut wire"]),
+# ---- C. DP CONTROL, HMI & AUTOMATION
+("C01","DP control, HMI and automation","NAVIS Main Control Panel (MCP) with Joystick","NAVIS Engineering","MCP-06 / MCP-C06 with 2-axis joystick","mcp-?c?0?6|mcp-b|mcp-7",["NAVIS Engineering MCP DP operator panel joystick"]),
+("C02","DP control, HMI and automation","NAVIS Control Computer HT CO3","NAVIS Engineering","HT CO3; 4x RS422 PCI Express card CP114","ht ?co3|htc03|cp114",["NAVIS Engineering control computer HT CO3"]),
+("C03","DP control, HMI and automation","Hatteland Marine Display (DP Display)","Hatteland Display","19 in and 23 in DP displays, new or refurbished","hatteland",["Hatteland Display marine monitor 19 inch"]),
+("C04","DP control, HMI and automation","Marine Touch Screen Monitor 19 in","Guidance Marine","20-0310 incl. bracket and cables; MB-15H-TRS-24VDC 15in touch display","touch screen|mb-15h",["Guidance Marine 19 inch marine touch screen monitor"]),
+("C05","DP control, HMI and automation","Trackerball Mouse and Compact Keyboard","Guidance Marine","38-0037-4 / 38-0038-4","trackerball|compact keyboard",["Guidance Marine trackerball mouse compact keyboard"]),
+("C06","DP control, HMI and automation","VGA Extender over CATx","(verify)","ST-C5VRS-600 VGA extender with RS232","vga extender",["ST-C5VRS-600 VGA extender"]),
+("C07","DP control, HMI and automation","Kongsberg RMP 200 / 201-8 Remote Multiplexer Module","Kongsberg Maritime","RMP200-8 603443; RMP201-8; RMP420 thruster control card","rmp ?20[01]|rmp ?420|kongsberg module",["Kongsberg RMP 201-8 module"]),
+("C08","DP control, HMI and automation","Kongsberg cJoy Operator Terminal","Kongsberg Maritime","cJoy independent joystick operator terminal","cjoy",["Kongsberg cJoy joystick"]),
+("C09","DP control, HMI and automation","Rolls-Royce Marine Controller and I/O Modules","Rolls-Royce","RRAIO16, RRDIO15, RRRLY8, RRVIO8","rolls.?royce",["Rolls-Royce marine controller I/O module"]),
+("C10","DP control, HMI and automation","GE Fanuc Series 90-30 PLC Modules","GE Fanuc","IC693CPU374, IC693PWR331, IC693BEM331","ic693",["GE Fanuc Series 90-30 PLC IC693CPU374"]),
+("C11","DP control, HMI and automation","GE Fanuc VersaMax I/O Modules","GE Fanuc","IC200ALG240, IC200MDL940, IC200GBI001","ic200",["GE Fanuc VersaMax IC200ALG240"]),
+("C12","DP control, HMI and automation","Converteam Advanced Micro Controller (AMC)","Converteam / Power Conversion","AMC controller","advanced micro ?controller|\\bamc\\b",["Converteam Advanced Micro Controller AMC"]),
+("C13","DP control, HMI and automation","Schneider Modicon PLC (Premium / M340)","Schneider Electric","TSX P57 4634M; M340 CPU and power supply","modicon|tsxp57|tsx3721",["Schneider Modicon Premium TSX P57 4634M"]),
+("C14","DP control, HMI and automation","Siemens SIMATIC S7-1200 PLC and I/O","Siemens","CPU 1214C, SM 1223, CM 1241","s7-1200|cm 1241",["Siemens SIMATIC S7-1200 CPU 1214C"]),
+("C15","DP control, HMI and automation","Woodward easYgen-3500XT Generator Controller","Woodward","easYgen-3500XT-P1; EGCP-3","easygen|egcp",["Woodward easYgen-3500XT-P1"]),
+("C16","DP control, HMI and automation","DEIF Delomatic 3 Power Management","DEIF","Delomatic 3 full set","delomatic",["DEIF Delomatic 3"]),
+("C17","DP control, HMI and automation","Danfoss VLT and Vacon NXP Drives","Danfoss / Vacon","VLT 5000; Vacon NXP frequency converter","vacon|danfoss vlt|frequency converter",["Vacon NXP frequency converter"]),
+("C18","DP control, HMI and automation","Moxa Ethernet Switch and Serial Converter","Moxa","EDS-205A; EDS-518A; UPort 1150","moxa",["Moxa EDS-205A switch"]),
+("C19","DP control, HMI and automation","APC Smart-UPS and Eaton UPS","APC by Schneider Electric / Eaton","Smart-UPS SRT 1500VA; Smart-UPS C 1000VA; Eaton 9SX 3000i","smart-ups|eaton 9",["APC Smart-UPS SRT 1500VA"]),
+("C20","DP control, HMI and automation","Actisense NMEA Buffer / Gateway","Actisense","NMEA buffer; PRO-NDC-1E2K","actisense",["Actisense NMEA 0183 buffer"]),
+("C21","DP control, HMI and automation","Rexroth Valve Amplifier Module VT-VRRA1-537-20","Bosch Rexroth","VT-VRRA1-537-20","rexroth amplifier",["Rexroth VT-VRRA1-537-20 amplifier"]),
+("C22","DP control, HMI and automation","Omron CJ1W-MAD42 Analog I/O Module","Omron","CJ1W-MAD42","cj1w-mad42",["Omron CJ1W-MAD42"]),
+("C23","DP control, HMI and automation","Caldaro Three-Axis Joystick","Caldaro","S50JAK-ZU","s50jak|caldaro",["Caldaro S50JAK joystick"]),
+("C24","DP control, HMI and automation","Qlight Tower Light and Buzzer","Qlight","ST56 stack light; ex-proof tower light","qlight|tower light",["Qlight ST56 stack light"]),
+# ---- D. POWER, SPARES AND CONSUMABLES
+("D01","Power, spares and service kits","CyScan Service Kit","Guidance Marine","Base drive belt 455 mm / 450 mm, rotor belt, slipring assembly, gland plate seal, access cover seal, DC4 silicone compound","cyscan service|drive belt|slipring",["Guidance Marine CyScan service kit"]),
+("D02","Power, spares and service kits","RadaScan / miniRadaScan Service Kit","Guidance Marine","Service kit; radome seal; tilt optics belt; slip rings; motor; encoder PCB","radascan service|mini radascan service",["Guidance Marine RadaScan service kit"]),
+("D03","Power, spares and service kits","Mean Well DIN-Rail Power Supply","Mean Well","NDR-480-24, NDR-240-24, XDR-120E-24, EDR-120-24, DRDN20-24 redundancy module","mean ?well|ndr-|edr-|xdr-",["Mean Well NDR-480-24"]),
+("D04","Power, spares and service kits","Phoenix Contact QUINT Power Supply","Phoenix Contact","QUINT POWER 24 V DC 5 A / 10 A","quint",["Phoenix Contact QUINT POWER 24V 10A"]),
+("D05","Power, spares and service kits","Siemens SITOP Power Supply","Siemens","6EP1337-3BA00; 6EP1334-3BA00","6ep13",["Siemens SITOP 6EP1337-3BA00"]),
+("D06","Power, spares and service kits","WAGO 750 Series I/O and Power Supply","WAGO","750-626, 750-610, 750-400, 750-457, 750-483, 750-552, 787-1112","wago",["WAGO 750 series I/O module"]),
+("D07","Power, spares and service kits","Circuit Breakers, Contactors and Relays","Schneider Electric / ABB / Siemens","MCB 2P 6A / 10A; EZC100H; LC1D09; 4-change-over relays","mcb|circuit breaker|contactor|relay",["Schneider Electric Acti9 iC60N MCB 2P"]),
+("D08","Power, spares and service kits","Marine Cables and RF Assemblies","(various)","LMR-400 cable assemblies; RG223; Cat7; 3-core marine cable","lmr[- ]?400|rg223|cat ?7",["LMR-400 cable assembly N male connector"]),
+("D09","Power, spares and service kits","Marine Computers and Industrial PCs","(various)","Sonardyne marine computer kit; WAGO-I/O-IPC 758-873; marine rack computers","wago ipc|marine computer|panel computer",["WAGO 758-873 IPC"]),
+]
+out=[]
+for i,(id_,sec,name,brand,model,rx,q) in enumerate(C):
+    n=sum(1 for r in rows if re.search(rx,r))
+    out.append(dict(id=id_,section=sec,name=name,brand=brand,model_hint=model,register_rows=n,search_hints=q))
+json.dump(out,open('catalogue_v1.json','w'),indent=1)
+print(len(out))
+for o in out: print(o['id'],o['register_rows'],o['name'],'|',o['brand'])

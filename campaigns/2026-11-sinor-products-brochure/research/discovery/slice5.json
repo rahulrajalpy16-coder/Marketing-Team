@@ -1,0 +1,545 @@
+[
+ {
+  "id": "D01",
+  "status": "FOUND",
+  "brand_confirmed": "Guidance Marine (CyScan MK4 service kit, P/N 31-0362-4, as listed by a reseller)",
+  "brand_note": "Guidance Marine's own site has no service kit page; its Services page only offers CyScan MK3/MK4 Spares as a selection in a request form. Kit contents were read from a Singapore marine reseller (Swift Marine Tech Services) listing, not from Guidance Marine. Kit applies to CyScan MK4 specifically; MK3 kit not checked.",
+  "official_name": "CyScan Radar MK4 Service Kit, P/N 31-0362-4",
+  "description": "Planned-maintenance kit for the CyScan MK4 laser sensor, bundling the wear items an engineer replaces during a service: drive belts, the slipring assembly, enclosure seals and consumables. Contents and part numbers below are taken from a reseller listing of the Guidance Marine part.",
+  "features": [
+   "Base drive belt 455 mm (P/N 50-0019-3) and 450 mm (P/N 50-0018-3)",
+   "Rotor belt (P/N 50-0017-3)",
+   "Slipring assembly (P/N 39-0042-2)",
+   "Gland plate seal (53-0024-3) and access cover seal (53-0022-2)",
+   "DC4 silicone compound (98-0025-4) plus 50 g and 5 g silica gel bags"
+  ],
+  "specs": [
+   {
+    "k": "Part number",
+    "v": "31-0362-4"
+   },
+   {
+    "k": "Fits",
+    "v": "CyScan MK4"
+   },
+   {
+    "k": "Belts",
+    "v": "455 mm, 450 mm base drive; rotor belt"
+   },
+   {
+    "k": "Seals",
+    "v": "Gland plate, access cover"
+   },
+   {
+    "k": "Consumables",
+    "v": "DC4 silicone compound, silica gel 50 g and 5 g"
+   }
+  ],
+  "images": [
+   {
+    "image_url": "https://www.smtssg.com/wp-content/uploads/2021/12/Cyscan-1.jpeg",
+    "page_url": "https://www.smtssg.com/product/cyscan-radar-mk4-service-kit-p-n-31-0362-4/",
+    "width": 639,
+    "height": 1024,
+    "host": "smtssg.com",
+    "shows": "Photo of the CyScan MK4 service kit (product title alt text); content not visually checked",
+    "source_type": "distributor"
+   },
+   {
+    "image_url": "https://www.smtssg.com/wp-content/uploads/2021/12/Cyscan2.jpeg",
+    "page_url": "https://www.smtssg.com/product/cyscan-radar-mk4-service-kit-p-n-31-0362-4/",
+    "width": 0,
+    "height": 0,
+    "host": "smtssg.com",
+    "shows": "Second photo of the same kit (alt text Image 2); not visually checked",
+    "source_type": "distributor"
+   }
+  ],
+  "sources": [
+   "https://www.smtssg.com/product/cyscan-radar-mk4-service-kit-p-n-31-0362-4/",
+   "https://www.guidancemarine.com/services"
+  ],
+  "notes": "Image is a reseller photo, not Guidance Marine artwork; view it before use and consider a plain flat-lay or text-only card. Sinor's register lists no radome seal or tilt belt for CyScan, matching this kit. Reseller page shows a placeholder price which was ignored."
+ },
+ {
+  "id": "D02",
+  "status": "PARTIAL",
+  "brand_confirmed": "Guidance Marine (RadaScan / Mini RadaScan family)",
+  "brand_note": "No RadaScan service kit page found at Guidance Marine or any reseller within budget. Guidance Services page lists 'RadaScan Spares' only as a form option. Sinor's kit contents (radome seal, tilt optics belt, slip rings, motor, encoder PCB) are USER-SUPPLIED and UNVERIFIED against an OEM kit list.",
+  "official_name": "RadaScan / Mini RadaScan Service Kit (Guidance Marine)",
+  "description": "Service and spares kit for Guidance Marine's RadaScan family of microwave radar position reference sensors, supplied by Sinor for planned maintenance. RadaScan sensors measure range and bearing to responders for DP position and heading, so scheduled servicing keeps the 360 degree scanner reliable. Exact kit contents come from Sinor's job register, not an OEM page.",
+  "features": [
+   "Radome seal and tilt optics belt (Sinor register)",
+   "Slip rings, motor and encoder PCB spares (Sinor register)",
+   "For RadaScan and Mini RadaScan sensors",
+   "Parent product: 360 degree scanning, IP66, EN60945 certified (RadaScan View page)",
+   "Guidance Marine warranty: 3 years on DP sensors (RadaScan View page)"
+  ],
+  "specs": [
+   {
+    "k": "Parent sensor",
+    "v": "RadaScan View"
+   },
+   {
+    "k": "Operating range",
+    "v": "up to 600 m"
+   },
+   {
+    "k": "Close range",
+    "v": "from 10 m"
+   },
+   {
+    "k": "Enclosure",
+    "v": "IP66, EN60945"
+   },
+   {
+    "k": "Kit contents",
+    "v": "User-supplied, unverified"
+   }
+  ],
+  "images": [
+   {
+    "image_url": "https://cdn.prod.website-files.com/689473f3705477db4090f32d/693fec6b2a2ee577fd651994_Untitled%20Project%20(11)%20(2).png",
+    "page_url": "https://www.guidancemarine.com/product/radascan-r-view",
+    "width": 2700,
+    "height": 2160,
+    "host": "cdn.prod.website-files.com",
+    "shows": "Guidance Marine hero image on the RadaScan View page (page has no alt text; likely the sensor, not visually checked). Shows parent sensor, not the kit",
+    "source_type": "oem"
+   },
+   {
+    "image_url": "https://cdn.prod.website-files.com/689473f3705477db4090f32d/69774b8da9c883f96dd3bc62_Untitled%20(9).png",
+    "page_url": "https://www.guidancemarine.com/product/radascan-r-view",
+    "width": 0,
+    "height": 0,
+    "host": "cdn.prod.website-files.com",
+    "shows": "Guidance Marine card image labelled RadaScan View in the Other Products carousel; not visually checked",
+    "source_type": "oem"
+   }
+  ],
+  "sources": [
+   "https://www.guidancemarine.com/product/radascan-r-view",
+   "https://www.guidancemarine.com/services"
+  ],
+  "notes": "No kit image exists in what I found, so the card should use a sensor image or text-only. Features and specs marked as parent sensor are from the RadaScan View page, not the kit. Ask Guidance Marine or a service partner for the official kit part number and contents list."
+ },
+ {
+  "id": "D03",
+  "status": "FOUND",
+  "brand_confirmed": "Mean Well",
+  "brand_note": "Brand matches. Only NDR-480-24 was read (official datasheet). NDR-240-24, XDR-120E-24, EDR-120-24 and DRDN20-24 were not read; brochure card should name NDR-480-24 as the representative.",
+  "official_name": "Mean Well NDR-480-24 DIN Rail Power Supply (480 W, 24 V, 20 A)",
+  "description": "Slim 480 W single-output DIN rail power supply with universal AC input and built-in active PFC, designed for industrial control and factory automation cabinets. It has a metal housing, runs on free air convection and fits TS-35/7.5 or TS-35/15 rail. Protection covers short circuit, overload, over voltage and over temperature.",
+  "features": [
+   "Universal 90 to 264 VAC input with active PFC",
+   "Metal case, free air convection cooling",
+   "Short circuit, overload, over voltage and over temperature protection",
+   "UL 508 approved, industrial immunity level EN 61000-6-2",
+   "3 year warranty"
+  ],
+  "specs": [
+   {
+    "k": "Output",
+    "v": "24 V DC, 20 A, 480 W"
+   },
+   {
+    "k": "Voltage adjust",
+    "v": "24 to 28 V"
+   },
+   {
+    "k": "Efficiency (typ.)",
+    "v": "92.5 %"
+   },
+   {
+    "k": "Operating temp",
+    "v": "-20 to +70 C (derating applies)"
+   },
+   {
+    "k": "Size",
+    "v": "85.5 x 125.2 x 128.5 mm (W x H x D)"
+   }
+  ],
+  "images": [
+   {
+    "image_url": "https://mm.digikey.com/Volume0/opasdata/d220001/medias/images/2540/MFG_NDR-480.jpg",
+    "page_url": "https://www.digikey.com/en/products/detail/mean-well-usa-inc/NDR-480-24/7705224",
+    "width": 640,
+    "height": 640,
+    "host": "mm.digikey.com",
+    "shows": "Manufacturer-supplied (MFG_ prefix) product photo of NDR-480 per search result title NDR-480-24",
+    "source_type": "distributor"
+   },
+   {
+    "image_url": "https://www.omc-stepperonline.com/image/cache/catalog/power-supply/MEANWELL/NDR-480-24-MEANWELL-480W-24VDC-20A-115-230VAC-DIN-Rail-Power-Supply-800x800.jpg",
+    "page_url": "https://www.omc-stepperonline.com/ndr-480-24-mean-well-480w-24vdc-20a-115-230vac-din-rail-power-supply-ndr-480-24",
+    "width": 800,
+    "height": 800,
+    "host": "omc-stepperonline.com",
+    "shows": "Retail photo of NDR-480-24 (search result title); backup only",
+    "source_type": "distributor"
+   }
+  ],
+  "sources": [
+   "https://www.meanwell.com/Upload/PDF/NDR-480/NDR-480-SPEC.PDF"
+  ],
+  "notes": "No Mean Well-hosted image URL surfaced (datasheet PDF gave none; product search page scrape returned no images). Digikey image is first choice. Datasheet text was read in full."
+ },
+ {
+  "id": "D04",
+  "status": "FOUND",
+  "brand_confirmed": "Phoenix Contact",
+  "brand_note": "Brand matches. Read QUINT-PS/1AC/24DC/10 (item 2866763, 24 V / 10 A). Phoenix marks it for existing designs and recommends QUINT4-PS/1AC/24DC/10 (2904601) for new projects. The 5 A model (2866750) was seen only as a link, not read.",
+  "official_name": "Phoenix Contact QUINT POWER QUINT-PS/1AC/24DC/10 (2866763)",
+  "description": "Primary-switched DIN rail power supply from the QUINT POWER family, rated 24 V DC at 10 A with adjustable output. Its SFB technology trips standard miniature circuit breakers quickly, and POWER BOOST lets it start heavy loads. It carries multiple shipbuilding approvals and monitors its own function to flag critical states early.",
+  "features": [
+   "SFB technology: 60 A for 12 ms to trip standard MCBs selectively",
+   "Static POWER BOOST: 15 A permanent (-25 to 40 C)",
+   "Preventive function monitoring with DC OK signals",
+   "Parallel connection for redundancy or more capacity",
+   "Shipbuilding approvals: DNV GL, ABS, LR, RINA, NK, BV"
+  ],
+  "specs": [
+   {
+    "k": "Output",
+    "v": "24 V DC, 10 A (240 W)"
+   },
+   {
+    "k": "Output adjust",
+    "v": "18 to 29.5 V DC"
+   },
+   {
+    "k": "Input",
+    "v": "100 to 240 V AC, 45 to 65 Hz"
+   },
+   {
+    "k": "Temperature",
+    "v": "-25 to +70 C, derate above 60 C"
+   },
+   {
+    "k": "Size",
+    "v": "60 x 130 x 125 mm (W x H x D)"
+   }
+  ],
+  "images": [
+   {
+    "image_url": "https://caas.phoenixcontact.com/caas/v1/stable/media/113376/full/b1500?format=jpg",
+    "page_url": "https://www.phoenixcontact.com/en-us/products/power-supply-quint-ps1ac24dc10-2866763",
+    "width": 1500,
+    "height": 1500,
+    "host": "caas.phoenixcontact.com",
+    "shows": "Product photo, power supply QUINT-PS/1AC/24DC/10",
+    "source_type": "oem"
+   },
+   {
+    "image_url": "https://caas.phoenixcontact.com/caas/v1/stable/media/52202/full/b1500?format=jpg",
+    "page_url": "https://www.phoenixcontact.com/en-us/products/power-supply-quint-ps1ac24dc10-2866763",
+    "width": 1500,
+    "height": 1500,
+    "host": "caas.phoenixcontact.com",
+    "shows": "Column photo, same unit (alt text Column photo)",
+    "source_type": "oem"
+   },
+   {
+    "image_url": "https://caas.phoenixcontact.com/caas/v1/stable/media/465738/full/b1500?format=jpg",
+    "page_url": "https://www.phoenixcontact.com/en-ca/products/power-supply-unit-quint4-ps-1ac-24dc-10-f-1672244",
+    "width": 1500,
+    "height": 1500,
+    "host": "caas.phoenixcontact.com",
+    "shows": "QUINT4-PS/1AC/24DC/10/+/F (1672244), newer generation; use only if Sinor supplies QUINT4",
+    "source_type": "oem"
+   }
+  ],
+  "sources": [
+   "https://www.phoenixcontact.com/en-us/products/power-supply-quint-ps1ac24dc10-2866763"
+  ],
+  "notes": "Images are sizes up to 1500 px (image URL says b1500). Confirm with Sinor whether supplied units are Gen 3 (2866763) or QUINT4."
+ },
+ {
+  "id": "D05",
+  "status": "FOUND",
+  "brand_confirmed": "Siemens (SITOP PSU100M)",
+  "brand_note": "6EP1337-3BA00 is SITOP PSU100M 40 A, 24 V DC. Siemens lists it as phased out since 06/2017 with successor 6EP3337-8SB00-0AY0, so the card should say legacy or replacement part. 6EP1334-3BA00 was not read.",
+  "official_name": "Siemens SITOP PSU100M 6EP1337-3BA00 (24 V DC / 40 A)",
+  "description": "SITOP PSU100M is a stabilised modular power supply with 24 V DC output at 40 A, fed from 120/230 V AC. Siemens has phased this article out and names 6EP3337-8SB00-0AY0 as the successor, so it is mainly relevant as a like-for-like spare for installed systems. Full electrical data sits in the Siemens data sheet, which was not read.",
+  "features": [
+   "Stabilised 24 V DC output, 40 A",
+   "Input 120/230 V AC",
+   "Part of the SITOP modular 1-phase / 2-phase range",
+   "Siemens lifecycle status: Phase Out Announce",
+   "Successor article: 6EP3337-8SB00-0AY0"
+  ],
+  "specs": [
+   {
+    "k": "Output",
+    "v": "24 V DC / 40 A"
+   },
+   {
+    "k": "Input",
+    "v": "120/230 V AC"
+   },
+   {
+    "k": "Net weight",
+    "v": "2.9 kg"
+   },
+   {
+    "k": "Packaging",
+    "v": "28 x 15 x 15 cm"
+   },
+   {
+    "k": "Country of origin",
+    "v": "Romania"
+   }
+  ],
+  "images": [
+   {
+    "image_url": "https://mall.industry.siemens.com/mall/collaterals/files/207/jpg/06/89/P_KT01_XX_01193i.jpg",
+    "page_url": "https://sieportal.siemens.com/en-za/products-services/detail/6EP1337-3BA00?tree=CatalogTree",
+    "width": 0,
+    "height": 0,
+    "host": "mall.industry.siemens.com",
+    "shows": "Siemens catalogue product image for 6EP1337-3BA00 (image alt text is the article number)",
+    "source_type": "oem"
+   }
+  ],
+  "sources": [
+   "https://sieportal.siemens.com/en-za/products-services/detail/6EP1337-3BA00?tree=CatalogTree"
+  ],
+  "notes": "Image dimensions unknown (not downloadable); Siemens og:image. Datasheet link on the page: mall.industry.siemens.com/teddatasheet/?format=PDF&mlfbs=6EP1337-3BA00 (not read), so efficiency and dimensions are not stated."
+ },
+ {
+  "id": "D06",
+  "status": "FOUND",
+  "brand_confirmed": "WAGO",
+  "brand_note": "Brand matches. Only 750-400 (2-channel 24 V DC digital input) was read as the representative 750 module; 750-626, 750-610, 750-457, 750-483, 750-552 and 787-1112 were not read. The image shows a 750-400 module.",
+  "official_name": "WAGO I/O System 750, item 750-400 (2-channel digital input, 24 VDC, 3 ms)",
+  "description": "WAGO 750-400 is a 12 mm wide I/O module for the 750 system that takes 24 V DC digital signals from two sensors. It plugs onto the DIN rail node, passes field power through power jumper contacts and shows input status on LEDs. WAGO lists marine-application EMC conformity for this module.",
+  "features": [
+   "2 digital inputs, 24 VDC, 3 ms input filter",
+   "2-, 3- or 4-wire sensor connection",
+   "CAGE CLAMP connection, 0.08 to 2.5 sq mm",
+   "Status LEDs per channel, 500 V system to field isolation",
+   "EMC per EN 61000-6-2 and 61000-6-4, marine applications"
+  ],
+  "specs": [
+   {
+    "k": "Channels",
+    "v": "2 x 24 VDC, 4.5 mA typ."
+   },
+   {
+    "k": "Width",
+    "v": "12 mm"
+   },
+   {
+    "k": "Operating temp",
+    "v": "0 to +55 C"
+   },
+   {
+    "k": "Protection",
+    "v": "IP20"
+   },
+   {
+    "k": "Weight",
+    "v": "45.8 g"
+   }
+  ],
+  "images": [
+   {
+    "image_url": "https://www.wago.com/medias/1024-020000010000ef05000100b6-EN.jpg?context=bWFzdGVyfGltYWdlc3w1MjcwNnxpbWFnZS9qcGVnfGFHSmxMMmhrTVM4eE5qVTNNalUwT0RnME1UVXdNaTh4TURJMFh6QXlNREF3TURBeE1EQXdNR1ZtTURVd01EQXhNREJpTmw5RlRpNXFjR2N8NDgzOWE3MDdkYzk1YWVmZjdjZDVkZWZkODkyNDZkNWFhNThkY2VhMmYwZWY5MmQwZjJlMGMyYjQ1OGQzMmE2Yw",
+    "page_url": "https://www.wago.com/us/controllers-bus-couplers-i-o/2-channel-digital-input/p/750-400",
+    "width": 1024,
+    "height": 0,
+    "host": "www.wago.com",
+    "shows": "Image of 2-channel digital input 750-400 (alt text), EN variant",
+    "source_type": "oem"
+   },
+   {
+    "image_url": "https://www.wago.com/medias/1024-0200001100028e03000100b6-DE.jpg?context=bWFzdGVyfGltYWdlc3w4NTYyN3xpbWFnZS9qcGVnfGFHSTVMMmc0TXk4eE5qVTFOVGt5T0RBNU1qY3dNaTh4TURJMFh6QXlNREF3TURFeE1EQXdNamhsTURNd01EQXhNREJpTmw5RVJTNXFjR2N8NTQ0YjhhZTk5M2YzZDQ3MmM1NjFiOGFjNjhhYjYwMzJlYTY2MDgyOTVkMWEzM2UzODI0NTAyZjVhNjM1NGRmMw",
+    "page_url": "https://www.wago.com/us/controllers-bus-couplers-i-o/2-channel-digital-input/p/750-400",
+    "width": 1024,
+    "height": 0,
+    "host": "www.wago.com",
+    "shows": "Second image of 750-400 (DE variant); may show a different angle",
+    "source_type": "oem"
+   }
+  ],
+  "sources": [
+   "https://www.wago.com/us/controllers-bus-couplers-i-o/2-channel-digital-input/p/750-400"
+  ],
+  "notes": "Width 1024 is read from the file name prefix, height unknown. The WAGO URLs carry a long context token and must be used verbatim. Order of images: EN first, DE second."
+ },
+ {
+  "id": "D07",
+  "status": "FOUND",
+  "brand_confirmed": "Schneider Electric (representative); ABB and Siemens not researched",
+  "brand_note": "Catalogue brand 'Schneider Electric / ABB / Siemens' is a mix. Representative image and facts are Schneider Electric Acti9 iC60N 2P A9F74202 (2 A, C curve). Sinor's 6 A and 10 A 2-pole MCBs are the same family but other ratings; EZC100H (Schneider ComPact EZC) and LC1D09 (Schneider TeSys D contactor) were not researched.",
+  "official_name": "Schneider Electric Acti9 iC60N miniature circuit breaker, 2P (A9F74202 shown)",
+  "description": "Acti9 iC60N is a two-pole thermal-magnetic miniature circuit breaker for AC and DC distribution, clipping onto a 35 mm DIN rail. The page read covers the 2 A, C curve version, which carries a 50 kA breaking rating to IEC/EN 60947-2. Other current ratings share the same housing width.",
+  "features": [
+   "Thermal-magnetic trip unit, curve C",
+   "2 protected poles, clips on 35 mm DIN rail",
+   "Compatible with comb busbars, top or bottom",
+   "Suitable for AC and DC networks",
+   "Vigi iC60 residual current add-on compatible"
+  ],
+  "specs": [
+   {
+    "k": "Rated current",
+    "v": "2 A (this part)"
+   },
+   {
+    "k": "Poles",
+    "v": "2P"
+   },
+   {
+    "k": "Breaking capacity",
+    "v": "50 kA Icu at 220-240 V AC (IEC/EN 60947-2)"
+   },
+   {
+    "k": "Width",
+    "v": "36 mm"
+   },
+   {
+    "k": "Mechanical durability",
+    "v": "20000 cycles"
+   }
+  ],
+  "images": [
+   {
+    "image_url": "https://download.se.com/files?p_Doc_Ref=A9F74202_Image&p_File_Type=rendition_369_jpg&default_image=DefaultProductImage.png",
+    "page_url": "https://www.se.com/hk/en/product/A9F74202/miniature-circuit-breaker-mcb-acti9-ic60n-2p-2a-c-curve-6000a-iec-en-608981-50ka-iec-en-609472/",
+    "width": 369,
+    "height": 369,
+    "host": "download.se.com",
+    "shows": "Schneider product image of A9F74202 Acti9 iC60N 2P 2A (file name is the part number)",
+    "source_type": "oem"
+   }
+  ],
+  "sources": [
+   "https://www.se.com/hk/en/product/A9F74202/miniature-circuit-breaker-mcb-acti9-ic60n-2p-2a-c-curve-6000a-iec-en-608981-50ka-iec-en-609472/"
+  ],
+  "notes": "IMAGE SHOWS: Schneider Electric Acti9 iC60N 2P 2A C curve, A9F74202. Image is small (369 px). A 64 px gif rendition also exists. Verify the HK page is acceptable; the same image ID likely serves other se.com country pages."
+ },
+ {
+  "id": "D08",
+  "status": "FOUND",
+  "brand_confirmed": "Pasternack (assembly maker); LMR-400 is a Times Microwave cable",
+  "brand_note": "Catalogue brand is '(various)'. Representative: Pasternack PE3C0105, N male to N male with LMR-400 coax and Times connectors. LMR is a Times Microwave trademark. RG223, Cat7 and 3-core marine cable were not researched. LMR-400 itself is not marine-rated on this page.",
+  "official_name": "Pasternack PE3C0105 N Male to N Male Cable Assembly, LMR-400 (Times Microwave connectors)",
+  "description": "Low-loss 50 ohm coaxial jumper with a type N male connector on each end, built on LMR-400 cable and Times Microwave connectors. It is offered in standard lengths from 12 to 60 inches or any custom length. Maximum VSWR is 1.4:1.",
+  "features": [
+   "50 ohm LMR-400 coax, N male both ends, straight",
+   "Times Microwave connectors",
+   "Maximum VSWR 1.4:1",
+   "Standard lengths 12 to 60 in, custom lengths available",
+   "Datasheet PE3C0105.pdf on the Pasternack page"
+  ],
+  "specs": [
+   {
+    "k": "Cable",
+    "v": "LMR-400, 50 ohm"
+   },
+   {
+    "k": "Connectors",
+    "v": "N male to N male, straight"
+   },
+   {
+    "k": "Max VSWR",
+    "v": "1.4:1"
+   },
+   {
+    "k": "Standard lengths",
+    "v": "12, 24, 36, 48, 60 in"
+   },
+   {
+    "k": "Part number",
+    "v": "PE3C0105"
+   }
+  ],
+  "images": [
+   {
+    "image_url": "https://www.pasternack.com/images/Product/large/PE3C0105.jpg",
+    "page_url": "https://www.pasternack.com/n-male-n-male-lmr400-cable-assembly-pe3c0105-p.aspx",
+    "width": 500,
+    "height": 334,
+    "host": "www.pasternack.com",
+    "shows": "N Male to N Male cable using LMR-400 coax and Times connectors (alt text), PE3C0105",
+    "source_type": "oem"
+   }
+  ],
+  "sources": [
+   "https://www.pasternack.com/n-male-n-male-lmr400-cable-assembly-pe3c0105-p.aspx"
+  ],
+  "notes": "IMAGE SHOWS: Pasternack PE3C0105 LMR-400 N-male to N-male assembly. Pasternack is the assembly maker, not Sinor's actual supplier. Image is 500 px wide, small for print. Do not imply this is a marine-grade cable."
+ },
+ {
+  "id": "D09",
+  "status": "PARTIAL",
+  "brand_confirmed": "WAGO (I/O-IPC 758-873), via resellers only",
+  "brand_note": "WAGO's own product page for 758-873 returns 410 Gone (discontinued), so no OEM page or image was found. Description and image come from reseller pages (dcssaul.com, auto2mation.com, aeliyamarinetech.com), one of which has SEO-style text. Sonardyne marine computer kits and marine rack computers were not researched.",
+  "official_name": "WAGO I/O-IPC 758-873",
+  "description": "WAGO I/O-IPC 758-873 is a DIN-rail industrial PC from the WAGO I/O system 758 line, used as the controller head for 750-series I/O modules. Resellers describe it with dual Ethernet, a CompactFlash slot, USB and RS-232 and a 24 V DC supply. Treat these details as unverified until checked against a WAGO manual.",
+  "features": [
+   "DIN-rail mounted industrial PC controller (reseller)",
+   "Controls WAGO 750/753 I/O modules over the internal bus (reseller)",
+   "Dual Ethernet and CompactFlash storage (reseller)",
+   "Listed on resellers for offshore support vessel DP controller use",
+   "WAGO 758 series family confirmed on WAGO documentation index"
+  ],
+  "specs": [
+   {
+    "k": "Model",
+    "v": "758-873"
+   },
+   {
+    "k": "Supply",
+    "v": "24 V DC (reseller, unverified)"
+   },
+   {
+    "k": "Interfaces",
+    "v": "2 x RJ45, RS-232, USB (reseller, unverified)"
+   },
+   {
+    "k": "Storage",
+    "v": "CompactFlash (reseller, unverified)"
+   },
+   {
+    "k": "Temperature",
+    "v": "0 to +55 C (reseller, unverified)"
+   }
+  ],
+  "images": [
+   {
+    "image_url": "https://cdn11.bigcommerce.com/s-o0ql33eyfo/images/stencil/1280x1280/products/4779/1894844/dsc_0225_8__74298.1766048210.jpg?c=1",
+    "page_url": "https://auto2mation.com/wago-i-o-ipc-758-873-system.html",
+    "width": 1280,
+    "height": 850,
+    "host": "cdn11.bigcommerce.com",
+    "shows": "Reseller photo titled Wago-i/o-ipc 758-873 system; not visually checked",
+    "source_type": "distributor"
+   },
+   {
+    "image_url": "https://aeliyamarinetech.com/cdn/shop/products/dsc_0223_9.jpg?v=1699062102&width=720",
+    "page_url": "https://aeliyamarinetech.com/products/wago-i-o-ipc-758-873-system",
+    "width": 720,
+    "height": 478,
+    "host": "aeliyamarinetech.com",
+    "shows": "Reseller photo titled Wago-i/o-ipc 758-873 system; not visually checked",
+    "source_type": "distributor"
+   },
+   {
+    "image_url": "https://www.dcssaul.com/wp-content/uploads/2026/08/c449f13981e4845e095b.jpg",
+    "page_url": "https://www.dcssaul.com/products/other/wago-758-873-2/",
+    "width": 765,
+    "height": 1024,
+    "host": "dcssaul.com",
+    "shows": "Product image on reseller page, alt text 758-873; not visually checked",
+    "source_type": "distributor"
+   }
+  ],
+  "sources": [
+   "https://www.dcssaul.com/products/other/wago-758-873-2/",
+   "https://www.wago.com/global/p/758-873 (returned 410)"
+  ],
+  "notes": "Reseller photos are surplus-unit photos with possible labels or watermarks; review before use. Recommend asking Sinor for its own photo of the unit or using a generic icon. Product is discontinued per WAGO 410."
+ }
+]

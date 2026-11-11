@@ -1,0 +1,757 @@
+[
+ {
+  "id": "A01",
+  "status": "FOUND",
+  "brand_confirmed": "Guidance Marine",
+  "brand_note": "Confirmed. Catalogue hint matches. Processor, monitor and part numbers (10-0183 etc.) not on the page; not verified.",
+  "official_name": "RadaScan View",
+  "description": "RadaScan View is a radar-based DP reference sensor that measures range and bearing to intelligent microwave responders to fix vessel position and heading. It adds a radar-style image so operators can see responder locations relative to nearby structures, including inside the 500 m zone. An optional View Dashboard combines positioning and radar on one touchscreen interface.",
+  "features": [
+   "Radar-style situational awareness plus DP reference in one display",
+   "Automatic responder detection, all weather operation",
+   "Navigable off 2 responders at once, giving structure heading",
+   "Optional touchscreen View Dashboard with early warning if a responder is moved",
+   "Interfaces to all known DP systems"
+  ],
+  "specs": [
+   {
+    "k": "Operating range",
+    "v": "up to 600 m"
+   },
+   {
+    "k": "Close range",
+    "v": "from 10 m"
+   },
+   {
+    "k": "Scanning",
+    "v": "full 360 degrees"
+   },
+   {
+    "k": "Ingress / standard",
+    "v": "IP66, EN60945"
+   },
+   {
+    "k": "Warranty",
+    "v": "3 years standard"
+   }
+  ],
+  "images": [
+   {
+    "image_url": "https://cdn.prod.website-files.com/689473f3705477db4090f32d/693fec6b2a2ee577fd651994_Untitled%20Project%20(11)%20(2).png",
+    "page_url": "https://www.guidancemarine.com/product/radascan-r-view",
+    "width": 2700,
+    "height": 2160,
+    "host": "cdn.prod.website-files.com (Guidance Marine site CDN)",
+    "shows": "RadaScan View product render, page title image",
+    "source_type": "oem"
+   },
+   {
+    "image_url": "https://cdn.prod.website-files.com/689473f3705477db4090f32d/69774b8da9c883f96dd3bc62_Untitled%20(9).png",
+    "page_url": "https://www.guidancemarine.com/product/radascan-r-view",
+    "width": 2700,
+    "height": 2160,
+    "host": "cdn.prod.website-files.com (Guidance Marine site CDN)",
+    "shows": "RadaScan View card image on Guidance site",
+    "source_type": "oem"
+   }
+  ],
+  "sources": [
+   "https://www.guidancemarine.com/product/radascan-r-view"
+  ],
+  "notes": ""
+ },
+ {
+  "id": "A02",
+  "status": "FOUND",
+  "brand_confirmed": "Guidance Marine",
+  "brand_note": "Confirmed maker. Note 'CyScan Mk4' and 'CyScan AS' are different generations: Guidance describes AS as the current sensor with upgrade kits from Mk 2/3/4. Part numbers 20-0252 / 20-0306 not on page.",
+  "official_name": "CyScan AS (Absolute Signature)",
+  "description": "CyScan AS is a laser position reference sensor for DP that measures range and bearing to retro-reflective prisms to calculate vessel position and heading. Its Absolute Signature feature positively identifies AS prisms to improve target acquisition and tracking. It can add targets to a multi-target session without interrupting the DP feed.",
+  "features": [
+   "Positive identification of AS prisms; also detects non-AS reflectors",
+   "Multi-target tracking gives relative heading",
+   "Automatic wave compensation, twin laser pulse rate 30 kHz",
+   "Plug and play upgrade from CyScan Mk 2/3/4",
+   "Touchscreen Dashboard and PC commissioning tool"
+  ],
+  "specs": [
+   {
+    "k": "Operating range",
+    "v": "up to 2500 m"
+   },
+   {
+    "k": "Close range",
+    "v": "from 10 m"
+   },
+   {
+    "k": "Scanning",
+    "v": "full 360 degrees"
+   },
+   {
+    "k": "Targets",
+    "v": "navigates off 9 prisms (can detect 30)"
+   },
+   {
+    "k": "Outputs",
+    "v": "Ethernet and/or serial"
+   }
+  ],
+  "images": [
+   {
+    "image_url": "https://cdn.prod.website-files.com/689473f3705477db4090f32d/69774c8900748437cb7fdebf_Untitled%20(10).png",
+    "page_url": "https://www.guidancemarine.com/product/cyscan-r-as",
+    "width": 2795,
+    "height": 2160,
+    "host": "cdn.prod.website-files.com (Guidance Marine site CDN)",
+    "shows": "CyScan AS sensor product render",
+    "source_type": "oem"
+   },
+   {
+    "image_url": "https://cdn.prod.website-files.com/689473f3705477db4090f32d/68aedf02fe30cb4ca29dd05a_Frame%2084.jpg",
+    "page_url": "https://www.guidancemarine.com/product/cyscan-r-as",
+    "width": 3606,
+    "height": 1799,
+    "host": "cdn.prod.website-files.com (Guidance Marine site CDN)",
+    "shows": "AS Prism section graphic on CyScan AS page (prisms)",
+    "source_type": "oem"
+   }
+  ],
+  "sources": [
+   "https://www.guidancemarine.com/product/cyscan-r-as"
+  ],
+  "notes": ""
+ },
+ {
+  "id": "A03",
+  "status": "PARTIAL",
+  "brand_confirmed": "Guidance Marine",
+  "brand_note": "Maker confirmed (Mini RadaScan brochure). The '-S' suffix and 'mini target series 2 transponder' are not found in any page read; unverified. Guidance's current site lists 'Mini RadaScan' only in the About page text, no product page read.",
+  "official_name": "Mini RadaScan",
+  "description": "Mini RadaScan is a radar-based position reference sensor for DP that measures range and bearing to uniquely coded microwave responders to calculate vessel position and heading. It works in all weather and ignores clutter from the platform, seeing only responder returns. The system comprises the sensor, responders and dashboard software.",
+  "features": [
+   "Automatic target detection and full 360 degree scanning",
+   "Single or multiple responder capability",
+   "Coded responders give immunity to false reflections",
+   "Interfaces via Ethernet and RS422",
+   "CE certified and FCC approved (per brochure summary)"
+  ],
+  "specs": [
+   {
+    "k": "Operating range",
+    "v": "up to 600 m"
+   },
+   {
+    "k": "Technology",
+    "v": "FMCW, 9.2 to 9.3 GHz band"
+   },
+   {
+    "k": "Max power output",
+    "v": "3 W"
+   },
+   {
+    "k": "Temperature",
+    "v": "-25 C to +55 C"
+   },
+   {
+    "k": "Ingress",
+    "v": "IP66"
+   }
+  ],
+  "images": [
+   {
+    "image_url": "https://dvzpv6x5302g1.cloudfront.net/AcuCustom/Sitename/DAM/181/GM_mini_RadaScan_and_CyScanwebzhgf1_Main.png",
+    "page_url": "https://www.rivieramm.com/news-content-hub/news-content-hub/owners-focus-on-technical-development-corporate-growth-86152",
+    "width": 1200,
+    "height": 675,
+    "host": "dvzpv6x5302g1.cloudfront.net (Riviera Maritime Media)",
+    "shows": "Mini RadaScan and CyScan product photo in trade press article; third party, may carry credit",
+    "source_type": "catalogue"
+   },
+   {
+    "image_url": "https://img.nauticexpo.com/pdf/repository_ne/32289/mini-radascan-brochure-56729_1mg.jpg",
+    "page_url": "https://pdf.nauticexpo.com/pdf/guidance-navigation-limited/mini-radascan-brochure/32289-56729.html",
+    "width": 353,
+    "height": 500,
+    "host": "img.nauticexpo.com",
+    "shows": "Cover of the Guidance Mini RadaScan brochure (low resolution)",
+    "source_type": "catalogue"
+   }
+  ],
+  "sources": [
+   "https://pdf.nauticexpo.com/pdf/guidance-navigation-limited/mini-radascan-brochure/32289-56729.html"
+  ],
+  "notes": "No OEM-site image of the mini sensor found within budget; Guidance website has no dedicated Mini RadaScan page in the pages read."
+ },
+ {
+  "id": "A04",
+  "status": "FOUND",
+  "brand_confirmed": "Guidance Marine",
+  "brand_note": "Confirmed. Part numbers 10-0187 / 20-0253 / 20-0337 not on page.",
+  "official_name": "SceneScan",
+  "description": "SceneScan is a targetless laser position reference sensor that tracks by matching live scans of the surroundings against a map built from earlier observations, so no reflectors are needed. It creates a virtual reference point from which range, bearing and heading are measured. It is aimed at close-proximity work such as offshore wind service vessels and platform support.",
+  "features": [
+   "No targets or prisms, so no target maintenance",
+   "Automatic reference point selection (SLAM based)",
+   "Positions off the whole scene, not a discrete target",
+   "Modular rotor design for in-vessel servicing",
+   "Won DP Award 2020 (per site)"
+  ],
+  "specs": [
+   {
+    "k": "Range",
+    "v": "10 m to 200 m"
+   },
+   {
+    "k": "Scanning",
+    "v": "full 360 degrees"
+   },
+   {
+    "k": "Laser class",
+    "v": "Class 1M"
+   },
+   {
+    "k": "Warranty",
+    "v": "3 years standard"
+   }
+  ],
+  "images": [
+   {
+    "image_url": "https://cdn.prod.website-files.com/689473f3705477db4090f32d/6a3116ad4d8173409050cd66_SceneScan%201.png",
+    "page_url": "https://www.guidancemarine.com/product/scenescan",
+    "width": 2795,
+    "height": 2160,
+    "host": "cdn.prod.website-files.com (Guidance Marine site CDN)",
+    "shows": "SceneScan sensor product render (named SceneScan 1.png)",
+    "source_type": "oem"
+   }
+  ],
+  "sources": [
+   "https://www.guidancemarine.com/product/scenescan"
+  ],
+  "notes": ""
+ },
+ {
+  "id": "A05",
+  "status": "FOUND",
+  "brand_confirmed": "Guidance Marine",
+  "brand_note": "Confirmed Guidance Marine (Artemis 6S page on guidancemarine.com, 'builds on over 30 years of Artemis pedigree', compatible with legacy Mk5). Current product is named 'Artemis 6S'; catalogue says 'Mk6'. The Mk6 name appears only in a truncated catalogue snippet, so treat Mk6 = 6S as likely but not stated in full on a page read.",
+  "official_name": "Artemis 6S",
+  "description": "Artemis 6S is a long-range microwave relative position reference for DP, measuring distance and angle between two Artemis stations, one fixed and one on the mobile vessel. It is typically used for offloading between shuttle tankers and FPSOs. The solid-state design and new dashboard build on earlier Artemis generations, and stations and beacons stay compatible with legacy Mk5 systems.",
+  "features": [
+   "Solid-state microwave design with next-gen digital signalling",
+   "Automatic beacon and sensor acquisition",
+   "Overcomes GNSS scintillation, all weather operation",
+   "Interchangeable antennae and antenna units",
+   "Compatible with legacy Mk5 stations and beacons"
+  ],
+  "specs": [
+   {
+    "k": "Operating range",
+    "v": "10 m to 10,000 m"
+   },
+   {
+    "k": "Scanning",
+    "v": "full 360 degrees"
+   },
+   {
+    "k": "Ingress",
+    "v": "IPX6"
+   },
+   {
+    "k": "RF immunity",
+    "v": "resistant to S and X band when installed correctly"
+   }
+  ],
+  "images": [
+   {
+    "image_url": "https://cdn.prod.website-files.com/689473f3705477db4090f32d/69774c2ae07008ba8c5175de_Untitled-2%20(3).png",
+    "page_url": "https://www.guidancemarine.com/product/artemis",
+    "width": 1044,
+    "height": 1024,
+    "host": "cdn.prod.website-files.com (Guidance Marine site CDN)",
+    "shows": "Artemis 6S sensor card image",
+    "source_type": "oem"
+   },
+   {
+    "image_url": "https://cdn.prod.website-files.com/689473f3705477db4090f32d/696e4c37a91bd5f56b9b1722_Artemis%201%20(1).png",
+    "page_url": "https://www.guidancemarine.com/product/artemis",
+    "width": 0,
+    "height": 0,
+    "host": "cdn.prod.website-files.com (Guidance Marine site CDN)",
+    "shows": "Artemis 6S page og:image",
+    "source_type": "oem"
+   }
+  ],
+  "sources": [
+   "https://www.guidancemarine.com/product/artemis"
+  ],
+  "notes": ""
+ },
+ {
+  "id": "A06",
+  "status": "FOUND",
+  "brand_confirmed": "Kongsberg Maritime",
+  "brand_note": "Confirmed on kongsberg.com. 'RADius 1000 processing unit' is not listed in the Kongsberg range page read (range shows 550X, 700, 700X, 800X, 2000, EX Battery); a distributor page mentions RADius 1002. Treat 1000 as unverified.",
+  "official_name": "RADius 2000 relative positioning reference system",
+  "description": "RADius is a short-range relative positioning system based on radar principles, built from solid-state components for DP work close to installations. It measures range and bearing to transponders and lets several vessels use the same transponders at once. Multiple sensor heads can be fitted for up to 360 degree coverage.",
+  "features": [
+   "No moving parts, no regular maintenance",
+   "Automatic search for transponders, multi-vessel use",
+   "Multiple sensor heads for 100 to 360 degree coverage",
+   "Operates in all weather conditions",
+   "ATEX, IECEx, Inmetro and UL certified transponders available"
+  ],
+  "specs": [
+   {
+    "k": "Range",
+    "v": "up to 550 m"
+   },
+   {
+    "k": "Vertical sector",
+    "v": "100 degrees"
+   },
+   {
+    "k": "Coverage",
+    "v": "100 to 360 degrees with multiple heads"
+   },
+   {
+    "k": "Transponders",
+    "v": "550X, 700, 700X, 800X"
+   }
+  ],
+  "images": [
+   {
+    "image_url": "https://www.kongsberg.com/globalassets/kongsberg/1.-what-we-do/2.-ocean-space/6.-navigation--positioning/radius/heroimg_radius_1440x900.jpg?width=1440&height=864&quality=99&rxy=0.51",
+    "page_url": "https://www.kongsberg.com/what-we-do/ocean-space/navigation-positioning/radius-product-range/radius-2000/",
+    "width": 1440,
+    "height": 864,
+    "host": "www.kongsberg.com",
+    "shows": "RADius page hero image (content not verified)",
+    "source_type": "oem"
+   },
+   {
+    "image_url": "https://www.kongsberg.com/globalassets/kongsberg/1.-what-we-do/2.-ocean-space/6.-navigation--positioning/radius/radius_2000_333x333.png?width=333",
+    "page_url": "https://www.kongsberg.com/what-we-do/ocean-space/navigation-positioning/radius-product-range/radius-700x/",
+    "width": 333,
+    "height": 333,
+    "host": "www.kongsberg.com",
+    "shows": "RADius 2000 product tile",
+    "source_type": "oem"
+   }
+  ],
+  "sources": [
+   "https://www.kongsberg.com/what-we-do/ocean-space/navigation-positioning/radius-product-range/radius-2000/",
+   "https://www.kongsberg.com/what-we-do/ocean-space/navigation-positioning/radius-product-range/radius-700x/"
+  ],
+  "notes": ""
+ },
+ {
+  "id": "A07",
+  "status": "FOUND",
+  "brand_confirmed": "MDL (Fanbeam); site run by approved partner Techmak",
+  "brand_note": "MDL as maker is from search snippets of an MDL datasheet (Fanbeam 4.2) and a presentation; the fanbeam.com page read does not name MDL and shows Techmak Engineering Ltd branding in image alt text (approved sales and support). Fanbeam 5 confirmed as current model. Refurbished/reconditioned package is offered on fanbeam.com.",
+  "official_name": "Fanbeam 5",
+  "description": "Fanbeam 5 is a time-of-flight laser position reference system that measures vessel position relative to custom reflectors fixed to rigs, installations or other vessels, and passes data to the DP system. The Fanbeam Controller 4.0 software rejects false observations from personnel and reflective surfaces. Tube reflectors give low-cost short-range 360 degree cover and prism clusters give longer range.",
+  "features": [
+   "Software rejects false observations, range cut-offs can be pre-set",
+   "Auto-level filtering and operator laser tilt control",
+   "Independent redundancy against DGPS and other references",
+   "Standard, reconditioned and unit-only packages offered",
+   "Recognised by classification bodies and standards"
+  ],
+  "specs": [
+   {
+    "k": "Prism cluster range",
+    "v": "up to 2000 m"
+   },
+   {
+    "k": "Update rate",
+    "v": "typically at least 2 readings per second"
+   },
+   {
+    "k": "Pulse density",
+    "v": "min 150 pulses per degree of horizontal rotation"
+   },
+   {
+    "k": "Controller software",
+    "v": "Fanbeam Controller 4.0"
+   }
+  ],
+  "images": [
+   {
+    "image_url": "https://www.fanbeam.com/wp-content/uploads/2019/08/Techmak-Fanbeam-Dynamic-Positioning-Sensor-Services-Sales-Repair-Calibration-Rental-Support-45-600.jpeg",
+    "page_url": "https://www.fanbeam.com/fanbeam/new-systems-upgrades/",
+    "width": 600,
+    "height": 400,
+    "host": "www.fanbeam.com",
+    "shows": "New systems/upgrades page photo (alt text only names the page; contents unverified)",
+    "source_type": "oem"
+   },
+   {
+    "image_url": "https://www.fanbeam.com/wp-content/uploads/2019/08/Techmak-Fanbeam-Dynamic-Positioning-Sensor-Services-Sales-Repair-Calibration-Rental-Support-2-1024x581.jpeg",
+    "page_url": "https://www.fanbeam.com/fanbeam/product-overview/",
+    "width": 1024,
+    "height": 581,
+    "host": "www.fanbeam.com",
+    "shows": "Product overview page photo (contents unverified)",
+    "source_type": "oem"
+   },
+   {
+    "image_url": "https://www.fanbeam.com/wp-content/uploads/2019/10/fanbeam-Service-and-Controller-Package-1.jpg",
+    "page_url": "https://www.fanbeam.com/fanbeam/parts-accessories/",
+    "width": 302,
+    "height": 200,
+    "host": "www.fanbeam.com",
+    "shows": "Service and controller package photo (low res)",
+    "source_type": "oem"
+   }
+  ],
+  "sources": [
+   "https://www.fanbeam.com/fanbeam/product-overview/"
+  ],
+  "notes": "Images were not viewed (cannot download); picks are by page context. Reviewer should eyeball."
+ },
+ {
+  "id": "B01",
+  "status": "FOUND",
+  "brand_confirmed": "Guidance Marine",
+  "brand_note": "Confirmed. 20-0226-1 not on page; unverified.",
+  "official_name": "RadaScan View sensor",
+  "description": "The RadaScan View sensor measures range and bearing to coded microwave responders for DP position and heading, and adds a radar-style image for situational awareness. It is built for all weather and sea states and can track up to two responders in one operation.",
+  "features": [
+   "Automatic target detection",
+   "Full 360 degree scanning",
+   "RF immunity to X and S band when correctly installed",
+   "Tracking and data logging",
+   "Interfaces to all known DP systems"
+  ],
+  "specs": [
+   {
+    "k": "Operating range",
+    "v": "up to 600 m"
+   },
+   {
+    "k": "Close range",
+    "v": "from 10 m"
+   },
+   {
+    "k": "Ingress / standard",
+    "v": "IP66, EN60945"
+   },
+   {
+    "k": "Warranty",
+    "v": "3 years standard"
+   }
+  ],
+  "images": [
+   {
+    "image_url": "https://cdn.prod.website-files.com/689473f3705477db4090f32d/693fec6b2a2ee577fd651994_Untitled%20Project%20(11)%20(2).png",
+    "page_url": "https://www.guidancemarine.com/product/radascan-r-view",
+    "width": 2700,
+    "height": 2160,
+    "host": "cdn.prod.website-files.com (Guidance Marine site CDN)",
+    "shows": "RadaScan View product render, page title image",
+    "source_type": "oem"
+   },
+   {
+    "image_url": "https://cdn.prod.website-files.com/689473f3705477db4090f32d/69774b8da9c883f96dd3bc62_Untitled%20(9).png",
+    "page_url": "https://www.guidancemarine.com/product/radascan-r-view",
+    "width": 2700,
+    "height": 2160,
+    "host": "cdn.prod.website-files.com (Guidance Marine site CDN)",
+    "shows": "RadaScan View card image on Guidance site",
+    "source_type": "oem"
+   }
+  ],
+  "sources": [
+   "https://www.guidancemarine.com/product/radascan-r-view"
+  ],
+  "notes": ""
+ },
+ {
+  "id": "B02",
+  "status": "FOUND",
+  "brand_confirmed": "Guidance Marine",
+  "brand_note": "Catalogue name 'CyScan Mk4 Absolute Signature Sensor' mixes two generations: Mk4 is the earlier sensor, CyScan AS is the current Absolute Signature sensor (Guidance offers Mk 2/3/4 to AS upgrades). Part 20-0252 not on page. Confirm with Sinor which one the 20-0252 inventory actually is. Photos shown are CyScan AS.",
+  "official_name": "CyScan AS sensor (Mk4 is the predecessor)",
+  "description": "The CyScan AS sensor is a laser DP reference that measures range and bearing to retro-reflective prisms, with Absolute Signature identification of AS prisms. It offers the longest working range in Guidance's laser line and a modular, rotor-based design for in-vessel servicing.",
+  "features": [
+   "Positive identification of AS prisms",
+   "Field upgrades via USB key and remote installer",
+   "Field-proven false target reflection rejection",
+   "Modular sensor design",
+   "Interfaces to all known DP systems"
+  ],
+  "specs": [
+   {
+    "k": "Operating range",
+    "v": "up to 2500 m"
+   },
+   {
+    "k": "Close range",
+    "v": "from 10 m"
+   },
+   {
+    "k": "Laser pulse rate",
+    "v": "30 kHz twin pulse"
+   },
+   {
+    "k": "Targets",
+    "v": "navigates off 9 prisms (detects 30)"
+   }
+  ],
+  "images": [
+   {
+    "image_url": "https://cdn.prod.website-files.com/689473f3705477db4090f32d/69774c8900748437cb7fdebf_Untitled%20(10).png",
+    "page_url": "https://www.guidancemarine.com/product/cyscan-r-as",
+    "width": 2795,
+    "height": 2160,
+    "host": "cdn.prod.website-files.com (Guidance Marine site CDN)",
+    "shows": "CyScan AS sensor product render",
+    "source_type": "oem"
+   }
+  ],
+  "sources": [
+   "https://www.guidancemarine.com/product/cyscan-r-as"
+  ],
+  "notes": ""
+ },
+ {
+  "id": "B03",
+  "status": "FOUND",
+  "brand_confirmed": "Kongsberg (SpotTrack eight-prism cluster); generic prism clusters also sold by others",
+  "brand_note": "Kongsberg lists an eight-prism cluster among SpotTrack Prisms. Guidance Marine sells its own prisms (AS Prism) and says glass prisms work with DP sensors of any manufacturer. Maker of Sinor's 8-way cluster is therefore not settled: Kongsberg SpotTrack, Guidance, or other. Compatibility with CyScan comes from a distributor snippet only.",
+  "official_name": "SpotTrack eight-prism cluster (Kongsberg)",
+  "description": "A prism cluster mounts several glass retro-reflector prisms together so a laser DP sensor can see the target over a wider angle and at longer range. Kongsberg offers an eight-prism cluster in sealed canisters among its SpotTrack reflective targets, alongside single-prism options.",
+  "features": [
+   "Eight prisms in one cluster for wider angle of visibility",
+   "Sealed canisters, industry-standard prisms",
+   "Single prism and magnetic-mount variants also offered",
+   "Glass prisms extend range beyond the 500 m zone (per Guidance)"
+  ],
+  "specs": [],
+  "images": [
+   {
+    "image_url": "https://www.kongsberg.com/globalassets/kongsberg/1.-what-we-do/2.-ocean-space/6.-navigation--positioning/spottrack/spottrack_prisms_333x333.png?width=333",
+    "page_url": "https://www.kongsberg.com/what-we-do/ocean-space/navigation-positioning/spottrack-prisms/",
+    "width": 333,
+    "height": 333,
+    "host": "www.kongsberg.com",
+    "shows": "SpotTrack prisms product tile",
+    "source_type": "oem"
+   },
+   {
+    "image_url": "https://tetramaritimeservices.com/wp-content/uploads/2024/02/photo_5895503180186370571_y.jpg",
+    "page_url": "https://tetramaritimeservices.com/product/8-way-prisum-reflector/",
+    "width": 721,
+    "height": 1280,
+    "host": "tetramaritimeservices.com",
+    "shows": "8-way prism reflector, reseller photo (may be their own stock)",
+    "source_type": "distributor"
+   }
+  ],
+  "sources": [
+   "https://www.kongsberg.com/what-we-do/ocean-space/navigation-positioning/spottrack-prisms/",
+   "https://www.guidancemarine.com/product/cyscan-r-as"
+  ],
+  "notes": "Kongsberg image is small (333 px); no specs read (datasheet PDF not opened)."
+ },
+ {
+  "id": "B04",
+  "status": "FOUND",
+  "brand_confirmed": "Guidance Marine",
+  "brand_note": "Confirmed. 20-0253 not on page.",
+  "official_name": "SceneScan sensor",
+  "description": "The SceneScan sensor is a targetless laser sensor that scans its surroundings and tracks natural or man-made structures by matching live data to a stored scene map. It is designed for close proximity work without prisms or target maintenance.",
+  "features": [
+   "No targets required",
+   "Automatic reference point selection",
+   "Modular design aids in-vessel servicing",
+   "Robust in all weather and sea states"
+  ],
+  "specs": [
+   {
+    "k": "Range",
+    "v": "10 m to 200 m"
+   },
+   {
+    "k": "Scanning",
+    "v": "full 360 degrees"
+   },
+   {
+    "k": "Laser class",
+    "v": "Class 1M"
+   }
+  ],
+  "images": [
+   {
+    "image_url": "https://cdn.prod.website-files.com/689473f3705477db4090f32d/6a3116ad4d8173409050cd66_SceneScan%201.png",
+    "page_url": "https://www.guidancemarine.com/product/scenescan",
+    "width": 2795,
+    "height": 2160,
+    "host": "cdn.prod.website-files.com (Guidance Marine site CDN)",
+    "shows": "SceneScan sensor product render (named SceneScan 1.png)",
+    "source_type": "oem"
+   }
+  ],
+  "sources": [
+   "https://www.guidancemarine.com/product/scenescan"
+  ],
+  "notes": ""
+ },
+ {
+  "id": "B05",
+  "status": "PARTIAL",
+  "brand_confirmed": "Guidance Marine (Wartsila Guidance Marine on older documents)",
+  "brand_note": "Maker confirmed. Series 4 rechargeable responder is mentioned in a Guidance Marine/FCC manual listing; the colour 'Blue' and part 20-0276-BLU not verified. Guidance's page describes rechargeable responders generally, not a Series 4 product page.",
+  "official_name": "Series 4 Rechargeable Responder (RadaScan family)",
+  "description": "Responders are coded microwave targets that RadaScan sensors track. The rechargeable version needs no battery-pack maintenance and suits keeping on the vessel for handover to platforms, while PCP and mains versions suit permanent installation. They are ATEX and CSA certified with a unique coded ID.",
+  "features": [
+   "Unique coded ID with auto target detection",
+   "ATEX and CSA certified",
+   "360 degree navigation off one responder",
+   "Universal swivel bracket for all power and mounting options",
+   "No maintenance on the rechargeable unit"
+  ],
+  "specs": [
+   {
+    "k": "Power options",
+    "v": "mains, primary cell pack, self-contained battery"
+   },
+   {
+    "k": "PCP life",
+    "v": "nominal 12 months 24/7"
+   }
+  ],
+  "images": [
+   {
+    "image_url": "https://img.nauticexpo.com/pdf/repository_ne/32289/responders-57331_1mg.jpg",
+    "page_url": "https://pdf.nauticexpo.com/pdf/guidance-navigation-limited/responders/32289-57331.html",
+    "width": 353,
+    "height": 500,
+    "host": "img.nauticexpo.com",
+    "shows": "Cover of Guidance Responders brochure (low res)",
+    "source_type": "catalogue"
+   }
+  ],
+  "sources": [
+   "https://www.guidancemarine.com/product/radascan-r-view"
+  ],
+  "notes": "No product photo of the responder from an OEM page; Series 4 detail from search snippets only."
+ },
+ {
+  "id": "B06",
+  "status": "FOUND",
+  "brand_confirmed": "Kongsberg Maritime",
+  "brand_note": "Confirmed for 700X on kongsberg.com. 550X listed separately by Kongsberg. Replacement battery: a 'RADius EX Battery' is listed by Kongsberg.",
+  "official_name": "RADius 700X transponder",
+  "description": "The RADius 700X is an intrinsically safe, battery-powered transponder for the RADius relative positioning system, intended for large installations such as platforms and FPSOs where ATEX certification is required. Each unit carries a unique ID set by dip switches, and several interrogators can use the same transponder.",
+  "features": [
+   "Intrinsically safe encapsulated battery, no wired connection",
+   "Unique ID set by dip switches",
+   "Multi-user: several interrogators per transponder",
+   "Suitable for hazardous zones 1 and 2"
+  ],
+  "specs": [
+   {
+    "k": "ATEX",
+    "v": "category 2, gas groups IIB/IIA"
+   },
+   {
+    "k": "IECEx",
+    "v": "Ex ib IIB T4 Gb"
+   },
+   {
+    "k": "Simultaneous tracking",
+    "v": "up to 5 transponders per interrogator"
+   }
+  ],
+  "images": [
+   {
+    "image_url": "https://www.kongsberg.com/globalassets/kongsberg/1.-what-we-do/2.-ocean-space/6.-navigation--positioning/radius/radius_700x_333x333.png?width=333",
+    "page_url": "https://www.kongsberg.com/what-we-do/ocean-space/navigation-positioning/radius-product-range/radius-2000/",
+    "width": 333,
+    "height": 333,
+    "host": "www.kongsberg.com",
+    "shows": "RADius 700X tile",
+    "source_type": "oem"
+   },
+   {
+    "image_url": "https://www.kongsberg.com/globalassets/kongsberg/1.-what-we-do/2.-ocean-space/6.-navigation--positioning/radius/radius_550x_333x333.png?width=333",
+    "page_url": "https://www.kongsberg.com/what-we-do/ocean-space/navigation-positioning/radius-product-range/radius-2000/",
+    "width": 333,
+    "height": 333,
+    "host": "www.kongsberg.com",
+    "shows": "RADius 550X tile",
+    "source_type": "oem"
+   },
+   {
+    "image_url": "https://www.kongsberg.com/globalassets/kongsberg/1.-what-we-do/2.-ocean-space/6.-navigation--positioning/radius/radius_ex_battery_333x333.png?width=333",
+    "page_url": "https://www.kongsberg.com/what-we-do/ocean-space/navigation-positioning/radius-product-range/radius-2000/",
+    "width": 333,
+    "height": 333,
+    "host": "www.kongsberg.com",
+    "shows": "RADius EX Battery tile",
+    "source_type": "oem"
+   }
+  ],
+  "sources": [
+   "https://www.kongsberg.com/what-we-do/ocean-space/navigation-positioning/radius-product-range/radius-700x/",
+   "https://www.kongsberg.com/what-we-do/ocean-space/navigation-positioning/radius-product-range/radius-2000/"
+  ],
+  "notes": ""
+ },
+ {
+  "id": "B07",
+  "status": "FOUND",
+  "brand_confirmed": "Kongsberg Maritime",
+  "brand_note": "Confirmed RADius 2000 on kongsberg.com. The term 'dual interrogator unit' is not on the page; page says multiple sensor heads can be used. Treat configuration as unverified.",
+  "official_name": "RADius 2000",
+  "description": "RADius 2000 is the interrogator and processing side of the RADius system, a solid-state radar-principle reference that measures range and bearing to transponders for DP. It supports multiple sensor heads for extended coverage and has a touch-ready operator interface.",
+  "features": [
+   "Solid state, no moving parts",
+   "Support for multiple sensor heads",
+   "Touch-ready HMI",
+   "Automatic transponder search",
+   "Multi-vessel capability"
+  ],
+  "specs": [
+   {
+    "k": "Range",
+    "v": "up to 550 m"
+   },
+   {
+    "k": "Vertical sector",
+    "v": "100 degrees"
+   },
+   {
+    "k": "Coverage",
+    "v": "100 to 360 degrees with multiple heads"
+   }
+  ],
+  "images": [
+   {
+    "image_url": "https://www.kongsberg.com/globalassets/kongsberg/1.-what-we-do/2.-ocean-space/6.-navigation--positioning/radius/radius_2000_333x333.png?width=333",
+    "page_url": "https://www.kongsberg.com/what-we-do/ocean-space/navigation-positioning/radius-product-range/radius-700x/",
+    "width": 333,
+    "height": 333,
+    "host": "www.kongsberg.com",
+    "shows": "RADius 2000 tile",
+    "source_type": "oem"
+   },
+   {
+    "image_url": "https://www.kongsberg.com/globalassets/kongsberg/1.-what-we-do/2.-ocean-space/6.-navigation--positioning/radius/heroimg_radius_1440x900.jpg?width=1440&height=864&quality=99&rxy=0.51",
+    "page_url": "https://www.kongsberg.com/what-we-do/ocean-space/navigation-positioning/radius-product-range/radius-2000/",
+    "width": 1440,
+    "height": 864,
+    "host": "www.kongsberg.com",
+    "shows": "RADius page hero image (content not verified)",
+    "source_type": "oem"
+   }
+  ],
+  "sources": [
+   "https://www.kongsberg.com/what-we-do/ocean-space/navigation-positioning/radius-product-range/radius-2000/"
+  ],
+  "notes": ""
+ }
+]
