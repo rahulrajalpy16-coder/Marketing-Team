@@ -1,37 +1,18 @@
-id,item,brand,why_no_image
-A03,Mini RadaScan System,Guidance Marine,only a trade-press photo and a low-resolution catalogue cover found
-A06,RADius Relative Positioning System,Kongsberg Maritime,Kongsberg site refused automated download (403)
-A11,NavDP 4000 Series DP System,NAVIS Engineering,"only a vessel photo and a low-resolution catalogue cover found, no clean product shot"
-A14,Ronav R1 GNSS/DGPS Receiver System,Ronav,only the RX45 antenna photo is official; receiver and display photos exist only inside the datasheet PDF
-A16,LD900 Quad-Band GNSS Receiver,Veripos,Veripos site refused automated download (403)
-A18,HLD-900 X-Band Radar,Highlander,"official photo is the 900S solid-state variant, not the X-band magnetron radar"
-B03,Eight-Prism Reflector Cluster,Kongsberg SpotTrack,Kongsberg site refused automated download (403)
-B05,Series 4 Rechargeable Responder,Guidance Marine,only a 353x500 catalogue cover found
-B06,RADius 700X Transponder,Kongsberg Maritime,Kongsberg site refused automated download (403)
-B07,RADius 2000 Interrogator,Kongsberg Maritime,Kongsberg site refused automated download (403)
-B09,WSM 6+ Wideband Sub-Mini Transponder,Sonardyne,"downloaded photo unclear, not clearly a WSM 6+"
-B10,Surface Interface Hub 620-0770 and Marine Computer Kit 603-0181 (SPRINT-Nav DP),Sonardyne,no official page or photo found (card left out of draft)
-B15,Standard 22 Gyro Compass,Raytheon Anschutz,"downloaded photo is a cropped console top, not clearly the compass"
-B17,cNODE Micro Transponder,Kongsberg Maritime,Kongsberg site refused automated download (403)
-C01,NAVIS Main Control Panel MCP-06 / MCP-C06 with joystick,NAVIS Engineering,no official page or photo found; also no description (card left out of draft)
-C02,NAVIS Control Computer HT CO3,NAVIS Engineering,nothing found for this part (card left out of draft)
-C04,19 in Marine Touch Screen Monitor,Guidance Marine,no page for the Guidance part 20-0310; only a generic monitor photo found
-C05,Trackerball Mouse and Compact Keyboard,Guidance Marine,no official photo; only generic images
-C07,RMP201-8 Remote I/O Module,Kongsberg Maritime,reseller photos only
-C08,cJoy Joystick Operator Terminal,Kongsberg Maritime,reseller photos only
-C09,RRAIO16 / RRDIO15 / RRRLY8 I/O Modules,Rolls-Royce,marketplace photo only
-C10,Series 90-30 CPU IC693CPU374,GE Fanuc,reseller photos only
-C11,VersaMax IC200ALG240 Analog Input,GE Fanuc,reseller photos only
-C12,Advanced Micro Controller (AMC),Converteam,reseller photo only
-C13,Modicon Premium TSX P57 4634M,Schneider Electric,Schneider download site refused automated download (403)
-C15,easYgen-3500XT-P1 Genset Controller,Woodward,reseller photo only
-C17,VACON NXP and VLT Drives,Danfoss,Danfoss site refused automated download (403)
-C19,Smart-UPS SRT and 9SX UPS,APC and Eaton,Schneider download site refused automated download (403)
-C21,VT-VRRA1-537-20 Valve Amplifier,Bosch Rexroth,reseller photos only
-C23,S50JAK-ZU Joystick,Caldaro,reseller photos only
-C24,ST56L LED Tower Light,Qlight,Qlight site timed out
-D01,CyScan MK4 Service Kit,Guidance Marine,reseller photo only
-D02,RadaScan Service Kit,Guidance Marine,no service-kit photo exists on any official page
-D06,750-400 Digital Input Module,WAGO,"downloaded file was a wiring diagram, not a photo"
-D07,Acti9 iC60N Circuit Breaker,Schneider Electric,Schneider download site refused automated download (403)
-D09,I/O-IPC 758-873,WAGO,"WAGO page discontinued, reseller photos only"
+ref,item,brand,why_no_photo
+PR-16,Series 4 Rechargeable Responder,Guidance Marine,only a brochure cover (353x500) found
+PR-21,cNODE Micro Transponder,Kongsberg Maritime,Kongsberg site refused automated download (403); no other host
+CA-02,19 in Marine Touch Screen Monitor,Guidance Marine,no page for the Guidance part 20-0310; only a generic monitor photo exists
+CA-03,Trackerball Mouse and Compact Keyboard,Guidance Marine,only generic images; the one found carries an event banner
+CA-05,cJoy Joystick Operator Terminal,Kongsberg Maritime,only tiny watermarked reseller photos
+CA-06,S50JAK-ZU Joystick,Caldaro,"only reseller photos, all watermarked"
+CA-07,RMP201-8 Remote I/O Module,Kongsberg Maritime,"only reseller photos, all watermarked"
+CA-08,RRAIO16 / RRDIO15 / RRRLY8 I/O Modules,Rolls-Royce,only tiny watermarked reseller photos
+CA-09,Series 90-30 CPU IC693CPU374,GE Fanuc,only a watermarked reseller photo
+CA-10,VersaMax IC200ALG240 Analog Input,GE Fanuc,reseller sites refused download
+CA-12,Modicon Premium TSX P57 4634M,Schneider Electric,reseller site refused download
+CA-18,VACON NXP and VLT Drives,Danfoss,only a photo of a different Danfoss drive; maker site refused download
+SP-01,CyScan MK4 Service Kit,Guidance Marine,"only a parts list and a drawing, no photo of the kit"
+SP-02,RadaScan Service Kit,Guidance Marine,no kit photo on any official page
+SP-07,Acti9 iC60N Circuit Breaker,Schneider Electric,Schneider download site refused automated download (403)
+(left out),Surface Interface Hub 620-0770 and Marine Computer Kit 603-0181 (SPRINT-Nav DP),Sonardyne,"no official page, photo or description found"
+(left out),NAVIS Control Computer HT CO3,NAVIS Engineering,nothing found for this part; PCI Express CP114 card may be a different board

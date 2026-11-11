@@ -1,0 +1,93 @@
+{
+ "NEW1": {
+  "section": "",
+  "legacy": false,
+  "status": "FOUND",
+  "register_rows": 0,
+  "search_hints": [],
+  "brand_note": "",
+  "notes": "",
+  "has_image": true,
+  "id": "NEW1",
+  "name": "MRU-B1 Heave Sensor",
+  "display_name": "MRU-B1 Heave Sensor",
+  "brand": "Inertial Labs",
+  "display_brand": "Inertial Labs",
+  "description": "MRU-B1 is the heave model of the Inertial Labs Basic (B) motion reference units. It uses solid-state MEMS gyroscopes, accelerometers and a barometric sensor in a small IP67 housing, and outputs in Inertial Labs binary, NMEA 0183, TSS1 and Kongsberg Seatex formats.",
+  "features": [],
+  "specs": [
+   {
+    "k": "Outputs",
+    "v": "Heave, with heave velocity and acceleration"
+   },
+   {
+    "k": "Heave accuracy",
+    "v": "5% or 5 cm RMS"
+   },
+   {
+    "k": "Housing",
+    "v": "IP67, 120 x 50 x 53 mm, 220 g"
+   },
+   {
+    "k": "Supply",
+    "v": "9 to 36 VDC, 1 W"
+   }
+  ],
+  "model_hint": "MRU-B1 (heave sensor)"
+ },
+ "NEW2": {
+  "section": "",
+  "legacy": false,
+  "status": "FOUND",
+  "register_rows": 0,
+  "search_hints": [],
+  "brand_note": "",
+  "notes": "",
+  "has_image": true,
+  "id": "NEW2",
+  "name": "MRU-B1.1 Pitch and Roll Sensor",
+  "display_name": "MRU-B1.1 Pitch and Roll Sensor",
+  "brand": "Inertial Labs",
+  "display_brand": "Inertial Labs",
+  "description": "MRU-B1.1 is the pitch and roll model of the Inertial Labs Basic (B) motion reference units. It shares the compact IP67 MEMS housing of the MRU-B1 and carries an ABS design assessment.",
+  "features": [],
+  "specs": [
+   {
+    "k": "Outputs",
+    "v": "Pitch and roll"
+   },
+   {
+    "k": "Pitch and roll accuracy",
+    "v": "0.02 deg RMS dynamic"
+   },
+   {
+    "k": "Housing",
+    "v": "IP67, 120 x 50 x 53 mm, 220 g"
+   },
+   {
+    "k": "Supply",
+    "v": "9 to 36 VDC, 1 W"
+   }
+  ],
+  "model_hint": "MRU-B1.1 (pitch and roll sensor)"
+ },
+ "C01": {
+  "section": "",
+  "legacy": false,
+  "status": "FOUND",
+  "register_rows": 0,
+  "search_hints": [],
+  "brand_note": "",
+  "notes": "",
+  "has_image": true,
+  "id": "C01",
+  "name": "NAVIS Main Control Panel with Joystick",
+  "display_name": "Main Control Panel with Joystick",
+  "brand": "NAVIS Engineering",
+  "display_brand": "NAVIS Engineering",
+  "description": "The main control panel (MCP) with joystick is the operator control point at a NAVIS DP station. Each NavDP control station combines the panel with a control computer, an LCD display, a communication box, a control unit and a power unit.",
+  "features": [],
+  "specs": [],
+  "model_hint": "MCP-06 / MCP-C06 with joystick; MCP-B with joystick (DP operator station)"
+ }
+}

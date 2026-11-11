@@ -1,0 +1,477 @@
+[
+ {
+  "id": "C13",
+  "status": "FOUND",
+  "candidates": [
+   {
+    "image_url": "https://www.jc-electronics.com/media/catalog/product/T/S/TSXP574634M_0.jpg",
+    "page_url": "https://www.jc-electronics.com/tsxp574634m",
+    "host": "www.jc-electronics.com",
+    "width": 1200,
+    "height": 800,
+    "shows": "TSXP574634M processor, reseller product photo (title names exact model; not viewed)",
+    "match": "exact",
+    "source_type": "reseller"
+   },
+   {
+    "image_url": "https://www.plcsparehub.com/cdn/shop/files/TSXP574634M-2.jpg?v=1793677194&width=1000",
+    "page_url": "https://www.plcsparehub.com/products/tsxp574634m-modicon-premium-schneider-electric-processor-module",
+    "host": "www.plcsparehub.com",
+    "width": 1000,
+    "height": 1000,
+    "shows": "TSXP574634M module photo, reseller (title names exact model; not viewed)",
+    "match": "exact",
+    "source_type": "reseller"
+   },
+   {
+    "image_url": "https://images.wiautomation.com/public/images/landing/anticipa/product/TSXP574634M.jpg",
+    "page_url": "https://nl.wiautomation.com/schneider-electric/plc-systems/modicon-premium/TSX-P57-4634M",
+    "host": "images.wiautomation.com",
+    "width": 800,
+    "height": 800,
+    "shows": "TSXP574634M product image, industrial reseller (not viewed)",
+    "match": "exact",
+    "source_type": "reseller"
+   },
+   {
+    "image_url": "https://www.cofiem-electronics.com/storage/products/tsxp574634m-1.jpg",
+    "page_url": "https://www.cofiem-electronics.com/products/tsxp574634m",
+    "host": "www.cofiem-electronics.com",
+    "width": 2048,
+    "height": 1536,
+    "shows": "TSXP574634M photo, reseller (not viewed, may be a used-unit photo)",
+    "match": "exact",
+    "source_type": "reseller"
+   }
+  ],
+  "specs": [],
+  "notes": "Round 1 OEM image (download.se.com) is on a refused host, so these are reseller alternatives. Search tool reported dimensions only; none visually checked. The 1500 px Schneider rendition exists at download.se.com (refused host)."
+ },
+ {
+  "id": "C15",
+  "status": "FOUND",
+  "candidates": [
+   {
+    "image_url": "https://automationindustrial.com/cdn/shop/files/Woodward-8440-2085.JPEG?v=1748353684&width=1920",
+    "page_url": "https://automationindustrial.com/products/8440-2085-by-woodward-easygen-3500xt-p1-24vdc-generator-control-panel",
+    "host": "automationindustrial.com",
+    "width": 1920,
+    "height": 1386,
+    "shows": "Woodward 8440-2085 easYgen-3500XT-P1 unit, reseller photo (not viewed)",
+    "match": "exact",
+    "source_type": "reseller"
+   },
+   {
+    "image_url": "http://www.plcmasters.com/cdn/shop/files/8440-2085.jpg?v=1751873087",
+    "page_url": "https://www.plcmasters.com/products/woodward-8440-2085-easygen-3500xt-p1-genset-controller",
+    "host": "www.plcmasters.com",
+    "width": 640,
+    "height": 640,
+    "shows": "Woodward 8440-2085 easYgen-3500XT-P1 controller, reseller photo (not viewed)",
+    "match": "exact",
+    "source_type": "reseller"
+   },
+   {
+    "image_url": "https://woodward.store/media/e1/ff/7c/1718784614/IMG_8440-2085-1.jpg?ts=1718784614",
+    "page_url": "https://woodward.store/en/easygen-3000xt/easygen-3500xt",
+    "host": "woodward.store",
+    "width": 0,
+    "height": 0,
+    "shows": "easYgen-3500XT P1 product shot on Woodward-linked store (size unknown; from round 1)",
+    "match": "exact",
+    "source_type": "distributor"
+   },
+   {
+    "image_url": "https://cdn11.bigcommerce.com/s-5216c/images/stencil/1280x1280/products/9937/7478/8440-2085__96328.1782743395.webp?c=2",
+    "page_url": "https://acepowerparts.com/8440-2085-control-easygen-3500xt-p1/",
+    "host": "cdn11.bigcommerce.com",
+    "width": 960,
+    "height": 1280,
+    "shows": "8440-2085 easYgen-3500XT-P1 reseller photo, webp (not viewed)",
+    "match": "exact",
+    "source_type": "reseller"
+   }
+  ],
+  "specs": [],
+  "notes": "Reseller photos may be surplus units with labels; view before use. woodward.store remains the cleanest source."
+ },
+ {
+  "id": "C17",
+  "status": "PARTIAL",
+  "candidates": [
+   {
+    "image_url": "https://timcontrols.com/photos/parts/danfoss-vacon/danfoss-vlt5000-compact-illustration.webp",
+    "page_url": "https://timcontrols.com/manufacturers/danfoss-vacon/vlt-5000",
+    "host": "timcontrols.com",
+    "width": 1200,
+    "height": 1200,
+    "shows": "VLT 5000 compact drive illustration/render on reseller site (not viewed)",
+    "match": "family",
+    "source_type": "reseller"
+   },
+   {
+    "image_url": "https://www.artisantg.com/itemimages/Danfoss_VLT_5000_View1_20240125163152168.jpg",
+    "page_url": "https://www.artisantg.com/PLC/83858-4/Danfoss-VLT-5000-Adjustable-Frequency-Drive",
+    "host": "www.artisantg.com",
+    "width": 600,
+    "height": 600,
+    "shows": "Danfoss VLT 5000 drive, used-equipment reseller photo (may carry watermark; not viewed)",
+    "match": "family",
+    "source_type": "reseller"
+   },
+   {
+    "image_url": "https://www.cse-distributors.co.uk/sites/admin/plugins/elfinder/files/cse/uploads/2014/05/vlt-5000-drive.jpg",
+    "page_url": "https://www.cse-distributors.co.uk/danfoss-drives/danfoss-vlt5000-inverter-drives-ip20ip54.html",
+    "host": "www.cse-distributors.co.uk",
+    "width": 200,
+    "height": 305,
+    "shows": "VLT 5000 IP20/IP54 drive, small reseller image (too small for print)",
+    "match": "family",
+    "source_type": "distributor"
+   }
+  ],
+  "specs": [],
+  "notes": "No VACON NXP image found on a non-refused host. The only NXP images (www.danfoss.com/media/1119/vacon-nxp-air-cooled.jpg, 1120x747; vacon-nxp-grid-converter.jpg) are on the refused Danfoss host. Credits ran out before a second NXP search."
+ },
+ {
+  "id": "C19",
+  "status": "FOUND",
+  "candidates": [
+   {
+    "image_url": "https://www.eaton.com/mdmfiles/PDM25110013/9SX3000_C/1000x1000_300dpi",
+    "page_url": "https://www.eaton.com/us/en-us/skuPage.9SX3000.html",
+    "host": "www.eaton.com",
+    "width": 1000,
+    "height": 1000,
+    "shows": "Eaton 9SX3000 tower UPS (120 V SKU, same family as 9SX3000I)",
+    "match": "family",
+    "source_type": "oem"
+   },
+   {
+    "image_url": "https://cdn.adiglobaldistribution.us/pim/500X500/10017/1040552908_alt2.jpg",
+    "page_url": "https://www.adiglobaldistribution.us/product/apc-srtrmxla?option=2G-SRT1500RM",
+    "host": "cdn.adiglobaldistribution.us",
+    "width": 500,
+    "height": 500,
+    "shows": "APC Smart-UPS SRT 1500 rackmount 120 V (SRTRMXLA), distributor image; same family as SRT1500RMXLI",
+    "match": "family",
+    "source_type": "distributor"
+   },
+   {
+    "image_url": "https://www.refurbups.com/refurbups-item-images-2021/UPS-APC-SMT1500RM2U_00.JPG?resizeid=2&resizeh=600&resizew=600",
+    "page_url": "https://www.refurbups.com/Brand-New-APC-Smart-UPS-SRT1500RMXLA-UPS-System",
+    "host": "www.refurbups.com",
+    "width": 600,
+    "height": 600,
+    "shows": "APC SRT1500RMXLA 120 V rack UPS, reseller (file name says SMT1500RM2U, so possibly a different line; not viewed)",
+    "match": "generic",
+    "source_type": "reseller"
+   },
+   {
+    "image_url": "https://www.bhphotovideo.com/cdn-cgi/image/fit=scale-down,width=500,quality=95/https://www.bhphotovideo.com/images/images500x500/apc_srt1500xla_smart_ups_srt_1500va_120v_1737474371_1454736.jpg",
+    "page_url": "https://www.bhphotovideo.com/c/product/1454736-REG/apc_srt1500xla_smart_ups_srt_1500va_120v.html",
+    "host": "www.bhphotovideo.com",
+    "width": 500,
+    "height": 500,
+    "shows": "APC SRT1500XLA tower 120 V (family, tower not rack)",
+    "match": "family",
+    "source_type": "reseller"
+   }
+  ],
+  "specs": [],
+  "notes": "Round 1 APC image is on download.se.com (refused). Eaton search for 9SX3000I specifically was not possible (credits out); the eaton.com image is the 120 V SKU of the same family. Consider splitting APC and Eaton images."
+ },
+ {
+  "id": "C21",
+  "status": "FOUND",
+  "candidates": [
+   {
+    "image_url": "https://rexroth-parts.com/27343-large_default/vt-vrra-1-537-20-v0-1-1.jpg",
+    "page_url": "https://rexroth-parts.com/en/valve-amplifiers-1/vt-vrra-1-537-20-v0-1-1",
+    "host": "rexroth-parts.com",
+    "width": 800,
+    "height": 800,
+    "shows": "VT-VRRA 1-537-20/V0 amplifier card, reseller (not viewed)",
+    "match": "exact",
+    "source_type": "reseller"
+   },
+   {
+    "image_url": "http://www.automodulexpert.com/cdn/shop/files/VT-VRRA_1-537-20V02_774f7bfa-06dc-4110-9e06-cccbbaff5694.jpg?v=1764576673",
+    "page_url": "https://www.automodulexpert.com/ar/products/rexroth-vt-vrra-1-537-20-v0-proportional-valve-amplifier",
+    "host": "www.automodulexpert.com",
+    "width": 800,
+    "height": 800,
+    "shows": "VT-VRRA 1-537-20/V0 amplifier, reseller (not viewed)",
+    "match": "exact",
+    "source_type": "reseller"
+   },
+   {
+    "image_url": "https://www.runtoelectronic.com/cdn/shop/products/dec38d4807b5f97b5a56517a7587168c.jpg?v=1671068480&width=650",
+    "page_url": "https://www.runtoelectronic.com/products/rexroth-vt-vrra-1-537-20-v0-valve-amplifier-card",
+    "host": "www.runtoelectronic.com",
+    "width": 650,
+    "height": 650,
+    "shows": "Rexroth VT-VRRA 1-537-20/V0 card, reseller (not viewed)",
+    "match": "exact",
+    "source_type": "reseller"
+   },
+   {
+    "image_url": "http://www.runtoelectronic.com/cdn/shop/products/4227a04ccd70d259fd94543d07d68e23.jpg?v=1671068475",
+    "page_url": "https://www.runtoelectronic.com/products/rexroth-vt-vrra-1-537-20-v0-valve-amplifier-card",
+    "host": "www.runtoelectronic.com",
+    "width": 650,
+    "height": 650,
+    "shows": "Second photo of the same card, reseller (not viewed)",
+    "match": "exact",
+    "source_type": "reseller"
+   }
+  ],
+  "specs": [],
+  "notes": "No Rexroth-hosted image of this card surfaced. All from resellers; eBay listing images excluded."
+ },
+ {
+  "id": "C23",
+  "status": "PARTIAL",
+  "candidates": [
+   {
+    "image_url": "https://cdn11.bigcommerce.com/s-o0ql33eyfo/images/stencil/1280x1280/products/65647/1981674/caldaro_s50jak-zu-31r1g-74083_7__45815.1766210081.jpg?c=1",
+    "page_url": "https://auto2mation.com/caldaro-s50jak-zu-31r1g-joystick-controller.html",
+    "host": "cdn11.bigcommerce.com",
+    "width": 1020,
+    "height": 765,
+    "shows": "Caldaro S50JAK-ZU-31R1G joystick, reseller photo (variant suffix; not viewed)",
+    "match": "family",
+    "source_type": "reseller"
+   },
+   {
+    "image_url": "https://cdn11.bigcommerce.com/s-o0ql33eyfo/images/stencil/1280x1280/products/65647/1981668/caldaro_s50jak-zu-31r1g-74083_1__49591.1766464912.jpg?c=1",
+    "page_url": "https://auto2mation.com/caldaro-s50jak-zu-31r1g-joystick-controller.html",
+    "host": "cdn11.bigcommerce.com",
+    "width": 1020,
+    "height": 765,
+    "shows": "Another angle of the S50JAK-ZU-31R1G joystick, reseller (not viewed)",
+    "match": "family",
+    "source_type": "reseller"
+   },
+   {
+    "image_url": "https://cdn11.bigcommerce.com/s-o0ql33eyfo/images/stencil/1280x1280/products/65647/1981677/caldaro_s50jak-zu-31r1g-74083_10__42691.1766210081.jpg?c=1",
+    "page_url": "https://auto2mation.com/caldaro-s50jak-zu-31r1g-joystick-controller.html",
+    "host": "cdn11.bigcommerce.com",
+    "width": 1020,
+    "height": 765,
+    "shows": "Third angle of the S50JAK-ZU-31R1G joystick, reseller (not viewed)",
+    "match": "family",
+    "source_type": "reseller"
+   }
+  ],
+  "specs": [],
+  "notes": "Only variant (-31R1G, -30GP) images exist; no photo for the bare S50JAK-ZU model and none on caldaro.com. eBay images excluded. Confirm the suffix with Sinor before using."
+ },
+ {
+  "id": "C24",
+  "status": "FOUND",
+  "candidates": [
+   {
+    "image_url": "https://api.qlight-system.com/storage/local/20240613/16d4a4d2c3dfbc2caee7e6838edb5873.webp",
+    "page_url": "https://www.qlight-system.com/products/details/st56l",
+    "host": "api.qlight-system.com",
+    "width": 700,
+    "height": 700,
+    "shows": "ST56L tower light on Qlight's other (qlight-system.com) site, page titled ST56L (webp; not viewed)",
+    "match": "exact",
+    "source_type": "oem"
+   },
+   {
+    "image_url": "https://api.qlight-system.com/storage/local/20240613/c01e1eb699f4675b46d87f1a0d9d13af.webp",
+    "page_url": "https://www.qlight-system.com/products/details/st56l",
+    "host": "api.qlight-system.com",
+    "width": 700,
+    "height": 700,
+    "shows": "Second ST56L image on qlight-system.com (webp; not viewed)",
+    "match": "exact",
+    "source_type": "oem"
+   },
+   {
+    "image_url": "https://signalsonline.com/cdn/shop/files/SignalsOnline_ST56EL_TowerLight-Group_09-19-25.jpg?v=1759429643&width=2048",
+    "page_url": "https://signalsonline.com/products/st56l-led-tower-light-standard-with-melodies-and-sound-contiinuous-light",
+    "host": "signalsonline.com",
+    "width": 2000,
+    "height": 2000,
+    "shows": "Qlight ST56EL tower lights group shot (EL = with sound variant, same 56 mm family; reseller)",
+    "match": "family",
+    "source_type": "reseller"
+   }
+  ],
+  "specs": [],
+  "notes": "www.qlight.com excluded as refused. qlight-system.com is a different host carrying the same product line; webp may need conversion. Ex-proof tower light not researched (budget/credits)."
+ },
+ {
+  "id": "D01",
+  "status": "FOUND",
+  "candidates": [
+   {
+    "image_url": "https://www.smtssg.com/wp-content/uploads/2021/12/Cyscan-1.jpeg",
+    "page_url": "https://www.smtssg.com/product/cyscan-radar-mk4-service-kit-p-n-31-0362-4/",
+    "host": "www.smtssg.com",
+    "width": 639,
+    "height": 1024,
+    "shows": "Photo of the CyScan MK4 service kit 31-0362-4 (page title and alt text; content not viewed)",
+    "match": "exact",
+    "source_type": "reseller"
+   },
+   {
+    "image_url": "https://www.smtssg.com/wp-content/uploads/2021/12/CYSCAN-MK4-Service-Kit-pdf.jpg",
+    "page_url": "https://www.smtssg.com/product/cyscan-radar-mk4-service-kit-p-n-31-0362-4/",
+    "host": "www.smtssg.com",
+    "width": 1058,
+    "height": 1497,
+    "shows": "Likely a page image of the kit contents list PDF, not a photo (file name suggests pdf)",
+    "match": "exact",
+    "source_type": "reseller"
+   },
+   {
+    "image_url": "https://img.nauticexpo.com/images_ne/photo-mg/32289-8647189.webp",
+    "page_url": "https://www.nauticexpo.com/prod/guidance-navigation-limited/product-32289-283866.html",
+    "host": "img.nauticexpo.com",
+    "width": 488,
+    "height": 500,
+    "shows": "CyScan laser sensor catalogue image (the sensor, not the kit)",
+    "match": "generic",
+    "source_type": "catalogue"
+   }
+  ],
+  "specs": [],
+  "notes": "eBay kit photos (Wartsila MK4 Service Kit) excluded by rule. Round 1 second photo Cyscan2.jpeg also on smtssg.com."
+ },
+ {
+  "id": "D02",
+  "status": "PARTIAL",
+  "candidates": [
+   {
+    "image_url": "https://cdn.prod.website-files.com/689473f3705477db4090f32d/693fec6b2a2ee577fd651994_Untitled%20Project%20(11)%20(2).png",
+    "page_url": "https://www.guidancemarine.com/product/radascan-r-view",
+    "host": "cdn.prod.website-files.com",
+    "width": 2700,
+    "height": 2160,
+    "shows": "Guidance Marine hero image on RadaScan View page (the sensor family, not a kit)",
+    "match": "family",
+    "source_type": "oem"
+   },
+   {
+    "image_url": "https://cdn.prod.website-files.com/689473f3705477db4090f32d/69774c2ae07008ba8c5175de_Untitled-2%20(3).png",
+    "page_url": "https://www.guidancemarine.com/product/radascan-r-view",
+    "host": "cdn.prod.website-files.com",
+    "width": 1044,
+    "height": 1024,
+    "shows": "Second image on RadaScan View page (likely the sensor; not viewed)",
+    "match": "family",
+    "source_type": "oem"
+   }
+  ],
+  "specs": [],
+  "notes": "No RadaScan service kit photo exists online in what was found; use a sensor image or text-only card. Credits ran out before a NauticExpo Mini RadaScan search."
+ },
+ {
+  "id": "D06",
+  "status": "FOUND",
+  "candidates": [
+   {
+    "image_url": "https://www.wago.com/medias/1024-020000010000ef05000100b6-EN.jpg?context=bWFzdGVyfGltYWdlc3w1MjcwNnxpbWFnZS9qcGVnfGFHSmxMMmhrTVM4eE5qVTNNalUwT0RnME1UVXdNaTh4TURJMFh6QXlNREF3TURBeE1EQXdNR1ZtTURVd01EQXhNREJpTmw5RlRpNXFjR2N8NDgzOWE3MDdkYzk1YWVmZjdjZDVkZWZkODkyNDZkNWFhNThkY2VhMmYwZWY5MmQwZjJlMGMyYjQ1OGQzMmE2Yw",
+    "page_url": "https://www.wago.com/global/i-o-systems/2-channel-digital-input/p/750-400",
+    "host": "www.wago.com",
+    "width": 827,
+    "height": 826,
+    "shows": "WAGO 750-400 module product photo on the WAGO page",
+    "match": "exact",
+    "source_type": "oem"
+   },
+   {
+    "image_url": "https://www.eibabo.com/media/seo_images/productimages_eibabo/NS0741511/ZOOM/wago-750_400-digitale-ns0741511_01.jpg",
+    "page_url": "https://www.eibabo.com/en/wago/digital-input-terminal-2-channel-dc24v-3.0ms-fieldbus-digital-module-2-in-0-out-750-400-eb10741511",
+    "host": "www.eibabo.com",
+    "width": 1280,
+    "height": 960,
+    "shows": "WAGO 750-400 module, reseller photo (not viewed)",
+    "match": "exact",
+    "source_type": "reseller"
+   },
+   {
+    "image_url": "https://cdn11.bigcommerce.com/s-o0ql33eyfo/images/stencil/1280x1280/products/144560/3305507/wago_750-400_free_shipping-61586_1__17444.1779360045.jpg?c=1",
+    "page_url": "https://auto2mation.com/wago-750-400-digital-input-module-2di-24v-dc-3-0ms-24v-dc.html",
+    "host": "cdn11.bigcommerce.com",
+    "width": 1020,
+    "height": 765,
+    "shows": "WAGO 750-400 module, reseller photo (file name says free shipping; check for overlays)",
+    "match": "exact",
+    "source_type": "reseller"
+   },
+   {
+    "image_url": "https://www.wago.com/medias/1024-0200001100028e03000100b6-DE.jpg?context=bWFzdGVyfGltYWdlc3w4NTYyN3xpbWFnZS9qcGVnfGFHSTVMMmc0TXk4eE5qVTFOVGt5T0RBNU1qY3dNaTh4TURJMFh6QXlNREF3TURFeE1EQXdNamhsTURNd01EQXhNREJpTmw5RVJTNXFjR2N8NTQ0YjhhZTk5M2YzZDQ3MmM1NjFiOGFjNjhhYjYwMzJlYTY2MDgyOTVkMWEzM2UzODI0NTAyZjVhNjM1NGRmMw",
+    "page_url": "https://www.wago.com/global/i-o-systems/2-channel-digital-input/p/750-400",
+    "host": "www.wago.com",
+    "width": 1024,
+    "height": 1507,
+    "shows": "Second WAGO 750-400 image (DE rendition, tall; could be a dimension or wiring view, check)",
+    "match": "exact",
+    "source_type": "oem"
+   }
+  ],
+  "specs": [],
+  "notes": "WAGO URLs carry a long context token; use verbatim. Image size for EN one taken from search result."
+ },
+ {
+  "id": "D07",
+  "status": "NOT_FOUND",
+  "candidates": [],
+  "specs": [],
+  "notes": "Only usable images are Schneider's own on download.se.com (refused host): A9F74206 rendition_369 and a 1500 px A9F74210 image. Other hits were Amazon and eBay (excluded). Credits ran out before a distributor-specific search or EZC100H search."
+ },
+ {
+  "id": "D09",
+  "status": "PARTIAL",
+  "candidates": [
+   {
+    "image_url": "https://cdn11.bigcommerce.com/s-o0ql33eyfo/images/stencil/1280x1280/products/4779/1894844/dsc_0225_8__74298.1766048210.jpg?c=1",
+    "page_url": "https://auto2mation.com/wago-i-o-ipc-758-873-system.html",
+    "host": "cdn11.bigcommerce.com",
+    "width": 1280,
+    "height": 850,
+    "shows": "WAGO I/O-IPC 758-873 unit, reseller photo (not viewed)",
+    "match": "exact",
+    "source_type": "reseller"
+   },
+   {
+    "image_url": "https://cdn11.bigcommerce.com/s-o0ql33eyfo/images/stencil/1280x1280/products/4779/1894847/dsc_0230_9__34281.1766048210.jpg?c=1",
+    "page_url": "https://auto2mation.com/wago-i-o-ipc-758-873-system.html",
+    "host": "cdn11.bigcommerce.com",
+    "width": 1280,
+    "height": 850,
+    "shows": "Second angle of the 758-873 unit, reseller (not viewed)",
+    "match": "exact",
+    "source_type": "reseller"
+   },
+   {
+    "image_url": "http://aeliyamarinetech.com/cdn/shop/products/dsc_0222_1_7.jpg?v=1699062102",
+    "page_url": "https://aeliyamarinetech.com/products/wago-i-o-ipc-758-873-system",
+    "host": "aeliyamarinetech.com",
+    "width": 1355,
+    "height": 900,
+    "shows": "758-873 system photo, marine reseller (not viewed)",
+    "match": "exact",
+    "source_type": "reseller"
+   },
+   {
+    "image_url": "https://aeliyamarinetech.com/cdn/shop/products/dsc_0232_2_3.jpg?crop=center&height=900&v=1699062102&width=1355",
+    "page_url": "https://aeliyamarinetech.com/products/wago-i-o-ipc-758-873-system",
+    "host": "aeliyamarinetech.com",
+    "width": 1355,
+    "height": 900,
+    "shows": "Another 758-873 photo, marine reseller (not viewed)",
+    "match": "exact",
+    "source_type": "reseller"
+   }
+  ],
+  "specs": [],
+  "notes": "WAGO discontinued the product, so no OEM image. Surplus unit photos; view for labels or watermarks."
+ }
+]

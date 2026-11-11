@@ -1,0 +1,400 @@
+[
+ {
+  "id": "A11",
+  "status": "FOUND",
+  "candidates": [
+   {
+    "image_url": "https://alphatronmarine.com/images/products/alphatronjrcnavisnavdp40002.jpg?resolution=700x700&background=FFFFFF7F&",
+    "page_url": "https://alphatronmarine.com/en/product/navdp-4000-168/",
+    "host": "alphatronmarine.com",
+    "width": 700,
+    "height": 700,
+    "shows": "NavDP 4000 product image 2 on Alphatron page (not opened visually; likely hardware, check by eye)",
+    "match": "exact",
+    "source_type": "distributor"
+   },
+   {
+    "image_url": "https://alphatronmarine.com/images/products/alphatronjrcnavisnavdp40003.jpg?resolution=700x700&background=FFFFFF7F&",
+    "page_url": "https://alphatronmarine.com/en/product/navdp-4000-168/",
+    "host": "alphatronmarine.com",
+    "width": 700,
+    "height": 700,
+    "shows": "NavDP 4000 product image 3 on Alphatron page (not viewed)",
+    "match": "exact",
+    "source_type": "distributor"
+   },
+   {
+    "image_url": "https://navisincontrol.com/wp-content/uploads/2026/04/Navis-NavDP-1.webp",
+    "page_url": "https://navisincontrol.com/news/navis-navdp-dynamic-positioning-control-system-upgrade-completed-on-dantzig-at-camgsa/",
+    "host": "navisincontrol.com",
+    "width": 780,
+    "height": 989,
+    "shows": "OEM news image for NavDP upgrade on Dantzig; content (console vs vessel) not verified",
+    "match": "family",
+    "source_type": "oem"
+   },
+   {
+    "image_url": "https://dvzpv6x5302g1.cloudfront.net/AcuCustom/Sitename/DAM/116/Navis_joystick_and_DP_controls_Thumb.jpg",
+    "page_url": "https://www.rivieramm.com/news-content-hub/news-content-hub/remote-monitoring-for-offshore-vessel-dp-unveiled-69167",
+    "host": "dvzpv6x5302g1.cloudfront.net",
+    "width": 814,
+    "height": 458,
+    "shows": "Navis joystick and DP controls (trade press thumbnail, Riviera)",
+    "match": "family",
+    "source_type": "catalogue"
+   }
+  ],
+  "specs": [],
+  "notes": "Alphatron image 1 already rejected or used in round 1; images 2 and 3 are new. I could not view images, so confirm they show the control station."
+ },
+ {
+  "id": "A12",
+  "status": "FOUND",
+  "candidates": [
+   {
+    "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/BridgeMate_DP_console_A0336.jpg/960px-BridgeMate_DP_console_A0336.jpg",
+    "page_url": "https://commons.wikimedia.org/wiki/File:BridgeMate_DP_console_A0336.jpg",
+    "host": "thumb.wikimedia.org",
+    "width": 960,
+    "height": 1380,
+    "shows": "Bridge Mate DP console photo on Wikimedia Commons (file title names Bridge Mate DP console)",
+    "match": "exact",
+    "source_type": "catalogue"
+   },
+   {
+    "image_url": "https://elcome.com/wp-content/uploads/2021/07/ELCOME-Marine-Technologies-MT-Dynamic-Positioning-System-DP-System-Joystick-DSC5191-1920x1920px.jpg",
+    "page_url": "https://elcome.com/featured/systems/dynamic-positioning/",
+    "host": "elcome.com",
+    "width": 1920,
+    "height": 1920,
+    "shows": "Marine Technologies DP system joystick (ELCOME distributor page, title names MT DP joystick)",
+    "match": "exact",
+    "source_type": "distributor"
+   }
+  ],
+  "specs": [],
+  "notes": "Wikimedia licence not checked; verify before use. Both are new versus round 1."
+ },
+ {
+  "id": "C01",
+  "status": "PARTIAL",
+  "candidates": [
+   {
+    "image_url": "https://www.fornaes.com/media/1xejt5ir/img_3030.jpg?width=1600&format=webp&rmode=pad&quality=80&rotation=90",
+    "page_url": "https://www.fornaes.com/electronics-electro/electronics/e0173",
+    "host": "fornaes.com",
+    "width": 2133,
+    "height": 1600,
+    "shows": "Photo titled 'NAVIS MCP-C06 Safe Dist 0,6 m' on a Faroese ship-chandler/electronics stock page; photo of the actual unit, rotated 90 degrees by URL parameter",
+    "match": "exact",
+    "source_type": "reseller"
+   },
+   {
+    "image_url": "https://dvzpv6x5302g1.cloudfront.net/AcuCustom/Sitename/DAM/116/Navis_joystick_and_DP_controls_Thumb.jpg",
+    "page_url": "https://www.rivieramm.com/news-content-hub/news-content-hub/remote-monitoring-for-offshore-vessel-dp-unveiled-69167",
+    "host": "dvzpv6x5302g1.cloudfront.net",
+    "width": 814,
+    "height": 458,
+    "shows": "Navis joystick and DP controls, trade press",
+    "match": "family",
+    "source_type": "catalogue"
+   }
+  ],
+  "specs": [],
+  "notes": "Fornaes is an equipment stock listing, may show a used unit; check by eye and consider if its watermark or labels are acceptable. eBay and marineshipstores listings excluded."
+ },
+ {
+  "id": "C02",
+  "status": "NOT_FOUND",
+  "candidates": [],
+  "specs": [],
+  "notes": "No page ties 'HT CO3' to any maker. CP-114 is a known Moxa/Industio 4-port PCI (not PCIe) RS232/422/485 board (visionsystems.de/produkte/cp-114-i-pci.html and Industio manual on cdn.logic-control.com), so Sinor's 'CP114 PCI Express' may be a different card; no usable non-eBay image URL appeared. Only eBay photo of CP-114 seen (excluded). Credits ran out before further searching."
+ },
+ {
+  "id": "A03",
+  "status": "PARTIAL",
+  "candidates": [
+   {
+    "image_url": "https://dvzpv6x5302g1.cloudfront.net/AcuCustom/Sitename/DAM/181/GM_mini_RadaScan_and_CyScanwebzhgf1_Main.png",
+    "page_url": "https://www.rivieramm.com/news-content-hub/hexagon-set-to-acquire-guidance-marine-to-boost-its-sensor-portfolio-89817",
+    "host": "dvzpv6x5302g1.cloudfront.net",
+    "width": 1200,
+    "height": 675,
+    "shows": "Mini RadaScan and CyScan sensors, trade press photo (file name GM_mini_RadaScan)",
+    "match": "exact",
+    "source_type": "catalogue"
+   },
+   {
+    "image_url": "https://img.nauticexpo.com/pdf/repository_ne/32289/mini-radascan-brochure-56729_1mg.jpg",
+    "page_url": "https://pdf.nauticexpo.com/pdf/guidance-navigation-limited/mini-radascan-brochure/32289-56729.html",
+    "host": "img.nauticexpo.com",
+    "width": 353,
+    "height": 500,
+    "shows": "Cover of Guidance Mini RadaScan brochure, low res",
+    "match": "exact",
+    "source_type": "catalogue"
+   }
+  ],
+  "specs": [],
+  "notes": "Guidance Marine website images are unnamed screenshots; not reported. Same two as round 1."
+ },
+ {
+  "id": "A06",
+  "status": "PARTIAL",
+  "candidates": [
+   {
+    "image_url": "https://www.uniquegroup.com/wp-content/uploads/2022/10/image15.jpg",
+    "page_url": "https://www.uniquegroup.com/product/kongsberg-radius-1002-relative-position-reference-system/",
+    "host": "uniquegroup.com",
+    "width": 400,
+    "height": 320,
+    "shows": "Kongsberg RADius 1002 relative position reference system (dealer page); a RADius interrogator unit, different model",
+    "match": "family",
+    "source_type": "reseller"
+   }
+  ],
+  "specs": [],
+  "notes": "Only non-Kongsberg host found; kongsberg.com tiles (radius_2000_333x333.png etc.) remain the exact images but that host refused downloads."
+ },
+ {
+  "id": "B06",
+  "status": "FOUND",
+  "candidates": [
+   {
+    "image_url": "https://www.ashtead-technology.com/wp-content/uploads/2021/06/Kongsberg-RADius-700X-Long-Range-Transponder.jpg",
+    "page_url": "https://www.ashtead-technology.com/product/kongsberg-radius-700x-long-range-transponder/",
+    "host": "ashtead-technology.com",
+    "width": 1440,
+    "height": 1440,
+    "shows": "Kongsberg RADius 700X transponder, rental company product photo (file name names model)",
+    "match": "exact",
+    "source_type": "reseller"
+   },
+   {
+    "image_url": "https://elektromarine.com/wp-content/uploads/2026/04/EM-Website-Blog-7.jpg.webp",
+    "page_url": "https://elektromarine.com/portfolio/kongsberg-radius-700x-low-power-transponder-for-offshore-relative-positioning/",
+    "host": "elektromarine.com",
+    "width": 1366,
+    "height": 768,
+    "shows": "Elektro Marine post on RADius 700X; may be a composite or banner image, not verified",
+    "match": "exact",
+    "source_type": "reseller"
+   }
+  ],
+  "specs": [],
+  "notes": "Ashtead is the best new host; it is a rental company so check for logo or watermark by eye."
+ },
+ {
+  "id": "B07",
+  "status": "PARTIAL",
+  "candidates": [
+   {
+    "image_url": "https://www.uniquegroup.com/wp-content/uploads/2022/10/image15.jpg",
+    "page_url": "https://www.uniquegroup.com/product/kongsberg-radius-1002-relative-position-reference-system/",
+    "host": "uniquegroup.com",
+    "width": 400,
+    "height": 320,
+    "shows": "RADius 1002 interrogator system (dealer), same family, not 2000",
+    "match": "family",
+    "source_type": "reseller"
+   }
+  ],
+  "specs": [],
+  "notes": "No non-Kongsberg photo of RADius 2000 interrogator found. Datasheet PDF images (kongsberg.com 110-0030758c_datasheet_radius2000_mar24.pdf) exist but are not downloadable URLs."
+ },
+ {
+  "id": "A14",
+  "status": "PARTIAL",
+  "candidates": [
+   {
+    "image_url": "https://ronav.ae/wp-content/uploads/2024/07/RX45-removebg-preview.png",
+    "page_url": "https://ronav.ae/",
+    "host": "ronav.ae",
+    "width": 0,
+    "height": 0,
+    "shows": "RX45 antenna cut-out only, not the R1 receiver",
+    "match": "family",
+    "source_type": "oem"
+   },
+   {
+    "image_url": "https://ronav.ae/wp-content/uploads/2023/09/Ronav-System-150x150.jpg",
+    "page_url": "https://ronav.ae/",
+    "host": "ronav.ae",
+    "width": 150,
+    "height": 150,
+    "shows": "Thumbnail of Ronav system photo on OEM homepage (150 px, too small; larger original filename not confirmed)",
+    "match": "family",
+    "source_type": "oem"
+   }
+  ],
+  "specs": [],
+  "notes": "Search for 'Ronav R1' returns Trimble R1 (unrelated product); rejected. Ronav datasheet PDF https://ronav.ae/uploads/RONAV_R1_Data_Sheet.pdf may contain a receiver photo to crop if downloadable."
+ },
+ {
+  "id": "A16",
+  "status": "PARTIAL",
+  "candidates": [
+   {
+    "image_url": "https://insidegnss.com/wp-content/uploads/2020/05/013120Novatel-Veripos-LD-900_straight-front_v1_screen.jpg",
+    "page_url": "https://insidegnss.com/",
+    "host": "insidegnss.com",
+    "width": 0,
+    "height": 0,
+    "shows": "LD900 straight front view (press release image, from round 1)",
+    "match": "exact",
+    "source_type": "catalogue"
+   }
+  ],
+  "specs": [],
+  "notes": "Not re-searched, credits exhausted. veripos.com marquee excluded (refused host)."
+ },
+ {
+  "id": "A18",
+  "status": "PARTIAL",
+  "candidates": [
+   {
+    "image_url": "https://www.malinsmarine.com/upload/7634/1-898765.jpg",
+    "page_url": "https://www.malinsmarine.com/",
+    "host": "malinsmarine.com",
+    "width": 0,
+    "height": 0,
+    "shows": "HLD-RADAR 900-X photo (round 1)",
+    "match": "exact",
+    "source_type": "distributor"
+   },
+   {
+    "image_url": "https://www.malinsmarine.com/upload/7634/2-938615.jpg",
+    "page_url": "https://www.malinsmarine.com/",
+    "host": "malinsmarine.com",
+    "width": 0,
+    "height": 0,
+    "shows": "HLD-RADAR 900-X photo 2 (round 1)",
+    "match": "exact",
+    "source_type": "distributor"
+   }
+  ],
+  "specs": [],
+  "notes": "Not re-searched, credits exhausted; round 1 candidates repeated."
+ },
+ {
+  "id": "B03",
+  "status": "PARTIAL",
+  "candidates": [
+   {
+    "image_url": "https://tetramaritimeservices.com/wp-content/uploads/2024/02/photo_5895503180186370571_y.jpg",
+    "page_url": "https://tetramaritimeservices.com/",
+    "host": "tetramaritimeservices.com",
+    "width": 0,
+    "height": 0,
+    "shows": "8-way prism reflector, reseller photo (round 1)",
+    "match": "exact",
+    "source_type": "reseller"
+   }
+  ],
+  "specs": [],
+  "notes": "No new source; Kongsberg tile images exist (kongsberg.com spottrack_prisms_333x333.png) but host refused."
+ },
+ {
+  "id": "B05",
+  "status": "PARTIAL",
+  "candidates": [
+   {
+    "image_url": "https://img.nauticexpo.com/pdf/repository_ne/32289/responders-57331_1mg.jpg",
+    "page_url": "https://pdf.nauticexpo.com/pdf/guidance-navigation-limited/responders/32289-57331.html",
+    "host": "img.nauticexpo.com",
+    "width": 353,
+    "height": 500,
+    "shows": "Cover of Guidance Responders brochure, low res",
+    "match": "family",
+    "source_type": "catalogue"
+   }
+  ],
+  "specs": [],
+  "notes": "Not re-searched, credits exhausted."
+ },
+ {
+  "id": "B09",
+  "status": "FOUND",
+  "candidates": [
+   {
+    "image_url": "https://www.sonardyne.com/wp-content/uploads/2024/07/WSM-6_hero-image.jpg",
+    "page_url": "https://www.sonardyne.com/product/wsm-6/",
+    "host": "www.sonardyne.com",
+    "width": 0,
+    "height": 0,
+    "shows": "WSM 6+ hero image (round 1)",
+    "match": "exact",
+    "source_type": "oem"
+   },
+   {
+    "image_url": "https://www.sonardyne.com/wp-content/uploads/2024/07/WSM-6_overview_block-new.jpg",
+    "page_url": "https://www.sonardyne.com/product/wsm-6/",
+    "host": "www.sonardyne.com",
+    "width": 0,
+    "height": 0,
+    "shows": "WSM 6+ overview image (round 1)",
+    "match": "exact",
+    "source_type": "oem"
+   }
+  ],
+  "specs": [],
+  "notes": "Round 1 candidates repeated; not re-searched."
+ },
+ {
+  "id": "B17",
+  "status": "PARTIAL",
+  "candidates": [
+   {
+    "image_url": "https://www.kongsberg.com/globalassets/kongsberg/1.-what-we-do/2.-ocean-space/6.-navigation--positioning/cnode/cnode_micro_transponder_333x333.png",
+    "page_url": "https://www.kongsberg.com/",
+    "host": "www.kongsberg.com",
+    "width": 333,
+    "height": 333,
+    "shows": "cNODE Micro tile (round 1; host may refuse download)",
+    "match": "exact",
+    "source_type": "oem"
+   }
+  ],
+  "specs": [],
+  "notes": "No alternative host found; credits exhausted."
+ },
+ {
+  "id": "B10",
+  "status": "PARTIAL",
+  "candidates": [
+   {
+    "image_url": "https://www.sonardyne.com/wp-content/uploads/2026/01/Marine-PC-Top.png",
+    "page_url": "https://www.sonardyne.com/product/marine-computer/",
+    "host": "www.sonardyne.com",
+    "width": 0,
+    "height": 0,
+    "shows": "Sonardyne Marine Computer (rack-mount industrial PC), top view",
+    "match": "family",
+    "source_type": "oem"
+   },
+   {
+    "image_url": "https://www.sonardyne.com/wp-content/uploads/2024/08/Marine_computer_hero-image.jpg",
+    "page_url": "https://www.sonardyne.com/product/marine-computer/",
+    "host": "www.sonardyne.com",
+    "width": 0,
+    "height": 0,
+    "shows": "Sonardyne Marine Computer hero image",
+    "match": "family",
+    "source_type": "oem"
+   },
+   {
+    "image_url": "https://www.sonardyne.com/wp-content/uploads/2021/06/marine-computer-gallery-4-1024x576.jpg",
+    "page_url": "https://www.sonardyne.com/product/marine-computer/",
+    "host": "www.sonardyne.com",
+    "width": 1024,
+    "height": 576,
+    "shows": "Marine Computer gallery photo",
+    "match": "family",
+    "source_type": "oem"
+   }
+  ],
+  "description": "Sonardyne Marine Computer: rack-mountable industrial PC that runs Ranger 2 USBL and Marksman LUSBL applications (page subtitle: Industrial PC (rack mountable)).",
+  "specs": [],
+  "notes": "Shows Marine Computer family, not necessarily kit 603-0181. Surface Interface Hub 620-0770 still not found."
+ }
+]

@@ -1,0 +1,1084 @@
+{
+ "A11": [
+  {
+   "image_url": "https://alphatronmarine.com/images/products/alphatronjrcnavisnavdp40002.jpg?resolution=700x700&background=FFFFFF7F&",
+   "page_url": "https://alphatronmarine.com/en/product/navdp-4000-168/",
+   "host": "alphatronmarine.com",
+   "width": 700,
+   "height": 700,
+   "shows": "NavDP 4000 product image 2 on Alphatron page (not opened visually; likely hardware, check by eye)",
+   "match": "exact",
+   "source_type": "distributor",
+   "true_host": "alphatronmarine.com"
+  },
+  {
+   "image_url": "https://alphatronmarine.com/images/products/alphatronjrcnavisnavdp40003.jpg?resolution=700x700&background=FFFFFF7F&",
+   "page_url": "https://alphatronmarine.com/en/product/navdp-4000-168/",
+   "host": "alphatronmarine.com",
+   "width": 700,
+   "height": 700,
+   "shows": "NavDP 4000 product image 3 on Alphatron page (not viewed)",
+   "match": "exact",
+   "source_type": "distributor",
+   "true_host": "alphatronmarine.com"
+  },
+  {
+   "image_url": "https://navisincontrol.com/wp-content/uploads/2026/04/Navis-NavDP-1.webp",
+   "page_url": "https://navisincontrol.com/news/navis-navdp-dynamic-positioning-control-system-upgrade-completed-on-dantzig-at-camgsa/",
+   "host": "navisincontrol.com",
+   "width": 780,
+   "height": 989,
+   "shows": "OEM news image for NavDP upgrade on Dantzig; content (console vs vessel) not verified",
+   "match": "family",
+   "source_type": "oem",
+   "true_host": "navisincontrol.com"
+  },
+  {
+   "image_url": "https://navisincontrol.com/wp-content/uploads/2025/07/SWIFT-scaled.jpg",
+   "page_url": "https://navisincontrol.com/news/navdp-4000-dp2-control-system-successfully-installed-and-commissioned-on-mpsv-swift-of-camgsa/",
+   "host": "navisincontrol.com",
+   "shows": "OEM news photo of MPSV SWIFT where NavDP 4000 DP2 was installed (vessel photo, not a product shot)",
+   "match": "?",
+   "source_type": "oem",
+   "true_host": "navisincontrol.com"
+  }
+ ],
+ "A03": [
+  {
+   "image_url": "https://dvzpv6x5302g1.cloudfront.net/AcuCustom/Sitename/DAM/181/GM_mini_RadaScan_and_CyScanwebzhgf1_Main.png",
+   "page_url": "https://www.rivieramm.com/news-content-hub/hexagon-set-to-acquire-guidance-marine-to-boost-its-sensor-portfolio-89817",
+   "host": "dvzpv6x5302g1.cloudfront.net",
+   "width": 1200,
+   "height": 675,
+   "shows": "Mini RadaScan and CyScan sensors, trade press photo (file name GM_mini_RadaScan)",
+   "match": "exact",
+   "source_type": "catalogue",
+   "true_host": "dvzpv6x5302g1.cloudfront.net"
+  },
+  {
+   "image_url": "https://img.nauticexpo.com/pdf/repository_ne/32289/mini-radascan-brochure-56729_1mg.jpg",
+   "page_url": "https://pdf.nauticexpo.com/pdf/guidance-navigation-limited/mini-radascan-brochure/32289-56729.html",
+   "host": "img.nauticexpo.com",
+   "width": 353,
+   "height": 500,
+   "shows": "Cover of Guidance Mini RadaScan brochure, low res",
+   "match": "exact",
+   "source_type": "catalogue",
+   "true_host": "img.nauticexpo.com"
+  }
+ ],
+ "A06": [
+  {
+   "image_url": "https://www.uniquegroup.com/wp-content/uploads/2022/10/image15.jpg",
+   "page_url": "https://www.uniquegroup.com/product/kongsberg-radius-1002-relative-position-reference-system/",
+   "host": "uniquegroup.com",
+   "width": 400,
+   "height": 320,
+   "shows": "Kongsberg RADius 1002 relative position reference system (dealer page); a RADius interrogator unit, different model",
+   "match": "family",
+   "source_type": "reseller",
+   "true_host": "www.uniquegroup.com"
+  }
+ ],
+ "A14": [
+  {
+   "image_url": "https://ronav.ae/wp-content/uploads/2024/07/RX45-removebg-preview.png",
+   "page_url": "https://ronav.ae/",
+   "host": "ronav.ae",
+   "width": 0,
+   "height": 0,
+   "shows": "RX45 antenna cut-out only, not the R1 receiver",
+   "match": "family",
+   "source_type": "oem",
+   "true_host": "ronav.ae"
+  },
+  {
+   "image_url": "https://ronav.ae/wp-content/uploads/2023/09/Ronav-System-150x150.jpg",
+   "page_url": "https://ronav.ae/",
+   "host": "ronav.ae",
+   "width": 150,
+   "height": 150,
+   "shows": "Thumbnail of Ronav system photo on OEM homepage (150 px, too small; larger original filename not confirmed)",
+   "match": "family",
+   "source_type": "oem",
+   "true_host": "ronav.ae"
+  }
+ ],
+ "A16": [
+  {
+   "image_url": "https://insidegnss.com/wp-content/uploads/2020/05/013120Novatel-Veripos-LD-900_straight-front_v1_screen.jpg",
+   "page_url": "https://insidegnss.com/",
+   "host": "insidegnss.com",
+   "width": 0,
+   "height": 0,
+   "shows": "LD900 straight front view (press release image, from round 1)",
+   "match": "exact",
+   "source_type": "catalogue",
+   "true_host": "insidegnss.com"
+  }
+ ],
+ "B05": [
+  {
+   "image_url": "https://img.nauticexpo.com/pdf/repository_ne/32289/responders-57331_1mg.jpg",
+   "page_url": "https://pdf.nauticexpo.com/pdf/guidance-navigation-limited/responders/32289-57331.html",
+   "host": "img.nauticexpo.com",
+   "width": 353,
+   "height": 500,
+   "shows": "Cover of Guidance Responders brochure, low res",
+   "match": "family",
+   "source_type": "catalogue",
+   "true_host": "img.nauticexpo.com"
+  }
+ ],
+ "B03": [
+  {
+   "image_url": "https://tetramaritimeservices.com/wp-content/uploads/2024/02/photo_5895503180186370571_y.jpg",
+   "page_url": "https://tetramaritimeservices.com/",
+   "host": "tetramaritimeservices.com",
+   "width": 0,
+   "height": 0,
+   "shows": "8-way prism reflector, reseller photo (round 1)",
+   "match": "exact",
+   "source_type": "reseller",
+   "true_host": "tetramaritimeservices.com"
+  }
+ ],
+ "B06": [
+  {
+   "image_url": "https://www.ashtead-technology.com/wp-content/uploads/2021/06/Kongsberg-RADius-700X-Long-Range-Transponder.jpg",
+   "page_url": "https://www.ashtead-technology.com/product/kongsberg-radius-700x-long-range-transponder/",
+   "host": "ashtead-technology.com",
+   "width": 1440,
+   "height": 1440,
+   "shows": "Kongsberg RADius 700X transponder, rental company product photo (file name names model)",
+   "match": "exact",
+   "source_type": "reseller",
+   "true_host": "www.ashtead-technology.com"
+  },
+  {
+   "image_url": "https://elektromarine.com/wp-content/uploads/2026/04/EM-Website-Blog-7.jpg.webp",
+   "page_url": "https://elektromarine.com/portfolio/kongsberg-radius-700x-low-power-transponder-for-offshore-relative-positioning/",
+   "host": "elektromarine.com",
+   "width": 1366,
+   "height": 768,
+   "shows": "Elektro Marine post on RADius 700X; may be a composite or banner image, not verified",
+   "match": "exact",
+   "source_type": "reseller",
+   "true_host": "elektromarine.com"
+  }
+ ],
+ "B09": [
+  {
+   "image_url": "https://www.sonardyne.com/wp-content/uploads/2024/07/WSM-6_hero-image.jpg",
+   "page_url": "https://www.sonardyne.com/product/wsm-6/",
+   "host": "www.sonardyne.com",
+   "width": 0,
+   "height": 0,
+   "shows": "WSM 6+ hero image (round 1)",
+   "match": "exact",
+   "source_type": "oem",
+   "true_host": "www.sonardyne.com"
+  },
+  {
+   "image_url": "https://www.sonardyne.com/wp-content/uploads/2024/07/WSM-6_overview_block-new.jpg",
+   "page_url": "https://www.sonardyne.com/product/wsm-6/",
+   "host": "www.sonardyne.com",
+   "width": 0,
+   "height": 0,
+   "shows": "WSM 6+ overview image (round 1)",
+   "match": "exact",
+   "source_type": "oem",
+   "true_host": "www.sonardyne.com"
+  },
+  {
+   "image_url": "https://www.sonardyne.com/wp-content/uploads/2021/06/wsm-6-at-a-glance-UPDATE.jpg",
+   "page_url": "https://www.sonardyne.com/product/nsh/",
+   "host": "www.sonardyne.com",
+   "shows": "WSM 6+ at-a-glance thumbnail linked from the NSH related products list (size not reported)",
+   "match": "?",
+   "source_type": "oem",
+   "true_host": "www.sonardyne.com"
+  }
+ ],
+ "B17": [],
+ "B15": [
+  {
+   "image_url": "https://nauticalelectronics.com/wp-content/uploads/2024/01/standard22-gyrocompass-nauticalelectronics.com_.jpg",
+   "page_url": "https://nauticalelectronics.com/nauticalelectronics/gyrocompass/raytheon-anschutz-kiel-gyro-compass/standard-22-gyrocompass/",
+   "host": "nauticalelectronics.com",
+   "width": 1200,
+   "height": 1200,
+   "shows": "Standard 22 gyro compass unit, product photo",
+   "match": "exact",
+   "source_type": "reseller",
+   "true_host": "nauticalelectronics.com"
+  },
+  {
+   "image_url": "https://www.turkeymarineservice.com/wp-content/uploads/2021/01/std22-operator-unit.jpg",
+   "page_url": "https://www.turkeymarineservice.com/gyrocompass-standard-22-operator-unit-130-626-ng002/",
+   "host": "turkeymarineservice.com",
+   "width": 472,
+   "height": 395,
+   "shows": "Standard 22 operator unit 130-626.NG002 / 130-613",
+   "match": "exact",
+   "source_type": "reseller",
+   "true_host": "www.turkeymarineservice.com"
+  },
+  {
+   "image_url": "https://www.anschuetz.com/fileadmin/_processed_/8/6/csm_gyro_compass_5_37b5eaf4c9.jpg",
+   "page_url": "https://www.anschuetz.com/products/gyro-compasses-and-repeaters/standard-22-nx",
+   "host": "anschuetz.com",
+   "width": 1018,
+   "height": 814,
+   "shows": "Standard 22 NX gyro compass, OEM page image",
+   "match": "family",
+   "source_type": "oem",
+   "true_host": "www.anschuetz.com"
+  },
+  {
+   "image_url": "https://www.anschuetz.com/fileadmin/_processed_/a/e/csm_Header_Std22_a437ede7a2.jpg",
+   "page_url": "https://www.anschuetz.com/products/gyro-compasses-and-repeaters/standard-22-nx",
+   "host": "anschuetz.com",
+   "shows": "Standard 22 NX header image (OEM, current NX model)",
+   "match": "?",
+   "source_type": "oem",
+   "true_host": "www.anschuetz.com"
+  }
+ ],
+ "C04": [
+  {
+   "image_url": "https://www.hattelandtechnology.com/hubfs/HubDB-Product/high/jh19t27mmd-xrx__angcon_with_touch.jpg",
+   "page_url": "https://www.hattelandtechnology.com/view_product/jh-19t27-mmd_monitor_558",
+   "host": "hattelandtechnology.com",
+   "shows": "GENERIC: Hatteland JH 19T27 MMD with touch, rear connector view",
+   "match": "?",
+   "source_type": "oem",
+   "true_host": "www.hattelandtechnology.com"
+  }
+ ],
+ "C05": [
+  {
+   "image_url": "https://img.nauticexpo.com/images_ne/projects/images-g/marine-keyboards-trackballs-most-demanding-jobs-new-full-travel-rubber-keyboards-ergonomical-trackballs-17239-9893352.jpg",
+   "page_url": "https://trends.nauticexpo.com/nsi/project-31428-317239.html",
+   "host": "nauticexpo.com",
+   "shows": "GENERIC: NSI marine keyboards and trackballs",
+   "match": "?",
+   "source_type": "catalogue",
+   "true_host": "img.nauticexpo.com"
+  },
+  {
+   "image_url": "https://rugged.co.uk/wp-content/uploads/E38-Desktop-Cursor-Controls-Trackball.png",
+   "page_url": "https://rugged.co.uk/trackballs-for-marine-applications/",
+   "host": "rugged.co.uk",
+   "shows": "GENERIC: marine desktop trackball",
+   "match": "?",
+   "source_type": "catalogue",
+   "true_host": "rugged.co.uk"
+  },
+  {
+   "image_url": "https://seatronx.com/wp-content/uploads/2025/01/KSMX106B_backlit_waterproof_keyboard-1024x443.jpg",
+   "page_url": "https://seatronx.com/products/keyboards/marine-keyboards/keyboard-with-ergonomic-trackball/",
+   "host": "seatronx.com",
+   "shows": "GENERIC: marine keyboard with ergonomic trackball",
+   "match": "?",
+   "source_type": "catalogue",
+   "true_host": "seatronx.com"
+  }
+ ],
+ "C08": [
+  {
+   "image_url": "https://www.protamarine.com/wp-content/uploads/2025/02/33.webp",
+   "page_url": "https://www.protamarine.com/product/kongsberg-603201-compact-joystick-operator-terminal-rev-a/",
+   "host": "protamarine.com",
+   "width": 1595,
+   "height": 1186,
+   "shows": "Kongsberg 603201 cJoy terminal Rev A (same as round 1; best available)",
+   "match": "exact",
+   "source_type": "reseller",
+   "true_host": "www.protamarine.com"
+  },
+  {
+   "image_url": "https://www.protamarine.com/wp-content/uploads/2025/02/36.webp",
+   "page_url": "https://www.protamarine.com/product/kongsberg-603201-compact-joystick-operator-terminal-rev-a/",
+   "host": "protamarine.com",
+   "width": 1490,
+   "height": 1600,
+   "shows": "Second view of the 603201",
+   "match": "exact",
+   "source_type": "reseller",
+   "true_host": "www.protamarine.com"
+  },
+  {
+   "image_url": "https://aeliyamarine.com/cdn/shop/files/kongsberg_603201_cjoy_operator_terminal_compact_joystick-114899_1_180x.jpg?v=1714044272",
+   "page_url": "https://aeliyamarine.com/products/kongsberg-603201-cjoy-operator-terminal-compact-joystick",
+   "host": "aeliyamarine.com",
+   "width": 180,
+   "height": null,
+   "shows": "603201 cJoy, thumbnail only (too small for print)",
+   "match": "exact",
+   "source_type": "reseller",
+   "true_host": "aeliyamarine.com"
+  }
+ ],
+ "C23": [
+  {
+   "image_url": "https://cdn11.bigcommerce.com/s-o0ql33eyfo/images/stencil/1280x1280/products/65647/1981674/caldaro_s50jak-zu-31r1g-74083_7__45815.1766210081.jpg?c=1",
+   "page_url": "https://auto2mation.com/caldaro-s50jak-zu-31r1g-joystick-controller.html",
+   "host": "cdn11.bigcommerce.com",
+   "width": 1020,
+   "height": 765,
+   "shows": "Caldaro S50JAK-ZU-31R1G joystick, reseller photo (variant suffix; not viewed)",
+   "match": "family",
+   "source_type": "reseller",
+   "true_host": "cdn11.bigcommerce.com"
+  },
+  {
+   "image_url": "https://cdn11.bigcommerce.com/s-o0ql33eyfo/images/stencil/1280x1280/products/65647/1981668/caldaro_s50jak-zu-31r1g-74083_1__49591.1766464912.jpg?c=1",
+   "page_url": "https://auto2mation.com/caldaro-s50jak-zu-31r1g-joystick-controller.html",
+   "host": "cdn11.bigcommerce.com",
+   "width": 1020,
+   "height": 765,
+   "shows": "Another angle of the S50JAK-ZU-31R1G joystick, reseller (not viewed)",
+   "match": "family",
+   "source_type": "reseller",
+   "true_host": "cdn11.bigcommerce.com"
+  },
+  {
+   "image_url": "https://cdn11.bigcommerce.com/s-o0ql33eyfo/images/stencil/1280x1280/products/65647/1981677/caldaro_s50jak-zu-31r1g-74083_10__42691.1766210081.jpg?c=1",
+   "page_url": "https://auto2mation.com/caldaro-s50jak-zu-31r1g-joystick-controller.html",
+   "host": "cdn11.bigcommerce.com",
+   "width": 1020,
+   "height": 765,
+   "shows": "Third angle of the S50JAK-ZU-31R1G joystick, reseller (not viewed)",
+   "match": "family",
+   "source_type": "reseller",
+   "true_host": "cdn11.bigcommerce.com"
+  }
+ ],
+ "C07": [
+  {
+   "image_url": "https://elektromarine.com/wp-content/uploads/2023/11/RMP-201-8-1.jpg.webp",
+   "page_url": "https://elektromarine.com/product/kongsberg-rmp201-8-324400/",
+   "host": "elektromarine.com",
+   "width": 1000,
+   "height": 1000,
+   "shows": "RMP201-8, from round 1",
+   "match": "exact",
+   "source_type": "distributor",
+   "true_host": "elektromarine.com"
+  },
+  {
+   "image_url": "http://www.controltech-supply.com/cdn/shop/files/RMP201-8.jpg?v=1726195271",
+   "page_url": "https://www.controltech-supply.com/products/kongsberg-rmp201-8-versatile-remote-input-output-i-o-module",
+   "host": "controltech-supply.com",
+   "width": 400,
+   "height": 400,
+   "shows": "Kongsberg RMP201-8 module photo (file name names the model)",
+   "match": "exact",
+   "source_type": "reseller",
+   "true_host": "www.controltech-supply.com"
+  },
+  {
+   "image_url": "https://www.smmarineservice.com/uploads/PostImages/KONGSBERG_MARITIME_AS_RMP201-8_DIGITAL_INPUT_MODULE.png",
+   "page_url": "https://www.smmarineservice.com/product-view/828/10",
+   "host": "smmarineservice.com",
+   "width": null,
+   "height": null,
+   "shows": "RMP201-8 module (file name and page title name the model)",
+   "match": "exact",
+   "source_type": "reseller",
+   "true_host": "www.smmarineservice.com"
+  }
+ ],
+ "C09": [
+  {
+   "image_url": "https://aeliyamarine.com/cdn/shop/files/20210301_171031_resized_efd5f8c7-2acd-4a1c-bc79-9a8250bf5730_180x.jpg?v=1727114604",
+   "page_url": "https://aeliyamarine.com/products/rolls-royce-rraio16-i-o-alarm-module",
+   "host": "aeliyamarine.com",
+   "width": 180,
+   "height": null,
+   "shows": "RRAIO16 module photos on a used-parts seller page (first of 7 product photos; thumbnail size only, content not visually checked)",
+   "match": "exact",
+   "source_type": "reseller",
+   "true_host": "aeliyamarine.com"
+  },
+  {
+   "image_url": "https://www.dcssaul.com/wp-content/uploads/2026/05/969ab20fa8b8a5684a31.jpg",
+   "page_url": "https://www.dcssaul.com/products/rolls-royce/rraio16/",
+   "host": "dcssaul.com",
+   "shows": "RRAIO16 module (reseller, check for watermark)",
+   "match": "?",
+   "source_type": "distributor",
+   "true_host": "www.dcssaul.com"
+  },
+  {
+   "image_url": "https://www.marineshipstores.com/wp-content/uploads/2024/04/ROLLS-ROYCE-RRAIO16-ANALOG-IO-MODULE-16-CHANNEL.jpg",
+   "page_url": "https://www.marineshipstores.com/product/rolls-royce-rraio16-analog-io-module-16-channel/",
+   "host": "marineshipstores.com",
+   "shows": "RRAIO16 analog I/O module 16 channel",
+   "match": "?",
+   "source_type": "distributor",
+   "true_host": "www.marineshipstores.com"
+  }
+ ],
+ "C10": [
+  {
+   "image_url": "https://www.plcdcspro.com/cdn/shop/files/IC693CPU374.png?v=1741329280&width=1946",
+   "page_url": "https://www.plcdcspro.com/products/fanuc-ic693cpu374-series-90-30-cpu-module-ge-series-90-30",
+   "host": "plcdcspro.com",
+   "shows": "IC693CPU374 CPU module",
+   "match": "?",
+   "source_type": "distributor",
+   "true_host": "www.plcdcspro.com"
+  },
+  {
+   "image_url": "http://iqelectro.com/cdn/shop/files/IC693CPU374.webp?v=1703249492",
+   "page_url": "https://iqelectro.com/products/ic693cpu374-ge-fanuc-series-90-30",
+   "host": "iqelectro.com",
+   "shows": "IC693CPU374 processor module",
+   "match": "?",
+   "source_type": "distributor",
+   "true_host": "iqelectro.com"
+  }
+ ],
+ "C11": [
+  {
+   "image_url": "https://4d-product-images.s3.ap-southeast-2.amazonaws.com/wp-content/uploads/2025/12/wp_media_kzpHLx.jpg",
+   "page_url": "https://4dcontrols.com/shop/ic200alg240-ge-fanuc-versamax-analog-input-module-8-point-16-bit/",
+   "host": "4dcontrols.com",
+   "width": null,
+   "height": null,
+   "shows": "Thumbnail from IC200ALG240 product page (content not visually checked)",
+   "match": "exact",
+   "source_type": "reseller",
+   "true_host": "4d-product-images.s3.ap-southeast-2.amazonaws.com"
+  },
+  {
+   "image_url": "https://www.nexinstrument.com/assets/images/IC200ALG240.jpg",
+   "page_url": "https://www.nexinstrument.com/ic200alg240",
+   "host": "nexinstrument.com",
+   "shows": "IC200ALG240 module",
+   "match": "?",
+   "source_type": "distributor",
+   "true_host": "www.nexinstrument.com"
+  },
+  {
+   "image_url": "https://res.cloudinary.com/dhuybxcsw/image/private/s--DgN4J_k5--/w_1600,h_1600,f_auto,q_auto/dosupply/listings/rich/IC200ALG240_JE/T_3_330_veownc",
+   "page_url": "https://www.dosupply.com/automation/ge-fanuc/versamax/IC200ALG240",
+   "host": "res.cloudinary.com",
+   "shows": "IC200ALG240 module (DO Supply, signed URL may expire)",
+   "match": "?",
+   "source_type": "distributor",
+   "true_host": "res.cloudinary.com"
+  },
+  {
+   "image_url": "https://www.pdfsupply.com/images/large/ic200alg240.jpg",
+   "page_url": "https://www.pdfsupply.com/automation/ge-fanuc/versamax/IC200ALG240",
+   "host": "pdfsupply.com",
+   "shows": "IC200ALG240 module",
+   "match": "?",
+   "source_type": "distributor",
+   "true_host": "www.pdfsupply.com"
+  }
+ ],
+ "C12": [
+  {
+   "image_url": "https://www.saulcontrol.com/wp-content/uploads/2023/09/f9b13ab237a5d130458d.jpg",
+   "page_url": "https://www.saulcontrol.com/product/p111-6052-converteam-advanced-micro-controller/",
+   "host": "saulcontrol.com",
+   "width": null,
+   "height": null,
+   "shows": "First product image on the P111-6052 page (file names are hashes, so it is the main gallery image by position only, not confirmed visually)",
+   "match": "exact",
+   "source_type": "reseller",
+   "true_host": "www.saulcontrol.com"
+  },
+  {
+   "image_url": "https://www.smtssg.com/wp-content/uploads/2021/03/AMC2.jpeg",
+   "page_url": "https://www.smtssg.com/product/advanced-micro-controller-converteam-p111-6052/",
+   "host": "smtssg.com",
+   "shows": "Converteam P111-6052 Advanced Micro Controller",
+   "match": "?",
+   "source_type": "distributor",
+   "true_host": "www.smtssg.com"
+  },
+  {
+   "image_url": "https://atlasshipcare.com/cdn/shop/products/CONVERTEAM-P110-6152-ISS-B-ADVANCED-MICRO-CONTROLLER-2.jpg?v=1709947591",
+   "page_url": "https://atlasshipcare.com/products/converteam-p110-6152-iss-b-advanced-micro-controller-ab359",
+   "host": "atlasshipcare.com",
+   "shows": "Converteam P110-6152 ISS B AMC (different part number)",
+   "match": "?",
+   "source_type": "distributor",
+   "true_host": "atlasshipcare.com"
+  }
+ ],
+ "C13": [
+  {
+   "image_url": "https://www.jc-electronics.com/media/catalog/product/T/S/TSXP574634M_0.jpg",
+   "page_url": "https://www.jc-electronics.com/tsxp574634m",
+   "host": "www.jc-electronics.com",
+   "width": 1200,
+   "height": 800,
+   "shows": "TSXP574634M processor, reseller product photo (title names exact model; not viewed)",
+   "match": "exact",
+   "source_type": "reseller",
+   "true_host": "www.jc-electronics.com"
+  },
+  {
+   "image_url": "https://www.plcsparehub.com/cdn/shop/files/TSXP574634M-2.jpg?v=1793677194&width=1000",
+   "page_url": "https://www.plcsparehub.com/products/tsxp574634m-modicon-premium-schneider-electric-processor-module",
+   "host": "www.plcsparehub.com",
+   "width": 1000,
+   "height": 1000,
+   "shows": "TSXP574634M module photo, reseller (title names exact model; not viewed)",
+   "match": "exact",
+   "source_type": "reseller",
+   "true_host": "www.plcsparehub.com"
+  },
+  {
+   "image_url": "https://images.wiautomation.com/public/images/landing/anticipa/product/TSXP574634M.jpg",
+   "page_url": "https://nl.wiautomation.com/schneider-electric/plc-systems/modicon-premium/TSX-P57-4634M",
+   "host": "images.wiautomation.com",
+   "width": 800,
+   "height": 800,
+   "shows": "TSXP574634M product image, industrial reseller (not viewed)",
+   "match": "exact",
+   "source_type": "reseller",
+   "true_host": "images.wiautomation.com"
+  },
+  {
+   "image_url": "https://www.cofiem-electronics.com/storage/products/tsxp574634m-1.jpg",
+   "page_url": "https://www.cofiem-electronics.com/products/tsxp574634m",
+   "host": "www.cofiem-electronics.com",
+   "width": 2048,
+   "height": 1536,
+   "shows": "TSXP574634M photo, reseller (not viewed, may be a used-unit photo)",
+   "match": "exact",
+   "source_type": "reseller",
+   "true_host": "www.cofiem-electronics.com"
+  }
+ ],
+ "C15": [
+  {
+   "image_url": "https://woodward.store/media/e1/ff/7c/1718784614/IMG_8440-2085-1.jpg?ts=1718784614",
+   "page_url": "https://woodward.store/en/easygen-3000xt/easygen-3500xt",
+   "host": "woodward.store",
+   "width": 0,
+   "height": 0,
+   "shows": "easYgen-3500XT P1 product shot on Woodward-linked store (size unknown; from round 1)",
+   "match": "exact",
+   "source_type": "distributor",
+   "true_host": "woodward.store"
+  },
+  {
+   "image_url": "https://automationindustrial.com/cdn/shop/files/Woodward-8440-2085.JPEG?v=1748353684&width=1920",
+   "page_url": "https://automationindustrial.com/products/8440-2085-by-woodward-easygen-3500xt-p1-24vdc-generator-control-panel",
+   "host": "automationindustrial.com",
+   "width": 1920,
+   "height": 1386,
+   "shows": "Woodward 8440-2085 easYgen-3500XT-P1 unit, reseller photo (not viewed)",
+   "match": "exact",
+   "source_type": "reseller",
+   "true_host": "automationindustrial.com"
+  },
+  {
+   "image_url": "http://www.plcmasters.com/cdn/shop/files/8440-2085.jpg?v=1751873087",
+   "page_url": "https://www.plcmasters.com/products/woodward-8440-2085-easygen-3500xt-p1-genset-controller",
+   "host": "www.plcmasters.com",
+   "width": 640,
+   "height": 640,
+   "shows": "Woodward 8440-2085 easYgen-3500XT-P1 controller, reseller photo (not viewed)",
+   "match": "exact",
+   "source_type": "reseller",
+   "true_host": "www.plcmasters.com"
+  },
+  {
+   "image_url": "https://cdn11.bigcommerce.com/s-5216c/images/stencil/1280x1280/products/9937/7478/8440-2085__96328.1782743395.webp?c=2",
+   "page_url": "https://acepowerparts.com/8440-2085-control-easygen-3500xt-p1/",
+   "host": "cdn11.bigcommerce.com",
+   "width": 960,
+   "height": 1280,
+   "shows": "8440-2085 easYgen-3500XT-P1 reseller photo, webp (not viewed)",
+   "match": "exact",
+   "source_type": "reseller",
+   "true_host": "cdn11.bigcommerce.com"
+  }
+ ],
+ "C21": [
+  {
+   "image_url": "https://rexroth-parts.com/27343-large_default/vt-vrra-1-537-20-v0-1-1.jpg",
+   "page_url": "https://rexroth-parts.com/en/valve-amplifiers-1/vt-vrra-1-537-20-v0-1-1",
+   "host": "rexroth-parts.com",
+   "width": 800,
+   "height": 800,
+   "shows": "VT-VRRA 1-537-20/V0 amplifier card, reseller (not viewed)",
+   "match": "exact",
+   "source_type": "reseller",
+   "true_host": "rexroth-parts.com"
+  },
+  {
+   "image_url": "http://www.automodulexpert.com/cdn/shop/files/VT-VRRA_1-537-20V02_774f7bfa-06dc-4110-9e06-cccbbaff5694.jpg?v=1764576673",
+   "page_url": "https://www.automodulexpert.com/ar/products/rexroth-vt-vrra-1-537-20-v0-proportional-valve-amplifier",
+   "host": "www.automodulexpert.com",
+   "width": 800,
+   "height": 800,
+   "shows": "VT-VRRA 1-537-20/V0 amplifier, reseller (not viewed)",
+   "match": "exact",
+   "source_type": "reseller",
+   "true_host": "www.automodulexpert.com"
+  },
+  {
+   "image_url": "https://www.runtoelectronic.com/cdn/shop/products/dec38d4807b5f97b5a56517a7587168c.jpg?v=1671068480&width=650",
+   "page_url": "https://www.runtoelectronic.com/products/rexroth-vt-vrra-1-537-20-v0-valve-amplifier-card",
+   "host": "www.runtoelectronic.com",
+   "width": 650,
+   "height": 650,
+   "shows": "Rexroth VT-VRRA 1-537-20/V0 card, reseller (not viewed)",
+   "match": "exact",
+   "source_type": "reseller",
+   "true_host": "www.runtoelectronic.com"
+  },
+  {
+   "image_url": "http://www.runtoelectronic.com/cdn/shop/products/4227a04ccd70d259fd94543d07d68e23.jpg?v=1671068475",
+   "page_url": "https://www.runtoelectronic.com/products/rexroth-vt-vrra-1-537-20-v0-valve-amplifier-card",
+   "host": "www.runtoelectronic.com",
+   "width": 650,
+   "height": 650,
+   "shows": "Second photo of the same card, reseller (not viewed)",
+   "match": "exact",
+   "source_type": "reseller",
+   "true_host": "www.runtoelectronic.com"
+  }
+ ],
+ "C17": [
+  {
+   "image_url": "https://www.danfoss.com/media/1nqjbmxz/vacon-nxp-air-cooled.jpg?v=1d8abbcb6023930&width=1220",
+   "page_url": "https://www.danfoss.com/en/products/dds/low-voltage-drives/vacon-drives/vacon-nxp-air-cooled/",
+   "host": "danfoss.com",
+   "shows": "VACON NXP Air Cooled drive",
+   "match": "?",
+   "source_type": "oem",
+   "true_host": "www.danfoss.com"
+  },
+  {
+   "image_url": "https://www.danfoss.com/media/6375/vlt_5000_5000flux_5000crane.jpg",
+   "page_url": "https://www.danfoss.com/en/products/dds/low-voltage-drives/vlt-and-vacon-legacy-drives/vlt-5000/",
+   "host": "danfoss.com",
+   "shows": "VLT 5000 family (5000, FLUX, Crane)",
+   "match": "?",
+   "source_type": "oem",
+   "true_host": "www.danfoss.com"
+  },
+  {
+   "image_url": "https://www.cse-distributors.co.uk/sites/admin/plugins/elfinder/files/cse/uploads/2014/05/vlt-5000-drive.jpg",
+   "page_url": "https://www.cse-distributors.co.uk/danfoss-drives/danfoss-vlt5000-inverter-drives-ip20ip54.html",
+   "host": "www.cse-distributors.co.uk",
+   "width": 200,
+   "height": 305,
+   "shows": "VLT 5000 IP20/IP54 drive, small reseller image (too small for print)",
+   "match": "family",
+   "source_type": "distributor",
+   "true_host": "www.cse-distributors.co.uk"
+  },
+  {
+   "image_url": "https://timcontrols.com/photos/parts/danfoss-vacon/danfoss-vlt5000-compact-illustration.webp",
+   "page_url": "https://timcontrols.com/manufacturers/danfoss-vacon/vlt-5000",
+   "host": "timcontrols.com",
+   "width": 1200,
+   "height": 1200,
+   "shows": "VLT 5000 compact drive illustration/render on reseller site (not viewed)",
+   "match": "family",
+   "source_type": "reseller",
+   "true_host": "timcontrols.com"
+  }
+ ],
+ "C19": [
+  {
+   "image_url": "https://www.eaton.com/mdmfiles/PDM25110013/9SX3000_C/1000x1000_300dpi",
+   "page_url": "https://www.eaton.com/us/en-us/skuPage.9SX3000.html",
+   "host": "www.eaton.com",
+   "width": 1000,
+   "height": 1000,
+   "shows": "Eaton 9SX3000 tower UPS (120 V SKU, same family as 9SX3000I)",
+   "match": "family",
+   "source_type": "oem",
+   "true_host": "www.eaton.com"
+  },
+  {
+   "image_url": "https://cdn.adiglobaldistribution.us/pim/500X500/10017/1040552908_alt2.jpg",
+   "page_url": "https://www.adiglobaldistribution.us/product/apc-srtrmxla?option=2G-SRT1500RM",
+   "host": "cdn.adiglobaldistribution.us",
+   "width": 500,
+   "height": 500,
+   "shows": "APC Smart-UPS SRT 1500 rackmount 120 V (SRTRMXLA), distributor image; same family as SRT1500RMXLI",
+   "match": "family",
+   "source_type": "distributor",
+   "true_host": "cdn.adiglobaldistribution.us"
+  },
+  {
+   "image_url": "https://www.bhphotovideo.com/cdn-cgi/image/fit=scale-down,width=500,quality=95/https://www.bhphotovideo.com/images/images500x500/apc_srt1500xla_smart_ups_srt_1500va_120v_1737474371_1454736.jpg",
+   "page_url": "https://www.bhphotovideo.com/c/product/1454736-REG/apc_srt1500xla_smart_ups_srt_1500va_120v.html",
+   "host": "www.bhphotovideo.com",
+   "width": 500,
+   "height": 500,
+   "shows": "APC SRT1500XLA tower 120 V (family, tower not rack)",
+   "match": "family",
+   "source_type": "reseller",
+   "true_host": "www.bhphotovideo.com"
+  },
+  {
+   "image_url": "https://www.refurbups.com/refurbups-item-images-2021/UPS-APC-SMT1500RM2U_00.JPG?resizeid=2&resizeh=600&resizew=600",
+   "page_url": "https://www.refurbups.com/Brand-New-APC-Smart-UPS-SRT1500RMXLA-UPS-System",
+   "host": "www.refurbups.com",
+   "width": 600,
+   "height": 600,
+   "shows": "APC SRT1500RMXLA 120 V rack UPS, reseller (file name says SMT1500RM2U, so possibly a different line; not viewed)",
+   "match": "generic",
+   "source_type": "reseller",
+   "true_host": "www.refurbups.com"
+  }
+ ],
+ "C24": [
+  {
+   "image_url": "https://api.qlight-system.com/storage/local/20240613/16d4a4d2c3dfbc2caee7e6838edb5873.webp",
+   "page_url": "https://www.qlight-system.com/products/details/st56l",
+   "host": "api.qlight-system.com",
+   "width": 700,
+   "height": 700,
+   "shows": "ST56L tower light on Qlight's other (qlight-system.com) site, page titled ST56L (webp; not viewed)",
+   "match": "exact",
+   "source_type": "oem",
+   "true_host": "api.qlight-system.com"
+  },
+  {
+   "image_url": "https://api.qlight-system.com/storage/local/20240613/c01e1eb699f4675b46d87f1a0d9d13af.webp",
+   "page_url": "https://www.qlight-system.com/products/details/st56l",
+   "host": "api.qlight-system.com",
+   "width": 700,
+   "height": 700,
+   "shows": "Second ST56L image on qlight-system.com (webp; not viewed)",
+   "match": "exact",
+   "source_type": "oem",
+   "true_host": "api.qlight-system.com"
+  },
+  {
+   "image_url": "https://signalsonline.com/cdn/shop/files/SignalsOnline_ST56EL_TowerLight-Group_09-19-25.jpg?v=1759429643&width=2048",
+   "page_url": "https://signalsonline.com/products/st56l-led-tower-light-standard-with-melodies-and-sound-contiinuous-light",
+   "host": "signalsonline.com",
+   "width": 2000,
+   "height": 2000,
+   "shows": "Qlight ST56EL tower lights group shot (EL = with sound variant, same 56 mm family; reseller)",
+   "match": "family",
+   "source_type": "reseller",
+   "true_host": "signalsonline.com"
+  }
+ ],
+ "A18": [
+  {
+   "image_url": "https://www.malinsmarine.com/upload/7634/1-898765.jpg",
+   "page_url": "https://www.malinsmarine.com/",
+   "host": "malinsmarine.com",
+   "width": 0,
+   "height": 0,
+   "shows": "HLD-RADAR 900-X photo (round 1)",
+   "match": "exact",
+   "source_type": "distributor",
+   "true_host": "www.malinsmarine.com"
+  },
+  {
+   "image_url": "https://www.malinsmarine.com/upload/7634/2-938615.jpg",
+   "page_url": "https://www.malinsmarine.com/",
+   "host": "malinsmarine.com",
+   "width": 0,
+   "height": 0,
+   "shows": "HLD-RADAR 900-X photo 2 (round 1)",
+   "match": "exact",
+   "source_type": "distributor",
+   "true_host": "www.malinsmarine.com"
+  },
+  {
+   "image_url": "https://www.highlander-global.com/uploads/images/2026/0709/fjWAR25Ld7bLr5atDnVwcesDfojTFPSFMmTX7J6b.png",
+   "page_url": "https://www.highlander-global.com/info/846.html",
+   "host": "highlander-global.com",
+   "shows": "OEM image of the HLD-RADAR 900S (solid state variant, NOT the magnetron 900 X-band)",
+   "match": "?",
+   "source_type": "oem",
+   "true_host": "www.highlander-global.com"
+  }
+ ],
+ "D01": [
+  {
+   "image_url": "https://www.smtssg.com/wp-content/uploads/2021/12/Cyscan-1.jpeg",
+   "page_url": "https://www.smtssg.com/product/cyscan-radar-mk4-service-kit-p-n-31-0362-4/",
+   "host": "www.smtssg.com",
+   "width": 639,
+   "height": 1024,
+   "shows": "Photo of the CyScan MK4 service kit 31-0362-4 (page title and alt text; content not viewed)",
+   "match": "exact",
+   "source_type": "reseller",
+   "true_host": "www.smtssg.com"
+  },
+  {
+   "image_url": "https://www.smtssg.com/wp-content/uploads/2021/12/CYSCAN-MK4-Service-Kit-pdf.jpg",
+   "page_url": "https://www.smtssg.com/product/cyscan-radar-mk4-service-kit-p-n-31-0362-4/",
+   "host": "www.smtssg.com",
+   "width": 1058,
+   "height": 1497,
+   "shows": "Likely a page image of the kit contents list PDF, not a photo (file name suggests pdf)",
+   "match": "exact",
+   "source_type": "reseller",
+   "true_host": "www.smtssg.com"
+  },
+  {
+   "image_url": "https://www.smtssg.com/wp-content/uploads/2021/12/Cyscan2.jpeg",
+   "page_url": "https://www.smtssg.com/product/cyscan-radar-mk4-service-kit-p-n-31-0362-4/",
+   "host": "smtssg.com",
+   "shows": "Second photo of the same kit (alt text Image 2); not visually checked",
+   "match": "?",
+   "source_type": "distributor",
+   "true_host": "www.smtssg.com"
+  },
+  {
+   "image_url": "https://img.nauticexpo.com/images_ne/photo-mg/32289-8647189.webp",
+   "page_url": "https://www.nauticexpo.com/prod/guidance-navigation-limited/product-32289-283866.html",
+   "host": "img.nauticexpo.com",
+   "width": 488,
+   "height": 500,
+   "shows": "CyScan laser sensor catalogue image (the sensor, not the kit)",
+   "match": "generic",
+   "source_type": "catalogue",
+   "true_host": "img.nauticexpo.com"
+  }
+ ],
+ "D02": [
+  {
+   "image_url": "https://cdn.prod.website-files.com/689473f3705477db4090f32d/693fec6b2a2ee577fd651994_Untitled%20Project%20(11)%20(2).png",
+   "page_url": "https://www.guidancemarine.com/product/radascan-r-view",
+   "host": "cdn.prod.website-files.com",
+   "width": 2700,
+   "height": 2160,
+   "shows": "Guidance Marine hero image on RadaScan View page (the sensor family, not a kit)",
+   "match": "family",
+   "source_type": "oem",
+   "true_host": "cdn.prod.website-files.com"
+  },
+  {
+   "image_url": "https://cdn.prod.website-files.com/689473f3705477db4090f32d/69774c2ae07008ba8c5175de_Untitled-2%20(3).png",
+   "page_url": "https://www.guidancemarine.com/product/radascan-r-view",
+   "host": "cdn.prod.website-files.com",
+   "width": 1044,
+   "height": 1024,
+   "shows": "Second image on RadaScan View page (likely the sensor; not viewed)",
+   "match": "family",
+   "source_type": "oem",
+   "true_host": "cdn.prod.website-files.com"
+  },
+  {
+   "image_url": "https://cdn.prod.website-files.com/689473f3705477db4090f32d/69774b8da9c883f96dd3bc62_Untitled%20(9).png",
+   "page_url": "https://www.guidancemarine.com/product/radascan-r-view",
+   "host": "cdn.prod.website-files.com",
+   "shows": "Guidance Marine card image labelled RadaScan View in the Other Products carousel; not visually checked",
+   "match": "?",
+   "source_type": "oem",
+   "true_host": "cdn.prod.website-files.com"
+  }
+ ],
+ "D06": [
+  {
+   "image_url": "https://www.wago.com/medias/1024-020000010000ef05000100b6-EN.jpg?context=bWFzdGVyfGltYWdlc3w1MjcwNnxpbWFnZS9qcGVnfGFHSmxMMmhrTVM4eE5qVTNNalUwT0RnME1UVXdNaTh4TURJMFh6QXlNREF3TURBeE1EQXdNR1ZtTURVd01EQXhNREJpTmw5RlRpNXFjR2N8NDgzOWE3MDdkYzk1YWVmZjdjZDVkZWZkODkyNDZkNWFhNThkY2VhMmYwZWY5MmQwZjJlMGMyYjQ1OGQzMmE2Yw",
+   "page_url": "https://www.wago.com/global/i-o-systems/2-channel-digital-input/p/750-400",
+   "host": "www.wago.com",
+   "width": 827,
+   "height": 826,
+   "shows": "WAGO 750-400 module product photo on the WAGO page",
+   "match": "exact",
+   "source_type": "oem",
+   "true_host": "www.wago.com"
+  },
+  {
+   "image_url": "https://www.wago.com/medias/1024-0200001100028e03000100b6-DE.jpg?context=bWFzdGVyfGltYWdlc3w4NTYyN3xpbWFnZS9qcGVnfGFHSTVMMmc0TXk4eE5qVTFOVGt5T0RBNU1qY3dNaTh4TURJMFh6QXlNREF3TURFeE1EQXdNamhsTURNd01EQXhNREJpTmw5RVJTNXFjR2N8NTQ0YjhhZTk5M2YzZDQ3MmM1NjFiOGFjNjhhYjYwMzJlYTY2MDgyOTVkMWEzM2UzODI0NTAyZjVhNjM1NGRmMw",
+   "page_url": "https://www.wago.com/global/i-o-systems/2-channel-digital-input/p/750-400",
+   "host": "www.wago.com",
+   "width": 1024,
+   "height": 1507,
+   "shows": "Second WAGO 750-400 image (DE rendition, tall; could be a dimension or wiring view, check)",
+   "match": "exact",
+   "source_type": "oem",
+   "true_host": "www.wago.com"
+  },
+  {
+   "image_url": "https://www.eibabo.com/media/seo_images/productimages_eibabo/NS0741511/ZOOM/wago-750_400-digitale-ns0741511_01.jpg",
+   "page_url": "https://www.eibabo.com/en/wago/digital-input-terminal-2-channel-dc24v-3.0ms-fieldbus-digital-module-2-in-0-out-750-400-eb10741511",
+   "host": "www.eibabo.com",
+   "width": 1280,
+   "height": 960,
+   "shows": "WAGO 750-400 module, reseller photo (not viewed)",
+   "match": "exact",
+   "source_type": "reseller",
+   "true_host": "www.eibabo.com"
+  },
+  {
+   "image_url": "https://cdn11.bigcommerce.com/s-o0ql33eyfo/images/stencil/1280x1280/products/144560/3305507/wago_750-400_free_shipping-61586_1__17444.1779360045.jpg?c=1",
+   "page_url": "https://auto2mation.com/wago-750-400-digital-input-module-2di-24v-dc-3-0ms-24v-dc.html",
+   "host": "cdn11.bigcommerce.com",
+   "width": 1020,
+   "height": 765,
+   "shows": "WAGO 750-400 module, reseller photo (file name says free shipping; check for overlays)",
+   "match": "exact",
+   "source_type": "reseller",
+   "true_host": "cdn11.bigcommerce.com"
+  }
+ ],
+ "D07": [],
+ "D09": [
+  {
+   "image_url": "https://cdn11.bigcommerce.com/s-o0ql33eyfo/images/stencil/1280x1280/products/4779/1894844/dsc_0225_8__74298.1766048210.jpg?c=1",
+   "page_url": "https://auto2mation.com/wago-i-o-ipc-758-873-system.html",
+   "host": "cdn11.bigcommerce.com",
+   "width": 1280,
+   "height": 850,
+   "shows": "WAGO I/O-IPC 758-873 unit, reseller photo (not viewed)",
+   "match": "exact",
+   "source_type": "reseller",
+   "true_host": "cdn11.bigcommerce.com"
+  },
+  {
+   "image_url": "https://cdn11.bigcommerce.com/s-o0ql33eyfo/images/stencil/1280x1280/products/4779/1894847/dsc_0230_9__34281.1766048210.jpg?c=1",
+   "page_url": "https://auto2mation.com/wago-i-o-ipc-758-873-system.html",
+   "host": "cdn11.bigcommerce.com",
+   "width": 1280,
+   "height": 850,
+   "shows": "Second angle of the 758-873 unit, reseller (not viewed)",
+   "match": "exact",
+   "source_type": "reseller",
+   "true_host": "cdn11.bigcommerce.com"
+  },
+  {
+   "image_url": "http://aeliyamarinetech.com/cdn/shop/products/dsc_0222_1_7.jpg?v=1699062102",
+   "page_url": "https://aeliyamarinetech.com/products/wago-i-o-ipc-758-873-system",
+   "host": "aeliyamarinetech.com",
+   "width": 1355,
+   "height": 900,
+   "shows": "758-873 system photo, marine reseller (not viewed)",
+   "match": "exact",
+   "source_type": "reseller",
+   "true_host": "aeliyamarinetech.com"
+  },
+  {
+   "image_url": "https://aeliyamarinetech.com/cdn/shop/products/dsc_0232_2_3.jpg?crop=center&height=900&v=1699062102&width=1355",
+   "page_url": "https://aeliyamarinetech.com/products/wago-i-o-ipc-758-873-system",
+   "host": "aeliyamarinetech.com",
+   "width": 1355,
+   "height": 900,
+   "shows": "Another 758-873 photo, marine reseller (not viewed)",
+   "match": "exact",
+   "source_type": "reseller",
+   "true_host": "aeliyamarinetech.com"
+  }
+ ],
+ "NEW1": [
+  {
+   "image_url": "https://inertiallabs.com/wp-content/uploads/2025/02/MRU-B1-2025.png",
+   "page_url": "https://inertiallabs.com/products/mru-ws-motion-reference-units-and-wave-sensors/",
+   "host": "inertiallabs.com",
+   "width": null,
+   "height": null,
+   "shows": "MRU-B1 IP67 unit, OEM product render (filename names the model, 2025 set; dimensions not stated in page)",
+   "match": "exact",
+   "source_type": "oem",
+   "true_host": "inertiallabs.com"
+  },
+  {
+   "image_url": "https://inertiallabs.com/wp-content/uploads/2025/02/MRU-B1.1-2025.png",
+   "page_url": "https://inertiallabs.com/products/mru-ws-motion-reference-units-and-wave-sensors/",
+   "host": "inertiallabs.com",
+   "width": null,
+   "height": null,
+   "shows": "MRU-B1.1 IP67 unit, OEM product render (filename names the model)",
+   "match": "exact",
+   "source_type": "oem",
+   "true_host": "inertiallabs.com"
+  },
+  {
+   "image_url": "https://www.oceansciencetechnology.com/wp-content/uploads/2024/04/MRU-B1-1.png",
+   "page_url": "https://www.oceansciencetechnology.com/company/inertial-labs/mru-b1-1/",
+   "host": "oceansciencetechnology.com",
+   "width": 600,
+   "height": 600,
+   "shows": "MRU-B1.1 product image on a trade catalogue page",
+   "match": "exact",
+   "source_type": "catalogue",
+   "true_host": "www.oceansciencetechnology.com"
+  },
+  {
+   "image_url": "https://inertiallabs.com/wp-content/uploads/2023/01/MRU-B1S.png",
+   "page_url": "https://inertiallabs.com/products/mru-ws-motion-reference-units-and-wave-sensors/",
+   "host": "inertiallabs.com",
+   "width": 600,
+   "height": 600,
+   "shows": "MRU-B1S subsea-enclosure version (not the IP67 unit), OEM; fallback only",
+   "match": "family",
+   "source_type": "oem",
+   "true_host": "inertiallabs.com"
+  }
+ ],
+ "C01": [
+  {
+   "image_url": "https://www.fornaes.com/media/1xejt5ir/img_3030.jpg?width=1600&format=webp&rmode=pad&quality=80&rotation=90",
+   "page_url": "https://www.fornaes.com/electronics-electro/electronics/e0173",
+   "host": "fornaes.com",
+   "width": 2133,
+   "height": 1600,
+   "shows": "Photo titled 'NAVIS MCP-C06 Safe Dist 0,6 m' on a Faroese ship-chandler/electronics stock page; photo of the actual unit, rotated 90 degrees by URL parameter",
+   "match": "exact",
+   "source_type": "reseller",
+   "true_host": "www.fornaes.com"
+  },
+  {
+   "image_url": "https://dvzpv6x5302g1.cloudfront.net/AcuCustom/Sitename/DAM/116/Navis_joystick_and_DP_controls_Thumb.jpg",
+   "page_url": "https://www.rivieramm.com/news-content-hub/news-content-hub/remote-monitoring-for-offshore-vessel-dp-unveiled-69167",
+   "host": "dvzpv6x5302g1.cloudfront.net",
+   "width": 814,
+   "height": 458,
+   "shows": "Navis joystick and DP controls, trade press",
+   "match": "family",
+   "source_type": "catalogue",
+   "true_host": "dvzpv6x5302g1.cloudfront.net"
+  }
+ ],
+ "B10": [
+  {
+   "image_url": "https://www.sonardyne.com/wp-content/uploads/2026/01/Marine-PC-Top.png",
+   "page_url": "https://www.sonardyne.com/product/marine-computer/",
+   "host": "www.sonardyne.com",
+   "width": 0,
+   "height": 0,
+   "shows": "Sonardyne Marine Computer (rack-mount industrial PC), top view",
+   "match": "family",
+   "source_type": "oem",
+   "true_host": "www.sonardyne.com"
+  },
+  {
+   "image_url": "https://www.sonardyne.com/wp-content/uploads/2024/08/Marine_computer_hero-image.jpg",
+   "page_url": "https://www.sonardyne.com/product/marine-computer/",
+   "host": "www.sonardyne.com",
+   "width": 0,
+   "height": 0,
+   "shows": "Sonardyne Marine Computer hero image",
+   "match": "family",
+   "source_type": "oem",
+   "true_host": "www.sonardyne.com"
+  },
+  {
+   "image_url": "https://www.sonardyne.com/wp-content/uploads/2021/06/marine-computer-gallery-4-1024x576.jpg",
+   "page_url": "https://www.sonardyne.com/product/marine-computer/",
+   "host": "www.sonardyne.com",
+   "width": 1024,
+   "height": 576,
+   "shows": "Marine Computer gallery photo",
+   "match": "family",
+   "source_type": "oem",
+   "true_host": "www.sonardyne.com"
+  }
+ ]
+}
