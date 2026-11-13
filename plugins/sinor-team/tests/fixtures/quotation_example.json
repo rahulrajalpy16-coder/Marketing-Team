@@ -1,0 +1,45 @@
+{
+  "client": {
+    "name": "EXAMPLE CLIENT LTD",
+    "address": "Office 100, Example Tower, Sample Street, EXAMPLE CITY",
+    "tel": "+000 00 000 0000",
+    "attn": "Test Contact / +000 00 000 0001",
+    "trn": ""
+  },
+  "quote": {
+    "qtn_no": "SMS-QT2026-XXXXX",
+    "date": "05/11/2026",
+    "your_ref": "E-000-2026",
+    "currency": "USD"
+  },
+  "subject": "TEST SYSTEM (Example Model) - Supply, Installation & Commissioning - TEST VESSEL",
+  "mode": "additive",
+  "discount": {"percent": 13},
+  "vat_percent": 5,
+  "items": [
+    {
+      "title": "Supply, Installation & Commissioning of Test Reference System",
+      "include": [
+        "Test sensor unit, titanium housing, with 30 m cable",
+        "Interface hub, 1U rack mount, three Ethernet ports and configurable serial ports",
+        "Marine computer kit, 2U rack mount, fanless, with mains cables for UK, USA and Euro"
+      ],
+      "scope": [
+        "System installation.",
+        "Cable laying and termination.",
+        "Continuity and loop testing.",
+        "System commissioning and functional testing.",
+        "Sea trial attendance for performance verification and final acceptance."
+      ],
+      "qty": 1, "unit": "Set", "price": "283000.00"
+    },
+    {
+      "title": "Additional Air Freight Charges for Test Reference System",
+      "qty": 2, "unit": "Nos", "price": "843.75"
+    }
+  ],
+  "terms": {
+    "delivery_period": "Item 1 : 8-12 weeks upon PO; Item 2 : Ex stock strictly subject to prior sale"
+  },
+  "notes": {"set": "installation_newer", "drop": [4, 5], "add": ["This is a draft quotation for approval before final issue."]}
+}

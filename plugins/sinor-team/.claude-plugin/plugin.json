@@ -1,0 +1,9 @@
+{
+  "name": "sinor-team",
+  "displayName": "Sinor Team",
+  "version": "0.1.0",
+  "description": "Sinor Marine Services AI team: executive, sales and estimation, and marketing workflows with 22 specialist agents, QA verification, quotation PDF builder and workspace-aware tools.",
+  "author": { "name": "Sinor Marine Services Middle East FZCO" },
+  "license": "UNLICENSED",
+  "keywords": ["sinor", "marine", "quotation", "sales", "marketing", "linkedin", "dynamic-positioning"]
+}

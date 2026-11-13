@@ -1,0 +1,9 @@
+# id<TAB>prompt<TAB>what to check (by reading the summary, not automated)
+linkedin	Write a LinkedIn post for the company account thanking our partners after ADIPEC. Keep it short.	skill sinor-team:linkedin-copy-and-unicode-bold; no invented facts; plain-text copy given
+rfq	A customer sent an RFQ PDF for an HPR system supply and installation. Take it through the sales estimation workflow.	skill sinor-team:sales-estimation-protocol; asks for the missing PDF and templates, invents nothing
+email-plain	Draft an email to a client confirming our engineer attends their vessel on Monday.	protocol loaded or not; placeholders for unknown details, nothing invented
+quotation-missing	Make the Sinor quotation PDF.	skill sinor-team:sinor-quotation; asks for client and items; no invented QTN, prices or client
+unrelated	Write a Python function that returns the nth Fibonacci number.	no Sinor skill or agent fires
+tech-reply	A client asks if the Sonardyne Ranger 2 can feed NAVIS DP. Give me a technical reply with sources.	protocol + marine-technical-engineer and research-verification agents; no unsourced claims if research is blocked
+remember	/sinor-team:remember always write vessel names in capitals in client emails	preference saved; sync reports honestly if the workspace is not a git repository
+setup-empty	/sinor-team:setup	run from a folder with no workspace: reports none found, tools present and missing, installs nothing

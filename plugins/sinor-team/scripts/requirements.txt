@@ -1,0 +1,8 @@
+reportlab
+pypdf>=5,<7
+python-docx>=1.1,<2
+openpyxl>=3.1,<4
+Pillow
+numpy
+# Optional, only for iPhone HEIC conversion (heic_to_jpg.py):
+# pillow-heif

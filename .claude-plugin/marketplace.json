@@ -1,0 +1,12 @@
+{
+  "name": "sinor-team-marketplace",
+  "description": "Private plugins for the Sinor Marine Services team",
+  "owner": { "name": "Sinor Marine Services Middle East FZCO" },
+  "plugins": [
+    {
+      "name": "sinor-team",
+      "source": "./plugins/sinor-team",
+      "description": "Executive, sales and estimation, and marketing AI workflows for Sinor Marine Services, with specialist agents, QA and a quotation PDF builder."
+    }
+  ]
+}

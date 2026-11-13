@@ -1,0 +1,13 @@
+{
+  "runtime": "native-claude-code",
+  "paid_api": false,
+  "default_parallel_limit": 2,
+  "speed_parallel_limit": 4,
+  "max_correction_cycles": 2,
+  "model_policy": {
+    "routine": "haiku",
+    "standard": "sonnet",
+    "escalation": "opus"
+  },
+  "enforcement": "supervisor policy; verify actual runtime support; not a standalone scheduler"
+}
