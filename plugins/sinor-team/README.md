@@ -61,6 +61,7 @@ All skill names are prefixed `sinor-team:` when you type them as commands.
 
 1. Add the marketplace. For the team's private GitHub repository:
    `claude plugin marketplace add <owner>/<repo>`
+   Until the plugin is merged to the repository's default branch, add the branch it lives on: `claude plugin marketplace add <owner>/<repo>#<branch>` (this form was tested).
    Each person needs GitHub access to that repository: sign in with `gh auth login` then run `gh auth setup-git`, or use an SSH key without a passphrase. Claude Code has no token of its own for git.
 2. Install: `claude plugin install sinor-team@sinor-team-marketplace`
 3. Restart the session, then check: `claude plugin list` (should show `sinor-team` enabled) and `claude plugin details sinor-team` (22 skills, 22 agents).

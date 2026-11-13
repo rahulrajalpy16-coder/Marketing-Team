@@ -22,7 +22,7 @@ the items under "Not tested" and "Owner decisions" are open.
 | A6 | Quotation PDF is correct to the cent and matches the standard layout | Passed |
 | A7 | Independent QA step runs and cannot edit the work it audits | Passed |
 | A8 | No secrets, machine paths or client names in the package | Passed |
-| A9 | Package works when installed from GitHub and in chat and Cowork | **Not tested** |
+| A9 | Package works when installed from GitHub (private repo, cached copy) | Passed. Chat, Cowork, Windows and macOS: **Not tested** |
 | A10 | Output quality against the owner's real example outputs | **Not tested** (no examples supplied) |
 
 ## 2. Static validation
@@ -66,7 +66,7 @@ Reproducible with `tests/runtime/`. Results vary run to run; read them as eviden
 | R1 | Discovery in a real session | Passed. 22 skills and 22 agents appear as `sinor-team:*` |
 | R2 | Trigger routing | Passed with limits. LinkedIn request loaded the LinkedIn skill. RFQ request loaded the sales protocol. "Make the Sinor quotation PDF" loaded `sinor-quotation`. An unrelated Python request loaded nothing. A direct marine question did **not** load `marine-technical-accuracy`; the model answered from memory and said it had not checked sources |
 | R3 | Missing-input behaviour | Passed. Quotation request asked for client, items and QTN and invented none. RFQ request without the PDF asked for it and for the missing template. Email with no details used bracketed placeholders. A technical reply with web access blocked refused to write unsourced claims and asked how to proceed |
-| R4 | Full executive workflow, same plain email request, 4 runs after the routing fix | Passed. 4 of 4: router, protocol, task record, documentation agent, independent QA agent, audit report under `quality/`. 3 of 4 also closed the task record (1 left it open). Deliverable facts matched the instruction exactly. Before the fix, 1 of 2 runs skipped the whole workflow (answered directly), which is why the session hook now carries an explicit first-action directive and the `/sinor-team:team` command exists |
+| R4 | Full executive workflow, same plain email request, 4 runs after the routing fix | Passed. 4 of 4: router, protocol, task record, documentation agent, independent QA agent, audit report under `quality/`. 3 of 4 also closed the task record (1 left it open; across all 5 workflow runs including R14, 3 closed and 2 stayed open). Deliverable facts matched the instruction exactly. Before the fix, 1 of 2 runs skipped the whole workflow (answered directly), which is why the session hook now carries an explicit first-action directive and the `/sinor-team:team` command exists |
 | R5 | Specialist delegation by namespaced name | Passed. `sinor-team:marine-technical-engineer` and `sinor-team:research-verification` were both launched for the same technical-reply task (simultaneity was not measured) |
 | R6 | `remember` then `forget-preference` | Passed. Preference written to disk with exact wording, then removed leaving only a tombstone. Sync reported honestly that the test folder was not a git repository |
 | R7 | `setup` in a folder with no workspace | Passed. Reported none found, listed tools present and missing, installed nothing |
@@ -75,13 +75,15 @@ Reproducible with `tests/runtime/`. Results vary run to run; read them as eviden
 | R10 | QA write guard in a live session | Passed. Write outside `quality/` blocked with the intended message; write inside `quality/` passed the hook (then refused only by headless permissions). Plugin subagents report `agent_type` as `sinor-team:qa-auditor`, a detail the documentation does not state; the guard handles it |
 | R11 | Agent skill preloading (`skills:` frontmatter) | Passed for `copywriter` and `fact-reviewer`, which quoted their preloaded skill text correctly. `qa-reviewer` and `video-editor` use the same mechanism but were not individually tested |
 | R12 | Session hook output reaches the model | Passed (seen in the event stream) |
+| R13 | Install from the real private GitHub repository (`claude plugin marketplace add <owner>/<repo>#<branch>`, then install) | Passed. Clone of the private repo worked in this environment, plugin cached (1.2 MB, plugin folder only), 22 skills and 22 agents listed |
+| R14 | Live workflows on that genuine cached install (no `--plugin-dir`) | Passed. Plain email request: router, protocol, task record, QA audit 1 **failed** the draft for an invented sign-off name, correction made, QA audit 2 passed 5 of 5. Quotation request: sinor-quotation skill, script run, Net Amount 12,271.88 equals my hand calculation (11,687.50 + 584.38) |
 
 ## 5. Not tested
 
 | Area | Why | How to check |
 |---|---|---|
-| Install from the GitHub marketplace (cached copy, private repository authentication) | `file://` sources are not accepted and no GitHub credentials were usable here; I tested a copy in a spaced path loaded by `--plugin-dir` instead | After pushing: `claude plugin marketplace add <owner>/<repo>`, install, run `claude plugin details sinor-team` and the R4 prompt |
 | claude.ai chat and Cowork (zip upload, skills visible, scripts runnable, hooks and agents greyed out in chat) | No access from this environment | Customize, Plugins, Upload `sinor-team-0.1.0.zip`; run `/sinor-team:team-help`, then a LinkedIn prompt and the quotation prompt. Per Anthropic documentation agents and hooks do not run in chat |
+| Teammates' own GitHub authentication (each person's `gh auth login` or SSH key) | I tested with this environment's credentials only | Each teammate runs the install steps in the README |
 | Windows and macOS | Linux only | Install, run the pytest suite, run R4 |
 | Marketing campaign end to end (strategist, copywriter, art director, photo and video editor, QA reviewer) | Needs real photos and video; only the LinkedIn skill was run | Run a small campaign with 2 photos and review the result |
 | Media scripts: `make_music_bed.py`, `probe_media.py`, `loudness_check.py`, `contact_sheet.py`, `heic_to_jpg.py`, `publish_release.sh` | Needed media files and GitHub release rights; only `guard_large_files.sh` was run, in a temporary repository | Run each on a sample file; `publish_release.sh` only against a test release |
@@ -96,7 +98,7 @@ Reproducible with `tests/runtime/`. Results vary run to run; read them as eviden
 1. The old account skill `anthropic-skills:sinor-quotation` is still listed beside `sinor-team:sinor-quotation`. The plugin version was chosen in the test; remove the old one.
 2. Skill triggering is the model's choice. Inside a workspace the hook makes it reliable (4 of 4); outside one, or in chat, use `/sinor-team:team <request>`.
 3. Direct technical questions are not routed to the accuracy skill; ask for "a technical reply with sources" to engage the engineer and research agents.
-4. One of four runs left its task record open; `team-status` shows open tasks.
+4. Task records are not always closed (2 of 5 runs left one open); `team-status` shows open tasks.
 5. When one quotation item splits across a page, the table has no bottom line at the break. Cosmetic.
 6. Two quotation checks stay manual (title, scope and exclusions agree; revision suffix matches a scope change). The script says NOT RUN for them.
 7. `sinor-desk` is not included. No icon. License is a default proprietary notice that needs owner review.
