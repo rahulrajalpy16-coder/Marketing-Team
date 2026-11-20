@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "doop": { "type": "http", "url": "https://doop.design/mcp" },
+    "playwright": {
+      "command": "npx",
+      "args": ["@playwright/mcp", "--headless", "--browser", "chromium", "--no-sandbox"]
+    }
+  }
+}

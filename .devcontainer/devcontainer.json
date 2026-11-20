@@ -1,0 +1,9 @@
+{
+  "name": "Web Design Environment",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:22",
+  "postCreateCommand": "npm install -g @anthropic-ai/claude-code && cd web-design-env && npm install && npx playwright install --with-deps chromium",
+  "forwardPorts": [5173],
+  "portsAttributes": {
+    "5173": { "label": "Website preview", "onAutoForward": "openPreview" }
+  }
+}
