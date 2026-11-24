@@ -25,6 +25,7 @@ How to approve: reply with "approve all", or list the item numbers you approve a
 1. Make a backup first (hPanel backups or a backup plugin). I have not verified which backup options your Hostinger plan includes.
 2. Work on one item at a time and check the page after each.
 3. Every item below lists its "before" value so it can be reversed.
+4. Do not touch the /signature/ folder on the site (13 images used by staff email signatures). Exclude it from any image optimisation.
 
 ## 1. Decisions I need (short answers are fine)
 

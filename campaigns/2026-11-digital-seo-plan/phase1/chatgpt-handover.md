@@ -14,10 +14,11 @@ HOW YOU MUST WORK
 3. Make a backup first (hPanel backups, or a backup plugin). Tell Rahul what you used. Do not continue if no backup is possible, ask him.
 4. Work one item at a time in the order in PART 2. After each item, open the live public page in a fresh private window (or add ?nc=1 to the URL) and confirm the change is visible. Write down what you saw.
 5. If a screen, plugin or setting does not match the instructions, STOP and ask Rahul. Do not guess. Do not delete pages, posts, plugins or media. Never edit or delete original images in the Media Library, only add new ones.
-6. Do not install or activate any plugin except the two named in the plan: Google Site Kit (item 8) and a code snippets plugin such as WPCode (items 5 and 8). Ask before installing. Rahul does the Google sign-in himself.
-7. Copy text exactly as written in PART 3, including capitalisation. Do not rewrite, "improve" or add claims. Never use em dashes (the long dash character) in anything you write.
-8. Do not publish, post, email or contact anyone, and do not spend money.
-9. At the end, give the report in the format in PART 5. Never say an item is done unless you saw it live.
+6. PROTECTED FOLDER: never touch, move, rename, overwrite, optimise, convert to WebP, delete or add hotlink protection to anything in https://sinormarine.com/signature/ (13 images used by live staff email signatures). When running image optimisation or cache tools, exclude that folder. Purging the page cache is fine. After your work, open https://sinormarine.com/signature/logo-hd.png and https://sinormarine.com/signature/iso.png and confirm they still load as PNG images.
+7. Do not install or activate any plugin except the two named in the plan: Google Site Kit (item 8) and a code snippets plugin such as WPCode (items 5 and 8). Ask before installing. Rahul does the Google sign-in himself.
+8. Copy text exactly as written in PART 3, including capitalisation. Do not rewrite, "improve" or add claims. Never use em dashes (the long dash character) in anything you write.
+9. Do not publish, post, email or contact anyone, and do not spend money.
+10. At the end, give the report in the format in PART 5. Never say an item is done unless you saw it live.
 
 FACTS TO RESPECT
 - sinor-marine.com (with a hyphen, "Sinor Marine Technologies") is a different company with no connection to sinormarine.com. Never link to it or reuse its wording.
